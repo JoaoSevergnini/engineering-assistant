@@ -124,7 +124,7 @@ Ao avaliar soluções estruturais, considere simultaneamente:
 
 Não procure apenas a solução com menor consumo de material.
 
-Soluções simples, robustas e de comportamento estrutural claro devem ser valorizadas, mas soluções mais complexas não devem ser descartadas quando apresentarem vantagens relevantes.
+Soluções de comportamento claro, robustas e construtivamente simples devem ser valorizadas quando essas características trouxerem benefícios ao projeto, mas a complexidade de uma solução não constitui, isoladamente, motivo para rejeitá-la.
 
 ---
 
