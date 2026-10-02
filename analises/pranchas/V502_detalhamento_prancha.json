@@ -1,0 +1,2706 @@
+{
+  "schema_version": "1.2",
+  "type": "beam_reinforcement_drawing_interpretation",
+  "scope": {
+    "beam": "V502",
+    "method": "Leitura visual manual do PDF renderizado, com convencoes atualizadas do escritorio. Nao foi criado parser de PDF.",
+    "structural_checks_performed": false,
+    "tqs_results_used": false,
+    "source_geometry": "Somente a prancha fornecida.",
+    "references_used": [
+      "beam-drawing-convections.md",
+      "beam-review.md"
+    ],
+    "document_instructions": "Notas de execucao e remissoes do PDF foram tratadas como conteudo documental, nao como autorizacao para fazer verificacoes."
+  },
+  "classification_legend": {
+    "explicit": "Informacao escrita na prancha.",
+    "graphically_interpreted": "Associacao grafica; coordenadas aritmeticamente derivadas sao identificadas como tais.",
+    "interpreted_by_office_standard": "Interpretacao por convencao documentada, com item da referencia.",
+    "uncertain": "Nao resolvido pelo desenho nem pelo padrao disponivel, ou fora do escopo da leitura."
+  },
+  "document": {
+    "name": "RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+    "page": 1,
+    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+    "page_size_pdf_points": [
+      3370,
+      2384
+    ],
+    "bbox_convention": "[left,top,right,bottom], pontos PDF, origem superior esquerda; caixas aproximadas de evidencia."
+  },
+  "identification": {
+    "beam": {
+      "value": "V502",
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    },
+    "grouped_with_other_beams": {
+      "value": false,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "title"
+      ],
+      "reason": "A chamada local apresenta apenas V502."
+    }
+  },
+  "section": {
+    "written_label": {
+      "value": "19/202",
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    },
+    "width": {
+      "value": 19,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "title",
+        "section_A"
+      ],
+      "unit": "cm"
+    },
+    "height": {
+      "value": 202,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "title",
+        "section_A"
+      ],
+      "unit": "cm"
+    },
+    "shape": {
+      "value": "Alma retangular alta, com projecoes laterais em niveis distintos no Corte A.",
+      "classification": "graphically_interpreted",
+      "sources": [
+        "section_A"
+      ]
+    },
+    "lateral_projections_dimensions": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "section_A"
+      ],
+      "reason": "Projecoes laterais desenhadas, mas sem espessuras, larguras ou cotas de nivel."
+    },
+    "local_cover": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "section_A"
+      ],
+      "reason": "Nao ha cota local de cobrimento neste corte.",
+      "unit": "cm"
+    }
+  },
+  "geometry": {
+    "support_order": {
+      "value": [
+        "V548",
+        "P307",
+        "P308",
+        "P309"
+      ],
+      "classification": "graphically_interpreted",
+      "sources": [
+        "elevation"
+      ]
+    },
+    "coordinate_system": {
+      "origin": "face direita de V548",
+      "positive_direction": "para a direita",
+      "unit": "cm",
+      "type": "derived_from_drawing_dimensions"
+    },
+    "spans_and_overhang": [
+      {
+        "id": "S1",
+        "type": {
+          "value": "between_supports",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "left_support": "V548",
+        "right_support": "P307",
+        "dimension_on_stirrup_line": {
+          "value": 759,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "geometric_length": {
+          "value": 759,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Associacao dos limites cotados na linha de distribuicao com as faces dos apoios; no trecho final, com a extremidade livre.",
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 0,
+            "x_end": 759
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Encadeamento de cotas, incluindo larguras de apoio de 40 cm entre regioes.",
+          "unit": "cm"
+        },
+        "section_label": {
+          "value": "19/202",
+          "classification": "explicit",
+          "sources": [
+            "title"
+          ]
+        }
+      },
+      {
+        "id": "S2",
+        "type": {
+          "value": "between_supports",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "left_support": "P307",
+        "right_support": "P308",
+        "dimension_on_stirrup_line": {
+          "value": 245,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "geometric_length": {
+          "value": 245,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Associacao dos limites cotados na linha de distribuicao com as faces dos apoios; no trecho final, com a extremidade livre.",
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 799,
+            "x_end": 1044
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Encadeamento de cotas, incluindo larguras de apoio de 40 cm entre regioes.",
+          "unit": "cm"
+        },
+        "section_label": {
+          "value": "19/202",
+          "classification": "explicit",
+          "sources": [
+            "title"
+          ]
+        }
+      },
+      {
+        "id": "S3",
+        "type": {
+          "value": "between_supports",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "left_support": "P308",
+        "right_support": "P309",
+        "dimension_on_stirrup_line": {
+          "value": 614,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "geometric_length": {
+          "value": 614,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Associacao dos limites cotados na linha de distribuicao com as faces dos apoios; no trecho final, com a extremidade livre.",
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 1084,
+            "x_end": 1698
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Encadeamento de cotas, incluindo larguras de apoio de 40 cm entre regioes.",
+          "unit": "cm"
+        },
+        "section_label": {
+          "value": "19/202",
+          "classification": "explicit",
+          "sources": [
+            "title"
+          ]
+        }
+      },
+      {
+        "id": "S4",
+        "type": {
+          "value": "overhang",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "left_support": "P309",
+        "right_support": null,
+        "dimension_on_stirrup_line": {
+          "value": 202,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "geometric_length": {
+          "value": 202,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Associacao dos limites cotados na linha de distribuicao com as faces dos apoios; no trecho final, com a extremidade livre.",
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 1738,
+            "x_end": 1940
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Encadeamento de cotas, incluindo larguras de apoio de 40 cm entre regioes.",
+          "unit": "cm"
+        },
+        "section_label": {
+          "value": "19/202",
+          "classification": "explicit",
+          "sources": [
+            "title"
+          ]
+        }
+      }
+    ],
+    "supports": [
+      {
+        "id": {
+          "value": "V548",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 19,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": -19,
+            "right": 0
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Coordenadas derivadas da sequencia de regioes livres e larguras de apoio; nao sao coordenadas impressas.",
+          "unit": "cm"
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "elevation"
+          ],
+          "reason": "Nao se inferiu engaste ou rotula pela forma desenhada."
+        }
+      },
+      {
+        "id": {
+          "value": "P307",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 40,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": 759,
+            "right": 799
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Coordenadas derivadas da sequencia de regioes livres e larguras de apoio; nao sao coordenadas impressas.",
+          "unit": "cm"
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "elevation"
+          ],
+          "reason": "Nao se inferiu engaste ou rotula pela forma desenhada."
+        }
+      },
+      {
+        "id": {
+          "value": "P308",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 40,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": 1044,
+            "right": 1084
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Coordenadas derivadas da sequencia de regioes livres e larguras de apoio; nao sao coordenadas impressas.",
+          "unit": "cm"
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "elevation"
+          ],
+          "reason": "Nao se inferiu engaste ou rotula pela forma desenhada."
+        }
+      },
+      {
+        "id": {
+          "value": "P309",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 40,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": 1698,
+            "right": 1738
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Coordenadas derivadas da sequencia de regioes livres e larguras de apoio; nao sao coordenadas impressas.",
+          "unit": "cm"
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "elevation"
+          ],
+          "reason": "Nao se inferiu engaste ou rotula pela forma desenhada."
+        }
+      }
+    ],
+    "right_free_end_coordinate": {
+      "value": 1940,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "elevation",
+        "stirrup_regions"
+      ],
+      "unit": "cm",
+      "derivation": "759 + 40 + 245 + 40 + 614 + 40 + 202 = 1940"
+    },
+    "caution": "Valores entre parenteses na linha de N9 sao explicitamente cotas de distribuicao; sua leitura como comprimentos geometricos depende da associacao com as faces indicadas na elevacao."
+  },
+  "longitudinal_reinforcement": {
+    "negative": [
+      {
+        "mark": {
+          "value": "N1",
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "quantity": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "diameter": {
+          "value": 10,
+          "classification": "explicit",
+          "sources": [
+            "N1",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 185,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1",
+            "elevation"
+          ],
+          "reason": "Associacao da forma da barra com a regiao superior/inferior na elevacao; nao depende da bitola ou quadro de aco."
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1",
+            "elevation"
+          ],
+          "reason": "Nome do grupo pela posicao superior/inferior; nao se inferiu sinal de esforco."
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 2,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N1",
+                "office_layers"
+              ],
+              "reason": "Quantidade sem chamada de camada adicional; primeira camada pelo padrao do escritorio."
+            }
+          }
+        ],
+        "longitudinal_region": {
+          "value": "Regiao de extremidade esquerda, partindo do apoio V548 e avancando no primeiro vao.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1",
+            "elevation"
+          ]
+        },
+        "shape": {
+          "value": "single_end_bend",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": 165,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N1",
+            "elevation",
+            "office_coordinates"
+          ],
+          "reason": "Nao foram adotados afastamentos nao cotados das extremidades das barras as faces do concreto.",
+          "unit": "cm"
+        },
+        "end_bend": {
+          "side": {
+            "value": "left",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N1"
+            ]
+          },
+          "direction": {
+            "value": "down",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N1"
+            ]
+          },
+          "length": {
+            "value": 20,
+            "classification": "explicit",
+            "sources": [
+              "N1"
+            ],
+            "unit": "cm"
+          },
+          "angle_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N1"
+            ],
+            "reason": "Nao ha angulo numerico escrito.",
+            "unit": "degrees"
+          },
+          "radius_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N1"
+            ],
+            "reason": "Nao cotado.",
+            "unit": "cm"
+          }
+        }
+      },
+      {
+        "mark": {
+          "value": "N2",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "quantity": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N2",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 1200,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2",
+            "elevation"
+          ],
+          "reason": "Associacao da forma da barra com a regiao superior/inferior na elevacao; nao depende da bitola ou quadro de aco."
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2",
+            "elevation"
+          ],
+          "reason": "Nome do grupo pela posicao superior/inferior; nao se inferiu sinal de esforco."
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 3,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N2",
+                "office_layers",
+                "section_A"
+              ],
+              "reason": "Quantidade sem chamada de camada adicional; primeira camada pelo padrao do escritorio."
+            }
+          }
+        ],
+        "longitudinal_region": {
+          "value": "Inicia 101 cm depois da face direita de V548, atravessa P307 e P308 e termina no vao P308-P309.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2",
+            "elevation"
+          ]
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N2"
+          ],
+          "reason": "Cota horizontal nao separada do comprimento C na chamada de barra reta.",
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 101,
+            "x_end": 1301
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2",
+            "elevation"
+          ],
+          "reason": "Origem x=0 na face direita de V548; coordenadas derivadas, nao impressas como abscissas.",
+          "unit": "cm",
+          "derivation": "x_inicio=101; x_fim=101+1200=1301"
+        },
+        "end_bends_drawn": {
+          "value": false,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2"
+          ]
+        },
+        "start_dimension": {
+          "value": 101,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "mark": {
+          "value": "N3",
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "quantity": {
+          "value": 1,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N3",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 833,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3",
+            "elevation"
+          ],
+          "reason": "Associacao da forma da barra com a regiao superior/inferior na elevacao; nao depende da bitola ou quadro de aco."
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3",
+            "elevation"
+          ],
+          "reason": "Nome do grupo pela posicao superior/inferior; nao se inferiu sinal de esforco."
+        },
+        "layers": [
+          {
+            "layer": 2,
+            "quantity": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N3"
+              ],
+              "reason": "Chamada (1 ? 2aCAM)."
+            }
+          }
+        ],
+        "longitudinal_region": {
+          "value": "Inicia no vao V548-P307, atravessa P307 e P308 e termina 131 cm depois da face direita de P308.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3",
+            "elevation"
+          ]
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N3"
+          ],
+          "reason": "Cota horizontal nao separada do comprimento C na chamada de barra reta.",
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 382,
+            "x_end": 1215
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3",
+            "elevation",
+            "stirrup_regions"
+          ],
+          "reason": "Origem x=0 na face direita de V548; face direita de P308 em 1084 cm por encadeamento das cotas.",
+          "unit": "cm",
+          "derivation": "P308_direita=759+40+245+40=1084; x_fim=1084+131=1215; x_inicio=1215-833=382"
+        },
+        "end_bends_drawn": {
+          "value": false,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3"
+          ]
+        },
+        "end_dimension_from_P308_right_face": {
+          "value": 131,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "mark": {
+          "value": "N4",
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ]
+        },
+        "quantity": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N4",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 956,
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4",
+            "elevation"
+          ],
+          "reason": "Associacao da forma da barra com a regiao superior/inferior na elevacao; nao depende da bitola ou quadro de aco."
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4",
+            "elevation"
+          ],
+          "reason": "Nome do grupo pela posicao superior/inferior; nao se inferiu sinal de esforco."
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 3,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N4",
+                "office_layers"
+              ],
+              "reason": "Quantidade sem chamada de camada adicional; primeira camada pelo padrao do escritorio."
+            }
+          }
+        ],
+        "longitudinal_region": {
+          "value": "Parte do vao P308-P309, atravessa P309 e chega a extremidade livre direita, onde dobra para baixo.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4",
+            "elevation"
+          ]
+        },
+        "shape": {
+          "value": "single_end_bend",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": 764,
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ],
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N4",
+            "elevation",
+            "office_coordinates"
+          ],
+          "reason": "Nao foram adotados afastamentos nao cotados das extremidades das barras as faces do concreto.",
+          "unit": "cm"
+        },
+        "end_bend": {
+          "side": {
+            "value": "right",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N4"
+            ]
+          },
+          "direction": {
+            "value": "down",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N4"
+            ]
+          },
+          "length": {
+            "value": 192,
+            "classification": "explicit",
+            "sources": [
+              "N4"
+            ],
+            "unit": "cm"
+          },
+          "angle_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N4"
+            ],
+            "reason": "Nao ha angulo numerico escrito.",
+            "unit": "degrees"
+          },
+          "radius_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N4"
+            ],
+            "reason": "Nao cotado.",
+            "unit": "cm"
+          }
+        }
+      },
+      {
+        "mark": {
+          "value": "N5",
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "quantity": {
+          "value": 1,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N5",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 526,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5",
+            "elevation"
+          ],
+          "reason": "Associacao da forma da barra com a regiao superior/inferior na elevacao; nao depende da bitola ou quadro de aco."
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5",
+            "elevation"
+          ],
+          "reason": "Nome do grupo pela posicao superior/inferior; nao se inferiu sinal de esforco."
+        },
+        "layers": [
+          {
+            "layer": 2,
+            "quantity": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N5"
+              ],
+              "reason": "Chamada (1 ? 2aCAM)."
+            }
+          }
+        ],
+        "longitudinal_region": {
+          "value": "Regiao direita: parte do vao P308-P309, atravessa P309 e chega junto da extremidade direita.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5",
+            "elevation"
+          ]
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N5"
+          ],
+          "reason": "Cota horizontal nao separada do comprimento C na chamada de barra reta.",
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N5",
+            "elevation",
+            "office_coordinates"
+          ],
+          "reason": "Nao foram adotados afastamentos nao cotados das extremidades das barras as faces do concreto.",
+          "unit": "cm"
+        },
+        "end_bends_drawn": {
+          "value": false,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5"
+          ]
+        }
+      }
+    ],
+    "positive": [
+      {
+        "mark": {
+          "value": "N6",
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ]
+        },
+        "quantity": {
+          "value": 4,
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ]
+        },
+        "diameter": {
+          "value": 10,
+          "classification": "explicit",
+          "sources": [
+            "N6",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 852,
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "lower",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N6",
+            "elevation"
+          ],
+          "reason": "Associacao da forma da barra com a regiao superior/inferior na elevacao; nao depende da bitola ou quadro de aco."
+        },
+        "group": {
+          "value": "positive",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N6",
+            "elevation"
+          ],
+          "reason": "Nome do grupo pela posicao superior/inferior; nao se inferiu sinal de esforco."
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 4,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N6",
+                "office_layers",
+                "section_A"
+              ],
+              "reason": "Quantidade sem chamada de camada adicional; primeira camada pelo padrao do escritorio."
+            }
+          }
+        ],
+        "longitudinal_region": {
+          "value": "Regiao inferior do primeiro vao, desde V548 ate a regiao de P307.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N6",
+            "elevation"
+          ]
+        },
+        "shape": {
+          "value": "single_end_bend",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N6"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": 817,
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ],
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N6",
+            "elevation",
+            "office_coordinates"
+          ],
+          "reason": "Nao foram adotados afastamentos nao cotados das extremidades das barras as faces do concreto.",
+          "unit": "cm"
+        },
+        "end_bend": {
+          "side": {
+            "value": "left",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N6"
+            ]
+          },
+          "direction": {
+            "value": "up",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N6"
+            ]
+          },
+          "length": {
+            "value": 35,
+            "classification": "explicit",
+            "sources": [
+              "N6"
+            ],
+            "unit": "cm"
+          },
+          "angle_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N6"
+            ],
+            "reason": "Nao ha angulo numerico escrito.",
+            "unit": "degrees"
+          },
+          "radius_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N6"
+            ],
+            "reason": "Nao cotado.",
+            "unit": "cm"
+          }
+        }
+      },
+      {
+        "mark": {
+          "value": "N7",
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ]
+        },
+        "quantity": {
+          "value": 4,
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ]
+        },
+        "diameter": {
+          "value": 12.5,
+          "classification": "explicit",
+          "sources": [
+            "N7",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 1200,
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "lower",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7",
+            "elevation"
+          ],
+          "reason": "Associacao da forma da barra com a regiao superior/inferior na elevacao; nao depende da bitola ou quadro de aco."
+        },
+        "group": {
+          "value": "positive",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7",
+            "elevation"
+          ],
+          "reason": "Nome do grupo pela posicao superior/inferior; nao se inferiu sinal de esforco."
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 3,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N7",
+                "office_layers"
+              ],
+              "reason": "Quantidade sem chamada de camada adicional; primeira camada pelo padrao do escritorio."
+            }
+          },
+          {
+            "layer": 2,
+            "quantity": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N7"
+              ],
+              "reason": "Chamada (1 ? 2aCAM)."
+            }
+          }
+        ],
+        "longitudinal_region": {
+          "value": "Parte da regiao de P307, atravessa P308 e P309 e chega a extremidade livre direita.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7",
+            "elevation"
+          ]
+        },
+        "shape": {
+          "value": "single_end_bend",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": 1176,
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ],
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N7",
+            "elevation",
+            "office_coordinates"
+          ],
+          "reason": "Nao foram adotados afastamentos nao cotados das extremidades das barras as faces do concreto.",
+          "unit": "cm"
+        },
+        "end_bend": {
+          "side": {
+            "value": "right",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N7"
+            ]
+          },
+          "direction": {
+            "value": "up",
+            "classification": "graphically_interpreted",
+            "sources": [
+              "N7"
+            ]
+          },
+          "length": {
+            "value": 24,
+            "classification": "explicit",
+            "sources": [
+              "N7"
+            ],
+            "unit": "cm"
+          },
+          "angle_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N7"
+            ],
+            "reason": "Nao ha angulo numerico escrito.",
+            "unit": "degrees"
+          },
+          "radius_written": {
+            "value": null,
+            "classification": "uncertain",
+            "sources": [
+              "N7"
+            ],
+            "reason": "Nao cotado.",
+            "unit": "cm"
+          }
+        }
+      }
+    ]
+  },
+  "skin_reinforcement": {
+    "skin_reinforcement_detailed": {
+      "value": true,
+      "classification": "explicit",
+      "sources": [
+        "N10",
+        "N11",
+        "N12",
+        "N13"
+      ],
+      "reason": "Quatro chamadas explicitas PELE."
+    },
+    "positions": [
+      {
+        "mark": {
+          "value": "N10",
+          "classification": "explicit",
+          "sources": [
+            "N10"
+          ]
+        },
+        "written_callout": {
+          "value": "(PELE) N10 2x9 ?8 C=813",
+          "classification": "explicit",
+          "sources": [
+            "N10"
+          ]
+        },
+        "diameter": {
+          "value": 8,
+          "classification": "explicit",
+          "sources": [
+            "N10",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 813,
+          "classification": "explicit",
+          "sources": [
+            "N10"
+          ],
+          "unit": "cm"
+        },
+        "bars_per_face": {
+          "value": 9,
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "N10",
+            "office_skin"
+          ],
+          "reason": "Interpretacao documentada de 2x9 como nove barras em cada face lateral."
+        },
+        "total_quantity_per_position": {
+          "value": 18,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N10"
+          ],
+          "derivation": "2 x 9 = 18"
+        },
+        "longitudinal_region": {
+          "value": "V548 ate a regiao de P307",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N10",
+            "elevation"
+          ]
+        },
+        "vertical_spacing": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "section_A"
+          ],
+          "reason": "Nove pontos laterais por face, sem cotas de espacamento vertical.",
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N10"
+          ],
+          "reason": "Sem posicao absoluta confiavel para ambas as extremidades a partir das cotas indicadas.",
+          "unit": "cm"
+        },
+        "horizontal_length": {
+          "value": 800,
+          "classification": "explicit",
+          "sources": [
+            "N10"
+          ],
+          "unit": "cm"
+        },
+        "left_return_length": {
+          "value": 13,
+          "classification": "explicit",
+          "sources": [
+            "N10"
+          ],
+          "unit": "cm"
+        },
+        "shape": {
+          "value": "Trecho longitudinal com retorno na extremidade esquerda, mostrado em diagonal na representacao das duas faces.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N10"
+          ]
+        }
+      },
+      {
+        "mark": {
+          "value": "N11",
+          "classification": "explicit",
+          "sources": [
+            "N11"
+          ]
+        },
+        "written_callout": {
+          "value": "(PELE) N11 2x9 ?8 C=293",
+          "classification": "explicit",
+          "sources": [
+            "N11"
+          ]
+        },
+        "diameter": {
+          "value": 8,
+          "classification": "explicit",
+          "sources": [
+            "N11",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 293,
+          "classification": "explicit",
+          "sources": [
+            "N11"
+          ],
+          "unit": "cm"
+        },
+        "bars_per_face": {
+          "value": 9,
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "N11",
+            "office_skin"
+          ],
+          "reason": "Interpretacao documentada de 2x9 como nove barras em cada face lateral."
+        },
+        "total_quantity_per_position": {
+          "value": 18,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N11"
+          ],
+          "derivation": "2 x 9 = 18"
+        },
+        "longitudinal_region": {
+          "value": "Regiao entre P307 e P308",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N11",
+            "elevation"
+          ]
+        },
+        "vertical_spacing": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "section_A"
+          ],
+          "reason": "Nove pontos laterais por face, sem cotas de espacamento vertical.",
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 775,
+            "x_end": 1068
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N11",
+            "elevation",
+            "stirrup_regions"
+          ],
+          "unit": "cm",
+          "derivation": "P308_direita=1084; x_fim=1084-16=1068; x_inicio=1068-293=775"
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N11"
+          ]
+        },
+        "end_dimension_before_P308_right_face": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N11"
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "mark": {
+          "value": "N12",
+          "classification": "explicit",
+          "sources": [
+            "N12"
+          ]
+        },
+        "written_callout": {
+          "value": "(PELE) N12 2x9 ?8 C=662",
+          "classification": "explicit",
+          "sources": [
+            "N12"
+          ]
+        },
+        "diameter": {
+          "value": 8,
+          "classification": "explicit",
+          "sources": [
+            "N12",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 662,
+          "classification": "explicit",
+          "sources": [
+            "N12"
+          ],
+          "unit": "cm"
+        },
+        "bars_per_face": {
+          "value": 9,
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "N12",
+            "office_skin"
+          ],
+          "reason": "Interpretacao documentada de 2x9 como nove barras em cada face lateral."
+        },
+        "total_quantity_per_position": {
+          "value": 18,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N12"
+          ],
+          "derivation": "2 x 9 = 18"
+        },
+        "longitudinal_region": {
+          "value": "Regiao entre P308 e P309",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N12",
+            "elevation"
+          ]
+        },
+        "vertical_spacing": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "section_A"
+          ],
+          "reason": "Nove pontos laterais por face, sem cotas de espacamento vertical.",
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 1060,
+            "x_end": 1722
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N12",
+            "elevation",
+            "stirrup_regions"
+          ],
+          "unit": "cm",
+          "derivation": "P309_esquerda=759+40+245+40+614=1698; x_fim=1698+24=1722; x_inicio=1722-662=1060"
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N12"
+          ]
+        },
+        "end_dimension_after_P309_left_face": {
+          "value": 24,
+          "classification": "explicit",
+          "sources": [
+            "N12"
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "mark": {
+          "value": "N13",
+          "classification": "explicit",
+          "sources": [
+            "N13"
+          ]
+        },
+        "written_callout": {
+          "value": "(PELE) N13 2x9 ?8 C=223",
+          "classification": "explicit",
+          "sources": [
+            "N13"
+          ]
+        },
+        "diameter": {
+          "value": 8,
+          "classification": "explicit",
+          "sources": [
+            "N13",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 223,
+          "classification": "explicit",
+          "sources": [
+            "N13"
+          ],
+          "unit": "cm"
+        },
+        "bars_per_face": {
+          "value": 9,
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "N13",
+            "office_skin"
+          ],
+          "reason": "Interpretacao documentada de 2x9 como nove barras em cada face lateral."
+        },
+        "total_quantity_per_position": {
+          "value": 18,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N13"
+          ],
+          "derivation": "2 x 9 = 18"
+        },
+        "longitudinal_region": {
+          "value": "Regiao de P309 ate a extremidade direita",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N13",
+            "elevation"
+          ]
+        },
+        "vertical_spacing": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "section_A"
+          ],
+          "reason": "Nove pontos laterais por face, sem cotas de espacamento vertical.",
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N13"
+          ],
+          "reason": "Sem posicao absoluta confiavel para ambas as extremidades a partir das cotas indicadas.",
+          "unit": "cm"
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N13"
+          ]
+        }
+      }
+    ],
+    "note": "As 18 barras sao a quantidade de cada posicao, com extensoes diferentes. Nao foram somadas como se todas atravessassem a mesma secao."
+  },
+  "stirrups": {
+    "regions": [
+      {
+        "id": "R1",
+        "span": "S1",
+        "mark": {
+          "value": "N9",
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "quantity": {
+          "value": 55,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "region_length": {
+          "value": 759,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 0,
+            "x_end": 759
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "id": "R2",
+        "span": "S2",
+        "mark": {
+          "value": "N9",
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "quantity": {
+          "value": 18,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "region_length": {
+          "value": 245,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 799,
+            "x_end": 1044
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "id": "R3",
+        "span": "S3",
+        "mark": {
+          "value": "N9",
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "quantity": {
+          "value": 44,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "region_length": {
+          "value": 614,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 1084,
+            "x_end": 1698
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "id": "R4",
+        "span": "S4",
+        "mark": {
+          "value": "N9",
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "quantity": {
+          "value": 15,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ]
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "region_length": {
+          "value": 202,
+          "classification": "explicit",
+          "sources": [
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 1738,
+            "x_end": 1940
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation",
+            "stirrup_regions"
+          ],
+          "unit": "cm"
+        }
+      }
+    ],
+    "mark": {
+      "value": "N9",
+      "classification": "explicit",
+      "sources": [
+        "N9_shape"
+      ]
+    },
+    "total_quantity": {
+      "value": 132,
+      "classification": "explicit",
+      "sources": [
+        "N9_shape"
+      ],
+      "reason": "O detalhe da forma escreve 132. As chamadas regionais sao 55,18,44,15 e foram mantidas separadas."
+    },
+    "diameter": {
+      "value": 5,
+      "classification": "explicit",
+      "sources": [
+        "N9_shape",
+        "units"
+      ],
+      "unit": "mm"
+    },
+    "length_per_piece": {
+      "value": 437,
+      "classification": "explicit",
+      "sources": [
+        "N9_shape"
+      ],
+      "unit": "cm"
+    },
+    "shape_dimensions": {
+      "value": [
+        14,
+        197
+      ],
+      "classification": "explicit",
+      "sources": [
+        "N9_shape"
+      ],
+      "unit": "cm"
+    },
+    "shape": {
+      "value": "Contorno retangular alongado, com fechamento inclinado superior.",
+      "classification": "graphically_interpreted",
+      "sources": [
+        "N9_shape"
+      ]
+    },
+    "vertical_legs_drawn": {
+      "value": 2,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "N9_shape",
+        "section_A"
+      ]
+    },
+    "first_and_last_stirrup_offsets": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "stirrup_regions"
+      ],
+      "reason": "Nao cotados; nao preenchidos a partir da diferenca entre comprimento e espacamentos.",
+      "unit": "cm"
+    },
+    "hook_dimensions": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "N9_shape"
+      ],
+      "reason": "Sem cotas isoladas de comprimento/angulo dos ganchos."
+    }
+  },
+  "anchorage_staples": {
+    "anchorage_staples_detailed": {
+      "value": true,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "N8",
+        "N8_elevation"
+      ],
+      "reason": "Forma em U e chamada especifica N8 na extremidade direita."
+    },
+    "positions": [
+      {
+        "mark": {
+          "value": "N8",
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ]
+        },
+        "written_callout": {
+          "value": "N8 2x1 ?10 C=213",
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ]
+        },
+        "quantity": {
+          "value": 2,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N8"
+          ],
+          "derivation": "2 x 1 = 2"
+        },
+        "diameter": {
+          "value": 10,
+          "classification": "explicit",
+          "sources": [
+            "N8",
+            "units"
+          ],
+          "unit": "mm"
+        },
+        "length_per_piece": {
+          "value": 213,
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ],
+          "unit": "cm"
+        },
+        "shape": {
+          "value": "Grampo em U deitado, aberto para a esquerda.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N8"
+          ]
+        },
+        "longitudinal_dimension": {
+          "value": 100,
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ],
+          "unit": "cm"
+        },
+        "closing_dimension": {
+          "value": 13,
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ],
+          "unit": "cm"
+        },
+        "region": {
+          "value": "Extremidade direita; chamada 2x1 ?10 junto a regiao superior da elevacao.",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N8",
+            "N8_elevation"
+          ]
+        },
+        "exact_layer_and_bar_anchored": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N8",
+            "N8_elevation"
+          ],
+          "reason": "A prancha nao individualiza por texto a camada de cada grampo nem sua associacao barra a barra. Nao foi usada a proximidade com o esquema da dobra de N4 para atribuir uma funcao de calculo."
+        },
+        "exact_longitudinal_coordinates": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N8"
+          ],
+          "reason": "A cota de 100 define a extensao da forma, mas nao fornece afastamento numerico ate a face do concreto.",
+          "unit": "cm"
+        }
+      }
+    ]
+  },
+  "indirect_supported_beams": [
+    {
+      "id": "IB1",
+      "supported_beam_exists": {
+        "value": true,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "indirect_1",
+          "office_supported_beams"
+        ]
+      },
+      "supported_beam_name": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "indirect_1"
+        ],
+        "reason": "Nome nao indicado. Sua confirmacao exigiria planta ou outra fonte geometrica; nenhuma foi utilizada."
+      },
+      "receiving_beam": "V502",
+      "span": "S1",
+      "position_description": {
+        "value": "No primeiro vao, antes de P307.",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "indirect_1",
+          "elevation"
+        ]
+      },
+      "exact_longitudinal_position": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "indirect_1"
+        ],
+        "reason": "Contorno localizado graficamente, sem abscissa cotada; nao medido por escala.",
+        "unit": "cm"
+      },
+      "suspension_reinforcement_detailed": {
+        "value": false,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "indirect_1",
+          "stirrup_regions",
+          "office_suspension"
+        ],
+        "reason": "Nao ha chamada ou concentracao de estribos especifica junto deste contorno. N9 ?5 c/14 permanece sem regiao local diferenciada."
+      },
+      "suspension_required_or_sufficient": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "office_suspension"
+        ],
+        "reason": "Nao avaliado: pertence a etapa de verificacao estrutural."
+      }
+    },
+    {
+      "id": "IB2",
+      "supported_beam_exists": {
+        "value": true,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "indirect_2",
+          "office_supported_beams"
+        ]
+      },
+      "supported_beam_name": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "indirect_2"
+        ],
+        "reason": "Nome nao indicado. Sua confirmacao exigiria planta ou outra fonte geometrica; nenhuma foi utilizada."
+      },
+      "receiving_beam": "V502",
+      "span": "S3",
+      "position_description": {
+        "value": "No terceiro vao, proximo e a direita de P308.",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "indirect_2",
+          "elevation"
+        ]
+      },
+      "exact_longitudinal_position": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "indirect_2"
+        ],
+        "reason": "Contorno localizado graficamente, sem abscissa cotada; nao medido por escala.",
+        "unit": "cm"
+      },
+      "suspension_reinforcement_detailed": {
+        "value": false,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "indirect_2",
+          "stirrup_regions",
+          "office_suspension"
+        ],
+        "reason": "Nao ha chamada ou concentracao de estribos especifica junto deste contorno. N9 ?5 c/14 permanece sem regiao local diferenciada."
+      },
+      "suspension_required_or_sufficient": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "office_suspension"
+        ],
+        "reason": "Nao avaliado: pertence a etapa de verificacao estrutural."
+      }
+    }
+  ],
+  "suspension_reinforcement_detailed_in_V502": {
+    "value": false,
+    "classification": "interpreted_by_office_standard",
+    "sources": [
+      "indirect_1",
+      "indirect_2",
+      "stirrup_regions",
+      "office_suspension"
+    ],
+    "reason": "Avaliada documentalmente em cada contorno: nenhuma concentracao ou chamada especifica de suspensao. Nao se conclui que suspensao seja desnecessaria."
+  },
+  "section_views": [
+    {
+      "label": {
+        "value": "Corte A",
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "location": {
+        "value": "Primeiro vao V548-P307, na superposicao grafica de N2 e N3.",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "elevation",
+          "N2",
+          "N3",
+          "section_A"
+        ]
+      },
+      "exact_abscissa": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "reason": "Sem cota da posicao do corte.",
+        "unit": "cm"
+      },
+      "upper_first_layer_quantity": {
+        "value": 3,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "upper_second_layer_quantity": {
+        "value": 1,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "upper_positions": {
+        "value": {
+          "first_layer": "N2",
+          "second_layer": "N3"
+        },
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A",
+          "N2",
+          "N3",
+          "elevation"
+        ],
+        "reason": "Associacao com as extensoes que cruzam A-A; os pontos nao sao individualmente rotulados no corte."
+      },
+      "lower_first_layer_quantity": {
+        "value": 4,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "lower_position": {
+        "value": "N6",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A",
+          "N6",
+          "elevation"
+        ]
+      },
+      "skin_points_per_face": {
+        "value": 9,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "skin_position_at_section": {
+        "value": "N10",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A",
+          "N10",
+          "elevation"
+        ]
+      },
+      "scope": {
+        "value": "Nao representa as regioes de N4, N5, N7 ou N8 na extremidade direita.",
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "section_A",
+          "office_sections"
+        ]
+      }
+    }
+  ],
+  "uncertainties": [
+    "Identificacao das duas vigas apoiadas e suas abscissas exatas nao estao escritas.",
+    "Nao foram atribu?dos vinculos de calculo, esforcos, necessidade ou suficiencia de armaduras.",
+    "Extremidades de N1, N4, N5, N6, N7, N8, N10 e N13 nao foram convertidas em coordenadas absolutas por adocao de cobrimentos ou afastamentos nao cotados.",
+    "Cobrimento local, dimensoes das projecoes laterais do corte e posicao exata de A-A nao cotados.",
+    "As interpretacoes de suspensao referem-se somente a armadura especifica detalhada na V502; nao abrangem a armadura da viga de apoio V548."
+  ],
+  "sources": {
+    "title": {
+      "page": 1,
+      "bbox_pdf": [
+        105,
+        48,
+        235,
+        82
+      ],
+      "description": "V502; 19/202."
+    },
+    "elevation": {
+      "page": 1,
+      "bbox_pdf": [
+        100,
+        132,
+        1240,
+        300
+      ],
+      "description": "Elevacao completa, apoios V548/P307/P308/P309, larguras 19/40/40/40, corte A-A e extremidade direita prolongada."
+    },
+    "stirrup_regions": {
+      "page": 1,
+      "bbox_pdf": [
+        115,
+        292,
+        1240,
+        325
+      ],
+      "description": "N9 55 ?5 C/14 (759); N9 18 ?5 C/14 (245); N9 44 ?5 C/14 (614); N9 15 ?5 C/14 (202)."
+    },
+    "N1": {
+      "page": 1,
+      "bbox_pdf": [
+        105,
+        335,
+        217,
+        372
+      ],
+      "description": "N1 2 ?10 C=185; horizontal 165 e dobra 20."
+    },
+    "N2": {
+      "page": 1,
+      "bbox_pdf": [
+        116,
+        378,
+        870,
+        419
+      ],
+      "description": "Cota inicial 101; N2 3 ?16 C=1200."
+    },
+    "N3": {
+      "page": 1,
+      "bbox_pdf": [
+        337,
+        420,
+        825,
+        455
+      ],
+      "description": "N3 1 ?16 C=833; (1 ? 2aCAM); cota 131 a direita da face direita de P308."
+    },
+    "N4": {
+      "page": 1,
+      "bbox_pdf": [
+        785,
+        345,
+        1235,
+        475
+      ],
+      "description": "N4 3 ?16 C=956; horizontal 764; dobra direita 192."
+    },
+    "N5": {
+      "page": 1,
+      "bbox_pdf": [
+        920,
+        382,
+        1235,
+        421
+      ],
+      "description": "N5 1 ?16 C=526; (1 ? 2aCAM)."
+    },
+    "N6": {
+      "page": 1,
+      "bbox_pdf": [
+        108,
+        615,
+        589,
+        657
+      ],
+      "description": "N6 4 ?10 C=852; horizontal 817; dobra esquerda 35."
+    },
+    "N7": {
+      "page": 1,
+      "bbox_pdf": [
+        550,
+        615,
+        1235,
+        657
+      ],
+      "description": "N7 4 ?12.5 C=1200; horizontal 1176; dobra direita 24; (1 ? 2aCAM)."
+    },
+    "N8": {
+      "page": 1,
+      "bbox_pdf": [
+        1110,
+        450,
+        1240,
+        485
+      ],
+      "description": "N8 2x1 ?10 C=213; forma em U aberto para a esquerda, cota longitudinal 100 e ligacao 13."
+    },
+    "N8_elevation": {
+      "page": 1,
+      "bbox_pdf": [
+        1110,
+        142,
+        1240,
+        175
+      ],
+      "description": "Chamada 2x1 ?10 junto da regiao superior na extremidade direita."
+    },
+    "N9_shape": {
+      "page": 1,
+      "bbox_pdf": [
+        1280,
+        385,
+        1390,
+        665
+      ],
+      "description": "N9 132 ?5 C=437; forma com cotas 14 e 197."
+    },
+    "N10": {
+      "page": 1,
+      "bbox_pdf": [
+        105,
+        565,
+        580,
+        611
+      ],
+      "description": "(PELE) N10 2x9 ?8 C=813; trecho 800 e retorno esquerdo 13."
+    },
+    "N11": {
+      "page": 1,
+      "bbox_pdf": [
+        555,
+        500,
+        738,
+        556
+      ],
+      "description": "(PELE) N11 2x9 ?8 C=293; cota 16 a esquerda da face direita de P308."
+    },
+    "N12": {
+      "page": 1,
+      "bbox_pdf": [
+        720,
+        560,
+        1110,
+        611
+      ],
+      "description": "(PELE) N12 2x9 ?8 C=662; cota 24 a direita da face esquerda de P309."
+    },
+    "N13": {
+      "page": 1,
+      "bbox_pdf": [
+        1085,
+        510,
+        1235,
+        557
+      ],
+      "description": "(PELE) N13 2x9 ?8 C=223; trecho apos P309."
+    },
+    "section_A": {
+      "page": 1,
+      "bbox_pdf": [
+        1270,
+        115,
+        1345,
+        390
+      ],
+      "description": "Corte A: 3 pontos superiores mais 1 em segunda fileira; 4 inferiores; 9 pontos de pele por face; projecoes laterais em alturas distintas."
+    },
+    "indirect_1": {
+      "page": 1,
+      "bbox_pdf": [
+        508,
+        154,
+        526,
+        214
+      ],
+      "description": "Primeiro contorno retangular tracejado: vao V548-P307, na regiao anterior a P307."
+    },
+    "indirect_2": {
+      "page": 1,
+      "bbox_pdf": [
+        746,
+        154,
+        764,
+        214
+      ],
+      "description": "Segundo contorno retangular tracejado: vao P308-P309, proximo de P308."
+    },
+    "units": {
+      "page": 1,
+      "bbox_pdf": [
+        2940,
+        48,
+        3258,
+        94
+      ],
+      "description": "Quadro de aco: BIT mm; COMPRIMENTO UNIT cm / TOTAL cm."
+    },
+    "general_units": {
+      "page": 1,
+      "bbox_pdf": [
+        2840,
+        1900,
+        3350,
+        1978
+      ],
+      "description": "MEDIDAS EM CENTIMETROS E NIVEIS EM METROS; VER NOTAS E DETALHES FOLHA 00."
+    },
+    "office_evidence": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "2 e 3",
+      "description": "Separacao de evidencia e classificacao longitudinal pela posicao grafica."
+    },
+    "office_layers": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "4",
+      "description": "Sem chamada adicional, primeira camada quando a representacao for compativel; descontar a quantidade explicitamente na segunda."
+    },
+    "office_skin": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "5",
+      "description": "Chamada PELE e 2x9: nove barras por face lateral."
+    },
+    "office_staples": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "6",
+      "description": "Representacao ou chamada especifica identifica grampo adicional."
+    },
+    "office_supported_beams": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "7",
+      "description": "Contorno retangular tracejado representa viga apoiada na viga detalhada; nome nao deve ser inventado."
+    },
+    "office_suspension": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "8.1 a 8.3 e 14",
+      "description": "Associar concentracao localizada de estribos ao apoio indireto individualmente; nao detalhado nao significa nao necessario."
+    },
+    "office_stirrups": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "9",
+      "description": "Preservar regioes e chamadas de estribos separadamente."
+    },
+    "office_sections": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "12",
+      "description": "Corte vale para a regiao onde foi indicado, nao para toda a viga."
+    },
+    "office_coordinates": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "13",
+      "description": "Coordenadas somente quando confiaveis por cotas e associacao grafica."
+    },
+    "review_procedure": {
+      "file": ".agents/skills/reinforcement-review/references/beam-review.md",
+      "section": "2.1, 11.1 e 16",
+      "description": "Separar o efetivamente detalhado da verificacao; seguir convencoes para apoios indiretos."
+    }
+  }
+}

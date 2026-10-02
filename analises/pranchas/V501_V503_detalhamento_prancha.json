@@ -1,0 +1,1872 @@
+{
+  "schema_version": "1.1",
+  "type": "beam_reinforcement_drawing_interpretation",
+  "scope": {
+    "group": "V501=V503",
+    "quantities": "por viga, a partir das chamadas locais",
+    "method": "Leitura visual manual da mesma prancha PDF e aplicacao das convencoes de referencia. Nao foi criado parser de PDF.",
+    "structural_checks_performed": false,
+    "tqs_result_files_used": false,
+    "drawing_only_data": true,
+    "references_used": [
+      "beam-drawing-convections.md",
+      "beam-review.md"
+    ],
+    "reference_scope": "Convencoes empregadas para interpretar; etapas de calculo, verificacao normativa e correcao do procedimento nao executadas."
+  },
+  "classification_legend": {
+    "explicit": "Escrita diretamente na prancha.",
+    "interpreted_graphically": "Associada pela representacao grafica; derivacoes aritmeticas de cotas sao identificadas separadamente em derivation.",
+    "interpreted_by_office_standard": "Conclusao obtida de convencao documentada do escritorio, com referencia ao item.",
+    "uncertain": "Nao resolvida pelo desenho nem pelas convencoes fornecidas."
+  },
+  "document": {
+    "name": "RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+    "page": 1,
+    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+    "page_size_pdf_points": [
+      3370,
+      2384
+    ],
+    "bbox_convention": "[left,top,right,bottom], pontos PDF, origem superior esquerda; caixas aproximadas para localizar evidencias."
+  },
+  "identification": {
+    "drawing_label": {
+      "value": "V501=V503",
+      "classification": "explicit",
+      "sources": [
+        "titulo"
+      ]
+    },
+    "beams": {
+      "value": [
+        "V501",
+        "V503"
+      ],
+      "classification": "explicit",
+      "sources": [
+        "titulo"
+      ]
+    },
+    "group_multiplier": {
+      "value": 2,
+      "classification": "explicit",
+      "sources": [
+        "quadro_grupo"
+      ],
+      "reason": "Quadro V501=V503 (X2)."
+    },
+    "same_detail_applies_to_each_beam": {
+      "value": true,
+      "classification": "interpreted_by_office_standard",
+      "sources": [
+        "titulo",
+        "conv_grupo"
+      ]
+    }
+  },
+  "section": {
+    "written_label": {
+      "value": "19/72",
+      "classification": "explicit",
+      "sources": [
+        "titulo"
+      ]
+    },
+    "width": {
+      "value": 19,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "titulo",
+        "corte_A"
+      ],
+      "unit": "cm"
+    },
+    "height": {
+      "value": 72,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "titulo",
+        "corte_A"
+      ],
+      "unit": "cm"
+    },
+    "shape": {
+      "value": "rectangular",
+      "classification": "interpreted_graphically",
+      "sources": [
+        "corte_A"
+      ]
+    },
+    "local_cover_dimension": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "corte_A"
+      ],
+      "unit": "cm",
+      "reason": "Nao ha cota de cobrimento no corte local."
+    }
+  },
+  "span": {
+    "number_of_spans_shown": {
+      "value": 1,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "elevacao"
+      ]
+    },
+    "clear_length": {
+      "value": 711,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "elevacao",
+        "distribuicao"
+      ],
+      "unit": "cm",
+      "reason": "Soma de tres regioes consecutivas que vao de uma face interna de apoio a outra; nao ha uma unica cota 711 escrita.",
+      "derivation": "537 + 72 + 102 = 711"
+    },
+    "axis_to_axis_length": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "elevacao"
+      ],
+      "unit": "cm",
+      "reason": "Nao cotado entre eixos; nao inferido a partir das dimensoes dos apoios."
+    },
+    "coordinate_system": {
+      "origin": {
+        "value": "face interna do apoio esquerdo",
+        "classification": "interpreted_graphically",
+        "sources": [
+          "elevacao",
+          "distribuicao"
+        ]
+      },
+      "positive_direction": "para a direita",
+      "unit": "cm"
+    },
+    "unlabelled_dashed_contours": {
+      "value": "Dois contornos verticais tracejados aparecem no trecho da elevacao.",
+      "classification": "interpreted_graphically",
+      "sources": [
+        "elevacao"
+      ]
+    },
+    "identity_or_structural_role_of_dashed_contours": {
+      "value": {
+        "role": "indirect_supported_beam",
+        "identities": null
+      },
+      "classification": "interpreted_by_office_standard",
+      "sources": [
+        "elevacao",
+        "conv_apoios_indiretos"
+      ],
+      "reason": "Papel conhecido pela convencao; nomes e coordenadas individuais nao determinados."
+    }
+  },
+  "supports": [
+    {
+      "side": "left",
+      "written_names": {
+        "value": [
+          "P2A",
+          "P2B"
+        ],
+        "classification": "explicit",
+        "sources": [
+          "elevacao"
+        ]
+      },
+      "dimension_shown": {
+        "value": 120,
+        "classification": "explicit",
+        "sources": [
+          "elevacao"
+        ],
+        "unit": "cm"
+      },
+      "individual_beam_to_support_mapping": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao",
+          "conv_apoios"
+        ],
+        "reason": "O par P2A/P2B e legivel, mas a prancha nao confirma qual nome pertence a V501 ou V503. Nao foi feita associacao por ordem."
+      },
+      "model_restraint": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao"
+        ],
+        "reason": "Condicao de vinculo nao declarada no detalhe."
+      }
+    },
+    {
+      "side": "right",
+      "written_names": {
+        "value": [
+          "P1A",
+          "P1B"
+        ],
+        "classification": "explicit",
+        "sources": [
+          "elevacao"
+        ]
+      },
+      "dimension_shown": {
+        "value": 142,
+        "classification": "explicit",
+        "sources": [
+          "elevacao"
+        ],
+        "unit": "cm"
+      },
+      "individual_beam_to_support_mapping": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao",
+          "conv_apoios"
+        ],
+        "reason": "O par P1A/P1B e legivel, mas a correspondencia individual nao esta confirmada."
+      },
+      "model_restraint": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao"
+        ],
+        "reason": "Condicao de vinculo nao declarada no detalhe."
+      }
+    }
+  ],
+  "longitudinal_reinforcement": {
+    "negative": [
+      {
+        "mark": {
+          "value": "N1",
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "bar_count": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N1",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 465,
+          "classification": "explicit",
+          "sources": [
+            "N1",
+            "unidades"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N1",
+            "elevacao"
+          ],
+          "reason": "Associacao da barra a sua linha na elevacao e posicao no conjunto, nao a bitola ou ordem no quadro de aco."
+        },
+        "reinforcement_group": {
+          "value": "negative",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N1",
+            "elevacao"
+          ],
+          "reason": "Classificacao grafica superior/negativa ou inferior/positiva; nenhum esforco foi inferido."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N1"
+          ],
+          "reason": "A barra detalhada e representada reta, sem dobras de extremidade."
+        },
+        "layers": [
+          {
+            "number": 1,
+            "bar_count": {
+              "value": 2,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N1",
+                "conv_camadas",
+                "corte_A"
+              ],
+              "reason": "Barras sem indicacao de camada adicional pertencem a primeira; descontada a quantidade explicitamente indicada na segunda camada."
+            }
+          }
+        ],
+        "explicit_second_layer_callout": {
+          "value": null,
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "N1",
+            "conv_camadas"
+          ],
+          "reason": "Ausencia de chamada adicional interpretada pelo padrao do escritorio."
+        },
+        "dimension_into_support": {
+          "side": {
+            "value": "left",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N1",
+              "elevacao"
+            ]
+          },
+          "length": {
+            "value": 62,
+            "classification": "explicit",
+            "sources": [
+              "N1"
+            ],
+            "unit": "cm"
+          },
+          "reference": {
+            "value": "face interna do apoio",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N1",
+              "elevacao"
+            ],
+            "reason": "Associacao da cota com a linha auxiliar que parte da face do apoio."
+          }
+        },
+        "longitudinal_extent": {
+          "value": {
+            "x_start": -62,
+            "x_end": 403
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N1",
+            "distribuicao",
+            "elevacao"
+          ],
+          "unit": "cm",
+          "reason": "Coordenadas derivadas, nao escritas como abscissas na prancha; origem na face interna do apoio esquerdo. Barras retas e tres intervalos consecutivos de estribos usados como referencias.",
+          "derivation": "x_inicio = -62; x_fim = -62 + 465 = 403"
+        },
+        "steel_designation": {
+          "value": "50A",
+          "classification": "explicit",
+          "sources": [
+            "quadro_grupo"
+          ],
+          "reason": "Designacao impressa no quadro; nao usada na classificacao superior/inferior."
+        }
+      },
+      {
+        "mark": {
+          "value": "N2",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "bar_count": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N2",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 260,
+          "classification": "explicit",
+          "sources": [
+            "N2",
+            "unidades"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N2",
+            "elevacao"
+          ],
+          "reason": "Associacao da barra a sua linha na elevacao e posicao no conjunto, nao a bitola ou ordem no quadro de aco."
+        },
+        "reinforcement_group": {
+          "value": "negative",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N2",
+            "elevacao"
+          ],
+          "reason": "Classificacao grafica superior/negativa ou inferior/positiva; nenhum esforco foi inferido."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N2"
+          ],
+          "reason": "A barra detalhada e representada reta, sem dobras de extremidade."
+        },
+        "layers": [
+          {
+            "number": 1,
+            "bar_count": {
+              "value": 1,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N2",
+                "conv_camadas"
+              ],
+              "reason": "Barras sem indicacao de camada adicional pertencem a primeira; descontada a quantidade explicitamente indicada na segunda camada."
+            }
+          },
+          {
+            "number": 2,
+            "bar_count": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N2"
+              ],
+              "reason": "Chamada literal (1 ? 2aCAM)."
+            }
+          }
+        ],
+        "explicit_second_layer_callout": {
+          "value": "(1 ? 2aCAM)",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "dimension_into_support": {
+          "side": {
+            "value": "left",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N2",
+              "elevacao"
+            ]
+          },
+          "length": {
+            "value": 62,
+            "classification": "explicit",
+            "sources": [
+              "N2"
+            ],
+            "unit": "cm"
+          },
+          "reference": {
+            "value": "face interna do apoio",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N2",
+              "elevacao"
+            ],
+            "reason": "Associacao da cota com a linha auxiliar que parte da face do apoio."
+          }
+        },
+        "longitudinal_extent": {
+          "value": {
+            "x_start": -62,
+            "x_end": 198
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N2",
+            "distribuicao",
+            "elevacao"
+          ],
+          "unit": "cm",
+          "reason": "Coordenadas derivadas, nao escritas como abscissas na prancha; origem na face interna do apoio esquerdo. Barras retas e tres intervalos consecutivos de estribos usados como referencias.",
+          "derivation": "x_inicio = -62; x_fim = -62 + 260 = 198"
+        },
+        "steel_designation": {
+          "value": "50A",
+          "classification": "explicit",
+          "sources": [
+            "quadro_grupo"
+          ],
+          "reason": "Designacao impressa no quadro; nao usada na classificacao superior/inferior."
+        }
+      },
+      {
+        "mark": {
+          "value": "N3",
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "bar_count": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "diameter": {
+          "value": 20,
+          "classification": "explicit",
+          "sources": [
+            "N3",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 485,
+          "classification": "explicit",
+          "sources": [
+            "N3",
+            "unidades"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N3",
+            "elevacao"
+          ],
+          "reason": "Associacao da barra a sua linha na elevacao e posicao no conjunto, nao a bitola ou ordem no quadro de aco."
+        },
+        "reinforcement_group": {
+          "value": "negative",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N3",
+            "elevacao"
+          ],
+          "reason": "Classificacao grafica superior/negativa ou inferior/positiva; nenhum esforco foi inferido."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N3"
+          ],
+          "reason": "A barra detalhada e representada reta, sem dobras de extremidade."
+        },
+        "layers": [
+          {
+            "number": 1,
+            "bar_count": {
+              "value": 2,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N3",
+                "conv_camadas",
+                "corte_A"
+              ],
+              "reason": "Barras sem indicacao de camada adicional pertencem a primeira; descontada a quantidade explicitamente indicada na segunda camada."
+            }
+          }
+        ],
+        "explicit_second_layer_callout": {
+          "value": null,
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "N3",
+            "conv_camadas"
+          ],
+          "reason": "Ausencia de chamada adicional interpretada pelo padrao do escritorio."
+        },
+        "dimension_into_support": {
+          "side": {
+            "value": "right",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N3",
+              "elevacao"
+            ]
+          },
+          "length": {
+            "value": 80,
+            "classification": "explicit",
+            "sources": [
+              "N3"
+            ],
+            "unit": "cm"
+          },
+          "reference": {
+            "value": "face interna do apoio",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N3",
+              "elevacao"
+            ],
+            "reason": "Associacao da cota com a linha auxiliar que parte da face do apoio."
+          }
+        },
+        "longitudinal_extent": {
+          "value": {
+            "x_start": 306,
+            "x_end": 791
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N3",
+            "distribuicao",
+            "elevacao"
+          ],
+          "unit": "cm",
+          "reason": "Coordenadas derivadas, nao escritas como abscissas na prancha; origem na face interna do apoio esquerdo. Barras retas e tres intervalos consecutivos de estribos usados como referencias.",
+          "derivation": "x_fim = 711 + 80 = 791; x_inicio = 791 - 485 = 306"
+        },
+        "steel_designation": {
+          "value": "50A",
+          "classification": "explicit",
+          "sources": [
+            "quadro_grupo"
+          ],
+          "reason": "Designacao impressa no quadro; nao usada na classificacao superior/inferior."
+        }
+      },
+      {
+        "mark": {
+          "value": "N4",
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ]
+        },
+        "bar_count": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ]
+        },
+        "diameter": {
+          "value": 20,
+          "classification": "explicit",
+          "sources": [
+            "N4",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 301,
+          "classification": "explicit",
+          "sources": [
+            "N4",
+            "unidades"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N4",
+            "elevacao"
+          ],
+          "reason": "Associacao da barra a sua linha na elevacao e posicao no conjunto, nao a bitola ou ordem no quadro de aco."
+        },
+        "reinforcement_group": {
+          "value": "negative",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N4",
+            "elevacao"
+          ],
+          "reason": "Classificacao grafica superior/negativa ou inferior/positiva; nenhum esforco foi inferido."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N4"
+          ],
+          "reason": "A barra detalhada e representada reta, sem dobras de extremidade."
+        },
+        "layers": [
+          {
+            "number": 1,
+            "bar_count": {
+              "value": 1,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N4",
+                "conv_camadas"
+              ],
+              "reason": "Barras sem indicacao de camada adicional pertencem a primeira; descontada a quantidade explicitamente indicada na segunda camada."
+            }
+          },
+          {
+            "number": 2,
+            "bar_count": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N4"
+              ],
+              "reason": "Chamada literal (1 ? 2aCAM)."
+            }
+          }
+        ],
+        "explicit_second_layer_callout": {
+          "value": "(1 ? 2aCAM)",
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ]
+        },
+        "dimension_into_support": {
+          "side": {
+            "value": "right",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N4",
+              "elevacao"
+            ]
+          },
+          "length": {
+            "value": 78,
+            "classification": "explicit",
+            "sources": [
+              "N4"
+            ],
+            "unit": "cm"
+          },
+          "reference": {
+            "value": "face interna do apoio",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N4",
+              "elevacao"
+            ],
+            "reason": "Associacao da cota com a linha auxiliar que parte da face do apoio."
+          }
+        },
+        "longitudinal_extent": {
+          "value": {
+            "x_start": 488,
+            "x_end": 789
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N4",
+            "distribuicao",
+            "elevacao"
+          ],
+          "unit": "cm",
+          "reason": "Coordenadas derivadas, nao escritas como abscissas na prancha; origem na face interna do apoio esquerdo. Barras retas e tres intervalos consecutivos de estribos usados como referencias.",
+          "derivation": "x_fim = 711 + 78 = 789; x_inicio = 789 - 301 = 488"
+        },
+        "steel_designation": {
+          "value": "50A",
+          "classification": "explicit",
+          "sources": [
+            "quadro_grupo"
+          ],
+          "reason": "Designacao impressa no quadro; nao usada na classificacao superior/inferior."
+        }
+      }
+    ],
+    "positive": [
+      {
+        "mark": {
+          "value": "N5",
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "bar_count": {
+          "value": 4,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "diameter": {
+          "value": 12.5,
+          "classification": "explicit",
+          "sources": [
+            "N5",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 815,
+          "classification": "explicit",
+          "sources": [
+            "N5",
+            "unidades"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "lower",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N5",
+            "elevacao"
+          ],
+          "reason": "Associacao da barra a sua linha na elevacao e posicao no conjunto, nao a bitola ou ordem no quadro de aco."
+        },
+        "reinforcement_group": {
+          "value": "positive",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N5",
+            "elevacao"
+          ],
+          "reason": "Classificacao grafica superior/negativa ou inferior/positiva; nenhum esforco foi inferido."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N5"
+          ],
+          "reason": "A barra detalhada e representada reta, sem dobras de extremidade."
+        },
+        "layers": [
+          {
+            "number": 1,
+            "bar_count": {
+              "value": 3,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N5",
+                "conv_camadas",
+                "corte_A"
+              ],
+              "reason": "Barras sem indicacao de camada adicional pertencem a primeira; descontada a quantidade explicitamente indicada na segunda camada."
+            }
+          },
+          {
+            "number": 2,
+            "bar_count": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N5"
+              ],
+              "reason": "Chamada literal (1 ? 2aCAM)."
+            }
+          }
+        ],
+        "explicit_second_layer_callout": {
+          "value": "(1 ? 2aCAM)",
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "dimension_into_support": {
+          "side": {
+            "value": "right",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N5",
+              "elevacao"
+            ]
+          },
+          "length": {
+            "value": 51,
+            "classification": "explicit",
+            "sources": [
+              "N5"
+            ],
+            "unit": "cm"
+          },
+          "reference": {
+            "value": "face interna do apoio",
+            "classification": "interpreted_graphically",
+            "sources": [
+              "N5",
+              "elevacao"
+            ],
+            "reason": "Associacao da cota com a linha auxiliar que parte da face do apoio."
+          }
+        },
+        "longitudinal_extent": {
+          "value": {
+            "x_start": -53,
+            "x_end": 762
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "N5",
+            "distribuicao",
+            "elevacao"
+          ],
+          "unit": "cm",
+          "reason": "Coordenadas derivadas, nao escritas como abscissas na prancha; origem na face interna do apoio esquerdo. Barras retas e tres intervalos consecutivos de estribos usados como referencias.",
+          "derivation": "x_fim = 711 + 51 = 762; x_inicio = 762 - 815 = -53"
+        },
+        "steel_designation": {
+          "value": "50A",
+          "classification": "explicit",
+          "sources": [
+            "quadro_grupo"
+          ],
+          "reason": "Designacao impressa no quadro; nao usada na classificacao superior/inferior."
+        }
+      }
+    ]
+  },
+  "skin_reinforcement": {
+    "skin_reinforcement_detailed": {
+      "value": true,
+      "classification": "explicit",
+      "sources": [
+        "N8"
+      ],
+      "reason": "Chamada explicita (PELE)."
+    },
+    "mark": {
+      "value": "N8",
+      "classification": "explicit",
+      "sources": [
+        "N8"
+      ]
+    },
+    "written_callout": {
+      "value": "N8 2x3 ?8 C=760 (PELE)",
+      "classification": "explicit",
+      "sources": [
+        "N8"
+      ]
+    },
+    "diameter": {
+      "value": 8,
+      "classification": "explicit",
+      "sources": [
+        "N8",
+        "unidades"
+      ],
+      "unit": "mm"
+    },
+    "length_per_bar": {
+      "value": 760,
+      "classification": "explicit",
+      "sources": [
+        "N8"
+      ],
+      "unit": "cm"
+    },
+    "bars_per_side": {
+      "value": 3,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "N8",
+        "corte_A"
+      ],
+      "reason": "Chamada 2x3 associada as duas faces laterais; tres pontos laterais intermediarios em cada lado do corte."
+    },
+    "total_bar_count_per_beam": {
+      "value": 6,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "N8",
+        "corte_A"
+      ],
+      "derivation": "2 faces x 3 barras = 6 barras"
+    },
+    "left_support_dimension": {
+      "value": 24,
+      "classification": "explicit",
+      "sources": [
+        "N8"
+      ],
+      "unit": "cm"
+    },
+    "longitudinal_extent": {
+      "value": {
+        "x_start": -24,
+        "x_end": 736
+      },
+      "classification": "interpreted_graphically",
+      "sources": [
+        "N8",
+        "elevacao",
+        "distribuicao"
+      ],
+      "unit": "cm",
+      "reason": "Coordenadas derivadas das cotas, com origem na face interna esquerda.",
+      "derivation": "x_inicio=-24; x_fim=-24+760=736"
+    },
+    "vertical_spacing": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "corte_A"
+      ],
+      "unit": "cm",
+      "reason": "Posicoes laterais visiveis, mas sem cotas verticais de espacamento."
+    },
+    "shape": {
+      "value": "straight",
+      "classification": "interpreted_graphically",
+      "sources": [
+        "N8"
+      ]
+    },
+    "steel_designation": {
+      "value": "50A",
+      "classification": "explicit",
+      "sources": [
+        "quadro_grupo"
+      ]
+    }
+  },
+  "stirrups": {
+    "regions": [
+      {
+        "id": "R1",
+        "mark": {
+          "value": "N6",
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ]
+        },
+        "quantity": {
+          "value": 39,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ]
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ],
+          "unit": "cm"
+        },
+        "region_length": {
+          "value": 537,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 0,
+            "x_end": 537
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "elevacao",
+            "distribuicao"
+          ],
+          "unit": "cm",
+          "derivation": "Primeira regiao inicia na face interna esquerda."
+        }
+      },
+      {
+        "id": "R2",
+        "mark": {
+          "value": "N7",
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ]
+        },
+        "quantity": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ]
+        },
+        "diameter": {
+          "value": 6.3,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 15,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ],
+          "unit": "cm"
+        },
+        "region_length": {
+          "value": 72,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 537,
+            "x_end": 609
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "distribuicao"
+          ],
+          "unit": "cm",
+          "derivation": "A seta da chamada N7 aponta ao intervalo intermediario; fim=537+72=609."
+        },
+        "function": {
+          "value": "suspension",
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "distribuicao",
+            "elevacao",
+            "associacao_N7_contorno",
+            "conv_suspensao"
+          ],
+          "reason": "Correspondencia espacial documentada entre regiao N7 e contorno IB1; nao baseada na diferenca de bitola ou espacamento."
+        },
+        "indirect_support": {
+          "value": "IB1",
+          "classification": "interpreted_by_office_standard",
+          "sources": [
+            "distribuicao",
+            "elevacao",
+            "associacao_N7_contorno",
+            "conv_suspensao"
+          ]
+        }
+      },
+      {
+        "id": "R3",
+        "mark": {
+          "value": "N6",
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ]
+        },
+        "quantity": {
+          "value": 8,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ]
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ],
+          "unit": "cm"
+        },
+        "region_length": {
+          "value": 102,
+          "classification": "explicit",
+          "sources": [
+            "distribuicao"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 609,
+            "x_end": 711
+          },
+          "classification": "interpreted_graphically",
+          "sources": [
+            "elevacao",
+            "distribuicao"
+          ],
+          "unit": "cm",
+          "derivation": "Inicio=537+72=609; fim=609+102=711, face interna direita."
+        }
+      }
+    ],
+    "positions": [
+      {
+        "mark": {
+          "value": "N6",
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos"
+          ]
+        },
+        "quantity_per_beam": {
+          "value": 47,
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos"
+          ],
+          "reason": "Tambem ha 39 e 8 nas chamadas regionais; as regioes permanecem separadas."
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "length_per_piece": {
+          "value": 177,
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos"
+          ],
+          "unit": "cm"
+        },
+        "steel_designation": {
+          "value": "60B",
+          "classification": "explicit",
+          "sources": [
+            "quadro_grupo"
+          ]
+        }
+      },
+      {
+        "mark": {
+          "value": "N7",
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos"
+          ]
+        },
+        "quantity_per_beam": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos"
+          ]
+        },
+        "diameter": {
+          "value": 6.3,
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos",
+            "unidades"
+          ],
+          "unit": "mm"
+        },
+        "length_per_piece": {
+          "value": 178,
+          "classification": "explicit",
+          "sources": [
+            "forma_estribos"
+          ],
+          "unit": "cm"
+        },
+        "steel_designation": {
+          "value": "50A",
+          "classification": "explicit",
+          "sources": [
+            "quadro_grupo"
+          ]
+        }
+      }
+    ],
+    "shape_dimensions_shown": {
+      "value": [
+        14,
+        67
+      ],
+      "classification": "explicit",
+      "sources": [
+        "forma_estribos"
+      ],
+      "unit": "cm"
+    },
+    "shape": {
+      "value": "Contorno aproximadamente retangular com fechamento inclinado na parte superior.",
+      "classification": "interpreted_graphically",
+      "sources": [
+        "forma_estribos"
+      ]
+    },
+    "vertical_legs_drawn": {
+      "value": 2,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "forma_estribos",
+        "corte_A"
+      ],
+      "reason": "Contagem dos dois segmentos verticais laterais representados; nao e verificacao de ramos resistentes."
+    },
+    "first_last_stirrup_offsets": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "distribuicao"
+      ],
+      "unit": "cm",
+      "reason": "Nao cotados; nao calculados pela diferenca entre quantidade, espacamento e comprimento regional."
+    },
+    "hook_length_or_angle": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "forma_estribos"
+      ],
+      "reason": "Nao cotados individualmente."
+    }
+  },
+  "sections": [
+    {
+      "label": {
+        "value": "Corte A",
+        "classification": "explicit",
+        "sources": [
+          "corte_A"
+        ]
+      },
+      "location": {
+        "value": "Trecho de superposicao das barras superiores N1 e N3; fora das extensoes locais de N2 e N4.",
+        "classification": "interpreted_graphically",
+        "sources": [
+          "elevacao",
+          "N1",
+          "N2",
+          "N3",
+          "N4",
+          "corte_A"
+        ]
+      },
+      "exact_abscissa": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao"
+        ],
+        "unit": "cm",
+        "reason": "A posicao do corte e grafica, sem abscissa cotada."
+      },
+      "upper_first_row_bars": {
+        "value": 4,
+        "classification": "interpreted_graphically",
+        "sources": [
+          "corte_A"
+        ]
+      },
+      "upper_bar_association": {
+        "value": {
+          "N1": 2,
+          "N3": 2
+        },
+        "classification": "interpreted_graphically",
+        "sources": [
+          "N1",
+          "N3",
+          "elevacao",
+          "corte_A"
+        ],
+        "reason": "Associacao com as barras que cruzam a secao A-A; os pontos do corte nao sao individualmente rotulados."
+      },
+      "lower_first_row_bars": {
+        "value": 3,
+        "classification": "interpreted_graphically",
+        "sources": [
+          "corte_A"
+        ]
+      },
+      "lower_second_row_bars": {
+        "value": 1,
+        "classification": "interpreted_graphically",
+        "sources": [
+          "corte_A"
+        ]
+      },
+      "lower_bar_association": {
+        "value": "N5",
+        "classification": "interpreted_graphically",
+        "sources": [
+          "N5",
+          "corte_A"
+        ]
+      },
+      "skin_points_per_side": {
+        "value": 3,
+        "classification": "interpreted_graphically",
+        "sources": [
+          "N8",
+          "corte_A"
+        ]
+      },
+      "scope_limit": {
+        "value": "Este corte nao representa as regioes extremas com N2 e N4; nao estendido a toda a viga.",
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "corte_A",
+          "conv_cortes"
+        ]
+      }
+    }
+  ],
+  "special_details": {
+    "anchorage_staples_detailed": {
+      "value": false,
+      "classification": "interpreted_by_office_standard",
+      "sources": [
+        "elevacao",
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "conv_grampos"
+      ],
+      "reason": "Nao ha chamada nem representacao de grampo adicional no detalhe do grupo; nao se conclui que seja desnecessario."
+    },
+    "suspension_reinforcement_explicitly_named": {
+      "value": false,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "distribuicao",
+        "forma_estribos"
+      ],
+      "reason": "Nenhuma chamada local usa a identificacao suspensao."
+    },
+    "suspension_reinforcement_detailed": {
+      "value": true,
+      "classification": "interpreted_by_office_standard",
+      "sources": [
+        "distribuicao",
+        "elevacao",
+        "associacao_N7_contorno",
+        "conv_suspensao"
+      ]
+    },
+    "N7_local_role": {
+      "value": "Armadura de suspensao associada ao apoio indireto IB1.",
+      "classification": "interpreted_by_office_standard",
+      "sources": [
+        "distribuicao",
+        "elevacao",
+        "associacao_N7_contorno",
+        "conv_suspensao"
+      ]
+    },
+    "longitudinal_end_bends_drawn": {
+      "value": false,
+      "classification": "interpreted_graphically",
+      "sources": [
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "reason": "Todas as formas longitudinais deste grupo sao desenhadas retas."
+    }
+  },
+  "uncertainties": [
+    "Correspondencia individual dos pares de apoios com V501 e V503 nao confirmada apenas pela ordem dos nomes.",
+    "Identidade dos dois contornos tracejados no interior da elevacao nao fornecida.",
+    "Abscissa exata do corte, cobrimento local, afastamentos do primeiro/ultimo estribo e detalhes dos ganchos nao cotados.",
+    "711 cm e as coordenadas longitudinais sao derivacoes aritmeticas de cotas e associacoes graficas, nao cotas escritas literalmente.",
+    "Coordenadas e largura dos dois apoios indiretos nao determinadas; o intervalo N7 nao e a largura da viga apoiada.",
+    "Existencia de suspensao no outro contorno (IB2) nao determinada."
+  ],
+  "sources": {
+    "titulo": {
+      "page": 1,
+      "bbox_pdf": [
+        1450,
+        60,
+        1630,
+        90
+      ],
+      "description": "V501=V503; 19/72."
+    },
+    "elevacao": {
+      "page": 1,
+      "bbox_pdf": [
+        1445,
+        100,
+        2030,
+        235
+      ],
+      "description": "Elevacao, apoios P2A/P2B e P1A/P1B, dimensoes 120 e 142, marca A-A e barras."
+    },
+    "distribuicao": {
+      "page": 1,
+      "bbox_pdf": [
+        1510,
+        237,
+        1935,
+        280
+      ],
+      "description": "Tres intervalos consecutivos: N6 39 ?5 C/14 (537), N7 5 ?6.3 C/15 (72), N6 8 ?5 C/14 (102)."
+    },
+    "N1": {
+      "page": 1,
+      "bbox_pdf": [
+        1480,
+        280,
+        1760,
+        306
+      ],
+      "description": "62; N1 2 ?16 C=465; barra reta superior esquerda."
+    },
+    "N2": {
+      "page": 1,
+      "bbox_pdf": [
+        1480,
+        312,
+        1645,
+        344
+      ],
+      "description": "62; N2 2 ?16 C=260; (1 ? 2aCAM)."
+    },
+    "N3": {
+      "page": 1,
+      "bbox_pdf": [
+        1690,
+        310,
+        1980,
+        342
+      ],
+      "description": "80; N3 2 ?20 C=485; barra reta superior direita."
+    },
+    "N4": {
+      "page": 1,
+      "bbox_pdf": [
+        1790,
+        343,
+        1980,
+        380
+      ],
+      "description": "78; N4 2 ?20 C=301; (1 ? 2aCAM)."
+    },
+    "N8": {
+      "page": 1,
+      "bbox_pdf": [
+        1500,
+        391,
+        1945,
+        440
+      ],
+      "description": "24; (PELE) N8 2x3 ?8 C=760; representacao longitudinal lateral."
+    },
+    "N5": {
+      "page": 1,
+      "bbox_pdf": [
+        1485,
+        455,
+        1965,
+        491
+      ],
+      "description": "51; N5 4 ?12.5 C=815; (1 ? 2aCAM)."
+    },
+    "corte_A": {
+      "page": 1,
+      "bbox_pdf": [
+        2058,
+        125,
+        2110,
+        245
+      ],
+      "description": "Corte A: quatro pontos superiores, tres laterais em cada face, tres inferiores e um acima da fileira inferior."
+    },
+    "forma_estribos": {
+      "page": 1,
+      "bbox_pdf": [
+        2030,
+        251,
+        2130,
+        387
+      ],
+      "description": "Forma com cotas 14 e 67; N6 47 ?5 C=177; N7 5 ?6.3 C=178."
+    },
+    "quadro_grupo": {
+      "page": 1,
+      "bbox_pdf": [
+        2940,
+        90,
+        3258,
+        185
+      ],
+      "description": "V501=V503 (X2), quadro de aco. Utilizado apenas para identificar agrupamento e designacoes de aco, nao para determinar face ou quantidade por viga."
+    },
+    "unidades": {
+      "page": 1,
+      "bbox_pdf": [
+        2940,
+        48,
+        3258,
+        94
+      ],
+      "description": "BIT em mm; COMPRIMENTO em cm."
+    },
+    "unidades_gerais": {
+      "page": 1,
+      "bbox_pdf": [
+        2840,
+        1900,
+        3350,
+        1978
+      ],
+      "description": "Medidas em centimetros e niveis em metros; remissao a folha 00."
+    },
+    "conv_classificacao": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "2 e 3",
+      "description": "Classificacoes de evidencia e leitura das armaduras por posicao grafica."
+    },
+    "conv_camadas": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "4",
+      "description": "Sem indicacao de camada adicional, adotar primeira camada se compativel com representacao e corte."
+    },
+    "conv_pele": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "6",
+      "description": "Chamada e representacao lateral identificam armadura de pele."
+    },
+    "conv_grampos": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "7",
+      "description": "Sem representacao ou chamada especifica, grampos adicionais nao estao detalhados."
+    },
+    "conv_suspensao": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "9.1 e 9.2",
+      "description": "Associacao espacial entre regiao localizada e contorno da viga apoiada identifica suspensao; nao inferir pela bitola/espacamento."
+    },
+    "conv_estribos": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "10",
+      "description": "Manter separadas as regioes de distribuicao."
+    },
+    "conv_apoios": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "11",
+      "description": "Nao associar automaticamente apoio a viga agrupada pela ordem dos nomes."
+    },
+    "conv_grupo": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "13",
+      "description": "Quantidades do quadro X2 referem-se ao grupo; priorizar chamadas locais para cada viga."
+    },
+    "conv_cortes": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "14",
+      "description": "Nao estender um corte a todas as regioes quando a armadura varia."
+    },
+    "procedimento": {
+      "file": ".agents/skills/reinforcement-review/references/beam-review.md",
+      "section": "2.1 e 16",
+      "description": "Identificar o efetivamente detalhado e separar leitura documental de verificacao."
+    },
+    "conv_apoios_indiretos": {
+      "file": ".agents/skills/reinforcement-review/references/beam-drawing-convections.md",
+      "section": "8",
+      "description": "Contornos retangulares verticais tracejados representam vigas apoiadas na viga detalhada."
+    },
+    "associacao_N7_contorno": {
+      "page": 1,
+      "related_sources": [
+        "elevacao",
+        "distribuicao"
+      ],
+      "description": "Associacao por seta da regiao N7 com o intervalo localizado proximo ao contorno tracejado, ja registrada em special_details; interpretacao confirmada pelo usuario nesta revisao. IB1 designa esse contorno, sem indicar ordem esquerda/direita."
+    }
+  },
+  "indirect_supported_beams": [
+    {
+      "id": "IB1",
+      "receiving_beam": "V501=V503",
+      "span": "S1",
+      "role": {
+        "value": "indirect_supported_beam",
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos"
+        ]
+      },
+      "supported_beam_name": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos"
+        ]
+      },
+      "exact_longitudinal_position": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao"
+        ],
+        "unit": "cm"
+      },
+      "approximate_extent": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao"
+        ],
+        "unit": "cm"
+      },
+      "position_description": {
+        "value": "Contorno associado espacialmente a regiao N7.",
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos",
+          "associacao_N7_contorno",
+          "conv_suspensao"
+        ]
+      },
+      "suspension_reinforcement_detailed": {
+        "value": true,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos",
+          "associacao_N7_contorno",
+          "conv_suspensao"
+        ]
+      },
+      "suspension_marks": {
+        "value": [
+          "N7"
+        ],
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos",
+          "associacao_N7_contorno",
+          "conv_suspensao"
+        ]
+      }
+    },
+    {
+      "id": "IB2",
+      "receiving_beam": "V501=V503",
+      "span": "S1",
+      "role": {
+        "value": "indirect_supported_beam",
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos"
+        ]
+      },
+      "supported_beam_name": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos"
+        ]
+      },
+      "exact_longitudinal_position": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao"
+        ],
+        "unit": "cm"
+      },
+      "approximate_extent": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao"
+        ],
+        "unit": "cm"
+      },
+      "position_description": {
+        "value": "Outro contorno tracejado; ordem longitudinal nao determinada.",
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos"
+        ]
+      },
+      "suspension_reinforcement_detailed": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos"
+        ]
+      },
+      "suspension_marks": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevacao",
+          "conv_apoios_indiretos"
+        ]
+      }
+    }
+  ],
+  "interpretation_revisions": [
+    {
+      "date": "2026-10-02",
+      "previous_sha256": "9cf8e64c1e5366e4390c03f7686c33c7de47a53ccc6fe445250bf55d65cea539",
+      "description": "Aplicacao das convencoes 8 e 9 confirmadas pelo usuario: dois apoios indiretos e N7 associado espacialmente a IB1; sem nova leitura PDF ou verificacao estrutural."
+    }
+  ]
+}

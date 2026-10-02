@@ -1,0 +1,646 @@
+{
+  "schema_version": "1.0",
+  "model_type": "longitudinal_beam_detail",
+  "document_model": "V502_detalhamento_prancha.json",
+  "conventions": {
+    "length_unit": "cm",
+    "diameter_unit": "mm",
+    "layers": "Indice 0 = primeira camada; [0,1] = uma barra apenas na segunda.",
+    "intervals": "Extensao longitudinal fisica documentada; comprimento desenvolvido nao substitui a projecao em x.",
+    "geometry_basis": "Geometria ja interpretada no documental; nao reconstruida a partir de estribos."
+  },
+  "beam": {
+    "source": {
+      "document_model": "V502_detalhamento_prancha.json",
+      "json_pointer": "/identification"
+    },
+    "id": "V502",
+    "grouped": false
+  },
+  "coordinate_system": {
+    "origin": "face direita de V548",
+    "positive_direction": "para a direita",
+    "unit": "cm",
+    "type": "derived_from_drawing_dimensions",
+    "source": {
+      "document_model": "V502_detalhamento_prancha.json",
+      "json_pointer": "/geometry/coordinate_system"
+    }
+  },
+  "section": {
+    "source": {
+      "document_model": "V502_detalhamento_prancha.json",
+      "json_pointer": "/section"
+    },
+    "width_cm": 19,
+    "height_cm": 202,
+    "cover_cm": null,
+    "shape": "Alma retangular alta, com projecoes laterais em niveis distintos no Corte A.",
+    "lateral_projections_dimensions": null
+  },
+  "supports": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/supports/0"
+      },
+      "id": "V548",
+      "type": null,
+      "width_cm": 19,
+      "restraint": null,
+      "x_left_cm": -19,
+      "x_right_cm": 0
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/supports/1"
+      },
+      "id": "P307",
+      "type": null,
+      "width_cm": 40,
+      "restraint": null,
+      "x_left_cm": 759,
+      "x_right_cm": 799
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/supports/2"
+      },
+      "id": "P308",
+      "type": null,
+      "width_cm": 40,
+      "restraint": null,
+      "x_left_cm": 1044,
+      "x_right_cm": 1084
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/supports/3"
+      },
+      "id": "P309",
+      "type": null,
+      "width_cm": 40,
+      "restraint": null,
+      "x_left_cm": 1698,
+      "x_right_cm": 1738
+    }
+  ],
+  "spans": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/spans_and_overhang/0"
+      },
+      "id": "S1",
+      "left_support": "V548",
+      "right_support": "P307",
+      "clear_length_cm": 759,
+      "x_start_cm": 0,
+      "x_end_cm": 759
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/spans_and_overhang/1"
+      },
+      "id": "S2",
+      "left_support": "P307",
+      "right_support": "P308",
+      "clear_length_cm": 245,
+      "x_start_cm": 799,
+      "x_end_cm": 1044
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/spans_and_overhang/2"
+      },
+      "id": "S3",
+      "left_support": "P308",
+      "right_support": "P309",
+      "clear_length_cm": 614,
+      "x_start_cm": 1084,
+      "x_end_cm": 1698
+    }
+  ],
+  "overhangs": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/geometry/spans_and_overhang/3"
+      },
+      "id": "S4",
+      "left_support": "P309",
+      "right_support": null,
+      "clear_length_cm": 202,
+      "x_start_cm": 1738,
+      "x_end_cm": 1940
+    }
+  ],
+  "longitudinal_reinforcement": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/0"
+      },
+      "mark": "N1",
+      "function": "negative",
+      "bars": 2,
+      "diameter_mm": 10,
+      "length_cm": 185,
+      "shape": "single_end_bend",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "layers": [
+        2
+      ],
+      "face": "upper",
+      "horizontal_length_cm": 165,
+      "end_bend": {
+        "side": "left",
+        "direction": "down",
+        "length_cm": 20
+      }
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/1"
+      },
+      "mark": "N2",
+      "function": "negative",
+      "bars": 3,
+      "diameter_mm": 16,
+      "length_cm": 1200,
+      "shape": "straight",
+      "x_start_cm": 101,
+      "x_end_cm": 1301,
+      "layers": [
+        3
+      ],
+      "face": "upper",
+      "horizontal_length_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/2"
+      },
+      "mark": "N3",
+      "function": "negative",
+      "bars": 1,
+      "diameter_mm": 16,
+      "length_cm": 833,
+      "shape": "straight",
+      "x_start_cm": 382,
+      "x_end_cm": 1215,
+      "layers": [
+        0,
+        1
+      ],
+      "face": "upper",
+      "horizontal_length_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/3"
+      },
+      "mark": "N4",
+      "function": "negative",
+      "bars": 3,
+      "diameter_mm": 16,
+      "length_cm": 956,
+      "shape": "single_end_bend",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "layers": [
+        3
+      ],
+      "face": "upper",
+      "horizontal_length_cm": 764,
+      "end_bend": {
+        "side": "right",
+        "direction": "down",
+        "length_cm": 192
+      }
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/4"
+      },
+      "mark": "N5",
+      "function": "negative",
+      "bars": 1,
+      "diameter_mm": 16,
+      "length_cm": 526,
+      "shape": "straight",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "layers": [
+        0,
+        1
+      ],
+      "face": "upper",
+      "horizontal_length_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/positive/0"
+      },
+      "mark": "N6",
+      "function": "positive",
+      "bars": 4,
+      "diameter_mm": 10,
+      "length_cm": 852,
+      "shape": "single_end_bend",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "layers": [
+        4
+      ],
+      "face": "lower",
+      "horizontal_length_cm": 817,
+      "end_bend": {
+        "side": "left",
+        "direction": "up",
+        "length_cm": 35
+      }
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/positive/1"
+      },
+      "mark": "N7",
+      "function": "positive",
+      "bars": 4,
+      "diameter_mm": 12.5,
+      "length_cm": 1200,
+      "shape": "single_end_bend",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "layers": [
+        3,
+        1
+      ],
+      "face": "lower",
+      "horizontal_length_cm": 1176,
+      "end_bend": {
+        "side": "right",
+        "direction": "up",
+        "length_cm": 24
+      }
+    }
+  ],
+  "stirrup_regions": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/regions/0"
+      },
+      "id": "R1",
+      "mark": "N9",
+      "function": null,
+      "diameter_mm": 5,
+      "spacing_cm": 14,
+      "quantity": 55,
+      "region_length_cm": 759,
+      "legs": 2,
+      "shape_source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups"
+      },
+      "x_start_cm": 0,
+      "x_end_cm": 759
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/regions/1"
+      },
+      "id": "R2",
+      "mark": "N9",
+      "function": null,
+      "diameter_mm": 5,
+      "spacing_cm": 14,
+      "quantity": 18,
+      "region_length_cm": 245,
+      "legs": 2,
+      "shape_source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups"
+      },
+      "x_start_cm": 799,
+      "x_end_cm": 1044
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/regions/2"
+      },
+      "id": "R3",
+      "mark": "N9",
+      "function": null,
+      "diameter_mm": 5,
+      "spacing_cm": 14,
+      "quantity": 44,
+      "region_length_cm": 614,
+      "legs": 2,
+      "shape_source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups"
+      },
+      "x_start_cm": 1084,
+      "x_end_cm": 1698
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/regions/3"
+      },
+      "id": "R4",
+      "mark": "N9",
+      "function": null,
+      "diameter_mm": 5,
+      "spacing_cm": 14,
+      "quantity": 15,
+      "region_length_cm": 202,
+      "legs": 2,
+      "shape_source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/stirrups"
+      },
+      "x_start_cm": 1738,
+      "x_end_cm": 1940
+    }
+  ],
+  "skin_reinforcement": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/skin_reinforcement/positions/0"
+      },
+      "mark": "N10",
+      "function": "skin",
+      "bars": 18,
+      "diameter_mm": 8,
+      "length_cm": 813,
+      "shape": "Trecho longitudinal com retorno na extremidade esquerda, mostrado em diagonal na representacao das duas faces.",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "bars_per_face": 9,
+      "faces": 2,
+      "vertical_spacing_cm": null,
+      "horizontal_length_cm": 800,
+      "left_return_cm": 13
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/skin_reinforcement/positions/1"
+      },
+      "mark": "N11",
+      "function": "skin",
+      "bars": 18,
+      "diameter_mm": 8,
+      "length_cm": 293,
+      "shape": "straight",
+      "x_start_cm": 775,
+      "x_end_cm": 1068,
+      "bars_per_face": 9,
+      "faces": 2,
+      "vertical_spacing_cm": null,
+      "horizontal_length_cm": null,
+      "left_return_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/skin_reinforcement/positions/2"
+      },
+      "mark": "N12",
+      "function": "skin",
+      "bars": 18,
+      "diameter_mm": 8,
+      "length_cm": 662,
+      "shape": "straight",
+      "x_start_cm": 1060,
+      "x_end_cm": 1722,
+      "bars_per_face": 9,
+      "faces": 2,
+      "vertical_spacing_cm": null,
+      "horizontal_length_cm": null,
+      "left_return_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/skin_reinforcement/positions/3"
+      },
+      "mark": "N13",
+      "function": "skin",
+      "bars": 18,
+      "diameter_mm": 8,
+      "length_cm": 223,
+      "shape": "straight",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "bars_per_face": 9,
+      "faces": 2,
+      "vertical_spacing_cm": null,
+      "horizontal_length_cm": null,
+      "left_return_cm": null
+    }
+  ],
+  "anchorage_staples": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/anchorage_staples/positions/0"
+      },
+      "mark": "N8",
+      "function": "anchorage_staple",
+      "bars": 2,
+      "diameter_mm": 10,
+      "length_cm": 213,
+      "shape": "Grampo em U deitado, aberto para a esquerda.",
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "longitudinal_dimension_cm": 100,
+      "closing_dimension_cm": 13,
+      "layer_and_bar_association": null
+    }
+  ],
+  "indirect_supports": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/0"
+      },
+      "id": "IB1",
+      "supported_beam": null,
+      "span": "S1",
+      "x_cm": null,
+      "suspension_reinforcement_detailed": false,
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "suspension_marks": []
+    },
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/1"
+      },
+      "id": "IB2",
+      "supported_beam": null,
+      "span": "S3",
+      "x_cm": null,
+      "suspension_reinforcement_detailed": false,
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "suspension_marks": []
+    }
+  ],
+  "suspension_reinforcement": [
+    {
+      "indirect_support": "IB1",
+      "detailed": false,
+      "marks": [],
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/0"
+      }
+    },
+    {
+      "indirect_support": "IB2",
+      "detailed": false,
+      "marks": [],
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/1"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "source": {
+        "document_model": "V502_detalhamento_prancha.json",
+        "json_pointer": "/section_views/0"
+      },
+      "id": "Corte A",
+      "x_cm": null,
+      "upper_positions": {
+        "first_layer": "N2",
+        "second_layer": "N3"
+      },
+      "lower_position": "N6",
+      "skin_bars_per_face": 9,
+      "skin_position": "N10",
+      "upper_layers": [
+        3,
+        1
+      ],
+      "lower_layers": [
+        4
+      ]
+    }
+  ],
+  "document_sha256": "34e82a204ce08691264f886f50fafff5ad69e5c864799689076e842bb2502695",
+  "uncertainties": [
+    {
+      "code": "unknown_section_dimension",
+      "entities": [
+        "cover_cm"
+      ]
+    },
+    {
+      "code": "unknown_lateral_projection_dimensions",
+      "entities": [
+        "section"
+      ]
+    },
+    {
+      "code": "unknown_support_nature",
+      "entities": [
+        "V548",
+        "P307",
+        "P308",
+        "P309"
+      ]
+    },
+    {
+      "code": "unknown_support_restraint",
+      "entities": [
+        "V548",
+        "P307",
+        "P308",
+        "P309"
+      ]
+    },
+    {
+      "code": "unknown_longitudinal_extent",
+      "entities": [
+        "N1",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N10",
+        "N13",
+        "N8",
+        "IB1",
+        "IB2"
+      ]
+    },
+    {
+      "code": "unknown_skin_vertical_spacing",
+      "entities": [
+        "N10",
+        "N11",
+        "N12",
+        "N13"
+      ]
+    },
+    {
+      "code": "unknown_staple_association",
+      "entities": [
+        "N8"
+      ]
+    },
+    {
+      "code": "unknown_stirrup_function",
+      "entities": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "code": "unknown_supported_beam_name",
+      "entities": [
+        "IB1",
+        "IB2"
+      ]
+    },
+    {
+      "code": "unknown_indirect_support_position",
+      "entities": [
+        "IB1",
+        "IB2"
+      ]
+    },
+    {
+      "code": "unknown_section_position",
+      "entities": [
+        "Corte A"
+      ]
+    }
+  ]
+}

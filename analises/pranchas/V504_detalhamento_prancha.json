@@ -1,0 +1,1213 @@
+{
+  "schema_version": "1.0",
+  "tipo": "detalhamento_de_viga_lido_graficamente",
+  "escopo": {
+    "elemento_analisado": "V504",
+    "metodo": "Leitura visual manual da pagina renderizada e de seus recortes. JSON composto a partir dessa leitura; nenhum parser de detalhamento foi criado.",
+    "fontes_utilizadas": "Exclusivamente a prancha PDF fornecida. Os JSON de extracao/consolidacao e os relatorios LST nao foram consultados nesta leitura.",
+    "verificacoes_estruturais_realizadas": false,
+    "tratamento_das_notas": "Notas de execucao e remissoes presentes no PDF sao conteudo documental, nao instrucoes para executar verificacoes ou alterar o projeto.",
+    "quantidades": "As quantidades das chamadas locais representam a V504; as quantidades dobradas do quadro V504=V505 nao foram atribuidas a uma unica viga."
+  },
+  "documento": {
+    "arquivo": "RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+    "caminho_fornecido": "S:\\PROJETOS EM EXECU??O\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JO?O\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+    "pagina": 1,
+    "tamanho_pagina_pontos_pdf": [
+      3370,
+      2384
+    ],
+    "coordenadas_dos_recortes": "[esquerda, topo, direita, base], em pontos PDF, origem no canto superior esquerdo da pagina; caixas aproximadas para localizar evidencia."
+  },
+  "identificacao": {
+    "viga": {
+      "valor": "V504",
+      "classificacao": "explicita",
+      "fontes": [
+        "titulo"
+      ]
+    },
+    "chamada_do_grupo": {
+      "valor": "V504=V505",
+      "classificacao": "explicita",
+      "fontes": [
+        "titulo"
+      ]
+    },
+    "vigas_agrupadas": {
+      "valor": [
+        "V504",
+        "V505"
+      ],
+      "classificacao": "explicita",
+      "fontes": [
+        "titulo"
+      ]
+    },
+    "repeticoes_do_grupo": {
+      "valor": 2,
+      "classificacao": "explicita",
+      "fontes": [
+        "quadro_V504_V505"
+      ],
+      "justificativa": "O quadro de aco escreve V504=V505 (X2)."
+    },
+    "prancha": {
+      "valor": "1348",
+      "classificacao": "explicita",
+      "fontes": [
+        "carimbo"
+      ]
+    },
+    "revisao": {
+      "valor": "00",
+      "classificacao": "explicita",
+      "fontes": [
+        "carimbo"
+      ]
+    }
+  },
+  "unidades": {
+    "dimensoes_e_comprimentos": {
+      "valor": "cm",
+      "classificacao": "explicita",
+      "fontes": [
+        "unidades_gerais",
+        "quadro_unidades"
+      ]
+    },
+    "bitolas": {
+      "valor": "mm",
+      "classificacao": "explicita",
+      "fontes": [
+        "quadro_unidades"
+      ]
+    },
+    "niveis": {
+      "valor": "m",
+      "classificacao": "explicita",
+      "fontes": [
+        "unidades_gerais"
+      ]
+    }
+  },
+  "secao": {
+    "indicacao_literal": {
+      "valor": "14/32",
+      "classificacao": "explicita",
+      "fontes": [
+        "titulo"
+      ]
+    },
+    "largura": {
+      "valor": 14,
+      "classificacao": "interpretada_graficamente",
+      "fontes": [
+        "titulo",
+        "corte_A"
+      ],
+      "unidade": "cm",
+      "justificativa": "Associacao do primeiro numero da secao indicada a largura do retangulo do corte."
+    },
+    "altura": {
+      "valor": 32,
+      "classificacao": "interpretada_graficamente",
+      "fontes": [
+        "titulo",
+        "corte_A"
+      ],
+      "unidade": "cm",
+      "justificativa": "Associacao do segundo numero da secao indicada a altura do retangulo do corte."
+    },
+    "forma": {
+      "valor": "retangular",
+      "classificacao": "interpretada_graficamente",
+      "fontes": [
+        "corte_A"
+      ]
+    },
+    "cobrimento_cotado_localmente": {
+      "valor": null,
+      "classificacao": "incerta",
+      "fontes": [
+        "corte_A"
+      ],
+      "unidade": "cm",
+      "justificativa": "Nao existe cota local de cobrimento no Corte A. A nota tipica da folha e registrada separadamente."
+    }
+  },
+  "vaos": [
+    {
+      "id_local": "vao_grafico_1",
+      "numero_de_trechos_entre_apoios_representados": {
+        "valor": 1,
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao"
+        ],
+        "justificativa": "O desenho local apresenta um unico trecho entre os dois apoios extremos."
+      },
+      "dimensao_104_associada_ao_trecho_livre": {
+        "valor": 104,
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao",
+          "regiao_N3"
+        ],
+        "unidade": "cm",
+        "justificativa": "O numero (104) e explicito na linha de distribuicao de estribos; as linhas auxiliares coincidem graficamente com as faces internas dos apoios. Sua leitura como vao livre depende dessa associacao."
+      },
+      "comprimento_entre_eixos": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "elevacao"
+        ],
+        "unidade": "cm",
+        "justificativa": "Nao cotado como distancia entre eixos."
+      },
+      "comprimento_total_da_viga": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "elevacao"
+        ],
+        "unidade": "cm",
+        "justificativa": "Nao ha cota total da viga; 136 e cota de barra, nao comprimento total da viga."
+      },
+      "apoio_esquerdo_ref": "apoio_esquerdo",
+      "apoio_direito_ref": "apoio_direito"
+    }
+  ],
+  "apoios": [
+    {
+      "id_local": "apoio_esquerdo",
+      "lado": {
+        "valor": "esquerdo",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao"
+        ]
+      },
+      "rotulos_escritos": {
+        "valor": [
+          "V544",
+          "V562"
+        ],
+        "classificacao": "explicita",
+        "fontes": [
+          "elevacao"
+        ]
+      },
+      "nome_associado_a_V504": {
+        "valor": "V544",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "titulo",
+          "elevacao"
+        ],
+        "justificativa": "Primeiro rotulo do par V544/V562 associado a primeira viga do grupo V504=V505; nao ha legenda verbal individualizando essa correspondencia."
+      },
+      "dimensao_cotada": {
+        "valor": 14,
+        "classificacao": "explicita",
+        "fontes": [
+          "elevacao"
+        ],
+        "unidade": "cm"
+      },
+      "direcao_da_dimensao": {
+        "valor": "ao longo do eixo longitudinal representado da viga",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao"
+        ]
+      },
+      "condicao_de_vinculo": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "elevacao"
+        ],
+        "justificativa": "A prancha local nao explicita rotula, engaste ou outra condicao de calculo."
+      }
+    },
+    {
+      "id_local": "apoio_direito",
+      "lado": {
+        "valor": "direito",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao"
+        ]
+      },
+      "rotulos_escritos": {
+        "valor": [
+          "P1A",
+          "P1B"
+        ],
+        "classificacao": "explicita",
+        "fontes": [
+          "elevacao"
+        ]
+      },
+      "nome_associado_a_V504": {
+        "valor": "P1A",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "titulo",
+          "elevacao"
+        ],
+        "justificativa": "Primeiro rotulo do par P1A/P1B associado a primeira viga do grupo V504=V505; correspondencia pela ordem grafica."
+      },
+      "dimensao_cotada": {
+        "valor": 24,
+        "classificacao": "explicita",
+        "fontes": [
+          "elevacao"
+        ],
+        "unidade": "cm"
+      },
+      "direcao_da_dimensao": {
+        "valor": "ao longo do eixo longitudinal representado da viga",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao"
+        ]
+      },
+      "condicao_de_vinculo": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "elevacao"
+        ],
+        "justificativa": "Nao explicitada no detalhe local."
+      }
+    }
+  ],
+  "armaduras_longitudinais": {
+    "positivas": [
+      {
+        "posicao": {
+          "valor": "N2",
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N2"
+          ]
+        },
+        "grupo": {
+          "valor": "positiva",
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "elevacao",
+            "barra_N2",
+            "corte_A"
+          ],
+          "justificativa": "Associacao pela ordem dos desenhos das barras, orientacao das dobras e fileira correspondente no Corte A; nao derivada de bitola ou quadro de aco."
+        },
+        "face": {
+          "valor": "inferior",
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "elevacao",
+            "barra_N2",
+            "corte_A"
+          ]
+        },
+        "numero_barras": {
+          "valor": 2,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N2"
+          ],
+          "justificativa": "Quantidade da chamada local da barra; nao foi obtida por divisao do total do grupo no quadro de aco."
+        },
+        "bitola": {
+          "valor": 6.3,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N2",
+            "quadro_unidades"
+          ],
+          "unidade": "mm"
+        },
+        "comprimento_total_por_barra": {
+          "valor": 176,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N2"
+          ],
+          "unidade": "cm"
+        },
+        "trecho_horizontal_cotado": {
+          "valor": 136,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N2"
+          ],
+          "unidade": "cm"
+        },
+        "aco_designacao_impressa": {
+          "valor": "50A",
+          "classificacao": "explicita",
+          "fontes": [
+            "quadro_V504_V505"
+          ],
+          "justificativa": "Designacao da linha da posicao no quadro do grupo. Nao usada para determinar a posicao grafica."
+        },
+        "camada_escrita_na_chamada": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "barra_N2"
+          ],
+          "justificativa": "A chamada local nao escreve 1a, 2a ou outra numeracao de camada."
+        },
+        "disposicao_em_secao": {
+          "valor": {
+            "fileiras_visiveis_na_face": 1,
+            "pontos_por_fileira": 2
+          },
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "corte_A",
+            "barra_N2"
+          ],
+          "justificativa": "O corte mostra uma fileira de dois pontos nesta face. A associacao a esta posicao e grafica; o corte nao rotula N1/N2 junto aos pontos."
+        },
+        "extensao_longitudinal": {
+          "valor": "Trecho horizontal atravessa a regiao entre as faces internas dos apoios e avanca em ambos os apoios.",
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "elevacao",
+            "regiao_N3",
+            "barra_N2"
+          ],
+          "justificativa": "Associacao com as linhas auxiliares verticais. Sem adotar escala para medir os avancos."
+        },
+        "coordenada_inicio": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "barra_N2"
+          ],
+          "unidade": "cm",
+          "justificativa": "Nao ha cota longitudinal numerica para fixar o inicio em relacao a uma origem da viga."
+        },
+        "coordenada_fim": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "barra_N2"
+          ],
+          "unidade": "cm",
+          "justificativa": "Nao ha cota longitudinal numerica para fixar o fim em relacao a uma origem da viga."
+        },
+        "penetracao_esquerda": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "elevacao",
+            "barra_N2"
+          ],
+          "unidade": "cm",
+          "justificativa": "Avanco visivel, sem comprimento numerico individual cotado."
+        },
+        "penetracao_direita": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "elevacao",
+            "barra_N2"
+          ],
+          "unidade": "cm",
+          "justificativa": "Avanco visivel, sem comprimento numerico individual cotado."
+        },
+        "dobras": [
+          {
+            "extremidade": {
+              "valor": "esquerda",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N2"
+              ]
+            },
+            "direcao": {
+              "valor": "para cima",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N2"
+              ]
+            },
+            "comprimento_cotado": {
+              "valor": 20,
+              "classificacao": "explicita",
+              "fontes": [
+                "barra_N2"
+              ],
+              "unidade": "cm"
+            },
+            "angulo_numerico": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N2"
+              ],
+              "unidade": "graus",
+              "justificativa": "A barra e desenhada com mudanca entre horizontal e vertical, mas nao ha valor angular escrito."
+            },
+            "raio_dobramento": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N2"
+              ],
+              "unidade": "cm",
+              "justificativa": "Nao cotado."
+            }
+          },
+          {
+            "extremidade": {
+              "valor": "direita",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N2"
+              ]
+            },
+            "direcao": {
+              "valor": "para cima",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N2"
+              ]
+            },
+            "comprimento_cotado": {
+              "valor": 20,
+              "classificacao": "explicita",
+              "fontes": [
+                "barra_N2"
+              ],
+              "unidade": "cm"
+            },
+            "angulo_numerico": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N2"
+              ],
+              "unidade": "graus",
+              "justificativa": "A barra e desenhada com mudanca entre horizontal e vertical, mas nao ha valor angular escrito."
+            },
+            "raio_dobramento": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N2"
+              ],
+              "unidade": "cm",
+              "justificativa": "Nao cotado."
+            }
+          }
+        ]
+      }
+    ],
+    "negativas": [
+      {
+        "posicao": {
+          "valor": "N1",
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N1"
+          ]
+        },
+        "grupo": {
+          "valor": "negativa",
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "elevacao",
+            "barra_N1",
+            "corte_A"
+          ],
+          "justificativa": "Associacao pela ordem dos desenhos das barras, orientacao das dobras e fileira correspondente no Corte A; nao derivada de bitola ou quadro de aco."
+        },
+        "face": {
+          "valor": "superior",
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "elevacao",
+            "barra_N1",
+            "corte_A"
+          ]
+        },
+        "numero_barras": {
+          "valor": 2,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N1"
+          ],
+          "justificativa": "Quantidade da chamada local da barra; nao foi obtida por divisao do total do grupo no quadro de aco."
+        },
+        "bitola": {
+          "valor": 8,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N1",
+            "quadro_unidades"
+          ],
+          "unidade": "mm"
+        },
+        "comprimento_total_por_barra": {
+          "valor": 176,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N1"
+          ],
+          "unidade": "cm"
+        },
+        "trecho_horizontal_cotado": {
+          "valor": 136,
+          "classificacao": "explicita",
+          "fontes": [
+            "barra_N1"
+          ],
+          "unidade": "cm"
+        },
+        "aco_designacao_impressa": {
+          "valor": "50A",
+          "classificacao": "explicita",
+          "fontes": [
+            "quadro_V504_V505"
+          ],
+          "justificativa": "Designacao da linha da posicao no quadro do grupo. Nao usada para determinar a posicao grafica."
+        },
+        "camada_escrita_na_chamada": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "barra_N1"
+          ],
+          "justificativa": "A chamada local nao escreve 1a, 2a ou outra numeracao de camada."
+        },
+        "disposicao_em_secao": {
+          "valor": {
+            "fileiras_visiveis_na_face": 1,
+            "pontos_por_fileira": 2
+          },
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "corte_A",
+            "barra_N1"
+          ],
+          "justificativa": "O corte mostra uma fileira de dois pontos nesta face. A associacao a esta posicao e grafica; o corte nao rotula N1/N2 junto aos pontos."
+        },
+        "extensao_longitudinal": {
+          "valor": "Trecho horizontal atravessa a regiao entre as faces internas dos apoios e avanca em ambos os apoios.",
+          "classificacao": "interpretada_graficamente",
+          "fontes": [
+            "elevacao",
+            "regiao_N3",
+            "barra_N1"
+          ],
+          "justificativa": "Associacao com as linhas auxiliares verticais. Sem adotar escala para medir os avancos."
+        },
+        "coordenada_inicio": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "barra_N1"
+          ],
+          "unidade": "cm",
+          "justificativa": "Nao ha cota longitudinal numerica para fixar o inicio em relacao a uma origem da viga."
+        },
+        "coordenada_fim": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "barra_N1"
+          ],
+          "unidade": "cm",
+          "justificativa": "Nao ha cota longitudinal numerica para fixar o fim em relacao a uma origem da viga."
+        },
+        "penetracao_esquerda": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "elevacao",
+            "barra_N1"
+          ],
+          "unidade": "cm",
+          "justificativa": "Avanco visivel, sem comprimento numerico individual cotado."
+        },
+        "penetracao_direita": {
+          "valor": null,
+          "classificacao": "incerta",
+          "fontes": [
+            "elevacao",
+            "barra_N1"
+          ],
+          "unidade": "cm",
+          "justificativa": "Avanco visivel, sem comprimento numerico individual cotado."
+        },
+        "dobras": [
+          {
+            "extremidade": {
+              "valor": "esquerda",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N1"
+              ]
+            },
+            "direcao": {
+              "valor": "para baixo",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N1"
+              ]
+            },
+            "comprimento_cotado": {
+              "valor": 20,
+              "classificacao": "explicita",
+              "fontes": [
+                "barra_N1"
+              ],
+              "unidade": "cm"
+            },
+            "angulo_numerico": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N1"
+              ],
+              "unidade": "graus",
+              "justificativa": "A barra e desenhada com mudanca entre horizontal e vertical, mas nao ha valor angular escrito."
+            },
+            "raio_dobramento": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N1"
+              ],
+              "unidade": "cm",
+              "justificativa": "Nao cotado."
+            }
+          },
+          {
+            "extremidade": {
+              "valor": "direita",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N1"
+              ]
+            },
+            "direcao": {
+              "valor": "para baixo",
+              "classificacao": "interpretada_graficamente",
+              "fontes": [
+                "barra_N1"
+              ]
+            },
+            "comprimento_cotado": {
+              "valor": 20,
+              "classificacao": "explicita",
+              "fontes": [
+                "barra_N1"
+              ],
+              "unidade": "cm"
+            },
+            "angulo_numerico": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N1"
+              ],
+              "unidade": "graus",
+              "justificativa": "A barra e desenhada com mudanca entre horizontal e vertical, mas nao ha valor angular escrito."
+            },
+            "raio_dobramento": {
+              "valor": null,
+              "classificacao": "incerta",
+              "fontes": [
+                "barra_N1"
+              ],
+              "unidade": "cm",
+              "justificativa": "Nao cotado."
+            }
+          }
+        ]
+      }
+    ],
+    "criterio_de_classificacao": "Positiva/negativa e a classificacao grafica inferior/superior solicitada, sem inferir sinal de esforco, necessidade calculada ou funcao adicional de porta-estribo."
+  },
+  "estribos": [
+    {
+      "posicao": {
+        "valor": "N3",
+        "classificacao": "explicita",
+        "fontes": [
+          "regiao_N3",
+          "forma_N3"
+        ]
+      },
+      "chamada_distribuicao": {
+        "valor": "N3 6 ? 5 C/20 (104)",
+        "classificacao": "explicita",
+        "fontes": [
+          "regiao_N3"
+        ]
+      },
+      "chamada_forma": {
+        "valor": "N3 6 ? 5 C=87",
+        "classificacao": "explicita",
+        "fontes": [
+          "forma_N3"
+        ]
+      },
+      "quantidade": {
+        "valor": 6,
+        "classificacao": "explicita",
+        "fontes": [
+          "regiao_N3",
+          "forma_N3"
+        ]
+      },
+      "bitola": {
+        "valor": 5,
+        "classificacao": "explicita",
+        "fontes": [
+          "regiao_N3",
+          "forma_N3",
+          "quadro_unidades"
+        ],
+        "unidade": "mm"
+      },
+      "espacamento": {
+        "valor": 20,
+        "classificacao": "explicita",
+        "fontes": [
+          "regiao_N3"
+        ],
+        "unidade": "cm"
+      },
+      "comprimento_total_por_peca": {
+        "valor": 87,
+        "classificacao": "explicita",
+        "fontes": [
+          "forma_N3"
+        ],
+        "unidade": "cm"
+      },
+      "aco_designacao_impressa": {
+        "valor": "60B",
+        "classificacao": "explicita",
+        "fontes": [
+          "quadro_V504_V505"
+        ]
+      },
+      "comprimento_regiao_cotada": {
+        "valor": 104,
+        "classificacao": "explicita",
+        "fontes": [
+          "regiao_N3"
+        ],
+        "unidade": "cm"
+      },
+      "regiao": {
+        "valor": "Entre as duas linhas auxiliares ligadas as faces internas dos apoios.",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao",
+          "regiao_N3"
+        ]
+      },
+      "numero_de_regioes_de_distribuicao_identificadas": {
+        "valor": 1,
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "regiao_N3"
+        ]
+      },
+      "distancia_primeiro_estribo_a_face": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "regiao_N3"
+        ],
+        "unidade": "cm",
+        "justificativa": "Nao cotada; nao foi calculada a partir de quantidade, espacamento e comprimento da regiao."
+      },
+      "distancia_ultimo_estribo_a_face": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "regiao_N3"
+        ],
+        "unidade": "cm",
+        "justificativa": "Nao cotada."
+      },
+      "dimensoes_escritas_na_forma": [
+        {
+          "cota": {
+            "valor": 9,
+            "classificacao": "explicita",
+            "fontes": [
+              "forma_N3"
+            ],
+            "unidade": "cm"
+          },
+          "localizacao": {
+            "valor": "acima do trecho superior da forma",
+            "classificacao": "interpretada_graficamente",
+            "fontes": [
+              "forma_N3"
+            ]
+          }
+        },
+        {
+          "cota": {
+            "valor": 27,
+            "classificacao": "explicita",
+            "fontes": [
+              "forma_N3"
+            ],
+            "unidade": "cm"
+          },
+          "localizacao": {
+            "valor": "ao lado do trecho vertical da forma",
+            "classificacao": "interpretada_graficamente",
+            "fontes": [
+              "forma_N3"
+            ]
+          }
+        }
+      ],
+      "forma": {
+        "valor": "Contorno aproximadamente retangular, com fechamento inclinado e pequeno segmento retornado na parte superior.",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "forma_N3"
+        ]
+      },
+      "comprimento_dos_ganchos": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "forma_N3"
+        ],
+        "unidade": "cm",
+        "justificativa": "Nao ha cota isolada para os ganchos."
+      },
+      "angulo_dos_ganchos": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "forma_N3"
+        ],
+        "unidade": "graus",
+        "justificativa": "Nao ha angulo numerico escrito; nao foi adotado angulo normativo ou usual."
+      }
+    }
+  ],
+  "armaduras_de_pele": {
+    "identificada_no_detalhe": {
+      "valor": false,
+      "classificacao": "interpretada_graficamente",
+      "fontes": [
+        "elevacao",
+        "barra_N1",
+        "barra_N2",
+        "corte_A"
+      ],
+      "justificativa": "Nao ha chamada de pele identificada e o corte mostra apenas os quatro pontos longitudinais dos cantos. Isso nao equivale a uma declaracao escrita de inexistencia."
+    },
+    "posicoes": {
+      "valor": null,
+      "classificacao": "incerta",
+      "fontes": [
+        "corte_A"
+      ],
+      "justificativa": "Nenhuma posicao especifica de pele esta identificada."
+    },
+    "quantidade": {
+      "valor": null,
+      "classificacao": "incerta",
+      "fontes": [
+        "corte_A"
+      ],
+      "justificativa": "Nao atribuido zero como quantidade confirmada."
+    },
+    "bitola": {
+      "valor": null,
+      "classificacao": "incerta",
+      "fontes": [
+        "corte_A"
+      ],
+      "unidade": "mm"
+    }
+  },
+  "cortes": [
+    {
+      "identificacao": {
+        "valor": "Corte A",
+        "classificacao": "explicita",
+        "fontes": [
+          "corte_A"
+        ]
+      },
+      "localizacao": {
+        "valor": "Linha A-A em regiao interior do unico trecho desenhado.",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "elevacao"
+        ],
+        "justificativa": "A marca A-A aparece no trecho; sua abscissa nao esta cotada."
+      },
+      "abscissa": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "elevacao"
+        ],
+        "unidade": "cm"
+      },
+      "pontos_longitudinais_superiores": {
+        "valor": 2,
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "corte_A"
+        ]
+      },
+      "pontos_longitudinais_inferiores": {
+        "valor": 2,
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "corte_A"
+        ]
+      },
+      "pontos_longitudinais_laterais_intermediarios_visiveis": {
+        "valor": 0,
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "corte_A"
+        ],
+        "justificativa": "Contagem visual restrita ao Corte A; nao e quantidade declarada de armadura de pele."
+      },
+      "contorno_transversal": {
+        "valor": "Um contorno azul retangular envolve os quatro pontos longitudinais dentro do contorno externo da secao.",
+        "classificacao": "interpretada_graficamente",
+        "fontes": [
+          "corte_A"
+        ]
+      },
+      "posicoes_rotuladas_junto_aos_pontos": {
+        "valor": null,
+        "classificacao": "incerta",
+        "fontes": [
+          "corte_A"
+        ],
+        "justificativa": "Os pontos do corte nao possuem chamadas N1/N2 individualizadas."
+      }
+    }
+  ],
+  "detalhes_especiais": {
+    "dobras_nas_longitudinais": {
+      "valor": "As duas posicoes tem dobras cotadas de 20 cm nas duas extremidades: N1 para baixo; N2 para cima.",
+      "classificacao": "interpretada_graficamente",
+      "fontes": [
+        "barra_N1",
+        "barra_N2"
+      ]
+    },
+    "grampos_individualizados": {
+      "valor": null,
+      "classificacao": "incerta",
+      "fontes": [
+        "elevacao",
+        "barra_N1",
+        "barra_N2",
+        "forma_N3"
+      ],
+      "justificativa": "Nao foi identificada chamada local de grampo separado. Nao foi inferida necessidade nem ausencia de grampo."
+    },
+    "armadura_de_suspensao_individualizada": {
+      "valor": null,
+      "classificacao": "incerta",
+      "fontes": [
+        "regiao_N3",
+        "forma_N3"
+      ],
+      "justificativa": "A chamada N3 nao declara funcao de suspensao; nenhuma outra posicao local com essa identificacao foi encontrada."
+    },
+    "emendas_individualizadas": {
+      "valor": null,
+      "classificacao": "incerta",
+      "fontes": [
+        "barra_N1",
+        "barra_N2"
+      ],
+      "justificativa": "Nao ha chamada local de emenda identificada."
+    }
+  },
+  "notas_gerais_da_folha_relacionadas": {
+    "cobrimento_tipico_cotado": {
+      "valor": 2.5,
+      "classificacao": "explicita",
+      "fontes": [
+        "nota_tipica"
+      ],
+      "unidade": "cm",
+      "justificativa": "Cota do detalhe generico de cobrimento e posicionamento de armaduras em vigas. Registrada como nota geral, sem substituir uma cota local ausente da V504."
+    },
+    "camadas_no_detalhe_tipico": {
+      "valor": [
+        "1aCAM",
+        "2aCAM",
+        "3aCAM"
+      ],
+      "classificacao": "explicita",
+      "fontes": [
+        "nota_tipica"
+      ],
+      "justificativa": "Rotulos de um desenho generico; nao significam tres camadas na V504."
+    },
+    "remissao": {
+      "valor": "VER NOTAS E DETALHES FOLHA 00",
+      "classificacao": "explicita",
+      "fontes": [
+        "unidades_gerais"
+      ]
+    },
+    "folha_00_consultada": false
+  },
+  "incertezas_resumidas": [
+    "Numeracao de camada nao escrita nas chamadas N1 e N2; o Corte A permite somente registrar a disposicao grafica em uma fileira superior e uma inferior.",
+    "Comprimento entre eixos e comprimento total da viga nao cotados.",
+    "A leitura de 104 cm como trecho livre depende da associacao grafica: a inscricao pertence a linha de distribuicao de N3.",
+    "Extensoes individuais dentro dos apoios e coordenadas longitudinais das barras nao cotadas.",
+    "Pareamento dos nomes dos apoios com V504 resulta da ordem dos rotulos do grupo, sem legenda individual explicita.",
+    "Angulos e raios de dobras, comprimentos isolados de ganchos e afastamentos do primeiro/ultimo estribo nao cotados.",
+    "Ausencia de chamada local de pele, grampos, suspensao ou emenda nao foi convertida em quantidade zero confirmada."
+  ],
+  "fontes": {
+    "titulo": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2235,
+        55,
+        2355,
+        110
+      ],
+      "conteudo": "V504=V505; 14/32"
+    },
+    "elevacao": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2225,
+        110,
+        2355,
+        205
+      ],
+      "conteudo": "Elevacao, pares de rotulos dos apoios, cotas 14 e 24 e marca A-A."
+    },
+    "regiao_N3": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2228,
+        203,
+        2318,
+        245
+      ],
+      "conteudo": "Chamada N3 6 ? 5 C/20 e (104); linhas auxiliares."
+    },
+    "barra_N1": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2225,
+        250,
+        2340,
+        290
+      ],
+      "conteudo": "Forma superior; 136; 20/20; N1 2 ? 8; C=176."
+    },
+    "barra_N2": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2225,
+        306,
+        2340,
+        345
+      ],
+      "conteudo": "Forma inferior; 136; 20/20; N2 2 ? 6.3 C=176."
+    },
+    "corte_A": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2365,
+        120,
+        2435,
+        190
+      ],
+      "conteudo": "Corte A; contorno retangular; dois pontos superiores e dois inferiores."
+    },
+    "forma_N3": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2355,
+        205,
+        2448,
+        280
+      ],
+      "conteudo": "Forma do estribo, cotas 9 e 27; N3 6 ? 5 C=87."
+    },
+    "quadro_unidades": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2940,
+        48,
+        3258,
+        94
+      ],
+      "conteudo": "Cabecalho do quadro: BIT mm; COMPRIMENTO UNIT cm / TOTAL cm."
+    },
+    "quadro_V504_V505": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2940,
+        320,
+        3258,
+        368
+      ],
+      "conteudo": "V504=V505 (X2); posicoes 1/2 em 50A e 3 em 60B. Quantidades do grupo nao utilizadas como quantidades de uma viga."
+    },
+    "nota_tipica": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2400,
+        1150,
+        2870,
+        1600
+      ],
+      "conteudo": "DET. TIPICO COBRIMENTO E POSICIONAMENTO ARM. EM VIGAS; cotas gerais e rotulos de camadas."
+    },
+    "unidades_gerais": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2840,
+        1900,
+        3350,
+        1978
+      ],
+      "conteudo": "VER NOTAS E DETALHES FOLHA 00; MEDIDAS EM CENTIMETROS E NIVEIS EM METROS."
+    },
+    "carimbo": {
+      "pagina": 1,
+      "bbox_pdf": [
+        2840,
+        2130,
+        3350,
+        2370
+      ],
+      "conteudo": "Prancha 1348; revisao 00."
+    }
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "schema_version": "1.0",
+  "model_type": "longitudinal_beam_detail",
+  "document_model": "V501_V503_detalhamento_prancha.json",
+  "conventions": {
+    "length_unit": "cm",
+    "diameter_unit": "mm",
+    "layers": "Indice 0 = primeira camada; [0,1] = uma barra apenas na segunda.",
+    "intervals": "Extensao longitudinal fisica documentada; comprimento desenvolvido nao substitui a projecao em x.",
+    "geometry_basis": "Geometria ja interpretada no documental; nao reconstruida a partir de estribos."
+  },
+  "beam": {
+    "source": {
+      "document_model": "V501_V503_detalhamento_prancha.json",
+      "json_pointer": "/identification"
+    },
+    "id": "V501=V503",
+    "grouped": true,
+    "ids": [
+      "V501",
+      "V503"
+    ],
+    "quantity_basis": "per_beam"
+  },
+  "coordinate_system": {
+    "origin": "face interna do apoio esquerdo",
+    "positive_direction": "para a direita",
+    "unit": "cm",
+    "source": {
+      "document_model": "V501_V503_detalhamento_prancha.json",
+      "json_pointer": "/span/coordinate_system"
+    }
+  },
+  "section": {
+    "source": {
+      "document_model": "V501_V503_detalhamento_prancha.json",
+      "json_pointer": "/section"
+    },
+    "width_cm": 19,
+    "height_cm": 72,
+    "cover_cm": null,
+    "shape": "rectangular",
+    "lateral_projections_dimensions": null
+  },
+  "supports": [
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/supports/0"
+      },
+      "id": "left",
+      "type": null,
+      "width_cm": null,
+      "restraint": null,
+      "x_left_cm": null,
+      "x_right_cm": 0,
+      "written_names": [
+        "P2A",
+        "P2B"
+      ],
+      "individual_beam_mapping": null,
+      "dimension_shown_cm": 120,
+      "coordinate_source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/span"
+      }
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/supports/1"
+      },
+      "id": "right",
+      "type": null,
+      "width_cm": null,
+      "restraint": null,
+      "x_left_cm": 711,
+      "x_right_cm": null,
+      "written_names": [
+        "P1A",
+        "P1B"
+      ],
+      "individual_beam_mapping": null,
+      "dimension_shown_cm": 142,
+      "coordinate_source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/span"
+      }
+    }
+  ],
+  "spans": [
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/span"
+      },
+      "id": "S1",
+      "left_support": "left",
+      "right_support": "right",
+      "clear_length_cm": 711,
+      "x_start_cm": 0,
+      "x_end_cm": 711
+    }
+  ],
+  "overhangs": [],
+  "longitudinal_reinforcement": [
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/0"
+      },
+      "mark": "N1",
+      "function": "negative",
+      "bars": 2,
+      "diameter_mm": 16,
+      "length_cm": 465,
+      "shape": "straight",
+      "x_start_cm": -62,
+      "x_end_cm": 403,
+      "layers": [
+        2
+      ],
+      "face": "upper",
+      "horizontal_length_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/1"
+      },
+      "mark": "N2",
+      "function": "negative",
+      "bars": 2,
+      "diameter_mm": 16,
+      "length_cm": 260,
+      "shape": "straight",
+      "x_start_cm": -62,
+      "x_end_cm": 198,
+      "layers": [
+        1,
+        1
+      ],
+      "face": "upper",
+      "horizontal_length_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/2"
+      },
+      "mark": "N3",
+      "function": "negative",
+      "bars": 2,
+      "diameter_mm": 20,
+      "length_cm": 485,
+      "shape": "straight",
+      "x_start_cm": 306,
+      "x_end_cm": 791,
+      "layers": [
+        2
+      ],
+      "face": "upper",
+      "horizontal_length_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/negative/3"
+      },
+      "mark": "N4",
+      "function": "negative",
+      "bars": 2,
+      "diameter_mm": 20,
+      "length_cm": 301,
+      "shape": "straight",
+      "x_start_cm": 488,
+      "x_end_cm": 789,
+      "layers": [
+        1,
+        1
+      ],
+      "face": "upper",
+      "horizontal_length_cm": null
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/positive/0"
+      },
+      "mark": "N5",
+      "function": "positive",
+      "bars": 4,
+      "diameter_mm": 12.5,
+      "length_cm": 815,
+      "shape": "straight",
+      "x_start_cm": -53,
+      "x_end_cm": 762,
+      "layers": [
+        3,
+        1
+      ],
+      "face": "lower",
+      "horizontal_length_cm": null
+    }
+  ],
+  "stirrup_regions": [
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/regions/0"
+      },
+      "id": "R1",
+      "mark": "N6",
+      "function": null,
+      "diameter_mm": 5,
+      "spacing_cm": 14,
+      "quantity": 39,
+      "region_length_cm": 537,
+      "legs": null,
+      "x_start_cm": 0,
+      "x_end_cm": 537
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/regions/1"
+      },
+      "id": "R2",
+      "mark": "N7",
+      "function": "suspension",
+      "diameter_mm": 6.3,
+      "spacing_cm": 15,
+      "quantity": 5,
+      "region_length_cm": 72,
+      "indirect_support": "IB1",
+      "legs": null,
+      "x_start_cm": 537,
+      "x_end_cm": 609
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/regions/2"
+      },
+      "id": "R3",
+      "mark": "N6",
+      "function": null,
+      "diameter_mm": 5,
+      "spacing_cm": 14,
+      "quantity": 8,
+      "region_length_cm": 102,
+      "legs": null,
+      "x_start_cm": 609,
+      "x_end_cm": 711
+    }
+  ],
+  "skin_reinforcement": [
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/skin_reinforcement"
+      },
+      "mark": "N8",
+      "function": "skin",
+      "bars": 6,
+      "diameter_mm": 8,
+      "length_cm": 760,
+      "shape": "straight",
+      "x_start_cm": -24,
+      "x_end_cm": 736,
+      "bars_per_face": 3,
+      "faces": 2,
+      "vertical_spacing_cm": null,
+      "horizontal_length_cm": null,
+      "left_return_cm": null
+    }
+  ],
+  "anchorage_staples": [],
+  "indirect_supports": [
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/0"
+      },
+      "id": "IB1",
+      "supported_beam": null,
+      "span": "S1",
+      "x_cm": null,
+      "suspension_reinforcement_detailed": true,
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "suspension_marks": [
+        "N7"
+      ]
+    },
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/1"
+      },
+      "id": "IB2",
+      "supported_beam": null,
+      "span": "S1",
+      "x_cm": null,
+      "suspension_reinforcement_detailed": null,
+      "x_start_cm": null,
+      "x_end_cm": null,
+      "suspension_marks": null
+    }
+  ],
+  "suspension_reinforcement": [
+    {
+      "indirect_support": "IB1",
+      "detailed": true,
+      "marks": [
+        "N7"
+      ],
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/0"
+      }
+    },
+    {
+      "indirect_support": "IB2",
+      "detailed": null,
+      "marks": null,
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/indirect_supported_beams/1"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/sections/0"
+      },
+      "id": "Corte A",
+      "x_cm": null,
+      "upper_positions": {
+        "N1": 2,
+        "N3": 2
+      },
+      "lower_position": "N5",
+      "skin_bars_per_face": 3,
+      "skin_position": null,
+      "upper_layers": [
+        4,
+        null
+      ],
+      "lower_layers": [
+        3,
+        1
+      ],
+      "scope": "Este corte nao representa as regioes extremas com N2 e N4; nao estendido a toda a viga."
+    }
+  ],
+  "stirrup_shape_observation": {
+    "vertical_legs_drawn": 2,
+    "dimensions_cm": [
+      14,
+      67
+    ],
+    "source": {
+      "document_model": "V501_V503_detalhamento_prancha.json",
+      "json_pointer": "/stirrups"
+    }
+  },
+  "special_details_source": {
+    "document_model": "V501_V503_detalhamento_prancha.json",
+    "json_pointer": "/special_details"
+  },
+  "anchorage_staples_detailed": false,
+  "suspension_reinforcement_detailed": true,
+  "unresolved_drawing_observations": [],
+  "document_sha256": "4afa1eba58070fd19958471462f068d863a8d27e25cfad34404df1b6ca915128",
+  "uncertainties": [
+    {
+      "code": "unknown_section_dimension",
+      "entities": [
+        "cover_cm"
+      ]
+    },
+    {
+      "code": "unknown_support_nature",
+      "entities": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "code": "unknown_support_restraint",
+      "entities": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "code": "unknown_support_dimension",
+      "entities": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "code": "unknown_support_faces",
+      "entities": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "code": "unknown_skin_vertical_spacing",
+      "entities": [
+        "N8"
+      ]
+    },
+    {
+      "code": "unknown_stirrup_function",
+      "entities": [
+        "R1",
+        "R3"
+      ]
+    },
+    {
+      "code": "unknown_stirrup_legs",
+      "entities": [
+        "R1",
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "code": "unknown_longitudinal_extent",
+      "entities": [
+        "IB1",
+        "IB2"
+      ]
+    },
+    {
+      "code": "unknown_supported_beam_name",
+      "entities": [
+        "IB1",
+        "IB2"
+      ]
+    },
+    {
+      "code": "unknown_indirect_support_position",
+      "entities": [
+        "IB1",
+        "IB2"
+      ]
+    },
+    {
+      "code": "unknown_suspension_association",
+      "entities": [
+        "IB2"
+      ]
+    },
+    {
+      "code": "unknown_section_position",
+      "entities": [
+        "Corte A"
+      ]
+    },
+    {
+      "code": "unknown_group_support_mapping",
+      "entities": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "code": "support_dimension_direction_unconfirmed",
+      "entities": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "code": "unknown_first_last_stirrup_offsets",
+      "source": {
+        "document_model": "V501_V503_detalhamento_prancha.json",
+        "json_pointer": "/stirrups/first_last_stirrup_offsets"
+      }
+    }
+  ]
+}
