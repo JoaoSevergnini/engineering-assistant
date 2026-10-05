@@ -1,0 +1,2154 @@
+{
+  "model_type": "moment_linear_interpolation_golden",
+  "schema_version": "1.0",
+  "beam_id": "V1001",
+  "diagram": {
+    "model_type": "piecewise_linear_characteristic_moment",
+    "unit": "kN.m",
+    "domain_m": [
+      0.384,
+      7.936
+    ],
+    "points": [
+      {
+        "section": 1,
+        "x_m": 0.384,
+        "value_knm": -37.54966285,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/0",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/0",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 2,
+        "x_m": 1.0133333333333332,
+        "value_knm": -9.414384,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/1",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/1",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 3,
+        "x_m": 1.6426666666666665,
+        "value_knm": 15.07282105,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/2",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/2",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 4,
+        "x_m": 2.272,
+        "value_knm": 35.9119523,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/3",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/3",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 5,
+        "x_m": 2.901333333333333,
+        "value_knm": 53.10300975,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/4",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/4",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 6,
+        "x_m": 3.5306666666666664,
+        "value_knm": 59.8401783,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/5",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/5",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 7,
+        "x_m": 4.16,
+        "value_knm": 56.10384465,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/6",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/6",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 8,
+        "x_m": 4.789333333333333,
+        "value_knm": 50.23946795,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/7",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/7",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 9,
+        "x_m": 5.418666666666667,
+        "value_knm": 39.9130655,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/8",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/8",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 10,
+        "x_m": 6.047999999999999,
+        "value_knm": 25.05599075,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/9",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/9",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 11,
+        "x_m": 6.677333333333333,
+        "value_knm": 3.16754795,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/10",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/10",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 12,
+        "x_m": 7.3066666666666675,
+        "value_knm": -26.0072358,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/11",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/11",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 13,
+        "x_m": 7.936,
+        "value_knm": -59.63423865,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/12",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/12",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      }
+    ],
+    "segments": [
+      {
+        "segment_id": "SEG1",
+        "start_section": 1,
+        "end_section": 2,
+        "x_start_m": 0.384,
+        "x_end_m": 1.0133333333333332,
+        "m_start_knm": -37.54966285,
+        "m_end_knm": -9.414384,
+        "slope_knm_per_m": 44.70648122351696,
+        "slope_decimal": "44.706481223516958624254496507830217003071294031826",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 1,
+            "x_m": 0.384,
+            "value_knm": -37.54966285,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/0",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/0",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 2,
+            "x_m": 1.0133333333333332,
+            "value_knm": -9.414384,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/1",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/1",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG2",
+        "start_section": 2,
+        "end_section": 3,
+        "x_start_m": 1.0133333333333332,
+        "x_end_m": 1.6426666666666665,
+        "m_start_knm": -9.414384,
+        "m_end_knm": 15.07282105,
+        "slope_knm_per_m": 38.909753787076276,
+        "slope_decimal": "38.909753787076273247338653976497523693784638585674",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 2,
+            "x_m": 1.0133333333333332,
+            "value_knm": -9.414384,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/1",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/1",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 3,
+            "x_m": 1.6426666666666665,
+            "value_knm": 15.07282105,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/2",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/2",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG3",
+        "start_section": 3,
+        "end_section": 4,
+        "x_start_m": 1.6426666666666665,
+        "x_end_m": 2.272,
+        "m_start_knm": 15.07282105,
+        "m_end_knm": 35.9119523,
+        "slope_knm_per_m": 33.113026350635586,
+        "slope_decimal": "33.113026350635584450999377479982931409063167377402",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 3,
+            "x_m": 1.6426666666666665,
+            "value_knm": 15.07282105,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/2",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/2",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 4,
+            "x_m": 2.272,
+            "value_knm": 35.9119523,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/3",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/3",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG4",
+        "start_section": 4,
+        "end_section": 5,
+        "x_start_m": 2.272,
+        "x_end_m": 2.901333333333333,
+        "m_start_knm": 35.9119523,
+        "m_end_knm": 53.10300975,
+        "slope_knm_per_m": 27.31629891419493,
+        "slope_decimal": "27.316298914194929722615950315111081894041480461378",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 4,
+            "x_m": 2.272,
+            "value_knm": 35.9119523,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/3",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/3",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 5,
+            "x_m": 2.901333333333333,
+            "value_knm": 53.10300975,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/4",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/4",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG5",
+        "start_section": 5,
+        "end_section": 6,
+        "x_start_m": 2.901333333333333,
+        "x_end_m": 3.5306666666666664,
+        "m_start_knm": 53.10300975,
+        "m_end_knm": 59.8401783,
+        "slope_knm_per_m": 10.705246636652541,
+        "slope_decimal": "10.705246636652541238850991880027411138666114403876",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 5,
+            "x_m": 2.901333333333333,
+            "value_knm": 53.10300975,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/4",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/4",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 6,
+            "x_m": 3.5306666666666664,
+            "value_knm": 59.8401783,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/5",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/5",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG6",
+        "start_section": 6,
+        "end_section": 7,
+        "x_start_m": 3.5306666666666664,
+        "x_end_m": 4.16,
+        "m_start_knm": 59.8401783,
+        "m_end_knm": 56.10384465,
+        "slope_knm_per_m": -5.936970842161014,
+        "slope_decimal": "-5.9369708421610144334869312877057485224867424975642",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 6,
+            "x_m": 3.5306666666666664,
+            "value_knm": 59.8401783,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/5",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/5",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 7,
+            "x_m": 4.16,
+            "value_knm": 56.10384465,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/6",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/6",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG7",
+        "start_section": 7,
+        "end_section": 8,
+        "x_start_m": 4.16,
+        "x_end_m": 4.789333333333333,
+        "m_start_knm": 56.10384465,
+        "m_end_knm": 50.23946795,
+        "slope_knm_per_m": -9.318395180084751,
+        "slope_decimal": "-9.3183951800847506983025318245501579992223646981769",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 7,
+            "x_m": 4.16,
+            "value_knm": 56.10384465,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/6",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/6",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 8,
+            "x_m": 4.789333333333333,
+            "value_knm": 50.23946795,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/7",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/7",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG8",
+        "start_section": 8,
+        "end_section": 9,
+        "x_start_m": 4.789333333333333,
+        "x_end_m": 5.418666666666667,
+        "m_start_knm": 50.23946795,
+        "m_end_knm": 39.9130655,
+        "slope_knm_per_m": -16.408478469279643,
+        "slope_decimal": "-16.408478469279643635086367288513098425458380812396",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 8,
+            "x_m": 4.789333333333333,
+            "value_knm": 50.23946795,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/7",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/7",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 9,
+            "x_m": 5.418666666666667,
+            "value_knm": 39.9130655,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/8",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/8",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG9",
+        "start_section": 9,
+        "end_section": 10,
+        "x_start_m": 5.418666666666667,
+        "x_end_m": 6.047999999999999,
+        "m_start_knm": 39.9130655,
+        "m_end_knm": 25.05599075,
+        "slope_knm_per_m": -23.60763996292378,
+        "slope_decimal": "-23.607639962923778829745684160548368105263052009254",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 9,
+            "x_m": 5.418666666666667,
+            "value_knm": 39.9130655,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/8",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/8",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 10,
+            "x_m": 6.047999999999999,
+            "value_knm": 25.05599075,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/9",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/9",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG10",
+        "start_section": 10,
+        "end_section": 11,
+        "x_start_m": 6.047999999999999,
+        "x_end_m": 6.677333333333333,
+        "m_start_knm": 25.05599075,
+        "m_end_knm": 3.16754795,
+        "slope_knm_per_m": -34.78036461864403,
+        "slope_decimal": "-34.780364618644030953003581944882465038578448217728",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 10,
+            "x_m": 6.047999999999999,
+            "value_knm": 25.05599075,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/9",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/9",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 11,
+            "x_m": 6.677333333333333,
+            "value_knm": 3.16754795,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/10",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/10",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG11",
+        "start_section": 11,
+        "end_section": 12,
+        "x_start_m": 6.677333333333333,
+        "x_end_m": 7.3066666666666675,
+        "m_start_knm": 3.16754795,
+        "m_end_knm": -26.0072358,
+        "slope_knm_per_m": -46.35823689088974,
+        "slope_decimal": "-46.358236890889744568946441676850640194626128719682",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 11,
+            "x_m": 6.677333333333333,
+            "value_knm": 3.16754795,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/10",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/10",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 12,
+            "x_m": 7.3066666666666675,
+            "value_knm": -26.0072358,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/11",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/11",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "segment_id": "SEG12",
+        "start_section": 12,
+        "end_section": 13,
+        "x_start_m": 7.3066666666666675,
+        "x_end_m": 7.936,
+        "m_start_knm": -26.0072358,
+        "m_end_knm": -59.63423865,
+        "slope_knm_per_m": -53.432737579449224,
+        "slope_decimal": "-53.432737579449223295468193126619829804281152833461",
+        "segment_status": "resolved",
+        "base_points": [
+          {
+            "section": 12,
+            "x_m": 7.3066666666666675,
+            "value_knm": -26.0072358,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/11",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/11",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          },
+          {
+            "section": 13,
+            "x_m": 7.936,
+            "value_knm": -59.63423865,
+            "source_type": "tqs_section",
+            "provenance": {
+              "series_pointer": "/beam/spans/0/internal_forces/0",
+              "value_pointer": "/beam/spans/0/internal_forces/0/values/12",
+              "position_pointer": "/beam/spans/0/internal_forces/0/positions/12",
+              "sources": [
+                "s541#/normalizacao"
+              ],
+              "position_sources": [
+                "s166#/normalizacao/campos/excentricidade",
+                "s536#/normalizacao/campos/comprimento",
+                "s541#/normalizacao"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "beam_id": "V1001",
+      "span_id": 1,
+      "series": {
+        "quantity": "bending_moment",
+        "envelope": "max",
+        "stage": "model_input",
+        "unit": "kN.m",
+        "sources": [
+          "s541#/normalizacao"
+        ]
+      },
+      "label_original": "M MX.",
+      "characteristic_level": "Msk confirmado pelo engenheiro",
+      "evidence": [
+        {
+          "reference": "s541#/normalizacao",
+          "source": {
+            "file": "VGESFS.LST",
+            "lines": [
+              500,
+              500
+            ],
+            "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+          }
+        }
+      ]
+    },
+    "rule": {
+      "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+      "author": "João Severgnini",
+      "date": "2026-10-04",
+      "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+      "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+      "decimal_precision": 50
+    }
+  },
+  "reinforcement_event_query": {
+    "x_m": 6.68,
+    "x_decimal": "6.68",
+    "value_knm": 3.0439259849576117,
+    "value_decimal": "3.0439259849576118950705125256135419773337713732008",
+    "provenance": {
+      "beam_id": "V1001",
+      "span_id": 1,
+      "series": {
+        "quantity": "bending_moment",
+        "envelope": "max",
+        "stage": "model_input",
+        "unit": "kN.m",
+        "sources": [
+          "s541#/normalizacao"
+        ]
+      },
+      "label_original": "M MX.",
+      "characteristic_level": "Msk confirmado pelo engenheiro",
+      "evidence": [
+        {
+          "reference": "s541#/normalizacao",
+          "source": {
+            "file": "VGESFS.LST",
+            "lines": [
+              500,
+              500
+            ],
+            "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+          }
+        }
+      ]
+    },
+    "rule": {
+      "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+      "author": "João Severgnini",
+      "date": "2026-10-04",
+      "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+      "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+      "decimal_precision": 50
+    },
+    "source_type": "linear_interpolation",
+    "segment_ids": [
+      "SEG11"
+    ],
+    "base_points": [
+      {
+        "section": 11,
+        "x_m": 6.677333333333333,
+        "value_knm": 3.16754795,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/10",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/10",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      },
+      {
+        "section": 12,
+        "x_m": 7.3066666666666675,
+        "value_knm": -26.0072358,
+        "source_type": "tqs_section",
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/11",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/11",
+          "sources": [
+            "s541#/normalizacao"
+          ],
+          "position_sources": [
+            "s166#/normalizacao/campos/excentricidade",
+            "s536#/normalizacao/campos/comprimento",
+            "s541#/normalizacao"
+          ]
+        }
+      }
+    ],
+    "status": "resolved",
+    "reinforcement_event": {
+      "source_type": "reinforcement_event_point",
+      "mark": "N3",
+      "kind": "geometric_end",
+      "x_m": 6.68,
+      "source": {
+        "document_model": "V1001_detalhamento_prancha.json",
+        "json_pointer": "/longitudinal_reinforcement/positive/0"
+      },
+      "mapping_provenance": {
+        "input": "detailing",
+        "json_pointer": "/longitudinal_reinforcement/5",
+        "translation_operand": {
+          "input": "tqs",
+          "json_pointer": "/beam/supports/1/width",
+          "selected_value": 1.2,
+          "unit": "m",
+          "sources": [
+            "s166#/normalizacao/campos/largura"
+          ],
+          "records": {
+            "s166#/normalizacao/campos/largura": {
+              "file": "RELDTFPS.LST",
+              "lines": [
+                4770,
+                4770
+              ],
+              "raw_pointer": "/categorias/apoios/4"
+            }
+          }
+        }
+      }
+    }
+  },
+  "maximum": {
+    "Msk_max_discrete": {
+      "section": 6,
+      "x_m": 3.5306666666666664,
+      "value_knm": 59.8401783,
+      "source_type": "tqs_section",
+      "provenance": {
+        "series_pointer": "/beam/spans/0/internal_forces/0",
+        "value_pointer": "/beam/spans/0/internal_forces/0/values/5",
+        "position_pointer": "/beam/spans/0/internal_forces/0/positions/5",
+        "sources": [
+          "s541#/normalizacao"
+        ],
+        "position_sources": [
+          "s166#/normalizacao/campos/excentricidade",
+          "s536#/normalizacao/campos/comprimento",
+          "s541#/normalizacao"
+        ]
+      }
+    },
+    "interpolated_piecewise_max": {
+      "section": 6,
+      "x_m": 3.5306666666666664,
+      "value_knm": 59.8401783,
+      "source_type": "tqs_section",
+      "provenance": {
+        "series_pointer": "/beam/spans/0/internal_forces/0",
+        "value_pointer": "/beam/spans/0/internal_forces/0/values/5",
+        "position_pointer": "/beam/spans/0/internal_forces/0/positions/5",
+        "sources": [
+          "s541#/normalizacao"
+        ],
+        "position_sources": [
+          "s166#/normalizacao/campos/excentricidade",
+          "s536#/normalizacao/campos/comprimento",
+          "s541#/normalizacao"
+        ]
+      }
+    },
+    "piecewise_max_status": "resolved",
+    "interpretation": "Máximo da representação linear; não máximo exato do diagrama estrutural real."
+  },
+  "zero_crossings": {
+    "status": "resolved",
+    "crossings": [
+      {
+        "status": "crossing",
+        "x_m": 1.2552876785475904,
+        "x_decimal": "1.2552876785475902957148578293952743291950340408490",
+        "source_type": "linear_interpolation",
+        "segments": [
+          {
+            "segment_id": "SEG2",
+            "direction": "increasing",
+            "base_points": [
+              {
+                "section": 2,
+                "x_m": 1.0133333333333332,
+                "value_knm": -9.414384,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/1",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/1",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              },
+              {
+                "section": 3,
+                "x_m": 1.6426666666666665,
+                "value_knm": 15.07282105,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/2",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/2",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "m_limit_knm": 0.0,
+        "m_limit_decimal": "0",
+        "provenance": {
+          "beam_id": "V1001",
+          "span_id": 1,
+          "series": {
+            "quantity": "bending_moment",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sources": [
+              "s541#/normalizacao"
+            ]
+          },
+          "label_original": "M MX.",
+          "characteristic_level": "Msk confirmado pelo engenheiro",
+          "evidence": [
+            {
+              "reference": "s541#/normalizacao",
+              "source": {
+                "file": "VGESFS.LST",
+                "lines": [
+                  500,
+                  500
+                ],
+                "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+              }
+            }
+          ]
+        },
+        "rule": {
+          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+          "author": "João Severgnini",
+          "date": "2026-10-04",
+          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+          "decimal_precision": 50
+        }
+      },
+      {
+        "status": "crossing",
+        "x_m": 6.745660952380952,
+        "x_decimal": "6.7456609523809521742857142857142857142857142857143",
+        "source_type": "linear_interpolation",
+        "segments": [
+          {
+            "segment_id": "SEG11",
+            "direction": "decreasing",
+            "base_points": [
+              {
+                "section": 11,
+                "x_m": 6.677333333333333,
+                "value_knm": 3.16754795,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/10",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/10",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              },
+              {
+                "section": 12,
+                "x_m": 7.3066666666666675,
+                "value_knm": -26.0072358,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/11",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/11",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "m_limit_knm": 0.0,
+        "m_limit_decimal": "0",
+        "provenance": {
+          "beam_id": "V1001",
+          "span_id": 1,
+          "series": {
+            "quantity": "bending_moment",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sources": [
+              "s541#/normalizacao"
+            ]
+          },
+          "label_original": "M MX.",
+          "characteristic_level": "Msk confirmado pelo engenheiro",
+          "evidence": [
+            {
+              "reference": "s541#/normalizacao",
+              "source": {
+                "file": "VGESFS.LST",
+                "lines": [
+                  500,
+                  500
+                ],
+                "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+              }
+            }
+          ]
+        },
+        "rule": {
+          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+          "author": "João Severgnini",
+          "date": "2026-10-04",
+          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+          "decimal_precision": 50
+        }
+      }
+    ],
+    "unresolved_segments": [],
+    "no_crossings_in_evaluable_segments": false,
+    "m_limit_knm": 0.0
+  },
+  "remaining_reinforcement_capacity": {
+    "marks": [
+      "N5"
+    ],
+    "composition": {
+      "marks": [
+        "N5"
+      ],
+      "layers": [
+        {
+          "layer": 1,
+          "components": [
+            {
+              "mark": "N5",
+              "count": 2,
+              "diameter_mm": 10,
+              "source": {
+                "document_model": "V1001_detalhamento_prancha.json",
+                "json_pointer": "/longitudinal_reinforcement/positive/1"
+              }
+            }
+          ],
+          "numero_barras": 2,
+          "diametro_mm": 10,
+          "d_cm": null
+        }
+      ],
+      "status": "resolved",
+      "issues": [],
+      "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+    },
+    "configuration_side": "left_limit",
+    "reference_x_m": 6.68,
+    "reference_region_id": "R3",
+    "concretopy_call": {
+      "geometry": {
+        "bw_cm": 19,
+        "h_cm": 72,
+        "cover_cm": 2.5,
+        "stirrup_diameter_mm": 5
+      },
+      "fck_mpa": 40.0,
+      "fyk_mpa": 500.0,
+      "Es_mpa": 210000.0,
+      "layers": [
+        {
+          "numero_barras": 2,
+          "diametro_mm": 10,
+          "d_cm": null
+        }
+      ],
+      "coefficients": {
+        "gamma_c": 1.4,
+        "gamma_s": 1.15,
+        "gamma_f": 1.4
+      },
+      "verificar_armadura_minima": false
+    },
+    "concretopy_result": {
+      "as_total_cm2": 1.5707963267948966,
+      "as_por_camada_cm2": [
+        1.5707963267948966
+      ],
+      "d_por_camada_cm": [
+        68.5
+      ],
+      "d_equivalente_cm": 68.5,
+      "linha_neutra_cm": 1.8501100901137897,
+      "x_sobre_d": 0.02700890642501883,
+      "limite_x_sobre_d": 0.45,
+      "ductilidade_atendida": true,
+      "mrd_kncm": 4627.6995622592885,
+      "mk_equivalente_kncm": 3305.4996873280634,
+      "hipoteses_validas": true,
+      "deformacoes_aco": [
+        0.01
+      ],
+      "camadas_escoadas": [
+        true
+      ],
+      "as_min_cm2": null,
+      "armadura_minima_atendida": null,
+      "parametros": {
+        "modelo": "bloco_retangular_camadas_escoadas_v1",
+        "unidade_momento": "kN.cm",
+        "unidade_tensao": "MPa",
+        "gamma_c": 1.4,
+        "gamma_s": 1.15,
+        "gamma_f": 1.4,
+        "fck": 40.0,
+        "fyk": 500.0,
+        "es": 210000.0,
+        "fcd": 28.571428571428573,
+        "fyd": 434.7826086956522,
+        "alfa_c": 0.85,
+        "lambda": 0.8,
+        "ecu": 0.0035,
+        "eyu": 0.01,
+        "eyd": 0.002070393374741201,
+        "eps_c_adotada": 0.0002775863685019173,
+        "bw_cm": 19,
+        "h_cm": 72,
+        "cobrimento_cm": 2.5,
+        "diametro_estribo_mm": 5
+      },
+      "avisos": [
+        "Alturas úteis omitidas calculadas pelo critério da planilha VIGAS!K5:K7."
+      ]
+    },
+    "MRd_knm": 46.276995622592885,
+    "Mk_equivalent_knm": 33.054996873280636,
+    "provenance": {
+      "reinforcement": {
+        "mark": "N5",
+        "x_start_cm": -42,
+        "x_end_cm": 753,
+        "x_start_common": 0.18,
+        "x_end_common": 8.13,
+        "source": {
+          "document_model": "V1001_detalhamento_prancha.json",
+          "json_pointer": "/longitudinal_reinforcement/positive/1"
+        },
+        "mapping_provenance": {
+          "input": "detailing",
+          "json_pointer": "/longitudinal_reinforcement/6",
+          "translation_operand": {
+            "input": "tqs",
+            "json_pointer": "/beam/supports/1/width",
+            "selected_value": 1.2,
+            "unit": "m",
+            "sources": [
+              "s166#/normalizacao/campos/largura"
+            ],
+            "records": {
+              "s166#/normalizacao/campos/largura": {
+                "file": "RELDTFPS.LST",
+                "lines": [
+                  4770,
+                  4770
+                ],
+                "raw_pointer": "/categorias/apoios/4"
+              }
+            }
+          }
+        }
+      },
+      "transverse_configuration": {
+        "bars": [
+          {
+            "mark": "N3",
+            "x_start_common": 0.18,
+            "x_end_common": 6.68,
+            "x_start_cm": -42,
+            "x_end_cm": 608,
+            "source": {
+              "document_model": "V1001_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/5",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s166#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s166#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      4770,
+                      4770
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "mark": "N5",
+            "x_start_common": 0.18,
+            "x_end_common": 8.13,
+            "x_start_cm": -42,
+            "x_end_cm": 753,
+            "source": {
+              "document_model": "V1001_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/1"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/6",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s166#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s166#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      4770,
+                      4770
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V1001_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": []
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s449#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "ST1",
+              "mark": "N9",
+              "source": {
+                "document_model": "V1001_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/0"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/0",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s166#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s166#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        4770,
+                        4770
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "unresolved_intervals": [],
+        "boundary_transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V1001_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": []
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s449#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "ST1",
+              "mark": "N9",
+              "source": {
+                "document_model": "V1001_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/0"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/0",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s166#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s166#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        4770,
+                        4770
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V1001_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": []
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s449#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "ST1",
+              "mark": "N9",
+              "source": {
+                "document_model": "V1001_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/0"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/0",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s166#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s166#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        4770,
+                        4770
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "materials": {
+          "shared_pointer": "/audit_context/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/audit_context/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/audit_context/concretopy_interface"
+        }
+      },
+      "materials": {
+        "status": "consistent",
+        "normalized_class": "CA-50",
+        "derived_fyk_mpa": 500.0,
+        "unit": "MPa",
+        "rule": {
+          "id": "engineer_confirmed_ca50_fyk_500_v1",
+          "authority": "Engenheiro responsável João; confirmação explícita neste fluxo em 04/10/2026",
+          "aliases": [
+            "CA50",
+            "CA-50",
+            "CA-50A"
+          ],
+          "normalized_class": "CA-50",
+          "fyk_mpa": 500.0,
+          "scope": "Resistência característica do aço neste fluxo; CA-50A não implica equivalência de outras propriedades."
+        },
+        "observations": [
+          {
+            "original_text": "CA-50A",
+            "normalized_class": "CA-50",
+            "derived_fyk_mpa": 500.0,
+            "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+            "provenance": {
+              "input": "tqs_raw",
+              "json_pointer": "/categorias/materiais/0/campos_explicitos/3",
+              "record": {
+                "arquivo": "RELDTFNG.LST",
+                "linha_inicial": 3572,
+                "linha_final": 3572,
+                "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+              }
+            }
+          },
+          {
+            "original_text": "CA50",
+            "normalized_class": "CA-50",
+            "derived_fyk_mpa": 500.0,
+            "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+            "provenance": {
+              "input": "tqs_raw",
+              "json_pointer": "/categorias/materiais/7/campos_explicitos/2",
+              "record": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 4789,
+                "linha_final": 4789,
+                "texto": " Dimensiona/ Aço CA50 -  As,mín=0,15%*b*h   K40=2"
+              }
+            }
+          }
+        ],
+        "excluded_observations": [
+          {
+            "original_text": "CA-50",
+            "normalized_class": "CA-50",
+            "derived_fyk_mpa": 500.0,
+            "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+            "provenance": {
+              "input": "tqs_raw",
+              "json_pointer": "/categorias/materiais/8/campos_explicitos/3",
+              "record": {
+                "arquivo": "RELDTVeT.LST",
+                "linha_inicial": 3391,
+                "linha_final": 3391,
+                "texto": " Concreto - fck =  400.0 Kgf/cm2      ---   -   gamaf= 1.4   -   gamac= 1.4   -    ACO - CA-50 "
+              }
+            },
+            "exclusion_reason": "RELDTVeT excluído pela política operacional confirmada"
+          }
+        ]
+      },
+      "material_parameters": {
+        "fck_mpa": 40.0,
+        "fck_provenance": [
+          {
+            "value": 40.0,
+            "field": {
+              "rotulo_original": "fck",
+              "chave": "fck",
+              "coluna": 37,
+              "valor": 40.0,
+              "unidade_original": "MPa",
+              "normalizado": {
+                "valor": 40.0,
+                "unidade": "MPa",
+                "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+              }
+            },
+            "raw_pointer": "/categorias/materiais/5/campos_explicitos/1",
+            "record": {
+              "arquivo": "RELDTFNG.LST",
+              "linha_inicial": 3652,
+              "linha_final": 3652,
+              "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=   40.0 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi=  27.5"
+            }
+          },
+          {
+            "value": 40.0,
+            "field": {
+              "rotulo_original": "fck",
+              "chave": "fck",
+              "coluna": 37,
+              "valor": 40.0,
+              "unidade_original": "MPa",
+              "normalizado": {
+                "valor": 40.0,
+                "unidade": "MPa",
+                "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+              }
+            },
+            "raw_pointer": "/categorias/materiais/6/campos_explicitos/1",
+            "record": {
+              "arquivo": "RELDTFPS.LST",
+              "linha_inicial": 4785,
+              "linha_final": 4785,
+              "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=  40.00 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi= 27.54"
+            }
+          }
+        ],
+        "gamma_f": 1.4,
+        "gamma_f_provenance": [
+          {
+            "value": 1.4,
+            "field": {
+              "rotulo_original": "Gamaf",
+              "chave": "gamaf",
+              "coluna": 77,
+              "valor": 1.4,
+              "unidade_original": null
+            },
+            "raw_pointer": "/categorias/materiais/0/campos_explicitos/2",
+            "record": {
+              "arquivo": "RELDTFNG.LST",
+              "linha_inicial": 3572,
+              "linha_final": 3572,
+              "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+            }
+          }
+        ]
+      },
+      "concretopy_interface": {
+        "interface": "concretopy.verificacoes.flexao.verificar_flexao_viga_retangular",
+        "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', camadas: 'Sequence[CamadaArmaduraLongitudinal]', *, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, gamma_f: 'float | None' = None, verificar_armadura_minima: 'bool' = False) -> 'ResultadoVerificacaoFlexao'",
+        "file": "C:\\Users\\João Severgnini\\Documents\\concretopy\\concretopy\\verificacoes\\flexao.py",
+        "sha256": "be2b769d7db3ab61e853332d2abe868bd452df0f61fcf448edf59be4b43b2430",
+        "version_metadata": {
+          "file": "C:\\Users\\João Severgnini\\Documents\\concretopy\\pyproject.toml",
+          "sha256": "f6800495dc109fb59226b777b26db077262b51ab819fee30e72a42e39ca6fe98"
+        }
+      }
+    },
+    "diagnostics": {
+      "model_assumptions_valid": true,
+      "ductility": true,
+      "minimum_reinforcement": null,
+      "anchorage_checked": false,
+      "reinforcement_development_checked": false,
+      "bar_cut_checked": false
+    }
+  },
+  "capacity_crossings": {
+    "status": "resolved",
+    "crossings": [
+      {
+        "status": "crossing",
+        "x_m": 2.1857211018870064,
+        "x_decimal": "2.1857211018870062755858610411173450428745680077234",
+        "source_type": "linear_interpolation",
+        "segments": [
+          {
+            "segment_id": "SEG3",
+            "direction": "increasing",
+            "base_points": [
+              {
+                "section": 3,
+                "x_m": 1.6426666666666665,
+                "value_knm": 15.07282105,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/2",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/2",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              },
+              {
+                "section": 4,
+                "x_m": 2.272,
+                "value_knm": 35.9119523,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/3",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/3",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "m_limit_knm": 33.054996873280636,
+        "m_limit_decimal": "33.054996873280636",
+        "provenance": {
+          "beam_id": "V1001",
+          "span_id": 1,
+          "series": {
+            "quantity": "bending_moment",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sources": [
+              "s541#/normalizacao"
+            ]
+          },
+          "label_original": "M MX.",
+          "characteristic_level": "Msk confirmado pelo engenheiro",
+          "evidence": [
+            {
+              "reference": "s541#/normalizacao",
+              "source": {
+                "file": "VGESFS.LST",
+                "lines": [
+                  500,
+                  500
+                ],
+                "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+              }
+            }
+          ]
+        },
+        "rule": {
+          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+          "author": "João Severgnini",
+          "date": "2026-10-04",
+          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+          "decimal_precision": 50
+        }
+      },
+      {
+        "status": "crossing",
+        "x_m": 5.709168751478622,
+        "x_decimal": "5.7091687514786212464603828583986898228401253752863",
+        "source_type": "linear_interpolation",
+        "segments": [
+          {
+            "segment_id": "SEG9",
+            "direction": "decreasing",
+            "base_points": [
+              {
+                "section": 9,
+                "x_m": 5.418666666666667,
+                "value_knm": 39.9130655,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/8",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/8",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              },
+              {
+                "section": 10,
+                "x_m": 6.047999999999999,
+                "value_knm": 25.05599075,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "series_pointer": "/beam/spans/0/internal_forces/0",
+                  "value_pointer": "/beam/spans/0/internal_forces/0/values/9",
+                  "position_pointer": "/beam/spans/0/internal_forces/0/positions/9",
+                  "sources": [
+                    "s541#/normalizacao"
+                  ],
+                  "position_sources": [
+                    "s166#/normalizacao/campos/excentricidade",
+                    "s536#/normalizacao/campos/comprimento",
+                    "s541#/normalizacao"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "m_limit_knm": 33.054996873280636,
+        "m_limit_decimal": "33.054996873280636",
+        "provenance": {
+          "beam_id": "V1001",
+          "span_id": 1,
+          "series": {
+            "quantity": "bending_moment",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sources": [
+              "s541#/normalizacao"
+            ]
+          },
+          "label_original": "M MX.",
+          "characteristic_level": "Msk confirmado pelo engenheiro",
+          "evidence": [
+            {
+              "reference": "s541#/normalizacao",
+              "source": {
+                "file": "VGESFS.LST",
+                "lines": [
+                  500,
+                  500
+                ],
+                "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+              }
+            }
+          ]
+        },
+        "rule": {
+          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+          "author": "João Severgnini",
+          "date": "2026-10-04",
+          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+          "decimal_precision": 50
+        }
+      }
+    ],
+    "unresolved_segments": [],
+    "no_crossings_in_evaluable_segments": false,
+    "m_limit_knm": 33.054996873280636
+  },
+  "audit_context": {
+    "material_interpretation": {
+      "status": "consistent",
+      "normalized_class": "CA-50",
+      "derived_fyk_mpa": 500.0,
+      "unit": "MPa",
+      "rule": {
+        "id": "engineer_confirmed_ca50_fyk_500_v1",
+        "authority": "Engenheiro responsável João; confirmação explícita neste fluxo em 04/10/2026",
+        "aliases": [
+          "CA50",
+          "CA-50",
+          "CA-50A"
+        ],
+        "normalized_class": "CA-50",
+        "fyk_mpa": 500.0,
+        "scope": "Resistência característica do aço neste fluxo; CA-50A não implica equivalência de outras propriedades."
+      },
+      "observations": [
+        {
+          "original_text": "CA-50A",
+          "normalized_class": "CA-50",
+          "derived_fyk_mpa": 500.0,
+          "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+          "provenance": {
+            "input": "tqs_raw",
+            "json_pointer": "/categorias/materiais/0/campos_explicitos/3",
+            "record": {
+              "arquivo": "RELDTFNG.LST",
+              "linha_inicial": 3572,
+              "linha_final": 3572,
+              "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+            }
+          }
+        },
+        {
+          "original_text": "CA50",
+          "normalized_class": "CA-50",
+          "derived_fyk_mpa": 500.0,
+          "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+          "provenance": {
+            "input": "tqs_raw",
+            "json_pointer": "/categorias/materiais/7/campos_explicitos/2",
+            "record": {
+              "arquivo": "RELDTFPS.LST",
+              "linha_inicial": 4789,
+              "linha_final": 4789,
+              "texto": " Dimensiona/ Aço CA50 -  As,mín=0,15%*b*h   K40=2"
+            }
+          }
+        }
+      ],
+      "excluded_observations": [
+        {
+          "original_text": "CA-50",
+          "normalized_class": "CA-50",
+          "derived_fyk_mpa": 500.0,
+          "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+          "provenance": {
+            "input": "tqs_raw",
+            "json_pointer": "/categorias/materiais/8/campos_explicitos/3",
+            "record": {
+              "arquivo": "RELDTVeT.LST",
+              "linha_inicial": 3391,
+              "linha_final": 3391,
+              "texto": " Concreto - fck =  400.0 Kgf/cm2      ---   -   gamaf= 1.4   -   gamac= 1.4   -    ACO - CA-50 "
+            }
+          },
+          "exclusion_reason": "RELDTVeT excluído pela política operacional confirmada"
+        }
+      ]
+    },
+    "source_series": {
+      "quantity": "bending_moment",
+      "envelope": "max",
+      "stage": "model_input",
+      "unit": "kN.m",
+      "sources": [
+        "s541#/normalizacao"
+      ],
+      "label_original": "M MX.",
+      "provenance": {
+        "input": "positioned_tqs",
+        "pointer": "/beam/spans/0/internal_forces/0",
+        "evidence": [
+          {
+            "reference": "s541#/normalizacao",
+            "source": {
+              "file": "VGESFS.LST",
+              "lines": [
+                500,
+                500
+              ],
+              "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+            },
+            "record_text": "M MX. VAO= 1    -3.829   -0.960    1.537    3.662    5.415    6.102    5.721    5.123    4.070    2.555    0.323   -2.652   -6.081",
+            "label_original": "M MX."
+          }
+        ],
+        "characteristic_level": "Msk confirmado pelo engenheiro neste fluxo"
+      }
+    },
+    "concretopy_interface": {
+      "interface": "concretopy.verificacoes.flexao.verificar_flexao_viga_retangular",
+      "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', camadas: 'Sequence[CamadaArmaduraLongitudinal]', *, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, gamma_f: 'float | None' = None, verificar_armadura_minima: 'bool' = False) -> 'ResultadoVerificacaoFlexao'",
+      "file": "C:\\Users\\João Severgnini\\Documents\\concretopy\\concretopy\\verificacoes\\flexao.py",
+      "sha256": "be2b769d7db3ab61e853332d2abe868bd452df0f61fcf448edf59be4b43b2430",
+      "version_metadata": {
+        "file": "C:\\Users\\João Severgnini\\Documents\\concretopy\\pyproject.toml",
+        "sha256": "f6800495dc109fb59226b777b26db077262b51ab819fee30e72a42e39ca6fe98"
+      }
+    }
+  },
+  "scope": "Propriedades do diagrama adotado e capacidade isolada; sem escolha de corte normativo.",
+  "inputs": {
+    "V1001_beam_model.json": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V1001_beam_model.json",
+      "sha256": "63365a81e90119e125f5bee7c46a4ca31b50da224b7796d6d5d2a311df89b013"
+    },
+    "V1001_tqs.json": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V1001_tqs.json",
+      "sha256": "2082966747be540dd339b4a04841de1a73b279d1708cec46c4cf3187b99b7458"
+    },
+    "V1001_tqs_positions.json": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V1001_tqs_positions.json",
+      "sha256": "9639f6debb2bec4d83a0c2f2beccf60f2ad7d520b33d389732a1eacc8b97f6ae"
+    },
+    "V1001_beam_mapping.json": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V1001_beam_mapping.json",
+      "sha256": "ca600c9702dee472951bc34bc8754c4f4ecf380c2ab157f4032efa006bac35c4"
+    },
+    "V1001_tqs_raw.json": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V1001_tqs_raw.json",
+      "sha256": "48fab52fca7f221e2d02281141df3705449d44612d7ec910928380768704ffdd"
+    }
+  },
+  "implementation": {
+    "moment_diagram.py": "c3d857ea1d05e173a14f7632cff5c70a6e9be51358f45fcb90dd9f7c3a0e7b80",
+    "v1001_moment_interpolation.py": "fa87d7dda71e7857208f59124d7212ae77e8c6f6cd454977434cc525bc044649",
+    "tqs_moments.py": "5d1bafd62553d172514a26b7685b44cd3cabfda9c27e157cd1851da96c44def3",
+    "positive_flexure.py": "3963184467f2560fc1acb970932dee64bf01f257ddb028052309803aaf7630f0",
+    "flexure_regions.py": "ffe22eb2bbc937799a4c9c12b6386c8828962e32b1ea6c2ddc14d7cb9d07c7e8",
+    "materials.py": "935028db508b3344a8ac3b6721d6cba8fa048bbd7bd34b65affd03ed0068b532"
+  }
+}

@@ -1,0 +1,2282 @@
+{
+  "model_type": "positive_flexure_regions_check",
+  "schema_version": "1.0",
+  "beam_id": "V501",
+  "span_id": 1,
+  "coordinate_system": {
+    "origin": "left_support_axis",
+    "positive_direction": "left_to_right",
+    "unit": "m"
+  },
+  "domain_m": [
+    0.0,
+    8.43
+  ],
+  "regions": [
+    {
+      "kind": "interval",
+      "x_start_m": 0.0,
+      "x_end_m": 0.07,
+      "include_start": true,
+      "include_end": false,
+      "geometric_reinforcement": {
+        "marks": [],
+        "layers": [],
+        "status": "unresolved",
+        "issues": [
+          "no_positive_reinforcement"
+        ],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": null,
+      "transverse_status": "unresolved",
+      "provenance": {
+        "bars": [],
+        "transverse": [],
+        "unresolved_intervals": [],
+        "boundary_transverse": [],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R1",
+      "tqs_sections": [],
+      "governing_demand": null,
+      "concretopy_result": null,
+      "capacity": null,
+      "comparison": {
+        "utilization": null,
+        "capacity_sufficient": null
+      },
+      "blockers": [
+        "no_positive_reinforcement",
+        "unresolved_transverse_geometry"
+      ],
+      "status": "demand_not_sampled",
+      "diagnostics": {
+        "model_assumptions_valid": null,
+        "ductility": null,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      }
+    },
+    {
+      "kind": "interval",
+      "x_start_m": 0.07,
+      "x_end_m": 0.6,
+      "include_start": true,
+      "include_end": false,
+      "geometric_reinforcement": {
+        "marks": [
+          "N5"
+        ],
+        "layers": [
+          {
+            "layer": 1,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 3,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "layer": 2,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 1,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "status": "resolved",
+        "issues": [],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": null,
+      "transverse_status": "unresolved",
+      "provenance": {
+        "bars": [
+          {
+            "mark": "N5",
+            "x_start_common": 0.07,
+            "x_end_common": 8.22,
+            "x_start_cm": -53,
+            "x_end_cm": 762,
+            "source": {
+              "document_model": "V501_V503_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/4",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s157#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s157#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      12766,
+                      12766
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [],
+        "unresolved_intervals": [],
+        "boundary_transverse": [],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R2",
+      "tqs_sections": [
+        {
+          "section": 1,
+          "x_m": 0.384,
+          "value_knm": -22.03554255,
+          "eligible_positive": false,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/0",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/0",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        }
+      ],
+      "governing_demand": null,
+      "concretopy_result": null,
+      "capacity": null,
+      "comparison": {
+        "utilization": null,
+        "capacity_sufficient": null
+      },
+      "blockers": [
+        "unresolved_transverse_geometry"
+      ],
+      "status": "no_positive_demand",
+      "diagnostics": {
+        "model_assumptions_valid": null,
+        "ductility": null,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      }
+    },
+    {
+      "kind": "interval",
+      "x_start_m": 0.6,
+      "x_end_m": 5.97,
+      "include_start": true,
+      "include_end": false,
+      "geometric_reinforcement": {
+        "marks": [
+          "N5"
+        ],
+        "layers": [
+          {
+            "layer": 1,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 3,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "layer": 2,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 1,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "status": "resolved",
+        "issues": [],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": {
+        "bw_cm": 19,
+        "h_cm": 72,
+        "cover_cm": 2.5,
+        "stirrup_diameter_mm": 5
+      },
+      "transverse_status": "resolved",
+      "provenance": {
+        "bars": [
+          {
+            "mark": "N5",
+            "x_start_common": 0.07,
+            "x_end_common": 8.22,
+            "x_start_cm": -53,
+            "x_end_cm": 762,
+            "source": {
+              "document_model": "V501_V503_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/4",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s157#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s157#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      12766,
+                      12766
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R1",
+              "mark": "N6",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/0"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/0",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "unresolved_intervals": [],
+        "boundary_transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R1",
+              "mark": "N6",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/0"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/0",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R3",
+      "tqs_sections": [
+        {
+          "section": 2,
+          "x_m": 1.0133333333333332,
+          "value_knm": 1.3337044,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/1",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/1",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 3,
+          "x_m": 1.6426666666666665,
+          "value_knm": 21.21178395,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/2",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/2",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 4,
+          "x_m": 2.272,
+          "value_knm": 37.58888945,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/3",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/3",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 5,
+          "x_m": 2.901333333333333,
+          "value_knm": 50.4650209,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/4",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/4",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 6,
+          "x_m": 3.5306666666666664,
+          "value_knm": 59.6832719,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/5",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/5",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 7,
+          "x_m": 4.16,
+          "value_knm": 59.10467955,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/6",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/6",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 8,
+          "x_m": 4.789333333333333,
+          "value_knm": 61.5073088,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/7",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/7",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 9,
+          "x_m": 5.418666666666667,
+          "value_knm": 58.83009335,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/8",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/8",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        }
+      ],
+      "governing_demand": {
+        "section": 8,
+        "x_m": 4.789333333333333,
+        "value_knm": 61.5073088,
+        "eligible_positive": true,
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/7",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/7",
+          "sources": [
+            "s537#/normalizacao"
+          ],
+          "position_sources": [
+            "s157#/normalizacao/campos/excentricidade",
+            "s532#/normalizacao/campos/comprimento",
+            "s537#/normalizacao"
+          ]
+        },
+        "type": "Msk_positive",
+        "unit": "kN.m",
+        "source_series_pointer": "/source_series"
+      },
+      "concretopy_result": {
+        "as_total_cm2": 4.908738521234052,
+        "as_por_camada_cm2": [
+          3.6815538909255388,
+          1.227184630308513
+        ],
+        "d_por_camada_cm": [
+          68.375,
+          65.125
+        ],
+        "d_equivalente_cm": 67.5625,
+        "linha_neutra_cm": 5.781594031605593,
+        "x_sobre_d": 0.08557400971849166,
+        "limite_x_sobre_d": 0.45,
+        "ductilidade_atendida": true,
+        "mrd_kncm": 13925.84839156713,
+        "mk_equivalente_kncm": 9947.034565405093,
+        "hipoteses_validas": true,
+        "deformacoes_aco": [
+          0.01,
+          0.009480775977961474
+        ],
+        "camadas_escoadas": [
+          true,
+          true
+        ],
+        "as_min_cm2": null,
+        "armadura_minima_atendida": null,
+        "parametros": {
+          "modelo": "bloco_retangular_camadas_escoadas_v1",
+          "unidade_momento": "kN.cm",
+          "unidade_tensao": "MPa",
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "gamma_f": 1.4,
+          "fck": 40.0,
+          "fyk": 500.0,
+          "es": 210000.0,
+          "fcd": 28.571428571428573,
+          "fyd": 434.7826086956522,
+          "alfa_c": 0.85,
+          "lambda": 0.8,
+          "ecu": 0.0035,
+          "eyu": 0.01,
+          "eyd": 0.002070393374741201,
+          "eps_c_adotada": 0.0009236746175028279,
+          "bw_cm": 19,
+          "h_cm": 72,
+          "cobrimento_cm": 2.5,
+          "diametro_estribo_mm": 5
+        },
+        "avisos": [
+          "Alturas úteis omitidas calculadas pelo critério da planilha VIGAS!K5:K7."
+        ]
+      },
+      "capacity": {
+        "MRd": 139.2584839156713,
+        "Mk_equivalent": 99.47034565405093,
+        "unit": "kN.m"
+      },
+      "comparison": {
+        "utilization": 0.618348196093708,
+        "capacity_sufficient": true
+      },
+      "blockers": [],
+      "status": "checked",
+      "diagnostics": {
+        "model_assumptions_valid": true,
+        "ductility": true,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      },
+      "concretopy_call": {
+        "geometry": {
+          "bw_cm": 19,
+          "h_cm": 72,
+          "cover_cm": 2.5,
+          "stirrup_diameter_mm": 5
+        },
+        "fck_mpa": 40.0,
+        "fyk_mpa": 500.0,
+        "Es_mpa": 210000.0,
+        "layers": [
+          {
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "coefficients": {
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "gamma_f": 1.4
+        },
+        "verificar_armadura_minima": false
+      }
+    },
+    {
+      "kind": "boundary_point",
+      "x_start_m": 5.97,
+      "x_end_m": 5.97,
+      "include_start": true,
+      "include_end": true,
+      "geometric_reinforcement": {
+        "marks": [
+          "N5"
+        ],
+        "layers": [
+          {
+            "layer": 1,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 3,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "layer": 2,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 1,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "status": "resolved",
+        "issues": [],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": null,
+      "transverse_status": "unresolved",
+      "provenance": {
+        "bars": [
+          {
+            "mark": "N5",
+            "x_start_common": 0.07,
+            "x_end_common": 8.22,
+            "x_start_cm": -53,
+            "x_end_cm": 762,
+            "source": {
+              "document_model": "V501_V503_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/4",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s157#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s157#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      12766,
+                      12766
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R1",
+              "mark": "N6",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/0"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/0",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R2",
+              "mark": "N7",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/1"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/1",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "unresolved_intervals": [],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R4",
+      "tqs_sections": [],
+      "governing_demand": null,
+      "concretopy_result": null,
+      "capacity": null,
+      "comparison": {
+        "utilization": null,
+        "capacity_sufficient": null
+      },
+      "blockers": [
+        "unresolved_transverse_geometry"
+      ],
+      "status": "demand_not_sampled",
+      "diagnostics": {
+        "model_assumptions_valid": null,
+        "ductility": null,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      }
+    },
+    {
+      "kind": "interval",
+      "x_start_m": 5.97,
+      "x_end_m": 6.69,
+      "include_start": false,
+      "include_end": false,
+      "geometric_reinforcement": {
+        "marks": [
+          "N5"
+        ],
+        "layers": [
+          {
+            "layer": 1,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 3,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "layer": 2,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 1,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "status": "resolved",
+        "issues": [],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": {
+        "bw_cm": 19,
+        "h_cm": 72,
+        "cover_cm": 2.5,
+        "stirrup_diameter_mm": 6.3
+      },
+      "transverse_status": "resolved",
+      "provenance": {
+        "bars": [
+          {
+            "mark": "N5",
+            "x_start_common": 0.07,
+            "x_end_common": 8.22,
+            "x_start_cm": -53,
+            "x_end_cm": 762,
+            "source": {
+              "document_model": "V501_V503_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/4",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s157#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s157#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      12766,
+                      12766
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R2",
+              "mark": "N7",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/1"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/1",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "unresolved_intervals": [],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R5",
+      "tqs_sections": [
+        {
+          "section": 10,
+          "x_m": 6.047999999999999,
+          "value_knm": 50.80825365,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/9",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/9",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        },
+        {
+          "section": 11,
+          "x_m": 6.677333333333333,
+          "value_knm": 36.1276986,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/10",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/10",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        }
+      ],
+      "governing_demand": {
+        "section": 10,
+        "x_m": 6.047999999999999,
+        "value_knm": 50.80825365,
+        "eligible_positive": true,
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/9",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/9",
+          "sources": [
+            "s537#/normalizacao"
+          ],
+          "position_sources": [
+            "s157#/normalizacao/campos/excentricidade",
+            "s532#/normalizacao/campos/comprimento",
+            "s537#/normalizacao"
+          ]
+        },
+        "type": "Msk_positive",
+        "unit": "kN.m",
+        "source_series_pointer": "/source_series"
+      },
+      "concretopy_result": {
+        "as_total_cm2": 4.908738521234052,
+        "as_por_camada_cm2": [
+          3.6815538909255388,
+          1.227184630308513
+        ],
+        "d_por_camada_cm": [
+          68.245,
+          64.995
+        ],
+        "d_equivalente_cm": 67.4325,
+        "linha_neutra_cm": 5.781594031605593,
+        "x_sobre_d": 0.08573898389657202,
+        "limite_x_sobre_d": 0.45,
+        "ductilidade_atendida": true,
+        "mrd_kncm": 13898.10334775146,
+        "mk_equivalente_kncm": 9927.216676965329,
+        "hipoteses_validas": true,
+        "deformacoes_aco": [
+          0.01,
+          0.009479695359288533
+        ],
+        "camadas_escoadas": [
+          true,
+          true
+        ],
+        "as_min_cm2": null,
+        "armadura_minima_atendida": null,
+        "parametros": {
+          "modelo": "bloco_retangular_camadas_escoadas_v1",
+          "unidade_momento": "kN.cm",
+          "unidade_tensao": "MPa",
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "gamma_f": 1.4,
+          "fck": 40.0,
+          "fyk": 500.0,
+          "es": 210000.0,
+          "fcd": 28.571428571428573,
+          "fyd": 434.7826086956522,
+          "alfa_c": 0.85,
+          "lambda": 0.8,
+          "ecu": 0.0035,
+          "eyu": 0.01,
+          "eyd": 0.002070393374741201,
+          "eps_c_adotada": 0.0009255969862628043,
+          "bw_cm": 19,
+          "h_cm": 72,
+          "cobrimento_cm": 2.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "avisos": [
+          "Alturas úteis omitidas calculadas pelo critério da planilha VIGAS!K5:K7."
+        ]
+      },
+      "capacity": {
+        "MRd": 138.9810334775146,
+        "Mk_equivalent": 99.27216676965328,
+        "unit": "kN.m"
+      },
+      "comparison": {
+        "utilization": 0.5118076425982845,
+        "capacity_sufficient": true
+      },
+      "blockers": [],
+      "status": "checked",
+      "diagnostics": {
+        "model_assumptions_valid": true,
+        "ductility": true,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      },
+      "concretopy_call": {
+        "geometry": {
+          "bw_cm": 19,
+          "h_cm": 72,
+          "cover_cm": 2.5,
+          "stirrup_diameter_mm": 6.3
+        },
+        "fck_mpa": 40.0,
+        "fyk_mpa": 500.0,
+        "Es_mpa": 210000.0,
+        "layers": [
+          {
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "coefficients": {
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "gamma_f": 1.4
+        },
+        "verificar_armadura_minima": false
+      }
+    },
+    {
+      "kind": "boundary_point",
+      "x_start_m": 6.69,
+      "x_end_m": 6.69,
+      "include_start": true,
+      "include_end": true,
+      "geometric_reinforcement": {
+        "marks": [
+          "N5"
+        ],
+        "layers": [
+          {
+            "layer": 1,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 3,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "layer": 2,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 1,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "status": "resolved",
+        "issues": [],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": null,
+      "transverse_status": "unresolved",
+      "provenance": {
+        "bars": [
+          {
+            "mark": "N5",
+            "x_start_common": 0.07,
+            "x_end_common": 8.22,
+            "x_start_cm": -53,
+            "x_end_cm": 762,
+            "source": {
+              "document_model": "V501_V503_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/4",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s157#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s157#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      12766,
+                      12766
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R2",
+              "mark": "N7",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/1"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/1",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R3",
+              "mark": "N6",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/2"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/2",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "unresolved_intervals": [],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R6",
+      "tqs_sections": [],
+      "governing_demand": null,
+      "concretopy_result": null,
+      "capacity": null,
+      "comparison": {
+        "utilization": null,
+        "capacity_sufficient": null
+      },
+      "blockers": [
+        "unresolved_transverse_geometry"
+      ],
+      "status": "demand_not_sampled",
+      "diagnostics": {
+        "model_assumptions_valid": null,
+        "ductility": null,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      }
+    },
+    {
+      "kind": "interval",
+      "x_start_m": 6.69,
+      "x_end_m": 7.71,
+      "include_start": false,
+      "include_end": true,
+      "geometric_reinforcement": {
+        "marks": [
+          "N5"
+        ],
+        "layers": [
+          {
+            "layer": 1,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 3,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "layer": 2,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 1,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "status": "resolved",
+        "issues": [],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": {
+        "bw_cm": 19,
+        "h_cm": 72,
+        "cover_cm": 2.5,
+        "stirrup_diameter_mm": 5
+      },
+      "transverse_status": "resolved",
+      "provenance": {
+        "bars": [
+          {
+            "mark": "N5",
+            "x_start_common": 0.07,
+            "x_end_common": 8.22,
+            "x_start_cm": -53,
+            "x_end_cm": 762,
+            "source": {
+              "document_model": "V501_V503_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/4",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s157#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s157#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      12766,
+                      12766
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R3",
+              "mark": "N6",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/2"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/2",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "unresolved_intervals": [],
+        "boundary_transverse": [
+          {
+            "geometry": {
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/section"
+              },
+              "width_cm": 19,
+              "height_cm": 72,
+              "cover_cm": null,
+              "shape": "rectangular",
+              "lateral_projections_dimensions": null
+            },
+            "cover": {
+              "input": "tqs",
+              "pointer": "/beam/cover/bottom",
+              "sources": [
+                "s445#/campos_explicitos/1"
+              ],
+              "interpretation": "Dado do modelo, não confirmação do cobrimento PDF/executado."
+            },
+            "stirrup": {
+              "id": "R3",
+              "mark": "N6",
+              "source": {
+                "document_model": "V501_V503_detalhamento_prancha.json",
+                "json_pointer": "/stirrups/regions/2"
+              },
+              "mapping": {
+                "input": "detailing",
+                "json_pointer": "/stirrup_regions/2",
+                "translation_operand": {
+                  "input": "tqs",
+                  "json_pointer": "/beam/supports/1/width",
+                  "selected_value": 1.2,
+                  "unit": "m",
+                  "sources": [
+                    "s157#/normalizacao/campos/largura"
+                  ],
+                  "records": {
+                    "s157#/normalizacao/campos/largura": {
+                      "file": "RELDTFPS.LST",
+                      "lines": [
+                        12766,
+                        12766
+                      ],
+                      "raw_pointer": "/categorias/apoios/4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R7",
+      "tqs_sections": [
+        {
+          "section": 12,
+          "x_m": 7.3066666666666675,
+          "value_knm": 15.0826277,
+          "eligible_positive": true,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/11",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/11",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        }
+      ],
+      "governing_demand": {
+        "section": 12,
+        "x_m": 7.3066666666666675,
+        "value_knm": 15.0826277,
+        "eligible_positive": true,
+        "provenance": {
+          "series_pointer": "/beam/spans/0/internal_forces/0",
+          "value_pointer": "/beam/spans/0/internal_forces/0/values/11",
+          "position_pointer": "/beam/spans/0/internal_forces/0/positions/11",
+          "sources": [
+            "s537#/normalizacao"
+          ],
+          "position_sources": [
+            "s157#/normalizacao/campos/excentricidade",
+            "s532#/normalizacao/campos/comprimento",
+            "s537#/normalizacao"
+          ]
+        },
+        "type": "Msk_positive",
+        "unit": "kN.m",
+        "source_series_pointer": "/source_series"
+      },
+      "concretopy_result": {
+        "as_total_cm2": 4.908738521234052,
+        "as_por_camada_cm2": [
+          3.6815538909255388,
+          1.227184630308513
+        ],
+        "d_por_camada_cm": [
+          68.375,
+          65.125
+        ],
+        "d_equivalente_cm": 67.5625,
+        "linha_neutra_cm": 5.781594031605593,
+        "x_sobre_d": 0.08557400971849166,
+        "limite_x_sobre_d": 0.45,
+        "ductilidade_atendida": true,
+        "mrd_kncm": 13925.84839156713,
+        "mk_equivalente_kncm": 9947.034565405093,
+        "hipoteses_validas": true,
+        "deformacoes_aco": [
+          0.01,
+          0.009480775977961474
+        ],
+        "camadas_escoadas": [
+          true,
+          true
+        ],
+        "as_min_cm2": null,
+        "armadura_minima_atendida": null,
+        "parametros": {
+          "modelo": "bloco_retangular_camadas_escoadas_v1",
+          "unidade_momento": "kN.cm",
+          "unidade_tensao": "MPa",
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "gamma_f": 1.4,
+          "fck": 40.0,
+          "fyk": 500.0,
+          "es": 210000.0,
+          "fcd": 28.571428571428573,
+          "fyd": 434.7826086956522,
+          "alfa_c": 0.85,
+          "lambda": 0.8,
+          "ecu": 0.0035,
+          "eyu": 0.01,
+          "eyd": 0.002070393374741201,
+          "eps_c_adotada": 0.0009236746175028279,
+          "bw_cm": 19,
+          "h_cm": 72,
+          "cobrimento_cm": 2.5,
+          "diametro_estribo_mm": 5
+        },
+        "avisos": [
+          "Alturas úteis omitidas calculadas pelo critério da planilha VIGAS!K5:K7."
+        ]
+      },
+      "capacity": {
+        "MRd": 139.2584839156713,
+        "Mk_equivalent": 99.47034565405093,
+        "unit": "kN.m"
+      },
+      "comparison": {
+        "utilization": 0.15162938864670328,
+        "capacity_sufficient": true
+      },
+      "blockers": [],
+      "status": "checked",
+      "diagnostics": {
+        "model_assumptions_valid": true,
+        "ductility": true,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      },
+      "concretopy_call": {
+        "geometry": {
+          "bw_cm": 19,
+          "h_cm": 72,
+          "cover_cm": 2.5,
+          "stirrup_diameter_mm": 5
+        },
+        "fck_mpa": 40.0,
+        "fyk_mpa": 500.0,
+        "Es_mpa": 210000.0,
+        "layers": [
+          {
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "coefficients": {
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "gamma_f": 1.4
+        },
+        "verificar_armadura_minima": false
+      }
+    },
+    {
+      "kind": "interval",
+      "x_start_m": 7.71,
+      "x_end_m": 8.22,
+      "include_start": false,
+      "include_end": true,
+      "geometric_reinforcement": {
+        "marks": [
+          "N5"
+        ],
+        "layers": [
+          {
+            "layer": 1,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 3,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 3,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          },
+          {
+            "layer": 2,
+            "components": [
+              {
+                "mark": "N5",
+                "count": 1,
+                "diameter_mm": 12.5,
+                "source": {
+                  "document_model": "V501_V503_detalhamento_prancha.json",
+                  "json_pointer": "/longitudinal_reinforcement/positive/0"
+                }
+              }
+            ],
+            "numero_barras": 1,
+            "diametro_mm": 12.5,
+            "d_cm": null
+          }
+        ],
+        "status": "resolved",
+        "issues": [],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": null,
+      "transverse_status": "unresolved",
+      "provenance": {
+        "bars": [
+          {
+            "mark": "N5",
+            "x_start_common": 0.07,
+            "x_end_common": 8.22,
+            "x_start_cm": -53,
+            "x_end_cm": 762,
+            "source": {
+              "document_model": "V501_V503_detalhamento_prancha.json",
+              "json_pointer": "/longitudinal_reinforcement/positive/0"
+            },
+            "mapping": {
+              "input": "detailing",
+              "json_pointer": "/longitudinal_reinforcement/4",
+              "translation_operand": {
+                "input": "tqs",
+                "json_pointer": "/beam/supports/1/width",
+                "selected_value": 1.2,
+                "unit": "m",
+                "sources": [
+                  "s157#/normalizacao/campos/largura"
+                ],
+                "records": {
+                  "s157#/normalizacao/campos/largura": {
+                    "file": "RELDTFPS.LST",
+                    "lines": [
+                      12766,
+                      12766
+                    ],
+                    "raw_pointer": "/categorias/apoios/4"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "transverse": [],
+        "unresolved_intervals": [],
+        "boundary_transverse": [],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R8",
+      "tqs_sections": [
+        {
+          "section": 13,
+          "x_m": 7.936,
+          "value_knm": -10.1793027,
+          "eligible_positive": false,
+          "provenance": {
+            "series_pointer": "/beam/spans/0/internal_forces/0",
+            "value_pointer": "/beam/spans/0/internal_forces/0/values/12",
+            "position_pointer": "/beam/spans/0/internal_forces/0/positions/12",
+            "sources": [
+              "s537#/normalizacao"
+            ],
+            "position_sources": [
+              "s157#/normalizacao/campos/excentricidade",
+              "s532#/normalizacao/campos/comprimento",
+              "s537#/normalizacao"
+            ]
+          }
+        }
+      ],
+      "governing_demand": null,
+      "concretopy_result": null,
+      "capacity": null,
+      "comparison": {
+        "utilization": null,
+        "capacity_sufficient": null
+      },
+      "blockers": [
+        "unresolved_transverse_geometry"
+      ],
+      "status": "no_positive_demand",
+      "diagnostics": {
+        "model_assumptions_valid": null,
+        "ductility": null,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      }
+    },
+    {
+      "kind": "interval",
+      "x_start_m": 8.22,
+      "x_end_m": 8.43,
+      "include_start": false,
+      "include_end": true,
+      "geometric_reinforcement": {
+        "marks": [],
+        "layers": [],
+        "status": "unresolved",
+        "issues": [
+          "no_positive_reinforcement"
+        ],
+        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+      },
+      "transverse_geometry": null,
+      "transverse_status": "unresolved",
+      "provenance": {
+        "bars": [],
+        "transverse": [],
+        "unresolved_intervals": [],
+        "boundary_transverse": [],
+        "materials": {
+          "shared_pointer": "/material_interpretation"
+        },
+        "moment_series": {
+          "shared_pointer": "/source_series"
+        },
+        "concretopy": {
+          "shared_pointer": "/concretopy_interface"
+        }
+      },
+      "region_id": "R9",
+      "tqs_sections": [],
+      "governing_demand": null,
+      "concretopy_result": null,
+      "capacity": null,
+      "comparison": {
+        "utilization": null,
+        "capacity_sufficient": null
+      },
+      "blockers": [
+        "no_positive_reinforcement",
+        "unresolved_transverse_geometry"
+      ],
+      "status": "demand_not_sampled",
+      "diagnostics": {
+        "model_assumptions_valid": null,
+        "ductility": null,
+        "minimum_reinforcement": null,
+        "anchorage_checked": false,
+        "reinforcement_development_checked": false
+      }
+    }
+  ],
+  "span_summary": {
+    "regions_total": 9,
+    "regions_checked": 3,
+    "regions_unresolved": 6,
+    "regions_without_sampled_demand": 4,
+    "regions_without_positive_demand": 2,
+    "regions_not_checked": 6,
+    "all_checked_regions_capacity_sufficient": true,
+    "maximum_utilization": {
+      "value": 0.618348196093708,
+      "region_id": "R3",
+      "tqs_section": 8,
+      "x_m": 4.789333333333333
+    },
+    "incomplete": true
+  },
+  "source_series": {
+    "quantity": "bending_moment",
+    "envelope": "max",
+    "stage": "model_input",
+    "unit": "kN.m",
+    "sources": [
+      "s537#/normalizacao"
+    ],
+    "label_original": "M MX.",
+    "provenance": {
+      "input": "positioned_tqs",
+      "pointer": "/beam/spans/0/internal_forces/0",
+      "evidence": [
+        {
+          "reference": "s537#/normalizacao",
+          "source": {
+            "file": "VGESFS.LST",
+            "lines": [
+              1373,
+              1373
+            ],
+            "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/31"
+          },
+          "record_text": "M MX. VAO= 1    -2.247    0.136    2.163    3.833    5.146    6.086    6.027    6.272    5.999    5.181    3.684    1.538   -1.038",
+          "label_original": "M MX."
+        }
+      ],
+      "characteristic_level": "Msk confirmado pelo engenheiro neste fluxo"
+    }
+  },
+  "series_issue": null,
+  "material_interpretation": {
+    "status": "consistent",
+    "normalized_class": "CA-50",
+    "derived_fyk_mpa": 500.0,
+    "unit": "MPa",
+    "rule": {
+      "id": "engineer_confirmed_ca50_fyk_500_v1",
+      "authority": "Engenheiro responsável João; confirmação explícita neste fluxo em 04/10/2026",
+      "aliases": [
+        "CA50",
+        "CA-50",
+        "CA-50A"
+      ],
+      "normalized_class": "CA-50",
+      "fyk_mpa": 500.0,
+      "scope": "Resistência característica do aço neste fluxo; CA-50A não implica equivalência de outras propriedades."
+    },
+    "observations": [
+      {
+        "original_text": "CA-50A",
+        "normalized_class": "CA-50",
+        "derived_fyk_mpa": 500.0,
+        "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+        "provenance": {
+          "input": "tqs_raw",
+          "json_pointer": "/categorias/materiais/0/campos_explicitos/3",
+          "record": {
+            "arquivo": "RELDTFNG.LST",
+            "linha_inicial": 9618,
+            "linha_final": 9618,
+            "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+          }
+        }
+      },
+      {
+        "original_text": "CA50",
+        "normalized_class": "CA-50",
+        "derived_fyk_mpa": 500.0,
+        "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+        "provenance": {
+          "input": "tqs_raw",
+          "json_pointer": "/categorias/materiais/7/campos_explicitos/2",
+          "record": {
+            "arquivo": "RELDTFPS.LST",
+            "linha_inicial": 12785,
+            "linha_final": 12785,
+            "texto": " Dimensiona/ Aço CA50 -  As,mín=0,15%*b*h   K40=2"
+          }
+        }
+      }
+    ],
+    "excluded_observations": [
+      {
+        "original_text": "CA-50",
+        "normalized_class": "CA-50",
+        "derived_fyk_mpa": 500.0,
+        "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+        "provenance": {
+          "input": "tqs_raw",
+          "json_pointer": "/categorias/materiais/8/campos_explicitos/3",
+          "record": {
+            "arquivo": "RELDTVeT.LST",
+            "linha_inicial": 10139,
+            "linha_final": 10139,
+            "texto": " Concreto - fck =  400.0 Kgf/cm2      ---   -   gamaf= 1.4   -   gamac= 1.4   -    ACO - CA-50 "
+          }
+        },
+        "exclusion_reason": "RELDTVeT excluído pela política operacional confirmada"
+      }
+    ]
+  },
+  "material_parameters": {
+    "fck_mpa": 40.0,
+    "fck_provenance": [
+      {
+        "value": 40.0,
+        "field": {
+          "rotulo_original": "fck",
+          "chave": "fck",
+          "coluna": 37,
+          "valor": 40.0,
+          "unidade_original": "MPa",
+          "normalizado": {
+            "valor": 40.0,
+            "unidade": "MPa",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "raw_pointer": "/categorias/materiais/5/campos_explicitos/1",
+        "record": {
+          "arquivo": "RELDTFNG.LST",
+          "linha_inicial": 9698,
+          "linha_final": 9698,
+          "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=   40.0 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi=  27.5"
+        }
+      },
+      {
+        "value": 40.0,
+        "field": {
+          "rotulo_original": "fck",
+          "chave": "fck",
+          "coluna": 37,
+          "valor": 40.0,
+          "unidade_original": "MPa",
+          "normalizado": {
+            "valor": 40.0,
+            "unidade": "MPa",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "raw_pointer": "/categorias/materiais/6/campos_explicitos/1",
+        "record": {
+          "arquivo": "RELDTFPS.LST",
+          "linha_inicial": 12781,
+          "linha_final": 12781,
+          "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=  40.00 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi= 27.54"
+        }
+      }
+    ],
+    "gamma_f": 1.4,
+    "gamma_f_provenance": [
+      {
+        "value": 1.4,
+        "field": {
+          "rotulo_original": "Gamaf",
+          "chave": "gamaf",
+          "coluna": 77,
+          "valor": 1.4,
+          "unidade_original": null
+        },
+        "raw_pointer": "/categorias/materiais/0/campos_explicitos/2",
+        "record": {
+          "arquivo": "RELDTFNG.LST",
+          "linha_inicial": 9618,
+          "linha_final": 9618,
+          "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+        }
+      }
+    ]
+  },
+  "concretopy_interface": {
+    "interface": "concretopy.verificacoes.flexao.verificar_flexao_viga_retangular",
+    "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', camadas: 'Sequence[CamadaArmaduraLongitudinal]', *, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, gamma_f: 'float | None' = None, verificar_armadura_minima: 'bool' = False) -> 'ResultadoVerificacaoFlexao'",
+    "file": "C:\\Users\\João Severgnini\\Documents\\concretopy\\concretopy\\verificacoes\\flexao.py",
+    "sha256": "be2b769d7db3ab61e853332d2abe868bd452df0f61fcf448edf59be4b43b2430",
+    "version_metadata": {
+      "file": "C:\\Users\\João Severgnini\\Documents\\concretopy\\pyproject.toml",
+      "sha256": "f6800495dc109fb59226b777b26db077262b51ab819fee30e72a42e39ca6fe98"
+    }
+  },
+  "geometry_comparison": {
+    "detailing_clear_span": 7.11,
+    "tqs_clear_span": 7.12,
+    "difference": 0.01,
+    "tqs_minus_detail": 0.01,
+    "status": "mismatch",
+    "tqs_length": 7.552,
+    "support_axis_length": 8.43
+  },
+  "policies": {
+    "bounds": "closed_bar_intervals; compatible endpoint to right then left; otherwise isolated closed point; no epsilon",
+    "demand": "Msk positivo somente em posições TQS existentes; sem interpolação",
+    "scope": "presença geométrica; sem desenvolvimento/ancoragem ou aprovação global"
+  },
+  "inputs": {
+    "detail": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V501_V503_beam_model.json",
+      "sha256": "a454b67725ad2b57d43eb67db043697adbfd99f64c4e46b01252187fc1868506"
+    },
+    "tqs": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V501_tqs.json",
+      "sha256": "0cf0847d245630e5ac2ab6036e3264d2983e735a1a4940072ac93b50bb9c6067"
+    },
+    "positioned": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V501_tqs_positions.json",
+      "sha256": "59842a1228a009b11999a1435b51e22f62f7c212c1c03c72591f92594e9cf91c"
+    },
+    "mapping": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V501_beam_mapping.json",
+      "sha256": "d14d54a4a666a2bb1fbaa34084e4082ebf9b37b79aa30ad897c2057e4f77dc05"
+    },
+    "raw": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V501_tqs_raw.json",
+      "sha256": "654b79ee817853e6cac8d4e49217b05a4474108af8e61f04a7f23f86527fb344"
+    }
+  },
+  "implementation": {
+    "positive_flexure.py": "3963184467f2560fc1acb970932dee64bf01f257ddb028052309803aaf7630f0",
+    "flexure_regions.py": "ffe22eb2bbc937799a4c9c12b6386c8828962e32b1ea6c2ddc14d7cb9d07c7e8",
+    "materials.py": "935028db508b3344a8ac3b6721d6cba8fa048bbd7bd34b65affd03ed0068b532",
+    "tqs_moments.py": "5d1bafd62553d172514a26b7685b44cd3cabfda9c27e157cd1851da96c44def3"
+  }
+}

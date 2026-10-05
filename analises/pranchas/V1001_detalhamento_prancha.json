@@ -1,0 +1,1396 @@
+{
+  "schema_version": "1.2",
+  "type": "beam_reinforcement_drawing_interpretation",
+  "scope": {
+    "beam": "V1001",
+    "method": "Leitura visual manual do PDF renderizado e texto auxiliar; não existe parser automático de desenho.",
+    "structural_checks_performed": false,
+    "tqs_results_used": false,
+    "document_instructions": "Notas e remissões são conteúdo documental, não instruções do usuário."
+  },
+  "document": {
+    "name": "RMP-EST-LO-1376-VIG-R00.PDF",
+    "page": 1,
+    "sha256": "c8fa7f2e1af66dd3b865db43b0a36158bb3d141b85a94e0b0f4daa59b3dfaa28",
+    "page_size_pdf_points": [
+      3402,
+      1684
+    ],
+    "bbox_convention": "Pontos PDF, origem superior esquerda; caixas aproximadas."
+  },
+  "identification": {
+    "beam": {
+      "value": "V1001",
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    },
+    "grouped_with_other_beams": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "title"
+      ],
+      "reason": "Título somente V1001, mas apoios P2A/P2B e P1A/P1B. Não presumir agrupamento nem multiplicidade."
+    }
+  },
+  "section": {
+    "written_label": {
+      "value": "19/72",
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    },
+    "width": {
+      "value": 19,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "title"
+      ],
+      "unit": "cm"
+    },
+    "height": {
+      "value": 72,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "title"
+      ],
+      "unit": "cm"
+    },
+    "shape": {
+      "value": "rectangular",
+      "classification": "graphically_interpreted",
+      "sources": [
+        "section_A"
+      ]
+    },
+    "local_cover": {
+      "value": null,
+      "classification": "uncertain",
+      "sources": [
+        "section_A"
+      ],
+      "unit": "cm",
+      "reason": "Sem cota local; detalhe geral será tratado separadamente."
+    },
+    "lateral_projections_dimensions": {
+      "value": [],
+      "classification": "graphically_interpreted",
+      "sources": [
+        "section_A"
+      ],
+      "reason": "Corte retangular sem projeções desenhadas."
+    }
+  },
+  "geometry": {
+    "coordinate_system": {
+      "origin": "face interna do apoio esquerdo P2A/P2B",
+      "positive_direction": "para a direita",
+      "unit": "cm",
+      "type": "derived_from_drawing_dimensions"
+    },
+    "support_order": {
+      "value": [
+        "P2A/P2B",
+        "P1A/P1B"
+      ],
+      "classification": "graphically_interpreted",
+      "sources": [
+        "elevation"
+      ]
+    },
+    "supports": [
+      {
+        "id": {
+          "value": "P2A/P2B",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 120,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": -120,
+            "right": 0
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm",
+          "reason": "Derivação pelas faces internas e larguras escritas."
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "elevation"
+          ],
+          "reason": "Não inferido vínculo do modelo."
+        }
+      },
+      {
+        "id": {
+          "value": "P1A/P1B",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 142,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": 712,
+            "right": 854
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm",
+          "reason": "Derivação pelas faces internas e larguras escritas."
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "elevation"
+          ],
+          "reason": "Não inferido vínculo do modelo."
+        }
+      }
+    ],
+    "spans_and_overhang": [
+      {
+        "id": "S1",
+        "type": {
+          "value": "between_supports",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "left_support": "P2A/P2B",
+        "right_support": "P1A/P1B",
+        "dimension_on_stirrup_line": {
+          "value": 712,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm"
+        },
+        "geometric_length": {
+          "value": 712,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm",
+          "reason": "Limites da distribuição coincidem com faces internas."
+        },
+        "extent": {
+          "value": {
+            "x_start": 0,
+            "x_end": 712
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm",
+          "reason": "Origem na face esquerda; comprimento cotado 712."
+        },
+        "section_label": {
+          "value": "19/72",
+          "classification": "explicit",
+          "sources": [
+            "title"
+          ]
+        }
+      }
+    ]
+  },
+  "longitudinal_reinforcement": {
+    "negative": [
+      {
+        "mark": {
+          "value": "N1",
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "quantity": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "diameter": {
+          "value": 12.5,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 195,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1"
+          ]
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1"
+          ],
+          "reason": "Posição gráfica; não atribui sinal de esforço."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm",
+          "reason": "Comprimento total escrito em barra reta; sem cota horizontal separada."
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": -48,
+            "x_end": 147
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm",
+          "reason": "início=-48; fim=-48+195"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 1,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N1"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          },
+          {
+            "layer": 2,
+            "quantity": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N1"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          }
+        ]
+      },
+      {
+        "mark": {
+          "value": "N2",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "quantity": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "diameter": {
+          "value": 12.5,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 300,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2"
+          ]
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2"
+          ],
+          "reason": "Posição gráfica; não atribui sinal de esforço."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm",
+          "reason": "Comprimento total escrito em barra reta; sem cota horizontal separada."
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": -48,
+            "x_end": 252
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm",
+          "reason": "início=-48; fim=-48+300"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 2,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N2"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          }
+        ]
+      },
+      {
+        "mark": {
+          "value": "N4",
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ]
+        },
+        "quantity": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 225,
+          "classification": "explicit",
+          "sources": [
+            "N4"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4"
+          ]
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4"
+          ],
+          "reason": "Posição gráfica; não atribui sinal de esforço."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N4"
+          ],
+          "unit": "cm",
+          "reason": "Comprimento total escrito em barra reta; sem cota horizontal separada."
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 214,
+            "x_end": 439
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N4"
+          ],
+          "unit": "cm",
+          "reason": "início=214; fim=214+225"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 2,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N4"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          }
+        ]
+      },
+      {
+        "mark": {
+          "value": "N7",
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ]
+        },
+        "quantity": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 375,
+          "classification": "explicit",
+          "sources": [
+            "N7"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7"
+          ]
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7"
+          ],
+          "reason": "Posição gráfica; não atribui sinal de esforço."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N7"
+          ],
+          "unit": "cm",
+          "reason": "Comprimento total escrito em barra reta; sem cota horizontal separada."
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 399,
+            "x_end": 774
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N7"
+          ],
+          "unit": "cm",
+          "reason": "fim=712+62; início=774-375"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 3,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N7"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          }
+        ]
+      },
+      {
+        "mark": {
+          "value": "N8",
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ]
+        },
+        "quantity": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 235,
+          "classification": "explicit",
+          "sources": [
+            "N8"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N8"
+          ]
+        },
+        "group": {
+          "value": "negative",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N8"
+          ],
+          "reason": "Posição gráfica; não atribui sinal de esforço."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N8"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N8"
+          ],
+          "unit": "cm",
+          "reason": "Comprimento total escrito em barra reta; sem cota horizontal separada."
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 540,
+            "x_end": 775
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N8"
+          ],
+          "unit": "cm",
+          "reason": "fim=712+63; início=775-235"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 0,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N8"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          },
+          {
+            "layer": 2,
+            "quantity": {
+              "value": 3,
+              "classification": "explicit",
+              "sources": [
+                "N8"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          }
+        ]
+      }
+    ],
+    "positive": [
+      {
+        "mark": {
+          "value": "N3",
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "quantity": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "diameter": {
+          "value": 10,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 650,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "lower",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3"
+          ]
+        },
+        "group": {
+          "value": "positive",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3"
+          ],
+          "reason": "Posição gráfica; não atribui sinal de esforço."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm",
+          "reason": "Comprimento total escrito em barra reta; sem cota horizontal separada."
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": -42,
+            "x_end": 608
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm",
+          "reason": "início=-42; fim=-42+650"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 2,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N3"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          }
+        ]
+      },
+      {
+        "mark": {
+          "value": "N5",
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "quantity": {
+          "value": 2,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "diameter": {
+          "value": 10,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 795,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "lower",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5"
+          ]
+        },
+        "group": {
+          "value": "positive",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5"
+          ],
+          "reason": "Posição gráfica; não atribui sinal de esforço."
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N5"
+          ],
+          "unit": "cm",
+          "reason": "Comprimento total escrito em barra reta; sem cota horizontal separada."
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": -42,
+            "x_end": 753
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5"
+          ],
+          "unit": "cm",
+          "reason": "fim=712+41; início=753-795"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 2,
+              "classification": "interpreted_by_office_standard",
+              "sources": [
+                "N5"
+              ],
+              "reason": "Chamada de segunda camada e saldo na primeira; ausência de chamada adicional conforme convenção item 4."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "skin_reinforcement": {
+    "skin_reinforcement_detailed": {
+      "value": true,
+      "classification": "explicit",
+      "sources": [
+        "N6"
+      ]
+    },
+    "positions": [
+      {
+        "mark": {
+          "value": "N6",
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ]
+        },
+        "bars_per_face": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ]
+        },
+        "total_quantity_per_position": {
+          "value": 6,
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N6"
+          ],
+          "reason": "2 x 3 = 6"
+        },
+        "diameter": {
+          "value": 10,
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 794,
+          "classification": "explicit",
+          "sources": [
+            "N6"
+          ],
+          "unit": "cm"
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N6"
+          ]
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": -24,
+            "x_end": 770
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N6"
+          ],
+          "unit": "cm",
+          "reason": "início=-24; fim=-24+794"
+        },
+        "vertical_spacing": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "N6"
+          ],
+          "unit": "cm",
+          "reason": "Não cotado."
+        }
+      }
+    ]
+  },
+  "stirrups": {
+    "mark": {
+      "value": "N9",
+      "classification": "explicit",
+      "sources": [
+        "stirrups"
+      ]
+    },
+    "vertical_legs_drawn": {
+      "value": 2,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "stirrup_shape"
+      ]
+    },
+    "shape_dimensions": {
+      "value": [
+        14,
+        67
+      ],
+      "classification": "explicit",
+      "sources": [
+        "stirrup_shape"
+      ],
+      "unit": "cm"
+    },
+    "length_per_piece": {
+      "value": 177,
+      "classification": "explicit",
+      "sources": [
+        "stirrup_shape"
+      ],
+      "unit": "cm"
+    },
+    "regions": [
+      {
+        "id": "ST1",
+        "mark": {
+          "value": "N9",
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ]
+        },
+        "function": {
+          "value": null,
+          "classification": "uncertain",
+          "sources": [
+            "stirrups"
+          ],
+          "reason": "Distribuição geral; função resistente não escrita."
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm"
+        },
+        "quantity": {
+          "value": 51,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ]
+        },
+        "region_length": {
+          "value": 712,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 0,
+            "x_end": 712
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm",
+          "reason": "Limites cotados da distribuição, sem fixar primeiro/último estribo."
+        }
+      }
+    ]
+  },
+  "anchorage_staples": {
+    "anchorage_staples_detailed": {
+      "value": false,
+      "classification": "interpreted_by_office_standard",
+      "sources": [
+        "detail"
+      ],
+      "reason": "Sem forma ou chamada específica de grampo; convenção item 7."
+    },
+    "positions": []
+  },
+  "indirect_supported_beams": [
+    {
+      "id": "IB1",
+      "supported_beam_exists": {
+        "value": true,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevation"
+        ],
+        "reason": "Contorno retangular tracejado; convenção item 8."
+      },
+      "supported_beam_name": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "reason": "Nome não escrito; não associado automaticamente ao TQS."
+      },
+      "receiving_beam": "V1001",
+      "span": "S1",
+      "position_description": {
+        "value": "No interior do vão, à esquerda de A-A",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "elevation"
+        ]
+      },
+      "exact_longitudinal_position": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "unit": "cm",
+        "reason": "Sem abscissa cotada."
+      },
+      "suspension_reinforcement_detailed": {
+        "value": false,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "stirrups"
+        ],
+        "reason": "Sem concentração/chamada específica no contorno; item 9. Não avalia necessidade."
+      },
+      "suspension_required_or_sufficient": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "reason": "Não verificado numericamente."
+      }
+    },
+    {
+      "id": "IB2",
+      "supported_beam_exists": {
+        "value": true,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "elevation"
+        ],
+        "reason": "Contorno retangular tracejado; convenção item 8."
+      },
+      "supported_beam_name": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "reason": "Nome não escrito; não associado automaticamente ao TQS."
+      },
+      "receiving_beam": "V1001",
+      "span": "S1",
+      "position_description": {
+        "value": "No interior do vão, à direita de A-A, próximo do apoio direito",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "elevation"
+        ]
+      },
+      "exact_longitudinal_position": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "unit": "cm",
+        "reason": "Sem abscissa cotada."
+      },
+      "suspension_reinforcement_detailed": {
+        "value": false,
+        "classification": "interpreted_by_office_standard",
+        "sources": [
+          "stirrups"
+        ],
+        "reason": "Sem concentração/chamada específica no contorno; item 9. Não avalia necessidade."
+      },
+      "suspension_required_or_sufficient": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "reason": "Não verificado numericamente."
+      }
+    }
+  ],
+  "section_views": [
+    {
+      "label": {
+        "value": "Corte A",
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "exact_abscissa": {
+        "value": null,
+        "classification": "uncertain",
+        "sources": [
+          "elevation"
+        ],
+        "unit": "cm",
+        "reason": "Não cotada."
+      },
+      "upper_first_layer_quantity": {
+        "value": 2,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "upper_second_layer_quantity": {
+        "value": 0,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "upper_positions": {
+        "value": {
+          "first_layer": "N4",
+          "second_layer": null
+        },
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ],
+        "reason": "Associação pela região de A-A; sem rótulos nos pontos."
+      },
+      "lower_first_layer_quantity": {
+        "value": 4,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "lower_position": {
+        "value": [
+          "N3",
+          "N5"
+        ],
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ],
+        "reason": "Quatro pontos; duas posições sobrepostas nesta região."
+      },
+      "skin_points_per_face": {
+        "value": 3,
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "skin_position_at_section": {
+        "value": "N6",
+        "classification": "graphically_interpreted",
+        "sources": [
+          "section_A"
+        ]
+      }
+    }
+  ],
+  "uncertainties": [
+    "Título singular e apoios com nomes duplos: confirmar abrangência do detalhamento.",
+    "Nomes/abscissas dos apoios indiretos e abscissa de A-A desconhecidos.",
+    "Cobrimento local e espaçamento vertical de pele não cotados.",
+    "Barras geométricas presentes não significam barras efetivamente ancoradas."
+  ],
+  "sources": {
+    "title": {
+      "page": 1,
+      "bbox_pdf": [
+        105,
+        65,
+        260,
+        100
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região title"
+    },
+    "elevation": {
+      "page": 1,
+      "bbox_pdf": [
+        100,
+        120,
+        685,
+        205
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região elevation"
+    },
+    "detail": {
+      "page": 1,
+      "bbox_pdf": [
+        95,
+        65,
+        790,
+        515
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região detail"
+    },
+    "stirrups": {
+      "page": 1,
+      "bbox_pdf": [
+        130,
+        245,
+        660,
+        276
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região stirrups"
+    },
+    "section_A": {
+      "page": 1,
+      "bbox_pdf": [
+        710,
+        130,
+        765,
+        258
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região section_A"
+    },
+    "N1": {
+      "page": 1,
+      "bbox_pdf": [
+        125,
+        310,
+        325,
+        350
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N1"
+    },
+    "N2": {
+      "page": 1,
+      "bbox_pdf": [
+        125,
+        280,
+        385,
+        315
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N2"
+    },
+    "N4": {
+      "page": 1,
+      "bbox_pdf": [
+        130,
+        265,
+        440,
+        298
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N4"
+    },
+    "N7": {
+      "page": 1,
+      "bbox_pdf": [
+        390,
+        280,
+        625,
+        315
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N7"
+    },
+    "N8": {
+      "page": 1,
+      "bbox_pdf": [
+        465,
+        320,
+        625,
+        353
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N8"
+    },
+    "N6": {
+      "page": 1,
+      "bbox_pdf": [
+        135,
+        360,
+        625,
+        403
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N6"
+    },
+    "N3": {
+      "page": 1,
+      "bbox_pdf": [
+        125,
+        415,
+        530,
+        451
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N3"
+    },
+    "N5": {
+      "page": 1,
+      "bbox_pdf": [
+        125,
+        450,
+        625,
+        490
+      ],
+      "description": "Ver recorte V1001_recorte.png; leitura manual da região N5"
+    },
+    "stirrup_shape": {
+      "page": 1,
+      "bbox_pdf": [
+        705,
+        335,
+        790,
+        425
+      ],
+      "description": "Forma N9: 14 x 67, C=177, 51 peças; dois ramos verticais."
+    }
+  }
+}

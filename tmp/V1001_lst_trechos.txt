@@ -1,0 +1,1084 @@
+ESTRIB.LST 1-9
+SIMON ENGENHARIA LTDA                      E S T R I B  - Dimensionamento de vigas ao cisal  (V24.8.42   )     Pg   1
+RUA FELIZARDO, 711 3° ANDAR                                             PORTO ALEGRE 90690-200 RS      33281300
+     T   Q   S        Projeto: 1000 - CASAMAQ                                                          03/10/26
+   TQS/Vigas                                                                                           15:52:00
+-----------------------------------------------------------------------------------------------------------------------------------
+               CONCRETO - FCK =  400.0 KGF/CM2      ---      ACO - FYK = 5000.0 KGF/CM2
+               LEGENDA : (*)  = NAO ENCONTRADA SOLUCAO PARA A BITOLA SELECIONADA    
+                       : (xx) = ONDE xx E' O VALOR DO ESPACAMENTO CALCULADO        
+
+
+ESTRIB.LST 242-251
+       VIGA=  1001 - V1001                                                            -COBR.SUPER.DIFER.= 0.0 CM -COBR.= 2.5 CM
+----------------------------------------------------------------------------------------------------------------------------------
+
+ VAO= 1  - COMPRIMENTO= 8.43 M - LARGURA= 0.19 M - ALTURA= 0.72 M 
+INIC.- FIM       BIT1 ESP1  NR1    BIT2 ESP2  NR2    BIT3 ESP3  NR3          AS   Vsd  VRd2      BITESC  ESPESC  NR   ASUSP.ASUSP
+  CM    CM        MM   CM           MM   CM           MM   CM               CM2   TF    TF          MM     CM        TIRANTE
+  60 - 297       5.0 14.8     2    6.3 18.1(23) 2    8.0 18.1(37) 2         2.7   9.1  84.0        5.0    14.0    2     0.0  0.0
+ 297 - 534       5.0 14.8     2    6.3 18.1(23) 2    8.0 18.1(37) 2         2.7   5.3  84.0        5.0    14.0    2     0.0  0.0
+ 534 - 772       5.0 14.8     2    6.3 18.1(23) 2    8.0 18.1(37) 2         2.7  16.2  83.6        5.0    14.0    2     0.0  0.0
+
+
+FLEXNG.LST 1-7
+SIMON ENGENHARIA LTDA                      F L E X N G  - Dimensionamento de vigas a flexao  (V24.8.42   )     Pg   1
+RUA FELIZARDO, 711 3° ANDAR                                             PORTO ALEGRE 90690-200 RS      33281300
+     T   Q   S        Projeto: 1000 - CASAMAQ                                                          03/10/26
+   CAD/Vigas                                                                                           15:52:05
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+FLEXNG.LST 239-248
+       VIGA=  1001 - V1001                                                            -COBR.SUPER.DIFER.= 0.0 CM -COBR.= 2.5 CM
+----------------------------------------------------------------------------------------------------------------------------------
+
+VAO=  1 - COMPRIMENTO=  7.55 M - LARGURA= 0.19 M - ALTURA= 0.72 M - MESA COLAB. =   0.00 M - ESP.LAJE =   0.00 M
+MOM.ESQ.=   990.50 TF.CM  -  SEC.RET.ARM.SIMPLES AS=  4.89 CM2 - ASL=  0.00 CM2  -  FI=12.5 - N.BAR.= 4- (ASr-ASn)/ASn=   0 %     
+MOM.DIR.=  1987.80 TF.CM  -  SEC.RET.ARM.SIMPLES AS= 10.34 CM2 - ASL=  0.00 CM2  -  FI=16.  - N.BAR.= 5- (ASr-ASn)/ASn=  -2 %     
+L.NEUTRA ESQ.=   5.756 CM   DIR.=  12.182 CM   % BARICENTRO ARMADURA ESQ. =  1   DIR. =  3
+ANCORAGEM DE FERROS A ESQUERDA E A DIREITA DA VIGA
+
+
+
+FLEXPS.LST 1-8
+SIMON ENGENHARIA LTDA                      F L E X P S  - Dimensionamento de vigas a flexao  (V24.8.42   )     Pg   1
+RUA FELIZARDO, 711 3° ANDAR                                             PORTO ALEGRE 90690-200 RS      33281300
+     T   Q   S        Projeto: 1000 - CASAMAQ                                                          03/10/26
+   TQS/Vigas                                                                                           15:52:02
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+FLEXPS.LST 200-208
+         VIGA =  1001 - V1001                                                              -    COBR.=   2.5 CM 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VAO= 1  - COMPRIMENTO=  7.55 M - LARGURA= 0.19 M - ALTURA= 0.72 M - MESA COLAB. =   0.00 M - ESP.LAJE =   0.00 M
+MOM.MAX.=   610.20 TF.CM  -  SEC.RET.ARM.SIMPLES AS=  2.95 CM2 - ASL=  0.00 CM2  -  FI=10.  - N.BAR.= 4- (ASr-ASn)/ASn=   6 %     
+ARM.LATERAL   VAO=  2   ASL CALCULO= 2.74 CM2       N.BARRAS=  6   BITOLA= 8.0 MM---->  ASL REAL= 3.02 CM2
+
+
+
+
+ORDCON.LST 1-9
+
+------------------------------------------------------------------------------
+                       Ordenação e consistência de vigas
+    T  Q  S               Vigas    V24.8.42    03/10/26 15:51:59
+C:\TQS\24-155-COLLINE-RESIDENCIAL-R60\CASAMAQ\VIGAS
+SIMON ENGENHARIA LTDA                   
+RUA FELIZARDO, 711 3° ANDAR             
+------------------------------------------------------------------------------
+
+
+ORDCON.LST 21-21
+Lendo a viga =  1001.
+
+RELDTFNG.LST 1-60
+                              VIGAS - FLEXÃO NEGATIVA - DIMENSIONAMENTO E DETALHAMENTO DE ARMADURAS
+
+     Legenda: 
+
+ b  - largura da viga                                             DbE  - comprimento da dobra a esquerda de um posição de barras longit.
+ h  - altura da viga                                              DbD  - comprimento da dobra a direita de um posição de barras longit.
+ bf,s - largura da mesa colaborante  superior fornecida           Nº.Pos  - identifica o agrupamento de uma ou mais barras longitudinais.
+ bf,i - largura da mesa colaborante  inferior fornecida           Nºr  - número de ramos de estribos
+ bp - largura do pilar adjacente ao vão                           Nº.bar  - número de barras longitudinais de uma posição
+ esp,li - espessura da laje inferior                              Nº.cam  - número de camadas de barras em uma seção
+ esp,ls - espessura da laje superior                              a - valor da decalagem do diagrama de Mk
+ d  - altura útil da viga                                         a/fi - fator de decalagem 
+ l  - comprimento do vão da viga                                  Largura-c-estr.-largura da seção-cobrimento- ramos de estribos na seção
+ s  - espaça/ entre estribos ou barras longitudinais              fi,pe - diâmetro da barra de porta estribo
+ z  - braço de alavanca entre forças de tração e compressão       fi,es - diâmetro da barra de estribo 
+ x  - altura da linha neutra                                      bp,ef - largura do pilar efetiva (após desconto:c e fi,es)
+ x/d - valor relativo da linha neutra                             lb1,efe - compr.ancoragem efetivo em função do As necessário e existente
+ c  - cobrimento da armadura                                      M   - Momento fletor  
+ exc  - excentricidade do pilar                                   M,pos - Momento fletor  [+]
+ lb  - comprimento de ancoragem a tração                          M,neg - Momento fletor  [-]
+ lb1 - comprimento de ancoragem a tração- boa aderência           Ch - comprimento de ancoragem horizontal a partir do eixo
+ lb2 - comprimento de ancoragem a tração - má aderência           Cv - comprimento de ancoragem vertical a partir do eixo
+ lb,c  - comprimento de ancoragem a compressão                    M,min - Momento fletor mínimo
+ espacl  - espaçamento da armadura lateral                        M,máx - Momento fletor máximo
+ x,i  - abcissa inicial de uma posição contendo barras longit.    fi  - diâmetro da barra longitudinal  ou estribo
+ x,f  - abcissa finalal de uma posição contendo barras longit.    N   - Força normal 
+ cmp.  - comprimento de uma posição de barras longit.             V   - Força cortante 
+ Inic. x/d- Esq/Dir - Inicialização do valor do x/d               Ts  - Momento de torção
+ FC SP Eixo - distância da face superior ao eixo                  LimDT  - % limite para desprezar momento de torção
+ FC LT Eixo - distância da face lateral ao eixo                   Nº,gr - número de grampos (inferior ou superior
+ A  - área da seção cheia                                         dfcsa  - Distância da face sup. da viga suporte e a
+ Ac - área da seção de concreto                                            face inf. da viga apoiada
+ As - área da armadura - tração                                   E   - Módulo de elasticidade 
+ Asl - área da armadura de compressão                             R   - Reação de apoio  
+ As,l - área da armadura lateral                                  EI  - Rigidez da seção transversal
+ Asw,T - área da armadura de torção                               W   - Módulo de resistência da seção
+ Asw,V - área da armadura de cortante                             ycg - Altura do baricentro da arm. de tração
+ As,vão - área da armadura de tração no vão                       ro  - taxa de armadura longit. de tração
+ As,l,T - área da armadura longitud. devido a torção              As,apo - Área de armadura que deve chegar ao apoio
+ As,lim5 - área da armadura lateral com o limite de 5 cm2/face    ro,min - taxa de armadura longit. de tração-mínima
+ As,min - área da armadura a tração mínima                        Nº,fi - comprimento em número de diâmetros da barra
+ As,gr - área da armadura de grampos (inf. e sup)                 fi,gr - diâmetro de grampos
+ Tipo da seção transversal:
+ [1] Ret. - seção retangular
+ [2] TeS2L - seção T laje superior nos 2 lados
+ [3] TeI2L - seção T laje inferior nos 2 lados
+ [4] DplTe2L - seção T sup. e inf. nos 2 lados
+ [5] L1LS - seção L superior em 1 lado 
+ [6] L1LI - seção L inferior em 1 lado 
+ [7] L1LSI- seção L sup. e inf. em 1 lado
+ [8] L1LS - seção L superior em 1 lado 
+ [9] L1LI - seção L inferior em 1 lado 
+ [10]DplL1SI - seção L sup. e inf. em 1 lado 
+ [11]DplL1SI - seção L sup. e inf. em 1 lado 
+ 
+
+ NORMA: NBR6118:2023  -  
+
+
+
+
+RELDTFNG.LST 3570-3739
+          VIGA =  1001 - V1001                                                              -       c=   2.5 cm      c,sup.adic.=   0.0 cm 
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4
+  c - cobr. para arm.compres.= 2.5 cm  -  Espaça/adicional alojam. armadura=  2.0 cm  -  Largura útil para não considerar esp./adic.=  0.0 cm
+
+                              MOMENTOS FLETORES NEGATIVOS ATUANTES NO(S) VÃO(S)     -       tf,cm
+ SEÇÃO  :                 1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão Mk,neg=    1         0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.
+ Vão Mk,neg=    2      -991.     -599.     -245.       72.      349.      467.      449.      343.      140.     -128.     -591.    -1266.    -1988.
+ Vão Mk,neg=    3         0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.
+
+                              MOMENTOS FLETORES NEGATIVOS ATUANTES NO(S) VÃO(S) APÓS ELIMINAÇÃO DE MOMENTOS [+]    -       tf,cm
+ SEÇÃO  :                 1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão Mk,neg=    1         0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.
+ Vão Mk,neg=    2      -991.     -599.     -245.        0.        0.        0.        0.        0.        0.     -128.     -591.    -1266.    -1988.
+ Vão Mk,neg=    3         0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.        0.
+
+ Informações gerais da viga  -  Geometria dos vãos [cm]
+    Vao         l        b         h        bf,s      bf,i  Tipo Secao  esp,ls    esp,li  FC SP Eixo FC LT Eixo
+      1        0.0     100.0     100.0       0.0       0.0        1.       0.0       0.0      50.0      50.0
+      2      755.2      19.0      72.0       0.0       0.0        1.       0.0       0.0      36.0       9.5
+      3        0.0     100.0     100.0       0.0       0.0        1.       0.0       0.0      50.0      50.0
+
+ Informações gerais da viga  -  Geometria dos Apoios [cm]
+    Titulo         bp        exc   Continua Alavanca 
+     P2A        120.0       38.4      SEGUE     NAO  
+     P1A        142.0       49.4      SEGUE     NAO  
+
+ fi,pe - fi do estribo por ponto da viga
+ Seção    =              1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão Fiest=    1      0.60      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.60
+ Vão Fiest=    2      0.60      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.60
+ Vão Fiest=    3      0.60      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.60
+
+ espaça/, - estribo por ponto da viga
+ Seção    =              1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão Espac=    1       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0
+ Vão Espac=    2      14.0      14.0      14.0      14.0      14.0      14.0      14.0      14.0      14.0      14.0      14.0      14.0      14.0
+ Vão Espac=    3      18.0      18.0      18.0      18.0      18.0      18.0      18.0      18.0      18.0      18.0      18.0      18.0      18.0
+
+ Fator de decalagem  - K68=  3   -   a/fi    
+ Vão        =         1        2        3
+ a/fi       =      0.00     1.00     1.00
+ N.Ramos-Nr =         2        2        2
+
+ Novo cálculo da mesa colaborante para a  esquerda do primeiro vão 
+ Ptos de Mk[-] no vão=   3    Comp.vão.com M[-]= 188.8 cm   Tipo Seção=  1   Mesa colab=    0.0 cm
+
+ Novo cálculo da mesa colaborante para a  direita do último vão 
+ Ptos de Mk[-] no vão=   4    Comp.vão.com M[-]= 251.7 cm   Tipo Seção=  1   Mesa colab=    0.0 cm
+
+ Valores limites para profundidade da L.N. -  Utilizados para dimensionamento da seção a flexão simples
+ Apoio      =           1         2
+ Xsd Esq/Dir=        .45  0.    0.  0.
+
+ Cálculo do M,min para o vão=  2
+ b=  19.00 cm   h=  72.00 cm   bf,s=   0.00 cm   esp,ls=   0.00 cm   bf,i=   0.00 cm   esp,li=   0.00 cm   Face.=S
+ K72=  1     W =   16416.0cm3
+ Tração face superior - K72=  1     fctk,sup=   4.60 MPa    I=   590976.cm4     M,min=   431.5tf*cm
+          M,min,esq=   431.5tf*cm     -      M,min,dir=   431.5tf*cm
+ b=  19.00 cm   h=  72.00 cm   bf,s=   0.00 cm   esp,ls=   0.00 cm   bf,i=   0.00 cm   esp,li=   0.00 cm   Face.=S
+ K72=  1     W =   16416.0cm3
+ Tração face superior - K72=  1     fctk,sup=   4.60 MPa    I=   590976.cm4     M,min=   431.5tf*cm
+                                       Recálculo com novo bf,s a esquerda - M,min,esq=   431.5tf*cm
+ b=  19.00 cm   h=  72.00 cm   bf,s=   0.00 cm   esp,ls=   0.00 cm   bf,i=   0.00 cm   esp,li=   0.00 cm   Face.=S
+ K72=  1     W =   16416.0cm3
+ Tração face superior - K72=  1     fctk,sup=   4.60 MPa    I=   590976.cm4     M,min=   431.5tf*cm
+                                        Recálculo com novo bf,s a direita - M,min,dir=   431.5tf*cm
+
+ Armadura positiva existente em cada vão 
+ Vão =  2   -   As,pos.=   3.1 cm2
+
+ Definição de espaçamento mínimo entre barras 
+ Apoio=   1   s,forn=  2.0 cm      fi,esq,apoio=  0.0 cm   Dagreg=  1.5 cm     s,min,esq,apoio=  2.0 cm
+ Apoio=   1   s,forn=  2.0 cm      fi,dir,apoio=  1.2 cm   Dagreg=  1.5 cm     s,min,dir,apoio=  2.0 cm
+ Apoio=   2   s,forn=  2.0 cm      fi,esq,apoio=  1.6 cm   Dagreg=  1.5 cm     s,min,esq,apoio=  2.0 cm
+ Apoio=   2   s,forn=  2.0 cm      fi,dir,apoio=  0.0 cm   Dagreg=  1.5 cm     s,min,dir,apoio=  2.0 cm
+
+ Bitolas selecionadas para cada apoio   -  armadura negativa  -  após predimensionamento das vigas
+ Apoio      =          1          2
+ fi esq/dir=        0.0 12.5  16.0  0.0
+
+ Compr. ancoragem  fyd=   4.35 tf/m2  fck=   40.0 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi=  27.5
+ Compr. ancoragem-apos correção  -  Minimo de 25*Fi - lb1/fi=  27.5     lb2/fi=  39.3
+
+ ESQUERDA DO VÃO -  2     EEEEEEEEEEEEEEEEEEEE
+ K7= 6  -  Valor base para desprezar M para vão extremo  em função de % do M,min =30. -  M,min=  431.51 tf,cm  -  Valor base de M,neg para ser desprezado=  129.45 tf,cm
+ M original atuante a esquerda do vão=    990.5 tf,cm  -   M dimensiona/=    990.5 tf,cm    -   M,min.=    431.5 tf,cm   -  x/d limite=    0.45
+ Dimensionamento - As=   4.86 cm2  Asl =   0.00 cm2    -    Tolerância:  As*0.97=   4.72 cm2
+ fi= 1.2 cm - Nº.bar=  4  -   ycg,ant=  4.1 cm  -  ycg,atual=  4.4 cm  -   d= 67.90 cm  -   Nº.bar/cam= 3  -   espac.real=  4.5 cm
+ Dimensionamento - As=   4.89 cm2  Asl =   0.00 cm2    -    Tolerância:  As*0.97=   4.74 cm2
+ fi= 1.2 cm - Nº.bar=  4  -   ycg,ant=  4.4 cm  -  ycg,atual=  4.4 cm  -   d= 67.56 cm  -   Nº.bar/cam= 3  -   espac.real=  4.5 cm
+
+ Determinação do ponto de corte das barras a partir do diagrama de Mk e decalagem
+ fi=  1.2 cm   -   lb=  49.2 cm   -   a/fi= 1.00   -   a=  72.0 cm
+ Nº.pos=  1   Nº.bar/pos=  2   cmp.= 165.9 cm
+ Nº.pos=  2   Nº.bar/pos=  2   cmp.= 273.3 cm
+
+ DIREITA DO VÃO -  2     DDDDDDDDDDDDDDDDDDDD
+ K7= 6  -  Valor base para desprezar M,neg para vão extremo  em função de % do Mom.minimo =30. -  M,min=  431.51 tf,cm  -  Valor base de M,neg para ser desprezado=  129.45 tf,cm
+ M original atuante a direita do vão=   1987.8 tf,cm  -   M dimensiona/=   1987.8 tf,cm    -   M,min.=    431.5 tf,cm   -  x/d limite=    0.45
+ Dimensionamento - As=  10.14 cm2  Asl =   0.00 cm2    -    Tolerância:  As*0.97=   9.84 cm2
+ fi= 1.6 cm - N.bar=  5  -   ycg,ant=  4.1 cm  -  ycg,atual=  5.2 cm  -   d= 67.90 cm  -   Nº.bar/cam= 3  -   espac.real=  4.0 cm
+ Dimensionamento - As=  10.34 cm2  Asl =   0.00 cm2    -    Tolerância:  As*0.97=  10.03 cm2
+ fi= 1.6 cm - N.bar=  5  -   ycg,ant=  5.2 cm  -  ycg,atual=  5.2 cm  -   d= 66.76 cm  -   Nº.bar/cam= 3  -   espac.real=  4.0 cm
+
+ Determinação do ponto de corte das barras a partir do diagrama de M e decalagem
+ fi=  1.6 cm   -   lb=  63.0 cm   -   a/fi= 1.00   -   a=  72.0 cm
+ Nº.pos=  1   Nº.bar/pos=  1   cmp.=-135.0 cm
+ Nº.pos=  2   Nº.bar/pos=  2   cmp.=-194.8 cm
+ Nº.pos=  3   Nº.bar/pos=  2   cmp.=-339.7 cm
+
+ ANCORAGEM - Apoio Extremo ou Interm. -Esquerda do vão  2          EEEEEEEEEE          Viga:V1001                                                           
+ Direita do Pilar =           1
+ Nº.bar =  4          fi= 1.25cm          lb2=   49.2cm
+ bp,ef=  116.3cm     >=     lb2=   49.2cm --- Ancoragem reta
+ Direita do apoio Nº  1          l a esquerda=    0.0 cm          Alt.max.p/ancorar= 72.00cm
+ Ancoragem reta - Ch=   49.2cm          Cv=    0.0cm
+
+ ANCORAGEM - Apoio Extremo ou Interm. - Direita do vão=  2          DDDDDDDDDD          Viga:V1001                                                           
+ Esquerda do Pilar =           2
+ Nº.bar =  5          fi= 1.60cm          lb2=   63.0cm
+ bp,ef=  138.1cm     >=     lb2=   63.0cm --- Ancoragem reta
+ Esquerda do apoio Nº=  2          l a direita=    0.0 cm          Alt.max.p/ancorar= 72.00cm
+ Ancoragem reta - Ch=   63.0cm          Cv=    0.0cm
+
+ Compatibilização e união da armadura negativa junto aos apoios  -   cm
+  Apoio     Faixa    Bar/Fx      fi       Dface     Compr      DbE       DbD 
+     1         1         2      1.25      -48.6     196.9         0         0
+     1         2         2      1.25      -48.6     300.9         0         0
+     2         1         1      1.60     -314.4     237.0         0         0
+     2         2         2      1.60     -314.4     237.0         0         0
+     2         3         2      1.60     -459.4     381.1         0         0
+
+ Agrupamento de barras a partir de tabelas  fornecidas no arquivo de critérios em função da  largura da viga
+
+ Apoio=  1  Espaco útil para alojamento das barras=  12.8 cm    Tabela selecionada=  2
+ Apoio=  1  Número total de barras=  4   serão agrupadas como:  2    2    0    0    0
+ Apoio=  1  Pos.=  1    Nº.bar= 2       X,i=  -48.6 cm      cmp.=  196.9 cm      DbE=    0 cm      DbD=    0 cm
+ Apoio=  1  Pos.=  2    Nº.bar= 2       X,i=  -48.6 cm      cmp.=  300.9 cm      DbE=    0 cm      DbD=    0 cm
+
+ Apoio=  2  Espaco útil para alojamento das barras=  12.8 cm    Tabela selecionada=  2
+ Apoio=  2  Número total de barras=  5   serão agrupadas como:  3    2    0    0    0
+ Apoio=  2  Pos.=  1    Nº.bar= 2       X,i= -314.4 cm      cmp.=  237.0 cm      DbE=    0 cm      DbD=    0 cm
+ Apoio=  2  Pos.=  2    Nº.bar= 3       X,i= -455.0 cm      cmp.=  376.7 cm      DbE=    0 cm      DbD=    0 cm
+
+ Detalhamento de porta-estribos e/ou armaduras complementares -  V1001
+
+ Armadura positiva existente em cada vão 
+ Vão =  2   -   As,pos.=   3.1 cm2
+
+ Compr. ancoragem  - Calculado: lb2/fi=39.3 cm  -  Do arq. critérios: lb2/fi=48.0 cm  -  fi,pe fornecido= 0.63 cm
+ K3=1    -    fi,pe= 0.63 cm   -   Nºr=  2
+ fi,pe  tabela -  K3=1  -  Areas(cm2) 1= 6.0   2=15.0   3=30.0   - As,+=  3.1 cm2   -   fi,pe= 0.80 cm
+
+ Armaduras negativas finais após o detalhamento de porta estribos - 
+  Apoio     Faixa    Bar/Fx    fi,pe      Dface       cmp     DbE       DbD
+     1         1         2      1.25      -48.6     196.9         0         0
+     1         2         2      1.25      -48.6     300.9         0         0
+     1         3         2      0.80      213.9    -223.5         0         0
+     2         1         2      1.60     -314.4     237.0         0         0
+     2         2         3      1.60     -455.0     376.7         0         0
+
+ Verificação e troca do espaçamento dos estribos quando existe armadura de compressão - Viga= 1001
+ Vão=  2     fi,Asl - compressão=  0.00 cm
+
+ Verificação de espaçamento entre barras
+
+
+
+
+RELDTFPS.LST 1-61
+                              VIGAS - FLEXÃO POSITIVA - DIMENSIONAMENTO E DETALHAMENTO DE ARMADURAS
+
+     Legenda: 
+
+ b  - largura da viga                                             DbE  - comprimento da dobra a esquerda de um posição de barras longit.
+ h  - altura da viga                                              DbD  - comprimento da dobra a direita de um posição de barras longit.
+ bf,s - largura da mesa colaborante  superior fornecida           Nº.Pos  - identifica o agrupamento de uma ou mais barras longitudinais.
+ bf,i - largura da mesa colaborante  inferior fornecida           Nºr  - número de ramos de estribos
+ bp - largura do pilar adjacente ao vão                           Nº.bar  - número de barras longitudinais de uma posição
+ esp,li - espessura da laje inferior                              Nº.cam  - número de camadas de barras em uma seção
+ esp,ls - espessura da laje superior                              a - valor da decalagem do diagrama de Mk
+ d  - altura útil da viga                                         a/fi - fator de decalagem 
+ l  - comprimento do vão da viga                                  Largura-c-estr.-largura da seção-cobrimento- ramos de estribos na seção
+ s  - espaça/ entre estribos ou barras longitudinais              fi,pe - diâmetro da barra de porta estribo
+ z  - braço de alavanca entre forças de tração e compressão       fi,es - diâmetro da barra de estribo 
+ x  - altura da linha neutra                                      bp,ef - largura do pilar efetiva (após desconto:c e fi,es)
+ x/d - valor relativo da linha neutra                             lb1,efe - compr.ancoragem efetivo em função do As necessário e existente
+ c  - cobrimento da armadura                                      M   - Momento fletor  
+ exc  - excentricidade do pilar                                   M,pos - Momento fletor  [+]
+ lb  - comprimento de ancoragem a tração                          M,neg - Momento fletor  [-]
+ lb1 - comprimento de ancoragem a tração- boa aderência           Ch - comprimento de ancoragem horizontal a partir do eixo
+ lb2 - comprimento de ancoragem a tração - má aderência           Cv - comprimento de ancoragem vertical a partir do eixo
+ lb,c  - comprimento de ancoragem a compressão                    M,min - Momento fletor mínimo
+ espacl  - espaçamento da armadura lateral                        M,máx - Momento fletor máximo
+ x,i  - abcissa inicial de uma posição contendo barras longit.    fi  - diâmetro da barra longitudinal  ou estribo
+ x,f  - abcissa finalal de uma posição contendo barras longit.    N   - Força normal 
+ cmp.  - comprimento de uma posição de barras longit.             V   - Força cortante 
+ Inic. x/d- Esq/Dir - Inicialização do valor do x/d               Ts  - Momento de torção
+ FC SP Eixo - distância da face superior ao eixo                  LimDT  - % limite para desprezar momento de torção
+ FC LT Eixo - distância da face lateral ao eixo                   Nº,gr - número de grampos (inferior ou superior
+ A  - área da seção cheia                                         dfcsa  - Distância da face sup. da viga suporte e a
+ Ac - área da seção de concreto                                            face inf. da viga apoiada
+ As - área da armadura - tração                                   E   - Módulo de elasticidade 
+ Asl - área da armadura de compressão                             R   - Reação de apoio  
+ As,l - área da armadura lateral                                  EI  - Rigidez da seção transversal
+ Asw,T - área da armadura de torção                               W   - Módulo de resistência da seção
+ Asw,V - área da armadura de cortante                             ycg - Altura do baricentro da arm. de tração
+ As,vão - área da armadura de tração no vão                       ro  - taxa de armadura longit. de tração
+ As,l,T - área da armadura longitud. devido a torção              As,apo - Área de armadura que deve chegar ao apoio
+ As,lim5 - área da armadura lateral com o limite de 5 cm2/face    ro,min - taxa de armadura longit. de tração-mínima
+ As,min - área da armadura a tração mínima                        Nº,fi - comprimento em número de diâmetros da barra
+ As,gr - área da armadura de grampos (inf. e sup)                 fi,gr - diâmetro de grampos
+ Tipo da seção transversal:
+ [1] Ret. - seção retangular
+ [2] TeS2L - seção T laje superior nos 2 lados
+ [3] TeI2L - seção T laje inferior nos 2 lados
+ [4] DplTe2L - seção T sup. e inf. nos 2 lados
+ [5] L1LS - seção L superior em 1 lado 
+ [6] L1LI - seção L inferior em 1 lado 
+ [7] L1LSI- seção L sup. e inf. em 1 lado
+ [8] L1LS - seção L superior em 1 lado 
+ [9] L1LI - seção L inferior em 1 lado 
+ [10]DplL1SI - seção L sup. e inf. em 1 lado 
+ [11]DplL1SI - seção L sup. e inf. em 1 lado 
+ 
+
+ NORMA: NBR6118:2023  -  
+ Concreto - fck =  400.0 Kgf/cm2    ---    ACO - CA-50A        Gamac=  1.4     Gamaf=  1.4
+
+
+
+
+RELDTFPS.LST 4755-4945
+          VIGA =  1001 - V1001                                                              -    Cobr.=   2.5 cm 
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+                              MOMENTOS FLETORES ATUANTES NO(S) VAO(S)     -       tf,cm
+ SEÇÃO  :                1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão M,neg=    2        991.                                                                                                                  1988.
+ Vão M,pos=    2          0.        0.      154.      366.      542.      610.      572.      512.      407.      255.       32.        0.        0.  M,max=    610.
+
+ Informações gerais da viga  -  Geometria dos vãos [cm]
+    Vao         l        b         h       bf,s      bf,i   Tipo Secao esp,ls    esp,li   FC SP Eixo
+      1       0.0     100.0     100.0       0.0       0.0        1.       0.0       0.0      50.0
+      2     755.2      19.0      72.0       0.0       0.0        1.       0.0       0.0      36.0
+      3       0.0     100.0     100.0       0.0       0.0        1.       0.0       0.0      50.0
+
+ Informações gerais da viga  -  Geometria dos Apoios [cm]
+    Titulo         bp        exc   Continua Alavanca 
+     P2A        120.0       38.4      SEGUE     NAO  
+     P1A        142.0       49.4      SEGUE     NAO  
+
+ fi,estribo por ponto da viga
+ Seção    =              1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão fi,es=    1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão fi,es=    2      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50
+ Vão fi,es=    3      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50      0.50
+
+ espaça/,estribo por ponto da viga
+ Seção     =              1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão esp,es=    1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão esp,es=    2      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00
+ Vão esp,es=    3      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00      6.00
+
+ Compr. ancoragem  fyd=   4.35 tf/m2  fck=  40.00 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi= 27.54
+
+ Compr. ancoragem - após correção  -  Minimo de 25*fi - lb1/fi= 27.54     lb2/fi= 39.34
+
+ Dimensiona/ Aço CA50 -  As,mín=0,15%*b*h   K40=2
+
+ ESQUERDA DO VÃO =    2     EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+ Cálculo do Mk,min 
+ b=  19.00 cm   h=  72.00 cm   bf,s=   0.00 cm   esp,ls=   0.00 cm   bf,i=   0.00 cm   esp,li=   0.00 cm   Face.=S
+ K72=  1     W = 16416.0cm3
+ Tração face superior - K72=  1     fctk,sup=   4.60 MPa    I=   590976.cm4     M,min=   431.5tf*cm
+
+ Mom. atuante a esquerda do vão=    990.5 tf,cm x/d limite=    0.45
+ Mom. atuante a esquerda do vão - apos M,min=    990.5 tf,cm
+
+ Dimensionamento - As=   4.87 cm2  Asl =   0.00 cm2
+
+ Seleção de fi X Nº.bar e ycg da Armadura
+ (b-c-fi,es)=  12.80cm  Faixa selec./=2  Nº.r=2  Nº.bar=  4  Nº.bar/cam=  3  fi=  1.2cm  Nº.cam= 1.3  ycg=  4.5cm
+
+ Mom. atuante a esquerda do vão=    990.5 tf,cm x/d limite=    0.45
+ Mom. atuante a esquerda do vão - apos M,min=    990.5 tf,cm
+
+ Dimensionamento - As=   4.90 cm2  Asl =   0.00 cm2
+
+ Seleção de fi X Nº.bar e ycg da Armadura
+ (b-c-fi,es)=  12.80cm  Faixa selec./=2  Nº.r=2  Nº.bar=  4  Nº.bar/cam=  3  fi=  1.2cm  Nº.cam= 1.3  ycg=  4.5cm
+
+ DIREITA DO VÃO =    2     DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+
+ M atuante a direita do vão=   1987.8 tf,cm x/d limite=    0.45
+
+ Cálculo do Mk,min 
+ b=  19.00 cm   h=  72.00 cm   bf,s=   0.00 cm   esp,ls=   0.00 cm   bf,i=   0.00 cm   esp,li=   0.00 cm   Face.=S
+ K72=  1     W = 16416.0cm3
+ Tração face superior - K72=  1     fctk,sup=   4.60 MPa    I=   590976.cm4     M,min=   431.5tf*cm
+ M atuante a esquerda do vão - apos M,min=    990.5 tf,cm
+
+ Dimensionamento - As=  10.17 cm2  Asl=   0.00 cm2
+
+ Seleção de fi X Nº.bar e ycg da Armadura
+ (b-c-fi,es)=  12.80cm  Faixa selec./=2  Nº.r=2  Nº.bar=  5  Nº.bar/cam=  3  fi=  1.6cm  Nº.cam= 1.7  ycg=  5.3cm
+ M atuante a esquerda do vão - apos M,min=    990.5 tf,cm
+
+ Dimensionamento - As=  10.36 cm2  Asl=   0.00 cm2
+
+ Seleção de fi X Nº.bar e ycg da Armadura
+ (b-c-fi,es)=  12.80cm  Faixa selec./=2  Nº.r=2  Nº.bar=  5  Nº.bar/cam=  3  fi=  1.6cm  Nº.cam= 1.7  ycg=  5.3cm
+
+ MEIO DO VÃO=  2           MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+ bp,esq=120.0 cm   exc.=  0.0 cm    l = 755.2 cm  bp,dir=142.0 cm   exc.=252.6 cm
+
+ Cálculo do Mk,min 
+ b=  19.00 cm   h=  72.00 cm   bf,s=   0.00 cm   esp,ls=   0.00 cm   bf,i=   0.00 cm   esp,li=   0.00 cm   Face.=I
+ Tração face inferior - K72=  1     fctk,sup=   4.60 MPa    I=   590976.cm4     M,min=   431.5tf*cm
+
+ fi,es adotado= 0.50 cm    -    c + fi,es=   3.00 cm
+
+ As calculada com M,min= 2.08 cm2
+
+ M,max - meio do vão=    610.2 tf,cm        x/d limite=    0.45
+ M,max - meio do vão - após Mk,min=    610.2 tf,cm
+
+ Dimensionamento - As=   2.95 cm2  Asl=   0.00 cm2  x=   3.48 cm
+ As,max no vão após comparação com  Asl nos extremos=   2.95 cm2
+
+ Seleção de Bitola X Número de barras e ycg da Armadura
+ (b-c-fi,es.)=  12.80cm  Faixa selec./=2  Nº.r=2  Nº.bar=  4  Nº.bar/cam=  4  fi=  1.0cm  Nº.cam= 1.0  ycg=  3.5cm
+
+ [cm] - Espac/barr-fornec.= 2.0    Val.fix= 2.0    fi,bar= 1.0    fi,agr.= 1.5    Esp./min.= 2.0    N.fer/cam=  4    N.r.est= 2    Esp.real= 2.9
+
+ Determinação do ponto de corte das barras a partir do diagrama de M e decalagem
+
+ fi=  1.0 cm  -  lb1=  27.5 cm  -  a/fi= 1.00   a=  67.9 cm
+ Correção do diagrama de momentos fletores com múltiplos picos - apenas 1 pico é considerado
+ M,pos=       0.       0.     154.     366.     542.     610.     572.     512.     407.     255.      32.       0.       0. M,máx=    610. tf*cm
+
+ Nº.pos=  1   Nº.bar/pos=  2   x,i=  89 cm   cmp.= 539 cm
+ Nº.pos=  2   Nº.bar/pos=  2   x,i= -27 cm   cmp.= 810 cm
+
+ Cálculo da armadura lateral sem torçao.   h limite= 60.0 cm
+ Bitolas selecionadas no arquivo de critérios:  5.0      6.3      8.0 mm
+ K115-As,l=bw*H/500.  2Fac  Vão= 1   b= 19.0 cm   h= 72.0 cm   As,lim5=  7.2 cm2   As,l.cálc.=  2.7 cm2   Nº.bar=  6   fi=  8.0 cm   espacl.= 18.0 cm   As,l real=  3.0 cm2
+
+ ANCORAGEM DAS ARMADURAS - APOIOS EXTREMOS E INTERNOS
+
+ APOIO EXTREMO - ESQUERDA DO VAO          EEEEEEEEEEEEEEEEEEEE          VIGA: V1001           
+ IVAO     =         1
+ b=  19.0 cm     d=  67.9 cm     b*d*d/115=     761.7 tfcm      al/d=      1.00     fi=  1.00 cm
+ V_max.  =      6.52 tf
+ K64 = 0      - As (1/3 ou 1/4)=      0.74 cm2
+ Torção :     - As_long_tração =      0.00 cm2
+ K131= 0      - As,min         =      0.00 cm2
+ Eixo do pilar: M,min =   -990.5 tfcm     M,max =   -382.9 tfcm     M,max,dec =    -76.3 tfcm
+ Face do pilar:                           M,max =      0.0 tfcm     M,max,dec =      9.4 tfcm
+  E CASOA - Momento negativo é grande - Adoção da armadura de compressão 
+      M_neg_mn  =    -990.5 tfcm     [M_neg_mx]=     990.5 tfcm
+      M_neg > b*d*d/115
+           As_inf   =      0.00 cm2
+           As,apo    =      0.74 cm2
+  CASOB2 - Compressão diagonal - Momento  fletor [-] no eixo é pequeno -  M decalado face>0. 
+      M_pos_mx_eixo  =    -382.9 tfcm     M_dec_face_apoio=       9.4 tfcm
+           As_diag.C=      2.10 cm2     V  =      6.52 tf     al/d=      1.00     M_pos=      0.00 tfcm
+           Asapo    =      2.10 cm2
+           A,sapo fin=     2.10 cm2          -  com Torção
+      ANCORAGEM ESQUERDA DO VAO          EEEEEEEEEEEEEEEEEEEE          VIGA: V1001           
+      As esq=   2.10cm2     Compr.adic.anc.=   0.00cm     Nºr=    2
+      fi   =    1.0cm     lb1/fi =  27.54     lb1 reto=  27.54cm     lb1 gancho=  19.28cm     eta1 =   2.25
+      bp,ef=  116.5cm     bp,ef grampo= 116.20cm     R + 5.5*fi=    8.0cm
+      lb1,nec reto 1a.cam= 18.41cm     lb1,nec gancho 1a.cam= 12.89cm     lb1,nec reto 1a.e 2a.cam= 18.41cm     lb1,nec gancho 1a.e 2a.cam= 12.89cm
+      Criterio - correçao trecho vertical                        Cv=   0.00cm
+      Criterio K74= 1                Ch=  40.00cm                Cv=   0.00cm
+      Criterio - correçao trecho vertical                        Cv=   0.00cm
+      Criterio - ancora N=25.*fi     Ch=  40.00cm                Cv=   0.00cm
+      Criterio - correçao trecho vertical                        Cv=   0.00cm
+      N.barras =    4                Ch=  40.00cm                Cv=   0.00cm
+
+ APOIO EXTREMO - DIREITA DO VAO          DDDDDDDDDDDDDDDDDDDD          VIGA: V1001           
+ IVAO     =         1
+ b=  19.0 cm     d=  67.9 cm     b*d*d/115=     761.7 tfcm      al/d=      1.00     fi=  1.00 cm
+ V_max.  =     11.56tf
+ K64 = 0      - AS (1/3 ou 1/4)=      0.74 cm2
+ Torção :     - As_long_tração =      0.00 cm2
+ K131= 0      - AS minimo      =      0.00 cm2
+ Eixo do pilar: M,min =  -1987.8 tfcm      M,max =   -608.1 tfcm     M,max,dec =   -241.7 tfcm
+ Face do pilar:                            M,max =      0.0 tfcm     M,max,dec =      0.0 tfcm
+  D CASOA - Momento negativo é grande - Adoção da armadura de compressão 
+      M_neg_min  =   -1987.8 tfcm     [M_neg_max]=    1987.8 tfcm
+      M_neg > b*d*d/115
+           As Inf   =      0.00 cm2
+           As,apo   =      0.74 cm2
+           A,sapo fin=     0.74 cm2          -  com Torção
+      ANCORAGEM DIREITA DO VAO          DDDDDDDDDDDDDDDDDDDD          VIGA: V1001           
+      As dir=   0.74cm2     Compr.adic.anc.=   0.00cm     N. Ramos=    2
+      fi =    1.0cm     lb1/fi =  27.54     lb1 reto=  27.54cm     lb1 gancho=  19.28cm     eta1 =   2.25
+      bp util=  138.5cm     bp util grampo= 138.20cm     R + 5.5*fi=    8.0cm
+      lb1,nec reto 1a.cam= 12.95cm     lb1,nec gancho 1a.cam= 10.00cm     lb1,nec reto 1a.e 2a.cam= 12.95cm     lb1,nec gancho 1a.e 2a.cam= 10.00cm
+      Criterio - correçao trecho vertical                        Cv=   0.00cm
+      Criterio K74= 1                Ch=  40.00cm                Cv=   0.00cm
+      Criterio - correçao trecho vertical                        Cv=   0.00cm
+      Criterio - ancora N=25.*fi     Ch=  40.00cm                Cv=   0.00cm
+      Criterio - correçao trecho vertical                        Cv=   0.00cm
+      N.barras    =    2             Ch=  40.00cm                Cv=   0.00cm
+
+ Agrupamento de barras a partir de tabelas  fornecidas no arquivo de critérios em função da  largura da viga
+
+ Informações sobre as barras após a ancoragem e antes do agrupamento
+ Vão=  2  Pos.=  1  -  Nº.bar= 2  x,i=  -20 cm  -  cmp.=  648 cm  -  DbE=    0 cm  -  DbD=    0 cm
+ Vão=  2  Pos.=  2  -  Nº.bar= 2  x,i=  -20 cm  -  cmp.=  795 cm  -  DbE=    0 cm  -  DbD=    0 cm
+
+ Vão=  2  Espaco útil para alojamento das barras=  12.8 cm    Tabela selecionada=  2
+ Vão=  2  Número total de barras=  4   serão agrupadas como:  2    2    0    0    0
+ Vão=  2  Pos.=  1  -  Nº.bar= 2  X,i=  -20 cm  -  cmp.=  648 cm  -  DbE=    0 cm  -  DbD=    0 cm
+ Vão=  2  Pos.=  2  -  Nº.bar= 2  X,i=  -20 cm  -  cmp.=  795 cm  -  DbE=    0 cm  -  DbD=    0 cm
+
+ Porta estribos - face inferior da viga - V1001
+
+
+
+
+RELDTVeT.LST 1-62
+                              VIGAS - FORÇA CORTANTE E TORÇÃO - DIMENSIONAMENTO E DETALHAMENTO DE ARMADURAS
+
+     Legenda: 
+
+ b  - largura da viga                                             DbE  - comprimento da dobra a esquerda de um posição de barras longit.
+ h  - altura da viga                                              DbD  - comprimento da dobra a direita de um posição de barras longit.
+ bf,s - largura da mesa colaborante  superior fornecida           Nº.Pos  - identifica o agrupamento de uma ou mais barras longitudinais.
+ bf,i - largura da mesa colaborante  inferior fornecida           Nºr  - número de ramos de estribos
+ bp - largura do pilar adjacente ao vão                           Nº.bar  - número de barras longitudinais de uma posição
+ esp,li - espessura da laje inferior                              Nº.cam  - número de camadas de barras em uma seção
+ esp,ls - espessura da laje superior                              a - valor da decalagem do diagrama de Mk
+ d  - altura útil da viga                                         a/fi - fator de decalagem 
+ l  - comprimento do vão da viga                                  Largura-c-estr.-largura da seção-cobrimento- ramos de estribos na seção
+ s  - espaça/ entre estribos ou barras longitudinais              fi,pe - diâmetro da barra de porta estribo
+ z  - braço de alavanca entre forças de tração e compressão       fi,es - diâmetro da barra de estribo 
+ x  - altura da linha neutra                                      bp,ef - largura do pilar efetiva (após desconto:c e fi,es)
+ x/d - valor relativo da linha neutra                             lb1,efe - compr.ancoragem efetivo em função do As necessário e existente
+ c  - cobrimento da armadura                                      M   - Momento fletor  
+ exc  - excentricidade do pilar                                   M,pos - Momento fletor  [+]
+ lb  - comprimento de ancoragem a tração                          M,neg - Momento fletor  [-]
+ lb1 - comprimento de ancoragem a tração- boa aderência           Ch - comprimento de ancoragem horizontal a partir do eixo
+ lb2 - comprimento de ancoragem a tração - má aderência           Cv - comprimento de ancoragem vertical a partir do eixo
+ lb,c  - comprimento de ancoragem a compressão                    M,min - Momento fletor mínimo
+ espacl  - espaçamento da armadura lateral                        M,máx - Momento fletor máximo
+ x,i  - abcissa inicial de uma posição contendo barras longit.    fi  - diâmetro da barra longitudinal  ou estribo
+ x,f  - abcissa finalal de uma posição contendo barras longit.    N   - Força normal 
+ cmp.  - comprimento de uma posição de barras longit.             V   - Força cortante 
+ Inic. x/d- Esq/Dir - Inicialização do valor do x/d               Ts  - Momento de torção
+ FC SP Eixo - distância da face superior ao eixo                  LimDT  - % limite para desprezar momento de torção
+ FC LT Eixo - distância da face lateral ao eixo                   Nº,gr - número de grampos (inferior ou superior
+ A  - área da seção cheia                                         dfcsa  - Distância da face sup. da viga suporte e a
+ Ac - área da seção de concreto                                            face inf. da viga apoiada
+ As - área da armadura - tração                                   E   - Módulo de elasticidade 
+ Asl - área da armadura de compressão                             R   - Reação de apoio  
+ As,l - área da armadura lateral                                  EI  - Rigidez da seção transversal
+ Asw,T - área da armadura de torção                               W   - Módulo de resistência da seção
+ Asw,V - área da armadura de cortante                             ycg - Altura do baricentro da arm. de tração
+ As,vão - área da armadura de tração no vão                       ro  - taxa de armadura longit. de tração
+ As,l,T - área da armadura longitud. devido a torção              As,apo - Área de armadura que deve chegar ao apoio
+ As,lim5 - área da armadura lateral com o limite de 5 cm2/face    ro,min - taxa de armadura longit. de tração-mínima
+ As,min - área da armadura a tração mínima                        Nº,fi - comprimento em número de diâmetros da barra
+ As,gr - área da armadura de grampos (inf. e sup)                 fi,gr - diâmetro de grampos
+ Asw,min - área mínima de armadura, estribo, devido a V
+ Asw,T,min - área mínima de armadura, estribo, devido a Ts
+ Asw,susp - área de armadura, estribo, de suspensão
+ Tipo da seção transversal:
+ [1] Ret. - seção retangular
+ [2] TeS2L - seção T laje superior nos 2 lados
+ [3] TeI2L - seção T laje inferior nos 2 lados
+ [4] DplTe2L - seção T sup. e inf. nos 2 lados
+ [5] L1LS - seção L superior em 1 lado 
+ [6] L1LI - seção L inferior em 1 lado 
+ [7] L1LSI- seção L sup. e inf. em 1 lado
+ [8] L1LS - seção L superior em 1 lado 
+ [9] L1LI - seção L inferior em 1 lado 
+ [10]DplL1SI - seção L sup. e inf. em 1 lado 
+ [11]DplL1SI - seção L sup. e inf. em 1 lado 
+ 
+
+ NORMA: NBR6118:1980  -  
+
+
+
+RELDTVeT.LST 3389-3580
+          VIGA =  1001 - V1001                                                              -       c =   2.5 cm
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Concreto - fck =  400.0 Kgf/cm2      ---   -   gamaf= 1.4   -   gamac= 1.4   -    ACO - CA-50 
+
+ Informações gerais da viga  -  Geometria dos vãos [cm]
+    Vao          l        b         h       bf,s      bf,i  Tipo Secao  esp,ls    esp,li  
+      1        0.0       1.0       1.0       0.0       0.0       1.0       0.0       0.0
+      2        7.6       0.2       0.7       0.0       0.0       1.0       0.0       0.0
+      3        0.0       1.0       1.0       0.0       0.0       1.0       0.0       0.0
+
+                              FORÇAS CORTANTES MÁXIMAS E MÍNIMAS ATUANTES  NO(S) VAO(S)     -       tf
+ SEÇÃO  :                    1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão=   1   V,max =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão=   1   V,min =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão=   2   V,max =       6.52      5.92      5.33      4.74      4.15      0.82     -0.17     -0.97     -1.94     -2.80     -4.38     -5.27     -5.55
+ Vão=   2   V,min =       4.58      4.07      3.56      3.05      2.49     -1.02     -2.01     -2.81     -3.79     -4.65    -10.39    -11.28    -11.56
+ Vão=   3   V,max =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão=   3   V,min =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+ Informações sobre cargas distribuidas e cargas concentradas aplicadas nos vãos
+ Vão =  1 - Cdis. esq=   0.00 tf/m   -   Cdis. dir=   0.00 tf/m
+ Vão =  2 - Cdis. esq=   0.94 tf/m   -   Cdis. dir=   1.14 tf/m
+ N.Carga =  1 - Cconc.=   2.82 tf   -   Larg.=  19.00 m   -   Dist.= 322.40 m    -   Pos.relt.=  32.00 m 
+ N.Carga =  2 - Cconc.=   5.03 tf   -   Larg.=  14.00 m   -   Dist.= 638.40 m    -   Pos.relt.=  52.00 m 
+ Vão =  3 - Cdis. esq=   0.00 tf/m   -   Cdis. dir=   0.00 tf/m
+
+ Informações gerais da viga  -  Geometria dos Apoios [cm]
+    Titulo        bp         exc    Contin. 
+     P2A        120.0        0.4      SEGUE
+     P1A        142.0        0.0      SEGUE
+
+                              MOMENTOS TORSORES  ATUANTES  NO(S) VAO(S)     -       tf*m
+ SEÇÃO  :                   1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão=   1  Ts,max=       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão=   2  Ts,max=       0.01      0.01      0.01      0.01      0.01      0.01      0.01      0.01      0.01      0.01      0.03      0.04      0.06
+ Vão=   3  Ts,max=       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+Redução da força cortante próxima aos apoios - vãos internos   -    K15=    4
+ K15=0  - Não reduz
+ K15=1  - Reduz - Viga contínua - CC e CD
+ K15=2  - Reduz - Viga contínua - apenas CD
+ K15=4  - Reduz - Pórtico - CC e CD
+ K15=5  - Reduz - Pórtico - apenas CD
+
+ Forças cortantes máximas iniciais em modulo vãos internos     -       tf
+ Seção  :                    1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão=   1   V,max =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão=   2   V,max =       6.52      5.92      5.33      4.74      4.15      1.02      2.01      2.81      3.79      4.65     10.39     11.28     11.56
+ Vão=   3   V,max =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Diagrama de V  no início do vão=    2  / CRESce   ou   DECResce =DECR
+ Diagrama de Vk no fim do vão   =    2  / CRESce   ou   DECResce =DECR
+
+ Retirada de excentricidades de apoios nos pilares centrais - Novos comprimentos de vãos, apoios e cargas
+ Vão=    2         l,vão=  7.55cm
+ Pilar=    1         bp=120.00cm
+ Pilar=    2         bp=142.00cm
+ Vão=    2         N.Carga=    1        Dist.=284.00cm
+ Vão=    2         N.Carga=    2        Dist.=600.00cm
+
+ Redução de V  para cargas concentradas
+ Esq. do vão=    2         Carga n.=,i5
+ Esq. do vão=    1         Carga n.=,i5
+
+ Dir. do vão=    2         Carga n.=,i5
+
+ Dir. do vão=    1         Carga n.=,i5
+ Esq. do vão=    2         Carga n.=,i5
+ Esq. do vão=    2         Carga n.=,i5
+
+ Dir. do vão=    2         Carga n.=,i5
+
+ Dir. do vão=    2         Carga n.=,i5
+
+ Força cortante V reduzida em modulo devido a cargas concentradas - vãos internos     -       tf
+ Seção  :                 1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão=   2   V,max,red. =*****       5.92      5.33      4.74      4.15      1.02      2.01      2.81      3.79      4.65     10.39     11.28     11.56
+
+ Redução de V para cargas distribuidas
+ Esq. do vão=    2
+ Carga distr=  0.94tf/m     Compr.redução=  0.6 cm       Redução=  0.5tf
+ Direita do vão=    2
+ Carga distr=  1.14tf/m     Compr.redução=  0.6 cm       Redução=  0.6tf
+
+ Forças cortantes finais em modulo vãos internos     -       tf
+ Seção  :                    1         2         3         4         5         6         7         8         9        10        11        12        13
+ Vão=   1   V,max =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+ Vão=   2   V,max =       6.00      5.92      5.33      4.74      4.15      1.02      2.01      2.81      3.79      4.65     10.39     11.28     10.93
+ Vão=   3   V,max =       0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+ Verificação de cargas importantes  -  Vão n.=  2     -       -  Número de cargas concentradas no vão=    2
+
+ K66=    2
+ K66=0  --> Asw ou Asusp é adotada - válido para a>h
+ K66=1  --> Asw e  Asusp são somadas 
+ K66=2  --> Asw ou Asusp é adotada - válido para a>=h
+ dfcsa : distância entre a face superior da viga suporte e a face inferior da viga que apoia
+
+ Carga n.=    1      dfcsa = 32.00 cm      h =  72.0 cm
+ Carga n.=    1      Verificação de Asw   -   Faixa de pesquisa - ini=  278.6 - fim=  366.1 cm
+ Carga n.=    1      V  =  4.25 tf   -   Asw=  2.67 cm2 
+
+ Vão=  2 Cálculo da armadura de suspensão - As,susp
+ Carga n.=    1      Compr.faixa=   87.5 cm
+ K66=    2      dfcsa <= h     As,susp=  0.46 cm2
+
+ Carga n.=    2      dfcsa = 52.00 cm      h =  72.0 cm
+ Carga n.=    2      Verificação de Asw   -   Faixa de pesquisa - ini=  597.1 - fim=  679.6 cm
+ Carga n.=    2      V  = 10.56 tf   -   Asw=  2.67 cm2 
+
+ Vão=  2 Cálculo da armadura de suspensão - As,susp
+ Carga n.=    2      Compr.faixa=   82.5 cm
+ K66=    2      dfcsa <= h     As,susp=  1.42 cm2
+
+ Vão=  2 - Delimitação de faixas para detalhamento dos estribos
+       Faixa:  1  -  Ini=   60.0 cm     Fim=  772.0 cm     Carga imp.=Não
+
+ Vão=  2 - Compatibilização das restrições físicas dos intervalos
+       Faixa:  1  -  Ini=   60.0 cm     Fim=  772.0 cm     Carga imp.=Não
+
+ Vão=  2 - Criação de faixas dentro dos intervalos definidos devido a cargas importantes
+       Faixa:  1  -  Ini=   60.0 cm     Fim=  297.3 cm     Carga imp.=Não
+       Faixa:  2  -  Ini=  297.3 cm     Fim=  534.7 cm     Carga imp.=Não
+       Faixa:  3  -  Ini=  534.7 cm     Fim=  772.0 cm     Carga imp.=Não
+
+ Vão=  2 - Eliminação de faixas com pequena dimensão 
+       Faixa:  1  -  Ini=   60.0 cm     Fim=  297.3 cm     Carga imp.=Não
+       Faixa:  2  -  Ini=  297.3 cm     Fim=  534.7 cm     Carga imp.=Sim
+       Faixa:  3  -  Ini=  534.7 cm     Fim=  772.0 cm     Carga imp.=Não
+
+ Cálculo da armadura de estribos devido a V e Ts  - Verificação com estribos de 2/4/6 ramos - Etapa com   2 ramos  
+
+ Vao=   2  -  Faixa=    1  -  Ini.=    60. cm     -     Fim=   297.cm
+
+       Torção  - b=  19.0 cm - h=  72.0 cm - c=  2.5 cm - he=  7.5 cm - bnucl= 11.1 cm - hnucl 64.1 cm - %LimDT= 5
+       Tsd=    0.01 tf*cm  -  TRd2=   6.44 tf*cm     -  Asw,T,1R =   0.00 cm2  -  Asw,T,min,Nr=   0.00 cm2
+                              AsT,lon,b=   0.00 cm2  -  AsT,lon,h=   0.00 cm2  -  AsT,lon,min =   0.00 cm2  -  AdPla=N
+
+       Força Cortante  V -    Verificação de tensões com V original
+       Vd =       9.1 tf  -  VRd2=  84.02 tf  -  Tsd,corr.=   0.01 tfm  -  TRd2=   6.44 tfm  -  Comp.Diag.=   0.11
+       Decalagem M  -  Vd =     9.1 tf  -  Vc=   13.6 tf  -  d =  68.5 cm  -  ang.= 45.0  -  al/d= 1.00
+
+       Calculo da armadura devido a V com  com valor reduzido
+       Vd =       8.4 tf  -  VRd2=  84.02 tfm  -  VRd3=   8.40 tfm  -  Modc=  1   -  Ang.= 45.0   -  Vc=  13.65 tf  -  yg=   3.75 cm
+                             Asw=   0.00 cm2   -  Asw,min=   2.67 cm2
+       Asw < Asw,min    -  adotado  Asw,min=   2.67 cm2
+
+       Espaçamento limite "s" :   Vd/VRd2=  0.11  d=  68.5 cm   -  s,max = 30.00 cm
+       s,max - critério de projeto=   18.0 cm
+       "s" padrões definidos(cm)=  8.0  10.0  12.0  14.0  15.0  18.0
+       fi preferenciais para estribos (mm)=  5.0    6.3    8.0
+       fi/s (mm/cm): / Fi= 5.0-s= 14.7// Fi= 6.3-s= 23.4// Fi= 8.0-s= 37.7// Fi=10.0-s= 58.9// Fi=50.0-s=*****// Fi=
+       K35= 1  Solução adotada  -  fi/s  (mm/cm) : fi=  5.0  -   s= 14.0  -  Nºr=   2
+
+ Vao=   2  -  Faixa=    2  -  Ini.=   297. cm     -     Fim=   535.cm
+
+       Tsd=     1.0 tf*cm  -  Asw,T,fin,1R=   0.00 cm2  -  Asw,T,min=   0.00 cm2  -  Asw,T,1R=   0.00 cm2
+                              AsT,lon,b=   0.00 cm2     -  AsT,lon,h=   0.00 cm2  -  AsT,lon,min=   0.00 cm2  -  AdPla=N
+
+       Força Cortante  V -    Verificação de tensões com V original
+       Vd =       5.3 tf  -  VRd2=  84.02 tf  -  Tsd,corr.=   0.01 tfm  -  TRd2=   6.44 tfm  -  Comp.Diag.=   0.07
+       Decalagem M  -  Vd =     5.3 tf  -  Vc=   13.6 tf  -  d =  68.5 cm  -  ang.= 45.0  -  al/d= 1.00
+
+       Calculo da armadura devido a V com  com valor reduzido
+       Vd =       5.3 tf  -  VRd2=  84.02 tfm  -  VRd3=   5.31 tfm  -  Modc=  1   -  Ang.= 45.0   -  Vc=  13.65 tf  -  yg=   3.75 cm
+                             Asw=   0.00 cm2   -  Asw,min=   2.67 cm2
+       Asw < Asw,min    -  adotado  Asw,min=   2.67 cm2
+
+       Espaçamento limite "s" :   Vd/VRd2=  0.07  d=  68.5 cm   -  s,max = 30.00 cm
+       s,max - critério de projeto=   18.0 cm
+       fi/s (mm/cm): / Fi= 5.0-s= 14.7// Fi= 6.3-s= 23.4// Fi= 8.0-s= 37.7// Fi=10.0-s= 58.9// Fi=50.0-s=*****// Fi=
+       K35= 1  Solução adotada  -  fi/s  (mm/cm) : fi=  5.0  -   s= 14.0  -  Nºr=   2
+
+ Vao=   2  -  Faixa=    3  -  Ini.=   535. cm     -     Fim=   772.cm
+
+       Tsd=     5.0 tf*cm  -  Asw,T,fin,1R=   0.00 cm2  -  Asw,T,min=   0.00 cm2  -  Asw,T,1R=   0.00 cm2
+                              AsT,lon,b=   0.00 cm2     -  AsT,lon,h=   0.00 cm2  -  AsT,lon,min=   0.00 cm2  -  AdPla=N
+
+       Força Cortante  V -    Verificação de tensões com V original
+       Vd =      16.2 tf  -  VRd2=  83.56 tf  -  Tsd,corr.=   0.07 tfm  -  TRd2=   6.44 tfm  -  Comp.Diag.=   0.20
+       Decalagem M  -  Vd =    16.2 tf  -  Vc=   13.6 tf  -  d =  68.5 cm  -  ang.= 45.0  -  al/d= 1.00
+
+       Calculo da armadura devido a V com  com valor reduzido
+       Vd =      15.8 tf  -  VRd2=  83.56 tfm  -  VRd3=  15.78 tfm  -  Modc=  1   -  Ang.= 45.0   -  Vc=  13.57 tf  -  yg=   4.13 cm
+                             Asw=   0.83 cm2   -  Asw,min=   2.67 cm2
+       Asw < Asw,min    -  adotado  Asw,min=   2.67 cm2
+
+       Espaçamento limite "s" :   Vd/VRd2=  0.20  d=  68.5 cm   -  s,max = 30.00 cm
+       s,max - critério de projeto=   18.0 cm
+       fi/s (mm/cm): / Fi= 5.0-s= 14.7// Fi= 6.3-s= 23.4// Fi= 8.0-s= 37.7// Fi=10.0-s= 58.9// Fi=50.0-s=*****// Fi=
+       K35= 1  Solução adotada  -  fi/s  (mm/cm) : fi=  5.0  -   s= 14.0  -  Nºr=   2
+
+
+
+RELDTVGS.LST 1-61
+                              VIGAS - DETERMINAÇAO DE ESFORÇOS SOLICITANTES
+                              	       LIMITES DA LINHA NEUTRA (X/D)  -	 CALCULO DA MESA COLABORANTE
+
+     Legenda: 
+
+ b  - largura da viga                                             DbE  - comprimento da dobra a esquerda de um posição de barras longit.
+ h  - altura da viga                                              DbD  - comprimento da dobra a direita de um posição de barras longit.
+ bf,s - largura da mesa colaborante  superior fornecida           Nº.Pos  - identifica o agrupamento de uma ou mais barras longitudinais.
+ bf,i - largura da mesa colaborante  inferior fornecida           Nºr  - número de ramos de estribos
+ bp - largura do pilar adjacente ao vão                           Nº.bar  - número de barras longitudinais de uma posição
+ esp,li - espessura da laje inferior                              Nº.cam  - número de camadas de barras em uma seção
+ esp,ls - espessura da laje superior                              a - valor da decalagem do diagrama de Mk
+ d  - altura útil da viga                                         a/fi - fator de decalagem 
+ l  - comprimento do vão da viga                                  Largura-c-estr.-largura da seção-cobrimento- ramos de estribos na seção
+ s  - espaça/ entre estribos ou barras longitudinais              fi,pe - diâmetro da barra de porta estribo
+ z  - braço de alavanca entre forças de tração e compressão       fi,es - diâmetro da barra de estribo 
+ x  - altura da linha neutra                                      bp,ef - largura do pilar efetiva (após desconto:c e fi,es)
+ x/d - valor relativo da linha neutra                             lb1,efe - compr.ancoragem efetivo em função do As necessário e existente
+ c  - cobrimento da armadura                                      M   - Momento fletor  
+ exc  - excentricidade do pilar                                   M,pos - Momento fletor  [+]
+ lb  - comprimento de ancoragem a tração                          M,neg - Momento fletor  [-]
+ lb1 - comprimento de ancoragem a tração- boa aderência           Ch - comprimento de ancoragem horizontal a partir do eixo
+ lb2 - comprimento de ancoragem a tração - má aderência           Cv - comprimento de ancoragem vertical a partir do eixo
+ lb,c  - comprimento de ancoragem a compressão                    M,min - Momento fletor mínimo
+ espacl  - espaçamento da armadura lateral                        M,máx - Momento fletor máximo
+ x,i  - abcissa inicial de uma posição contendo barras longit.    fi  - diâmetro da barra longitudinal  ou estribo
+ x,f  - abcissa finalal de uma posição contendo barras longit.    N   - Força normal 
+ cmp.  - comprimento de uma posição de barras longit.             V   - Força cortante 
+ Inic. x/d- Esq/Dir - Inicialização do valor do x/d               Ts  - Momento de torção
+ FC SP Eixo - distância da face superior ao eixo                  LimDT  - % limite para desprezar momento de torção
+ FC LT Eixo - distância da face lateral ao eixo                   Nº,gr - número de grampos (inferior ou superior
+ A  - área da seção cheia                                         dfcsa  - Distância da face sup. da viga suporte e a
+ Ac - área da seção de concreto                                            face inf. da viga apoiada
+ As - área da armadura - tração                                   E   - Módulo de elasticidade 
+ Asl - área da armadura de compressão                             R   - Reação de apoio  
+ As,l - área da armadura lateral                                  EI  - Rigidez da seção transversal
+ Asw,T - área da armadura de torção                               W   - Módulo de resistência da seção
+ Asw,V - área da armadura de cortante                             ycg - Altura do baricentro da arm. de tração
+ As,vão - área da armadura de tração no vão                       ro  - taxa de armadura longit. de tração
+ As,l,T - área da armadura longitud. devido a torção              As,apo - Área de armadura que deve chegar ao apoio
+ As,lim5 - área da armadura lateral com o limite de 5 cm2/face    ro,min - taxa de armadura longit. de tração-mínima
+ As,min - área da armadura a tração mínima                        Nº,fi - comprimento em número de diâmetros da barra
+ As,gr - área da armadura de grampos (inf. e sup)                 fi,gr - diâmetro de grampos
+ Tipo da seção transversal:
+ [1] Ret. - seção retangular
+ [2] TeS2L - seção T laje superior nos 2 lados
+ [3] TeI2L - seção T laje inferior nos 2 lados
+ [4] DplTe2L - seção T sup. e inf. nos 2 lados
+ [5] L1LS - seção L superior em 1 lado 
+ [6] L1LI - seção L inferior em 1 lado 
+ [7] L1LSI- seção L sup. e inf. em 1 lado
+ [8] L1LS - seção L superior em 1 lado 
+ [9] L1LI - seção L inferior em 1 lado 
+ [10]DplL1SI - seção L sup. e inf. em 1 lado 
+ [11]DplL1SI - seção L sup. e inf. em 1 lado 
+ 
+
+ NORMA: NBR6118:2023  -   ESTRUTURA DE NÓS MÓVEIS
+
+
+
+
+RELDTVGS.LST 1507-1572
+          VIGA =  1001 - V1001                                                                           
+ ----------------------------------------------------------------------------------------------------------------------------------
+ Viga não  detalhável= NAO     Viga que simula cortina= NAO     Viga de compatibilidade= NAO     Viga Pré-moldada= NAO     Viga em contato com o solo= NAO
+ Número de Apoios= 2  -  Cobrimento geral =  2.5 cm  -  Cobrimento desta viga=  0.0 cm
+ Cobrimento sup.=  2.5 cm  -  Cobrimento inf.=  2.5 cm  -  Cobrimento contato solo=  3.0 cm
+
+    Informações gerais da viga  -  Geometria dos vãos [m]
+    Eng Esq=NAO     Eng Dir=NAO     Repet.= 1     Andar= 1
+    Vao    Comprim.  Largura    Altura  B Colab.S.B Colab.I.Tipo Secao Esp.LJ.S. Esp.LJ.I.FC SP EixoFC LT Eixo
+     1       7.552     0.190     0.720     0.000     0.000     1.000     0.000     0.000     0.360     0.095
+
+    Informações gerais da viga  -  Geometria dos Apoios [m]
+    Titulo   DimensaoI  Excentr.   Continua Alavanca  DimensaoS EspessIn  EspessSu 
+     P2A        1.20      0.38      SEGUE     NAO      1.20      0.22      0.22
+     P1A        1.42      0.49      SEGUE     NAO      1.42      0.24      0.24
+ Fatores de redução de M - após leitura de dados dos pilares
+ Apoio             =            1           2
+ Plast.Pil. Esq/Dir=        1.00 1.00   1.00 1.00
+
+ Dutilidade conforme NBR 6118:2014  -  K124=  1
+ Apoio             =            1           2
+ Inic. x/d- Esq/Dir=        0.45 0.45   0.45 0.45
+ Inic. x/d- 1/2 vão=    0.45        0.45        0.45
+
+ Valores de Esforços Solicitantes característicos provenientes do pórtico espacial - [Tf,m] 
+ Ponto    =           1        2        3        4        5        6        7        8        9       10       11       12       13
+ Vk,min  Vão= 1     4.574    4.065    3.556    3.047    2.489   -1.024   -2.012   -2.812   -3.785   -4.645  -10.388  -11.279  -11.563
+
+ Mk,min  Vão= 1    -9.905   -5.992   -2.452    0.716    3.487    4.672    4.485    3.431    1.399   -1.276   -5.907  -12.665  -19.878
+
+ Vk,max  Vão= 1     6.513    5.921    5.330    4.738    4.147    0.818   -0.170   -0.970   -1.943   -2.802   -4.377   -5.268   -5.552
+
+ Mk,max  Vão= 1    -3.829   -0.960    1.537    3.662    5.415    6.102    5.721    5.123    4.070    2.555    0.323   -2.652   -6.081
+
+ Mtk,max Vão= 1    -0.010   -0.010   -0.010   -0.010   -0.010   -0.010   -0.009   -0.008   -0.007   -0.006    0.029    0.040    0.055
+
+ Calculo da mesa colaborante em vigas com secao T  -  K116=  1  -  Norma NBR6118:2014 
+ Tipo de secao - [1] Ret. - [2] TeS2L - [3] TeI2L - [4] DplTe2L - [5] L1LS -[6] L1LI - [7] L1LSI - [8] L1LS - [9] L1LI - [10] e [11] DplL1SI
+ Momentos limites para consideracao de vao engastado ou nao (b*h*h/180.) Mvao,1=   547.2 tf*cm - Mvao,ultimo=   547.2 tf*cm
+ Momentos atuantes no inicio do primeiro vao=   382.9 tf*cm  -  no fim do ultimo vao=   608.1 tf*cm
+ Inicio do primeiro vao eh engastado?= NAO   -   Final do ultimo vao eh engastado?= SIM
+ Comprimento efetivo do vao para calculo da mesa colaborante  
+ Vao            =      1       2       3
+ Comprimento (m)=   0.00    7.55    0.00
+ Dist.[a]Sup.(m)=   0.00    7.55    0.00
+ Dist.[a]Inf.(m)=   0.00    0.00    0.00
+ Larg.vao    (m)=   1.00    0.19    1.00
+ Mesa S forn.(m)=   0.00    0.00    0.00
+ Mesa I forn.(m)=   0.00    0.00    0.00
+ Tipo Secao     =     1.      1.      1.
+ Mesa S Final(m)=   0.00    0.00    0.00
+ Mesa I Final(m)=   0.00    0.00    0.00
+
+ Novos valores de vãos após a correção (aumento) devido excentricidades dos apoios internos
+      Vão    Compr.Orig.    Exc.Esq.     Exc.Dir.  Compr.Novo [m]
+        1       0.000        0.000        0.000        0.000
+        2       7.552        0.000        0.000        7.552
+        3       0.000        0.000        0.000        0.000
+
+    Informações gerais da viga  -  Reações nos Apoios [Tf]
+    Titulo  Reação_Max.    Reação_Min.
+     P2A          6.51           4.57
+     P1A         11.56           5.55
+
+
+
+
+RELGER.LST 1-34
+SIMON ENGENHARIA LTDA                      R E L G E R   -  Relatorio geral de vigas         (V24.8.42   )     Pg   1
+RUA FELIZARDO, 711 3° ANDAR                                             PORTO ALEGRE 90690-200 RS      33281300
+     T   Q   S        Projeto: 1000 - CASAMAQ                                                          03/10/26
+   TQS/Vigas                                                                                           15:52:07
+-----------------------------------------------------------------------------------------------------------------------------------
+                         fck=400.kgF/cm2  Aco :CA 50                            -  Esforcos Caracteristicos
+L E G E N D A
+G E O M E T R I A
+Eng.E     : Engastamento a Esquerda        / Eng.D     : Engastamento a Direita         / Repet   : Repeticoes                    
+NAnd      : N.de Andares                   / Red V Ext : Reducao de Cortante no Extremo / Fat.Alt : Fator de Alternancia de Cargas
+Cob       : Cobrimento                     / TpS       : Tipo da Secao                  / BCs     : Mesa Colaborante Superior     
+BCi       : Mesa Colaborante Inferior      / Esp.LS    : Espessura Laje Superior        / Esp.LI  : Espessura Laje Inferior       
+FSp.Ex    : Distancia Face Superior   Eixo / FLt.Ex    : Distancia Face Lateral ao Eixo / Cob/S   : Cobrim/Cobr.superior adicional
+C A R G A S
+MEsq : Momento Adicional a Esquerda        / MDir : Momento Adicional a Direita         / Q    : Cortante Adicional (valor unico)   
+A R M A D U R A S   -   F L E X A O
+SRAS  : Secao Retangular Armad.Simples     / SRAD  : Secao Retangular Armad.Dupla       / STAS  : Secao Te Armadura Simples         
+STAD  : Secao Te Armadura Dupla            / x/d   : Profund. relativa da Linha Neutra  / x/dMx : Profund. relativa da LN Maxima    
+AsL   : Armadura de Compressao             / Bit.de Fiss.: Bitola de fissuracao         / Asapo : Armadura e/d que chega no extremo 
+A R M A D U R A S   -   C I S A L H A M E N T O
+MdC     : Modelo de Calculo (I ou II)      / Ang.    : Angulo da biela de compressao    / Aswmin : Armad.transv.minima-cisalhamento
+Asw[C+T]: Arm.tran.calculada cisalh+torcao / Bit     : Bitola selecionada               / Esp    : Espacamento selecionado         
+NR      : Numero de ramos do estribo       / AsTrt   : Armadura transversal de Tirante  / AsSus  : Armadura transversal-Suspensao  
+A R M A D U R A S   -   T O R C A O
+%dT     : % limite de TRd2 para desprezar o M de torcao (Tsd)      / he      : Espessura do nucleo de torcao                           
+b-nuc   : Largura do nucleo                                        / h-nuc   : Altura do nucleo                                        
+Asw-1R  : Armadura de torcao calculada para 1 Ramo de estribo      / AswmnNR : Armad.transv.minima-torcao p/NR estribos selecionado    
+Asl-b   : Armadura longitudinal de torcao no lado b                / Asl-h   : Armadura longitudinal de torcao no lado h               
+ComDia  : Valor da compressao diagonal (cisalhamento+torcao)       / AdPla   : Capacida/ adaptacao plastica no vao - S[sim]  N[nao]
+R E A C O E S   D E   A P O I O
+DEPEV  : Distancia do eixo do pilar ao eixo efetivo de apoio -viga / Morte  : Codigo se pilar morre / segue / vigas                    
+M.I.Mx : Momento Imposto Maximo                                    / M.I.Mn : Momento Imposto Minimo                                   
+==================================================================================================================================
+
+
+RELGER.LST 35-63
+Viga= 1001  V1001                          Eng.E=Nao /Eng.D=Nao /Repet= 1 /NAnd= 1 /Red V Ext=Nao /Fat.Alt=1.00 /Cob/S=2.5 0.0 CM
+
+-------------------------------   G  E  O  M  E  T  R  I  A       E      C  A  R  G  A  S    ------------------------------- 
+Vao= 1  /L=  7.55 /B= 0.19 /H=  0.72  /BCs= 0.00 /BCi= 0.00 /TpS=  1 /Esp.LS= 0.00 /Esp.LI= 0.00 FSp.Ex= 0.36 /FLt.Ex= 0.10   [M]
+--Solicitações provenientes de modelo de grelha e/ou pórtico espacial---  Estrut. Nós MOVEIS --- DeltaE=1.00   DeltaD=1.00  ---
+
+-    -    -    -    -    -   A  R  M  A  D  U  R  A  S   ( F L E X A O   E    C I S A L H A M E N T O )   -    -   -    -    - 
+FLEXAO-| E S Q U E R D A                         | M E I O   D O    V A O                     | D I R E I T A                        
+       | M.[-] =      9.9 tf* m                  | M.[+] Max=      6.1 tf* m - Abcis.= 314    | M.[-] =     19.9  tf* m
+[tf,cm]| As =   4.89  -SRAS-   [  4 B 12.5mm]    | AsL=   0.00   ------                       | As =  10.34  -SRAS- [  5 B 16.0mm]
+       | AsL=   0.00  ------       x/d  =0.09    | As =   2.95   -SRAS-  [  4 B 10.0mm ]      | AsL=   0.00  ------     x/d  =0.18
+       |                           x/dMx=0.45    | Arm.Lat.=[2 X  3 B  8.0mm] - LN=  3.5      |                         x/dMx=0.45
+       |                             CG=  4.4    |                                            |                           CG=  5.2
+[tf,cm]| M[-]Min =   431.5        BCs=     0.    | M[+]Min =   431.5                          | M[-]Min =   431.5      BCs=     0.
+[cm2  ]| Asapo[+]=  2.10                         |                              CG=  3.5      | Asapo[+]=  0.74                   
+[ cm  ]| Esp,bar =   4.5                         | Esp,bar  = 2.9                             | Esp,bar =   4.0                   
+[cm2  ]| Asmn,sup=   2.1                         | Asmn,inf =  2.1                            | Asmn,sup=   2.1                   
+
+CISALHAMENTO-  Xi    Xf    Vsd   VRd2 MdC Ang. Asw[C] Aswmin Asw[C+T]  Bit  Esp NR AsTrt AsSus            M E N S A G E M 
+[tf,cm]        0.- 712.  16.19  84.02   1  45.    0.8    2.7      2.7  5.0 14.0  2   0.0   0.0                        
+
+T O R C A O-   Xi    Xf    Tsd   TRd2 %dT   he b-nuc h-nuc Asw-1R AswMnNR  Asl-mn Asl-b Asl-h ComDia AdPla      M E N S A G E M    
+[tf,cm]        0.- 712.   0.07   6.44   5  7.5  11.1  64.1    0.0     0.0     0.0   0.0   0.0   0.20   N                                 
+
+REAC. APOIO - No.   Maximos   Minimos   Largura    DEPEV  Morte    Nome     M.I.Mx M.I.Mn          Pilares:
+               1     6.513     4.574      1.20     0.38      0   P2A        0.00   0.00    802      0      0      0      0      0
+               2    11.563     5.552      1.42     0.49      0   P1A        0.00   0.00    801      0      0      0      0      0
+==================================================================================================================================
+
+
+RELPREDI.LST 1-10
+
+ ------------------------------------------------------------------------------
+                 Relatório de Predimensionamento de Vigas       
+     T  Q  S               Vigas    V24.8.42    03/10/26 15:52:07
+ C:\TQS\24-155-COLLINE-RESIDENCIAL-R60\CASAMAQ\VIGAS
+ SIMON ENGENHARIA LTDA                   
+ RUA FELIZARDO, 711 3° ANDAR             
+ ------------------------------------------------------------------------------
+
+
+
+RELPREDI.LST 11-29
+ VIGA= 1001  V1001                         
+
+ APOIOS      1       2
+
+   H    =  0     72       0
+   B    =  0     19       0
+ BHH/M  =     0 143   0
+ RO(-)  =   0.4 0.0 0.8
+ RO(+)  =   0.0 0.2 0.0
+ FLECHA =   0    440       0
+ B/? (-)=   0  35  48   0
+ ?/H (-)=   0   1   1   0
+ B/? (+)=        29
+ ?/H (+)=         3
+
+ VSd/VRd2=0.0 0.2 0.2 0.0
+ CIS+TOR= 0.0 0.2 0.2 0.0
+ ===============================================================================
+
+
+VGESFS.LST 1-3
+SIMON ENGENHARIA LTDA                       V G E S F S   - Calculo de Esforcos Solicitantes em Vigas  (V12  )      PG.   1
+RUA FELIZARDO, 711 3° ANDAR             
+  T  Q  S                Projeto:     1000   - CASAMAQ                                                          03/10/26
+
+VGESFS.LST 487-507
+         VIGA =  1001 - V1001                                                           
+----------------------------------------------------------------------------------------------------------------------------------
+   ENG ESQ=NAO     ENG DIR=NAO     REPET.= 1     ANDAR= 1     RED V EXT=NAO     FAT CARGA MIN=1.00
+   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO
+    1       7.552     0.190     0.720     0.000     0.000     1.000     0.000     0.000     0.360     0.095
+
+                            ESFORCOS PROVENIENTES DE GRELHA/PORTICO ESPACIAL
+Q MN. VAO= 1     4.574    4.065    3.556    3.047    2.489   -1.024   -2.012   -2.812   -3.785   -4.645  -10.388  -11.279  -11.563
+
+M MN. VAO= 1    -9.905   -5.992   -2.452    0.716    3.487    4.672    4.485    3.431    1.399   -1.276   -5.907  -12.665  -19.878
+
+Q MX. VAO= 1     6.513    5.921    5.330    4.738    4.147    0.818   -0.170   -0.970   -1.943   -2.802   -4.377   -5.268   -5.552
+
+M MX. VAO= 1    -3.829   -0.960    1.537    3.662    5.415    6.102    5.721    5.123    4.070    2.555    0.323   -2.652   -6.081
+
+MT MX.VAO= 1    -0.010   -0.010   -0.010   -0.010   -0.010   -0.010   -0.009   -0.008   -0.007   -0.006    0.029    0.040    0.055
+
+R.APOIO-NO. MAXIMOS MINIMOS LARGURA   DEPEV MORTE   NOME   M.I.MX M.I.MN PILARS ESPESI ESPESS %RDMO          PILARES:
+         1    6.513   4.574    1.20    0.38    0. P2A        0.00   0.00   1.20   0.22   0.22     0 802.   0.   0.   0.   0.   0. 
+         2   11.563   5.552    1.42    0.49    0. P1A        0.00   0.00   1.42   0.24   0.24     0 801.   0.   0.   0.   0.   0. 

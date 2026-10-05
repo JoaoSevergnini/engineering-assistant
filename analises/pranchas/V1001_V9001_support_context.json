@@ -1,0 +1,18 @@
+{
+  "type": "engineer_confirmed_shared_detail_towers",
+  "detail_beam_id": "V1001",
+  "support_labels": [
+    {"side": "left", "label": "P2A/P2B", "candidates": ["P2A", "P2B"]},
+    {"side": "right", "label": "P1A/P1B", "candidates": ["P1A", "P1B"]}
+  ],
+  "members": [
+    {"beam_id": "V1001", "tower": "A", "support_ids": {"left": "P2A", "right": "P1A"}},
+    {"beam_id": "V9001", "tower": "B", "support_ids": {"left": "P2B", "right": "P1B"}}
+  ],
+  "evidence": [
+    {"type": "engineer_confirmation", "author": "João Severgnini", "date": "2026-10-04", "record": "Confirmação na conversa: detalhamento de duas torres, pilares com sufixos A/B; detalhe V1001 também representa V9001."},
+    {"type": "drawing", "file": "RMP-EST-LO-1376-VIG-R00.PDF", "page": 1, "record": "Título V1001 19/72; labels P2A/P2B e P1A/P1B; dimensões 120/142 cm."},
+    {"type": "tqs", "file": "C:/TQS/24-155-COLLINE-RESIDENCIAL-R60/CASAMAQ/VIGAS/VGESFS.LST", "lines": [487, 491, 505, 506, 703, 707, 721, 722], "record": "Blocos individuais V1001 e V9001, apoios ordenados A e B e geometria equivalente."},
+    {"type": "tqs", "file": "C:/TQS/24-155-COLLINE-RESIDENCIAL-R60/CASAMAQ/VIGAS/RELDTFPS.LST", "lines": [4755, 4765, 4770, 4771, 6775, 6785, 6790, 6791], "record": "Seção, comprimento, dimensões e DEPEV equivalentes; apoios individuais distintos."}
+  ]
+}
