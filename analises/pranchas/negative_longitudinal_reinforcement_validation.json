@@ -1,0 +1,37 @@
+{
+  "protected_files": 150,
+  "changed_protected_files": [],
+  "concretopy_unchanged": true,
+  "golden_positive_files_unchanged": true,
+  "engineering_assistant_test_counts": {
+    "extrator_lst": 39,
+    "beam_model": 30,
+    "beam_mapping": 34,
+    "reinforcement_checks": 445
+  },
+  "engineering_assistant_tests": 548,
+  "new_negative_tests": 99,
+  "concretopy_tests": 405,
+  "quick_validate": "passed",
+  "git_diff_check": "passed",
+  "tests_complete": true,
+  "files_created_or_changed_this_task": [
+    "tools/reinforcement_checks/flexure_regions.py",
+    "tools/reinforcement_checks/support_correction.py",
+    "tools/reinforcement_checks/tqs_moments.py",
+    "tools/reinforcement_checks/moment_diagram.py",
+    "tools/reinforcement_checks/support_geometry.py",
+    "tools/reinforcement_checks/longitudinal_review.py",
+    "tools/reinforcement_checks/negative_detailing.py",
+    "tools/reinforcement_checks/test_longitudinal_negative.py",
+    "tools/reinforcement_checks/longitudinal_review.md",
+    "tools/reinforcement_checks/README.md",
+    ".agents/skills/reinforcement-review/SKILL.md",
+    ".agents/skills/reinforcement-review/references/beam-review.md",
+    ".agents/skills/reinforcement-review/references/negative-longitudinal-review.md",
+    "analises/pranchas/validar_v1001_negativo.py",
+    "analises/pranchas/V1001_negative_reinforcement_golden.json",
+    "analises/pranchas/negative_longitudinal_reinforcement_validation.json",
+    ".codex/analises/negative_longitudinal_reinforcement_implementation_audit.md"
+  ]
+}

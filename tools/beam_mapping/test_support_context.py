@@ -39,6 +39,12 @@ class SupportContextTests(unittest.TestCase):
         self.assertEqual((bars['N3']['x_start_common'],bars['N3']['x_end_common']),(.18,6.68))
         self.assertEqual((bars['N5']['x_start_common'],bars['N5']['x_end_common']),(.18,8.13))
         self.assertEqual(out['force_series'],p['beam']['spans'][0]['internal_forces'])
+    def test_documented_members_are_distinct_from_confirmed_towers(self):
+        self.c['type']='documented_shared_detail_members'
+        self.assertEqual(self.resolve('V9001','P2B')['method'],'drawing_group_and_ordered_tqs_support')
+        self.c['evidence']=None
+        with self.assertRaisesRegex(ValueError,'missing_support_context_evidence'): self.resolve('V9001','P2B')
+
     def test_missing_evidence(self):
         self.c['evidence']=[]
         with self.assertRaisesRegex(ValueError,'missing_support_context_evidence'): self.resolve()

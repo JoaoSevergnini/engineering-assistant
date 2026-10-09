@@ -1,0 +1,882 @@
+
+------------------------------------------------------------------------------
+                PORFOR - Geração do modelo de pórtico espacial
+    T  Q  S               Formas   V24.7.2     08/10/26 12:56:06
+C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\ESPACIAL
+SIMON ENGENHARIA LTDA                   
+RUA FELIZARDO, 711 3° ANDAR             
+------------------------------------------------------------------------------
+
+
+Processamento de plantas do edifício
+====================================
+Edifício ..... 24-212-TGD-SILVA JARDIM-R35
+     Projeto  212
+     Planta SUBSOLO
+            Projeto  100  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\SUBSOLO
+     Planta TERREO
+            Projeto  200  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\TERREO
+     Planta 2PAV
+            Projeto  300  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\2PAV
+     Planta 3pav
+            Projeto  400  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\3pav
+     Planta 4PAV
+            Projeto  401  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\4PAV
+     Planta TIPO
+            Projeto  500  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\TIPO
+     Planta 10PAV
+            Projeto  600  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\10PAV
+     Planta 11PAV
+            Projeto  700  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\11PAV
+     Planta 12PAV
+            Projeto  800  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\12PAV
+     Planta 13PAV
+            Projeto  900  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\13PAV
+     Planta 14PAV
+            Projeto 1000  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\14PAV
+     Planta 15PAV
+            Projeto 1100  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\15PAV
+     Planta COBERTURA
+            Projeto 1200  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\COBERTURA
+     Planta COBELEV
+            Projeto 1201  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\COBELEV
+     Planta PISORES
+            Projeto 1300  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\PISORES
+     Planta COBRES
+            Projeto 1400  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\COBRES
+
+Arquivo de critérios ............... CRITPOR.DAT
+Arquivo de carregamentos ........... CARRPOR.DAT
+Condições de contorno .............. CONTPOR.DAT
+
+***001 AVISO: Edificio com juntas - verifique
+
+O sistema lançou vento nas regiões independentes 
+acima do térreo como se fossem edifícios separados. 
+Esta hipótese não é realista, pois o vento pode 
+interagir entre as duas partes da estrutura de forma 
+não trivial. Verifique se as cargas lançadas são 
+adequadas ao projeto. O método de tratamento de 
+efeitos de 2a ordem globais é o P-Delta.
+
+fck no edifício:
+================
+ fck vigas   =         40 MPa                     ELALON =0.3506E+07 tf/m2   
+
+Modelo de cálculo
+=================
+Modelo específico para ..........................        ELS 
+Coeficiente de não linearidade física p/vigas....       1.00
+Coeficiente de não linearidade física p/pilares..       1.00
+Módulo de elasticidade considerado...............     Secante+10%  
+
+Geração do modelo
+=================
+fck do concreto, MPa        .....................         40         ( FCK   )
+Fator VEC p/cálculo de E em função do fck .......   13900.00         ( VEC   )
+Uso de offset rígido ............................        Sim         ( OFFRIG)
+Módulo de elasticidade longitudinal, tf/m2      .  .3506E+07         ( ELALON)
+Módulo de elasticidade transversal, tf/m2      ..  .1461E+07         ( ELATRA)
+Coeficiente de poisson ..........................        .20         ( POISSO)
+Peso específico do concreto, tf/m3     ..........       2.50         ( DESCON)
+Eixo local do pilar ............................. Paralelo/principal ( EIXPRI)
+Processo de distribuição de vento ............... Área de influência ( DISVEN)
+Rigidez lateral alta em todas as vigas ..........        Não         (NRIGLAT)
+Rigidez lateral fixa das vigas, m4        .......   10.0    
+Multiplica seção dos pilares p/diminuir desloc Z.        Sim         ( RIGAXI)
+Multiplicador da seção dos pilares ..............       3.00         ( MULAXI)
+Redutor de inércia à torção do comando TORÇÃO ...       1.00         ( REDTOR)
+Redutor de inércia à flexão do comando FLEXÃO ...       1.00         ( REDFLX)
+Inércia de cálculo das vigas .................... Seção T             
+Engastamento parcial das vigas ..................       1.00         ( ENGVIG)
+Multiplicador de inércia das vigas de transição..      10.00         ( MULETR)
+Flexibilização das ligações viga-pilar ..........        Sim         ( FLXPIL)
+Redutor do coef de mola nas ligações viga-pilar..       1.00         ( REDMOL)
+Multipl da larg de apoio nas ligações viga-pilar.       3.00         ( LEPMOV)
+Coef. padrão de mola à rotação X, tfm/rad   .....   .000    
+Coef. padrão de mola à rotação Y, tfm/rad   .....   .000    
+Coef. padrão de mola à rotação Z, tfm/rad   .....   .000    
+Coef. padrão de mola translação X, tf/m      ....   .000    
+Coef. padrão de mola translação Y, tf/m      ....   .000    
+Coef. padrão de mola translação Z, tf/m      ....   .000    
+
+Estabilidade global
+===================
+Majorador de cargas vert  p/cálculo de instabil..       1.00         ( GAMAFZ)
+Majorador de cargas horiz p/cálculo de instabil..       1.40         ( GAMAFH)
+Coeficiente de nao linearidade física ...........       1.00         ( COENLF)
+Cálculo de GAMAZ com carga acidental reduzida....        Não
+
+Transferência de esforços
+=========================
+Forçar transfer. esforços verticais lajes planas.        Não         (NTRNVER)
+Consideração automática de GAMAZ na transf.......        Sim
+GAMAZ mínimo para considerar na transferência ...      1.100
+GAMAZ máximo para considerar na transferência ...      1.300
+Número de carregamentos verticais ...............         11
+Número de carregamentos horizontais .............          9
+Número de combinações ...........................         22
+Transferência de esforços para vigas definida ...        Não
+Transferência de esforços para pilares definida .        Não
+
+Fatores de redução de sobrecarga por piso
+=========================================
+Piso Redutor Projeto         Cota            Pd    Título
+                               m             m       
+  19   0.00    1400         74.50          3.36    COBRES
+  18   0.00    1300         71.14          1.50    PISORES
+  17   0.00    1201         69.64          1.50    COBELEV
+  16   0.00    1200         68.14          3.06    COBERTURA
+  15   0.00    1100         65.08          3.10    15PAV
+  14   0.00    1000         61.98          3.10    14PAV
+  13   0.00    0900         58.88          3.10    13PAV
+  12   0.00    0800         55.78          3.10    12PAV
+  11   0.00    0700         52.68          3.10    11PAV
+  10   0.00    0600         49.58          3.10    10PAV
+   9   0.00    0500         46.48          2.80    TIPO
+   8   0.00    0500         43.68          2.80    TIPO
+   7   0.00    0500         40.88          2.80    TIPO
+   6   0.20    0500         38.08          2.80    TIPO
+   5   0.40    0500         35.28          2.80    TIPO
+   4   0.60    0401         32.48          2.80    4PAV
+   3   0.60    0400         29.68          3.20    3pav
+   2   0.00    0300         26.48          3.90    2PAV
+   1   0.00    0200         22.58          2.86    TERREO
+   0   0.00    0100         19.72          0.00    SUBSOLO
+
+Modelo das lajes
+================
+Vigas recebem cargas das lajes calculadas como grelha
+
+
+Casos de carregamento vertical
+==============================
+   1 (  1)   'Todas permanentes e acidentais dos pavimentos'
+   2 (  2)   'Peso Próprio'
+   3 (  3)   'Cargas permanentes'
+   4 (  4)   'Cargas acidentais'
+   5 (  5)   'Empuxo'
+  15 (  4)   'Cargas acidentais - Reduzidas'
+  16 (  1)   'Todas permanentes e acidentais dos pavimentos - VTN'
+  17 (  2)   'Peso Próprio - VTN'
+  18 (  3)   'Cargas permanentes - VTN'
+  19 (  4)   'Cargas acidentais - VTN'
+  20 (  4)   'Cargas acidentais - Reduzidas - VTN'
+
+
+Casos de carregamento horizontal
+================================
+   6   'Vento (1) 90°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca= 1.35 A=  90.0ø
+   7   'Vento (2) 270°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca= 1.35 A= 270.0ø
+   8   'Vento (3) 0°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca=  .83 A=    .0ø
+   9   'Vento (4) 180°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca=  .83 A= 180.0ø
+  10   'Vento (5) 45°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca= 1.19 A=  45.0ø
+  11   'Vento (6) 135°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca= 1.19 A= 135.0ø
+  12   'Vento (7) 225°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca= 1.19 A= 225.0ø
+  13   'Vento (8) 315°'
+        V0=      45 m/s       S1= 1.00 Rug=4 / CL=C S3= 1.00 Ca= 1.19 A= 315.0ø
+
+
+Combinações de carregamentos
+============================
+   1   'FOGO/PERMVAR/PP+PERM+EMPU+0.3ACID'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+   2   'ELS/CFREQ/PP+PERM+EMPU+0.4ACID'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .400
+   3   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT1'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso    6  Coeficiente      .300
+   4   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT2'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso    7  Coeficiente      .300
+   5   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT3'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso    8  Coeficiente      .300
+   6   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT4'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso    9  Coeficiente      .300
+   7   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT5'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso   10  Coeficiente      .300
+   8   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT6'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso   11  Coeficiente      .300
+   9   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT7'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso   12  Coeficiente      .300
+  10   'ELS/CFREQ/PP+PERM+EMPU+0.3ACID+0.3VENT8'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+         Caso   13  Coeficiente      .300
+  11   'ELS/CQPERM/PP+PERM+EMPU+0.3ACID'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso    4  Coeficiente      .300
+  12   'FOGO/PERMVAR/PP_V+PERM_V+EMPU+0.3ACID_V'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+  13   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.4ACID_V'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .400
+  14   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT1'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso    6  Coeficiente      .300
+  15   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT2'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso    7  Coeficiente      .300
+  16   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT3'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso    8  Coeficiente      .300
+  17   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT4'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso    9  Coeficiente      .300
+  18   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT5'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso   10  Coeficiente      .300
+  19   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT6'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso   11  Coeficiente      .300
+  20   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT7'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso   12  Coeficiente      .300
+  21   'ELS/CFREQ/PP_V+PERM_V+EMPU+0.3ACID_V+0.3VENT8'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+         Caso   13  Coeficiente      .300
+  22   'ELS/CQPERM/PP_V+PERM_V+EMPU+0.3ACID_V'
+         Caso   17  Coeficiente     1.000
+         Caso   18  Coeficiente     1.000
+         Caso    5  Coeficiente     1.000
+         Caso   19  Coeficiente      .300
+
+Envoltória de carregamentos a ser transferida para vigas
+========================================================
+Nenhum carregamento definido
+
+
+Carregamentos a serem transferidos para pilares
+===============================================
+Nenhum carregamento definido
+
+***001 AVISO: Viga  150 Nó   11 posicionado após centro do apoio
+***002 AVISO: A distribuição de cargas desta viga pode estar inválida
+***003 AVISO: Reposicione ou elimine o nó tipo "N"
+***004 AVISO: Viga 1002 com apoio inicial nulo no vão    1
+***005 AVISO: Viga 1002 com apoio final nulo no vão    1
+***006 AVISO: Viga 1002 com apoio inicial nulo no vão    2
+***007 AVISO: Viga 1002 com apoio final nulo no vão    2
+***001 AVISO: Verifique o cruzamento de vigas no   1o nó da viga V  246
+***002 AVISO: Viga  245 com apoio final nulo no vão    1
+***001 AVISO: Verifique o cruzamento de vigas no   2o nó da viga V  330
+***002 AVISO: Verifique o cruzamento de vigas no   3o nó da viga V  330
+***003 AVISO: Verifique o cruzamento de vigas no   4o nó da viga V  331
+***004 AVISO: O piso    2 tem regiões que recebem vento independentemente
+***005 AVISO: Viga  352 Nó  186 posicionado após centro do apoio
+***006 AVISO: A distribuição de cargas desta viga pode estar inválida
+***007 AVISO: Reposicione ou elimine o nó tipo "N"
+***001 AVISO: O piso    3 tem regiões que recebem vento independentemente
+***001 AVISO: O piso   17 tem regiões que recebem vento independentemente
+***001 AVISO: Pilar   34 varia com muita excentricidade no piso   19
+
+Carregamento de vento
+=====================
+Cas     Caso de carregamento
+Pi      Piso considerado
+Larg    Largura do piso, m       (*) imposta
+Pd      Altura entre pisos, m       
+H       Cota inicial do piso, m       
+Ang     Ângulo do vento, graus
+Q       Pressão de vento em um lance, tf/m2   (*)Imposta ($)Alvest
+F       Força total de vento, tf      
+V0      Velocidade básica de vento, m/s     
+S1      Fator topográfico do terreno
+S2      Fator de rugosidade e dimensões
+S3      Fator probabilístico
+R       Categoria de rugosidade I..V
+C       Classe da edificação A..C
+Ca      Coeficiente de arrasto
+
+Cas Pi          Larg            Pd             H    Ang   Q      F      V0   S1    S2   S3   R C  Ca
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+  6  2         42.65           3.90          1.95  90.0 0.052  11.64    45  1.00  0.64  1.00 4 C  1.35
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+  6  2        34.898           3.90          1.95  90.0 0.052   9.52    45  1.00  0.64  1.00 4 C  1.35
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+  7  2         42.65           3.90          1.95 270.0 0.052  11.64    45  1.00  0.64  1.00 4 C  1.35
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+  7  2        34.898           3.90          1.95 270.0 0.052   9.52    45  1.00  0.64  1.00 4 C  1.35
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+  8  2         14.27           3.90          1.95   0.0 0.052   2.39    45  1.00  0.64  1.00 4 C  0.83
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+  8  2         26.36           3.90          1.95   0.0 0.052   4.42    45  1.00  0.64  1.00 4 C  0.83
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+  9  2         14.27           3.90          1.95 180.0 0.052   2.39    45  1.00  0.64  1.00 4 C  0.83
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+  9  2         26.36           3.90          1.95 180.0 0.052   4.42    45  1.00  0.64  1.00 4 C  0.83
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+ 10  2        40.249           3.90          1.95  45.0 0.052   9.68    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+ 10  2        42.861           3.90          1.95  45.0 0.052  10.31    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+ 11  2         37.01           3.90          1.95 135.0 0.052   8.90    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+ 11  2        34.823           3.90          1.95 135.0 0.052   8.38    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+ 12  2        40.249           3.90          1.95 225.0 0.052   9.68    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+ 12  2        42.861           3.90          1.95 225.0 0.052  10.31    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V301/V302/V303/V304/V306/V307/V309/V310/V311/V312/V314/V315/V316/V329/V331/V334/V338/V339/V342/V343/V344/V346/V34
+ 13  2         37.01           3.90          1.95 315.0 0.052   8.90    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P39/P43/P44/P45/P46/P47/P48/P50/P51/P52/P53/P54/P55/P56/P57/P58/P59/P60/P61/P67/P68/P69/P70/P71/P76/P380/P381/V305/V308/V313/V317/V318/V319/V320/V321/V322/V323/V324/V325/V326/V327/V328/V330/V332/V333/V335/V336/V337/V340/V341/V345/V349/V350/V351
+ 13  2        34.823           3.90          1.95 315.0 0.052   8.38    45  1.00  0.64  1.00 4 C  1.19
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+  6  3         41.22           3.20          5.50  90.0 0.069  12.21    45  1.00  0.74  1.00 4 C  1.35
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+  6  3          5.40           3.20          5.50  90.0 0.069   1.60    45  1.00  0.74  1.00 4 C  1.35
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+  7  3         41.22           3.20          5.50 270.0 0.069  12.21    45  1.00  0.74  1.00 4 C  1.35
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+  7  3          5.40           3.20          5.50 270.0 0.069   1.60    45  1.00  0.74  1.00 4 C  1.35
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+  8  3         12.94           3.20          5.50   0.0 0.069   2.36    45  1.00  0.74  1.00 4 C  0.83
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+  8  3          3.32           3.20          5.50   0.0 0.069   0.60    45  1.00  0.74  1.00 4 C  0.83
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+  9  3         12.94           3.20          5.50 180.0 0.069   2.36    45  1.00  0.74  1.00 4 C  0.83
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+  9  3          3.32           3.20          5.50 180.0 0.069   0.60    45  1.00  0.74  1.00 4 C  0.83
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+ 10  3        38.163           3.20          5.50  45.0 0.069   9.97    45  1.00  0.74  1.00 4 C  1.19
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+ 10  3         6.166           3.20          5.50  45.0 0.069   1.61    45  1.00  0.74  1.00 4 C  1.19
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+ 11  3         37.01           3.20          5.50 135.0 0.069   9.67    45  1.00  0.74  1.00 4 C  1.19
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+ 11  3         6.166           3.20          5.50 135.0 0.069   1.61    45  1.00  0.74  1.00 4 C  1.19
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+ 12  3        38.163           3.20          5.50 225.0 0.069   9.97    45  1.00  0.74  1.00 4 C  1.19
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+ 12  3         6.166           3.20          5.50 225.0 0.069   1.61    45  1.00  0.74  1.00 4 C  1.19
+Circuito: P1/P2/P3/P4/P5/P6/P7/P8/P9/P10/P11/P12/P13/P14/P15/P16/P17/P18/P19/P20/P21/P22/P23/P24/P25/P26/P27/P28/P29/P30/P31/P32/P33/P34/P35/V401/V402/V403/V404/V405/V406/V407/V408/V409/V410/V412/V413/V414/V415/V416/V417/V418/V420/V421/V422/V424/V425/V42
+ 13  3         37.01           3.20          5.50 315.0 0.069   9.67    45  1.00  0.74  1.00 4 C  1.19
+Circuito: P40/P41/P71/P72/V411/V419/V423/V433/L419
+ 13  3         6.166           3.20          5.50 315.0 0.069   1.61    45  1.00  0.74  1.00 4 C  1.19
+  6  4         41.22           2.80          8.50  90.0 0.077  12.02    45  1.00  0.78  1.00 4 C  1.35
+  7  4         41.22           2.80          8.50 270.0 0.077  12.02    45  1.00  0.78  1.00 4 C  1.35
+  8  4         13.04           2.80          8.50   0.0 0.077   2.34    45  1.00  0.78  1.00 4 C  0.83
+  9  4         13.04           2.80          8.50 180.0 0.077   2.34    45  1.00  0.78  1.00 4 C  0.83
+ 10  4        38.163           2.80          8.50  45.0 0.077   9.81    45  1.00  0.78  1.00 4 C  1.19
+ 11  4        37.215           2.80          8.50 135.0 0.077   9.56    45  1.00  0.78  1.00 4 C  1.19
+ 12  4        38.163           2.80          8.50 225.0 0.077   9.81    45  1.00  0.78  1.00 4 C  1.19
+ 13  4        37.215           2.80          8.50 315.0 0.077   9.56    45  1.00  0.78  1.00 4 C  1.19
+  6  5         41.22           2.80         11.30  90.0 0.083  12.98    45  1.00  0.81  1.00 4 C  1.35
+  7  5         41.22           2.80         11.30 270.0 0.083  12.98    45  1.00  0.81  1.00 4 C  1.35
+  8  5         13.04           2.80         11.30   0.0 0.083   2.52    45  1.00  0.81  1.00 4 C  0.83
+  9  5         13.04           2.80         11.30 180.0 0.083   2.52    45  1.00  0.81  1.00 4 C  0.83
+ 10  5        38.163           2.80         11.30  45.0 0.083  10.59    45  1.00  0.81  1.00 4 C  1.19
+ 11  5        37.148           2.80         11.30 135.0 0.083  10.31    45  1.00  0.81  1.00 4 C  1.19
+ 12  5        38.163           2.80         11.30 225.0 0.083  10.59    45  1.00  0.81  1.00 4 C  1.19
+ 13  5        37.148           2.80         11.30 315.0 0.083  10.31    45  1.00  0.81  1.00 4 C  1.19
+  6  6         41.22           2.80         14.10  90.0 0.088  13.78    45  1.00  0.84  1.00 4 C  1.35
+  7  6         41.22           2.80         14.10 270.0 0.088  13.78    45  1.00  0.84  1.00 4 C  1.35
+  8  6         13.04           2.80         14.10   0.0 0.088   2.68    45  1.00  0.84  1.00 4 C  0.83
+  9  6         13.04           2.80         14.10 180.0 0.088   2.68    45  1.00  0.84  1.00 4 C  0.83
+ 10  6        38.163           2.80         14.10  45.0 0.088  11.24    45  1.00  0.84  1.00 4 C  1.19
+ 11  6        37.148           2.80         14.10 135.0 0.088  10.95    45  1.00  0.84  1.00 4 C  1.19
+ 12  6        38.163           2.80         14.10 225.0 0.088  11.24    45  1.00  0.84  1.00 4 C  1.19
+ 13  6        37.148           2.80         14.10 315.0 0.088  10.95    45  1.00  0.84  1.00 4 C  1.19
+  6  7         41.22           2.80         16.90  90.0 0.093  14.47    45  1.00  0.86  1.00 4 C  1.35
+  7  7         41.22           2.80         16.90 270.0 0.093  14.47    45  1.00  0.86  1.00 4 C  1.35
+  8  7         13.04           2.80         16.90   0.0 0.093   2.81    45  1.00  0.86  1.00 4 C  0.83
+  9  7         13.04           2.80         16.90 180.0 0.093   2.81    45  1.00  0.86  1.00 4 C  0.83
+ 10  7        38.163           2.80         16.90  45.0 0.093  11.81    45  1.00  0.86  1.00 4 C  1.19
+ 11  7        37.148           2.80         16.90 135.0 0.093  11.49    45  1.00  0.86  1.00 4 C  1.19
+ 12  7        38.163           2.80         16.90 225.0 0.093  11.81    45  1.00  0.86  1.00 4 C  1.19
+ 13  7        37.148           2.80         16.90 315.0 0.093  11.49    45  1.00  0.86  1.00 4 C  1.19
+  6  8         41.22           2.80         19.70  90.0 0.097  15.08    45  1.00  0.87  1.00 4 C  1.35
+  7  8         41.22           2.80         19.70 270.0 0.097  15.08    45  1.00  0.87  1.00 4 C  1.35
+  8  8         13.04           2.80         19.70   0.0 0.097   2.93    45  1.00  0.87  1.00 4 C  0.83
+  9  8         13.04           2.80         19.70 180.0 0.097   2.93    45  1.00  0.87  1.00 4 C  0.83
+ 10  8        38.163           2.80         19.70  45.0 0.097  12.31    45  1.00  0.87  1.00 4 C  1.19
+ 11  8        37.148           2.80         19.70 135.0 0.097  11.98    45  1.00  0.87  1.00 4 C  1.19
+ 12  8        38.163           2.80         19.70 225.0 0.097  12.31    45  1.00  0.87  1.00 4 C  1.19
+ 13  8        37.148           2.80         19.70 315.0 0.097  11.98    45  1.00  0.87  1.00 4 C  1.19
+  6  9         41.22           2.80         22.50  90.0 0.100  15.63    45  1.00  0.89  1.00 4 C  1.35
+  7  9         41.22           2.80         22.50 270.0 0.100  15.63    45  1.00  0.89  1.00 4 C  1.35
+  8  9         13.04           2.80         22.50   0.0 0.100   3.04    45  1.00  0.89  1.00 4 C  0.83
+  9  9         13.04           2.80         22.50 180.0 0.100   3.04    45  1.00  0.89  1.00 4 C  0.83
+ 10  9        38.163           2.80         22.50  45.0 0.100  12.76    45  1.00  0.89  1.00 4 C  1.19
+ 11  9        37.148           2.80         22.50 135.0 0.100  12.42    45  1.00  0.89  1.00 4 C  1.19
+ 12  9        38.163           2.80         22.50 225.0 0.100  12.76    45  1.00  0.89  1.00 4 C  1.19
+ 13  9        37.148           2.80         22.50 315.0 0.100  12.42    45  1.00  0.89  1.00 4 C  1.19
+  6 10         41.22           3.10         25.45  90.0 0.104  17.89    45  1.00  0.91  1.00 4 C  1.35
+  7 10         41.22           3.10         25.45 270.0 0.104  17.89    45  1.00  0.91  1.00 4 C  1.35
+  8 10         13.04           3.10         25.45   0.0 0.104   3.48    45  1.00  0.91  1.00 4 C  0.83
+  9 10         13.04           3.10         25.45 180.0 0.104   3.48    45  1.00  0.91  1.00 4 C  0.83
+ 10 10        38.162           3.10         25.45  45.0 0.104  14.60    45  1.00  0.91  1.00 4 C  1.19
+ 11 10        37.148           3.10         25.45 135.0 0.104  14.21    45  1.00  0.91  1.00 4 C  1.19
+ 12 10        38.162           3.10         25.45 225.0 0.104  14.60    45  1.00  0.91  1.00 4 C  1.19
+ 13 10        37.148           3.10         25.45 315.0 0.104  14.21    45  1.00  0.91  1.00 4 C  1.19
+  6 11         41.22           3.10         28.55  90.0 0.107  18.46    45  1.00  0.92  1.00 4 C  1.35
+  7 11         41.22           3.10         28.55 270.0 0.107  18.46    45  1.00  0.92  1.00 4 C  1.35
+  8 11         13.04           3.10         28.55   0.0 0.107   3.59    45  1.00  0.92  1.00 4 C  0.83
+  9 11         13.04           3.10         28.55 180.0 0.107   3.59    45  1.00  0.92  1.00 4 C  0.83
+ 10 11        34.616           3.10         28.55  45.0 0.107  13.66    45  1.00  0.92  1.00 4 C  1.19
+ 11 11        37.148           3.10         28.55 135.0 0.107  14.66    45  1.00  0.92  1.00 4 C  1.19
+ 12 11        34.616           3.10         28.55 225.0 0.107  13.66    45  1.00  0.92  1.00 4 C  1.19
+ 13 11        37.148           3.10         28.55 315.0 0.107  14.66    45  1.00  0.92  1.00 4 C  1.19
+  6 12        36.095           3.10         31.65  90.0 0.110  16.62    45  1.00  0.93  1.00 4 C  1.35
+  7 12        36.095           3.10         31.65 270.0 0.110  16.62    45  1.00  0.93  1.00 4 C  1.35
+  8 12         13.04           3.10         31.65   0.0 0.110   3.69    45  1.00  0.93  1.00 4 C  0.83
+  9 12         13.04           3.10         31.65 180.0 0.110   3.69    45  1.00  0.93  1.00 4 C  0.83
+ 10 12        34.539           3.10         31.65  45.0 0.110  14.02    45  1.00  0.93  1.00 4 C  1.19
+ 11 12        33.524           3.10         31.65 135.0 0.110  13.60    45  1.00  0.93  1.00 4 C  1.19
+ 12 12        34.539           3.10         31.65 225.0 0.110  14.02    45  1.00  0.93  1.00 4 C  1.19
+ 13 12        33.524           3.10         31.65 315.0 0.110  13.60    45  1.00  0.93  1.00 4 C  1.19
+  6 13        36.095           3.10         34.75  90.0 0.113  17.04    45  1.00  0.94  1.00 4 C  1.35
+  7 13        36.095           3.10         34.75 270.0 0.113  17.04    45  1.00  0.94  1.00 4 C  1.35
+  8 13         13.04           3.10         34.75   0.0 0.113   3.79    45  1.00  0.94  1.00 4 C  0.83
+  9 13         13.04           3.10         34.75 180.0 0.113   3.79    45  1.00  0.94  1.00 4 C  0.83
+ 10 13        30.992           3.10         34.75  45.0 0.113  12.90    45  1.00  0.94  1.00 4 C  1.19
+ 11 13        33.524           3.10         34.75 135.0 0.113  13.95    45  1.00  0.94  1.00 4 C  1.19
+ 12 13        30.992           3.10         34.75 225.0 0.113  12.90    45  1.00  0.94  1.00 4 C  1.19
+ 13 13        33.524           3.10         34.75 315.0 0.113  13.95    45  1.00  0.94  1.00 4 C  1.19
+  6 14        30.965           3.10         37.85  90.0 0.115  14.96    45  1.00  0.96  1.00 4 C  1.35
+  7 14        30.965           3.10         37.85 270.0 0.115  14.96    45  1.00  0.96  1.00 4 C  1.35
+  8 14         13.04           3.10         37.85   0.0 0.115   3.87    45  1.00  0.96  1.00 4 C  0.83
+  9 14         13.04           3.10         37.85 180.0 0.115   3.87    45  1.00  0.96  1.00 4 C  0.83
+ 10 14        30.911           3.10         37.85  45.0 0.115  13.16    45  1.00  0.96  1.00 4 C  1.19
+ 11 14        29.896           3.10         37.85 135.0 0.115  12.73    45  1.00  0.96  1.00 4 C  1.19
+ 12 14        30.911           3.10         37.85 225.0 0.115  13.16    45  1.00  0.96  1.00 4 C  1.19
+ 13 14        29.896           3.10         37.85 315.0 0.115  12.73    45  1.00  0.96  1.00 4 C  1.19
+  6 15        30.965           3.10         40.95  90.0 0.118  15.28    45  1.00  0.97  1.00 4 C  1.35
+  7 15        30.965           3.10         40.95 270.0 0.118  15.28    45  1.00  0.97  1.00 4 C  1.35
+  8 15         13.04           3.10         40.95   0.0 0.118   3.96    45  1.00  0.97  1.00 4 C  0.83
+  9 15         13.04           3.10         40.95 180.0 0.118   3.96    45  1.00  0.97  1.00 4 C  0.83
+ 10 15        27.422           3.10         40.95  45.0 0.118  11.93    45  1.00  0.97  1.00 4 C  1.19
+ 11 15        29.896           3.10         40.95 135.0 0.118  13.01    45  1.00  0.97  1.00 4 C  1.19
+ 12 15        27.422           3.10         40.95 225.0 0.118  11.93    45  1.00  0.97  1.00 4 C  1.19
+ 13 15        29.896           3.10         40.95 315.0 0.118  13.01    45  1.00  0.97  1.00 4 C  1.19
+  6 16        25.835           3.06         44.03  90.0 0.120  12.83    45  1.00  0.97  1.00 4 C  1.35
+  7 16        25.835           3.06         44.03 270.0 0.120  12.83    45  1.00  0.97  1.00 4 C  1.35
+  8 16         13.04           3.06         44.03   0.0 0.120   3.98    45  1.00  0.97  1.00 4 C  0.83
+  9 16         13.04           3.06         44.03 180.0 0.120   3.98    45  1.00  0.97  1.00 4 C  0.83
+ 10 16        27.422           3.06         44.03  45.0 0.120  12.01    45  1.00  0.97  1.00 4 C  1.19
+ 11 16        26.799           3.06         44.03 135.0 0.120  11.74    45  1.00  0.97  1.00 4 C  1.19
+ 12 16        27.422           3.06         44.03 225.0 0.120  12.01    45  1.00  0.97  1.00 4 C  1.19
+ 13 16        26.799           3.06         44.03 315.0 0.120  11.74    45  1.00  0.97  1.00 4 C  1.19
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+  6 17         2.422           1.50         46.31  90.0 0.122   0.60    45  1.00  0.98  1.00 4 C  1.35
+Circuito: P27/P34/V1323/V1324/L1318
+  6 17          2.42           1.50         46.31  90.0 0.122   0.60    45  1.00  0.98  1.00 4 C  1.35
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+  7 17         2.422           1.50         46.31 270.0 0.122   0.60    45  1.00  0.98  1.00 4 C  1.35
+Circuito: P27/P34/V1323/V1324/L1318
+  7 17          2.42           1.50         46.31 270.0 0.122   0.60    45  1.00  0.98  1.00 4 C  1.35
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+  8 17          5.35           1.50         46.31   0.0 0.122   0.81    45  1.00  0.98  1.00 4 C  0.83
+Circuito: P27/P34/V1323/V1324/L1318
+  8 17         2.305           1.50         46.31   0.0 0.122   0.35    45  1.00  0.98  1.00 4 C  0.83
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+  9 17          5.35           1.50         46.31 180.0 0.122   0.81    45  1.00  0.98  1.00 4 C  0.83
+Circuito: P27/P34/V1323/V1324/L1318
+  9 17         2.305           1.50         46.31 180.0 0.122   0.35    45  1.00  0.98  1.00 4 C  0.83
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+ 10 17         5.494           1.50         46.31  45.0 0.122   1.20    45  1.00  0.98  1.00 4 C  1.19
+Circuito: P27/P34/V1323/V1324/L1318
+ 10 17         3.341           1.50         46.31  45.0 0.122   0.73    45  1.00  0.98  1.00 4 C  1.19
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+ 11 17         4.873           1.50         46.31 135.0 0.122   1.06    45  1.00  0.98  1.00 4 C  1.19
+Circuito: P27/P34/V1323/V1324/L1318
+ 11 17         3.341           1.50         46.31 135.0 0.122   0.73    45  1.00  0.98  1.00 4 C  1.19
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+ 12 17         5.494           1.50         46.31 225.0 0.122   1.20    45  1.00  0.98  1.00 4 C  1.19
+Circuito: P27/P34/V1323/V1324/L1318
+ 12 17         3.341           1.50         46.31 225.0 0.122   0.73    45  1.00  0.98  1.00 4 C  1.19
+Circuito: P26/P35/P65/V1321/V1322/V1325/V1326/L1316/L1317
+ 13 17         4.873           1.50         46.31 315.0 0.122   1.06    45  1.00  0.98  1.00 4 C  1.19
+Circuito: P27/P34/V1323/V1324/L1318
+ 13 17         3.341           1.50         46.31 315.0 0.122   0.73    45  1.00  0.98  1.00 4 C  1.19
+  6 18         10.72           1.50         47.81  90.0 0.123   2.67    45  1.00  0.99  1.00 4 C  1.35
+  7 18         10.72           1.50         47.81 270.0 0.123   2.67    45  1.00  0.99  1.00 4 C  1.35
+  8 18         8.415           1.50         47.81   0.0 0.123   1.29    45  1.00  0.99  1.00 4 C  0.83
+  9 18         8.415           1.50         47.81 180.0 0.123   1.29    45  1.00  0.99  1.00 4 C  0.83
+ 10 18        13.463           1.50         47.81  45.0 0.123   2.96    45  1.00  0.99  1.00 4 C  1.19
+ 11 18        12.841           1.50         47.81 135.0 0.123   2.82    45  1.00  0.99  1.00 4 C  1.19
+ 12 18        13.463           1.50         47.81 225.0 0.123   2.96    45  1.00  0.99  1.00 4 C  1.19
+ 13 18        12.841           1.50         47.81 315.0 0.123   2.82    45  1.00  0.99  1.00 4 C  1.19
+  6 19         10.72           3.36         50.24  90.0 0.125   6.06    45  1.00  0.99  1.00 4 C  1.35
+  7 19         10.72           3.36         50.24 270.0 0.125   6.06    45  1.00  0.99  1.00 4 C  1.35
+  8 19         8.415           3.36         50.24   0.0 0.125   2.92    45  1.00  0.99  1.00 4 C  0.83
+  9 19         8.415           3.36         50.24 180.0 0.125   2.92    45  1.00  0.99  1.00 4 C  0.83
+ 10 19        13.463           3.36         50.24  45.0 0.125   6.71    45  1.00  0.99  1.00 4 C  1.19
+ 11 19        12.841           3.36         50.24 135.0 0.125   6.40    45  1.00  0.99  1.00 4 C  1.19
+ 12 19        13.463           3.36         50.24 225.0 0.125   6.71    45  1.00  0.99  1.00 4 C  1.19
+ 13 19        12.841           3.36         50.24 315.0 0.125   6.40    45  1.00  0.99  1.00 4 C  1.19
+
+Pressão média de vento
+======================
+Caso      Ângulo        Área       Pressão
+           graus         m2         tf/m2   
+   6       90.00     1953.87        .124
+   7      270.00     1953.87        .124
+   8         .00      764.39        .076
+   9      180.00      764.39        .076
+  10       45.00     1879.29        .109
+  11      135.00     1822.84        .110
+  12      225.00     1879.29        .109
+  13      315.00     1822.84        .110
+
+Legenda para o carregamento de empuxo
+=====================================
+Legenda    Valor
+Caso       Caso simples de empuxo
+Ângulo     Ângulo de atuação do empuxo, por face definida
+Piso       Piso onde o empuxo é aplicado
+Pressão    Pressão de empuxo no topo e na base do lance (topo no piso atual,
+           base no piso inferior)
+Total      Força total de empuxo aplicada no lance
+Barra      Barra de pilar onde a força foi aplicada. Força trapezoidal aplicada
+           na barra, que começa no piso atual e termina no inferior.
+Pilar      Título do pilar definido no Modelador
+Força      Força por metro aplicada no pilar em valor absoluto
+Fx         Componente Fx da força no sistema local da barra
+Fy         Componente Fy da força no sistema local da barra
+
+Carregamento de empuxo
+======================
+Caso   Ângulo Piso  Pressão   Total Barra  Pilar          Força       Fx         Fy
+                    Top/Bas                             Top/Bas   Top/Bas    Top/Bas
+        graus        tf/m2      tf                         tf/m      tf/m      tf/m    
+   5     0.00  1     0.690     52.44
+                     1.340
+                                      351  PC4             2.12     -2.12      0.00
+                                                           4.11     -4.11      0.00
+                                      352  PC5             4.52     -4.52      0.00
+                                                           8.79     -8.79      0.00
+                                      353  PC6             4.11     -4.11      0.00
+                                                           7.99     -7.99      0.00
+                                      354  PC7             1.71     -1.71      0.00
+                                                           3.32     -3.32      0.00
+                                      348  PC1             1.73     -1.73      0.00
+                                                           3.36     -3.36      0.00
+                                      350  PC3             1.73     -1.73      0.00
+                                                           3.36     -3.36      0.00
+                                      280  P4              1.59     -1.59      0.00
+                                                           3.10     -3.10      0.00
+                                      289  P13             2.15     -2.15      0.00
+                                                           4.17     -4.17      0.00
+                                      298  P22             1.11     -1.11      0.00
+                                                           2.16     -2.16      0.00
+   5   180.00  1     0.690     56.89
+                     1.340
+                                      285  P9              1.67      1.67      0.00
+                                                           3.25      3.25      0.00
+                                      293  P17             2.25      2.25      0.00
+                                                           4.37      4.37      0.00
+                                      301  P25             2.71      2.71      0.00
+                                                           5.26      5.26      0.00
+                                      309  P33             4.25      4.25      0.00
+                                                           8.26      8.26      0.00
+                                      336  P66             2.64      2.64      0.00
+                                                           5.12      5.12      0.00
+   5   270.00  1     0.690     52.15
+                     1.340
+                                      295  P19             2.08      0.00     -2.08
+                                                           4.04      0.00     -4.04
+                                      296  P20             4.01      0.00     -4.01
+                                                           7.79      0.00     -7.79
+                                      297  P21             4.03      0.00     -4.03
+                                                           7.83      0.00     -7.83
+                                      298  P22             2.11      0.00     -2.11
+                                                           4.09      0.00     -4.09
+                                      345  P76             0.17      0.00     -0.17
+                                                           0.32      0.00     -0.32
+                                      350  PC3             1.74      0.00     -1.74
+                                                           3.37      0.00     -3.37
+                                      351  PC4             1.74      0.00     -1.74
+                                                           3.37      0.00     -3.37
+                                      280  P4              1.86      0.00     -1.86
+                                                           3.61      0.00     -3.61
+                                      281  P5              3.54      0.00     -3.54
+                                                           6.88      0.00     -6.88
+                                      282  P6              1.86      0.00     -1.86
+                                                           3.61      0.00     -3.61
+                                      348  PC1             7.43      0.00     -7.43
+                                                          14.42      0.00    -14.42
+                                      282  P6              1.85      0.00     -1.85
+                                                           3.59      0.00     -3.59
+                                      283  P7              3.52      0.00     -3.52
+                                                           6.83      0.00     -6.83
+                                      284  P8              1.84      0.00     -1.84
+                                                           3.57      0.00     -3.57
+
+****** AVISO: Barra   79 em balanço, viga V  123 trecho    1 piso  0
+****** AVISO: Barra   90 em balanço, viga V  124 trecho    1 piso  0
+****** AVISO: Barra  104 em balanço, viga V  126 trecho    1 piso  0
+****** AVISO: Barra  115 em balanço, viga V  127 trecho    1 piso  0
+****** AVISO: Barra  158 em balanço, viga V  134 trecho    1 piso  0
+****** AVISO: Barra  187 em balanço, viga V  142 trecho    1 piso  0
+****** AVISO: Barra  496 em balanço, viga V  222 trecho    2 piso  1
+****** AVISO: Barra 1660 em balanço, viga V  617 trecho    2 piso  5
+****** AVISO: Barra 1671 em balanço, viga V  620 trecho    3 piso  5
+****** AVISO: Barra 1681 em balanço, viga V  622 trecho    2 piso  5
+****** AVISO: Barra 1691 em balanço, viga V  625 trecho    2 piso  5
+****** AVISO: Barra 1701 em balanço, viga V  627 trecho    3 piso  5
+****** AVISO: Barra 1713 em balanço, viga V  629 trecho    5 piso  5
+****** AVISO: Barra 1853 em balanço, viga V  617 trecho    2 piso  6
+****** AVISO: Barra 1864 em balanço, viga V  620 trecho    3 piso  6
+****** AVISO: Barra 1874 em balanço, viga V  622 trecho    2 piso  6
+****** AVISO: Barra 1884 em balanço, viga V  625 trecho    2 piso  6
+****** AVISO: Barra 1894 em balanço, viga V  627 trecho    3 piso  6
+****** AVISO: Barra 1906 em balanço, viga V  629 trecho    5 piso  6
+****** AVISO: Barra 2046 em balanço, viga V  617 trecho    2 piso  7
+****** AVISO: Barra 2057 em balanço, viga V  620 trecho    3 piso  7
+****** AVISO: Barra 2067 em balanço, viga V  622 trecho    2 piso  7
+****** AVISO: Barra 2077 em balanço, viga V  625 trecho    2 piso  7
+****** AVISO: Barra 2087 em balanço, viga V  627 trecho    3 piso  7
+****** AVISO: Barra 2099 em balanço, viga V  629 trecho    5 piso  7
+****** AVISO: Barra 2239 em balanço, viga V  617 trecho    2 piso  8
+****** AVISO: Barra 2250 em balanço, viga V  620 trecho    3 piso  8
+****** AVISO: Barra 2260 em balanço, viga V  622 trecho    2 piso  8
+****** AVISO: Barra 2270 em balanço, viga V  625 trecho    2 piso  8
+****** AVISO: Barra 2280 em balanço, viga V  627 trecho    3 piso  8
+****** AVISO: Barra 2292 em balanço, viga V  629 trecho    5 piso  8
+****** AVISO: Barra 2432 em balanço, viga V  617 trecho    2 piso  9
+****** AVISO: Barra 2443 em balanço, viga V  620 trecho    3 piso  9
+****** AVISO: Barra 2453 em balanço, viga V  622 trecho    2 piso  9
+****** AVISO: Barra 2463 em balanço, viga V  625 trecho    2 piso  9
+****** AVISO: Barra 2473 em balanço, viga V  627 trecho    3 piso  9
+****** AVISO: Barra 2485 em balanço, viga V  629 trecho    5 piso  9
+****** AVISO: Barra 2626 em balanço, viga V  717 trecho    2 piso 10
+****** AVISO: Barra 2637 em balanço, viga V  720 trecho    3 piso 10
+****** AVISO: Barra 2648 em balanço, viga V  722 trecho    2 piso 10
+****** AVISO: Barra 2658 em balanço, viga V  725 trecho    2 piso 10
+****** AVISO: Barra 2668 em balanço, viga V  727 trecho    3 piso 10
+****** AVISO: Barra 2680 em balanço, viga V  729 trecho    5 piso 10
+****** AVISO: Barra 2813 em balanço, viga V  816 trecho    3 piso 11
+****** AVISO: Barra 2824 em balanço, viga V  819 trecho    3 piso 11
+****** AVISO: Barra 2835 em balanço, viga V  821 trecho    2 piso 11
+****** AVISO: Barra 2845 em balanço, viga V  824 trecho    2 piso 11
+****** AVISO: Barra 2855 em balanço, viga V  826 trecho    3 piso 11
+****** AVISO: Barra 2867 em balanço, viga V  828 trecho    5 piso 11
+****** AVISO: Barra 2990 em balanço, viga V  915 trecho    2 piso 12
+****** AVISO: Barra 3001 em balanço, viga V  918 trecho    3 piso 12
+****** AVISO: Barra 3012 em balanço, viga V  920 trecho    2 piso 12
+****** AVISO: Barra 3022 em balanço, viga V  923 trecho    2 piso 12
+****** AVISO: Barra 3032 em balanço, viga V  925 trecho    3 piso 12
+****** AVISO: Barra 3044 em balanço, viga V  927 trecho    5 piso 12
+****** AVISO: Barra 3159 em balanço, viga V 1014 trecho    3 piso 13
+****** AVISO: Barra 3170 em balanço, viga V 1017 trecho    3 piso 13
+****** AVISO: Barra 3181 em balanço, viga V 1019 trecho    2 piso 13
+****** AVISO: Barra 3191 em balanço, viga V 1022 trecho    2 piso 13
+****** AVISO: Barra 3201 em balanço, viga V 1024 trecho    3 piso 13
+****** AVISO: Barra 3213 em balanço, viga V 1026 trecho    5 piso 13
+****** AVISO: Barra 3318 em balanço, viga V 1113 trecho    2 piso 14
+****** AVISO: Barra 3329 em balanço, viga V 1116 trecho    3 piso 14
+****** AVISO: Barra 3340 em balanço, viga V 1118 trecho    2 piso 14
+****** AVISO: Barra 3350 em balanço, viga V 1121 trecho    2 piso 14
+****** AVISO: Barra 3360 em balanço, viga V 1123 trecho    3 piso 14
+****** AVISO: Barra 3372 em balanço, viga V 1125 trecho    5 piso 14
+****** AVISO: Barra 3469 em balanço, viga V 1211 trecho    6 piso 15
+****** AVISO: Barra 3480 em balanço, viga V 1214 trecho    3 piso 15
+****** AVISO: Barra 3491 em balanço, viga V 1216 trecho    2 piso 15
+****** AVISO: Barra 3501 em balanço, viga V 1219 trecho    2 piso 15
+****** AVISO: Barra 3511 em balanço, viga V 1221 trecho    3 piso 15
+****** AVISO: Barra 3523 em balanço, viga V 1223 trecho    5 piso 15
+****** AVISO: Barra 3604 em balanço, viga V 1308 trecho    5 piso 16
+****** AVISO: Barra 3615 em balanço, viga V 1311 trecho    2 piso 16
+****** AVISO: Barra 3626 em balanço, viga V 1313 trecho    2 piso 16
+****** AVISO: Barra 3636 em balanço, viga V 1316 trecho    2 piso 16
+****** AVISO: Barra 3646 em balanço, viga V 1318 trecho    2 piso 16
+****** AVISO: Barra 3658 em balanço, viga V 1320 trecho    5 piso 16
+
+
+Modelo da forma
+===============
+Piso       Número do piso
+Prj        Número de projeto definido nos dados do edifício
+Cota       Cota Z do piso
+Pd         Altura entre pisos
+NóIni      Primeiro número de nó usado pelas barras do piso
+BarIni     Primeiro número usado pelas barras do piso
+Nós        Número de nós no piso
+Vigas      Número de vigas no piso
+Pilares    Número de pilares no piso
+Lajes      Número de lajes no piso
+
+Piso Prj          Cota           Pd   NóIni BarIni   Nós Vigas Pilares Lajes
+                   m             m       
+  0  100         19.72           0.0      1      1   215    62    86     7
+  1  200         22.58          2.86    263    277   434    73    80    51
+  2  300         26.48           3.9    588    733   701    66    65    63
+  3  400         29.68           3.2    871   1142   513    33    39    20
+  4  401         32.48           2.8   1010   1340   501    29    35    20
+  5  500         35.28           2.8   1136   1521   478    29    35    19
+  6  500         38.08           2.8   1274   1714   478    29    35    19
+  7  500         40.88           2.8   1412   1907   478    29    35    19
+  8  500         43.68           2.8   1550   2100   478    29    35    19
+  9  500         46.48           2.8   1688   2293   478    29    35    19
+ 10  600         49.58           3.1   1826   2486   482    29    35    19
+ 11  700         52.68           3.1   1966   2681   444    28    33    18
+ 12  800         55.78           3.1   2101   2868   415    27    31    17
+ 13  900         58.88           3.1   2229   3045   386    26    29    16
+ 14 1000         61.98           3.1   2352   3214   360    25    27    15
+ 15 1100         65.08           3.1   2468   3373   293    23    25    13
+ 16 1200         68.14          3.06   2579   3524   102    20    24    16
+ 17 1201         69.64           1.5   2678   3659    14     6     9     3
+ 18 1300         71.14           1.5   2699   3686    37    10     8     7
+ 19 1400          74.5          3.36   2735   3736    11     5     5     0
+
+
+Modelo do pórtico espacial
+==========================
+
+Nós ................................ 2751
+Materiais ..........................    2
+Seções .............................  592
+Barras ............................. 3757
+Restrições .........................   76
+
+Caso de carregamento ...............    1
+===>>> Todas permanentes e acidentais dos pavimentos                           
+Forças nos nos ..................... 4120
+Carregamentos nas barras ...........39971
+Somatória de cargas verticais.......  11738.72 tf      
+
+Caso de carregamento ...............    2
+===>>> Peso Próprio                                                            
+Forças nos nos ..................... 3964
+Carregamentos nas barras ...........32893
+Somatória de cargas verticais.......   5163.59 tf      
+
+Caso de carregamento ...............    3
+===>>> Cargas permanentes                                                      
+Forças nos nos ..................... 4114
+Carregamentos nas barras ...........34605
+Somatória de cargas verticais.......   4642.92 tf      
+
+Caso de carregamento ...............    4
+===>>> Cargas acidentais                                                       
+Forças nos nos ..................... 3964
+Carregamentos nas barras ...........28809
+Somatória de cargas verticais.......   1944.81 tf      
+
+Caso de carregamento ...............    5
+===>>> Empuxo                                                                  
+Forças nos nos .....................    5
+Carregamentos nas barras ...........   45
+Somatória de cargas verticais.......      0.00 tf      
+Somatória de cargas horizontais.....    303.17 tf      
+
+Caso de carregamento ...............    6
+===>>> Vento (1) 90°                                                           
+Forças nos nos ..................... 1064
+Somatória de cargas horizontais.....    241.94 tf      
+
+Caso de carregamento ...............    7
+===>>> Vento (2) 270°                                                          
+Forças nos nos ..................... 1064
+Somatória de cargas horizontais.....    241.94 tf      
+
+Caso de carregamento ...............    8
+===>>> Vento (3) 0°                                                            
+Forças nos nos ..................... 1054
+Somatória de cargas horizontais.....     57.83 tf      
+
+Caso de carregamento ...............    9
+===>>> Vento (4) 180°                                                          
+Forças nos nos ..................... 1054
+Somatória de cargas horizontais.....     57.83 tf      
+
+Caso de carregamento ...............   10
+===>>> Vento (5) 45°                                                           
+Forças nos nos ..................... 1064
+Somatória de cargas horizontais.....    203.95 tf      
+
+Caso de carregamento ...............   11
+===>>> Vento (6) 135°                                                          
+Forças nos nos ..................... 1064
+Somatória de cargas horizontais.....    200.18 tf      
+
+Caso de carregamento ...............   12
+===>>> Vento (7) 225°                                                          
+Forças nos nos ..................... 1064
+Somatória de cargas horizontais.....    203.95 tf      
+
+Caso de carregamento ...............   13
+===>>> Vento (8) 315°                                                          
+Forças nos nos ..................... 1064
+Somatória de cargas horizontais.....    200.18 tf      
+
+Caso de carregamento ...............   14
+===>>> Impacto lateral de veículos                                             
+
+Caso de carregamento ...............   15
+===>>> Cargas acidentais - Reduzidas                                           
+Forças nos nos ..................... 3963
+Carregamentos nas barras ...

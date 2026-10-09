@@ -17,7 +17,7 @@ O objetivo da revisão é verificar a compatibilidade entre:
 Este documento descreve o processo de revisão.
 
 As convenções utilizadas para interpretar graficamente as pranchas estão
-registradas em `beam-drawing-conventions.md`.
+registradas em [beam-drawing-convections.md](beam-drawing-convections.md).
 
 ---
 
@@ -128,15 +128,15 @@ avaliação posterior.
 
 A sequência normalmente utilizada é:
 
-1. verificar geometria;
-2. identificar condições especiais, incluindo apoios indiretos;
-3. verificar armaduras positivas de todos os vãos;
-4. verificar ancoragem das armaduras positivas;
-5. verificar armaduras negativas de todos os apoios;
-6. verificar ancoragem e extensão das armaduras negativas;
-7. verificar armaduras de cisalhamento;
-8. verificar armadura de suspensão quando aplicável;
-9. verificar outros detalhes especiais;
+1. conferir geometria;
+2. identificar vãos, apoios e condições especiais, incluindo apoios indiretos;
+3. interpretar armaduras positivas;
+4. construir regiões de composição longitudinal;
+5. verificar resistência à flexão positiva;
+6. quando houver interrupção dentro do vão, verificar o escalonamento positivo;
+7. verificar ancoragem das armaduras positivas nos apoios;
+8. verificar armaduras negativas e sua ancoragem/extensão;
+9. seguir para cisalhamento, suspensão e demais detalhes;
 10. registrar as correções necessárias na prancha.
 
 A sequência pode ser adaptada quando as características da viga exigirem.
@@ -221,6 +221,19 @@ específica.
 
 ---
 
+### 6.4 Escalonamento positivo no vão
+
+Para uma marca positiva interrompida dentro do vão, seguir
+[positive-bar-scaling.md](positive-bar-scaling.md), usando as regiões geométricas,
+a capacidade remanescente Concretopy e as duas condições independentes A/B.
+A referência registra o procedimento implementado e validado em V1001 e
+V536/V565; as demais etapas desta revisão não são automaticamente implementadas.
+Uma aprovação do escalonamento não substitui ancoragem nos apoios e não aprova
+globalmente a viga. Regras positivas não são transferidas automaticamente às negativas; consultar
+[Revisão longitudinal negativa](negative-longitudinal-review.md) para a política própria confirmada.
+
+---
+
 ## 7. Ancoragem da armadura positiva
 
 Após validar a resistência à flexão, verificar a ancoragem das barras nos
@@ -286,8 +299,9 @@ A análise considera:
 A verificação deve considerar o item 18.3.2.1 da NBR 6118:2023, conforme
 o procedimento atualmente adotado.
 
-Os valores de decalagem do diagrama e comprimentos de ancoragem são
-atualmente obtidos através da planilha de verificação.
+A referência histórica utilizava a planilha. O procedimento atual usa as APIs
+públicas do Concretopy e [Revisão longitudinal negativa](negative-longitudinal-review.md),
+com decisões do engenheiro separadas de requisitos normativos.
 
 Os pontos de referência para início da ancoragem são determinados a partir
 do diagrama de momentos do TQS.
@@ -357,7 +371,7 @@ graficamente à região de uma viga apoiada, essa armadura pode representar
 a armadura de suspensão do apoio indireto.
 
 A interpretação gráfica deve seguir as convenções registradas em
-`beam-drawing-conventions.md`.
+[beam-drawing-convections.md](beam-drawing-convections.md).
 
 Distinguir sempre:
 
@@ -491,3 +505,11 @@ O objetivo da revisão não é reproduzir o detalhamento automático do TQS.
 O objetivo é verificar se o detalhamento efetivamente produzido é
 estruturalmente adequado, normativamente aceitável, executável e coerente
 com o projeto.
+## Implementação de apoio positivo atual (06/10/2026)
+
+Para apoio extremo esquerdo, seguir [positive-end-support.md](positive-end-support.md):
+demanda por pares independentes, lb_ef geométrico, configuração existente e busca
+limitada com recálculo integral. As referências anteriores à planilha são históricas
+para esta etapa; grampos e cabimento completo continuam sem automação.
+
+Atualização do escopo de apoio: [positive-support-anchorage.md](positive-support-anchorage.md) distingue END/INTERMEDIATE e LEFT/RIGHT. A limitação histórica acima ao extremo esquerdo pertence à primeira versão; grampos agora têm cálculo e distribuição vertical elementar, mantendo pendências de nó. Não usar o histórico para substituir o procedimento atual.

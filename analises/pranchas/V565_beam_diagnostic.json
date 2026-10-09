@@ -1,0 +1,1779 @@
+{
+  "schema_version": "1.0",
+  "model_type": "BEAM_STRUCTURAL_DIAGNOSTIC",
+  "context": {
+    "beam_id": "V565",
+    "floor": "DIFERENCIADO",
+    "floor_source": {
+      "project_directory": "C:\\TQS\\24-155-COLLINE-RESIDENCIAL-R60\\DIFERENCIADO\\VIGAS"
+    },
+    "coordinate_system": {
+      "origin": "left_support_axis",
+      "positive_direction": "left_to_right",
+      "unit": "m"
+    },
+    "geometry": [
+      {
+        "id": 1,
+        "geometry": {
+          "length": 3.276,
+          "width": 0.19,
+          "height": 0.72,
+          "top_flange_width": null,
+          "bottom_flange_width": 0.0,
+          "section_type": 2.0,
+          "top_slab_thickness": 0.1,
+          "bottom_slab_thickness": 0.0,
+          "top_face_to_axis": 0.36,
+          "side_face_to_axis": 0.095,
+          "support_axis_length": null,
+          "clear_span_length": null
+        }
+      }
+    ],
+    "materials": {
+      "concrete": {
+        "fck": null
+      },
+      "steel": {
+        "grade": null
+      },
+      "aggregate_max_size": 0.015
+    },
+    "tqs_source": {
+      "path": "analises\\pranchas\\V565_tqs.json",
+      "sha256": "97dae1934988b05c3494a7440a764ef23cd91f59fb2ce3408e62586c4360e6c9"
+    },
+    "data_version": "1.1",
+    "drawing_source": null,
+    "coordinate_source": {
+      "path": "analises\\pranchas\\V565_beam_mapping.json",
+      "sha256": "d5c42b3cc378f7b2484875d351ed29a329488670ce314a2e00a763132d82a0aa"
+    },
+    "physical_geometry": {
+      "detailing_clear_span": 2.94,
+      "tqs_clear_span": 2.94,
+      "difference": 0.0,
+      "tqs_minus_detail": 0.0,
+      "status": "exact",
+      "tqs_length": 3.276,
+      "support_axis_length": 3.66
+    }
+  },
+  "module_availability": {
+    "anchorage": [
+      {
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        },
+        "version": "historical-json-adapter-v1",
+        "complete": false,
+        "applicability": null,
+        "applicability_evidence": null
+      },
+      {
+        "source": {
+          "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+          "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232"
+        },
+        "version": "historical-json-adapter-v1",
+        "complete": true,
+        "applicability": null,
+        "applicability_evidence": null
+      }
+    ],
+    "positive_flexure": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ],
+    "negative_flexure": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ],
+    "shear": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ],
+    "suspension": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ]
+  },
+  "source_modules": [
+    {
+      "discipline": "anchorage",
+      "beam_id": "V565",
+      "floor": "DIFERENCIADO",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "version": "historical-json-adapter-v1",
+      "complete": false,
+      "checks": [
+        {
+          "check_id": "existing/reinforcement_area",
+          "check_type": "reinforcement_area",
+          "status": "PASS",
+          "span_id": null,
+          "physical_interval": null,
+          "drawing_reinforcement_ids": [
+            "N2"
+          ],
+          "required_value": 5.20005800469987,
+          "provided_value": 9.42477796076938,
+          "units": "cm2",
+          "comparison": "provided_ge_required",
+          "reason": "VALIDA_SEM_AREA_ADICIONAL",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "passes": true,
+              "reason": "VALIDA_SEM_AREA_ADICIONAL"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+              "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "existing/anchorage_length",
+          "check_type": "anchorage_length",
+          "status": "PASS",
+          "span_id": null,
+          "physical_interval": null,
+          "drawing_reinforcement_ids": [
+            "N2"
+          ],
+          "required_value": 21.26980447332051,
+          "provided_value": 21.5,
+          "units": "cm",
+          "comparison": "provided_ge_required",
+          "reason": "VALIDA_SEM_AREA_ADICIONAL",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "passes": true,
+              "reason": "VALIDA_SEM_AREA_ADICIONAL"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+              "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "geometria_transversal_nao_verificada",
+          "check_type": "support_geometry",
+          "status": "INCONCLUSIVE",
+          "span_id": null,
+          "physical_interval": null,
+          "drawing_reinforcement_ids": [
+            "N2"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": null,
+          "comparison": null,
+          "reason": "geometria_transversal_nao_verificada",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "passes": null,
+              "reason": "geometria_transversal_nao_verificada"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+              "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "missing_information": [
+            "geometria_transversal_nao_verificada"
+          ]
+        },
+        {
+          "check_id": "gancho_geometria_nao_verificada",
+          "check_type": "support_geometry",
+          "status": "INCONCLUSIVE",
+          "span_id": null,
+          "physical_interval": null,
+          "drawing_reinforcement_ids": [
+            "N2"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": null,
+          "comparison": null,
+          "reason": "gancho_geometria_nao_verificada",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "passes": null,
+              "reason": "gancho_geometria_nao_verificada"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+              "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "missing_information": [
+            "gancho_geometria_nao_verificada"
+          ]
+        },
+        {
+          "check_id": "configuracao_local_nao_verifica_flexao_do_vao",
+          "check_type": "support_geometry",
+          "status": "INCONCLUSIVE",
+          "span_id": null,
+          "physical_interval": null,
+          "drawing_reinforcement_ids": [
+            "N2"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": null,
+          "comparison": null,
+          "reason": "configuracao_local_nao_verifica_flexao_do_vao",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "passes": null,
+              "reason": "configuracao_local_nao_verifica_flexao_do_vao"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+              "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "missing_information": [
+            "configuracao_local_nao_verifica_flexao_do_vao"
+          ]
+        },
+        {
+          "check_id": "nao_dimensiona_grampos",
+          "check_type": "support_geometry",
+          "status": "INCONCLUSIVE",
+          "span_id": null,
+          "physical_interval": null,
+          "drawing_reinforcement_ids": [
+            "N2"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": null,
+          "comparison": null,
+          "reason": "nao_dimensiona_grampos",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "passes": null,
+              "reason": "nao_dimensiona_grampos"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+              "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "missing_information": [
+            "nao_dimensiona_grampos"
+          ]
+        },
+        {
+          "check_id": "nao_aprova_viga",
+          "check_type": "support_geometry",
+          "status": "INCONCLUSIVE",
+          "span_id": null,
+          "physical_interval": null,
+          "drawing_reinforcement_ids": [
+            "N2"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": null,
+          "comparison": null,
+          "reason": "nao_aprova_viga",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "passes": null,
+              "reason": "nao_aprova_viga"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+              "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+            "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+          },
+          "missing_information": [
+            "nao_aprova_viga"
+          ]
+        }
+      ],
+      "original_summary": "VALIDA_SEM_AREA_ADICIONAL"
+    },
+    {
+      "discipline": "anchorage",
+      "beam_id": "V565",
+      "floor": "DIFERENCIADO",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "source": {
+        "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+        "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232"
+      },
+      "version": "historical-json-adapter-v1",
+      "complete": true,
+      "checks": [
+        {
+          "check_id": "scaling/N3/condition_A",
+          "check_type": "condition_A",
+          "status": "PASS",
+          "span_id": 1,
+          "physical_interval": [
+            0.54,
+            0.54
+          ],
+          "drawing_reinforcement_ids": [
+            "N3"
+          ],
+          "required_value": 86.0,
+          "provided_value": 154.8569899792843,
+          "units": "cm",
+          "comparison": "provided_ge_required",
+          "reason": null,
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "reference_point": "x_nec",
+              "reference_x_m": 2.088569899792843,
+              "available_length_cm": 154.8569899792843,
+              "al_cm": 66.0,
+              "ten_phi_cm": 20.0,
+              "required_length_cm": 86.0,
+              "passes": true,
+              "provenance": {
+                "rule": "engineer_confirmed_positive_bar_scaling_v1",
+                "formula": "oriented(event_x-x_nec)*100 >= al+10*phi_cm",
+                "diameter": {
+                  "mark": "N3",
+                  "diameter_mm": 20,
+                  "source": {
+                    "document_model": "analises/pranchas/V536_V565_detalhamento_prancha.json",
+                    "json_pointer": "/longitudinal_reinforcement/positive/1"
+                  }
+                },
+                "event": "/provenance/event",
+                "reference": "/moment_diagram",
+                "al": "/concretopy/al_result",
+                "extension": "/provenance/event"
+              },
+              "available_length_decimal_cm": "154.85698997928428094088728210383935162739530762261",
+              "required_length_decimal_cm": "86.0"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+              "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+              "pointer": "/condition_A"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+            "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+            "pointer": "/condition_A"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+            "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+            "pointer": "/condition_A"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+            "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+            "pointer": "/condition_A"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "scaling/N3/condition_B",
+          "check_type": "condition_B",
+          "status": "PASS",
+          "span_id": 1,
+          "physical_interval": [
+            0.54,
+            0.54
+          ],
+          "drawing_reinforcement_ids": [
+            "N3"
+          ],
+          "required_value": 121.0716891039194,
+          "provided_value": 273.6,
+          "units": "cm",
+          "comparison": "provided_ge_required",
+          "reason": null,
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "reference_point": "x_decay_start",
+              "reference_x_m": 3.276,
+              "available_length_cm": 273.6,
+              "al_cm": 66.0,
+              "lb_cm": 55.0716891039194,
+              "required_length_cm": 121.0716891039194,
+              "passes": true,
+              "provenance": {
+                "rule": "engineer_confirmed_positive_bar_scaling_v1",
+                "formula": "oriented(event_x-x_decay_start)*100 >= al+lb_basic",
+                "event": "/provenance/event",
+                "reference": "/moment_diagram",
+                "al": "/concretopy/al_result",
+                "extension": "/concretopy/anchorage_result/lb_cm"
+              },
+              "available_length_decimal_cm": "273.600",
+              "required_length_decimal_cm": "121.0716891039194"
+            },
+            "original_status": null,
+            "source": {
+              "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+              "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+              "pointer": "/condition_B"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+            "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+            "pointer": "/condition_B"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+            "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+            "pointer": "/condition_B"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+            "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+            "pointer": "/condition_B"
+          },
+          "missing_information": []
+        }
+      ],
+      "original_summary": null
+    }
+  ],
+  "checks": [
+    {
+      "id": "0740500f090ab87872275ff9",
+      "beam_id": "V565",
+      "discipline": "negative_flexure",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    },
+    {
+      "id": "3303b73b3d8cd1abd454dff9",
+      "beam_id": "V565",
+      "discipline": "positive_flexure",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    },
+    {
+      "check_id": "nao_aprova_viga",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "nao_aprova_viga",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "nao_aprova_viga"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "nao_aprova_viga",
+        "physical_location_not_documented"
+      ],
+      "id": "3b04030dbc81c50a46bc3f3e",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "id": "4c3a97aebac0390d4878286f",
+      "beam_id": "V565",
+      "discipline": "shear",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    },
+    {
+      "check_id": "existing/reinforcement_area",
+      "check_type": "reinforcement_area",
+      "status": "PASS",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": 5.20005800469987,
+      "provided_value": 9.42477796076938,
+      "units": "cm2",
+      "comparison": "provided_ge_required",
+      "reason": "VALIDA_SEM_AREA_ADICIONAL",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": true,
+          "reason": "VALIDA_SEM_AREA_ADICIONAL"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "physical_location_not_documented"
+      ],
+      "id": "614cf659a1bf8b77290ff266",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "gancho_geometria_nao_verificada",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "gancho_geometria_nao_verificada",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "gancho_geometria_nao_verificada"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "gancho_geometria_nao_verificada",
+        "physical_location_not_documented"
+      ],
+      "id": "79f5b61d4cd6ad453fc34d09",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "module_coverage",
+      "check_type": "module_coverage",
+      "status": "INCONCLUSIVE",
+      "reason": "module_scope_incomplete",
+      "missing_information": [
+        "applicable checks not completely documented",
+        "physical_location_not_documented"
+      ],
+      "id": "8212ac996fa6e051cee4409d",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "calculation_source": {
+        "module": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        },
+        "version": "historical-json-adapter-v1"
+      },
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "span_id": null,
+      "physical_interval": null,
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "drawing_reinforcement_ids": [],
+      "evidence": {}
+    },
+    {
+      "check_id": "geometria_transversal_nao_verificada",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "geometria_transversal_nao_verificada",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "geometria_transversal_nao_verificada"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "geometria_transversal_nao_verificada",
+        "physical_location_not_documented"
+      ],
+      "id": "8b1c6c52b84e3f8dc57be5a3",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "existing/anchorage_length",
+      "check_type": "anchorage_length",
+      "status": "PASS",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": 21.26980447332051,
+      "provided_value": 21.5,
+      "units": "cm",
+      "comparison": "provided_ge_required",
+      "reason": "VALIDA_SEM_AREA_ADICIONAL",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": true,
+          "reason": "VALIDA_SEM_AREA_ADICIONAL"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "physical_location_not_documented"
+      ],
+      "id": "9fa33b95e6be30929e71260e",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "scaling/N3/condition_A",
+      "check_type": "condition_A",
+      "status": "PASS",
+      "span_id": 1,
+      "physical_interval": [
+        0.54,
+        0.54
+      ],
+      "drawing_reinforcement_ids": [
+        "N3"
+      ],
+      "required_value": 86.0,
+      "provided_value": 154.8569899792843,
+      "units": "cm",
+      "comparison": "provided_ge_required",
+      "reason": null,
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "reference_point": "x_nec",
+          "reference_x_m": 2.088569899792843,
+          "available_length_cm": 154.8569899792843,
+          "al_cm": 66.0,
+          "ten_phi_cm": 20.0,
+          "required_length_cm": 86.0,
+          "passes": true,
+          "provenance": {
+            "rule": "engineer_confirmed_positive_bar_scaling_v1",
+            "formula": "oriented(event_x-x_nec)*100 >= al+10*phi_cm",
+            "diameter": {
+              "mark": "N3",
+              "diameter_mm": 20,
+              "source": {
+                "document_model": "analises/pranchas/V536_V565_detalhamento_prancha.json",
+                "json_pointer": "/longitudinal_reinforcement/positive/1"
+              }
+            },
+            "event": "/provenance/event",
+            "reference": "/moment_diagram",
+            "al": "/concretopy/al_result",
+            "extension": "/provenance/event"
+          },
+          "available_length_decimal_cm": "154.85698997928428094088728210383935162739530762261",
+          "required_length_decimal_cm": "86.0"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+          "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+          "pointer": "/condition_A"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+        "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+        "pointer": "/condition_A"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+        "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+        "pointer": "/condition_A"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+        "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+        "pointer": "/condition_A"
+      },
+      "missing_information": [],
+      "id": "b109481a32be53f744ac4304",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "id": "c559b759c1df124c37fb2b17",
+      "beam_id": "V565",
+      "discipline": "suspension",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    },
+    {
+      "check_id": "nao_dimensiona_grampos",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "nao_dimensiona_grampos",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "nao_dimensiona_grampos"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "nao_dimensiona_grampos",
+        "physical_location_not_documented"
+      ],
+      "id": "de37f7b514d4e7227105df79",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "configuracao_local_nao_verifica_flexao_do_vao",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "configuracao_local_nao_verifica_flexao_do_vao",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "configuracao_local_nao_verifica_flexao_do_vao"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "configuracao_local_nao_verifica_flexao_do_vao",
+        "physical_location_not_documented"
+      ],
+      "id": "e7da17a8cabf97caae8d0f2d",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "scaling/N3/condition_B",
+      "check_type": "condition_B",
+      "status": "PASS",
+      "span_id": 1,
+      "physical_interval": [
+        0.54,
+        0.54
+      ],
+      "drawing_reinforcement_ids": [
+        "N3"
+      ],
+      "required_value": 121.0716891039194,
+      "provided_value": 273.6,
+      "units": "cm",
+      "comparison": "provided_ge_required",
+      "reason": null,
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "reference_point": "x_decay_start",
+          "reference_x_m": 3.276,
+          "available_length_cm": 273.6,
+          "al_cm": 66.0,
+          "lb_cm": 55.0716891039194,
+          "required_length_cm": 121.0716891039194,
+          "passes": true,
+          "provenance": {
+            "rule": "engineer_confirmed_positive_bar_scaling_v1",
+            "formula": "oriented(event_x-x_decay_start)*100 >= al+lb_basic",
+            "event": "/provenance/event",
+            "reference": "/moment_diagram",
+            "al": "/concretopy/al_result",
+            "extension": "/concretopy/anchorage_result/lb_cm"
+          },
+          "available_length_decimal_cm": "273.600",
+          "required_length_decimal_cm": "121.0716891039194"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+          "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+          "pointer": "/condition_B"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+        "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+        "pointer": "/condition_B"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+        "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+        "pointer": "/condition_B"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_N3_scaling_check.json",
+        "sha256": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+        "pointer": "/condition_B"
+      },
+      "missing_information": [],
+      "id": "e84693e96527c777aa45bee3",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "0740500f090ab87872275ff9",
+      "beam_id": "V565",
+      "discipline": "negative_flexure",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-0740500f090ab87872275ff9",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "id": "3303b73b3d8cd1abd454dff9",
+      "beam_id": "V565",
+      "discipline": "positive_flexure",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-3303b73b3d8cd1abd454dff9",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "nao_aprova_viga",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "nao_aprova_viga",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "nao_aprova_viga"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "nao_aprova_viga",
+        "physical_location_not_documented"
+      ],
+      "id": "3b04030dbc81c50a46bc3f3e",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-3b04030dbc81c50a46bc3f3e",
+      "category": "MISSING_GEOMETRY",
+      "related_checks": [
+        "79f5b61d4cd6ad453fc34d09",
+        "8b1c6c52b84e3f8dc57be5a3",
+        "de37f7b514d4e7227105df79",
+        "e7da17a8cabf97caae8d0f2d"
+      ],
+      "provided_minus_required": null
+    },
+    {
+      "id": "4c3a97aebac0390d4878286f",
+      "beam_id": "V565",
+      "discipline": "shear",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-4c3a97aebac0390d4878286f",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "gancho_geometria_nao_verificada",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "gancho_geometria_nao_verificada",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "gancho_geometria_nao_verificada"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "gancho_geometria_nao_verificada",
+        "physical_location_not_documented"
+      ],
+      "id": "79f5b61d4cd6ad453fc34d09",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-79f5b61d4cd6ad453fc34d09",
+      "category": "MISSING_GEOMETRY",
+      "related_checks": [
+        "3b04030dbc81c50a46bc3f3e",
+        "8b1c6c52b84e3f8dc57be5a3",
+        "de37f7b514d4e7227105df79",
+        "e7da17a8cabf97caae8d0f2d"
+      ],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "module_coverage",
+      "check_type": "module_coverage",
+      "status": "INCONCLUSIVE",
+      "reason": "module_scope_incomplete",
+      "missing_information": [
+        "applicable checks not completely documented",
+        "physical_location_not_documented"
+      ],
+      "id": "8212ac996fa6e051cee4409d",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "calculation_source": {
+        "module": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        },
+        "version": "historical-json-adapter-v1"
+      },
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "span_id": null,
+      "physical_interval": null,
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "drawing_reinforcement_ids": [],
+      "evidence": {},
+      "occurrence_id": "occ-8212ac996fa6e051cee4409d",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "geometria_transversal_nao_verificada",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "geometria_transversal_nao_verificada",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "geometria_transversal_nao_verificada"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "geometria_transversal_nao_verificada",
+        "physical_location_not_documented"
+      ],
+      "id": "8b1c6c52b84e3f8dc57be5a3",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-8b1c6c52b84e3f8dc57be5a3",
+      "category": "MISSING_GEOMETRY",
+      "related_checks": [
+        "3b04030dbc81c50a46bc3f3e",
+        "79f5b61d4cd6ad453fc34d09",
+        "de37f7b514d4e7227105df79",
+        "e7da17a8cabf97caae8d0f2d"
+      ],
+      "provided_minus_required": null
+    },
+    {
+      "id": "c559b759c1df124c37fb2b17",
+      "beam_id": "V565",
+      "discipline": "suspension",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-c559b759c1df124c37fb2b17",
+      "category": "UNVERIFIED_SUSPENSION",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "nao_dimensiona_grampos",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "nao_dimensiona_grampos",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "nao_dimensiona_grampos"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "nao_dimensiona_grampos",
+        "physical_location_not_documented"
+      ],
+      "id": "de37f7b514d4e7227105df79",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-de37f7b514d4e7227105df79",
+      "category": "MISSING_GEOMETRY",
+      "related_checks": [
+        "3b04030dbc81c50a46bc3f3e",
+        "79f5b61d4cd6ad453fc34d09",
+        "8b1c6c52b84e3f8dc57be5a3",
+        "e7da17a8cabf97caae8d0f2d"
+      ],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "configuracao_local_nao_verifica_flexao_do_vao",
+      "check_type": "support_geometry",
+      "status": "INCONCLUSIVE",
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [
+        "N2"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "comparison": null,
+      "reason": "configuracao_local_nao_verifica_flexao_do_vao",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "passes": null,
+          "reason": "configuracao_local_nao_verifica_flexao_do_vao"
+        },
+        "original_status": null,
+        "source": {
+          "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+          "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V565_left_support_anchorage_check.json",
+        "sha256": "765d3c7dc2f235a2a9dc98b849e193742375e345a83ca84151032ffa800c1fc7"
+      },
+      "missing_information": [
+        "configuracao_local_nao_verifica_flexao_do_vao",
+        "physical_location_not_documented"
+      ],
+      "id": "e7da17a8cabf97caae8d0f2d",
+      "beam_id": "V565",
+      "discipline": "anchorage",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-e7da17a8cabf97caae8d0f2d",
+      "category": "MISSING_GEOMETRY",
+      "related_checks": [
+        "3b04030dbc81c50a46bc3f3e",
+        "79f5b61d4cd6ad453fc34d09",
+        "8b1c6c52b84e3f8dc57be5a3",
+        "de37f7b514d4e7227105df79"
+      ],
+      "provided_minus_required": null
+    }
+  ],
+  "proven_nonconformities": [],
+  "pending_occurrences": [
+    "occ-0740500f090ab87872275ff9",
+    "occ-3303b73b3d8cd1abd454dff9",
+    "occ-3b04030dbc81c50a46bc3f3e",
+    "occ-4c3a97aebac0390d4878286f",
+    "occ-79f5b61d4cd6ad453fc34d09",
+    "occ-8212ac996fa6e051cee4409d",
+    "occ-8b1c6c52b84e3f8dc57be5a3",
+    "occ-c559b759c1df124c37fb2b17",
+    "occ-de37f7b514d4e7227105df79",
+    "occ-e7da17a8cabf97caae8d0f2d"
+  ],
+  "engineering_review_occurrences": [],
+  "relations": [
+    {
+      "occurrences": [
+        "occ-3b04030dbc81c50a46bc3f3e",
+        "occ-79f5b61d4cd6ad453fc34d09"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-3b04030dbc81c50a46bc3f3e",
+        "occ-8b1c6c52b84e3f8dc57be5a3"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-3b04030dbc81c50a46bc3f3e",
+        "occ-de37f7b514d4e7227105df79"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-3b04030dbc81c50a46bc3f3e",
+        "occ-e7da17a8cabf97caae8d0f2d"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-79f5b61d4cd6ad453fc34d09",
+        "occ-8b1c6c52b84e3f8dc57be5a3"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-79f5b61d4cd6ad453fc34d09",
+        "occ-de37f7b514d4e7227105df79"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-79f5b61d4cd6ad453fc34d09",
+        "occ-e7da17a8cabf97caae8d0f2d"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-8b1c6c52b84e3f8dc57be5a3",
+        "occ-de37f7b514d4e7227105df79"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-8b1c6c52b84e3f8dc57be5a3",
+        "occ-e7da17a8cabf97caae8d0f2d"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    },
+    {
+      "occurrences": [
+        "occ-de37f7b514d4e7227105df79",
+        "occ-e7da17a8cabf97caae8d0f2d"
+      ],
+      "shared_reinforcement": [
+        "N2"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    }
+  ],
+  "discipline_status": {
+    "positive_flexure": "INCONCLUSIVE",
+    "negative_flexure": "INCONCLUSIVE",
+    "anchorage": "INCONCLUSIVE",
+    "shear": "INCONCLUSIVE",
+    "suspension": "INCONCLUSIVE"
+  },
+  "overall_status": "INCONCLUSIVE",
+  "beam_checks_approval": null,
+  "structural_safety_declaration": null,
+  "selected_solution": null,
+  "detailing_optimization": null,
+  "historical_interpretation_audit": []
+}

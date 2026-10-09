@@ -99,10 +99,15 @@ def extract(folder, beam='V504', encoding='cp1252'):
                 data=None
                 if table in ('geometria','apoios','reacoes','reacoes_numeradas'):
                     cats.add('geometria' if table=='geometria' else 'apoios' if table=='apoios' else 'reacoes')
-                if table=='geometria' and re.match(r'^\d+\s',stripped):
+                if table=='geometria' and re.match(r'^\d+B?\s',stripped):
                     keys='vao comprimento largura altura mesa_superior mesa_inferior tipo_secao espessura_laje_superior espessura_laje_inferior face_superior_eixo face_lateral_eixo'.split()
                     unit='m' if name in ('VGESFS.LST','RELDTVGS.LST') else 'cm'
+                    span_token = values[0]
+                    values[0] = span_token.rstrip('B')
                     data={'tipo':'geometria_tabular','campos':{k:quantity(num(v),None if k in ('vao','tipo_secao') else unit) for k,v in zip(keys,values)},'cabecalho':table_source}
+                    if name == 'VGESFS.LST':
+                        data['identificador_vao_original'] = span_token
+                        data['tipo_vao_documental'] = 'CANTILEVER' if span_token.endswith('B') else 'BETWEEN_SUPPORTS'
                     cats.update(['geometria','vaos']); vao=int(values[0])
                     if name=='RELDTVET.LST': data['ressalva']='Unidade impressa cm; valores divergem dos demais relatorios. Nao corrigidos.'
                 elif table=='apoios' and re.match(r'^[VP]\S+\s+[-\d]',stripped):

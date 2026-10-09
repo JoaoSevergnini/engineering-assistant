@@ -1,0 +1,1059 @@
+[
+  {
+    "beam": "V617",
+    "token": "2B",
+    "normalization": {
+      "tipo": "geometria_tabular",
+      "campos": {
+        "vao": {
+          "valor": 2.0,
+          "unidade_original": null
+        },
+        "comprimento": {
+          "valor": 1.329,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 1.329,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "largura": {
+          "valor": 0.19,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.19,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "altura": {
+          "valor": 0.57,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.57,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "tipo_secao": {
+          "valor": 1.0,
+          "unidade_original": null
+        },
+        "espessura_laje_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "espessura_laje_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_superior_eixo": {
+          "valor": 0.285,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.285,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_lateral_eixo": {
+          "valor": 0.095,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.095,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        }
+      },
+      "cabecalho": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 364,
+        "linha_final": 364,
+        "texto": "   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO"
+      },
+      "identificador_vao_original": "2B",
+      "tipo_vao_documental": "CANTILEVER"
+    },
+    "provenance": {
+      "arquivo": "VGESFS.LST",
+      "linha_inicial": 366,
+      "linha_final": 366,
+      "texto": "    2B      1.329     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+    },
+    "physical_kind": {
+      "value": "CANTILEVER",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06302-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            570,
+            1150,
+            1080,
+            1630
+          ],
+          "reference": "free extension verified in elevation"
+        }
+      ],
+      "criterion": null
+    },
+    "orientation": {
+      "value": "RIGHT",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06302-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            570,
+            1150,
+            1080,
+            1630
+          ],
+          "reference": "visual side; no coordinate derived from scale"
+        }
+      ],
+      "criterion": null
+    },
+    "physical_bounds_state": "MISSING"
+  },
+  {
+    "beam": "V620",
+    "token": "2B",
+    "normalization": {
+      "tipo": "geometria_tabular",
+      "campos": {
+        "vao": {
+          "valor": 2.0,
+          "unidade_original": null
+        },
+        "comprimento": {
+          "valor": 1.417,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 1.417,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "largura": {
+          "valor": 0.19,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.19,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "altura": {
+          "valor": 0.61,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.61,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "tipo_secao": {
+          "valor": 1.0,
+          "unidade_original": null
+        },
+        "espessura_laje_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "espessura_laje_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_superior_eixo": {
+          "valor": 0.305,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.305,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_lateral_eixo": {
+          "valor": 0.095,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.095,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        }
+      },
+      "cabecalho": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 412,
+        "linha_final": 412,
+        "texto": "   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO"
+      },
+      "identificador_vao_original": "2B",
+      "tipo_vao_documental": "CANTILEVER"
+    },
+    "provenance": {
+      "arquivo": "VGESFS.LST",
+      "linha_inicial": 414,
+      "linha_final": 414,
+      "texto": "    2B      1.417     0.190     0.610     0.000     0.000     1.000     0.000     0.000     0.305     0.095"
+    },
+    "physical_kind": {
+      "value": "CANTILEVER",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06302-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            1840,
+            1150,
+            2280,
+            1630
+          ],
+          "reference": "free extension verified in elevation"
+        }
+      ],
+      "criterion": null
+    },
+    "orientation": {
+      "value": "RIGHT",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06302-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            1840,
+            1150,
+            2280,
+            1630
+          ],
+          "reference": "visual side; no coordinate derived from scale"
+        }
+      ],
+      "criterion": null
+    },
+    "physical_bounds_state": "MISSING"
+  },
+  {
+    "beam": "V622",
+    "token": "2B",
+    "normalization": {
+      "tipo": "geometria_tabular",
+      "campos": {
+        "vao": {
+          "valor": 2.0,
+          "unidade_original": null
+        },
+        "comprimento": {
+          "valor": 1.429,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 1.429,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "largura": {
+          "valor": 0.19,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.19,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "altura": {
+          "valor": 0.57,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.57,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "tipo_secao": {
+          "valor": 1.0,
+          "unidade_original": null
+        },
+        "espessura_laje_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "espessura_laje_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_superior_eixo": {
+          "valor": 0.285,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.285,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_lateral_eixo": {
+          "valor": 0.095,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.095,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        }
+      },
+      "cabecalho": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 439,
+        "linha_final": 439,
+        "texto": "   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO"
+      },
+      "identificador_vao_original": "2B",
+      "tipo_vao_documental": "CANTILEVER"
+    },
+    "provenance": {
+      "arquivo": "VGESFS.LST",
+      "linha_inicial": 441,
+      "linha_final": 441,
+      "texto": "    2B      1.429     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+    },
+    "physical_kind": {
+      "value": "CANTILEVER",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            560,
+            40,
+            1070,
+            455
+          ],
+          "reference": "free extension verified in elevation"
+        }
+      ],
+      "criterion": null
+    },
+    "orientation": {
+      "value": "RIGHT",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            560,
+            40,
+            1070,
+            455
+          ],
+          "reference": "visual side; no coordinate derived from scale"
+        }
+      ],
+      "criterion": null
+    },
+    "physical_bounds_state": "MISSING"
+  },
+  {
+    "beam": "V625",
+    "token": "2B",
+    "normalization": {
+      "tipo": "geometria_tabular",
+      "campos": {
+        "vao": {
+          "valor": 2.0,
+          "unidade_original": null
+        },
+        "comprimento": {
+          "valor": 1.329,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 1.329,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "largura": {
+          "valor": 0.19,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.19,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "altura": {
+          "valor": 0.57,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.57,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "tipo_secao": {
+          "valor": 1.0,
+          "unidade_original": null
+        },
+        "espessura_laje_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "espessura_laje_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_superior_eixo": {
+          "valor": 0.285,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.285,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_lateral_eixo": {
+          "valor": 0.095,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.095,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        }
+      },
+      "cabecalho": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 487,
+        "linha_final": 487,
+        "texto": "   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO"
+      },
+      "identificador_vao_original": "2B",
+      "tipo_vao_documental": "CANTILEVER"
+    },
+    "provenance": {
+      "arquivo": "VGESFS.LST",
+      "linha_inicial": 489,
+      "linha_final": 489,
+      "texto": "    2B      1.329     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+    },
+    "physical_kind": {
+      "value": "CANTILEVER",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            80,
+            480,
+            570,
+            905
+          ],
+          "reference": "free extension verified in elevation"
+        }
+      ],
+      "criterion": null
+    },
+    "orientation": {
+      "value": "RIGHT",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            80,
+            480,
+            570,
+            905
+          ],
+          "reference": "visual side; no coordinate derived from scale"
+        }
+      ],
+      "criterion": null
+    },
+    "physical_bounds_state": "MISSING"
+  },
+  {
+    "beam": "V626",
+    "token": "1B",
+    "normalization": {
+      "tipo": "geometria_tabular",
+      "campos": {
+        "vao": {
+          "valor": 1.0,
+          "unidade_original": null
+        },
+        "comprimento": {
+          "valor": 0.949,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.949,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "largura": {
+          "valor": 0.19,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.19,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "altura": {
+          "valor": 0.47,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.47,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_superior": {
+          "valor": 0.57,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.57,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "tipo_secao": {
+          "valor": 2.0,
+          "unidade_original": null
+        },
+        "espessura_laje_superior": {
+          "valor": 0.12,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.12,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "espessura_laje_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_superior_eixo": {
+          "valor": 0.235,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.235,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_lateral_eixo": {
+          "valor": 0.095,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.095,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        }
+      },
+      "cabecalho": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 813,
+        "linha_final": 813,
+        "texto": "   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO"
+      },
+      "identificador_vao_original": "1B",
+      "tipo_vao_documental": "CANTILEVER"
+    },
+    "provenance": {
+      "arquivo": "VGESFS.LST",
+      "linha_inicial": 814,
+      "linha_final": 814,
+      "texto": "    1B      0.949     0.190     0.470     0.570     0.000     2.000     0.120     0.000     0.235     0.095"
+    },
+    "physical_kind": {
+      "value": "CANTILEVER",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            635,
+            480,
+            1170,
+            950
+          ],
+          "reference": "free extension verified in elevation"
+        }
+      ],
+      "criterion": null
+    },
+    "orientation": {
+      "value": "LEFT",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            635,
+            480,
+            1170,
+            950
+          ],
+          "reference": "visual side; no coordinate derived from scale"
+        }
+      ],
+      "criterion": null
+    },
+    "physical_bounds_state": "MISSING"
+  },
+  {
+    "beam": "V627",
+    "token": "2B",
+    "normalization": {
+      "tipo": "geometria_tabular",
+      "campos": {
+        "vao": {
+          "valor": 2.0,
+          "unidade_original": null
+        },
+        "comprimento": {
+          "valor": 1.329,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 1.329,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "largura": {
+          "valor": 0.19,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.19,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "altura": {
+          "valor": 0.57,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.57,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "tipo_secao": {
+          "valor": 1.0,
+          "unidade_original": null
+        },
+        "espessura_laje_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "espessura_laje_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_superior_eixo": {
+          "valor": 0.285,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.285,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_lateral_eixo": {
+          "valor": 0.095,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.095,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        }
+      },
+      "cabecalho": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 514,
+        "linha_final": 514,
+        "texto": "   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO"
+      },
+      "identificador_vao_original": "2B",
+      "tipo_vao_documental": "CANTILEVER"
+    },
+    "provenance": {
+      "arquivo": "VGESFS.LST",
+      "linha_inicial": 516,
+      "linha_final": 516,
+      "texto": "    2B      1.329     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+    },
+    "physical_kind": {
+      "value": "CANTILEVER",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            80,
+            940,
+            580,
+            1390
+          ],
+          "reference": "free extension verified in elevation"
+        }
+      ],
+      "criterion": null
+    },
+    "orientation": {
+      "value": "RIGHT",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            80,
+            940,
+            580,
+            1390
+          ],
+          "reference": "visual side; no coordinate derived from scale"
+        }
+      ],
+      "criterion": null
+    },
+    "physical_bounds_state": "MISSING"
+  },
+  {
+    "beam": "V629",
+    "token": "4B",
+    "normalization": {
+      "tipo": "geometria_tabular",
+      "campos": {
+        "vao": {
+          "valor": 4.0,
+          "unidade_original": null
+        },
+        "comprimento": {
+          "valor": 1.429,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 1.429,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "largura": {
+          "valor": 0.19,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.19,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "altura": {
+          "valor": 0.57,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.57,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "mesa_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "tipo_secao": {
+          "valor": 1.0,
+          "unidade_original": null
+        },
+        "espessura_laje_superior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "espessura_laje_inferior": {
+          "valor": 0.0,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.0,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_superior_eixo": {
+          "valor": 0.285,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.285,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        },
+        "face_lateral_eixo": {
+          "valor": 0.095,
+          "unidade_original": "m",
+          "normalizado": {
+            "valor": 0.095,
+            "unidade": "m",
+            "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+          }
+        }
+      },
+      "cabecalho": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 562,
+        "linha_final": 562,
+        "texto": "   VAO    COMPRIM.  LARGURA    ALTURA  B COLAB.S.B COLAB.I.TIPO SECAO ESP.LJ.S. ESP.LJ.I.FC SP EIXOFC LT EIXO"
+      },
+      "identificador_vao_original": "4B",
+      "tipo_vao_documental": "CANTILEVER"
+    },
+    "provenance": {
+      "arquivo": "VGESFS.LST",
+      "linha_inicial": 566,
+      "linha_final": 566,
+      "texto": "    4B      1.429     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+    },
+    "physical_kind": {
+      "value": "CANTILEVER",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            1310,
+            480,
+            2190,
+            935
+          ],
+          "reference": "free extension verified in elevation"
+        }
+      ],
+      "criterion": null
+    },
+    "orientation": {
+      "value": "RIGHT",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+          "page": 1,
+          "bbox": [
+            1310,
+            480,
+            2190,
+            935
+          ],
+          "reference": "visual side; no coordinate derived from scale"
+        }
+      ],
+      "criterion": null
+    },
+    "physical_bounds_state": "MISSING"
+  }
+]

@@ -1,0 +1,903 @@
+{
+  "schema_version": "1.2",
+  "type": "beam_reinforcement_drawing_interpretation",
+  "scope": {
+    "method": "Manual visual reading, PDF coordinates; no automatic drawing parser",
+    "document_instructions": "Document notes are project data, not user instructions"
+  },
+  "document": {
+    "name": "RMP-EST-EX-1349-VIG-R00 - Copia.PDF",
+    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1349-VIG-R00 - Copia.PDF",
+    "page": 1,
+    "sha256": "03c117b5359133095e21d8ea879a327b58843dd9e6c4d39e7204364f179032e2",
+    "page_size_pdf_points": [
+      3370,
+      2384
+    ]
+  },
+  "identification": {
+    "beam": {
+      "value": "V536",
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    },
+    "grouped_with_other_beams": {
+      "value": true,
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    },
+    "group_members": {
+      "value": [
+        "V536",
+        "V565"
+      ],
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    }
+  },
+  "section": {
+    "written_label": {
+      "value": "19/72",
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ]
+    },
+    "width": {
+      "value": 19,
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ],
+      "unit": "cm"
+    },
+    "height": {
+      "value": 72,
+      "classification": "explicit",
+      "sources": [
+        "title"
+      ],
+      "unit": "cm"
+    },
+    "shape": {
+      "value": "rectangular",
+      "classification": "explicit",
+      "sources": [
+        "section_A"
+      ]
+    },
+    "local_cover": {
+      "value": null,
+      "classification": "graphically_interpreted",
+      "sources": [
+        "section_A"
+      ],
+      "unit": "cm",
+      "reason": "Not dimensioned locally; use TQS cover with provenance"
+    },
+    "lateral_projections_dimensions": {
+      "value": [],
+      "classification": "explicit",
+      "sources": [
+        "section_A"
+      ]
+    }
+  },
+  "geometry": {
+    "coordinate_system": {
+      "origin": "face interna do apoio esquerdo P11A",
+      "positive_direction": "para a direita",
+      "unit": "cm"
+    },
+    "supports": [
+      {
+        "id": {
+          "value": "P11A",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 24,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": -24,
+            "right": 0
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm",
+          "reason": "From written support widths and clear length"
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        }
+      },
+      {
+        "id": {
+          "value": "P7A",
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        },
+        "width_along_beam": {
+          "value": 120,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm"
+        },
+        "faces_coordinates": {
+          "value": {
+            "left": 294,
+            "right": 414
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "elevation"
+          ],
+          "unit": "cm",
+          "reason": "From written support widths and clear length"
+        },
+        "model_restraint": {
+          "value": null,
+          "classification": "explicit",
+          "sources": [
+            "elevation"
+          ]
+        }
+      }
+    ],
+    "spans_and_overhang": [
+      {
+        "id": "S1",
+        "type": {
+          "value": "between_supports",
+          "classification": "explicit",
+          "sources": [
+            "detail"
+          ]
+        },
+        "left_support": "P11A",
+        "right_support": "P7A",
+        "geometric_length": {
+          "value": 294,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 0,
+            "x_end": 294
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm",
+          "reason": "Distribution limits coincide with internal support faces"
+        }
+      }
+    ]
+  },
+  "longitudinal_reinforcement": {
+    "negative": [
+      {
+        "mark": {
+          "value": "N1",
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "quantity": {
+          "value": 4,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "diameter": {
+          "value": 16,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 413,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "upper",
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "group": {
+          "value": "negative",
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "shape": {
+          "value": "bent",
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": 378,
+          "classification": "explicit",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": null,
+            "x_end": null
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N1"
+          ],
+          "unit": "cm",
+          "reason": "Absolute endpoints not dimensioned; not inferred from drawing scale"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 3,
+              "classification": "explicit",
+              "sources": [
+                "N1"
+              ]
+            }
+          },
+          {
+            "layer": 2,
+            "quantity": {
+              "value": 1,
+              "classification": "explicit",
+              "sources": [
+                "N1"
+              ]
+            }
+          }
+        ],
+        "end_bend": {
+          "side": {
+            "value": "left",
+            "classification": "explicit",
+            "sources": [
+              "N1"
+            ]
+          },
+          "direction": {
+            "value": "down",
+            "classification": "explicit",
+            "sources": [
+              "N1"
+            ]
+          },
+          "length": {
+            "value": 35,
+            "classification": "explicit",
+            "sources": [
+              "N1"
+            ],
+            "unit": "cm"
+          }
+        }
+      }
+    ],
+    "positive": [
+      {
+        "mark": {
+          "value": "N2",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "quantity": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "diameter": {
+          "value": 20,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 455,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "lower",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "group": {
+          "value": "positive",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "shape": {
+          "value": "bent",
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": 397,
+          "classification": "explicit",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": -21,
+            "x_end": 376
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N2"
+          ],
+          "unit": "cm",
+          "reason": "Right end = 294+82 = 376; start = right end - horizontal projection"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 3,
+              "classification": "explicit",
+              "sources": [
+                "N2"
+              ]
+            }
+          }
+        ],
+        "end_bend": {
+          "side": {
+            "value": "left",
+            "classification": "explicit",
+            "sources": [
+              "N2"
+            ]
+          },
+          "direction": {
+            "value": "up",
+            "classification": "explicit",
+            "sources": [
+              "N2"
+            ]
+          },
+          "length": {
+            "value": 58,
+            "classification": "explicit",
+            "sources": [
+              "N2"
+            ],
+            "unit": "cm"
+          }
+        }
+      },
+      {
+        "mark": {
+          "value": "N3",
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "quantity": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "diameter": {
+          "value": 20,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 334,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm"
+        },
+        "face": {
+          "value": "lower",
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "group": {
+          "value": "positive",
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ]
+        },
+        "horizontal_length_shown": {
+          "value": 334,
+          "classification": "explicit",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm"
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": 42,
+            "x_end": 376
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N3"
+          ],
+          "unit": "cm",
+          "reason": "Right end = 294+82 = 376; start = right end - horizontal projection"
+        },
+        "layers": [
+          {
+            "layer": 1,
+            "quantity": {
+              "value": 0,
+              "classification": "explicit",
+              "sources": [
+                "N3"
+              ]
+            }
+          },
+          {
+            "layer": 2,
+            "quantity": {
+              "value": 3,
+              "classification": "explicit",
+              "sources": [
+                "N3"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "skin_reinforcement": {
+    "skin_reinforcement_detailed": {
+      "value": true,
+      "classification": "explicit",
+      "sources": [
+        "N5"
+      ]
+    },
+    "positions": [
+      {
+        "mark": {
+          "value": "N5",
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "bars_per_face": {
+          "value": 3,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "total_quantity_per_position": {
+          "value": 6,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "diameter": {
+          "value": 10,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ],
+          "unit": "mm"
+        },
+        "length_per_bar": {
+          "value": 340,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ],
+          "unit": "cm"
+        },
+        "shape": {
+          "value": "straight",
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ]
+        },
+        "longitudinal_coordinates": {
+          "value": {
+            "x_start": null,
+            "x_end": null
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "N5"
+          ],
+          "unit": "cm",
+          "reason": "No written endpoint offsets"
+        },
+        "vertical_spacing": {
+          "value": null,
+          "classification": "explicit",
+          "sources": [
+            "N5"
+          ],
+          "unit": "cm"
+        }
+      }
+    ]
+  },
+  "stirrups": {
+    "mark": {
+      "value": "N4",
+      "classification": "explicit",
+      "sources": [
+        "stirrups"
+      ]
+    },
+    "vertical_legs_drawn": {
+      "value": 2,
+      "classification": "explicit",
+      "sources": [
+        "stirrup_shape"
+      ]
+    },
+    "shape_dimensions": {
+      "value": [
+        14,
+        67
+      ],
+      "classification": "explicit",
+      "sources": [
+        "stirrup_shape"
+      ],
+      "unit": "cm"
+    },
+    "length_per_piece": {
+      "value": 177,
+      "classification": "explicit",
+      "sources": [
+        "stirrup_shape"
+      ],
+      "unit": "cm"
+    },
+    "regions": [
+      {
+        "id": "ST1",
+        "mark": {
+          "value": "N4",
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ]
+        },
+        "function": {
+          "value": null,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ]
+        },
+        "diameter": {
+          "value": 5,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "mm"
+        },
+        "spacing": {
+          "value": 14,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm"
+        },
+        "quantity": {
+          "value": 21,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ]
+        },
+        "region_length": {
+          "value": 294,
+          "classification": "explicit",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm"
+        },
+        "extent": {
+          "value": {
+            "x_start": 0,
+            "x_end": 294
+          },
+          "classification": "graphically_interpreted",
+          "sources": [
+            "stirrups"
+          ],
+          "unit": "cm",
+          "reason": "Written distribution limits; support detailing not inferred"
+        }
+      }
+    ]
+  },
+  "anchorage_staples": {
+    "positions": []
+  },
+  "indirect_supported_beams": [],
+  "section_views": [
+    {
+      "label": {
+        "value": "Corte A",
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "exact_abscissa": {
+        "value": null,
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ],
+        "unit": "cm"
+      },
+      "upper_first_layer_quantity": {
+        "value": 3,
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "upper_second_layer_quantity": {
+        "value": 1,
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "upper_positions": {
+        "value": {
+          "first_layer": "N1",
+          "second_layer": "N1"
+        },
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "lower_first_layer_quantity": {
+        "value": 3,
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "lower_second_layer_quantity": {
+        "value": 3,
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "lower_position": {
+        "value": [
+          "N2",
+          "N3"
+        ],
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "skin_points_per_face": {
+        "value": 3,
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      },
+      "skin_position_at_section": {
+        "value": "N5",
+        "classification": "explicit",
+        "sources": [
+          "section_A"
+        ]
+      }
+    }
+  ],
+  "sources": {
+    "detail": {
+      "page": 1,
+      "bbox_pdf": [
+        2470,
+        720,
+        2870,
+        1120
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "title": {
+      "page": 1,
+      "bbox_pdf": [
+        2480,
+        724,
+        2600,
+        770
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "elevation": {
+      "page": 1,
+      "bbox_pdf": [
+        2480,
+        786,
+        2760,
+        884
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "stirrups": {
+      "page": 1,
+      "bbox_pdf": [
+        2490,
+        899,
+        2680,
+        923
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "N1": {
+      "page": 1,
+      "bbox_pdf": [
+        2474,
+        940,
+        2710,
+        978
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "N5": {
+      "page": 1,
+      "bbox_pdf": [
+        2480,
+        998,
+        2695,
+        1035
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "N3": {
+      "page": 1,
+      "bbox_pdf": [
+        2510,
+        1048,
+        2720,
+        1089
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "N2": {
+      "page": 1,
+      "bbox_pdf": [
+        2470,
+        1068,
+        2720,
+        1115
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "section_A": {
+      "page": 1,
+      "bbox_pdf": [
+        2780,
+        788,
+        2840,
+        900
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    },
+    "stirrup_shape": {
+      "page": 1,
+      "bbox_pdf": [
+        2765,
+        911,
+        2850,
+        1036
+      ],
+      "description": "Manual reading, approximate PDF bbox; V536_V565_hit_0.png"
+    }
+  },
+  "uncertainties": [
+    "No local cover dimension; TQS cover adopted",
+    "Section A abscissa not dimensioned",
+    "Skin longitudinal endpoints not dimensioned",
+    "Shared drawing uses V536 support labels; V565 association comes from its ordered TQS support records"
+  ]
+}

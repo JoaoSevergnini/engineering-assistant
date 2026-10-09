@@ -1,4 +1,4 @@
-"""Modelo longitudinal a partir do JSON documental de prancha (schema 1.2).
+"""Modelo longitudinal a partir do JSON documental de prancha (schemas 1.1/1.2 e extensao 1.3).
 Somente biblioteca padrao. Nenhum acesso a PDF, LST ou calculo estrutural.
 """
 from __future__ import annotations
@@ -23,8 +23,8 @@ def val(value):
 
 class Builder:
     def __init__(self, raw, name):
-        if raw.get('type') != 'beam_reinforcement_drawing_interpretation' or raw.get('schema_version') != '1.2':
-            raise ValueError('Formato esperado: beam_reinforcement_drawing_interpretation schema 1.2. Outros formatos precisam de adaptador.')
+        if raw.get('type') != 'beam_reinforcement_drawing_interpretation' or raw.get('schema_version') not in ('1.2', '1.3'):
+            raise ValueError('Formato esperado: beam_reinforcement_drawing_interpretation schema 1.2/1.3. Outros formatos precisam de adaptador.')
         self.raw, self.name = raw, name
         self.issues = {}
         self.audit = []
@@ -135,6 +135,14 @@ class Builder:
                'indirect_supports':[], 'suspension_reinforcement':[], 'sections':[]}
         self.copy(out['beam'],'id','/identification/beam')
         self.copy(out['beam'],'grouped','/identification/grouped_with_other_beams')
+        members = self.get('/identification/group_members')
+        if members is not None:
+            if (not isinstance(members, list) or not members or
+                    any(not isinstance(x, str) or not x for x in members) or
+                    len(set(members)) != len(members) or out['beam']['id'] not in members or
+                    out['beam']['grouped'] is not True):
+                raise ValueError('Invalid documentary group members.')
+            self.copy(out['beam'], 'ids', '/identification/group_members')
         for key, field in [('width_cm','width'),('height_cm','height'),('cover_cm','local_cover')]:
             self.copy(out['section'],key,'/section/'+field,'cm')
             if out['section'][key] is None:self.issue('unknown_section_dimension',key)
@@ -210,6 +218,9 @@ class Builder:
                 self.copy(item,key,path+'/'+field,unit)
             item['upper_layers']=[self.get(path+'/upper_first_layer_quantity'),self.get(path+'/upper_second_layer_quantity')]
             item['lower_layers']=[self.get(path+'/lower_first_layer_quantity')]
+            second = self.get(path+'/lower_second_layer_quantity')
+            if second is not None:
+                item['lower_layers'].append(second)
             if item['x_cm'] is None:self.issue('unknown_section_position',item['id'])
             out['sections'].append(item)
         out['uncertainties']=[{'code':k,'entities':list(dict.fromkeys(v))} for k,v in self.issues.items()]
@@ -256,15 +267,15 @@ def validate(model, raw=None):
         for key in ('spacing_cm','diameter_mm'):
             value=region[key]
             if value is not None and (not isinstance(value,(int,float)) or isinstance(value,bool) or value<=0):raise ValueError('Valor invalido em estribos: '+key)
-    def visit(value):
+    def visit(value, provenance=False):
         if isinstance(value,dict):
             for start,end in [('x_start_cm','x_end_cm'),('x_left_cm','x_right_cm')]:
                 a,b=value.get(start),value.get(end)
                 if a is not None and b is not None and b<a:raise ValueError('Intervalo invertido.')
-            if 'source' in value and raw is not None:at(raw,value['source']['json_pointer'])
-            for child in value.values():visit(child)
+            if 'source' in value and raw is not None and not provenance:at(raw,value['source']['json_pointer'])
+            for key,child in value.items():visit(child,provenance or key=='provenance')
         elif isinstance(value,list):
-            for child in value:visit(child)
+            for child in value:visit(child,provenance)
     visit(model)
     if raw is not None:
         # Full transformation replay audits that the output contains only the allowed
@@ -279,9 +290,17 @@ def validate(model, raw=None):
 
 def build_document(raw, document_model):
     if raw.get('schema_version') == '1.1' and raw.get('type') == 'beam_reinforcement_drawing_interpretation':
+        if 'physical_extension' in raw:
+            raise ValueError('Extensao fisica requer documental schema 1.2/1.3.')
         from legacy_document import build_legacy
         return build_legacy(raw, document_model, Builder)
-    return Builder(raw,document_model).run()
+    model = Builder(raw,document_model).run()
+    if raw.get('schema_version') == '1.3' and 'physical_extension' not in raw:
+        raise ValueError('Schema 1.3 requer physical_extension.')
+    if 'physical_extension' in raw:
+        from physical_geometry import extend
+        model = extend(model, raw['physical_extension'])
+    return model
 
 
 def transform(raw, document_model='document_model.json'):

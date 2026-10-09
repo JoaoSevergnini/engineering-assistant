@@ -1,0 +1,4673 @@
+{
+  "schema_version": "1.1",
+  "model_type": "consolidated_beam",
+  "units": {
+    "length": "m",
+    "stress": "MPa",
+    "force": "kN",
+    "moment": "kN.m"
+  },
+  "beam": {
+    "id": "V608",
+    "number": 608,
+    "materials": {
+      "concrete": {
+        "fck": null
+      },
+      "steel": {
+        "grade": null
+      },
+      "aggregate_max_size": 0.015
+    },
+    "cover": {
+      "general": 0.025,
+      "top": 0.025,
+      "bottom": 0.025,
+      "soil_contact_parameter": 0.03,
+      "beam_parameter": 0.0,
+      "compression_reinforcement": 0.025,
+      "additional_top": 0.0,
+      "unspecified_face": 0.025
+    },
+    "spans": [
+      {
+        "id": 1,
+        "geometry": {
+          "length": 5.125,
+          "width": 0.19,
+          "height": 0.47,
+          "top_flange_width": null,
+          "bottom_flange_width": 0.0,
+          "section_type": 8.0,
+          "top_slab_thickness": 0.12,
+          "bottom_slab_thickness": 0.0,
+          "top_face_to_axis": 0.235,
+          "side_face_to_axis": 0.095,
+          "support_axis_length": 5.125,
+          "clear_span_length": 4.935
+        },
+        "support_ids": [
+          "P28",
+          "P29"
+        ],
+        "report_span_ids": {
+          "RELDTVGS.LST": 1,
+          "VGESFS.LST": 1,
+          "RELDTFNG.LST": 2,
+          "RELDTFPS.LST": 2,
+          "RELDTVET.LST": 2,
+          "ESTRIB.LST": 1,
+          "FLEXNG.LST": 1,
+          "FLEXPS.LST": 1
+        },
+        "internal_forces": [
+          {
+            "quantity": "bending_moment",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              43.933792,
+              43.4826861,
+              42.78641395,
+              40.76624405,
+              37.11817025,
+              31.76373935,
+              23.9870659,
+              17.32835055,
+              19.52504015,
+              20.95681105,
+              20.52531845,
+              19.0052877,
+              16.52420525
+            ],
+            "sources": [
+              "s893#/normalizacao",
+              "s1018#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "min",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -63.7236117,
+              -48.3467845,
+              -33.23473685,
+              -19.42697365,
+              -7.24711435,
+              3.2165812,
+              11.18938765,
+              12.87613145,
+              0.57859235,
+              -13.77834325,
+              -30.0279623,
+              -47.37592615,
+              -65.67513505
+            ],
+            "sources": [
+              "s887#/normalizacao",
+              "s1012#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "negative_flexure_after_positive_removal",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -63.743225,
+              -48.3467845,
+              -33.2445435,
+              -19.417167,
+              -7.256921,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -13.72931,
+              -30.008349,
+              -47.3661195,
+              -65.704555
+            ],
+            "sources": [
+              "s056#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "negative_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -63.743225,
+              -48.3467845,
+              -33.2445435,
+              -19.417167,
+              -7.256921,
+              3.2361945,
+              11.179581,
+              12.8467115,
+              0.588399,
+              -13.72931,
+              -30.008349,
+              -47.3661195,
+              -65.704555
+            ],
+            "sources": [
+              "s049#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "positive_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              63.743225,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              65.704555
+            ],
+            "sources": [
+              "s244#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "positive",
+            "stage": "positive_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              43.933792,
+              43.4434595,
+              42.756994,
+              40.795664,
+              37.069137,
+              31.773546,
+              24.0262925,
+              17.3577705,
+              19.5152335,
+              20.986231,
+              20.4958985,
+              19.024901,
+              16.475172
+            ],
+            "sources": [
+              "s245#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              36.1473119,
+              35.6373661,
+              33.146477,
+              30.03776895,
+              26.54660155,
+              22.8887211,
+              15.05320775,
+              9.4928372,
+              5.9428299,
+              2.55953565,
+              -1.765197,
+              -4.5502856,
+              -4.28550605
+            ],
+            "sources": [
+              "s890#/normalizacao",
+              "s1015#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_final_absolute",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              32.2638785,
+              35.5981395,
+              33.146477,
+              30.008349,
+              26.5760215,
+              22.8494945,
+              21.966896,
+              27.5566865,
+              31.0870805,
+              34.519408,
+              38.834334,
+              41.580196,
+              41.2859965
+            ],
+            "sources": [
+              "s685#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_initial_absolute",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              36.1865385,
+              35.5981395,
+              33.146477,
+              30.008349,
+              26.5760215,
+              22.8494945,
+              21.966896,
+              27.5566865,
+              31.0870805,
+              34.519408,
+              38.834334,
+              41.580196,
+              41.2859965
+            ],
+            "sources": [
+              "s654#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_torsion_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              36.1865385,
+              35.5981395,
+              33.146477,
+              30.008349,
+              26.5760215,
+              22.8494945,
+              15.102241,
+              9.5124505,
+              5.9820565,
+              2.549729,
+              -1.765197,
+              -4.511059,
+              -4.314926
+            ],
+            "sources": [
+              "s618#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "min",
+            "stage": "model_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -0.9022118,
+              -1.4121576,
+              -3.89324005,
+              -7.01175475,
+              -10.4931155,
+              -14.1608026,
+              -21.99631595,
+              -27.54687985,
+              -31.1066938,
+              -34.4801814,
+              -38.80491405,
+              -41.5998093,
+              -41.33502975
+            ],
+            "sources": [
+              "s884#/normalizacao",
+              "s1009#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "min",
+            "stage": "shear_torsion_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -0.8825985,
+              -1.372931,
+              -3.92266,
+              -6.9627215,
+              -10.4931155,
+              -14.121576,
+              -21.966896,
+              -27.5566865,
+              -31.0870805,
+              -34.519408,
+              -38.834334,
+              -41.580196,
+              -41.2859965
+            ],
+            "sources": [
+              "s619#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "torsion",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              0.1176798,
+              0.1569064,
+              0.12748645,
+              0.0980665,
+              0.06864655,
+              0.00980665,
+              -0.02941995,
+              -0.0588399,
+              -0.08825985,
+              -0.0980665,
+              -0.10787315,
+              -0.1176798,
+              -0.0588399
+            ],
+            "sources": [
+              "s896#/normalizacao",
+              "s1021#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "torsion",
+            "envelope": "max",
+            "stage": "shear_torsion_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              0.0980665,
+              0.196133,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0,
+              0.0,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665
+            ],
+            "sources": [
+              "s641#/normalizacao"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "geometry": {
+          "length": 5.13,
+          "width": 0.19,
+          "height": 0.47,
+          "top_flange_width": null,
+          "bottom_flange_width": 0.0,
+          "section_type": 8.0,
+          "top_slab_thickness": 0.12,
+          "bottom_slab_thickness": 0.0,
+          "top_face_to_axis": 0.235,
+          "side_face_to_axis": 0.095,
+          "support_axis_length": 5.13,
+          "clear_span_length": 4.9399999999999995
+        },
+        "support_ids": [
+          "P29",
+          "P30"
+        ],
+        "report_span_ids": {
+          "RELDTVGS.LST": 2,
+          "VGESFS.LST": 2,
+          "RELDTFNG.LST": 3,
+          "RELDTFPS.LST": 3,
+          "RELDTVET.LST": 3,
+          "ESTRIB.LST": 2,
+          "FLEXNG.LST": 2,
+          "FLEXPS.LST": 2
+        },
+        "internal_forces": [
+          {
+            "quantity": "bending_moment",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              10.1400761,
+              14.07254275,
+              16.40652545,
+              17.48525695,
+              16.77917815,
+              14.87668805,
+              12.5721253,
+              15.97503285,
+              18.1815291,
+              18.7895414,
+              17.8873296,
+              15.46508705,
+              11.4933938
+            ],
+            "sources": [
+              "s894#/normalizacao",
+              "s1019#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "min",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -56.8981833,
+              -41.62922925,
+              -27.9685658,
+              -15.56315355,
+              -4.9425516,
+              3.6676871,
+              9.03192465,
+              2.3339827,
+              -6.9234949,
+              -17.81868305,
+              -30.21428865,
+              -44.13973165,
+              -59.59501205
+            ],
+            "sources": [
+              "s888#/normalizacao",
+              "s1013#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "negative_flexure_after_positive_removal",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -56.87857,
+              -41.580196,
+              -27.9489525,
+              -15.5925735,
+              -4.903325,
+              0.0,
+              0.0,
+              0.0,
+              -6.9627215,
+              -17.848103,
+              -30.204482,
+              -44.129925,
+              -59.624432
+            ],
+            "sources": [
+              "s057#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "negative_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -56.87857,
+              -41.580196,
+              -27.9489525,
+              -15.5925735,
+              -4.903325,
+              3.6284605,
+              9.022118,
+              2.353596,
+              -6.9627215,
+              -17.848103,
+              -30.204482,
+              -44.129925,
+              -59.624432
+            ],
+            "sources": [
+              "s050#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "positive_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              56.87857,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              59.624432
+            ],
+            "sources": [
+              "s246#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "positive",
+            "stage": "positive_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              10.1008495,
+              14.0235095,
+              16.3771055,
+              17.455837,
+              16.7693715,
+              14.906108,
+              12.552512,
+              15.9848395,
+              18.1423025,
+              18.828768,
+              17.848103,
+              15.494507,
+              11.4737805
+            ],
+            "sources": [
+              "s247#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              34.84302745,
+              33.8917824,
+              30.41042165,
+              26.0268491,
+              22.7318147,
+              19.2994872,
+              13.99408955,
+              6.77639515,
+              3.3734876,
+              0.1176798,
+              -2.9223817,
+              -6.276256,
+              -9.9047165
+            ],
+            "sources": [
+              "s891#/normalizacao",
+              "s1016#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_final_absolute",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              31.2832135,
+              33.931009,
+              30.400615,
+              25.9876225,
+              22.751428,
+              19.3191005,
+              14.0235095,
+              20.1036325,
+              23.53596,
+              26.7721545,
+              29.812216,
+              33.146477,
+              33.2445435
+            ],
+            "sources": [
+              "s686#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_initial_absolute",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              34.8136075,
+              33.931009,
+              30.400615,
+              25.9876225,
+              22.751428,
+              19.3191005,
+              14.0235095,
+              20.1036325,
+              23.53596,
+              26.7721545,
+              29.812216,
+              33.146477,
+              36.7749375
+            ],
+            "sources": [
+              "s655#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_torsion_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              34.8136075,
+              33.931009,
+              30.400615,
+              25.9876225,
+              22.751428,
+              19.3191005,
+              14.0235095,
+              6.7665885,
+              3.334261,
+              0.0980665,
+              -2.941995,
+              -6.276256,
+              -9.9047165
+            ],
+            "sources": [
+              "s620#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "min",
+            "stage": "model_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              7.95319315,
+              7.0019481,
+              3.52058735,
+              -0.8629852,
+              -4.1580196,
+              -7.58054045,
+              -12.89574475,
+              -20.11343915,
+              -23.5163467,
+              -26.76234785,
+              -29.812216,
+              -33.1660903,
+              -36.7945508
+            ],
+            "sources": [
+              "s885#/normalizacao",
+              "s1010#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "min",
+            "stage": "shear_torsion_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              7.9433865,
+              6.9627215,
+              3.530394,
+              -0.8825985,
+              -4.118793,
+              -7.5511205,
+              -12.8467115,
+              -20.1036325,
+              -23.53596,
+              -26.7721545,
+              -29.812216,
+              -33.146477,
+              -36.7749375
+            ],
+            "sources": [
+              "s621#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "torsion",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              0.0392266,
+              0.08825985,
+              0.06864655,
+              0.0588399,
+              0.04903325,
+              0.02941995,
+              0.00980665,
+              -0.02941995,
+              -0.04903325,
+              -0.0588399,
+              -0.06864655,
+              -0.08825985,
+              -0.0784532
+            ],
+            "sources": [
+              "s897#/normalizacao",
+              "s1022#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "torsion",
+            "envelope": "max",
+            "stage": "shear_torsion_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              0.0,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0,
+              0.0,
+              0.0,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665
+            ],
+            "sources": [
+              "s642#/normalizacao"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "geometry": {
+          "length": 5.13,
+          "width": 0.19,
+          "height": 0.47,
+          "top_flange_width": null,
+          "bottom_flange_width": 0.0,
+          "section_type": 8.0,
+          "top_slab_thickness": 0.12,
+          "bottom_slab_thickness": 0.0,
+          "top_face_to_axis": 0.235,
+          "side_face_to_axis": 0.095,
+          "support_axis_length": 5.13,
+          "clear_span_length": 4.9399999999999995
+        },
+        "support_ids": [
+          "P30",
+          "V616"
+        ],
+        "report_span_ids": {
+          "RELDTVGS.LST": 3,
+          "VGESFS.LST": 3,
+          "RELDTFNG.LST": 4,
+          "RELDTFPS.LST": 4,
+          "RELDTVET.LST": 4,
+          "ESTRIB.LST": 3,
+          "FLEXNG.LST": 3,
+          "FLEXPS.LST": 3
+        },
+        "internal_forces": [
+          {
+            "quantity": "bending_moment",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              14.64132845,
+              22.2414822,
+              28.9884574,
+              34.3428883,
+              38.31458155,
+              40.39359135,
+              40.47204455,
+              37.853669,
+              33.23473685,
+              26.64466805,
+              18.6130217,
+              9.1594111,
+              1.77500365
+            ],
+            "sources": [
+              "s895#/normalizacao",
+              "s1020#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "min",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -68.83287635,
+              -53.94638165,
+              -39.92287215,
+              -27.29190695,
+              -16.03387275,
+              -6.67832865,
+              0.67665885,
+              5.3348176,
+              7.99241975,
+              8.6886919,
+              7.9433865,
+              5.75650355,
+              -2.0986231
+            ],
+            "sources": [
+              "s889#/normalizacao",
+              "s1014#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "negative_flexure_after_positive_removal",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -68.842683,
+              -53.936575,
+              -39.9130655,
+              -27.262487,
+              -16.082906,
+              -6.668522,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -2.0593965
+            ],
+            "sources": [
+              "s058#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "negative_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              -68.842683,
+              -53.936575,
+              -39.9130655,
+              -27.262487,
+              -16.082906,
+              -6.668522,
+              0.6864655,
+              5.295591,
+              8.041453,
+              8.7279185,
+              7.9433865,
+              5.7859235,
+              -2.0593965
+            ],
+            "sources": [
+              "s051#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "negative",
+            "stage": "positive_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              68.842683,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              2.0593965
+            ],
+            "sources": [
+              "s248#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "bending_moment",
+            "envelope": "positive",
+            "stage": "positive_flexure_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              14.6119085,
+              22.2610955,
+              29.027684,
+              34.323275,
+              38.3440015,
+              40.403398,
+              40.5014645,
+              37.853669,
+              33.2445435,
+              26.674088,
+              18.632635,
+              9.1201845,
+              1.765197
+            ],
+            "sources": [
+              "s249#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              34.4017282,
+              33.8329425,
+              30.68500785,
+              27.82146605,
+              22.91814105,
+              19.4760069,
+              14.11176935,
+              8.71811185,
+              5.24655775,
+              0.10787315,
+              -3.04986815,
+              -6.0016698,
+              -10.71866845
+            ],
+            "sources": [
+              "s892#/normalizacao",
+              "s1017#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_final_absolute",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              30.8909475,
+              33.8329425,
+              30.6948145,
+              27.850886,
+              22.947561,
+              19.5152335,
+              14.121576,
+              8.7279185,
+              11.76798,
+              16.9655045,
+              20.1036325,
+              23.0456275,
+              27.7528195
+            ],
+            "sources": [
+              "s687#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_initial_absolute",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              34.4213415,
+              33.8329425,
+              30.6948145,
+              27.850886,
+              22.947561,
+              19.5152335,
+              14.121576,
+              8.7279185,
+              11.76798,
+              16.9655045,
+              20.1036325,
+              23.0456275,
+              27.7528195
+            ],
+            "sources": [
+              "s656#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "max",
+            "stage": "shear_torsion_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              34.4213415,
+              33.8329425,
+              30.6948145,
+              27.850886,
+              22.947561,
+              19.5152335,
+              14.121576,
+              8.7279185,
+              5.1975245,
+              0.0980665,
+              -3.0400615,
+              -5.9820565,
+              -10.6892485
+            ],
+            "sources": [
+              "s622#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "min",
+            "stage": "model_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              17.3773838,
+              16.8085981,
+              13.6508568,
+              10.787315,
+              5.89379665,
+              2.4516625,
+              -2.91257505,
+              -8.30623255,
+              -11.77778665,
+              -16.91647125,
+              -20.07421255,
+              -23.0260142,
+              -27.7528195
+            ],
+            "sources": [
+              "s886#/normalizacao",
+              "s1011#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "shear",
+            "envelope": "min",
+            "stage": "shear_torsion_input",
+            "unit": "kN",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              17.3577705,
+              16.7693715,
+              13.6312435,
+              10.787315,
+              5.88399,
+              2.4516625,
+              -2.941995,
+              -8.3356525,
+              -11.76798,
+              -16.9655045,
+              -20.1036325,
+              -23.0456275,
+              -27.7528195
+            ],
+            "sources": [
+              "s623#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "torsion",
+            "envelope": "max",
+            "stage": "model_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              0.0784532,
+              0.1176798,
+              0.0980665,
+              0.08825985,
+              0.06864655,
+              0.04903325,
+              0.0392266,
+              -0.04903325,
+              -0.06864655,
+              -0.08825985,
+              -0.0980665,
+              -0.0980665,
+              -0.0980665
+            ],
+            "sources": [
+              "s898#/normalizacao",
+              "s1023#/normalizacao"
+            ]
+          },
+          {
+            "quantity": "torsion",
+            "envelope": "max",
+            "stage": "shear_torsion_input",
+            "unit": "kN.m",
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "positions": null,
+            "values": [
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665,
+              0.0980665
+            ],
+            "sources": [
+              "s643#/normalizacao"
+            ]
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "id": "P28",
+        "width": 0.19,
+        "eccentricity": 0.0,
+        "continuity_code": "SEGUE",
+        "lever_code": "NAO",
+        "upper_dimension": 0.19,
+        "lower_thickness": 0.7,
+        "upper_thickness": 0.7
+      },
+      {
+        "id": "P29",
+        "width": 0.19,
+        "eccentricity": 0.0,
+        "continuity_code": "SEGUE",
+        "lever_code": "NAO",
+        "upper_dimension": 0.19,
+        "lower_thickness": 0.8,
+        "upper_thickness": 0.8
+      },
+      {
+        "id": "P30",
+        "width": 0.19,
+        "eccentricity": 0.0,
+        "continuity_code": "SEGUE",
+        "lever_code": "NAO",
+        "upper_dimension": 0.19,
+        "lower_thickness": 0.8,
+        "upper_thickness": 0.8
+      },
+      {
+        "id": "V616",
+        "width": 0.19,
+        "eccentricity": 0.0,
+        "continuity_code": "VIGA",
+        "lever_code": "NAO",
+        "upper_dimension": 0.0,
+        "lower_thickness": 0.0,
+        "upper_thickness": 0.0
+      }
+    ],
+    "support_reactions": [
+      {
+        "support_id": "P28",
+        "reported_support_name": "P28",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 36.1865385,
+        "min": -0.8825985,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s924#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P29",
+        "reported_support_name": "P29",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 51.0926465,
+        "min": 38.245935,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s925#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P30",
+        "reported_support_name": "P30",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 56.486304,
+        "min": 42.756994,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s926#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "V616",
+        "reported_support_name": "V616",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 27.7528195,
+        "min": 10.6892485,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s927#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P28",
+        "reported_support_name": "P28",
+        "report_support_number": 1.0,
+        "unit": "kN",
+        "max": 36.1473119,
+        "min": -0.9022118,
+        "file": "RELGER.LST",
+        "sources": [
+          "s984#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P29",
+        "reported_support_name": "P29",
+        "report_support_number": 2.0,
+        "unit": "kN",
+        "max": 51.0534199,
+        "min": 38.21651505,
+        "file": "RELGER.LST",
+        "sources": [
+          "s985#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P30",
+        "reported_support_name": "P30",
+        "report_support_number": 3.0,
+        "unit": "kN",
+        "max": 56.5059173,
+        "min": 42.74718735,
+        "file": "RELGER.LST",
+        "sources": [
+          "s986#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "V616",
+        "reported_support_name": "V616",
+        "report_support_number": 4.0,
+        "unit": "kN",
+        "max": 27.7528195,
+        "min": 10.71866845,
+        "file": "RELGER.LST",
+        "sources": [
+          "s987#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P28",
+        "reported_support_name": "P28",
+        "report_support_number": 1.0,
+        "unit": "kN",
+        "max": 36.1473119,
+        "min": -0.9022118,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1025#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P29",
+        "reported_support_name": "P29",
+        "report_support_number": 2.0,
+        "unit": "kN",
+        "max": 51.0534199,
+        "min": 38.21651505,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1026#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P30",
+        "reported_support_name": "P30",
+        "report_support_number": 3.0,
+        "unit": "kN",
+        "max": 56.5059173,
+        "min": 42.74718735,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1027#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "V616",
+        "reported_support_name": "V616",
+        "report_support_number": 4.0,
+        "unit": "kN",
+        "max": 27.7528195,
+        "min": 10.71866845,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1028#/normalizacao"
+        ]
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": "conflicting_values",
+      "path": "/beam/materials/concrete/fck",
+      "resolution": "unresolved",
+      "selected": null,
+      "alternatives": [
+        {
+          "value": 39.2266,
+          "sources": [
+            "s044#/campos_explicitos/0",
+            "s606#/campos_explicitos/0"
+          ]
+        },
+        {
+          "value": 40.0,
+          "sources": [
+            "s137#/campos_explicitos/1",
+            "s277#/campos_explicitos/1"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/materials/steel/grade",
+      "resolution": "unresolved",
+      "selected": null,
+      "alternatives": [
+        {
+          "value": "CA-50A",
+          "sources": [
+            "s044#/campos_explicitos/3"
+          ]
+        },
+        {
+          "value": "CA-50",
+          "sources": [
+            "s279#/campos_explicitos/2",
+            "s606#/campos_explicitos/3"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/0/geometry/length",
+      "resolution": "preferred_reference_geometry",
+      "selected": 5.125,
+      "alternatives": [
+        {
+          "value": 5.125,
+          "sources": [
+            "s063#/normalizacao/campos/comprimento",
+            "s253#/normalizacao/campos/comprimento",
+            "s866#/normalizacao/campos/comprimento",
+            "s1005#/normalizacao/campos/comprimento"
+          ]
+        },
+        {
+          "value": 0.051,
+          "sources": [
+            "s610#/normalizacao/campos/comprimento"
+          ]
+        },
+        {
+          "value": 5.13,
+          "sources": [
+            "s002#/campos_explicitos/1",
+            "s021#/campos_explicitos/1",
+            "s036#/campos_explicitos/1"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/0/geometry/width",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.19,
+      "alternatives": [
+        {
+          "value": 0.19,
+          "sources": [
+            "s063#/normalizacao/campos/largura",
+            "s253#/normalizacao/campos/largura",
+            "s866#/normalizacao/campos/largura",
+            "s1005#/normalizacao/campos/largura",
+            "s002#/campos_explicitos/2",
+            "s021#/campos_explicitos/2",
+            "s036#/campos_explicitos/2"
+          ]
+        },
+        {
+          "value": 0.002,
+          "sources": [
+            "s610#/normalizacao/campos/largura"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/0/geometry/height",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.47,
+      "alternatives": [
+        {
+          "value": 0.47,
+          "sources": [
+            "s063#/normalizacao/campos/altura",
+            "s253#/normalizacao/campos/altura",
+            "s866#/normalizacao/campos/altura",
+            "s1005#/normalizacao/campos/altura",
+            "s002#/campos_explicitos/3",
+            "s021#/campos_explicitos/3",
+            "s036#/campos_explicitos/3"
+          ]
+        },
+        {
+          "value": 0.005,
+          "sources": [
+            "s610#/normalizacao/campos/altura"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/0/geometry/top_flange_width",
+      "resolution": "unresolved",
+      "selected": null,
+      "alternatives": [
+        {
+          "value": 0.574,
+          "sources": [
+            "s063#/normalizacao/campos/mesa_superior",
+            "s253#/normalizacao/campos/mesa_superior",
+            "s1005#/normalizacao/campos/mesa_superior"
+          ]
+        },
+        {
+          "value": 0.006,
+          "sources": [
+            "s610#/normalizacao/campos/mesa_superior"
+          ]
+        },
+        {
+          "value": 0.0,
+          "sources": [
+            "s866#/normalizacao/campos/mesa_superior"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/0/geometry/top_slab_thickness",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.12,
+      "alternatives": [
+        {
+          "value": 0.12,
+          "sources": [
+            "s063#/normalizacao/campos/espessura_laje_superior",
+            "s253#/normalizacao/campos/espessura_laje_superior",
+            "s866#/normalizacao/campos/espessura_laje_superior",
+            "s1005#/normalizacao/campos/espessura_laje_superior"
+          ]
+        },
+        {
+          "value": 0.001,
+          "sources": [
+            "s610#/normalizacao/campos/espessura_laje_superior"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/1/geometry/length",
+      "resolution": "preferred_reference_geometry",
+      "selected": 5.13,
+      "alternatives": [
+        {
+          "value": 5.13,
+          "sources": [
+            "s064#/normalizacao/campos/comprimento",
+            "s254#/normalizacao/campos/comprimento",
+            "s867#/normalizacao/campos/comprimento",
+            "s1006#/normalizacao/campos/comprimento",
+            "s008#/campos_explicitos/1",
+            "s025#/campos_explicitos/1",
+            "s038#/campos_explicitos/1"
+          ]
+        },
+        {
+          "value": 0.051,
+          "sources": [
+            "s611#/normalizacao/campos/comprimento"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/1/geometry/width",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.19,
+      "alternatives": [
+        {
+          "value": 0.19,
+          "sources": [
+            "s064#/normalizacao/campos/largura",
+            "s254#/normalizacao/campos/largura",
+            "s867#/normalizacao/campos/largura",
+            "s1006#/normalizacao/campos/largura",
+            "s008#/campos_explicitos/2",
+            "s025#/campos_explicitos/2",
+            "s038#/campos_explicitos/2"
+          ]
+        },
+        {
+          "value": 0.002,
+          "sources": [
+            "s611#/normalizacao/campos/largura"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/1/geometry/height",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.47,
+      "alternatives": [
+        {
+          "value": 0.47,
+          "sources": [
+            "s064#/normalizacao/campos/altura",
+            "s254#/normalizacao/campos/altura",
+            "s867#/normalizacao/campos/altura",
+            "s1006#/normalizacao/campos/altura",
+            "s008#/campos_explicitos/3",
+            "s025#/campos_explicitos/3",
+            "s038#/campos_explicitos/3"
+          ]
+        },
+        {
+          "value": 0.005,
+          "sources": [
+            "s611#/normalizacao/campos/altura"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/1/geometry/top_flange_width",
+      "resolution": "unresolved",
+      "selected": null,
+      "alternatives": [
+        {
+          "value": 0.498,
+          "sources": [
+            "s064#/normalizacao/campos/mesa_superior",
+            "s254#/normalizacao/campos/mesa_superior",
+            "s1006#/normalizacao/campos/mesa_superior"
+          ]
+        },
+        {
+          "value": 0.005,
+          "sources": [
+            "s611#/normalizacao/campos/mesa_superior"
+          ]
+        },
+        {
+          "value": 0.0,
+          "sources": [
+            "s867#/normalizacao/campos/mesa_superior"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/1/geometry/top_slab_thickness",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.12,
+      "alternatives": [
+        {
+          "value": 0.12,
+          "sources": [
+            "s064#/normalizacao/campos/espessura_laje_superior",
+            "s254#/normalizacao/campos/espessura_laje_superior",
+            "s867#/normalizacao/campos/espessura_laje_superior",
+            "s1006#/normalizacao/campos/espessura_laje_superior"
+          ]
+        },
+        {
+          "value": 0.001,
+          "sources": [
+            "s611#/normalizacao/campos/espessura_laje_superior"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/2/geometry/length",
+      "resolution": "preferred_reference_geometry",
+      "selected": 5.13,
+      "alternatives": [
+        {
+          "value": 5.13,
+          "sources": [
+            "s065#/normalizacao/campos/comprimento",
+            "s255#/normalizacao/campos/comprimento",
+            "s868#/normalizacao/campos/comprimento",
+            "s1007#/normalizacao/campos/comprimento",
+            "s014#/campos_explicitos/1",
+            "s029#/campos_explicitos/1",
+            "s040#/campos_explicitos/1"
+          ]
+        },
+        {
+          "value": 0.051,
+          "sources": [
+            "s612#/normalizacao/campos/comprimento"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/2/geometry/width",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.19,
+      "alternatives": [
+        {
+          "value": 0.19,
+          "sources": [
+            "s065#/normalizacao/campos/largura",
+            "s255#/normalizacao/campos/largura",
+            "s868#/normalizacao/campos/largura",
+            "s1007#/normalizacao/campos/largura",
+            "s014#/campos_explicitos/2",
+            "s029#/campos_explicitos/2",
+            "s040#/campos_explicitos/2"
+          ]
+        },
+        {
+          "value": 0.002,
+          "sources": [
+            "s612#/normalizacao/campos/largura"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/2/geometry/height",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.47,
+      "alternatives": [
+        {
+          "value": 0.47,
+          "sources": [
+            "s065#/normalizacao/campos/altura",
+            "s255#/normalizacao/campos/altura",
+            "s868#/normalizacao/campos/altura",
+            "s1007#/normalizacao/campos/altura",
+            "s014#/campos_explicitos/3",
+            "s029#/campos_explicitos/3",
+            "s040#/campos_explicitos/3"
+          ]
+        },
+        {
+          "value": 0.005,
+          "sources": [
+            "s612#/normalizacao/campos/altura"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/2/geometry/top_flange_width",
+      "resolution": "unresolved",
+      "selected": null,
+      "alternatives": [
+        {
+          "value": 0.575,
+          "sources": [
+            "s065#/normalizacao/campos/mesa_superior",
+            "s255#/normalizacao/campos/mesa_superior",
+            "s1007#/normalizacao/campos/mesa_superior"
+          ]
+        },
+        {
+          "value": 0.006,
+          "sources": [
+            "s612#/normalizacao/campos/mesa_superior"
+          ]
+        },
+        {
+          "value": 0.0,
+          "sources": [
+            "s868#/normalizacao/campos/mesa_superior"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "conflicting_values",
+      "path": "/beam/spans/2/geometry/top_slab_thickness",
+      "resolution": "preferred_reference_geometry",
+      "selected": 0.12,
+      "alternatives": [
+        {
+          "value": 0.12,
+          "sources": [
+            "s065#/normalizacao/campos/espessura_laje_superior",
+            "s255#/normalizacao/campos/espessura_laje_superior",
+            "s868#/normalizacao/campos/espessura_laje_superior",
+            "s1007#/normalizacao/campos/espessura_laje_superior"
+          ]
+        },
+        {
+          "value": 0.001,
+          "sources": [
+            "s612#/normalizacao/campos/espessura_laje_superior"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "zero_length_documentary_spans",
+      "path": "/beam/spans",
+      "reason": "Registros de comprimento zero permanecem no raw; nao sao convertidos em vaos fisicos.",
+      "report_span_ids": [
+        {
+          "file": "RELDTFNG.LST",
+          "span": 1
+        },
+        {
+          "file": "RELDTFNG.LST",
+          "span": 5
+        },
+        {
+          "file": "RELDTFPS.LST",
+          "span": 1
+        },
+        {
+          "file": "RELDTFPS.LST",
+          "span": 5
+        },
+        {
+          "file": "RELDTVET.LST",
+          "span": 1
+        },
+        {
+          "file": "RELDTVET.LST",
+          "span": 5
+        }
+      ],
+      "sources": [
+        "s062#/normalizacao/campos/comprimento",
+        "s066#/normalizacao/campos/comprimento",
+        "s252#/normalizacao/campos/comprimento",
+        "s256#/normalizacao/campos/comprimento",
+        "s609#/normalizacao/campos/comprimento",
+        "s613#/normalizacao/campos/comprimento"
+      ]
+    },
+    {
+      "code": "reaction_variants",
+      "path": "/beam/support_reactions",
+      "support_name": "P28",
+      "reason": "Paired max/min observations retained by report; no rounding tolerance or envelope selection.",
+      "sources": [
+        "s924#/normalizacao",
+        "s984#/normalizacao",
+        "s1025#/normalizacao"
+      ]
+    },
+    {
+      "code": "reaction_variants",
+      "path": "/beam/support_reactions",
+      "support_name": "P29",
+      "reason": "Paired max/min observations retained by report; no rounding tolerance or envelope selection.",
+      "sources": [
+        "s925#/normalizacao",
+        "s985#/normalizacao",
+        "s1026#/normalizacao"
+      ]
+    },
+    {
+      "code": "reaction_variants",
+      "path": "/beam/support_reactions",
+      "support_name": "P30",
+      "reason": "Paired max/min observations retained by report; no rounding tolerance or envelope selection.",
+      "sources": [
+        "s926#/normalizacao",
+        "s986#/normalizacao",
+        "s1027#/normalizacao"
+      ]
+    },
+    {
+      "code": "reaction_variants",
+      "path": "/beam/support_reactions",
+      "support_name": "V616",
+      "reason": "Paired max/min observations retained by report; no rounding tolerance or envelope selection.",
+      "sources": [
+        "s927#/normalizacao",
+        "s987#/normalizacao",
+        "s1028#/normalizacao"
+      ]
+    }
+  ],
+  "unassigned_forces": [],
+  "provenance": {
+    "/beam/materials/concrete/fck": [
+      "s044#/campos_explicitos/0",
+      "s137#/campos_explicitos/1",
+      "s277#/campos_explicitos/1",
+      "s606#/campos_explicitos/0"
+    ],
+    "/beam/materials/aggregate_max_size": [
+      "s126#/campos_explicitos/3",
+      "s127#/campos_explicitos/3",
+      "s128#/campos_explicitos/3",
+      "s129#/campos_explicitos/3",
+      "s130#/campos_explicitos/3",
+      "s131#/campos_explicitos/3",
+      "s132#/campos_explicitos/3",
+      "s133#/campos_explicitos/3"
+    ],
+    "/beam/materials/steel/grade": [
+      "s044#/campos_explicitos/3",
+      "s279#/campos_explicitos/2",
+      "s606#/campos_explicitos/3"
+    ],
+    "/beam/cover/general": [
+      "s861#/campos_explicitos/1"
+    ],
+    "/beam/cover/top": [
+      "s862#/campos_explicitos/0"
+    ],
+    "/beam/cover/bottom": [
+      "s862#/campos_explicitos/1"
+    ],
+    "/beam/cover/soil_contact_parameter": [
+      "s862#/campos_explicitos/2"
+    ],
+    "/beam/cover/beam_parameter": [
+      "s861#/campos_explicitos/2"
+    ],
+    "/beam/cover/compression_reinforcement": [
+      "s045#/campos_explicitos/0"
+    ],
+    "/beam/cover/additional_top": [
+      "s001#/campos_explicitos/1",
+      "s020#/campos_explicitos/1",
+      "s043#/campos_explicitos/2"
+    ],
+    "/beam/cover/unspecified_face": [
+      "s043#/campos_explicitos/1",
+      "s605#/campos_explicitos/1",
+      "s001#/campos_explicitos/2",
+      "s020#/campos_explicitos/2",
+      "s035#/campos_explicitos/1",
+      "s241#/campos_explicitos/1"
+    ],
+    "/beam/spans/0/report_span_ids/RELDTVGS.LST": [
+      "s866#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/1/report_span_ids/RELDTVGS.LST": [
+      "s867#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/2/report_span_ids/RELDTVGS.LST": [
+      "s868#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/0/report_span_ids/VGESFS.LST": [
+      "s1005#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/1/report_span_ids/VGESFS.LST": [
+      "s1006#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/2/report_span_ids/VGESFS.LST": [
+      "s1007#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/0/support_ids": [
+      "s871#/normalizacao/campos/nome",
+      "s872#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/1/support_ids": [
+      "s872#/normalizacao/campos/nome",
+      "s873#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/2/support_ids": [
+      "s873#/normalizacao/campos/nome",
+      "s874#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/0/report_span_ids/RELDTFNG.LST": [
+      "s063#/normalizacao/campos/vao",
+      "s069#/normalizacao/campos/nome",
+      "s070#/normalizacao/campos/nome",
+      "s071#/normalizacao/campos/nome",
+      "s072#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/1/report_span_ids/RELDTFNG.LST": [
+      "s064#/normalizacao/campos/vao",
+      "s069#/normalizacao/campos/nome",
+      "s070#/normalizacao/campos/nome",
+      "s071#/normalizacao/campos/nome",
+      "s072#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/2/report_span_ids/RELDTFNG.LST": [
+      "s065#/normalizacao/campos/vao",
+      "s069#/normalizacao/campos/nome",
+      "s070#/normalizacao/campos/nome",
+      "s071#/normalizacao/campos/nome",
+      "s072#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/0/report_span_ids/RELDTFPS.LST": [
+      "s253#/normalizacao/campos/vao",
+      "s259#/normalizacao/campos/nome",
+      "s260#/normalizacao/campos/nome",
+      "s261#/normalizacao/campos/nome",
+      "s262#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/1/report_span_ids/RELDTFPS.LST": [
+      "s254#/normalizacao/campos/vao",
+      "s259#/normalizacao/campos/nome",
+      "s260#/normalizacao/campos/nome",
+      "s261#/normalizacao/campos/nome",
+      "s262#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/2/report_span_ids/RELDTFPS.LST": [
+      "s255#/normalizacao/campos/vao",
+      "s259#/normalizacao/campos/nome",
+      "s260#/normalizacao/campos/nome",
+      "s261#/normalizacao/campos/nome",
+      "s262#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/0/report_span_ids/RELDTVET.LST": [
+      "s610#/normalizacao/campos/vao",
+      "s634#/normalizacao/campos/nome",
+      "s635#/normalizacao/campos/nome",
+      "s636#/normalizacao/campos/nome",
+      "s637#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/1/report_span_ids/RELDTVET.LST": [
+      "s611#/normalizacao/campos/vao",
+      "s634#/normalizacao/campos/nome",
+      "s635#/normalizacao/campos/nome",
+      "s636#/normalizacao/campos/nome",
+      "s637#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/2/report_span_ids/RELDTVET.LST": [
+      "s612#/normalizacao/campos/vao",
+      "s634#/normalizacao/campos/nome",
+      "s635#/normalizacao/campos/nome",
+      "s636#/normalizacao/campos/nome",
+      "s637#/normalizacao/campos/nome"
+    ],
+    "/beam/spans/0/report_span_ids/ESTRIB.LST": [
+      "s002#/campos_explicitos/0"
+    ],
+    "/beam/spans/1/report_span_ids/ESTRIB.LST": [
+      "s008#/campos_explicitos/0"
+    ],
+    "/beam/spans/2/report_span_ids/ESTRIB.LST": [
+      "s014#/campos_explicitos/0"
+    ],
+    "/beam/spans/0/report_span_ids/FLEXNG.LST": [
+      "s021#/campos_explicitos/0"
+    ],
+    "/beam/spans/1/report_span_ids/FLEXNG.LST": [
+      "s025#/campos_explicitos/0"
+    ],
+    "/beam/spans/2/report_span_ids/FLEXNG.LST": [
+      "s029#/campos_explicitos/0"
+    ],
+    "/beam/spans/0/report_span_ids/FLEXPS.LST": [
+      "s036#/campos_explicitos/0"
+    ],
+    "/beam/spans/1/report_span_ids/FLEXPS.LST": [
+      "s038#/campos_explicitos/0"
+    ],
+    "/beam/spans/2/report_span_ids/FLEXPS.LST": [
+      "s040#/campos_explicitos/0"
+    ],
+    "/beam/spans/0/id": [
+      "s866#/normalizacao/campos/vao",
+      "s1005#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/0/geometry/length": [
+      "s063#/normalizacao/campos/comprimento",
+      "s253#/normalizacao/campos/comprimento",
+      "s866#/normalizacao/campos/comprimento",
+      "s1005#/normalizacao/campos/comprimento"
+    ],
+    "/beam/spans/0/geometry/width": [
+      "s063#/normalizacao/campos/largura",
+      "s253#/normalizacao/campos/largura",
+      "s866#/normalizacao/campos/largura",
+      "s1005#/normalizacao/campos/largura",
+      "s002#/campos_explicitos/2",
+      "s021#/campos_explicitos/2",
+      "s036#/campos_explicitos/2"
+    ],
+    "/beam/spans/0/geometry/height": [
+      "s063#/normalizacao/campos/altura",
+      "s253#/normalizacao/campos/altura",
+      "s866#/normalizacao/campos/altura",
+      "s1005#/normalizacao/campos/altura",
+      "s002#/campos_explicitos/3",
+      "s021#/campos_explicitos/3",
+      "s036#/campos_explicitos/3"
+    ],
+    "/beam/spans/0/geometry/top_flange_width": [
+      "s063#/normalizacao/campos/mesa_superior",
+      "s1005#/normalizacao/campos/mesa_superior",
+      "s253#/normalizacao/campos/mesa_superior",
+      "s610#/normalizacao/campos/mesa_superior",
+      "s866#/normalizacao/campos/mesa_superior"
+    ],
+    "/beam/spans/0/geometry/bottom_flange_width": [
+      "s063#/normalizacao/campos/mesa_inferior",
+      "s253#/normalizacao/campos/mesa_inferior",
+      "s610#/normalizacao/campos/mesa_inferior",
+      "s866#/normalizacao/campos/mesa_inferior",
+      "s1005#/normalizacao/campos/mesa_inferior"
+    ],
+    "/beam/spans/0/geometry/section_type": [
+      "s063#/normalizacao/campos/tipo_secao",
+      "s253#/normalizacao/campos/tipo_secao",
+      "s610#/normalizacao/campos/tipo_secao",
+      "s866#/normalizacao/campos/tipo_secao",
+      "s1005#/normalizacao/campos/tipo_secao"
+    ],
+    "/beam/spans/0/geometry/top_slab_thickness": [
+      "s063#/normalizacao/campos/espessura_laje_superior",
+      "s253#/normalizacao/campos/espessura_laje_superior",
+      "s866#/normalizacao/campos/espessura_laje_superior",
+      "s1005#/normalizacao/campos/espessura_laje_superior"
+    ],
+    "/beam/spans/0/geometry/bottom_slab_thickness": [
+      "s063#/normalizacao/campos/espessura_laje_inferior",
+      "s253#/normalizacao/campos/espessura_laje_inferior",
+      "s610#/normalizacao/campos/espessura_laje_inferior",
+      "s866#/normalizacao/campos/espessura_laje_inferior",
+      "s1005#/normalizacao/campos/espessura_laje_inferior"
+    ],
+    "/beam/spans/0/geometry/top_face_to_axis": [
+      "s063#/normalizacao/campos/face_superior_eixo",
+      "s253#/normalizacao/campos/face_superior_eixo",
+      "s866#/normalizacao/campos/face_superior_eixo",
+      "s1005#/normalizacao/campos/face_superior_eixo"
+    ],
+    "/beam/spans/0/geometry/side_face_to_axis": [
+      "s063#/normalizacao/campos/face_lateral_eixo",
+      "s866#/normalizacao/campos/face_lateral_eixo",
+      "s1005#/normalizacao/campos/face_lateral_eixo"
+    ],
+    "/beam/spans/1/id": [
+      "s867#/normalizacao/campos/vao",
+      "s1006#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/1/geometry/length": [
+      "s064#/normalizacao/campos/comprimento",
+      "s254#/normalizacao/campos/comprimento",
+      "s867#/normalizacao/campos/comprimento",
+      "s1006#/normalizacao/campos/comprimento",
+      "s008#/campos_explicitos/1",
+      "s025#/campos_explicitos/1",
+      "s038#/campos_explicitos/1"
+    ],
+    "/beam/spans/1/geometry/width": [
+      "s064#/normalizacao/campos/largura",
+      "s254#/normalizacao/campos/largura",
+      "s867#/normalizacao/campos/largura",
+      "s1006#/normalizacao/campos/largura",
+      "s008#/campos_explicitos/2",
+      "s025#/campos_explicitos/2",
+      "s038#/campos_explicitos/2"
+    ],
+    "/beam/spans/1/geometry/height": [
+      "s064#/normalizacao/campos/altura",
+      "s254#/normalizacao/campos/altura",
+      "s867#/normalizacao/campos/altura",
+      "s1006#/normalizacao/campos/altura",
+      "s008#/campos_explicitos/3",
+      "s025#/campos_explicitos/3",
+      "s038#/campos_explicitos/3"
+    ],
+    "/beam/spans/1/geometry/top_flange_width": [
+      "s064#/normalizacao/campos/mesa_superior",
+      "s1006#/normalizacao/campos/mesa_superior",
+      "s254#/normalizacao/campos/mesa_superior",
+      "s611#/normalizacao/campos/mesa_superior",
+      "s867#/normalizacao/campos/mesa_superior"
+    ],
+    "/beam/spans/1/geometry/bottom_flange_width": [
+      "s064#/normalizacao/campos/mesa_inferior",
+      "s254#/normalizacao/campos/mesa_inferior",
+      "s611#/normalizacao/campos/mesa_inferior",
+      "s867#/normalizacao/campos/mesa_inferior",
+      "s1006#/normalizacao/campos/mesa_inferior"
+    ],
+    "/beam/spans/1/geometry/section_type": [
+      "s064#/normalizacao/campos/tipo_secao",
+      "s254#/normalizacao/campos/tipo_secao",
+      "s611#/normalizacao/campos/tipo_secao",
+      "s867#/normalizacao/campos/tipo_secao",
+      "s1006#/normalizacao/campos/tipo_secao"
+    ],
+    "/beam/spans/1/geometry/top_slab_thickness": [
+      "s064#/normalizacao/campos/espessura_laje_superior",
+      "s254#/normalizacao/campos/espessura_laje_superior",
+      "s867#/normalizacao/campos/espessura_laje_superior",
+      "s1006#/normalizacao/campos/espessura_laje_superior"
+    ],
+    "/beam/spans/1/geometry/bottom_slab_thickness": [
+      "s064#/normalizacao/campos/espessura_laje_inferior",
+      "s254#/normalizacao/campos/espessura_laje_inferior",
+      "s611#/normalizacao/campos/espessura_laje_inferior",
+      "s867#/normalizacao/campos/espessura_laje_inferior",
+      "s1006#/normalizacao/campos/espessura_laje_inferior"
+    ],
+    "/beam/spans/1/geometry/top_face_to_axis": [
+      "s064#/normalizacao/campos/face_superior_eixo",
+      "s254#/normalizacao/campos/face_superior_eixo",
+      "s867#/normalizacao/campos/face_superior_eixo",
+      "s1006#/normalizacao/campos/face_superior_eixo"
+    ],
+    "/beam/spans/1/geometry/side_face_to_axis": [
+      "s064#/normalizacao/campos/face_lateral_eixo",
+      "s867#/normalizacao/campos/face_lateral_eixo",
+      "s1006#/normalizacao/campos/face_lateral_eixo"
+    ],
+    "/beam/spans/2/id": [
+      "s868#/normalizacao/campos/vao",
+      "s1007#/normalizacao/campos/vao"
+    ],
+    "/beam/spans/2/geometry/length": [
+      "s065#/normalizacao/campos/comprimento",
+      "s255#/normalizacao/campos/comprimento",
+      "s868#/normalizacao/campos/comprimento",
+      "s1007#/normalizacao/campos/comprimento",
+      "s014#/campos_explicitos/1",
+      "s029#/campos_explicitos/1",
+      "s040#/campos_explicitos/1"
+    ],
+    "/beam/spans/2/geometry/width": [
+      "s065#/normalizacao/campos/largura",
+      "s255#/normalizacao/campos/largura",
+      "s868#/normalizacao/campos/largura",
+      "s1007#/normalizacao/campos/largura",
+      "s014#/campos_explicitos/2",
+      "s029#/campos_explicitos/2",
+      "s040#/campos_explicitos/2"
+    ],
+    "/beam/spans/2/geometry/height": [
+      "s065#/normalizacao/campos/altura",
+      "s255#/normalizacao/campos/altura",
+      "s868#/normalizacao/campos/altura",
+      "s1007#/normalizacao/campos/altura",
+      "s014#/campos_explicitos/3",
+      "s029#/campos_explicitos/3",
+      "s040#/campos_explicitos/3"
+    ],
+    "/beam/spans/2/geometry/top_flange_width": [
+      "s065#/normalizacao/campos/mesa_superior",
+      "s1007#/normalizacao/campos/mesa_superior",
+      "s255#/normalizacao/campos/mesa_superior",
+      "s612#/normalizacao/campos/mesa_superior",
+      "s868#/normalizacao/campos/mesa_superior"
+    ],
+    "/beam/spans/2/geometry/bottom_flange_width": [
+      "s065#/normalizacao/campos/mesa_inferior",
+      "s255#/normalizacao/campos/mesa_inferior",
+      "s612#/normalizacao/campos/mesa_inferior",
+      "s868#/normalizacao/campos/mesa_inferior",
+      "s1007#/normalizacao/campos/mesa_inferior"
+    ],
+    "/beam/spans/2/geometry/section_type": [
+      "s065#/normalizacao/campos/tipo_secao",
+      "s255#/normalizacao/campos/tipo_secao",
+      "s612#/normalizacao/campos/tipo_secao",
+      "s868#/normalizacao/campos/tipo_secao",
+      "s1007#/normalizacao/campos/tipo_secao"
+    ],
+    "/beam/spans/2/geometry/top_slab_thickness": [
+      "s065#/normalizacao/campos/espessura_laje_superior",
+      "s255#/normalizacao/campos/espessura_laje_superior",
+      "s868#/normalizacao/campos/espessura_laje_superior",
+      "s1007#/normalizacao/campos/espessura_laje_superior"
+    ],
+    "/beam/spans/2/geometry/bottom_slab_thickness": [
+      "s065#/normalizacao/campos/espessura_laje_inferior",
+      "s255#/normalizacao/campos/espessura_laje_inferior",
+      "s612#/normalizacao/campos/espessura_laje_inferior",
+      "s868#/normalizacao/campos/espessura_laje_inferior",
+      "s1007#/normalizacao/campos/espessura_laje_inferior"
+    ],
+    "/beam/spans/2/geometry/top_face_to_axis": [
+      "s065#/normalizacao/campos/face_superior_eixo",
+      "s255#/normalizacao/campos/face_superior_eixo",
+      "s868#/normalizacao/campos/face_superior_eixo",
+      "s1007#/normalizacao/campos/face_superior_eixo"
+    ],
+    "/beam/spans/2/geometry/side_face_to_axis": [
+      "s065#/normalizacao/campos/face_lateral_eixo",
+      "s868#/normalizacao/campos/face_lateral_eixo",
+      "s1007#/normalizacao/campos/face_lateral_eixo"
+    ],
+    "/beam/supports/0/id": [
+      "s069#/normalizacao/campos/nome",
+      "s259#/normalizacao/campos/nome",
+      "s634#/normalizacao/campos/nome",
+      "s871#/normalizacao/campos/nome"
+    ],
+    "/beam/supports/0/width": [
+      "s069#/normalizacao/campos/largura",
+      "s259#/normalizacao/campos/largura",
+      "s634#/normalizacao/campos/largura",
+      "s871#/normalizacao/campos/largura"
+    ],
+    "/beam/supports/0/eccentricity": [
+      "s069#/normalizacao/campos/excentricidade",
+      "s259#/normalizacao/campos/excentricidade",
+      "s634#/normalizacao/campos/excentricidade",
+      "s871#/normalizacao/campos/excentricidade"
+    ],
+    "/beam/supports/0/continuity_code": [
+      "s069#/normalizacao/campos/continuidade",
+      "s259#/normalizacao/campos/continuidade",
+      "s634#/normalizacao/campos/continuidade",
+      "s871#/normalizacao/campos/continuidade"
+    ],
+    "/beam/supports/0/lever_code": [
+      "s069#/normalizacao/campos/alavanca",
+      "s259#/normalizacao/campos/alavanca",
+      "s871#/normalizacao/campos/alavanca"
+    ],
+    "/beam/supports/0/upper_dimension": [
+      "s871#/normalizacao/campos/dimensao_superior"
+    ],
+    "/beam/supports/0/lower_thickness": [
+      "s871#/normalizacao/campos/espessura_inferior"
+    ],
+    "/beam/supports/0/upper_thickness": [
+      "s871#/normalizacao/campos/espessura_superior"
+    ],
+    "/beam/supports/1/id": [
+      "s070#/normalizacao/campos/nome",
+      "s260#/normalizacao/campos/nome",
+      "s635#/normalizacao/campos/nome",
+      "s872#/normalizacao/campos/nome"
+    ],
+    "/beam/supports/1/width": [
+      "s070#/normalizacao/campos/largura",
+      "s260#/normalizacao/campos/largura",
+      "s635#/normalizacao/campos/largura",
+      "s872#/normalizacao/campos/largura"
+    ],
+    "/beam/supports/1/eccentricity": [
+      "s070#/normalizacao/campos/excentricidade",
+      "s260#/normalizacao/campos/excentricidade",
+      "s635#/normalizacao/campos/excentricidade",
+      "s872#/normalizacao/campos/excentricidade"
+    ],
+    "/beam/supports/1/continuity_code": [
+      "s070#/normalizacao/campos/continuidade",
+      "s260#/normalizacao/campos/continuidade",
+      "s635#/normalizacao/campos/continuidade",
+      "s872#/normalizacao/campos/continuidade"
+    ],
+    "/beam/supports/1/lever_code": [
+      "s070#/normalizacao/campos/alavanca",
+      "s260#/normalizacao/campos/alavanca",
+      "s872#/normalizacao/campos/alavanca"
+    ],
+    "/beam/supports/1/upper_dimension": [
+      "s872#/normalizacao/campos/dimensao_superior"
+    ],
+    "/beam/supports/1/lower_thickness": [
+      "s872#/normalizacao/campos/espessura_inferior"
+    ],
+    "/beam/supports/1/upper_thickness": [
+      "s872#/normalizacao/campos/espessura_superior"
+    ],
+    "/beam/supports/2/id": [
+      "s071#/normalizacao/campos/nome",
+      "s261#/normalizacao/campos/nome",
+      "s636#/normalizacao/campos/nome",
+      "s873#/normalizacao/campos/nome"
+    ],
+    "/beam/supports/2/width": [
+      "s071#/normalizacao/campos/largura",
+      "s261#/normalizacao/campos/largura",
+      "s636#/normalizacao/campos/largura",
+      "s873#/normalizacao/campos/largura"
+    ],
+    "/beam/supports/2/eccentricity": [
+      "s071#/normalizacao/campos/excentricidade",
+      "s261#/normalizacao/campos/excentricidade",
+      "s636#/normalizacao/campos/excentricidade",
+      "s873#/normalizacao/campos/excentricidade"
+    ],
+    "/beam/supports/2/continuity_code": [
+      "s071#/normalizacao/campos/continuidade",
+      "s261#/normalizacao/campos/continuidade",
+      "s636#/normalizacao/campos/continuidade",
+      "s873#/normalizacao/campos/continuidade"
+    ],
+    "/beam/supports/2/lever_code": [
+      "s071#/normalizacao/campos/alavanca",
+      "s261#/normalizacao/campos/alavanca",
+      "s873#/normalizacao/campos/alavanca"
+    ],
+    "/beam/supports/2/upper_dimension": [
+      "s873#/normalizacao/campos/dimensao_superior"
+    ],
+    "/beam/supports/2/lower_thickness": [
+      "s873#/normalizacao/campos/espessura_inferior"
+    ],
+    "/beam/supports/2/upper_thickness": [
+      "s873#/normalizacao/campos/espessura_superior"
+    ],
+    "/beam/supports/3/id": [
+      "s072#/normalizacao/campos/nome",
+      "s262#/normalizacao/campos/nome",
+      "s637#/normalizacao/campos/nome",
+      "s874#/normalizacao/campos/nome"
+    ],
+    "/beam/supports/3/width": [
+      "s072#/normalizacao/campos/largura",
+      "s262#/normalizacao/campos/largura",
+      "s637#/normalizacao/campos/largura",
+      "s874#/normalizacao/campos/largura"
+    ],
+    "/beam/supports/3/eccentricity": [
+      "s072#/normalizacao/campos/excentricidade",
+      "s262#/normalizacao/campos/excentricidade",
+      "s637#/normalizacao/campos/excentricidade",
+      "s874#/normalizacao/campos/excentricidade"
+    ],
+    "/beam/supports/3/continuity_code": [
+      "s072#/normalizacao/campos/continuidade",
+      "s262#/normalizacao/campos/continuidade",
+      "s637#/normalizacao/campos/continuidade",
+      "s874#/normalizacao/campos/continuidade"
+    ],
+    "/beam/supports/3/lever_code": [
+      "s072#/normalizacao/campos/alavanca",
+      "s262#/normalizacao/campos/alavanca",
+      "s874#/normalizacao/campos/alavanca"
+    ],
+    "/beam/supports/3/upper_dimension": [
+      "s874#/normalizacao/campos/dimensao_superior"
+    ],
+    "/beam/supports/3/lower_thickness": [
+      "s874#/normalizacao/campos/espessura_inferior"
+    ],
+    "/beam/supports/3/upper_thickness": [
+      "s874#/normalizacao/campos/espessura_superior"
+    ],
+    "/beam/spans/0/geometry/support_axis_length": [
+      "s063#/normalizacao/campos/comprimento",
+      "s069#/normalizacao/campos/excentricidade",
+      "s070#/normalizacao/campos/excentricidade",
+      "s1005#/normalizacao/campos/comprimento",
+      "s253#/normalizacao/campos/comprimento",
+      "s259#/normalizacao/campos/excentricidade",
+      "s260#/normalizacao/campos/excentricidade",
+      "s634#/normalizacao/campos/excentricidade",
+      "s635#/normalizacao/campos/excentricidade",
+      "s866#/normalizacao/campos/comprimento",
+      "s871#/normalizacao/campos/excentricidade",
+      "s872#/normalizacao/campos/excentricidade"
+    ],
+    "/beam/spans/0/geometry/clear_span_length": [
+      "s063#/normalizacao/campos/comprimento",
+      "s069#/normalizacao/campos/excentricidade",
+      "s069#/normalizacao/campos/largura",
+      "s070#/normalizacao/campos/excentricidade",
+      "s070#/normalizacao/campos/largura",
+      "s1005#/normalizacao/campos/comprimento",
+      "s253#/normalizacao/campos/comprimento",
+      "s259#/normalizacao/campos/excentricidade",
+      "s259#/normalizacao/campos/largura",
+      "s260#/normalizacao/campos/excentricidade",
+      "s260#/normalizacao/campos/largura",
+      "s634#/normalizacao/campos/excentricidade",
+      "s634#/normalizacao/campos/largura",
+      "s635#/normalizacao/campos/excentricidade",
+      "s635#/normalizacao/campos/largura",
+      "s866#/normalizacao/campos/comprimento",
+      "s871#/normalizacao/campos/excentricidade",
+      "s871#/normalizacao/campos/largura",
+      "s872#/normalizacao/campos/excentricidade",
+      "s872#/normalizacao/campos/largura"
+    ],
+    "/beam/spans/1/geometry/support_axis_length": [
+      "s008#/campos_explicitos/1",
+      "s025#/campos_explicitos/1",
+      "s038#/campos_explicitos/1",
+      "s064#/normalizacao/campos/comprimento",
+      "s070#/normalizacao/campos/excentricidade",
+      "s071#/normalizacao/campos/excentricidade",
+      "s1006#/normalizacao/campos/comprimento",
+      "s254#/normalizacao/campos/comprimento",
+      "s260#/normalizacao/campos/excentricidade",
+      "s261#/normalizacao/campos/excentricidade",
+      "s635#/normalizacao/campos/excentricidade",
+      "s636#/normalizacao/campos/excentricidade",
+      "s867#/normalizacao/campos/comprimento",
+      "s872#/normalizacao/campos/excentricidade",
+      "s873#/normalizacao/campos/excentricidade"
+    ],
+    "/beam/spans/1/geometry/clear_span_length": [
+      "s008#/campos_explicitos/1",
+      "s025#/campos_explicitos/1",
+      "s038#/campos_explicitos/1",
+      "s064#/normalizacao/campos/comprimento",
+      "s070#/normalizacao/campos/excentricidade",
+      "s070#/normalizacao/campos/largura",
+      "s071#/normalizacao/campos/excentricidade",
+      "s071#/normalizacao/campos/largura",
+      "s1006#/normalizacao/campos/comprimento",
+      "s254#/normalizacao/campos/comprimento",
+      "s260#/normalizacao/campos/excentricidade",
+      "s260#/normalizacao/campos/largura",
+      "s261#/normalizacao/campos/excentricidade",
+      "s261#/normalizacao/campos/largura",
+      "s635#/normalizacao/campos/excentricidade",
+      "s635#/normalizacao/campos/largura",
+      "s636#/normalizacao/campos/excentricidade",
+      "s636#/normalizacao/campos/largura",
+      "s867#/normalizacao/campos/comprimento",
+      "s872#/normalizacao/campos/excentricidade",
+      "s872#/normalizacao/campos/largura",
+      "s873#/normalizacao/campos/excentricidade",
+      "s873#/normalizacao/campos/largura"
+    ],
+    "/beam/spans/2/geometry/support_axis_length": [
+      "s014#/campos_explicitos/1",
+      "s029#/campos_explicitos/1",
+      "s040#/campos_explicitos/1",
+      "s065#/normalizacao/campos/comprimento",
+      "s071#/normalizacao/campos/excentricidade",
+      "s072#/normalizacao/campos/excentricidade",
+      "s1007#/normalizacao/campos/comprimento",
+      "s255#/normalizacao/campos/comprimento",
+      "s261#/normalizacao/campos/excentricidade",
+      "s262#/normalizacao/campos/excentricidade",
+      "s636#/normalizacao/campos/excentricidade",
+      "s637#/normalizacao/campos/excentricidade",
+      "s868#/normalizacao/campos/comprimento",
+      "s873#/normalizacao/campos/excentricidade",
+      "s874#/normalizacao/campos/excentricidade"
+    ],
+    "/beam/spans/2/geometry/clear_span_length": [
+      "s014#/campos_explicitos/1",
+      "s029#/campos_explicitos/1",
+      "s040#/campos_explicitos/1",
+      "s065#/normalizacao/campos/comprimento",
+      "s071#/normalizacao/campos/excentricidade",
+      "s071#/normalizacao/campos/largura",
+      "s072#/normalizacao/campos/excentricidade",
+      "s072#/normalizacao/campos/largura",
+      "s1007#/normalizacao/campos/comprimento",
+      "s255#/normalizacao/campos/comprimento",
+      "s261#/normalizacao/campos/excentricidade",
+      "s261#/normalizacao/campos/largura",
+      "s262#/normalizacao/campos/excentricidade",
+      "s262#/normalizacao/campos/largura",
+      "s636#/normalizacao/campos/excentricidade",
+      "s636#/normalizacao/campos/largura",
+      "s637#/normalizacao/campos/excentricidade",
+      "s637#/normalizacao/campos/largura",
+      "s868#/normalizacao/campos/comprimento",
+      "s873#/normalizacao/campos/excentricidade",
+      "s873#/normalizacao/campos/largura",
+      "s874#/normalizacao/campos/excentricidade",
+      "s874#/normalizacao/campos/largura"
+    ],
+    "/beam/support_reactions/0/max": [
+      "s924#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/0/min": [
+      "s924#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/0/reported_support_name": [
+      "s924#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/0/support_id": [
+      "s924#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/1/max": [
+      "s925#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/1/min": [
+      "s925#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/1/reported_support_name": [
+      "s925#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/1/support_id": [
+      "s925#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/2/max": [
+      "s926#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/2/min": [
+      "s926#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/2/reported_support_name": [
+      "s926#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/2/support_id": [
+      "s926#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/3/max": [
+      "s927#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/3/min": [
+      "s927#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/3/reported_support_name": [
+      "s927#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/3/support_id": [
+      "s927#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/4/max": [
+      "s984#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/4/min": [
+      "s984#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/4/reported_support_name": [
+      "s984#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/4/support_id": [
+      "s984#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/5/max": [
+      "s985#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/5/min": [
+      "s985#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/5/reported_support_name": [
+      "s985#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/5/support_id": [
+      "s985#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/6/max": [
+      "s986#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/6/min": [
+      "s986#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/6/reported_support_name": [
+      "s986#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/6/support_id": [
+      "s986#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/7/max": [
+      "s987#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/7/min": [
+      "s987#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/7/reported_support_name": [
+      "s987#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/7/support_id": [
+      "s987#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/8/max": [
+      "s1025#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/8/min": [
+      "s1025#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/8/reported_support_name": [
+      "s1025#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/8/support_id": [
+      "s1025#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/9/max": [
+      "s1026#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/9/min": [
+      "s1026#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/9/reported_support_name": [
+      "s1026#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/9/support_id": [
+      "s1026#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/10/max": [
+      "s1027#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/10/min": [
+      "s1027#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/10/reported_support_name": [
+      "s1027#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/10/support_id": [
+      "s1027#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/11/max": [
+      "s1028#/normalizacao/campos/maxima"
+    ],
+    "/beam/support_reactions/11/min": [
+      "s1028#/normalizacao/campos/minima"
+    ],
+    "/beam/support_reactions/11/reported_support_name": [
+      "s1028#/normalizacao/campos/nome"
+    ],
+    "/beam/support_reactions/11/support_id": [
+      "s1028#/normalizacao/campos/nome"
+    ],
+    "/beam/id": [
+      "raw#/viga",
+      "s001#/campos_explicitos/0",
+      "s020#/campos_explicitos/0",
+      "s035#/campos_explicitos/0",
+      "s043#/campos_explicitos/0",
+      "s236#/campos_explicitos/0",
+      "s241#/campos_explicitos/0",
+      "s605#/campos_explicitos/0",
+      "s859#/campos_explicitos/0",
+      "s928#/campos_explicitos/0",
+      "s988#/campos_explicitos/0",
+      "s1002#/campos_explicitos/0"
+    ],
+    "/beam/number": [
+      "raw#/viga",
+      "s001#/campos_explicitos/0",
+      "s020#/campos_explicitos/0",
+      "s035#/campos_explicitos/0",
+      "s043#/campos_explicitos/0",
+      "s236#/campos_explicitos/0",
+      "s241#/campos_explicitos/0",
+      "s605#/campos_explicitos/0",
+      "s859#/campos_explicitos/0",
+      "s928#/campos_explicitos/0",
+      "s988#/campos_explicitos/0",
+      "s1002#/campos_explicitos/0"
+    ]
+  },
+  "sources": {
+    "s001": {
+      "file": "ESTRIB.LST",
+      "lines": [
+        181,
+        181
+      ],
+      "raw_pointer": "/categorias/cisalhamento/0"
+    },
+    "s002": {
+      "file": "ESTRIB.LST",
+      "lines": [
+        184,
+        184
+      ],
+      "raw_pointer": "/categorias/cisalhamento/1"
+    },
+    "s008": {
+      "file": "ESTRIB.LST",
+      "lines": [
+        191,
+        191
+      ],
+      "raw_pointer": "/categorias/cisalhamento/7"
+    },
+    "s014": {
+      "file": "ESTRIB.LST",
+      "lines": [
+        198,
+        198
+      ],
+      "raw_pointer": "/categorias/cisalhamento/13"
+    },
+    "s020": {
+      "file": "FLEXNG.LST",
+      "lines": [
+        150,
+        150
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/0"
+    },
+    "s021": {
+      "file": "FLEXNG.LST",
+      "lines": [
+        153,
+        153
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/1"
+    },
+    "s025": {
+      "file": "FLEXNG.LST",
+      "lines": [
+        158,
+        158
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/5"
+    },
+    "s029": {
+      "file": "FLEXNG.LST",
+      "lines": [
+        163,
+        163
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/9"
+    },
+    "s035": {
+      "file": "FLEXPS.LST",
+      "lines": [
+        106,
+        106
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/0"
+    },
+    "s036": {
+      "file": "FLEXPS.LST",
+      "lines": [
+        109,
+        109
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/1"
+    },
+    "s038": {
+      "file": "FLEXPS.LST",
+      "lines": [
+        112,
+        112
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/3"
+    },
+    "s040": {
+      "file": "FLEXPS.LST",
+      "lines": [
+        115,
+        115
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/5"
+    },
+    "s043": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1754,
+        1754
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/15"
+    },
+    "s044": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1756,
+        1756
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/16"
+    },
+    "s045": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1757,
+        1757
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/17"
+    },
+    "s048": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1761,
+        1761
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/20"
+    },
+    "s049": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1762,
+        1762
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/21"
+    },
+    "s050": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1763,
+        1763
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/22"
+    },
+    "s051": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1764,
+        1764
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/23"
+    },
+    "s052": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1765,
+        1765
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/24"
+    },
+    "s055": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1769,
+        1769
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/27"
+    },
+    "s056": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1770,
+        1770
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/28"
+    },
+    "s057": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1771,
+        1771
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/29"
+    },
+    "s058": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1772,
+        1772
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/30"
+    },
+    "s059": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1773,
+        1773
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/31"
+    },
+    "s062": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1777,
+        1777
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/34"
+    },
+    "s063": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1778,
+        1778
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/35"
+    },
+    "s064": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1779,
+        1779
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/36"
+    },
+    "s065": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1780,
+        1780
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/37"
+    },
+    "s066": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1781,
+        1781
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/38"
+    },
+    "s069": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1785,
+        1785
+      ],
+      "raw_pointer": "/categorias/apoios/1"
+    },
+    "s070": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1786,
+        1786
+      ],
+      "raw_pointer": "/categorias/apoios/2"
+    },
+    "s071": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1787,
+        1787
+      ],
+      "raw_pointer": "/categorias/apoios/3"
+    },
+    "s072": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1788,
+        1788
+      ],
+      "raw_pointer": "/categorias/apoios/4"
+    },
+    "s1002": {
+      "file": "VGESFS.LST",
+      "lines": [
+        242,
+        242
+      ],
+      "raw_pointer": "/outros_dados/61"
+    },
+    "s1005": {
+      "file": "VGESFS.LST",
+      "lines": [
+        246,
+        246
+      ],
+      "raw_pointer": "/categorias/geometria/51"
+    },
+    "s1006": {
+      "file": "VGESFS.LST",
+      "lines": [
+        247,
+        247
+      ],
+      "raw_pointer": "/categorias/geometria/52"
+    },
+    "s1007": {
+      "file": "VGESFS.LST",
+      "lines": [
+        248,
+        248
+      ],
+      "raw_pointer": "/categorias/geometria/53"
+    },
+    "s1009": {
+      "file": "VGESFS.LST",
+      "lines": [
+        251,
+        251
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/56"
+    },
+    "s1010": {
+      "file": "VGESFS.LST",
+      "lines": [
+        252,
+        252
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/57"
+    },
+    "s1011": {
+      "file": "VGESFS.LST",
+      "lines": [
+        253,
+        253
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/58"
+    },
+    "s1012": {
+      "file": "VGESFS.LST",
+      "lines": [
+        255,
+        255
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/59"
+    },
+    "s1013": {
+      "file": "VGESFS.LST",
+      "lines": [
+        256,
+        256
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/60"
+    },
+    "s1014": {
+      "file": "VGESFS.LST",
+      "lines": [
+        257,
+        257
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/61"
+    },
+    "s1015": {
+      "file": "VGESFS.LST",
+      "lines": [
+        259,
+        259
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/62"
+    },
+    "s1016": {
+      "file": "VGESFS.LST",
+      "lines": [
+        260,
+        260
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/63"
+    },
+    "s1017": {
+      "file": "VGESFS.LST",
+      "lines": [
+        261,
+        261
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/64"
+    },
+    "s1018": {
+      "file": "VGESFS.LST",
+      "lines": [
+        263,
+        263
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/65"
+    },
+    "s1019": {
+      "file": "VGESFS.LST",
+      "lines": [
+        264,
+        264
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/66"
+    },
+    "s1020": {
+      "file": "VGESFS.LST",
+      "lines": [
+        265,
+        265
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/67"
+    },
+    "s1021": {
+      "file": "VGESFS.LST",
+      "lines": [
+        267,
+        267
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/68"
+    },
+    "s1022": {
+      "file": "VGESFS.LST",
+      "lines": [
+        268,
+        268
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/69"
+    },
+    "s1023": {
+      "file": "VGESFS.LST",
+      "lines": [
+        269,
+        269
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/70"
+    },
+    "s1025": {
+      "file": "VGESFS.LST",
+      "lines": [
+        272,
+        272
+      ],
+      "raw_pointer": "/categorias/apoios/31"
+    },
+    "s1026": {
+      "file": "VGESFS.LST",
+      "lines": [
+        273,
+        273
+      ],
+      "raw_pointer": "/categorias/apoios/32"
+    },
+    "s1027": {
+      "file": "VGESFS.LST",
+      "lines": [
+        274,
+        274
+      ],
+      "raw_pointer": "/categorias/apoios/33"
+    },
+    "s1028": {
+      "file": "VGESFS.LST",
+      "lines": [
+        275,
+        275
+      ],
+      "raw_pointer": "/categorias/apoios/34"
+    },
+    "s126": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1853,
+        1853
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/98"
+    },
+    "s127": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1854,
+        1854
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/99"
+    },
+    "s128": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1855,
+        1855
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/100"
+    },
+    "s129": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1856,
+        1856
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/101"
+    },
+    "s130": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1857,
+        1857
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/102"
+    },
+    "s131": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1858,
+        1858
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/103"
+    },
+    "s132": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1859,
+        1859
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/104"
+    },
+    "s133": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1860,
+        1860
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/105"
+    },
+    "s137": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1866,
+        1866
+      ],
+      "raw_pointer": "/categorias/ancoragens/1"
+    },
+    "s236": {
+      "file": "RELDTFNG.LST",
+      "lines": [
+        1988,
+        1988
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_negativa/208"
+    },
+    "s241": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3447,
+        3447
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/7"
+    },
+    "s244": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3451,
+        3451
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/10"
+    },
+    "s245": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3452,
+        3452
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/11"
+    },
+    "s246": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3453,
+        3453
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/12"
+    },
+    "s247": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3454,
+        3454
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/13"
+    },
+    "s248": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3455,
+        3455
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/14"
+    },
+    "s249": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3456,
+        3456
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/15"
+    },
+    "s252": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3460,
+        3460
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/18"
+    },
+    "s253": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3461,
+        3461
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/19"
+    },
+    "s254": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3462,
+        3462
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/20"
+    },
+    "s255": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3463,
+        3463
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/21"
+    },
+    "s256": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3464,
+        3464
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/22"
+    },
+    "s259": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3468,
+        3468
+      ],
+      "raw_pointer": "/categorias/apoios/6"
+    },
+    "s260": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3469,
+        3469
+      ],
+      "raw_pointer": "/categorias/apoios/7"
+    },
+    "s261": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3470,
+        3470
+      ],
+      "raw_pointer": "/categorias/apoios/8"
+    },
+    "s262": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3471,
+        3471
+      ],
+      "raw_pointer": "/categorias/apoios/9"
+    },
+    "s277": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3489,
+        3489
+      ],
+      "raw_pointer": "/categorias/ancoragens/15"
+    },
+    "s279": {
+      "file": "RELDTFPS.LST",
+      "lines": [
+        3493,
+        3493
+      ],
+      "raw_pointer": "/categorias/dimensionamento_flexao_positiva/45"
+    },
+    "s605": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2549,
+        2549
+      ],
+      "raw_pointer": "/categorias/cisalhamento/39"
+    },
+    "s606": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2551,
+        2551
+      ],
+      "raw_pointer": "/categorias/cisalhamento/40"
+    },
+    "s609": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2555,
+        2555
+      ],
+      "raw_pointer": "/categorias/cisalhamento/43"
+    },
+    "s610": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2556,
+        2556
+      ],
+      "raw_pointer": "/categorias/cisalhamento/44"
+    },
+    "s611": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2557,
+        2557
+      ],
+      "raw_pointer": "/categorias/cisalhamento/45"
+    },
+    "s612": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2558,
+        2558
+      ],
+      "raw_pointer": "/categorias/cisalhamento/46"
+    },
+    "s613": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2559,
+        2559
+      ],
+      "raw_pointer": "/categorias/cisalhamento/47"
+    },
+    "s616": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2563,
+        2563
+      ],
+      "raw_pointer": "/categorias/cisalhamento/50"
+    },
+    "s617": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2564,
+        2564
+      ],
+      "raw_pointer": "/categorias/cisalhamento/51"
+    },
+    "s618": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2565,
+        2565
+      ],
+      "raw_pointer": "/categorias/cisalhamento/52"
+    },
+    "s619": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2566,
+        2566
+      ],
+      "raw_pointer": "/categorias/cisalhamento/53"
+    },
+    "s620": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2567,
+        2567
+      ],
+      "raw_pointer": "/categorias/cisalhamento/54"
+    },
+    "s621": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2568,
+        2568
+      ],
+      "raw_pointer": "/categorias/cisalhamento/55"
+    },
+    "s622": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2569,
+        2569
+      ],
+      "raw_pointer": "/categorias/cisalhamento/56"
+    },
+    "s623": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2570,
+        2570
+      ],
+      "raw_pointer": "/categorias/cisalhamento/57"
+    },
+    "s624": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2571,
+        2571
+      ],
+      "raw_pointer": "/categorias/cisalhamento/58"
+    },
+    "s625": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2572,
+        2572
+      ],
+      "raw_pointer": "/categorias/cisalhamento/59"
+    },
+    "s634": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2583,
+        2583
+      ],
+      "raw_pointer": "/categorias/apoios/11"
+    },
+    "s635": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2584,
+        2584
+      ],
+      "raw_pointer": "/categorias/apoios/12"
+    },
+    "s636": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2585,
+        2585
+      ],
+      "raw_pointer": "/categorias/apoios/13"
+    },
+    "s637": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2586,
+        2586
+      ],
+      "raw_pointer": "/categorias/apoios/14"
+    },
+    "s640": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2590,
+        2590
+      ],
+      "raw_pointer": "/categorias/cisalhamento/74"
+    },
+    "s641": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2591,
+        2591
+      ],
+      "raw_pointer": "/categorias/cisalhamento/75"
+    },
+    "s642": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2592,
+        2592
+      ],
+      "raw_pointer": "/categorias/cisalhamento/76"
+    },
+    "s643": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2593,
+        2593
+      ],
+      "raw_pointer": "/categorias/cisalhamento/77"
+    },
+    "s644": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2594,
+        2594
+      ],
+      "raw_pointer": "/categorias/cisalhamento/78"
+    },
+    "s653": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2605,
+        2605
+      ],
+      "raw_pointer": "/categorias/cisalhamento/87"
+    },
+    "s654": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2606,
+        2606
+      ],
+      "raw_pointer": "/categorias/cisalhamento/88"
+    },
+    "s655": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2607,
+        2607
+      ],
+      "raw_pointer": "/categorias/cisalhamento/89"
+    },
+    "s656": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2608,
+        2608
+      ],
+      "raw_pointer": "/categorias/cisalhamento/90"
+    },
+    "s657": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2609,
+        2609
+      ],
+      "raw_pointer": "/categorias/cisalhamento/91"
+    },
+    "s684": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2640,
+        2640
+      ],
+      "raw_pointer": "/categorias/cisalhamento/118"
+    },
+    "s685": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2641,
+        2641
+      ],
+      "raw_pointer": "/categorias/cisalhamento/119"
+    },
+    "s686": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2642,
+        2642
+      ],
+      "raw_pointer": "/categorias/cisalhamento/120"
+    },
+    "s687": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2643,
+        2643
+      ],
+      "raw_pointer": "/categorias/cisalhamento/121"
+    },
+    "s688": {
+      "file": "RELDTVeT.LST",
+      "lines": [
+        2644,
+        2644
+      ],
+      "raw_pointer": "/categorias/cisalhamento/122"
+    },
+    "s859": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        653,
+        653
+      ],
+      "raw_pointer": "/outros_dados/1"
+    },
+    "s861": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        656,
+        656
+      ],
+      "raw_pointer": "/categorias/geometria/39"
+    },
+    "s862": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        657,
+        657
+      ],
+      "raw_pointer": "/categorias/geometria/40"
+    },
+    "s866": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        662,
+        662
+      ],
+      "raw_pointer": "/categorias/geometria/43"
+    },
+    "s867": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        663,
+        663
+      ],
+      "raw_pointer": "/categorias/geometria/44"
+    },
+    "s868": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        664,
+        664
+      ],
+      "raw_pointer": "/categorias/geometria/45"
+    },
+    "s871": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        668,
+        668
+      ],
+      "raw_pointer": "/categorias/apoios/16"
+    },
+    "s872": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        669,
+        669
+      ],
+      "raw_pointer": "/categorias/apoios/17"
+    },
+    "s873": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        670,
+        670
+      ],
+      "raw_pointer": "/categorias/apoios/18"
+    },
+    "s874": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        671,
+        671
+      ],
+      "raw_pointer": "/categorias/apoios/19"
+    },
+    "s884": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        683,
+        683
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/41"
+    },
+    "s885": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        684,
+        684
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/42"
+    },
+    "s886": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        685,
+        685
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/43"
+    },
+    "s887": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        687,
+        687
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/44"
+    },
+    "s888": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        688,
+        688
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/45"
+    },
+    "s889": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        689,
+        689
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/46"
+    },
+    "s890": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        691,
+        691
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/47"
+    },
+    "s891": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        692,
+        692
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/48"
+    },
+    "s892": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        693,
+        693
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/49"
+    },
+    "s893": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        695,
+        695
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/50"
+    },
+    "s894": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        696,
+        696
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/51"
+    },
+    "s895": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        697,
+        697
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/52"
+    },
+    "s896": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        699,
+        699
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/53"
+    },
+    "s897": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        700,
+        700
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/54"
+    },
+    "s898": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        701,
+        701
+      ],
+      "raw_pointer": "/categorias/esforcos_ao_longo_dos_vaos/55"
+    },
+    "s924": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        730,
+        730
+      ],
+      "raw_pointer": "/categorias/apoios/23"
+    },
+    "s925": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        731,
+        731
+      ],
+      "raw_pointer": "/categorias/apoios/24"
+    },
+    "s926": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        732,
+        732
+      ],
+      "raw_pointer": "/categorias/apoios/25"
+    },
+    "s927": {
+      "file": "RELDTVGS.LST",
+      "lines": [
+        733,
+        733
+      ],
+      "raw_pointer": "/categorias/apoios/26"
+    },
+    "s928": {
+      "file": "RELGER.LST",
+      "lines": [
+        641,
+        641
+      ],
+      "raw_pointer": "/outros_dados/34"
+    },
+    "s984": {
+      "file": "RELGER.LST",
+      "lines": [
+        710,
+        710
+      ],
+      "raw_pointer": "/categorias/apoios/27"
+    },
+    "s985": {
+      "file": "RELGER.LST",
+      "lines": [
+        711,
+        711
+      ],
+      "raw_pointer": "/categorias/apoios/28"
+    },
+    "s986": {
+      "file": "RELGER.LST",
+      "lines": [
+        712,
+        712
+      ],
+      "raw_pointer": "/categorias/apoios/29"
+    },
+    "s987": {
+      "file": "RELGER.LST",
+      "lines": [
+        713,
+        713
+      ],
+      "raw_pointer": "/categorias/apoios/30"
+    },
+    "s988": {
+      "file": "RELPREDI.LST",
+      "lines": [
+        144,
+        144
+      ],
+      "raw_pointer": "/outros_dados/47"
+    }
+  },
+  "source_files": {
+    "ESTRIB.LST": {
+      "sha256": "b9ff99ace03035b8a9f6fbca74884069453d34187b299105efed14071a7b071f"
+    },
+    "FLEXNG.LST": {
+      "sha256": "3f8f24b0432dff0b119bb513409a089d5e70d0249ecc07fc7e4c5fdd558473e2"
+    },
+    "FLEXPS.LST": {
+      "sha256": "2b21325835a5c25ebc0b77837b3d87207ee1d2a55904d8ac662062b97fb12ff2"
+    },
+    "RELDTFNG.LST": {
+      "sha256": "3a269f30a059dc78a84408a9bdace6921b44ccc3256338584ae8b2cbc0190520"
+    },
+    "RELDTFPS.LST": {
+      "sha256": "46aa0dae2e5f3d0b32aa29e421a501f3349f51e85b64b3ad6f9bc73a171a22bf"
+    },
+    "RELDTVeT.LST": {
+      "sha256": "05f4b33d22eca6708d54d10914b12b407a262ae340e3eb012a72fcf912010063"
+    },
+    "RELDTVGS.LST": {
+      "sha256": "928863e96f3958c1c36bd78bf34fd6db22db04fb95052ab89aa606b3985298cc"
+    },
+    "RELGER.LST": {
+      "sha256": "4aef4825cd85019541a74dc53060396fced771a2cce9f87f44d4c150b0ad9523"
+    },
+    "RELPREDI.LST": {
+      "sha256": "39c2e48f1647a82bcd23c1bb0c9706ac35933c096f0c1c9bd55d91c0d8044cee"
+    },
+    "VGESFS.LST": {
+      "sha256": "91430aef77e9f020b718326f17679e7e6d1f56b1ea32400110bf708bec80e741"
+    }
+  },
+  "policies": {
+    "tqs_semantics": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+    "derived_lengths": "support_axis_length=L_TQS+DEPEV_left+DEPEV_right; clear_span_length=support_axis_length-b_left/2-b_right/2. Unresolved operands remain null; original geometry is preserved.",
+    "reactions": "Per-report paired max/min observations in kN, preserving signs, variants and sources; no assumed combinations or transfer to drawing supports.",
+    "reference_geometry": "RELDTVGS e VGESFS descrevem a geometria geral de entrada. Sao fontes de igual prioridade para a geometria de referencia, sem representar geometria final de detalhamento. Conflitos entre elas permanecem null; valores diferentes em etapas posteriores ficam em warnings.",
+    "span_mapping": "Numeracao de referencia vem das tabelas gerais. Tabelas detalhadas so sao relacionadas por ordem quando possuem dois registros extremos de comprimento zero, mesma quantidade de vaos positivos e mesma sequencia unica de apoios. Nao se aplica deslocamento numerico presumido.",
+    "consensus": "Sem prioridade documental especifica, somente valores iguais apos normalizacao sao consolidados. Conflitos ficam null, com alternativas e fontes em warnings. Nao se aplica tolerancia de arredondamento dos relatorios.",
+    "cover": "Cobrimentos por face, geral, adicional e parametros especificos sao propriedades distintas. Zero nao e interpretado como heranca ou ausencia. c em cabecalho permanece sem face especificada.",
+    "forces": "Series conservam sinal, secoes, lacunas e etapa documental. Somente series identicas da mesma etapa sao deduplicadas. Nao sao criadas abscissas, combinacoes ou envoltorias."
+  }
+}

@@ -17,14 +17,17 @@ def contains(region, x):
     return (a<x<b or x==a and region['include_start'] or x==b and region['include_end'])
 
 
-def compose_layers(bars):
+def compose_layers(bars, *, flexure_sign="POSITIVE"):
+    if flexure_sign not in ("POSITIVE","NEGATIVE"):
+        raise ValueError("unknown_flexure_sign")
+    function,face=("positive","lower") if flexure_sign=="POSITIVE" else ("negative","upper")
     """Índice do vetor = camada documental a partir da mesma face inferior."""
     layers={}; issues=[]
     for bar in bars:
-        if bar.get('function') != 'positive':
+        if bar.get('function') != function:
             issues.append('unresolved_function:'+str(bar['mark']))
         vector=bar.get('layers')
-        if bar.get('face')!='lower' or not isinstance(vector,list) or not vector or any(type(n)!=int or n<0 for n in vector) or sum(vector)!=bar.get('bars'):
+        if bar.get('face')!=face or not isinstance(vector,list) or not vector or any(type(n)!=int or n<0 for n in vector) or sum(vector)!=bar.get('bars'):
             issues.append('unresolved_physical_layers:'+str(bar['mark'])); continue
         diameter=bar.get('diameter_mm')
         if isinstance(diameter,bool) or not isinstance(diameter,(int,float)) or not math.isfinite(diameter) or diameter<=0:
@@ -34,8 +37,8 @@ def compose_layers(bars):
                 layers.setdefault(i,[]).append({'mark':bar['mark'],'count':n,'diameter_mm':diameter,'source':copy.deepcopy(bar.get('source'))})
     composition=[{'layer':i,'components':components} for i,components in sorted(layers.items())]
     if not bars:
-        issues.append('no_positive_reinforcement')
-    if layers and sorted(layers)!=list(range(1,max(layers)+1)):
+        issues.append('no_positive_reinforcement' if flexure_sign=='POSITIVE' else 'no_negative_reinforcement')
+    if flexure_sign=='POSITIVE' and layers and sorted(layers)!=list(range(1,max(layers)+1)):
         issues.append('unsupported_missing_physical_layer')
     for layer in composition:
         diameters={c['diameter_mm'] for c in layer['components']}
@@ -45,10 +48,10 @@ def compose_layers(bars):
             layer.update(numero_barras=sum(c['count'] for c in layer['components']),diametro_mm=next(iter(diameters)),d_cm=None)
     return {'marks':[b['mark'] for b in bars],'layers':composition,
             'status':'unresolved' if issues else 'resolved','issues':issues,
-            'layer_identity_basis':'Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola.'}
+            'layer_identity_basis':('Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola.' if flexure_sign=='POSITIVE' else 'Physical layer order from upper tension face; geometry/provenance required.')}
 
 
-def decompose_regions(bars, domain, transverse_regions=None):
+def decompose_regions(bars, domain, transverse_regions=None, *, flexure_sign="POSITIVE"):
     """Partição única: interiores por eventos + limites compatíveis ou pontuais.
 
     transverse_regions contêm intervalos comuns fechados e quatro operandos.
@@ -82,9 +85,9 @@ def decompose_regions(bars, domain, transverse_regions=None):
 
     def make(a,b,x,kind):
         active,ts,geometry=state(x)
-        geometric=compose_layers([bars[i] for i in active])
+        geometric=compose_layers([bars[i] for i in active],flexure_sign=flexure_sign)
         if any(k=='bar' for k,i in unknown):
-            geometric['status']='unresolved';geometric['issues'].append('unknown_positive_interval')
+            geometric['status']='unresolved';geometric['issues'].append('unknown_positive_interval' if flexure_sign=='POSITIVE' else 'unknown_negative_interval')
         return {'kind':kind,'x_start_m':float(a),'x_end_m':float(b),'include_start':False,'include_end':False,
                 'geometric_reinforcement':geometric,'transverse_geometry':geometry,
                 'transverse_status':'resolved' if geometry and all(v is not None for v in geometry.values()) else 'unresolved',

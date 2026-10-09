@@ -1,0 +1,121 @@
+{
+  "protected_files": 141,
+  "changed": [],
+  "new_tests": 47,
+  "concretopy_modified": false,
+  "cases": [
+    {
+      "beam": "V501",
+      "overall": "INCONCLUSIVE",
+      "disciplines": {
+        "positive_flexure": "INCONCLUSIVE",
+        "negative_flexure": "INCONCLUSIVE",
+        "anchorage": "INCONCLUSIVE",
+        "shear": "INCONCLUSIVE",
+        "suspension": "INCONCLUSIVE"
+      },
+      "checks": 14,
+      "pending": 9,
+      "relations": 1
+    },
+    {
+      "beam": "V516",
+      "overall": "FAIL",
+      "disciplines": {
+        "positive_flexure": "INCONCLUSIVE",
+        "negative_flexure": "FAIL",
+        "anchorage": "FAIL",
+        "shear": "INCONCLUSIVE",
+        "suspension": "INCONCLUSIVE"
+      },
+      "checks": 129,
+      "pending": 22,
+      "relations": 118
+    },
+    {
+      "beam": "V517",
+      "overall": "FAIL",
+      "disciplines": {
+        "positive_flexure": "INCONCLUSIVE",
+        "negative_flexure": "FAIL",
+        "anchorage": "FAIL",
+        "shear": "INCONCLUSIVE",
+        "suspension": "INCONCLUSIVE"
+      },
+      "checks": 129,
+      "pending": 22,
+      "relations": 118
+    },
+    {
+      "beam": "V536",
+      "overall": "FAIL",
+      "disciplines": {
+        "positive_flexure": "INCONCLUSIVE",
+        "negative_flexure": "INCONCLUSIVE",
+        "anchorage": "FAIL",
+        "shear": "INCONCLUSIVE",
+        "suspension": "INCONCLUSIVE"
+      },
+      "checks": 33,
+      "pending": 15,
+      "relations": 36
+    },
+    {
+      "beam": "V565",
+      "overall": "INCONCLUSIVE",
+      "disciplines": {
+        "positive_flexure": "INCONCLUSIVE",
+        "negative_flexure": "INCONCLUSIVE",
+        "anchorage": "INCONCLUSIVE",
+        "shear": "INCONCLUSIVE",
+        "suspension": "INCONCLUSIVE"
+      },
+      "checks": 14,
+      "pending": 10,
+      "relations": 10
+    }
+  ],
+  "engineering_assistant_tests": {
+    "extrator_lst": 39,
+    "beam_model": 30,
+    "beam_mapping": 57,
+    "reinforcement_checks": 889
+  },
+  "total_engineering_assistant_tests": 1015,
+  "concretopy_tests": 427,
+  "quick_validate": "PASS",
+  "test_logs": [
+    {
+      "directory": "extrator_lst",
+      "returncode": 0,
+      "output": ".......................................\n----------------------------------------------------------------------\nRan 39 tests in 2.918s\n\nOK\n"
+    },
+    {
+      "directory": "beam_model",
+      "returncode": 0,
+      "output": "..............................\n----------------------------------------------------------------------\nRan 30 tests in 0.455s\n\nOK\n"
+    },
+    {
+      "directory": "beam_mapping",
+      "returncode": 0,
+      "output": ".........................................................\n----------------------------------------------------------------------\nRan 57 tests in 0.588s\n\nOK\n"
+    },
+    {
+      "directory": "reinforcement_checks",
+      "returncode": 0,
+      "output": ".........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 889 tests in 30.641s\n\nOK\n"
+    }
+  ],
+  "diff_checks": [
+    {
+      "directory": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant",
+      "returncode": 0,
+      "output": "warning: in the working copy of '.agents/skills/reinforcement-review/SKILL.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/beam_mapping/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tools/reinforcement_checks/README.md', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "directory": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy",
+      "returncode": 0,
+      "output": ""
+    }
+  ]
+}

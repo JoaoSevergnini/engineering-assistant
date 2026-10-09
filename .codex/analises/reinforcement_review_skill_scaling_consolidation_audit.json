@@ -1,0 +1,493 @@
+{
+  "tests": {
+    "extrator_lst": 39,
+    "beam_model": 30,
+    "beam_mapping": 34,
+    "reinforcement_checks": 129
+  },
+  "total": 232,
+  "links_checked": 48,
+  "broken_links": [],
+  "protected_files": 116,
+  "changed_protected_files": [],
+  "frontmatter_validation": "unchanged_from_HEAD; required name/description reviewed",
+  "quick_validate": "not executable: PyYAML absent in Python 3.10-32 and 3.11; no dependency installed",
+  "links": [
+    {
+      "document": ".agents\\skills\\reinforcement-review\\SKILL.md",
+      "target": "references/positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\SKILL.md",
+      "target": "references/tqs-beam-data.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\SKILL.md",
+      "target": "references/beam-review.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\SKILL.md",
+      "target": "references/beam-drawing-convections.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\SKILL.md",
+      "target": "references/positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\beam-review.md",
+      "target": "beam-drawing-convections.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\beam-review.md",
+      "target": "positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\beam-review.md",
+      "target": "beam-drawing-convections.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\bond-condition.md",
+      "target": "../../../../tools/reinforcement_checks/bar_scaling.py",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\bond-condition.md",
+      "target": "../../../../../concretopy/docs/ancoragem.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\bond-condition.md",
+      "target": "positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "beam-review.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "beam-drawing-convections.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "tqs-beam-data.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/reinforcement_checks/al_shear_selection.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/reinforcement_checks/al_effective_depth.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "bond-condition.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/reinforcement_checks/README.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/reinforcement_checks/bar_scaling.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../../concretopy/docs/api_publica.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../../concretopy/docs/ancoragem.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/beam_model/consolidar_detalhamento.py",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/beam_mapping/map_beam.py",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/extrator_lst/section_positions.py",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "bond-condition.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../.codex/analises/V1001_N3_scaling_check.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../.codex/analises/V536_V565_N3_scaling_check.md",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../analises/pranchas/V1001_N3_scaling_check.json",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../analises/pranchas/V536_N3_scaling_check.json",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../analises/pranchas/V565_N3_scaling_check.json",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/reinforcement_checks/test_bar_scaling.py",
+      "exists": true
+    },
+    {
+      "document": ".agents\\skills\\reinforcement-review\\references\\positive-bar-scaling.md",
+      "target": "../../../../tools/reinforcement_checks/test_v536_v565_scaling.py",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "al_shear_selection.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "bar_scaling.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "al_effective_depth.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "../../.codex/analises/V1001_N3_scaling_check.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "../../.agents/skills/reinforcement-review/references/positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "al_shear_selection.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "al_effective_depth.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "../../.agents/skills/reinforcement-review/references/bond-condition.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "../../.codex/analises/V1001_N3_scaling_check.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\README.md",
+      "target": "../../.codex/analises/V536_V565_N3_scaling_check.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\bar_scaling.md",
+      "target": "../../.agents/skills/reinforcement-review/references/positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\bar_scaling.md",
+      "target": "al_effective_depth.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\bar_scaling.md",
+      "target": "../../.agents/skills/reinforcement-review/references/bond-condition.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\al_shear_selection.md",
+      "target": "../../.agents/skills/reinforcement-review/references/positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\al_effective_depth.md",
+      "target": "../../.agents/skills/reinforcement-review/references/positive-bar-scaling.md",
+      "exists": true
+    },
+    {
+      "document": "tools\\reinforcement_checks\\al_effective_depth.md",
+      "target": "../../.agents/skills/reinforcement-review/references/bond-condition.md",
+      "exists": true
+    }
+  ],
+  "protected_hashes_before": {
+    "tools\\beam_mapping\\map_beam.py": "10e6fbf066f1c33fcaf5280f3615c8fb2d4efcc4d241ec17faff81110c9411b0",
+    "tools\\beam_mapping\\support_context.py": "a89f3b42a7a310bf6959a67007bbbb1f206d48fa6ea3476a5cb791aa6f375bd4",
+    "tools\\beam_mapping\\test_map_beam.py": "9ccd03aadc127c1363b3de36474b192a1026e07e76b3aafbb533382d40c753ed",
+    "tools\\beam_mapping\\test_support_context.py": "39395d44c79af70c4e72280b56a9984215ad2413cadf77e1067742fc5b105276",
+    "tools\\beam_model\\consolidar_detalhamento.py": "364f064b25e2266b156a715cd2afbb24a2d4987447e5133548d5cc95969fa3ae",
+    "tools\\beam_model\\legacy_document.py": "5b7a7f250ee1991ebc84747e3bbf886a659e847b93e6ec20b50e269137d95fcf",
+    "tools\\beam_model\\test_consolidar_detalhamento.py": "609f679a9c7439510f6fe573d47c52cdb14a11e06895a215e79d8e038402f23e",
+    "tools\\beam_model\\test_legacy_document.py": "eafd074fdca8015e5aae98930272ea44fe2fd079fb4c08ba3ed16673392b9baa",
+    "tools\\extrator_lst\\consolidar_viga.py": "514936e3345c8e85bdff77b0e804dd2187df039cb103dc113af47e09a2f79e3a",
+    "tools\\extrator_lst\\extrair_viga_lst.py": "5c81dbb50bd7b823ded3ef18f0f97c8ccef2506bf67e98ab26904a588c492145",
+    "tools\\extrator_lst\\section_positions.py": "23ce97d41a61534f9ff360023f1a3a90b5deb2df75e7a91c16af1708ebc67e90",
+    "tools\\extrator_lst\\test_consolidar_viga.py": "0d2ba820328be4b3e8e2ff73e037d8fbe2320dab17b8e20a4696c396a72510f6",
+    "tools\\extrator_lst\\test_extrair_viga_lst.py": "83696afe8adfb0ea0fa6064cd312b11195fb4efe6ae00ccab42b99f71085f4a3",
+    "tools\\extrator_lst\\test_section_positions.py": "de18246700838f09a27ef032cb2a265e977c37cfd54771485addf04719bc2c72",
+    "tools\\extrator_lst\\test_tqs_semantics.py": "97cbf67b94537c00b94c083df855015e8a9628bff12e3b34a1eb3833f0101d62",
+    "tools\\reinforcement_checks\\bar_scaling.py": "8b7149fc94c3f602b99523c9989eb81b41edf8316aa2dc3a9a24a5c3afb5a1f4",
+    "tools\\reinforcement_checks\\flexure_regions.py": "395062cb4e00976fdfacea949ef25084d2923f77a73bcf3542da3712d88e5051",
+    "tools\\reinforcement_checks\\materials.py": "935028db508b3344a8ac3b6721d6cba8fa048bbd7bd34b65affd03ed0068b532",
+    "tools\\reinforcement_checks\\moment_diagram.py": "d11eb397f5ee9c8a484fd726fe6d9f9b3a740f52938613e3fe1757f42a3595b9",
+    "tools\\reinforcement_checks\\positive_flexure.py": "9de67ce7cf318b2abe706a002415236ed966b9d8822d27d6b46ae16b62bbbe60",
+    "tools\\reinforcement_checks\\test_bar_scaling.py": "550a32b57ba24af9a671ee0fddbe8077f7b192713aeca5af55887ae327bc40aa",
+    "tools\\reinforcement_checks\\test_flexure_regions.py": "92708b93ab9f9962a14bbf551590ebeaac304234d602995df3364d15dc41b3f9",
+    "tools\\reinforcement_checks\\test_materials.py": "d10fd2ba5e4af8c18c0e02821f15a149e68989119004a7559ffd698e7c8500dc",
+    "tools\\reinforcement_checks\\test_moment_diagram.py": "a9c94b8fdde93d633083813e1e22df982fb8997f74c320ef221f9b5b2b8f7fd3",
+    "tools\\reinforcement_checks\\test_positive_flexure_regions.py": "80a7a9a20148475edcf06370e137055f8bd0bdae54c54f5e605a286aafe2603c",
+    "tools\\reinforcement_checks\\test_v501_positive_flexure.py": "99ec6b194eaf016374d4a90285a70b73185ef818b24f2d01aa049f1209d1a7e5",
+    "tools\\reinforcement_checks\\test_v536_v565_scaling.py": "8ac670c0f9b8fe51693eb5e874b150b7b60c29707e76e0daba024810010398e7",
+    "tools\\reinforcement_checks\\tqs_moments.py": "5d1bafd62553d172514a26b7685b44cd3cabfda9c27e157cd1851da96c44def3",
+    "tools\\reinforcement_checks\\tqs_shear.py": "f90b0eeb75fc0ac2ccd950c39d4d6ded267d0f1b3e82fd00e255a557a62f0bb2",
+    "tools\\reinforcement_checks\\v1001_moment_interpolation.py": "2e49061f4a2a0ecd955e6353beb234fd7a1486f959bd4571226399319934e6bb",
+    "tools\\reinforcement_checks\\v1001_scaling.py": "8a4bb1843aecccaef230615694e7166c2f95f2200494516033f7a079d22697c3",
+    "tools\\reinforcement_checks\\v501_positive_flexure.py": "5ed98fc3a279c048c1ac2d39a9ca3022ed58a5d10b126f5004a526888eeeea81",
+    "analises\\pranchas\\V1001_beam_mapping.json": "ca600c9702dee472951bc34bc8754c4f4ecf380c2ab157f4032efa006bac35c4",
+    "analises\\pranchas\\V1001_beam_model.json": "63365a81e90119e125f5bee7c46a4ca31b50da224b7796d6d5d2a311df89b013",
+    "analises\\pranchas\\V1001_detalhamento_prancha.json": "6bc32474a0db67b503410472666acff8b15ad0adf6f143d93d4d5e29367c5460",
+    "analises\\pranchas\\V1001_moment_linear_interpolation.json": "b0f4e4ea7d928efd1aed3e8de1db90142eddcd9e73cd01ae3253b0e087e2ece4",
+    "analises\\pranchas\\V1001_N3_scaling_check.json": "fb353deed4339c533d6d57490e589117896b1f1a49af86320a28c0869f818322",
+    "analises\\pranchas\\V1001_positive_flexure_regions.json": "4393a4f705b51916def96cc2930d7b025ec1c5a6068ffadc09b3ee01c1f98bd3",
+    "analises\\pranchas\\V1001_tqs.json": "2082966747be540dd339b4a04841de1a73b279d1708cec46c4cf3187b99b7458",
+    "analises\\pranchas\\V1001_tqs_positions.json": "9639f6debb2bec4d83a0c2f2beccf60f2ad7d520b33d389732a1eacc8b97f6ae",
+    "analises\\pranchas\\V1001_tqs_raw.json": "48fab52fca7f221e2d02281141df3705449d44612d7ec910928380768704ffdd",
+    "analises\\pranchas\\V1001_V9001_support_context.json": "8115e09bd355319fffbd86e79633c18438666c869a426598af907a5998af6acd",
+    "analises\\pranchas\\V1014_tqs.json": "84749aae4848f1f2768927b917ff6a7ec849c96c3552bce40fcb06de7fc07804",
+    "analises\\pranchas\\V1014_tqs_raw.json": "1b81c83cebc06ab1953ac9eef97a8a2f53a0fae6e24e535956491a4c431e7ab9",
+    "analises\\pranchas\\V1015_tqs.json": "d0e832326bac5e17789234e2cd643d8b413d6a589dfcefc0e9ed653b3afb96c7",
+    "analises\\pranchas\\V1015_tqs_raw.json": "257ac9905cab49e8c37f54d62edf998b426e8279285e1f90bacc1617aee1abf7",
+    "analises\\pranchas\\V501_beam_mapping.json": "d14d54a4a666a2bb1fbaa34084e4082ebf9b37b79aa30ad897c2057e4f77dc05",
+    "analises\\pranchas\\V501_positive_flexure_check.json": "e9d46f1004090456371f9ed7e43f629abb4050ee2d1610e6bdb3ee2add537265",
+    "analises\\pranchas\\V501_positive_flexure_regions.json": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+    "analises\\pranchas\\V501_tqs.json": "0cf0847d245630e5ac2ab6036e3264d2983e735a1a4940072ac93b50bb9c6067",
+    "analises\\pranchas\\V501_tqs_positions.json": "59842a1228a009b11999a1435b51e22f62f7c212c1c03c72591f92594e9cf91c",
+    "analises\\pranchas\\V501_tqs_raw.json": "654b79ee817853e6cac8d4e49217b05a4474108af8e61f04a7f23f86527fb344",
+    "analises\\pranchas\\V501_V503_beam_model.json": "a454b67725ad2b57d43eb67db043697adbfd99f64c4e46b01252187fc1868506",
+    "analises\\pranchas\\V501_V503_detalhamento_prancha.json": "4afa1eba58070fd19958471462f068d863a8d27e25cfad34404df1b6ca915128",
+    "analises\\pranchas\\V502_beam_model.json": "55778189601c7a24c1a2a089df2a93c56b7e8ec83701d18d5c00b96adc4f30fe",
+    "analises\\pranchas\\V502_detalhamento_prancha.json": "34e82a204ce08691264f886f50fafff5ad69e5c864799689076e842bb2502695",
+    "analises\\pranchas\\V503_beam_mapping.json": "d0f22ebacac44017c29f3f8895abc73e0abf848c8fe3ebad39ab902c27cbae5d",
+    "analises\\pranchas\\V503_tqs.json": "11a781d63747028e8af4256046e001b6d847151cea340412916c34340d119304",
+    "analises\\pranchas\\V503_tqs_positions.json": "2dd814a9a88c6a38958e82a79ed86d784954b7f514dc70e94e2cad8c46389f23",
+    "analises\\pranchas\\V503_tqs_raw.json": "652be473673addd72d730ac0e68913b64c010d0a7562d1a4484c9ac7c505b12b",
+    "analises\\pranchas\\V504_detalhamento_prancha.json": "3e7655139225d3e72d46b33f3716db0716b9b00357df235b80614e59be41595a",
+    "analises\\pranchas\\V536_beam_mapping.json": "7b7f843312061252da691886a12f9dc45b678943b8b37f4fa3eb938e69c8fc59",
+    "analises\\pranchas\\V536_N3_scaling_check.json": "941908a7dea592eb393849b8f523826d2ee53b21df222053f64f17ade9b6cee2",
+    "analises\\pranchas\\V536_tqs.json": "f2890481277dd3ca0933c09ee7e188f02c2efb8378a3c94f0350b0245473beb7",
+    "analises\\pranchas\\V536_tqs_positions.json": "eb7510b295799d0ec41759f576aa70aa94fa651eddf0ee0cacbd86e9cbdbac9e",
+    "analises\\pranchas\\V536_tqs_raw.json": "0f79e1ad47f1f2e1b290451ebc63b8ce0e3d50252105fd108daf89c31a1ce9a8",
+    "analises\\pranchas\\V536_V565_beam_model.json": "d5d7a293f41424c3047291d7c0c92a727b91bd0ff22f8533d5371a9e20b08d0f",
+    "analises\\pranchas\\V536_V565_detalhamento_prancha.json": "af8a7e6dc40ad7f0c4b1b16706a1cdef785236b11d62dd89f7f733981b3f0613",
+    "analises\\pranchas\\V536_V565_support_context.json": "368f9077cb0af3e99f057b422de15d000b4d23b2b9c034f0975c40f5b1019c5c",
+    "analises\\pranchas\\V541_tqs.json": "1c256f5ce827c89abe41cc712cbf17afc6f1311864eca69f9c9adc0454f3a74e",
+    "analises\\pranchas\\V541_tqs_raw.json": "02ebac54ed01c43e1c3107b285dbbe23d91d1669aa3d9d26cc2a713f7b8f6f8e",
+    "analises\\pranchas\\V542_tqs.json": "1347ae5b7c9125f127c177183c6903e600946ceae22c4af5f688c48561dfe54a",
+    "analises\\pranchas\\V542_tqs_raw.json": "1adef6a7af80762412954c6eaa298e6a7afe17d9ceb3583bd4326378a653b8ac",
+    "analises\\pranchas\\V559_tqs.json": "97f093b4a737b5f72f990e1844bd02d0bbeffe670ab3a57e3b9a3f68c689152f",
+    "analises\\pranchas\\V559_tqs_raw.json": "35eb45311d7462030edd21c91c69602853ac94bfdb7e6799466afc9f5d8758c1",
+    "analises\\pranchas\\V560_tqs.json": "890c16c9d87e2279764f5ab38f267501c911aa30474a673de5b79f5573ae924d",
+    "analises\\pranchas\\V560_tqs_raw.json": "128586d08706c4b9c4e81dc00aa83899ef3a8a5050370a103b0b92f967e3d890",
+    "analises\\pranchas\\V565_beam_mapping.json": "d5c42b3cc378f7b2484875d351ed29a329488670ce314a2e00a763132d82a0aa",
+    "analises\\pranchas\\V565_N3_scaling_check.json": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+    "analises\\pranchas\\V565_tqs.json": "97dae1934988b05c3494a7440a764ef23cd91f59fb2ce3408e62586c4360e6c9",
+    "analises\\pranchas\\V565_tqs_positions.json": "d2d9305d86e192e6307fc697befbe1bd02b5481318a44ccf06b851580ca2c091",
+    "analises\\pranchas\\V565_tqs_raw.json": "3270d9ad52c0b6a4458819f6910930d7033bbea13afe52e8706d15f07b68cba9",
+    ".codex\\analises\\V1001_N3_scaling_check.md": "52cf083ca742583602a949730c1c30d5e4edfed79b403269dc083a7af7f39ffd",
+    ".codex\\analises\\V536_V565_N3_scaling_check.md": "a52d95000f7ce3dad25cf707925043ace4056faff83c35e31f74e55419629d5f",
+    "..\\concretopy\\concretopy\\api.py": "9c9c4053c046c1100e8b631fb9b0fdfe4247a799346c01cc189fa091605f643f",
+    "..\\concretopy\\concretopy\\armaduras.py": "0c1dfc6221340d626a46bcf8d7124ead764dcc1f78a22cc04a8ea0d7e12fa69f",
+    "..\\concretopy\\concretopy\\exceptions.py": "56bf7c7da1516a484c6f2b14e2fc7eda6010d37b393175775865817f9809dcd5",
+    "..\\concretopy\\concretopy\\materiais.py": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f",
+    "..\\concretopy\\concretopy\\resultados.py": "9132c59f617c7a6c099a0556ccfb064bd2090fd6623b377bdb339297cf5ba435",
+    "..\\concretopy\\concretopy\\secoes.py": "3491605bfe18d726f452ed811989fc2f3a0384a64798b7d30e136fa31edfb614",
+    "..\\concretopy\\concretopy\\unidades.py": "1ae56c7d3614d68afb422359a133ab1d4bdef85e80e1d7c0e4875868a63975be",
+    "..\\concretopy\\concretopy\\__init__.py": "2eead47e0a65865b4b201d331836bbb409fce332ea3354d64c57811440a02c90",
+    "..\\concretopy\\concretopy\\aplicacoes\\calculadora_furos.py": "1430c34f050dd944a2a5df3e44c80c4a0747a0d593fd523c2a656533b9e669dd",
+    "..\\concretopy\\concretopy\\aplicacoes\\__init__.py": "314d0aa537e3aea22fdd952856f6c51bbd998cc9fb04f70af0c80384cb391edd",
+    "..\\concretopy\\concretopy\\detalhamento\\arranjos.py": "90770dadc583b99bc952521fc2b436656c0e36cf0ba8d844388102b80a675d5d",
+    "..\\concretopy\\concretopy\\detalhamento\\layouts.py": "292514d5f5ba19ace9463afb9569798af1cfe92c9aba71ae93fe2e8559d68dde",
+    "..\\concretopy\\concretopy\\detalhamento\\__init__.py": "44ca0f54489debc7719b605e8c94ebe8cf1eb5c79d2391228df876505b82ac54",
+    "..\\concretopy\\concretopy\\elementos\\pilar.py": "78ad8222218d905f5b25b44d7057cdd9b87921f0401393466b0bc1201a092a9e",
+    "..\\concretopy\\concretopy\\elementos\\viga.py": "8cae0907727ee201602be02af39ede21afa0c267b0a0ce7027ffa564b33f7d95",
+    "..\\concretopy\\concretopy\\elementos\\__init__.py": "290c400d117e630436a0dd32c04b8839b3d5eeb05f7ed0b938d3dfee71eb0622",
+    "..\\concretopy\\concretopy\\geometria\\poligonos.py": "845e02fcffd73d341c984c8960932fa0f0f303016e08904473c39170ce78d62a",
+    "..\\concretopy\\concretopy\\geometria\\transformacoes.py": "f5e268c4bdae272ad9b7954a0ed29d6424019dd7c2601e0ff9b5a11661863aff",
+    "..\\concretopy\\concretopy\\geometria\\__init__.py": "1249e487c4f374cc76404171c9a2c655e63d6fae5f5a2d2a18a914f44cd026f3",
+    "..\\concretopy\\concretopy\\normas\\nbr6118.py": "421221a157e6ba762f953118a0fae39958d1d7049f45d810be48c0eb10fab1cd",
+    "..\\concretopy\\concretopy\\normas\\__init__.py": "dfa4daeb5a8f91df6fcc6b8a0a6b65d9e8cb7652483f7ee4d838fc2737a23232",
+    "..\\concretopy\\concretopy\\verificacoes\\ancoragem.py": "0fbc85483aecca1119c23051764c80c6b016bb7b9319a081ffa6a6b14beed20a",
+    "..\\concretopy\\concretopy\\verificacoes\\cortante.py": "5da3fdae24eca677cc8e6bccea6760f156eefaadb4a0f6255c7928fdde24b757",
+    "..\\concretopy\\concretopy\\verificacoes\\decalagem.py": "045fb93ea41db58e910c08f56a56dfb84e65e4d437425840d5385497b3343bab",
+    "..\\concretopy\\concretopy\\verificacoes\\flexao.py": "53494697fc949e39b8cb70675a37b8a19d3c5677d6d60eea407936e9a6dce177",
+    "..\\concretopy\\concretopy\\verificacoes\\flexo_compressao.py": "94cc0391e28e0162ff574afc1406c9c70f563eec54ce5cdc787460e3cc8735d4",
+    "..\\concretopy\\concretopy\\verificacoes\\__init__.py": "ee44f2ed7d092baefa70640f326093a376ab6a08250813f4048d61fa8e0d5fef",
+    "..\\concretopy\\docs\\ancoragem.md": "b1265599f7cfddc4c4056a296ab6420ff689cb6a1f3b70dd6a84250cf21ce250",
+    "..\\concretopy\\docs\\api_publica.md": "35623c874715499f0239b32967d105088b52a01e4f491458fc3aa8cd52bb32bd",
+    "..\\concretopy\\docs\\checklist_release.md": "4cee2271d417f362d00e30e0a93675e9a0e430f46757af77b417f00aeb28be05",
+    "..\\concretopy\\docs\\hipoteses_e_limites.md": "462e59e5cd90030277766836a0936f6e14a3628a957b9c882652e03ecafb3a05",
+    "..\\concretopy\\docs\\validacao_flexocompressao.md": "03f14409c4f829e756e646554d5c99691420124525422e160b7ee4f5f2a86eae"
+  },
+  "protected_hashes_after": {
+    "tools\\beam_mapping\\map_beam.py": "10e6fbf066f1c33fcaf5280f3615c8fb2d4efcc4d241ec17faff81110c9411b0",
+    "tools\\beam_mapping\\support_context.py": "a89f3b42a7a310bf6959a67007bbbb1f206d48fa6ea3476a5cb791aa6f375bd4",
+    "tools\\beam_mapping\\test_map_beam.py": "9ccd03aadc127c1363b3de36474b192a1026e07e76b3aafbb533382d40c753ed",
+    "tools\\beam_mapping\\test_support_context.py": "39395d44c79af70c4e72280b56a9984215ad2413cadf77e1067742fc5b105276",
+    "tools\\beam_model\\consolidar_detalhamento.py": "364f064b25e2266b156a715cd2afbb24a2d4987447e5133548d5cc95969fa3ae",
+    "tools\\beam_model\\legacy_document.py": "5b7a7f250ee1991ebc84747e3bbf886a659e847b93e6ec20b50e269137d95fcf",
+    "tools\\beam_model\\test_consolidar_detalhamento.py": "609f679a9c7439510f6fe573d47c52cdb14a11e06895a215e79d8e038402f23e",
+    "tools\\beam_model\\test_legacy_document.py": "eafd074fdca8015e5aae98930272ea44fe2fd079fb4c08ba3ed16673392b9baa",
+    "tools\\extrator_lst\\consolidar_viga.py": "514936e3345c8e85bdff77b0e804dd2187df039cb103dc113af47e09a2f79e3a",
+    "tools\\extrator_lst\\extrair_viga_lst.py": "5c81dbb50bd7b823ded3ef18f0f97c8ccef2506bf67e98ab26904a588c492145",
+    "tools\\extrator_lst\\section_positions.py": "23ce97d41a61534f9ff360023f1a3a90b5deb2df75e7a91c16af1708ebc67e90",
+    "tools\\extrator_lst\\test_consolidar_viga.py": "0d2ba820328be4b3e8e2ff73e037d8fbe2320dab17b8e20a4696c396a72510f6",
+    "tools\\extrator_lst\\test_extrair_viga_lst.py": "83696afe8adfb0ea0fa6064cd312b11195fb4efe6ae00ccab42b99f71085f4a3",
+    "tools\\extrator_lst\\test_section_positions.py": "de18246700838f09a27ef032cb2a265e977c37cfd54771485addf04719bc2c72",
+    "tools\\extrator_lst\\test_tqs_semantics.py": "97cbf67b94537c00b94c083df855015e8a9628bff12e3b34a1eb3833f0101d62",
+    "tools\\reinforcement_checks\\bar_scaling.py": "8b7149fc94c3f602b99523c9989eb81b41edf8316aa2dc3a9a24a5c3afb5a1f4",
+    "tools\\reinforcement_checks\\flexure_regions.py": "395062cb4e00976fdfacea949ef25084d2923f77a73bcf3542da3712d88e5051",
+    "tools\\reinforcement_checks\\materials.py": "935028db508b3344a8ac3b6721d6cba8fa048bbd7bd34b65affd03ed0068b532",
+    "tools\\reinforcement_checks\\moment_diagram.py": "d11eb397f5ee9c8a484fd726fe6d9f9b3a740f52938613e3fe1757f42a3595b9",
+    "tools\\reinforcement_checks\\positive_flexure.py": "9de67ce7cf318b2abe706a002415236ed966b9d8822d27d6b46ae16b62bbbe60",
+    "tools\\reinforcement_checks\\test_bar_scaling.py": "550a32b57ba24af9a671ee0fddbe8077f7b192713aeca5af55887ae327bc40aa",
+    "tools\\reinforcement_checks\\test_flexure_regions.py": "92708b93ab9f9962a14bbf551590ebeaac304234d602995df3364d15dc41b3f9",
+    "tools\\reinforcement_checks\\test_materials.py": "d10fd2ba5e4af8c18c0e02821f15a149e68989119004a7559ffd698e7c8500dc",
+    "tools\\reinforcement_checks\\test_moment_diagram.py": "a9c94b8fdde93d633083813e1e22df982fb8997f74c320ef221f9b5b2b8f7fd3",
+    "tools\\reinforcement_checks\\test_positive_flexure_regions.py": "80a7a9a20148475edcf06370e137055f8bd0bdae54c54f5e605a286aafe2603c",
+    "tools\\reinforcement_checks\\test_v501_positive_flexure.py": "99ec6b194eaf016374d4a90285a70b73185ef818b24f2d01aa049f1209d1a7e5",
+    "tools\\reinforcement_checks\\test_v536_v565_scaling.py": "8ac670c0f9b8fe51693eb5e874b150b7b60c29707e76e0daba024810010398e7",
+    "tools\\reinforcement_checks\\tqs_moments.py": "5d1bafd62553d172514a26b7685b44cd3cabfda9c27e157cd1851da96c44def3",
+    "tools\\reinforcement_checks\\tqs_shear.py": "f90b0eeb75fc0ac2ccd950c39d4d6ded267d0f1b3e82fd00e255a557a62f0bb2",
+    "tools\\reinforcement_checks\\v1001_moment_interpolation.py": "2e49061f4a2a0ecd955e6353beb234fd7a1486f959bd4571226399319934e6bb",
+    "tools\\reinforcement_checks\\v1001_scaling.py": "8a4bb1843aecccaef230615694e7166c2f95f2200494516033f7a079d22697c3",
+    "tools\\reinforcement_checks\\v501_positive_flexure.py": "5ed98fc3a279c048c1ac2d39a9ca3022ed58a5d10b126f5004a526888eeeea81",
+    "analises\\pranchas\\V1001_beam_mapping.json": "ca600c9702dee472951bc34bc8754c4f4ecf380c2ab157f4032efa006bac35c4",
+    "analises\\pranchas\\V1001_beam_model.json": "63365a81e90119e125f5bee7c46a4ca31b50da224b7796d6d5d2a311df89b013",
+    "analises\\pranchas\\V1001_detalhamento_prancha.json": "6bc32474a0db67b503410472666acff8b15ad0adf6f143d93d4d5e29367c5460",
+    "analises\\pranchas\\V1001_moment_linear_interpolation.json": "b0f4e4ea7d928efd1aed3e8de1db90142eddcd9e73cd01ae3253b0e087e2ece4",
+    "analises\\pranchas\\V1001_N3_scaling_check.json": "fb353deed4339c533d6d57490e589117896b1f1a49af86320a28c0869f818322",
+    "analises\\pranchas\\V1001_positive_flexure_regions.json": "4393a4f705b51916def96cc2930d7b025ec1c5a6068ffadc09b3ee01c1f98bd3",
+    "analises\\pranchas\\V1001_tqs.json": "2082966747be540dd339b4a04841de1a73b279d1708cec46c4cf3187b99b7458",
+    "analises\\pranchas\\V1001_tqs_positions.json": "9639f6debb2bec4d83a0c2f2beccf60f2ad7d520b33d389732a1eacc8b97f6ae",
+    "analises\\pranchas\\V1001_tqs_raw.json": "48fab52fca7f221e2d02281141df3705449d44612d7ec910928380768704ffdd",
+    "analises\\pranchas\\V1001_V9001_support_context.json": "8115e09bd355319fffbd86e79633c18438666c869a426598af907a5998af6acd",
+    "analises\\pranchas\\V1014_tqs.json": "84749aae4848f1f2768927b917ff6a7ec849c96c3552bce40fcb06de7fc07804",
+    "analises\\pranchas\\V1014_tqs_raw.json": "1b81c83cebc06ab1953ac9eef97a8a2f53a0fae6e24e535956491a4c431e7ab9",
+    "analises\\pranchas\\V1015_tqs.json": "d0e832326bac5e17789234e2cd643d8b413d6a589dfcefc0e9ed653b3afb96c7",
+    "analises\\pranchas\\V1015_tqs_raw.json": "257ac9905cab49e8c37f54d62edf998b426e8279285e1f90bacc1617aee1abf7",
+    "analises\\pranchas\\V501_beam_mapping.json": "d14d54a4a666a2bb1fbaa34084e4082ebf9b37b79aa30ad897c2057e4f77dc05",
+    "analises\\pranchas\\V501_positive_flexure_check.json": "e9d46f1004090456371f9ed7e43f629abb4050ee2d1610e6bdb3ee2add537265",
+    "analises\\pranchas\\V501_positive_flexure_regions.json": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+    "analises\\pranchas\\V501_tqs.json": "0cf0847d245630e5ac2ab6036e3264d2983e735a1a4940072ac93b50bb9c6067",
+    "analises\\pranchas\\V501_tqs_positions.json": "59842a1228a009b11999a1435b51e22f62f7c212c1c03c72591f92594e9cf91c",
+    "analises\\pranchas\\V501_tqs_raw.json": "654b79ee817853e6cac8d4e49217b05a4474108af8e61f04a7f23f86527fb344",
+    "analises\\pranchas\\V501_V503_beam_model.json": "a454b67725ad2b57d43eb67db043697adbfd99f64c4e46b01252187fc1868506",
+    "analises\\pranchas\\V501_V503_detalhamento_prancha.json": "4afa1eba58070fd19958471462f068d863a8d27e25cfad34404df1b6ca915128",
+    "analises\\pranchas\\V502_beam_model.json": "55778189601c7a24c1a2a089df2a93c56b7e8ec83701d18d5c00b96adc4f30fe",
+    "analises\\pranchas\\V502_detalhamento_prancha.json": "34e82a204ce08691264f886f50fafff5ad69e5c864799689076e842bb2502695",
+    "analises\\pranchas\\V503_beam_mapping.json": "d0f22ebacac44017c29f3f8895abc73e0abf848c8fe3ebad39ab902c27cbae5d",
+    "analises\\pranchas\\V503_tqs.json": "11a781d63747028e8af4256046e001b6d847151cea340412916c34340d119304",
+    "analises\\pranchas\\V503_tqs_positions.json": "2dd814a9a88c6a38958e82a79ed86d784954b7f514dc70e94e2cad8c46389f23",
+    "analises\\pranchas\\V503_tqs_raw.json": "652be473673addd72d730ac0e68913b64c010d0a7562d1a4484c9ac7c505b12b",
+    "analises\\pranchas\\V504_detalhamento_prancha.json": "3e7655139225d3e72d46b33f3716db0716b9b00357df235b80614e59be41595a",
+    "analises\\pranchas\\V536_beam_mapping.json": "7b7f843312061252da691886a12f9dc45b678943b8b37f4fa3eb938e69c8fc59",
+    "analises\\pranchas\\V536_N3_scaling_check.json": "941908a7dea592eb393849b8f523826d2ee53b21df222053f64f17ade9b6cee2",
+    "analises\\pranchas\\V536_tqs.json": "f2890481277dd3ca0933c09ee7e188f02c2efb8378a3c94f0350b0245473beb7",
+    "analises\\pranchas\\V536_tqs_positions.json": "eb7510b295799d0ec41759f576aa70aa94fa651eddf0ee0cacbd86e9cbdbac9e",
+    "analises\\pranchas\\V536_tqs_raw.json": "0f79e1ad47f1f2e1b290451ebc63b8ce0e3d50252105fd108daf89c31a1ce9a8",
+    "analises\\pranchas\\V536_V565_beam_model.json": "d5d7a293f41424c3047291d7c0c92a727b91bd0ff22f8533d5371a9e20b08d0f",
+    "analises\\pranchas\\V536_V565_detalhamento_prancha.json": "af8a7e6dc40ad7f0c4b1b16706a1cdef785236b11d62dd89f7f733981b3f0613",
+    "analises\\pranchas\\V536_V565_support_context.json": "368f9077cb0af3e99f057b422de15d000b4d23b2b9c034f0975c40f5b1019c5c",
+    "analises\\pranchas\\V541_tqs.json": "1c256f5ce827c89abe41cc712cbf17afc6f1311864eca69f9c9adc0454f3a74e",
+    "analises\\pranchas\\V541_tqs_raw.json": "02ebac54ed01c43e1c3107b285dbbe23d91d1669aa3d9d26cc2a713f7b8f6f8e",
+    "analises\\pranchas\\V542_tqs.json": "1347ae5b7c9125f127c177183c6903e600946ceae22c4af5f688c48561dfe54a",
+    "analises\\pranchas\\V542_tqs_raw.json": "1adef6a7af80762412954c6eaa298e6a7afe17d9ceb3583bd4326378a653b8ac",
+    "analises\\pranchas\\V559_tqs.json": "97f093b4a737b5f72f990e1844bd02d0bbeffe670ab3a57e3b9a3f68c689152f",
+    "analises\\pranchas\\V559_tqs_raw.json": "35eb45311d7462030edd21c91c69602853ac94bfdb7e6799466afc9f5d8758c1",
+    "analises\\pranchas\\V560_tqs.json": "890c16c9d87e2279764f5ab38f267501c911aa30474a673de5b79f5573ae924d",
+    "analises\\pranchas\\V560_tqs_raw.json": "128586d08706c4b9c4e81dc00aa83899ef3a8a5050370a103b0b92f967e3d890",
+    "analises\\pranchas\\V565_beam_mapping.json": "d5c42b3cc378f7b2484875d351ed29a329488670ce314a2e00a763132d82a0aa",
+    "analises\\pranchas\\V565_N3_scaling_check.json": "bc9665412fb50c129a275c770ed073e5d23bcc2e87854935483130d1e5ee5232",
+    "analises\\pranchas\\V565_tqs.json": "97dae1934988b05c3494a7440a764ef23cd91f59fb2ce3408e62586c4360e6c9",
+    "analises\\pranchas\\V565_tqs_positions.json": "d2d9305d86e192e6307fc697befbe1bd02b5481318a44ccf06b851580ca2c091",
+    "analises\\pranchas\\V565_tqs_raw.json": "3270d9ad52c0b6a4458819f6910930d7033bbea13afe52e8706d15f07b68cba9",
+    ".codex\\analises\\V1001_N3_scaling_check.md": "52cf083ca742583602a949730c1c30d5e4edfed79b403269dc083a7af7f39ffd",
+    ".codex\\analises\\V536_V565_N3_scaling_check.md": "a52d95000f7ce3dad25cf707925043ace4056faff83c35e31f74e55419629d5f",
+    "..\\concretopy\\concretopy\\api.py": "9c9c4053c046c1100e8b631fb9b0fdfe4247a799346c01cc189fa091605f643f",
+    "..\\concretopy\\concretopy\\armaduras.py": "0c1dfc6221340d626a46bcf8d7124ead764dcc1f78a22cc04a8ea0d7e12fa69f",
+    "..\\concretopy\\concretopy\\exceptions.py": "56bf7c7da1516a484c6f2b14e2fc7eda6010d37b393175775865817f9809dcd5",
+    "..\\concretopy\\concretopy\\materiais.py": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f",
+    "..\\concretopy\\concretopy\\resultados.py": "9132c59f617c7a6c099a0556ccfb064bd2090fd6623b377bdb339297cf5ba435",
+    "..\\concretopy\\concretopy\\secoes.py": "3491605bfe18d726f452ed811989fc2f3a0384a64798b7d30e136fa31edfb614",
+    "..\\concretopy\\concretopy\\unidades.py": "1ae56c7d3614d68afb422359a133ab1d4bdef85e80e1d7c0e4875868a63975be",
+    "..\\concretopy\\concretopy\\__init__.py": "2eead47e0a65865b4b201d331836bbb409fce332ea3354d64c57811440a02c90",
+    "..\\concretopy\\concretopy\\aplicacoes\\calculadora_furos.py": "1430c34f050dd944a2a5df3e44c80c4a0747a0d593fd523c2a656533b9e669dd",
+    "..\\concretopy\\concretopy\\aplicacoes\\__init__.py": "314d0aa537e3aea22fdd952856f6c51bbd998cc9fb04f70af0c80384cb391edd",
+    "..\\concretopy\\concretopy\\detalhamento\\arranjos.py": "90770dadc583b99bc952521fc2b436656c0e36cf0ba8d844388102b80a675d5d",
+    "..\\concretopy\\concretopy\\detalhamento\\layouts.py": "292514d5f5ba19ace9463afb9569798af1cfe92c9aba71ae93fe2e8559d68dde",
+    "..\\concretopy\\concretopy\\detalhamento\\__init__.py": "44ca0f54489debc7719b605e8c94ebe8cf1eb5c79d2391228df876505b82ac54",
+    "..\\concretopy\\concretopy\\elementos\\pilar.py": "78ad8222218d905f5b25b44d7057cdd9b87921f0401393466b0bc1201a092a9e",
+    "..\\concretopy\\concretopy\\elementos\\viga.py": "8cae0907727ee201602be02af39ede21afa0c267b0a0ce7027ffa564b33f7d95",
+    "..\\concretopy\\concretopy\\elementos\\__init__.py": "290c400d117e630436a0dd32c04b8839b3d5eeb05f7ed0b938d3dfee71eb0622",
+    "..\\concretopy\\concretopy\\geometria\\poligonos.py": "845e02fcffd73d341c984c8960932fa0f0f303016e08904473c39170ce78d62a",
+    "..\\concretopy\\concretopy\\geometria\\transformacoes.py": "f5e268c4bdae272ad9b7954a0ed29d6424019dd7c2601e0ff9b5a11661863aff",
+    "..\\concretopy\\concretopy\\geometria\\__init__.py": "1249e487c4f374cc76404171c9a2c655e63d6fae5f5a2d2a18a914f44cd026f3",
+    "..\\concretopy\\concretopy\\normas\\nbr6118.py": "421221a157e6ba762f953118a0fae39958d1d7049f45d810be48c0eb10fab1cd",
+    "..\\concretopy\\concretopy\\normas\\__init__.py": "dfa4daeb5a8f91df6fcc6b8a0a6b65d9e8cb7652483f7ee4d838fc2737a23232",
+    "..\\concretopy\\concretopy\\verificacoes\\ancoragem.py": "0fbc85483aecca1119c23051764c80c6b016bb7b9319a081ffa6a6b14beed20a",
+    "..\\concretopy\\concretopy\\verificacoes\\cortante.py": "5da3fdae24eca677cc8e6bccea6760f156eefaadb4a0f6255c7928fdde24b757",
+    "..\\concretopy\\concretopy\\verificacoes\\decalagem.py": "045fb93ea41db58e910c08f56a56dfb84e65e4d437425840d5385497b3343bab",
+    "..\\concretopy\\concretopy\\verificacoes\\flexao.py": "53494697fc949e39b8cb70675a37b8a19d3c5677d6d60eea407936e9a6dce177",
+    "..\\concretopy\\concretopy\\verificacoes\\flexo_compressao.py": "94cc0391e28e0162ff574afc1406c9c70f563eec54ce5cdc787460e3cc8735d4",
+    "..\\concretopy\\concretopy\\verificacoes\\__init__.py": "ee44f2ed7d092baefa70640f326093a376ab6a08250813f4048d61fa8e0d5fef",
+    "..\\concretopy\\docs\\ancoragem.md": "b1265599f7cfddc4c4056a296ab6420ff689cb6a1f3b70dd6a84250cf21ce250",
+    "..\\concretopy\\docs\\api_publica.md": "35623c874715499f0239b32967d105088b52a01e4f491458fc3aa8cd52bb32bd",
+    "..\\concretopy\\docs\\checklist_release.md": "4cee2271d417f362d00e30e0a93675e9a0e430f46757af77b417f00aeb28be05",
+    "..\\concretopy\\docs\\hipoteses_e_limites.md": "462e59e5cd90030277766836a0936f6e14a3628a957b9c882652e03ecafb3a05",
+    "..\\concretopy\\docs\\validacao_flexocompressao.md": "03f14409c4f829e756e646554d5c99691420124525422e160b7ee4f5f2a86eae"
+  }
+}

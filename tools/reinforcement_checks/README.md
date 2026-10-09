@@ -122,3 +122,140 @@ Resumo enumera verificadas, não resolvidas, sem pontos, sem positivos e não
 verificadas. `all_checked_regions_capacity_sufficient` refere-se somente às
 chamadas concluídas; é null se nenhuma foi concluída, e nunca significa vão aprovado.
 `incomplete` e diagnósticos de cada região expõem todas as lacunas.
+
+## Selecao de Vk para decalagem (regra confirmada)
+
+A referencia [engineer_confirmed_al_shear_selection_v1](al_shear_selection.md)
+registra os dois contextos: maximo |Vk| de todo o vao para escalonamento;
+maximo |Vk| da regiao do apoio para ancoragem local. A definicao espacial da
+regiao de apoio permanece pendente. Para escalonamento, `tqs_shear.py` ja
+implementa a selecao auditada de todo o vao; esse status sucede o registro
+historico anterior a integracao, conforme a nota de atualizacao da referencia.
+
+## Escalonamento positivo no vao (05/10/2026)
+
+Implementacao generica e contrato em [bar_scaling.md](bar_scaling.md).
+`bar_scaling.py` orquestra composicoes, cruzamentos direcionais e condicoes
+A (al+10phi) e B (al+lb basico); `tqs_shear.py` audita Q MX./Q MN. e
+seleciona o maximo modulo discreto de todo o vao. Calculos fisicos continuam
+exclusivamente no Concretopy. `v1001_scaling.py` aplica o golden real N3.
+
+Esta implementacao sucede o estado documental anterior da selecao de Vk,
+sem implementar a regiao de apoio. A selecao de d segue
+[engineer_confirmed_al_effective_depth_v1](al_effective_depth.md): centroide
+tracionado da composicao imediatamente antes do corte, reutilizado do Concretopy.
+O golden N3 conclui A/B/final true, conforme relatorio
+[da V1001](../../.codex/analises/V1001_N3_scaling_check.md).
+
+## Procedimento operacional consolidado na Skill
+
+Para executar uma revisao de corte positivo dentro do vao, consultar
+[positive-bar-scaling.md](../../.agents/skills/reinforcement-review/references/positive-bar-scaling.md).
+A referencia concentra sequencia, evento/orientacao, capacidade remanescente,
+cruzamentos/pico, A/B, conclusao, provenance e bloqueios do escopo validado.
+As regras especificas permanecem em [Vk](al_shear_selection.md),
+[d para al](al_effective_depth.md) e
+[aderencia](../../.agents/skills/reinforcement-review/references/bond-condition.md).
+
+Goldens de uma/duas camadas: [V1001](../../.codex/analises/V1001_N3_scaling_check.md)
+e [V536/V565](../../.codex/analises/V536_V565_N3_scaling_check.md).
+Nao regravar seus resultados para consultar ou testar o procedimento.
+Escalonamento atendido nao substitui ancoragem nos apoios nem aprova a viga.
+
+## Apoio extremo esquerdo e alternativas (06/10/2026)
+
+`support_alternatives.py` verifica a configuração existente e explora bitolas,
+quantidades e camadas configuráveis, com recálculo integral por APIs públicas
+Concretopy. Contrato em [support_alternatives.md](support_alternatives.md);
+procedimento em [positive-end-support.md](../../.agents/skills/reinforcement-review/references/positive-end-support.md).
+O fixture V536/V565 usa S1 e lb_ef=24-2,5=21,5 cm, conservando documental 21 cm.
+Esta decisão sucede a hipótese anterior de comprimento do ensaio, sem alterar
+a posição documental nem o escalonamento. Cabimento transversal/gancho não
+são certificados; As_adicional não equivale a grampo.
+
+## Correção orientada pelo detalhamento (06/10/2026)
+
+`support_correction.py` preserva a busca genérica e acrescenta a hierarquia
+existente/prolongamento/redistribuição, cabimento por primitivas Concretopy e
+compatibilidade regional pelo diagrama/region decomposition existentes.
+[Contrato](support_correction.md) e
+[procedimento da Skill](../../.agents/skills/reinforcement-review/references/positive-support-correction.md).
+Não dimensiona grampos nem escolhe silenciosamente uma solução final.
+
+## Grampos complementares no apoio (06/10/2026)
+
+`support_staples.py` envolve a correção existente sem alterar seus goldens.
+Usa As_adicional como alvo inicial, área/ancoragem básica por Concretopy e
+max(2*lb_grampo+lb_ef,60 cm) por decisão do engenheiro. Ramos resistentes e
+aderência têm fonte explícita; sem distribuição formalizada não produz
+solução pronta. Preserva prolongamentos válidos e selected_solution=null.
+[Contrato](support_staples.md), [Skill](../../.agents/skills/reinforcement-review/references/positive-support-staples.md)
+e [auditoria V536/V565](../../.codex/analises/V536_V565_support_staples.md).
+
+### Atualização da geometria usual dos grampos
+
+U de dois ramos; L_long=max(2*lb+lb_ef,60 cm) por ramo e conector
+L_transversal=b−2*cobrimento−1 cm. Série própria [6.3,8,10] configurável;
+preferência de até três peças, acima disso avaliação especial sem reprovação
+automática. Comprimento nominal não é corte/C de fabricação; distribuição
+vertical permanece pendente. [Auditoria atual](../../.codex/analises/V536_V565_support_staples_geometry_update.md).
+
+### Distribuição vertical dos grampos confirmada
+
+De baixo para cima, 2 cm livres (eixos=2+phi_cm), altura ocupada
+n*phi_cm+(n−1)*2. Controle de envelope e janela vertical explícita com fonte;
+posição inicial não inferida. Distribuição definida não significa interferências
+verificadas ou prancha pronta. [Auditoria](../../.codex/analises/V536_V565_support_staples_vertical_distribution.md).
+
+## Golden integrado positivo V536
+
+[Fixture](../../analises/pranchas/validar_v536_positivo_completo.py) e
+[relatório](../../.codex/analises/V536_positive_reinforcement_complete_golden.md)
+recalculam resistência/regiões, escalonamento, apoio/ancoragem esquerda,
+busca genérica, correção orientada pelo desenho e grampos. JSON único com
+respostas/provenance integrais, testes de regressão contra goldens individuais
+e fontes somente leitura. O golden preserva falha real da N2 no apoio,
+alternativas sem seleção e pendências: geometria documental
+nos apoios, trecho final não amostrado e nó. Golden validado não significa
+armadura positiva ou viga globalmente aprovadas.
+
+## Ancoragem positiva END/INTERMEDIATE, LEFT/RIGHT
+
+[Contrato](support_anchorage.md), [orientação](support_geometry.py) e [orquestração](support_anchorage.py). END preserva A/B/C e correções existentes; INTERMEDIATE usa seção terminal orientada e A/C, com regras distintas para presença/ausência de positivo. O [novo fixture direito V536](../../analises/pranchas/validar_v536_apoio_direito.py) atualiza o integrado com ancoragem longitudinal real, mantendo pendência transversal e nó. As limitações históricas de primeira versão ao lado esquerdo estão superadas em orientação, sem alteração dos goldens individuais. [Auditoria](../../.codex/analises/support_anchorage_generalization_audit.md).
+
+## Revisão longitudinal negativa
+
+Consultar [longitudinal_review.md](longitudinal_review.md) e a
+[referência operacional da Skill](../../.agents/skills/reinforcement-review/references/negative-longitudinal-review.md).
+A generalização reutiliza regiões, esforços/interpolação, orientação e Concretopy;
+preserva os defaults positivos e não altera os goldens anteriores.
+
+Términos longitudinais coincidentes: consultar [eventos independentes por marca](../../.agents/skills/reinforcement-review/references/longitudinal-termination-events.md). Usar a composição física posterior, sem sequência artificial; separar término desenhado e posição requerida.
+
+Classificação estrutural no apoio intermediário: `intermediate_support_review.check_intermediate_bar_event` recebe a geometria do apoio relativo ao vão adjacente e as barras/contextos/diagramas dos dois lados. Prova regional precede o cálculo; reutiliza SCALING ou verifica lb básico desde a face física. [Procedimento e limitações](../../.agents/skills/reinforcement-review/references/intermediate-support-longitudinal-verification.md). Não otimiza detalhamento.
+
+## Revisão negativa de apoio extremo
+
+`negative_end_support_review.review_negative_end_support` descobre marcas que chegam à face END/COLUMN; `check_negative_end_support` separa flexão terminal, reta, dobra vertical e disposição transversal. Reutiliza o nó existente e a primitiva geométrica compartilhada `negative_end_vertical_bend_limits`, sem novo motor resistente. Centros transversais/cota perpendicular ausentes não são estimados. Contratos, fontes de dobra por lado e regras: [apoio negativo extremo](../../.agents/skills/reinforcement-review/references/negative-end-support.md). Sem otimização; selected_solution e detailing_optimization null.
+
+## Relações negativas entre apoios consecutivos
+
+[negative_reinforcement_relations](negative_reinforcement_relations.md) classifica peças físicas, encontro, transição e continuidade, preservando os motores existentes. [Procedimento e regras confirmadas](../../.agents/skills/reinforcement-review/references/negative-reinforcement-relations.md). Massa local em `steel_mass.py` com densidade explícita e área Concretopy; sem escolha automática de correção.
+
+## Cortante por faixas desenhadas e referência por terços
+
+[shear_review](shear_review.md) e [procedimento da Skill](../../.agents/skills/reinforcement-review/references/shear-reinforcement-review.md): diagramas próprios Vk, Concretopy, Asw/s e smax separados, ramos reais e prática usual. Sem suspensão/redesenho. Golden V516/V517 em arquivos próprios de cortante; longitudinais são entradas read-only.
+
+## Suspensão independente após cortante
+
+[suspension_review](suspension_review.md): reação total da viga apoiada sobre a receptora, região simétrica, combinação sem dupla contagem do mínimo, faixas reais e estados independentes. Reutiliza Concretopy e a infraestrutura shear_*, sem alterar goldens de cortante/longitudinais ou selecionar solução. [Referência da Skill](../../.agents/skills/reinforcement-review/references/suspension-reinforcement-review.md).
+
+## Diagnóstico consolidado
+
+beam_diagnostic.py reúne resultados já calculados; beam_diagnostic_adapters.py adapta os contratos históricos explicitamente. Consultar [contrato](beam_diagnostic.md). Nenhuma fórmula resistente, alteração de armadura ou seleção automática.
+
+Diagn�stico 1.1, estados independentes de execu��o e contratos futuros: [diagnostic_update.md](diagnostic_update.md).
+
+Motor inicial de propostas a partir de diagn�stico: [correction_engine.md](correction_engine.md). N�o seleciona solu��es nem edita PDF.
+
+Procedimento documental e geométrico opcional: [STAGE1_CONTRACT](../beam_model/STAGE1_CONTRACT.md), com preflight local e entrada física de flexão. Relatório e regressões em [Etapa 1](../../analises/etapa1_leitura_geometria/relatorio_etapa1.md). As chamadas antigas mantêm sua compatibilidade; usar os adaptadores explícitos para obter a validação das novas evidências.

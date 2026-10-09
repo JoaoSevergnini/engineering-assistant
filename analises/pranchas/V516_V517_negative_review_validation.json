@@ -1,0 +1,195 @@
+{
+  "engineering_assistant_test_counts": {
+    "extrator_lst": 39,
+    "beam_model": 30,
+    "beam_mapping": 34,
+    "reinforcement_checks": 634
+  },
+  "engineering_assistant_tests": 737,
+  "new_real_case_tests": 21,
+  "concretopy_tests": 405,
+  "concretopy_test_exit_code": 0,
+  "quick_validate": "passed",
+  "git_diff_check": "passed",
+  "protected_files_compared": 174,
+  "changed_protected_files": [],
+  "concretopy_unchanged": true,
+  "existing_goldens_unchanged": true,
+  "new_or_updated_case_files": [
+    ".codex/analises/V516_V517_negative_reinforcement_review.md",
+    "analises/pranchas/V516_V517_hit_1_0.png",
+    "analises/pranchas/V516_negative_reinforcement_review.json",
+    "analises/pranchas/V516_span_1_tqs_positions.json",
+    "analises/pranchas/V516_span_2_tqs_positions.json",
+    "analises/pranchas/V516_span_3_tqs_positions.json",
+    "analises/pranchas/V516_span_4_tqs_positions.json",
+    "analises/pranchas/V516_tqs.json",
+    "analises/pranchas/V516_tqs_raw.json",
+    "analises/pranchas/V517_negative_reinforcement_review.json",
+    "analises/pranchas/V517_span_1_tqs_positions.json",
+    "analises/pranchas/V517_span_2_tqs_positions.json",
+    "analises/pranchas/V517_span_3_tqs_positions.json",
+    "analises/pranchas/V517_span_4_tqs_positions.json",
+    "analises/pranchas/V517_tqs.json",
+    "analises/pranchas/V517_tqs_raw.json",
+    "analises/pranchas/validar_v516_v517_negativo.py",
+    "tools/reinforcement_checks/test_v516_v517_negative.py"
+  ],
+  "result_files_sha256": {
+    "V516_negative_reinforcement_review.json": "30eaf5e979cc4957b58d7dd67fd90c4123b11f9cd4fcc539c5c1b4b27820cbcc",
+    "V517_negative_reinforcement_review.json": "b158055451bdd502e9cc586e873b2f74a6d510ccb8c6a30ca617eb3e6713fd90"
+  },
+  "limitations": [
+    "case-specific multi-span adapter, not a general mapper change",
+    "exact al centroid at accepted mixed tails pending",
+    "simultaneous N8/N9 cuts blocked",
+    "complete resistant anchorage of bends unresolved"
+  ],
+  "selected_solution": null,
+  "new_coincident_termination_tests": 23,
+  "prior_case_physical_comparisons": [
+    "V516 unchanged prior geometry/flexure/node and other-event physical results",
+    "V517 unchanged prior geometry/flexure/node and other-event physical results"
+  ],
+  "coincident_termination_updated_files": [
+    "tools/reinforcement_checks/termination_event.py",
+    "tools/reinforcement_checks/bar_scaling.py",
+    "tools/reinforcement_checks/longitudinal_review.py",
+    "tools/reinforcement_checks/test_termination_events.py",
+    "tools/reinforcement_checks/test_bar_scaling.py",
+    "tools/reinforcement_checks/test_longitudinal_negative.py",
+    "tools/reinforcement_checks/test_v516_v517_negative.py",
+    "tools/reinforcement_checks/bar_scaling.md",
+    "tools/reinforcement_checks/longitudinal_review.md",
+    "tools/reinforcement_checks/README.md",
+    ".agents/skills/reinforcement-review/SKILL.md",
+    ".agents/skills/reinforcement-review/references/longitudinal-termination-events.md",
+    ".agents/skills/reinforcement-review/references/positive-bar-scaling.md",
+    ".agents/skills/reinforcement-review/references/negative-longitudinal-review.md",
+    "analises/pranchas/validar_v516_v517_negativo.py",
+    "analises/pranchas/V516_negative_reinforcement_review.json",
+    "analises/pranchas/V517_negative_reinforcement_review.json",
+    ".codex/analises/V516_V517_negative_reinforcement_review.md",
+    "analises/pranchas/V516_V517_negative_review_validation.json"
+  ],
+  "new_intermediate_dispatch_tests": 23,
+  "new_intermediate_real_regression_tests": 4,
+  "unrelated_historical_goldens_unchanged": true,
+  "intermediate_classification_updated_files": [
+    "tools/reinforcement_checks/intermediate_support_review.py",
+    "tools/reinforcement_checks/test_intermediate_support_review.py",
+    "tools/reinforcement_checks/test_v516_v517_negative.py",
+    "analises/pranchas/validar_v516_v517_negativo.py",
+    "analises/pranchas/V516_negative_reinforcement_review.json",
+    "analises/pranchas/V517_negative_reinforcement_review.json",
+    "analises/pranchas/V516_V517_negative_review_validation.json",
+    ".agents/skills/reinforcement-review/SKILL.md",
+    ".agents/skills/reinforcement-review/references/intermediate-support-longitudinal-verification.md",
+    ".agents/skills/reinforcement-review/references/negative-longitudinal-review.md",
+    ".agents/skills/reinforcement-review/references/longitudinal-termination-events.md",
+    "tools/reinforcement_checks/README.md",
+    "tools/reinforcement_checks/longitudinal_review.md",
+    ".codex/analises/V516_V517_negative_reinforcement_review.md",
+    ".codex/analises/intermediate_support_longitudinal_classification.md"
+  ],
+  "intermediate_rule": "engineer_confirmed_intermediate_support_anchorage_when_not_required_v1",
+  "physical_results_elsewhere_unchanged": true,
+  "new_end_support_tests": 40,
+  "new_end_support_real_regression_tests": 4,
+  "previous_V516_V517_physical_results_and_legacy_nodes_unchanged": true,
+  "negative_end_support_updated_files": [
+    "tools/reinforcement_checks/negative_end_support_review.py",
+    "tools/reinforcement_checks/negative_detailing.py",
+    "tools/reinforcement_checks/test_negative_end_support_review.py",
+    "tools/reinforcement_checks/test_v516_v517_negative.py",
+    "analises/pranchas/validar_v516_v517_negativo.py",
+    "analises/pranchas/V516_negative_reinforcement_review.json",
+    "analises/pranchas/V517_negative_reinforcement_review.json",
+    "analises/pranchas/V516_V517_negative_review_validation.json",
+    ".agents/skills/reinforcement-review/SKILL.md",
+    ".agents/skills/reinforcement-review/references/negative-end-support.md",
+    ".agents/skills/reinforcement-review/references/negative-longitudinal-review.md",
+    "tools/reinforcement_checks/README.md",
+    "tools/reinforcement_checks/longitudinal_review.md",
+    ".codex/analises/V516_V517_negative_reinforcement_review.md",
+    ".codex/analises/negative_end_support_review_implementation.md"
+  ],
+  "negative_end_support_rules": [
+    "engineer_confirmed_negative_end_support_vertical_bend_v1",
+    "engineer_confirmed_negative_reinforcement_vibrator_clearance_v1",
+    "engineer_confirmed_column_interference_effective_cover_v1"
+  ],
+  "missing_real_case_geometry": [
+    "perpendicular_width_of_P5_P6",
+    "individual_transverse_bar_centers"
+  ],
+  "negative_relations_validation": {
+    "new_tests": 74,
+    "assistant_counts": {
+      "extrator_lst": 39,
+      "beam_model": 30,
+      "beam_mapping": 34,
+      "reinforcement_checks": 634
+    },
+    "assistant_total": 737,
+    "concretopy_tests": 405,
+    "concretopy_exit": 0,
+    "quick_validate": "valid",
+    "git_diff_check": "clean",
+    "protected_files": 195,
+    "changed_protected_files": [],
+    "previous_physical_results_comparison": {
+      "V516": {
+        "reinforcement": true,
+        "ordered_supports": true,
+        "spans": true,
+        "regions": true,
+        "end_nodes": true,
+        "intermediate_continuity": true,
+        "known_regional_flexure_failure": true,
+        "inputs": true,
+        "historical_events": true
+      },
+      "V517": {
+        "reinforcement": true,
+        "ordered_supports": true,
+        "spans": true,
+        "regions": true,
+        "end_nodes": true,
+        "intermediate_continuity": true,
+        "known_regional_flexure_failure": true,
+        "inputs": true,
+        "historical_events": true
+      }
+    },
+    "created_files": [
+      "tools/reinforcement_checks/negative_reinforcement_relations.py",
+      "tools/reinforcement_checks/negative_reinforcement_relations.md",
+      "tools/reinforcement_checks/steel_mass.py",
+      "tools/reinforcement_checks/test_negative_reinforcement_relations.py",
+      ".agents/skills/reinforcement-review/references/negative-reinforcement-relations.md",
+      ".codex/analises/negative_reinforcement_relations_implementation.md"
+    ],
+    "updated_files": [
+      "analises/pranchas/validar_v516_v517_negativo.py",
+      "analises/pranchas/V516_negative_reinforcement_review.json",
+      "analises/pranchas/V517_negative_reinforcement_review.json",
+      "analises/pranchas/V516_V517_negative_review_validation.json",
+      ".agents/skills/reinforcement-review/SKILL.md",
+      ".agents/skills/reinforcement-review/references/negative-longitudinal-review.md",
+      "tools/reinforcement_checks/README.md",
+      ".codex/analises/V516_V517_negative_reinforcement_review.md"
+    ],
+    "concretopy_unchanged": true,
+    "unrelated_goldens_unchanged": true,
+    "selected_solution": null,
+    "detailing_optimization": null,
+    "remaining_limitations": [
+      "structurally_required_tail_limits_for_mass_unresolved",
+      "holder_count_length_minimum_policy_unresolved",
+      "joint_transverse_centers_missing",
+      "interlayer_node_interferences_not_fully_verified"
+    ],
+    "data_description_divergence": "TQS moment between P2 and P1 has a positive segment; N7 physical continuity independently documented"
+  }
+}

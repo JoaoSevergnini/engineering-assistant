@@ -1,0 +1,111 @@
+{
+  "suites": [
+    {
+      "suite": "beam_model",
+      "command": [
+        "py",
+        "-3.11",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/beam_model",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 71,
+      "seconds": 0.591,
+      "exit_code": 0,
+      "passed": true,
+      "output": "----------------------------------------------------------------------\nRan 71 tests in 0.591s\n\nOK\n"
+    },
+    {
+      "suite": "extrator_lst",
+      "command": [
+        "py",
+        "-3.11",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/extrator_lst",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 42,
+      "seconds": 3.557,
+      "exit_code": 0,
+      "passed": true,
+      "output": "----------------------------------------------------------------------\nRan 42 tests in 3.557s\n\nOK\n"
+    },
+    {
+      "suite": "beam_mapping",
+      "command": [
+        "py",
+        "-3.11",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/beam_mapping",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 57,
+      "seconds": 0.519,
+      "exit_code": 0,
+      "passed": true,
+      "output": "----------------------------------------------------------------------\nRan 57 tests in 0.519s\n\nOK\n"
+    },
+    {
+      "suite": "reinforcement_checks",
+      "command": [
+        "py",
+        "-3.11",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/reinforcement_checks",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 964,
+      "seconds": 31.394,
+      "exit_code": 0,
+      "passed": true,
+      "output": "----------------------------------------------------------------------\nRan 964 tests in 31.394s\n\nOK\n"
+    }
+  ],
+  "total": 1134,
+  "all_passed": true,
+  "interpreter": "CPython 3.11",
+  "concretopy_modified": false,
+  "pranchas_modified": false,
+  "post_final_adjustments": [
+    {
+      "suite": "beam_model",
+      "tests": 71,
+      "passed": true
+    },
+    {
+      "suite": "reinforcement_checks/test_input_preflight.py",
+      "tests": 21,
+      "passed": true
+    },
+    {
+      "suite": "reinforcement_checks/test_stage1_physical_flexure.py",
+      "tests": 4,
+      "passed": true
+    },
+    {
+      "suite": "extrator_lst/test_stage1_cantilevers.py",
+      "tests": 3,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,1383 @@
+{
+  "date": "2026-10-08",
+  "engineering_assistant_tests": 877,
+  "new_assistant_tests": 35,
+  "shear_tests": 140,
+  "concretopy_tests": 413,
+  "quick_validate": "PASS",
+  "protected_files_unchanged": 174,
+  "concretopy_modified_this_round": false,
+  "longitudinal_report_prefix_unchanged": true,
+  "cases": {
+    "V516": {
+      "global_shear_approval": null,
+      "inconclusive_items": [
+        {
+          "span": 1,
+          "reason": "required_physical_coverage_unresolved",
+          "uncovered_required_intervals_m": [
+            [
+              0.12,
+              1.97
+            ]
+          ],
+          "overlapping_required_intervals_m": []
+        },
+        {
+          "span": 4,
+          "reason": "required_physical_coverage_unresolved",
+          "uncovered_required_intervals_m": [
+            [
+              11.71,
+              13.56
+            ]
+          ],
+          "overlapping_required_intervals_m": []
+        }
+      ],
+      "coverage": [
+        {
+          "TQS_SHEAR_DOMAIN": [
+            0.0,
+            2.08
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            0.12,
+            1.97
+          ],
+          "status": "INCONCLUSIVE",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P5A",
+              "width_m": 0.24,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12968,
+                "linha_final": 12968,
+                "texto": "     P5A         24.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 1,
+              "id": "V516/support-1/P5A",
+              "axis_m": 0.0,
+              "left_face_m": -0.12,
+              "right_face_m": 0.12,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P2A",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12969,
+                "linha_final": 12969,
+                "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 2,
+              "id": "V516/support-2/P2A",
+              "axis_m": 2.08,
+              "left_face_m": 1.97,
+              "right_face_m": 2.19,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                0.0,
+                0.12
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P5A",
+                "width_m": 0.24,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12968,
+                  "linha_final": 12968,
+                  "texto": "     P5A         24.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 1,
+                "id": "V516/support-1/P5A",
+                "axis_m": 0.0,
+                "left_face_m": -0.12,
+                "right_face_m": 0.12,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                0.12,
+                1.97
+              ],
+              "classification": "UNCOVERED_REQUIRED_REGION",
+              "status": "INCONCLUSIVE",
+              "regions": []
+            },
+            {
+              "interval_m": [
+                1.97,
+                2.08
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2A",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12969,
+                  "linha_final": 12969,
+                  "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 2,
+                "id": "V516/support-2/P2A",
+                "axis_m": 2.08,
+                "left_face_m": 1.97,
+                "right_face_m": 2.19,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [
+            [
+              0.12,
+              1.97
+            ]
+          ],
+          "overlapping_required_intervals_m": [],
+          "span_id": 1
+        },
+        {
+          "TQS_SHEAR_DOMAIN": [
+            2.08,
+            6.62
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            2.19,
+            6.51
+          ],
+          "status": "PASS",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P2A",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12969,
+                "linha_final": 12969,
+                "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 2,
+              "id": "V516/support-2/P2A",
+              "axis_m": 2.08,
+              "left_face_m": 1.97,
+              "right_face_m": 2.19,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P2A",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12970,
+                "linha_final": 12970,
+                "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 3,
+              "id": "V516/support-3/P2A",
+              "axis_m": 6.62,
+              "left_face_m": 6.51,
+              "right_face_m": 6.73,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                2.08,
+                2.19
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2A",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12969,
+                  "linha_final": 12969,
+                  "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 2,
+                "id": "V516/support-2/P2A",
+                "axis_m": 2.08,
+                "left_face_m": 1.97,
+                "right_face_m": 2.19,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                2.19,
+                6.51
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V516/span-2/N13/2.19-6.51"
+              ]
+            },
+            {
+              "interval_m": [
+                6.51,
+                6.62
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2A",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12970,
+                  "linha_final": 12970,
+                  "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 3,
+                "id": "V516/support-3/P2A",
+                "axis_m": 6.62,
+                "left_face_m": 6.51,
+                "right_face_m": 6.73,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [],
+          "overlapping_required_intervals_m": [],
+          "span_id": 2
+        },
+        {
+          "TQS_SHEAR_DOMAIN": [
+            6.62,
+            10.446
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            6.73,
+            10.29
+          ],
+          "status": "PASS",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P2A",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12970,
+                "linha_final": 12970,
+                "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 3,
+              "id": "V516/support-3/P2A",
+              "axis_m": 6.62,
+              "left_face_m": 6.51,
+              "right_face_m": 6.73,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P1A",
+              "width_m": 1.42,
+              "depev_m": 0.554,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12971,
+                "linha_final": 12971,
+                "texto": "     P1A        142.0       55.4      SEGUE     NAO  "
+              },
+              "occurrence": 4,
+              "id": "V516/support-4/P1A",
+              "axis_m": 11.0,
+              "left_face_m": 10.29,
+              "right_face_m": 11.71,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                6.62,
+                6.73
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2A",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12970,
+                  "linha_final": 12970,
+                  "texto": "     P2A         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 3,
+                "id": "V516/support-3/P2A",
+                "axis_m": 6.62,
+                "left_face_m": 6.51,
+                "right_face_m": 6.73,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                6.73,
+                8.64
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V516/span-3/N13/6.73-8.64"
+              ]
+            },
+            {
+              "interval_m": [
+                8.64,
+                9.16
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V516/span-3/N1/8.64-9.16"
+              ]
+            },
+            {
+              "interval_m": [
+                9.16,
+                10.29
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V516/span-3/N13/9.16-10.29"
+              ]
+            },
+            {
+              "interval_m": [
+                10.29,
+                10.446
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P1A",
+                "width_m": 1.42,
+                "depev_m": 0.554,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12971,
+                  "linha_final": 12971,
+                  "texto": "     P1A        142.0       55.4      SEGUE     NAO  "
+                },
+                "occurrence": 4,
+                "id": "V516/support-4/P1A",
+                "axis_m": 11.0,
+                "left_face_m": 10.29,
+                "right_face_m": 11.71,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [],
+          "overlapping_required_intervals_m": [],
+          "span_id": 3
+        },
+        {
+          "TQS_SHEAR_DOMAIN": [
+            11.554,
+            13.68
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            11.71,
+            13.56
+          ],
+          "status": "INCONCLUSIVE",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P1A",
+              "width_m": 1.42,
+              "depev_m": 0.554,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12971,
+                "linha_final": 12971,
+                "texto": "     P1A        142.0       55.4      SEGUE     NAO  "
+              },
+              "occurrence": 4,
+              "id": "V516/support-4/P1A",
+              "axis_m": 11.0,
+              "left_face_m": 10.29,
+              "right_face_m": 11.71,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P6A",
+              "width_m": 0.24,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 12972,
+                "linha_final": 12972,
+                "texto": "     P6A         24.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 5,
+              "id": "V516/support-5/P6A",
+              "axis_m": 13.68,
+              "left_face_m": 13.56,
+              "right_face_m": 13.8,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                11.554,
+                11.71
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P1A",
+                "width_m": 1.42,
+                "depev_m": 0.554,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12971,
+                  "linha_final": 12971,
+                  "texto": "     P1A        142.0       55.4      SEGUE     NAO  "
+                },
+                "occurrence": 4,
+                "id": "V516/support-4/P1A",
+                "axis_m": 11.0,
+                "left_face_m": 10.29,
+                "right_face_m": 11.71,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                11.71,
+                13.56
+              ],
+              "classification": "UNCOVERED_REQUIRED_REGION",
+              "status": "INCONCLUSIVE",
+              "regions": []
+            },
+            {
+              "interval_m": [
+                13.56,
+                13.68
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P6A",
+                "width_m": 0.24,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 12972,
+                  "linha_final": 12972,
+                  "texto": "     P6A         24.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 5,
+                "id": "V516/support-5/P6A",
+                "axis_m": 13.68,
+                "left_face_m": 13.56,
+                "right_face_m": 13.8,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [
+            [
+              11.71,
+              13.56
+            ]
+          ],
+          "overlapping_required_intervals_m": [],
+          "span_id": 4
+        }
+      ],
+      "excluded_classification": [
+        {
+          "status": "NOT_APPLICABLE",
+          "classification": "ADJACENT_SLAB_NEGATIVE_REINFORCEMENT",
+          "contributes_to_beam_shear": false,
+          "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+          "provenance": {
+            "geometry": "asymmetric47/27cm with horizontal64cm segments in source drawing",
+            "function_confirmation": {
+              "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+              "source": "engineer clarification 2026-10-08: adjacent slab negative continuity across level difference"
+            }
+          }
+        },
+        {
+          "status": "NOT_APPLICABLE",
+          "classification": "ADJACENT_SLAB_NEGATIVE_REINFORCEMENT",
+          "contributes_to_beam_shear": false,
+          "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+          "provenance": {
+            "geometry": "asymmetric47/27cm with horizontal64cm segments in source drawing",
+            "function_confirmation": {
+              "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+              "source": "engineer clarification 2026-10-08: adjacent slab negative continuity across level difference"
+            }
+          }
+        }
+      ]
+    },
+    "V517": {
+      "global_shear_approval": null,
+      "inconclusive_items": [
+        {
+          "span": 1,
+          "reason": "required_physical_coverage_unresolved",
+          "uncovered_required_intervals_m": [
+            [
+              0.12,
+              1.97
+            ]
+          ],
+          "overlapping_required_intervals_m": []
+        },
+        {
+          "span": 4,
+          "reason": "required_physical_coverage_unresolved",
+          "uncovered_required_intervals_m": [
+            [
+              11.71,
+              13.56
+            ]
+          ],
+          "overlapping_required_intervals_m": []
+        }
+      ],
+      "coverage": [
+        {
+          "TQS_SHEAR_DOMAIN": [
+            0.0,
+            2.08
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            0.12,
+            1.97
+          ],
+          "status": "INCONCLUSIVE",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P5B",
+              "width_m": 0.24,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15486,
+                "linha_final": 15486,
+                "texto": "     P5B         24.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 1,
+              "id": "V517/support-1/P5B",
+              "axis_m": 0.0,
+              "left_face_m": -0.12,
+              "right_face_m": 0.12,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P2B",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15487,
+                "linha_final": 15487,
+                "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 2,
+              "id": "V517/support-2/P2B",
+              "axis_m": 2.08,
+              "left_face_m": 1.97,
+              "right_face_m": 2.19,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                0.0,
+                0.12
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P5B",
+                "width_m": 0.24,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15486,
+                  "linha_final": 15486,
+                  "texto": "     P5B         24.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 1,
+                "id": "V517/support-1/P5B",
+                "axis_m": 0.0,
+                "left_face_m": -0.12,
+                "right_face_m": 0.12,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                0.12,
+                1.97
+              ],
+              "classification": "UNCOVERED_REQUIRED_REGION",
+              "status": "INCONCLUSIVE",
+              "regions": []
+            },
+            {
+              "interval_m": [
+                1.97,
+                2.08
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2B",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15487,
+                  "linha_final": 15487,
+                  "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 2,
+                "id": "V517/support-2/P2B",
+                "axis_m": 2.08,
+                "left_face_m": 1.97,
+                "right_face_m": 2.19,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [
+            [
+              0.12,
+              1.97
+            ]
+          ],
+          "overlapping_required_intervals_m": [],
+          "span_id": 1
+        },
+        {
+          "TQS_SHEAR_DOMAIN": [
+            2.08,
+            6.62
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            2.19,
+            6.51
+          ],
+          "status": "PASS",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P2B",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15487,
+                "linha_final": 15487,
+                "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 2,
+              "id": "V517/support-2/P2B",
+              "axis_m": 2.08,
+              "left_face_m": 1.97,
+              "right_face_m": 2.19,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P2B",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15488,
+                "linha_final": 15488,
+                "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 3,
+              "id": "V517/support-3/P2B",
+              "axis_m": 6.62,
+              "left_face_m": 6.51,
+              "right_face_m": 6.73,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                2.08,
+                2.19
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2B",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15487,
+                  "linha_final": 15487,
+                  "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 2,
+                "id": "V517/support-2/P2B",
+                "axis_m": 2.08,
+                "left_face_m": 1.97,
+                "right_face_m": 2.19,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                2.19,
+                6.51
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V517/span-2/N13/2.19-6.51"
+              ]
+            },
+            {
+              "interval_m": [
+                6.51,
+                6.62
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2B",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15488,
+                  "linha_final": 15488,
+                  "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 3,
+                "id": "V517/support-3/P2B",
+                "axis_m": 6.62,
+                "left_face_m": 6.51,
+                "right_face_m": 6.73,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [],
+          "overlapping_required_intervals_m": [],
+          "span_id": 2
+        },
+        {
+          "TQS_SHEAR_DOMAIN": [
+            6.62,
+            10.446
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            6.73,
+            10.29
+          ],
+          "status": "PASS",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P2B",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15488,
+                "linha_final": 15488,
+                "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 3,
+              "id": "V517/support-3/P2B",
+              "axis_m": 6.62,
+              "left_face_m": 6.51,
+              "right_face_m": 6.73,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P1B",
+              "width_m": 1.42,
+              "depev_m": 0.554,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15489,
+                "linha_final": 15489,
+                "texto": "     P1B        142.0       55.4      SEGUE     NAO  "
+              },
+              "occurrence": 4,
+              "id": "V517/support-4/P1B",
+              "axis_m": 11.0,
+              "left_face_m": 10.29,
+              "right_face_m": 11.71,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                6.62,
+                6.73
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P2B",
+                "width_m": 0.22,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15488,
+                  "linha_final": 15488,
+                  "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 3,
+                "id": "V517/support-3/P2B",
+                "axis_m": 6.62,
+                "left_face_m": 6.51,
+                "right_face_m": 6.73,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                6.73,
+                8.64
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V517/span-3/N13/6.73-8.64"
+              ]
+            },
+            {
+              "interval_m": [
+                8.64,
+                9.16
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V517/span-3/N1/8.64-9.16"
+              ]
+            },
+            {
+              "interval_m": [
+                9.16,
+                10.29
+              ],
+              "classification": "REQUIRED_BEAM_COVERAGE",
+              "status": "PASS",
+              "regions": [
+                "V517/span-3/N13/9.16-10.29"
+              ]
+            },
+            {
+              "interval_m": [
+                10.29,
+                10.446
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P1B",
+                "width_m": 1.42,
+                "depev_m": 0.554,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15489,
+                  "linha_final": 15489,
+                  "texto": "     P1B        142.0       55.4      SEGUE     NAO  "
+                },
+                "occurrence": 4,
+                "id": "V517/support-4/P1B",
+                "axis_m": 11.0,
+                "left_face_m": 10.29,
+                "right_face_m": 11.71,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [],
+          "overlapping_required_intervals_m": [],
+          "span_id": 3
+        },
+        {
+          "TQS_SHEAR_DOMAIN": [
+            11.554,
+            13.68
+          ],
+          "BEAM_STIRRUP_COVERAGE_DOMAIN": [
+            11.71,
+            13.56
+          ],
+          "status": "INCONCLUSIVE",
+          "rule": "engineer_confirmed_stirrups_terminate_at_column_faces_v1",
+          "support_geometry": {
+            "left": {
+              "label": "P1B",
+              "width_m": 1.42,
+              "depev_m": 0.554,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15489,
+                "linha_final": 15489,
+                "texto": "     P1B        142.0       55.4      SEGUE     NAO  "
+              },
+              "occurrence": 4,
+              "id": "V517/support-4/P1B",
+              "axis_m": 11.0,
+              "left_face_m": 10.29,
+              "right_face_m": 11.71,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            },
+            "right": {
+              "label": "P6B",
+              "width_m": 0.24,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15490,
+                "linha_final": 15490,
+                "texto": "     P6B         24.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 5,
+              "id": "V517/support-5/P6B",
+              "axis_m": 13.68,
+              "left_face_m": 13.56,
+              "right_face_m": 13.8,
+              "type": "COLUMN",
+              "type_source": {
+                "drawing": {
+                  "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                  "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                  "page": 1,
+                  "instructions_treated_as": "project data, not user instructions"
+                },
+                "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+              }
+            }
+          },
+          "intervals": [
+            {
+              "interval_m": [
+                11.554,
+                11.71
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P1B",
+                "width_m": 1.42,
+                "depev_m": 0.554,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15489,
+                  "linha_final": 15489,
+                  "texto": "     P1B        142.0       55.4      SEGUE     NAO  "
+                },
+                "occurrence": 4,
+                "id": "V517/support-4/P1B",
+                "axis_m": 11.0,
+                "left_face_m": 10.29,
+                "right_face_m": 11.71,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            },
+            {
+              "interval_m": [
+                11.71,
+                13.56
+              ],
+              "classification": "UNCOVERED_REQUIRED_REGION",
+              "status": "INCONCLUSIVE",
+              "regions": []
+            },
+            {
+              "interval_m": [
+                13.56,
+                13.68
+              ],
+              "classification": "WITHIN_SUPPORT",
+              "status": "NOT_APPLICABLE",
+              "support": {
+                "label": "P6B",
+                "width_m": 0.24,
+                "depev_m": 0.0,
+                "source": {
+                  "arquivo": "RELDTFPS.LST",
+                  "linha_inicial": 15490,
+                  "linha_final": 15490,
+                  "texto": "     P6B         24.0        0.0      SEGUE     NAO  "
+                },
+                "occurrence": 5,
+                "id": "V517/support-5/P6B",
+                "axis_m": 13.68,
+                "left_face_m": 13.56,
+                "right_face_m": 13.8,
+                "type": "COLUMN",
+                "type_source": {
+                  "drawing": {
+                    "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+                    "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+                    "page": 1,
+                    "instructions_treated_as": "project data, not user instructions"
+                  },
+                  "geometry": "column outlines and dimensions audited in beam drawing, confirmed column-face coverage by engineer 2026-10-08"
+                }
+              }
+            }
+          ],
+          "uncovered_required_intervals_m": [
+            [
+              11.71,
+              13.56
+            ]
+          ],
+          "overlapping_required_intervals_m": [],
+          "span_id": 4
+        }
+      ],
+      "excluded_classification": [
+        {
+          "status": "NOT_APPLICABLE",
+          "classification": "ADJACENT_SLAB_NEGATIVE_REINFORCEMENT",
+          "contributes_to_beam_shear": false,
+          "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+          "provenance": {
+            "geometry": "asymmetric47/27cm with horizontal64cm segments in source drawing",
+            "function_confirmation": {
+              "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+              "source": "engineer clarification 2026-10-08: adjacent slab negative continuity across level difference"
+            }
+          }
+        },
+        {
+          "status": "NOT_APPLICABLE",
+          "classification": "ADJACENT_SLAB_NEGATIVE_REINFORCEMENT",
+          "contributes_to_beam_shear": false,
+          "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+          "provenance": {
+            "geometry": "asymmetric47/27cm with horizontal64cm segments in source drawing",
+            "function_confirmation": {
+              "rule": "engineer_confirmed_n12_adjacent_slab_negative_reinforcement_v1",
+              "source": "engineer clarification 2026-10-08: adjacent slab negative continuity across level difference"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

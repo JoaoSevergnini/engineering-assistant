@@ -1,0 +1,294 @@
+{
+  "verification": "SUSPENSION_REVIEW",
+  "receiving_beam_id": "V517",
+  "connections": [],
+  "inventory": {
+    "complete": false,
+    "source": {
+      "type": "available audited files only; indirect connection inventory not proven complete",
+      "files": [
+        "V517_shear_reinforcement_review.json",
+        "V517_tqs.json"
+      ]
+    }
+  },
+  "selected_solution": null,
+  "detailing_optimization": null,
+  "independent_shear_results_modified": false,
+  "provenance": {
+    "rules": {
+      "reaction": "engineer_confirmed_suspension_75_percent_reaction_v1",
+      "distribution": "engineer_confirmed_suspension_symmetric_distribution_v1",
+      "shear": "engineer_confirmed_suspension_shear_without_minimum_v1",
+      "minimum": "engineer_confirmed_suspension_total_minimum_governance_v1",
+      "usual": "engineer_confirmed_suspension_usual_stirrup_practices_v1"
+    }
+  },
+  "overall_result": "INCONCLUSIVE",
+  "suspension_passes": null,
+  "documentary_audit": {
+    "mapping_sources": [],
+    "possible_graphical_traces": [
+      {
+        "id": "V517/span-3/N1/8.64-9.16",
+        "mark": "N1",
+        "diameter_mm": 8,
+        "spacing_cm": 12,
+        "drawn_count": 5,
+        "legs": 2,
+        "interval_m": [
+          8.64,
+          9.16
+        ],
+        "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+        "source": {
+          "document": {
+            "path": "s:\\PROJETOS EM EXECUÇÃO\\24-155-INTEGRA-MIGUEL PEREIRA-RJ\\APOIO\\JOÃO\\05 - TIPO DIFERENCIADO - RESIDENCIAL\\VIGAS\\RMP-EST-EX-1348-VIG-R00 - Copia.PDF",
+            "sha256": "5ed602f9371a23c39d1ff4864b77b92b5ec7b937f33ebb14249302f608f25b33",
+            "page": 1,
+            "instructions_treated_as": "project data, not user instructions"
+          },
+          "page": 1,
+          "rendering": "V516_V517_hit_1_0.png",
+          "reading": "text labels and physical shapes reread in source PDF; real drawing governs, not TQS generated reinforcement",
+          "label": "5 N1 diameter8 C/12",
+          "geometry": "rectangular 14x47cm gives two drawn vertical legs",
+          "coordinate_source": [
+            {
+              "label": "P2B",
+              "width_m": 0.22,
+              "depev_m": 0.0,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15488,
+                "linha_final": 15488,
+                "texto": "     P2B         22.0        0.0      SEGUE     NAO  "
+              },
+              "occurrence": 3,
+              "id": "V517/support-3/P2B",
+              "axis_m": 6.62,
+              "left_face_m": 6.51,
+              "right_face_m": 6.73
+            },
+            {
+              "label": "P1B",
+              "width_m": 1.42,
+              "depev_m": 0.554,
+              "source": {
+                "arquivo": "RELDTFPS.LST",
+                "linha_inicial": 15489,
+                "linha_final": 15489,
+                "texto": "     P1B        142.0       55.4      SEGUE     NAO  "
+              },
+              "occurrence": 4,
+              "id": "V517/support-4/P1B",
+              "axis_m": 11.0,
+              "left_face_m": 10.29,
+              "right_face_m": 11.71
+            }
+          ],
+          "local_length_cm": 52.0
+        },
+        "classification_evidence": null,
+        "indirect_support_evidence": {
+          "drawing": "special52cm region spatially associated with dashed supported-beam trace",
+          "policy": "suspension remains NOT_EVALUATED"
+        }
+      }
+    ],
+    "own_support_reactions": [
+      {
+        "support_id": "P5B",
+        "reported_support_name": "P5B",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 42.756994,
+        "min": -62.6644935,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s1264#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P2B",
+        "reported_support_name": "P2B",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 117.1894675,
+        "min": -44.326058,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s1265#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P2B",
+        "reported_support_name": "P2B",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 131.605243,
+        "min": -26.085689,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s1266#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P1B",
+        "reported_support_name": "P1B",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 111.011278,
+        "min": -46.5815875,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s1267#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P6B",
+        "reported_support_name": "P6B",
+        "report_support_number": null,
+        "unit": "kN",
+        "max": 32.165812,
+        "min": -47.856452,
+        "file": "RELDTVGS.LST",
+        "sources": [
+          "s1268#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P5B",
+        "reported_support_name": "P5B",
+        "report_support_number": 1.0,
+        "unit": "kN",
+        "max": 42.74718735,
+        "min": -62.6448802,
+        "file": "RELGER.LST",
+        "sources": [
+          "s1343#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P2B",
+        "reported_support_name": "P2B",
+        "report_support_number": 2.0,
+        "unit": "kN",
+        "max": 117.17966085,
+        "min": -44.3652846,
+        "file": "RELGER.LST",
+        "sources": [
+          "s1344#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P2B",
+        "reported_support_name": "P2B",
+        "report_support_number": 3.0,
+        "unit": "kN",
+        "max": 131.57582305,
+        "min": -26.085689,
+        "file": "RELGER.LST",
+        "sources": [
+          "s1345#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P1B",
+        "reported_support_name": "P1B",
+        "report_support_number": 4.0,
+        "unit": "kN",
+        "max": 110.9720514,
+        "min": -46.59139415,
+        "file": "RELGER.LST",
+        "sources": [
+          "s1346#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P6B",
+        "reported_support_name": "P6B",
+        "report_support_number": 5.0,
+        "unit": "kN",
+        "max": 32.1265854,
+        "min": -47.84664535,
+        "file": "RELGER.LST",
+        "sources": [
+          "s1347#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P5B",
+        "reported_support_name": "P5B",
+        "report_support_number": 1.0,
+        "unit": "kN",
+        "max": 42.74718735,
+        "min": -62.6448802,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1391#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P2B",
+        "reported_support_name": "P2B",
+        "report_support_number": 2.0,
+        "unit": "kN",
+        "max": 117.17966085,
+        "min": -44.3652846,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1392#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P2B",
+        "reported_support_name": "P2B",
+        "report_support_number": 3.0,
+        "unit": "kN",
+        "max": 131.57582305,
+        "min": -26.085689,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1393#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P1B",
+        "reported_support_name": "P1B",
+        "report_support_number": 4.0,
+        "unit": "kN",
+        "max": 110.9720514,
+        "min": -46.59139415,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1394#/normalizacao"
+        ]
+      },
+      {
+        "support_id": "P6B",
+        "reported_support_name": "P6B",
+        "report_support_number": 5.0,
+        "unit": "kN",
+        "max": 32.1265854,
+        "min": -47.84664535,
+        "file": "VGESFS.LST",
+        "sources": [
+          "s1395#/normalizacao"
+        ]
+      }
+    ],
+    "interpretation": "own beam reactions to pillars are not a supported-beam reaction on this receiving beam; N1 graphic trace alone does not prove transfer, total reaction or supported identity",
+    "missing_data": [
+      "supported beam identity and connection/applicability evidence",
+      "total supported-beam reaction with nature, combination, direction and provenance",
+      "projected supported axis in receiving coordinates",
+      "supported beam geometry"
+    ],
+    "inputs": {
+      "V517_shear_reinforcement_review.json": "2a3b276aa235e752c8698fc7f9bb399dcb1b7a3132c4d4c14fe44c2c198fc0ed",
+      "V517_tqs.json": "f4464957d370f235ebabae1f5243e686158d282aa90744ee6360b17a30558088"
+    },
+    "independent_shear_approval_preserved": null
+  }
+}

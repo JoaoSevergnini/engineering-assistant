@@ -6,7 +6,7 @@ def resolve_support(label, support_id, beam_id, side, context):
     if label == support_id:
         return {'document_label': label, 'candidates': [label], 'resolved_support_id': support_id,
                 'method': 'direct_identity'}
-    if not context or context.get('type') != 'engineer_confirmed_shared_detail_towers':
+    if not context or context.get('type') not in ('engineer_confirmed_shared_detail_towers', 'documented_shared_detail_members'):
         raise ValueError('unrecognized_grouped_support_context: ' + label)
     if not context.get('evidence'):
         raise ValueError('missing_support_context_evidence')
@@ -22,7 +22,8 @@ def resolve_support(label, support_id, beam_id, side, context):
         raise ValueError('support_context_mismatch: ' + label)
     return {'document_label': label, 'candidates': copy.deepcopy(candidates),
             'resolved_support_id': support_id, 'beam_id': beam_id, 'side': side,
-            'method': 'engineer_confirmed_tower_member_and_ordered_tqs_support',
+            'method': ('drawing_group_and_ordered_tqs_support' if context['type'] == 'documented_shared_detail_members'
+                       else 'engineer_confirmed_tower_member_and_ordered_tqs_support'),
             'tower': members[0].get('tower'), 'evidence': copy.deepcopy(context['evidence'])}
 
 

@@ -1,0 +1,1507 @@
+{
+  "verification": "SUSPENSION_REVIEW",
+  "receiving_beam_id": "SUPPORT",
+  "connections": [
+    {
+      "verification": "SUSPENSION_REINFORCEMENT_CHECK",
+      "connection": {
+        "id": "J",
+        "type": "BEAM_ON_BEAM",
+        "receiving_beam_id": "SUPPORT",
+        "supported_beam_id": "SUPPORTED",
+        "transfer_confirmed": true,
+        "transfer_source": {
+          "synthetic": "supported beam support reaction explicitly to SUPPORT"
+        },
+        "suspension_applicable": true,
+        "applicability_source": {
+          "engineer": "synthetic internal indirect support"
+        },
+        "supported_geometry": {
+          "height_cm": 40,
+          "width_cm": 15,
+          "source": "synthetic structural geometry"
+        },
+        "placement": "INTERIOR",
+        "projected_axis_m": 2,
+        "axis_source": {
+          "mapping": "supported axis projection on receiving beam axis"
+        },
+        "reaction": {
+          "value": 100,
+          "unit": "kN",
+          "nature": "CHARACTERISTIC",
+          "is_total": true,
+          "total_source": "synthetic all-actions support envelope",
+          "combination": "synthetic C1",
+          "source": "synthetic support reaction record",
+          "downward_sign": 1,
+          "supported_beam_id": "SUPPORTED",
+          "receiving_beam_id": "SUPPORT"
+        }
+      },
+      "checks": {
+        "indirect_support_identification": {
+          "status": "PASS",
+          "passes": true,
+          "provenance": {
+            "id": "J",
+            "type": "BEAM_ON_BEAM",
+            "receiving_beam_id": "SUPPORT",
+            "supported_beam_id": "SUPPORTED",
+            "transfer_confirmed": true,
+            "transfer_source": {
+              "synthetic": "supported beam support reaction explicitly to SUPPORT"
+            },
+            "suspension_applicable": true,
+            "applicability_source": {
+              "engineer": "synthetic internal indirect support"
+            },
+            "supported_geometry": {
+              "height_cm": 40,
+              "width_cm": 15,
+              "source": "synthetic structural geometry"
+            },
+            "placement": "INTERIOR",
+            "projected_axis_m": 2,
+            "axis_source": {
+              "mapping": "supported axis projection on receiving beam axis"
+            },
+            "reaction": {
+              "value": 100,
+              "unit": "kN",
+              "nature": "CHARACTERISTIC",
+              "is_total": true,
+              "total_source": "synthetic all-actions support envelope",
+              "combination": "synthetic C1",
+              "source": "synthetic support reaction record",
+              "downward_sign": 1,
+              "supported_beam_id": "SUPPORTED",
+              "receiving_beam_id": "SUPPORT"
+            }
+          }
+        },
+        "total_support_reaction": {
+          "status": "PASS",
+          "passes": true,
+          "total_kn": 100.0,
+          "original_signed_kn": 100.0,
+          "downward_sign": 1,
+          "provenance": {
+            "value": 100,
+            "unit": "kN",
+            "nature": "CHARACTERISTIC",
+            "is_total": true,
+            "total_source": "synthetic all-actions support envelope",
+            "combination": "synthetic C1",
+            "source": "synthetic support reaction record",
+            "downward_sign": 1,
+            "supported_beam_id": "SUPPORTED",
+            "receiving_beam_id": "SUPPORT"
+          }
+        },
+        "reaction_nature": {
+          "status": "PASS",
+          "passes": true,
+          "nature": "CHARACTERISTIC"
+        },
+        "geometric_position": {
+          "status": "PASS",
+          "passes": true,
+          "provenance": {
+            "projected_axis_m": 2.0,
+            "source": {
+              "mapping": "supported axis projection on receiving beam axis"
+            }
+          }
+        },
+        "distribution_length": {
+          "status": "PASS",
+          "passes": true,
+          "length_cm": 52.0,
+          "rule": "engineer_confirmed_suspension_symmetric_distribution_v1"
+        },
+        "shear_diagram_coverage": {
+          "status": "PASS",
+          "passes": true,
+          "provenance": {
+            "status": "PASS",
+            "requested_interval_m": [
+              1.74,
+              2.26
+            ],
+            "series_coverage": [
+              {
+                "series_id": "max",
+                "sampled_domain_m": [
+                  0.0,
+                  4.0
+                ],
+                "check_interval_m": [
+                  1.74,
+                  2.26
+                ],
+                "uncovered_intervals_m": [],
+                "unresolved_queries": []
+              }
+            ],
+            "governing": [
+              {
+                "series_id": "max",
+                "x_m": 1.74,
+                "section": null,
+                "Vsk_original_kn": 100.0,
+                "Vsk_abs_kn": 100.0,
+                "sign": 1,
+                "source_type": "linear_interpolation",
+                "provenance": {
+                  "x_m": 1.74,
+                  "x_decimal": "1.74",
+                  "value_knm": 100.0,
+                  "value_decimal": "100.00",
+                  "provenance": {
+                    "quantity": "shear",
+                    "unit": "kN",
+                    "series_id": "max",
+                    "source": {
+                      "synthetic": "max"
+                    }
+                  },
+                  "rule": {
+                    "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                    "author": "João Severgnini",
+                    "date": "2026-10-04",
+                    "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                    "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                    "decimal_precision": 50
+                  },
+                  "source_type": "linear_interpolation",
+                  "segment_ids": [
+                    "SEG1"
+                  ],
+                  "base_points": [
+                    {
+                      "x_m": 0,
+                      "value_knm": 100,
+                      "section": 1,
+                      "provenance": {
+                        "sample_index": 0,
+                        "series": {
+                          "synthetic": "max"
+                        }
+                      }
+                    },
+                    {
+                      "x_m": 2,
+                      "value_knm": 100,
+                      "section": 2,
+                      "provenance": {
+                        "sample_index": 1,
+                        "series": {
+                          "synthetic": "max"
+                        }
+                      }
+                    }
+                  ],
+                  "status": "resolved"
+                }
+              },
+              {
+                "series_id": "max",
+                "x_m": 2.0,
+                "section": 2,
+                "Vsk_original_kn": 100,
+                "Vsk_abs_kn": 100,
+                "sign": 1,
+                "source_type": "tqs_section",
+                "provenance": {
+                  "x_m": 2.0,
+                  "x_decimal": "2.0",
+                  "value_knm": 100,
+                  "value_decimal": "100",
+                  "provenance": {
+                    "quantity": "shear",
+                    "unit": "kN",
+                    "series_id": "max",
+                    "source": {
+                      "synthetic": "max"
+                    }
+                  },
+                  "rule": {
+                    "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                    "author": "João Severgnini",
+                    "date": "2026-10-04",
+                    "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                    "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                    "decimal_precision": 50
+                  },
+                  "status": "resolved",
+                  "source_type": "tqs_section",
+                  "section": 2,
+                  "base_points": [
+                    {
+                      "x_m": 2,
+                      "value_knm": 100,
+                      "section": 2,
+                      "provenance": {
+                        "sample_index": 1,
+                        "series": {
+                          "synthetic": "max"
+                        }
+                      }
+                    }
+                  ],
+                  "segment_ids": [
+                    "SEG1",
+                    "SEG2"
+                  ]
+                }
+              },
+              {
+                "series_id": "max",
+                "x_m": 2.26,
+                "section": null,
+                "Vsk_original_kn": 100.0,
+                "Vsk_abs_kn": 100.0,
+                "sign": 1,
+                "source_type": "linear_interpolation",
+                "provenance": {
+                  "x_m": 2.26,
+                  "x_decimal": "2.26",
+                  "value_knm": 100.0,
+                  "value_decimal": "100.00",
+                  "provenance": {
+                    "quantity": "shear",
+                    "unit": "kN",
+                    "series_id": "max",
+                    "source": {
+                      "synthetic": "max"
+                    }
+                  },
+                  "rule": {
+                    "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                    "author": "João Severgnini",
+                    "date": "2026-10-04",
+                    "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                    "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                    "decimal_precision": 50
+                  },
+                  "source_type": "linear_interpolation",
+                  "segment_ids": [
+                    "SEG2"
+                  ],
+                  "base_points": [
+                    {
+                      "x_m": 2,
+                      "value_knm": 100,
+                      "section": 2,
+                      "provenance": {
+                        "sample_index": 1,
+                        "series": {
+                          "synthetic": "max"
+                        }
+                      }
+                    },
+                    {
+                      "x_m": 4,
+                      "value_knm": 100,
+                      "section": 3,
+                      "provenance": {
+                        "sample_index": 2,
+                        "series": {
+                          "synthetic": "max"
+                        }
+                      }
+                    }
+                  ],
+                  "status": "resolved"
+                }
+              }
+            ],
+            "Vsk_abs_kn": 100.0,
+            "complete": true,
+            "rule": "engineer_confirmed_tqs_shear_domain_v1",
+            "provenance": {
+              "series": [
+                {
+                  "quantity": "shear",
+                  "unit": "kN",
+                  "envelope": "max",
+                  "sections": [
+                    1,
+                    2,
+                    3
+                  ],
+                  "positions": [
+                    0,
+                    2,
+                    4
+                  ],
+                  "values": [
+                    100,
+                    100,
+                    100
+                  ],
+                  "provenance": {
+                    "synthetic": "max"
+                  }
+                }
+              ]
+            },
+            "partial_results_only": false,
+            "intersection_requested": false
+          }
+        },
+        "suspension_component": {
+          "status": "PASS",
+          "passes": true,
+          "asw_per_s_cm2_m": 4.644230769230769,
+          "rule": "engineer_confirmed_suspension_75_percent_reaction_v1",
+          "conversion": "cm2 / cm * 100 -> cm2/m"
+        },
+        "shear_calculated_component": {
+          "status": "PASS",
+          "passes": true
+        },
+        "minimum_component": {
+          "status": "PASS",
+          "passes": true
+        },
+        "total_required_rate": {
+          "status": "PASS",
+          "passes": true
+        },
+        "provided_stirrup_area": {
+          "status": "PASS",
+          "passes": true
+        },
+        "maximum_code_spacing": {
+          "status": "PASS",
+          "passes": true
+        },
+        "effective_legs": {
+          "status": "PASS",
+          "passes": true
+        },
+        "usual_practices": {
+          "status": "PASS",
+          "rule": "engineer_confirmed_suspension_usual_stirrup_practices_v1"
+        },
+        "drawing_coverage": {
+          "status": "PASS",
+          "passes": true
+        },
+        "diagonal_compression": {
+          "status": "PASS",
+          "passes": true,
+          "Vsk_abs_kn": 100.0,
+          "Vsd_kn": 140.0,
+          "VRd2_kn": 574.9704000000002,
+          "utilization": 0.24349079535224763,
+          "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+        }
+      },
+      "subintervals": [
+        {
+          "interval_m": [
+            1.74,
+            2.26
+          ],
+          "checks": {
+            "drawing_coverage": {
+              "status": "PASS",
+              "passes": true
+            },
+            "independent_shear_reinforcement": {
+              "status": "PASS",
+              "passes": true,
+              "required_cm2_m": 2.6667041772501334,
+              "provided_cm2_m": 8.377580409572783
+            },
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 100.0,
+              "Vsd_kn": 140.0,
+              "VRd2_kn": 574.9704000000002,
+              "utilization": 0.24349079535224763,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "maximum_code_spacing": {
+              "status": "PASS",
+              "passes": true,
+              "limit_cm": 28.02,
+              "drawn_cm": 12
+            },
+            "number_of_legs": {
+              "status": "PASS",
+              "reason": "WIDE_BEAM_OUTSIDE_USUAL_FOUR_LEGS",
+              "drawn_legs": 2,
+              "expected_usual_legs": null,
+              "rule": "engineer_confirmed_four_leg_stirrups_for_wide_beams_v1"
+            },
+            "stirrup_holder": {
+              "status": "NOT_APPLICABLE",
+              "passes": null,
+              "reason": "specific four-leg holder check not applicable; other longitudinal reviews preserved"
+            },
+            "shear_calculated_component": {
+              "status": "PASS",
+              "passes": true
+            },
+            "minimum_component": {
+              "status": "PASS",
+              "passes": true
+            },
+            "total_required_rate": {
+              "status": "PASS",
+              "passes": true
+            },
+            "provided_stirrup_area": {
+              "status": "PASS",
+              "passes": true,
+              "provided_cm2_m": 8.377580409572783,
+              "required_cm2_m": 7.194242147797802,
+              "margin_cm2_m": 1.1833382617749812
+            }
+          },
+          "overall_result": "PASS",
+          "piece": {
+            "id": "R",
+            "diameter_mm": 8,
+            "spacing_cm": 12,
+            "legs": 2,
+            "interval_m": [
+              0,
+              4
+            ],
+            "source": {
+              "synthetic": "drawn stirrup"
+            }
+          },
+          "classification": {
+            "status": "PASS",
+            "classification": "CONVENTIONAL_SHEAR_STIRRUP",
+            "contributes_to_beam_shear": true,
+            "provenance": {
+              "synthetic": "drawn stirrup"
+            }
+          },
+          "independent_shear_check": {
+            "verification": "SHEAR_DRAWN_REGION_CHECK",
+            "region": {
+              "id": "R",
+              "diameter_mm": 8,
+              "spacing_cm": 12,
+              "legs": 2,
+              "interval_m": [
+                1.74,
+                2.26
+              ],
+              "source": {
+                "synthetic": "drawn stirrup"
+              }
+            },
+            "checks": {
+              "diagonal_compression": {
+                "status": "PASS",
+                "passes": true,
+                "Vsk_abs_kn": 100.0,
+                "Vsd_kn": 140.0,
+                "VRd2_kn": 574.9704000000002,
+                "utilization": 0.24349079535224763,
+                "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+              },
+              "shear_reinforcement": {
+                "status": "PASS",
+                "passes": true,
+                "required_cm2_m": 2.6667041772501334,
+                "provided_cm2_m": 8.377580409572783
+              },
+              "maximum_code_spacing": {
+                "status": "PASS",
+                "passes": true,
+                "limit_cm": 28.02,
+                "drawn_cm": 12,
+                "provenance": {
+                  "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                  "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                  "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                  "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+                }
+              },
+              "usual_minimum_spacing": {
+                "status": "PASS",
+                "reason": "STIRRUP_SPACING_BELOW_USUAL_LIMIT",
+                "limit_cm": 8,
+                "drawn_cm": 12,
+                "rule": "engineer_confirmed_usual_minimum_stirrup_spacing_v1"
+              },
+              "usual_diameter": {
+                "status": "PASS",
+                "reason": "LARGER_STIRRUP_DIAMETER_OUTSIDE_USUAL_SET",
+                "rule": "engineer_confirmed_usual_stirrup_diameters_v1"
+              },
+              "number_of_legs": {
+                "status": "PASS",
+                "reason": "WIDE_BEAM_OUTSIDE_USUAL_FOUR_LEGS",
+                "drawn_legs": 2,
+                "expected_usual_legs": null,
+                "rule": "engineer_confirmed_four_leg_stirrups_for_wide_beams_v1"
+              },
+              "stirrup_holder": {
+                "status": "NOT_APPLICABLE",
+                "passes": null,
+                "reason": "specific four-leg holder check not applicable; other longitudinal reviews preserved"
+              }
+            },
+            "overall_structural_result": "PASS",
+            "engineering_review_required": false,
+            "limitations": [],
+            "suspension_check_required": false,
+            "suspension_result": "NOT_EVALUATED",
+            "selected_solution": null,
+            "detailing_optimization": null,
+            "rule": "engineer_confirmed_refined_drawn_shear_region_check_v1",
+            "demand": {
+              "status": "PASS",
+              "requested_interval_m": [
+                1.74,
+                2.26
+              ],
+              "series_coverage": [
+                {
+                  "series_id": "max",
+                  "sampled_domain_m": [
+                    0.0,
+                    4.0
+                  ],
+                  "check_interval_m": [
+                    1.74,
+                    2.26
+                  ],
+                  "uncovered_intervals_m": [],
+                  "unresolved_queries": []
+                }
+              ],
+              "governing": [
+                {
+                  "series_id": "max",
+                  "x_m": 1.74,
+                  "section": null,
+                  "Vsk_original_kn": 100.0,
+                  "Vsk_abs_kn": 100.0,
+                  "sign": 1,
+                  "source_type": "linear_interpolation",
+                  "provenance": {
+                    "x_m": 1.74,
+                    "x_decimal": "1.74",
+                    "value_knm": 100.0,
+                    "value_decimal": "100.00",
+                    "provenance": {
+                      "quantity": "shear",
+                      "unit": "kN",
+                      "series_id": "max",
+                      "source": {
+                        "synthetic": "max"
+                      }
+                    },
+                    "rule": {
+                      "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                      "author": "João Severgnini",
+                      "date": "2026-10-04",
+                      "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                      "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                      "decimal_precision": 50
+                    },
+                    "source_type": "linear_interpolation",
+                    "segment_ids": [
+                      "SEG1"
+                    ],
+                    "base_points": [
+                      {
+                        "x_m": 0,
+                        "value_knm": 100,
+                        "section": 1,
+                        "provenance": {
+                          "sample_index": 0,
+                          "series": {
+                            "synthetic": "max"
+                          }
+                        }
+                      },
+                      {
+                        "x_m": 2,
+                        "value_knm": 100,
+                        "section": 2,
+                        "provenance": {
+                          "sample_index": 1,
+                          "series": {
+                            "synthetic": "max"
+                          }
+                        }
+                      }
+                    ],
+                    "status": "resolved"
+                  }
+                },
+                {
+                  "series_id": "max",
+                  "x_m": 2.0,
+                  "section": 2,
+                  "Vsk_original_kn": 100,
+                  "Vsk_abs_kn": 100,
+                  "sign": 1,
+                  "source_type": "tqs_section",
+                  "provenance": {
+                    "x_m": 2.0,
+                    "x_decimal": "2.0",
+                    "value_knm": 100,
+                    "value_decimal": "100",
+                    "provenance": {
+                      "quantity": "shear",
+                      "unit": "kN",
+                      "series_id": "max",
+                      "source": {
+                        "synthetic": "max"
+                      }
+                    },
+                    "rule": {
+                      "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                      "author": "João Severgnini",
+                      "date": "2026-10-04",
+                      "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                      "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                      "decimal_precision": 50
+                    },
+                    "status": "resolved",
+                    "source_type": "tqs_section",
+                    "section": 2,
+                    "base_points": [
+                      {
+                        "x_m": 2,
+                        "value_knm": 100,
+                        "section": 2,
+                        "provenance": {
+                          "sample_index": 1,
+                          "series": {
+                            "synthetic": "max"
+                          }
+                        }
+                      }
+                    ],
+                    "segment_ids": [
+                      "SEG1",
+                      "SEG2"
+                    ]
+                  }
+                },
+                {
+                  "series_id": "max",
+                  "x_m": 2.26,
+                  "section": null,
+                  "Vsk_original_kn": 100.0,
+                  "Vsk_abs_kn": 100.0,
+                  "sign": 1,
+                  "source_type": "linear_interpolation",
+                  "provenance": {
+                    "x_m": 2.26,
+                    "x_decimal": "2.26",
+                    "value_knm": 100.0,
+                    "value_decimal": "100.00",
+                    "provenance": {
+                      "quantity": "shear",
+                      "unit": "kN",
+                      "series_id": "max",
+                      "source": {
+                        "synthetic": "max"
+                      }
+                    },
+                    "rule": {
+                      "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                      "author": "João Severgnini",
+                      "date": "2026-10-04",
+                      "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                      "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                      "decimal_precision": 50
+                    },
+                    "source_type": "linear_interpolation",
+                    "segment_ids": [
+                      "SEG2"
+                    ],
+                    "base_points": [
+                      {
+                        "x_m": 2,
+                        "value_knm": 100,
+                        "section": 2,
+                        "provenance": {
+                          "sample_index": 1,
+                          "series": {
+                            "synthetic": "max"
+                          }
+                        }
+                      },
+                      {
+                        "x_m": 4,
+                        "value_knm": 100,
+                        "section": 3,
+                        "provenance": {
+                          "sample_index": 2,
+                          "series": {
+                            "synthetic": "max"
+                          }
+                        }
+                      }
+                    ],
+                    "status": "resolved"
+                  }
+                }
+              ],
+              "Vsk_abs_kn": 100.0,
+              "complete": true,
+              "rule": "engineer_confirmed_tqs_shear_domain_v1",
+              "provenance": {
+                "series": [
+                  {
+                    "quantity": "shear",
+                    "unit": "kN",
+                    "envelope": "max",
+                    "sections": [
+                      1,
+                      2,
+                      3
+                    ],
+                    "positions": [
+                      0,
+                      2,
+                      4
+                    ],
+                    "values": [
+                      100,
+                      100,
+                      100
+                    ],
+                    "provenance": {
+                      "synthetic": "max"
+                    }
+                  }
+                ]
+              },
+              "partial_results_only": false,
+              "intersection_requested": true
+            },
+            "provided": {
+              "Asw_cm2": 1.0053096491487339,
+              "Asw_per_s_cm2_m": 8.377580409572783,
+              "diameter_mm": 8,
+              "spacing_cm": 12,
+              "legs": 2,
+              "area_unit_cm2": 0.5026548245743669,
+              "provenance": {
+                "bar": "Concretopy.Barra.area_cm2",
+                "geometry": {
+                  "synthetic": "drawn stirrup"
+                }
+              }
+            },
+            "design": {
+              "status": "PASS",
+              "diagonal_compression": {
+                "status": "PASS",
+                "passes": true,
+                "Vsk_abs_kn": 100.0,
+                "Vsd_kn": 140.0,
+                "VRd2_kn": 574.9704000000002,
+                "utilization": 0.24349079535224763,
+                "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+              },
+              "diagnostics": [],
+              "units": {
+                "forces": "kN",
+                "Asw_per_s": "cm2/m",
+                "spacing": "cm",
+                "d": "cm"
+              },
+              "Vsk_abs_kn": 100.0,
+              "Vsd_kn": 140.0,
+              "VRd2_kn": 574.9704000000002,
+              "Vc_kn": 93.40131380818592,
+              "d_cm": 46.7,
+              "minimum_Asw_per_s_cm2_m": 2.6667041772501334,
+              "provenance": {
+                "api": {
+                  "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                  "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                  "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                  "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+                },
+                "minimum_call": {
+                  "Vk_kn": 0,
+                  "result": {
+                    "asw_por_s": 2.6667041772501334,
+                    "vc": 93.40131380818592,
+                    "vrd2": 574.9704000000002,
+                    "asw_por_s_calculado": 0.0,
+                    "asw_por_s_minimo": 2.6667041772501334
+                  }
+                },
+                "effective_depth": {
+                  "status": "PASS",
+                  "d_cm": 46.7,
+                  "selected": {
+                    "provenance": {
+                      "synthetic": "explicit audited physical centroid"
+                    }
+                  },
+                  "rule": "engineer_confirmed_shear_effective_depth_max_layers_v1"
+                },
+                "physical_section": {
+                  "bw": 19,
+                  "h": 52,
+                  "cobrimento": 2.5,
+                  "diametro_estribo_mm": 5
+                },
+                "stirrup_diameter_mm": 8,
+                "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+                "maximum_spacing_api": {
+                  "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                  "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                  "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                  "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+                },
+                "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+              },
+              "concretopy": {
+                "asw_por_s": 2.6667041772501334,
+                "vc": 93.40131380818592,
+                "vrd2": 574.9704000000002,
+                "asw_por_s_calculado": 2.5500113785670324,
+                "asw_por_s_minimo": 2.6667041772501334
+              },
+              "required_Asw_per_s_cm2_m": 2.6667041772501334,
+              "governing_Asw_per_s_cm2_m": 2.6667041772501334,
+              "required_by_shear_separately_cm2_m": null,
+              "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+              "requirement_governed_by": "MINIMUM",
+              "maximum_spacing_code_cm": 28.02
+            }
+          },
+          "provided": {
+            "Asw_cm2": 1.0053096491487339,
+            "Asw_per_s_cm2_m": 8.377580409572783,
+            "diameter_mm": 8,
+            "spacing_cm": 12,
+            "legs": 2,
+            "area_unit_cm2": 0.5026548245743669,
+            "provenance": {
+              "bar": "Concretopy.Barra.area_cm2",
+              "geometry": {
+                "synthetic": "drawn stirrup"
+              }
+            }
+          },
+          "usual_checks": {
+            "usual_diameter": {
+              "status": "PASS",
+              "reason": "LARGER_STIRRUP_DIAMETER_OUTSIDE_USUAL_SET",
+              "rule": "engineer_confirmed_usual_stirrup_diameters_v1"
+            },
+            "usual_minimum_spacing": {
+              "status": "PASS",
+              "reason": "STIRRUP_SPACING_BELOW_USUAL_LIMIT",
+              "limit_cm": 8,
+              "drawn_cm": 12,
+              "rule": "engineer_confirmed_usual_minimum_stirrup_spacing_v1"
+            }
+          },
+          "regional_shear_design": {
+            "status": "PASS",
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 100.0,
+              "Vsd_kn": 140.0,
+              "VRd2_kn": 574.9704000000002,
+              "utilization": 0.24349079535224763,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "diagnostics": [],
+            "units": {
+              "forces": "kN",
+              "Asw_per_s": "cm2/m",
+              "spacing": "cm",
+              "d": "cm"
+            },
+            "Vsk_abs_kn": 100.0,
+            "Vsd_kn": 140.0,
+            "VRd2_kn": 574.9704000000002,
+            "Vc_kn": 93.40131380818592,
+            "d_cm": 46.7,
+            "minimum_Asw_per_s_cm2_m": 2.6667041772501334,
+            "provenance": {
+              "api": {
+                "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+              },
+              "minimum_call": {
+                "Vk_kn": 0,
+                "result": {
+                  "asw_por_s": 2.6667041772501334,
+                  "vc": 93.40131380818592,
+                  "vrd2": 574.9704000000002,
+                  "asw_por_s_calculado": 0.0,
+                  "asw_por_s_minimo": 2.6667041772501334
+                }
+              },
+              "effective_depth": {
+                "status": "PASS",
+                "d_cm": 46.7,
+                "selected": {
+                  "provenance": {
+                    "synthetic": "explicit audited physical centroid"
+                  }
+                },
+                "rule": "engineer_confirmed_shear_effective_depth_max_layers_v1"
+              },
+              "physical_section": {
+                "bw": 19,
+                "h": 52,
+                "cobrimento": 2.5,
+                "diametro_estribo_mm": 5
+              },
+              "stirrup_diameter_mm": 8,
+              "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+              "maximum_spacing_api": {
+                "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+              },
+              "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+            },
+            "concretopy": {
+              "asw_por_s": 2.6667041772501334,
+              "vc": 93.40131380818592,
+              "vrd2": 574.9704000000002,
+              "asw_por_s_calculado": 2.5500113785670324,
+              "asw_por_s_minimo": 2.6667041772501334
+            },
+            "required_Asw_per_s_cm2_m": 2.6667041772501334,
+            "governing_Asw_per_s_cm2_m": 2.6667041772501334,
+            "required_by_shear_separately_cm2_m": null,
+            "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+            "requirement_governed_by": "MINIMUM",
+            "maximum_spacing_code_cm": 28.02
+          },
+          "asw_per_s_suspension": 4.644230769230769,
+          "asw_per_s_shear_calculated": 2.5500113785670324,
+          "asw_per_s_shear_minimum": 2.6667041772501334,
+          "asw_per_s_total_required": 7.194242147797802,
+          "combination_provenance": {
+            "rule": "engineer_confirmed_suspension_total_minimum_governance_v1",
+            "expression": "max(suspension + shear_calculated, shear_minimum)"
+          }
+        }
+      ],
+      "excluded_reinforcement": [],
+      "diagnostics": [],
+      "overall_result": "PASS",
+      "suspension_passes": true,
+      "selected_solution": null,
+      "detailing_optimization": null,
+      "provenance": {
+        "rules": {
+          "reaction": "engineer_confirmed_suspension_75_percent_reaction_v1",
+          "distribution": "engineer_confirmed_suspension_symmetric_distribution_v1",
+          "shear": "engineer_confirmed_suspension_shear_without_minimum_v1",
+          "minimum": "engineer_confirmed_suspension_total_minimum_governance_v1",
+          "usual": "engineer_confirmed_suspension_usual_stirrup_practices_v1"
+        },
+        "context": {
+          "section": {
+            "bw": 19,
+            "h": 52,
+            "cobrimento": 2.5,
+            "diametro_estribo_mm": 5
+          },
+          "fck_mpa": 40,
+          "fyk_mpa": 500,
+          "gamma_f": 1.4,
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "effective_depth": {
+            "status": "PASS",
+            "d_cm": 46.7,
+            "selected": {
+              "provenance": {
+                "synthetic": "explicit audited physical centroid"
+              }
+            },
+            "rule": "engineer_confirmed_shear_effective_depth_max_layers_v1"
+          }
+        }
+      },
+      "suspension": {
+        "reaction": {
+          "value": 100,
+          "unit": "kN",
+          "nature": "CHARACTERISTIC",
+          "is_total": true,
+          "total_source": "synthetic all-actions support envelope",
+          "combination": "synthetic C1",
+          "source": "synthetic support reaction record",
+          "downward_sign": 1,
+          "supported_beam_id": "SUPPORTED",
+          "receiving_beam_id": "SUPPORT"
+        },
+        "total_support_reaction": {
+          "status": "PASS",
+          "passes": true,
+          "total_kn": 100.0,
+          "original_signed_kn": 100.0,
+          "downward_sign": 1,
+          "provenance": {
+            "value": 100,
+            "unit": "kN",
+            "nature": "CHARACTERISTIC",
+            "is_total": true,
+            "total_source": "synthetic all-actions support envelope",
+            "combination": "synthetic C1",
+            "source": "synthetic support reaction record",
+            "downward_sign": 1,
+            "supported_beam_id": "SUPPORTED",
+            "receiving_beam_id": "SUPPORT"
+          }
+        },
+        "reaction_nature": {
+          "status": "PASS",
+          "passes": true,
+          "nature": "CHARACTERISTIC"
+        },
+        "suspension_component": {
+          "status": "PASS",
+          "passes": true,
+          "area_cm2": 2.415,
+          "rule": "engineer_confirmed_suspension_75_percent_reaction_v1"
+        },
+        "as_suspension_cm2": 2.415,
+        "total_characteristic_kn": 100.0,
+        "total_design_kn": 140.0,
+        "considered_design_kn": 105.0,
+        "gamma_f_applied": 1.4,
+        "fyd_mpa": 434.7826086956522,
+        "fyd_kn_cm2": 43.47826086956522,
+        "provenance": {
+          "rule": "engineer_confirmed_suspension_75_percent_reaction_v1",
+          "steel_api": {
+            "interface": "concretopy.materiais.fyd",
+            "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+            "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+            "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+          },
+          "conversion": "1 MPa = 0.1 kN/cm2; area = considered_design_kn / fyd_kn_cm2"
+        }
+      },
+      "distribution": {
+        "geometric_position": {
+          "status": "PASS",
+          "passes": true,
+          "provenance": {
+            "projected_axis_m": 2.0,
+            "source": {
+              "mapping": "supported axis projection on receiving beam axis"
+            }
+          }
+        },
+        "distribution_length": {
+          "status": "PASS",
+          "passes": true,
+          "length_cm": 52.0,
+          "rule": "engineer_confirmed_suspension_symmetric_distribution_v1"
+        },
+        "interval_m": [
+          1.74,
+          2.26
+        ],
+        "length_cm": 52.0,
+        "placement": "INTERIOR",
+        "rule": "engineer_confirmed_suspension_symmetric_distribution_v1",
+        "height_of_receiving_beam_cm": 52.0,
+        "provenance": {
+          "projected_axis_m": 2.0,
+          "source": {
+            "mapping": "supported axis projection on receiving beam axis"
+          }
+        }
+      },
+      "physical_geometry": {
+        "status": "PASS",
+        "passes": true,
+        "physical_domain_m": [
+          0.0,
+          4.0
+        ],
+        "span_id": 1,
+        "provenance": {
+          "left": {
+            "type": "COLUMN",
+            "type_source": "fixture",
+            "source": "fixture",
+            "axis_m": -0.1,
+            "width_m": 0.2,
+            "left_face_m": -0.2,
+            "right_face_m": 0
+          },
+          "right": {
+            "type": "COLUMN",
+            "type_source": "fixture",
+            "source": "fixture",
+            "axis_m": 4.1,
+            "width_m": 0.2,
+            "left_face_m": 4,
+            "right_face_m": 4.2
+          }
+        }
+      },
+      "shear_demand": {
+        "status": "PASS",
+        "requested_interval_m": [
+          1.74,
+          2.26
+        ],
+        "series_coverage": [
+          {
+            "series_id": "max",
+            "sampled_domain_m": [
+              0.0,
+              4.0
+            ],
+            "check_interval_m": [
+              1.74,
+              2.26
+            ],
+            "uncovered_intervals_m": [],
+            "unresolved_queries": []
+          }
+        ],
+        "governing": [
+          {
+            "series_id": "max",
+            "x_m": 1.74,
+            "section": null,
+            "Vsk_original_kn": 100.0,
+            "Vsk_abs_kn": 100.0,
+            "sign": 1,
+            "source_type": "linear_interpolation",
+            "provenance": {
+              "x_m": 1.74,
+              "x_decimal": "1.74",
+              "value_knm": 100.0,
+              "value_decimal": "100.00",
+              "provenance": {
+                "quantity": "shear",
+                "unit": "kN",
+                "series_id": "max",
+                "source": {
+                  "synthetic": "max"
+                }
+              },
+              "rule": {
+                "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                "author": "João Severgnini",
+                "date": "2026-10-04",
+                "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                "decimal_precision": 50
+              },
+              "source_type": "linear_interpolation",
+              "segment_ids": [
+                "SEG1"
+              ],
+              "base_points": [
+                {
+                  "x_m": 0,
+                  "value_knm": 100,
+                  "section": 1,
+                  "provenance": {
+                    "sample_index": 0,
+                    "series": {
+                      "synthetic": "max"
+                    }
+                  }
+                },
+                {
+                  "x_m": 2,
+                  "value_knm": 100,
+                  "section": 2,
+                  "provenance": {
+                    "sample_index": 1,
+                    "series": {
+                      "synthetic": "max"
+                    }
+                  }
+                }
+              ],
+              "status": "resolved"
+            }
+          },
+          {
+            "series_id": "max",
+            "x_m": 2.0,
+            "section": 2,
+            "Vsk_original_kn": 100,
+            "Vsk_abs_kn": 100,
+            "sign": 1,
+            "source_type": "tqs_section",
+            "provenance": {
+              "x_m": 2.0,
+              "x_decimal": "2.0",
+              "value_knm": 100,
+              "value_decimal": "100",
+              "provenance": {
+                "quantity": "shear",
+                "unit": "kN",
+                "series_id": "max",
+                "source": {
+                  "synthetic": "max"
+                }
+              },
+              "rule": {
+                "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                "author": "João Severgnini",
+                "date": "2026-10-04",
+                "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                "decimal_precision": 50
+              },
+              "status": "resolved",
+              "source_type": "tqs_section",
+              "section": 2,
+              "base_points": [
+                {
+                  "x_m": 2,
+                  "value_knm": 100,
+                  "section": 2,
+                  "provenance": {
+                    "sample_index": 1,
+                    "series": {
+                      "synthetic": "max"
+                    }
+                  }
+                }
+              ],
+              "segment_ids": [
+                "SEG1",
+                "SEG2"
+              ]
+            }
+          },
+          {
+            "series_id": "max",
+            "x_m": 2.26,
+            "section": null,
+            "Vsk_original_kn": 100.0,
+            "Vsk_abs_kn": 100.0,
+            "sign": 1,
+            "source_type": "linear_interpolation",
+            "provenance": {
+              "x_m": 2.26,
+              "x_decimal": "2.26",
+              "value_knm": 100.0,
+              "value_decimal": "100.00",
+              "provenance": {
+                "quantity": "shear",
+                "unit": "kN",
+                "series_id": "max",
+                "source": {
+                  "synthetic": "max"
+                }
+              },
+              "rule": {
+                "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                "author": "João Severgnini",
+                "date": "2026-10-04",
+                "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                "decimal_precision": 50
+              },
+              "source_type": "linear_interpolation",
+              "segment_ids": [
+                "SEG2"
+              ],
+              "base_points": [
+                {
+                  "x_m": 2,
+                  "value_knm": 100,
+                  "section": 2,
+                  "provenance": {
+                    "sample_index": 1,
+                    "series": {
+                      "synthetic": "max"
+                    }
+                  }
+                },
+                {
+                  "x_m": 4,
+                  "value_knm": 100,
+                  "section": 3,
+                  "provenance": {
+                    "sample_index": 2,
+                    "series": {
+                      "synthetic": "max"
+                    }
+                  }
+                }
+              ],
+              "status": "resolved"
+            }
+          }
+        ],
+        "Vsk_abs_kn": 100.0,
+        "complete": true,
+        "rule": "engineer_confirmed_tqs_shear_domain_v1",
+        "provenance": {
+          "series": [
+            {
+              "quantity": "shear",
+              "unit": "kN",
+              "envelope": "max",
+              "sections": [
+                1,
+                2,
+                3
+              ],
+              "positions": [
+                0,
+                2,
+                4
+              ],
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "provenance": {
+                "synthetic": "max"
+              }
+            }
+          ]
+        },
+        "partial_results_only": false,
+        "intersection_requested": false
+      },
+      "asw_per_s_suspension": 4.644230769230769,
+      "regional_shear_design": {
+        "status": "PASS",
+        "diagonal_compression": {
+          "status": "PASS",
+          "passes": true,
+          "Vsk_abs_kn": 100.0,
+          "Vsd_kn": 140.0,
+          "VRd2_kn": 574.9704000000002,
+          "utilization": 0.24349079535224763,
+          "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+        },
+        "diagnostics": [],
+        "units": {
+          "forces": "kN",
+          "Asw_per_s": "cm2/m",
+          "spacing": "cm",
+          "d": "cm"
+        },
+        "Vsk_abs_kn": 100.0,
+        "Vsd_kn": 140.0,
+        "VRd2_kn": 574.9704000000002,
+        "Vc_kn": 93.40131380818592,
+        "d_cm": 46.7,
+        "minimum_Asw_per_s_cm2_m": 2.6667041772501334,
+        "provenance": {
+          "api": {
+            "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+            "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+            "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+            "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+          },
+          "minimum_call": {
+            "Vk_kn": 0,
+            "result": {
+              "asw_por_s": 2.6667041772501334,
+              "vc": 93.40131380818592,
+              "vrd2": 574.9704000000002,
+              "asw_por_s_calculado": 0.0,
+              "asw_por_s_minimo": 2.6667041772501334
+            }
+          },
+          "effective_depth": {
+            "status": "PASS",
+            "d_cm": 46.7,
+            "selected": {
+              "provenance": {
+                "synthetic": "explicit audited physical centroid"
+              }
+            },
+            "rule": "engineer_confirmed_shear_effective_depth_max_layers_v1"
+          },
+          "physical_section": {
+            "bw": 19,
+            "h": 52,
+            "cobrimento": 2.5,
+            "diametro_estribo_mm": 5
+          },
+          "stirrup_diameter_mm": 5,
+          "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+          "maximum_spacing_api": {
+            "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+            "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+            "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+            "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+          },
+          "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+        },
+        "concretopy": {
+          "asw_por_s": 2.6667041772501334,
+          "vc": 93.40131380818592,
+          "vrd2": 574.9704000000002,
+          "asw_por_s_calculado": 2.5500113785670324,
+          "asw_por_s_minimo": 2.6667041772501334
+        },
+        "required_Asw_per_s_cm2_m": 2.6667041772501334,
+        "governing_Asw_per_s_cm2_m": 2.6667041772501334,
+        "required_by_shear_separately_cm2_m": null,
+        "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+        "requirement_governed_by": "MINIMUM",
+        "maximum_spacing_code_cm": 28.02
+      },
+      "asw_per_s_shear_calculated": 2.5500113785670324,
+      "asw_per_s_shear_minimum": 2.6667041772501334,
+      "asw_per_s_total_required": 7.194242147797802
+    }
+  ],
+  "inventory": {
+    "complete": true,
+    "source": {
+      "type": "synthetic complete fixture, not actual project reaction"
+    }
+  },
+  "selected_solution": null,
+  "detailing_optimization": null,
+  "independent_shear_results_modified": false,
+  "provenance": {
+    "rules": {
+      "reaction": "engineer_confirmed_suspension_75_percent_reaction_v1",
+      "distribution": "engineer_confirmed_suspension_symmetric_distribution_v1",
+      "shear": "engineer_confirmed_suspension_shear_without_minimum_v1",
+      "minimum": "engineer_confirmed_suspension_total_minimum_governance_v1",
+      "usual": "engineer_confirmed_suspension_usual_stirrup_practices_v1"
+    }
+  },
+  "overall_result": "PASS",
+  "suspension_passes": true,
+  "fixture_source": {
+    "type": "SYNTHETIC",
+    "path": "suspension_synthetic_fixture.json",
+    "sha256": "dd9db790d71eb1efaaf75faa6d4a6a3b1bc33a612b183a1f4dcbd2494f840100"
+  }
+}

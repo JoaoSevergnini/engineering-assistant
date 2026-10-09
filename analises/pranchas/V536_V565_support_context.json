@@ -1,0 +1,46 @@
+{
+  "type": "documented_shared_detail_members",
+  "detail_beam_id": "V536",
+  "evidence": {
+    "drawing_title": {
+      "document": "analises/pranchas/V536_V565_detalhamento_prancha.json",
+      "pointer": "/identification/group_members",
+      "label": "V536=V565"
+    },
+    "support_association": "Ordered support IDs from each beam TQS; widths 24/120 cm and clear length 294 cm coincide exactly. No A/B suffix heuristic."
+  },
+  "support_labels": [
+    {
+      "label": "P11A",
+      "side": "left",
+      "candidates": [
+        "P11A",
+        "P12B"
+      ]
+    },
+    {
+      "label": "P7A",
+      "side": "right",
+      "candidates": [
+        "P7A",
+        "P8B"
+      ]
+    }
+  ],
+  "members": [
+    {
+      "beam_id": "V536",
+      "support_ids": {
+        "left": "P11A",
+        "right": "P7A"
+      }
+    },
+    {
+      "beam_id": "V565",
+      "support_ids": {
+        "left": "P12B",
+        "right": "P8B"
+      }
+    }
+  ]
+}

@@ -299,6 +299,19 @@ class Consolidator:
                             field, index = fields[key]
                             candidates.append((scalar(field, unit), self.source(record, f'campos_explicitos/{index}'), False))
                 span['geometry'][target] = self.resolve(path, candidates, preferred=True)
+        # Optional additive classification: B does not prove physical side/bounds.
+        for position, span in enumerate(spans):
+            observations = [r for r in rows.get('VGESFS.LST', [])
+                            if scalar(r['normalizacao']['campos']['vao']) == span['id']
+                            and 'tipo_vao_documental' in r['normalizacao']]
+            if observations:
+                kinds = {r['normalizacao']['tipo_vao_documental'] for r in observations}
+                span['documentary_span_kind'] = next(iter(kinds)) if len(kinds) == 1 else None
+                span['original_span_tokens'] = [r['normalizacao']['identificador_vao_original'] for r in observations]
+                span['physical_span_validation'] = 'PENDING'
+                self.provenance[f'/beam/spans/{position}/documentary_span_kind'] = [self.source(r, 'normalizacao/tipo_vao_documental') for r in observations]
+                if len(kinds) != 1:
+                    self.warn('span_kind_conflicting', f'/beam/spans/{position}/documentary_span_kind')
         if self.zero_spans:
             self.warn('zero_length_documentary_spans', '/beam/spans',
                       reason='Registros de comprimento zero permanecem no raw; nao sao convertidos em vaos fisicos.',

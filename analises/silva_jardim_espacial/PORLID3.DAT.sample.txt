@@ -1,0 +1,453 @@
+  148    6
+    1    0    1    1    1    1    1    1
+Todas permanentes e acidentais dos pavimentos                           
+TODAS
+    2    0    1    1    1    1    1    1
+Peso Próprio                                                            
+PP
+    3    0    1    1    1    1    1    1
+Cargas permanentes                                                      
+PERM
+    4    0    1    1    1    1    1    1
+Cargas acidentais                                                       
+ACID
+    5    0    1    1    1    1    1    1
+Empuxo                                                                  
+EMPU
+    6    0    1    1    1    1    1    1
+Vento (1) 90°                                                           
+VENT1
+    7    0    1    1    1    1    1    1
+Vento (2) 270°                                                          
+VENT2
+    8    0    1    1    1    1    1    1
+Vento (3) 0°                                                            
+VENT3
+    9    0    1    1    1    1    1    1
+Vento (4) 180°                                                          
+VENT4
+   10    0    1    1    1    1    1    1
+Vento (5) 45°                                                           
+VENT5
+   11    0    1    1    1    1    1    1
+Vento (6) 135°                                                          
+VENT6
+   12    0    1    1    1    1    1    1
+Vento (7) 225°                                                          
+VENT7
+   13    0    1    1    1    1    1    1
+Vento (8) 315°                                                          
+VENT8
+   14    0    1    1    1    1    1    1
+Impacto lateral de veículos                                             
+IMPC
+   15    0    1    1    1    1    1    1
+Cargas acidentais - Reduzidas                                           
+ACID_R
+   16    0    1    1    1    1    1    1
+Todas permanentes e acidentais dos pavimentos - VTN                     
+TODAS_V
+   17    0    1    1    1    1    1    1
+Peso Próprio - VTN                                                      
+PP_V
+   18    0    1    1    1    1    1    1
+Cargas permanentes - VTN                                                
+PERM_V
+   19    0    1    1    1    1    1    1
+Cargas acidentais - VTN                                                 
+ACID_V
+   20    0    1    1    1    1    1    1
+Cargas acidentais - Reduzidas - VTN                                     
+ACID_R_V
+   21    0    1    1    1    1    1    1
+ELU1/PERM/PP+PERM+EMPU                                                  
+ELU1/PERM/PP+PERM+EMPU
+   22    0    1    1    1    1    1    1
+ELU1/PERMACID/PP+PERM+EMPU+ACID                                         
+ELU1/PERMACID/PP+PERM+EMPU+ACID
+   23    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT1                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT1
+   24    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT2                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT2
+   25    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT3                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT3
+   26    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT4                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT4
+   27    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT5                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT5
+   28    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT6                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT6
+   29    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT7                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT7
+   30    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT8                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+ACID+0.6VENT8
+   31    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT1                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT1
+   32    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT2                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT2
+   33    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT3                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT3
+   34    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT4                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT4
+   35    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT5                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT5
+   36    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT6                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT6
+   37    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT7                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT7
+   38    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT8                                
+ELU1/ACIDCOMB/PP+PERM+EMPU+0.5ACID+VENT8
+   39    0    1    1    1    1    1    1
+ELU1/EXCEPC/0.86PP+0.86PERM+0.86EMPU+0.57ACID+0.71IMPC                  
+ELU1/EXCEPC/0.86PP+0.86PERM+0.86EMPU+0.57ACID+0.71IMPC
+   40    0    1    1    1    1    1    1
+ELU2/PERM/PP+PERM+EMPU                                                  
+ELU2/PERM/PP+PERM+EMPU
+   41    0    1    1    1    1    1    1
+ELU2/PERMACID/PP+PERM+EMPU+ACID_R                                       
+ELU2/PERMACID/PP+PERM+EMPU+ACID_R
+   42    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT1                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT1
+   43    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT2                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT2
+   44    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT3                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT3
+   45    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT4                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT4
+   46    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT5                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT5
+   47    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT6                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT6
+   48    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT7                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT7
+   49    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT8                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+ACID_R+0.6VENT8
+   50    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT1                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT1
+   51    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT2                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT2
+   52    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT3                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT3
+   53    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT4                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT4
+   54    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT5                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT5
+   55    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT6                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT6
+   56    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT7                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT7
+   57    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT8                              
+ELU2/ACIDCOMB/PP+PERM+EMPU+0.5ACID_R+VENT8
+   58    0    1    1    1    1    1    1
+ELU2/EXCEPC/0.86PP+0.86PERM+0.86EMPU+0.57ACID_R+0.71IMPC                
+ELU2/EXCEPC/0.86PP+0.86PERM+0.86EMPU+0.57ACID_R+0.71IMPC
+   59    0    1    1    1    1    1    1
+FOGO/PERMVAR/PP+PERM+EMPU+0.3ACID                                       
+FOGO/PERMVAR/PP+PERM+EMPU+0.3ACID
+   60    0    1    1    1    1    1    1
+COMBFLU/COMBFLU/PP+PERM+EMPU+0.3ACID                                    
+COMBFLU/COMBFLU/PP+PERM+EMPU+0.3ACID
+   61    0    1    1    1    1    1    1
+ELU1/PERM/PP_V+PERM_V+EMPU                                              
+ELU1/PERM/PP_V+PERM_V+EMPU
+   62    0    1    1    1    1    1    1
+ELU1/PERMACID/PP_V+PERM_V+EMPU+ACID_V                                   
+ELU1/PERMACID/PP_V+PERM_V+EMPU+ACID_V
+   63    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT1                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT1
+   64    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT2                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT2
+   65    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT3                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT3
+   66    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT4                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT4
+   67    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT5                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT5
+   68    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT6                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT6
+   69    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT7                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT7
+   70    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT8                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_V+0.6VENT8
+   71    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT1                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT1
+   72    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT2                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT2
+   73    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT3                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT3
+   74    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT4                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT4
+   75    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT5                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT5
+   76    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT6                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT6
+   77    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT7                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT7
+   78    0    1    1    1    1    1    1
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT8                          
+ELU1/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_V+VENT8
+   79    0    1    1    1    1    1    1
+ELU1/EXCEPC/0.86PP_V+0.86PERM_V+0.86EMPU+0.57ACID_V+0.71IMPC            
+ELU1/EXCEPC/0.86PP_V+0.86PERM_V+0.86EMPU+0.57ACID_V+0.71IMPC
+   80    0    1    1    1    1    1    1
+ELU2/PERM/PP_V+PERM_V+EMPU                                              
+ELU2/PERM/PP_V+PERM_V+EMPU
+   81    0    1    1    1    1    1    1
+ELU2/PERMACID/PP_V+PERM_V+EMPU+ACID_R_V                                 
+ELU2/PERMACID/PP_V+PERM_V+EMPU+ACID_R_V
+   82    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT1                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT1
+   83    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT2                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT2
+   84    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT3                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT3
+   85    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT4                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT4
+   86    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT5                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT5
+   87    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT6                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT6
+   88    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT7                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT7
+   89    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT8                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+ACID_R_V+0.6VENT8
+   90    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT1                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT1
+   91    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT2                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT2
+   92    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT3                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT3
+   93    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT4                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT4
+   94    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT5                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT5
+   95    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT6                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT6
+   96    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT7                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT7
+   97    0    1    1    1    1    1    1
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT8                        
+ELU2/ACIDCOMB/PP_V+PERM_V+EMPU+0.5ACID_R_V+VENT8
+   98    0    1    1    1    1    1    1
+ELU2/EXCEPC/0.86PP_V+0.86PERM_V+0.86EMPU+0.57ACID_R_V+0.71IMPC          
+ELU2/EXCEPC/0.86PP_V+0.86PERM_V+0.86EMPU+0.57ACID_R_V+0.71IMPC
+   99    0    1    1    1    1    1    1
+FOGO/PERMVAR/PP_V+PERM_V+EMPU+0.3ACID_V                                 
+FOGO/PERMVAR/PP_V+PERM_V+EMPU+0.3ACID_V
+  100    0    1    1    1    1    1    1
+COMBFLU/COMBFLU/PP_V+PERM_V+EMPU+0.3ACID_V                              
+COMBFLU/COMBFLU/PP_V+PERM_V+EMPU+0.3ACID_V
+  101    0    1    1    1    1    1    1
+FX MAX-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-FX MAX
+  102    0    1    1    1    1    1    1
+FY MAX-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-FY MAX
+  103    0    1    1    1    1    1    1
+FZ MAX-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-FZ MAX
+  104    0    1    1    1    1    1    1
+MX MAX-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-MX MAX
+  105    0    1    1    1    1    1    1
+MY MAX-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-MY MAX
+  106    0    1    1    1    1    1    1
+MZ MAX-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-MZ MAX
+  107    0    1    1    1    1    1    1
+FX MIN-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-FX MIN
+  108    0    1    1    1    1    1    1
+FY MIN-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-FY MIN
+  109    0    1    1    1    1    1    1
+FZ MIN-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-FZ MIN
+  110    0    1    1    1    1    1    1
+MX MIN-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-MX MIN
+  111    0    1    1    1    1    1    1
+MY MIN-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-MY MIN
+  112    0    1    1    1    1    1    1
+MZ MIN-ELU1-Verificações de estado limite último - Vigas e lajes        
+ELU1-MZ MIN
+  113    0    1    1    1    1    1    1
+FX MAX-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-FX MAX
+  114    0    1    1    1    1    1    1
+FY MAX-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-FY MAX
+  115    1    1    1    1    1    1    1
+FZ MAX-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-FZ MAX
+  116    1    1    1    1    1    1    1
+MX MAX-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-MX MAX
+  117    1    1    1    1    1    1    1
+MY MAX-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-MY MAX
+  118    0    1    1    1    1    1    1
+MZ MAX-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-MZ MAX
+  119    0    1    1    1    1    1    1
+FX MIN-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-FX MIN
+  120    0    1    1    1    1    1    1
+FY MIN-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-FY MIN
+  121    1    1    1    1    1    1    1
+FZ MIN-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-FZ MIN
+  122    1    1    1    1    1    1    1
+MX MIN-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-MX MIN
+  123    1    1    1    1    1    1    1
+MY MIN-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-MY MIN
+  124    0    1    1    1    1    1    1
+MZ MIN-ELU2-Verificações de estado limite último - Pilares e fundações  
+ELU2-MZ MIN
+  125    0    1    1    1    1    1    1
+FX MAX-FOGO-Verificações em situação de incêndio                        
+FOGO-FX MAX
+  126    0    1    1    1    1    1    1
+FY MAX-FOGO-Verificações em situação de incêndio                        
+FOGO-FY MAX
+  127    0    1    1    1    1    1    1
+FZ MAX-FOGO-Verificações em situação de incêndio                        
+FOGO-FZ MAX
+  128    0    1    1    1    1    1    1
+MX MAX-FOGO-Verificações em situação de incêndio                        
+FOGO-MX MAX
+  129    0    1    1    1    1    1    1
+MY MAX-FOGO-Verificações em situação de incêndio                        
+FOGO-MY MAX
+  130    0    1    1    1    1    1    1
+MZ MAX-FOGO-Verificações em situação de incêndio                        
+FOGO-MZ MAX
+  131    0    1    1    1    1    1    1
+FX MIN-FOGO-Verificações em situação de incêndio                        
+FOGO-FX MIN
+  132    0    1    1    1    1    1    1
+FY MIN-FOGO-Verificações em situação de incêndio                        
+FOGO-FY MIN
+  133    0    1    1    1    1    1    1
+FZ MIN-FOGO-Verificações em situação de incêndio                        
+FOGO-FZ MIN
+  134    0    1    1    1    1    1    1
+MX MIN-FOGO-Verificações em situação de incêndio                        
+FOGO-MX MIN
+  135    0    1    1    1    1    1    1
+MY MIN-FOGO-Verificações em situação de incêndio                        
+FOGO-MY MIN
+  136    0    1    1    1    1    1    1
+MZ MIN-FOGO-Verificações em situação de incêndio                        
+FOGO-MZ MIN
+  137    0    1    1    1    1    1    1
+FX MAX-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-FX MAX
+  138    0    1    1    1    1    1    1
+FY MAX-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-FY MAX
+  139    0    1    1    1    1    1    1
+FZ MAX-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-FZ MAX
+  140    0    1    1    1    1    1    1
+MX MAX-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-MX MAX
+  141    0    1    1    1    1    1    1
+MY MAX-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-MY MAX
+  142    0    1    1    1    1    1    1
+MZ MAX-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-MZ MAX
+  143    0    1    1    1    1    1    1
+FX MIN-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-FX MIN
+  144    0    1    1    1    1    1    1
+FY MIN-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-FY MIN
+  145    0    1    1    1    1    1    1
+FZ MIN-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-FZ MIN
+  146    0    1    1    1    1    1    1
+MX MIN-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-MX MIN
+  147    0    1    1    1    1    1    1
+MY MIN-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-MY MIN
+  148    0    1    1    1    1    1    1
+MZ MIN-COMBFLU-Cálculo de fluência (método geral)                       
+COMBFLU-MZ MIN
+    1    0    0    0
+     1.000
+    0    0    1    0
+    0    0
+    1
+    0    0
+    50.000
+    0

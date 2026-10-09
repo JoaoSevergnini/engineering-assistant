@@ -57,3 +57,7 @@ apoio documental é a viga analisada. NUL no nome é desconsiderado na comparaç
 registro original permanece intacto. Coordenada, IB e marca ficam null; relações
 documentais do detalhamento ficam separadas em `drawing_indirect_supports`.
 Nenhuma reação é atribuída a N7/IB1/IB2 por proximidade ou ordem.
+
+## Apoios indiretos documentais
+
+indirect_supports.py associa encontros de planta a relações e reações dos modelos consolidados LST. Consultar .agents/skills/reinforcement-review/references/indirect-support-identification.md. Sem planta/metadados comprovados, não liberar suspensão.

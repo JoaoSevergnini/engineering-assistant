@@ -1,0 +1,174 @@
+Arquivos do modelo TQS — ESPACIAL
+
+
+Silva Jardim · R35 · inspeção em 09/10/2026
+
+
+Diretório inspecionado: C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\ESPACIAL. Foram inventariados 163 arquivos, incluindo subpastas, totalizando 179.524.640 bytes. Nenhum arquivo de projeto foi alterado. Esta investigação identifica fontes de dados; não recalcula nem aprova a estrutura.
+
+
+1. Resultado principal
+
+
+Há esforços por elemento e por combinação disponíveis nos arquivos FOR0212.RSX e PORTELS.RSX. Foi possível decodificar a organização dos registros e extrair um piloto das vigas V606 e V623, no piso físico 5. A identidade das barras vem do relatório PORFOR.LST; as definições dos casos/combinações vêm dos respectivos arquivos POR.
+
+
+A leitura não ficou restrita à identificação das extensões: os resultados binários foram comparados às listagens textuais. O modelo principal contém 20 casos básicos + 80 combinações = 100 registros; o modelo ELS contém 20 casos básicos + 22 combinações = 42 registros. Ambos possuem 2.751 nós, 3.757 barras e 76 apoios.
+
+
+Cada registro binário inclui seis componentes por nó, doze componentes por barra (seis em cada extremidade) e seis componentes por apoio. Os arquivos POR contêm entrada e cargas aplicadas; os esforços internos calculados estão na base RSX. FORCAS não deve ser interpretado como esforço interno da barra.
+
+
+2. Fontes prioritárias para integrar combinações separadas
+
+
+Resultados, geometria e identidade
+
+
+Arquivo | Conteúdo confirmado | Esforços por elemento / limite | 
+FOR0212.RSX | Base binária de resultados: 100 registros, cada um com deslocamentos nodais, 12 valores por barra e 6 reações por apoio. | Sim: 3.757 barras, duas extremidades por caso/combinação. Estrutura binária decodificada e conferida; piloto de vigas extraído. | 
+PORTELS.RSX | Base binária ELS, com 42 registros e a mesma estrutura geométrica de contagem. | Sim: resultados por barra e caso/combinação. Reações conferidas contra a listagem; piloto de vigas extraído. | 
+FOR0212.POR | Entrada do modelo principal: nós, materiais, seções, barras, restrições, cargas nodais e nas barras, 20 casos, 80 combinações e envoltória de 38 IDs. Unidades declaradas TF e M. | Não: FORCAS/CARREG são cargas aplicadas, não solicitações internas calculadas. Texto lido e catalogado; cabeçalhos e componentes preservados. | 
+PORTELS.POR | Entrada do modelo ELS: mesma contagem de nós/barras; 20 casos e 22 combinações (20 ELS e 2 FOGO). | Não; contém cargas e definições. Texto lido e catalogado. IDs de combinação pertencem a este modelo. | 
+PORFOR.LST | Relatório de geração do modelo principal: critérios efetivos, pisos/cotas, casos, combinações, transferência e relações viga–barra/pilar–barra. | Não há tabela completa de solicitações de vigas; fornece a associação nominal aos elementos. 1.550 associações viga–barra extraídas; cinco pisos TIPO identificados. | 
+PORFORELS.LST | Relatório de geração ELS: critérios, pisos, associações e combinações; informa transferência para vigas/pilares desativada nesta execução. | Sem tabela completa de esforços das vigas. Conteúdo conferido; mantém identidade do modelo ELS separada. | 
+CARDWG2.LST | Geometria para planta de cargas: 20 plantas/pisos, 706 registros PILAR, dimensões e polígonos XY. | Não; geometria de pilares. Tags identificadas: PLANTA/PISO/PILAR/NP/XY. Útil para obter dimensões reais dos nós de pórtico. | 
+
+Combinações, critérios e validação
+
+
+Arquivo | Conteúdo confirmado | Esforços por elemento / limite | 
+CARRPOR.DAT | Definições de carregamentos e combinações: tipos de ação, gamma favorável/desfavorável, psi0/psi1/psi2, flags de não linearidade, composição e seleção. Declara 26 casos e 100 combinações na configuração. | Não; definições e critérios. Texto comentado. Configuração não se confunde com os casos efetivamente gerados em cada POR. | 
+CRITPOR.DAT | Critérios de análise: propriedades, rigidezes, offsets, transferência, parâmetros de vento e demais opções. | Não. Texto legível; valores efetivos devem ser cruzados com PORFOR/PORFORELS, evitando interpretar zeros de herança como propriedades nulas. | 
+FOR0212.Lst | Listagem de processamento principal; reações FX/FY/FZ/MX/MY/MZ por nó de apoio, para NC e CBNL; somas de reações e forças externas. | Sim para apoios; não contém tabela de esforços nas barras nesta emissão. 7.600 linhas nó–caso lidas; base para validar RSX. | 
+PORTELS.Lst | Listagem ELS com reações por apoio para NC e CB, e balanço de forças. | Sim para apoios; sem tabela de barras nesta emissão. 3.192 linhas nó–caso lidas; base para validar RSX. | 
+PORLIS2.LST | Relatório nominal: pilares por piso/lance/barra/caso, My/Mz/N nas extremidades e DeslXY; forças de fundação; cargas nas vigas de transição. A seleção publicada é o caso 1. | Sim, pilares elemento por elemento; cargas pontuais de transição. Não há diagramas completos de vigas nem todas as combinações. 612 linhas de lances de pilares comparadas com RSX. | 
+PORALF.LST | Estabilidade global: hipóteses, gammaF/gammaF3, gammaZ/FAVt, ações horizontais e parâmetros de transferência. | Resultados globais; não fornece o vetor por barra. Ajuda a interpretar amplificações e a distinguir saída bruta do pórtico de esforços transferidos ao dimensionamento. | 
+PORALF.HTM | Estabilidade global e deslocamentos laterais, casos/combinações e tabelas por piso/direção; apresenta norma configurada para imperfeições como NBR-6118:2014. | Valores globais/por piso, sem solicitações individuais completas das vigas. HTML lido; indicação de norma é configuração publicada, não validação normativa desta inspeção. | 
+
+3. Demais arquivos úteis e auxiliares
+
+
+Arquivo | Conteúdo / finalidade | Esforços e ressalvas | 
+PBETAD.DAT | 84 pilares, 80 combinações; por pilar e lance registra índice/ID da combinação, BetaDPu/BetaDVu, PUtotal/PUpermanente e VUtotal/VUpermanente. | Sim, grandezas PU/VU por pilar/lance/combinação; não é o vetor completo de esforços de vigas. Campos identificados por comentários; unidades e aplicação dos coeficientes ainda precisam de confirmação. | 
+PORLID2.DAT | Configuração da planta de cargas: 148 entradas selecionáveis e flags; primeiros 100 casos/combinações e 48 entradas de máximos/mínimos de componentes por grupos. | Não; nomes e seleção, sem valores numéricos de esforços por elemento. Texto lido; 148 entradas não equivalem a 148 combinações resolvidas. | 
+PORLID3.DAT | Configuração análoga da planta de cargas. | Não. Conteúdo comparável a PORLID2; conservar identidade/arquivo. | 
+PORLID2.XLSX | Planilha com resultados nominais de pilares, grupos A/B/C e colunas Fz/Fx/Fy/Mx/My associadas a extremos Fz. | Sim, valores por pilar; organização por extremos/grupos, sem identificação completa da combinação governante observada. Data 07/08/2026; workbook registra caminho R27. Não usar como resultado atual R35 sem conferir origem. | 
+PGLOERR.HTM | Resumo do processamento global e categorias de erros/avisos. Publica erros graves e 1.569 avisos leves/787 médios. | Não; diagnóstico global. Exige localização posterior no visualizador: categorias globais não comprovam ocorrência nas vigas TIPO. | 
+MENAVI.LST | Avisos de nós/distribuição de cargas das vigas 150 e 352; mensagem sobre gravação de momentos de vigas nos pilares. | Não; mensagens. Útil para verificar hipóteses/modelagem; não transportar avisos automaticamente a V601–V629. | 
+PILAR.LST | Listagem da interface com processamento de pilares, identificações e mensagens. | Não foi encontrada tabela completa de esforços por combinação. Texto inspecionado; usar PORLIS2/RSX para valores. | 
+CARPIL.LST | Mensagens do processamento PILAR.LDF e da planta de cargas em pilares. | Sem vetor completo de esforços calculados identificado. Texto inspecionado; relatório de mensagens, não substitui base de resultados. | 
+CONTPOR.DAT | Condições especiais de contorno; declara zero definições de torção e demais contagens/configurações. | Não. Texto legível; zero definições especiais não prova ausência de torção nas barras. | 
+PORGZTP.DAT | Parâmetros auxiliares relacionados à transferência/amplificação: quatro valores/flags. | Não. Cruzar com relatório efetivo; sem atribuir significado de cada campo apenas pelo nome. | 
+PORGZTV.DAT | Parâmetros auxiliares análogos para transferência. | Não. Mesma cautela de interpretação de campos. | 
+ESPECTRO.DAT | Tabela nomeada Default, com pares numéricos para definição de espectro. | Não; entrada de ação dinâmica. Não demonstra que análise dinâmica correspondente foi efetivamente usada nesta execução. | 
+RESDES.HTM | Resumo estrutural: quantitativos por piso, aço, concreto, formas, fck, índices, custos e outros totais. | Não. HTML lido; útil para materiais/quantitativos, não para solicitações. | 
+
+Família | Conteúdo / utilidade | Situação | 
+FOR0212/PORTELS.RPF e .POD | Auxiliares binários de geometria/visualização/organização. | Cabeçalhos/estrutura inspecionados; sem semântica completa de resultados. | 
+FOR0212/PORTELS.BPq | Nós de extremidade, tipo e comprimento das barras; diagnóstico geométrico. | Não são esforços; não interpretar o campo Gama como gamma_f sem documentação. | 
+FOR0212.EDI/.POP; COORD.TMP; C0010100…C0161400.TMP | Vínculos aos pavimentos, identificação e auxiliares de cálculo. | Conteúdo parcial; PORFOR já oferece mapa textual utilizável. | 
+CRITPOR2.DAT / EAGCRIT.DAT / EAGPOR2.DAT / EAGPORPARVIS.DAT | Critérios binários e parâmetros auxiliares de visualização. | Não interpretados como forças ou combinações numéricas. | 
+*.E3D | Histórico de visualização/modelo, incluindo estudos e revisões R01–R34. | Binários; esforços não confirmados. Não há E3D com nome R35 no inventário. | 
+CARPIL.DWG / RESDESDWG.DWG e respectivos .BAK | Desenhos e cópias de segurança associados aos relatórios. | Não extraídos pelo leitor de DWG nesta investigação; preferir os textos atuais. | 
+RESEST1…8.TXT | Relação de plantas, quantitativos, índices, custos, furos e carbono. | RESEST6 vazio; demais conteúdos constam individualmente no CSV. | 
+ERROS.DAT/.IND | Base e índices binários de avisos/erros. | Detalhes por elemento dependem de leitura específica; PGLOERR é resumo global. | 
+CARDWG.LST / PORVIG.LST | Logs de processamento e referências de plantas. | Sem tabela completa de esforços. | 
+tqsdesktopb e RESEST_arquivos | Miniaturas/cache e imagens auxiliares. | Sem utilidade numérica confirmada para esforços. | 
+Arquivos vazios | PORGAMZ.LST, PORTRN.LST, RESESTERR.LST, RESEST6.TXT e EAGPOR_FOR0212.POR.DWG. | Não oferecem dados nesta cópia. | 
+
+O catalogo_arquivos.csv relaciona individualmente os 163 arquivos, com tamanho, data, conteúdo identificado, disponibilidade de esforços, limitações e SHA256. Extensão binária ou nome sugestivo, isoladamente, não comprovam conteúdo.
+
+
+4. O que foi extraído e como foi conferido
+
+
+Controle | Modelo principal | Modelo ELS | 
+Arquivo / registros | FOR0212.RSX / 100 | PORTELS.RSX / 42 | 
+Tamanho da base (bytes) | 49.636.860 | 20.847.516 | 
+Cabeçalho / bloco por registro | 60 / 496.368 bytes | 60 / 496.368 bytes | 
+Deslocamentos por registro | 2.751 × 6 valores de 8 bytes | 2.751 × 6 valores de 8 bytes | 
+Esforços por registro | 3.757 × 12 valores de 8 bytes | 3.757 × 12 valores de 8 bytes | 
+Reações por registro | 76 × 6 valores de 8 bytes | 76 × 6 valores de 8 bytes | 
+Componentes de reação comparados | 45.600 | 19.152 | 
+Maior diferença com impressão de duas casas | 0.00500424 | 0.00500227 | 
+
+Os tamanhos fecham exatamente, sem bytes remanescentes. Foram comparadas todas as reações publicadas: 7.600 linhas nó–caso no principal e 3.192 no ELS. A tolerância adotada foi 0,00501 na unidade impressa, compatível com impressão em duas casas e pequenas diferenças de representação numérica. Esta conferência valida a extração desses dados, não a correção física do modelo.
+
+
+Adicionalmente, foram comparados 612 registros de lances de pilares, com N, My e Mz nas duas extremidades: 3.672 componentes, maior diferença de 0,00499446. A leitura reproduziu os valores da listagem PORLIS2 para o caso 1. Para o fim da barra, a listagem de pilares usa o sinal oposto ao registro de ação nodal do RSX. Isso exige um contrato explícito de sinais antes de alimentar as ferramentas de dimensionamento.
+
+
+A interpretação de sistema local foi comprovada para N/My/Mz nos pilares examinados. O piloto conserva os doze valores como C1…C12 para não antecipar normalizações: C1/C7 correspondem ao axial, C5/C11 e C6/C12 aos momentos locais conferidos; a associação completa dos cortantes e torção, orientação local e sinais de diagrama deve ser validada com consultas do visualizador de vigas. Unidades de referência publicadas: tf para forças e tf·m para momentos; não foram aplicados majoradores nem conversões adicionais.
+
+
+5. Identidade das vigas TIPO e combinação governante
+
+
+O pavimento TIPO representa cinco pisos físicos no pórtico: 5, 6, 7, 8 e 9. As vigas com o mesmo nome aparecem em cotas e com IDs de barras distintos. Portanto, a chave deve incluir modelo + piso + viga + barra + caso + extremidade. Usar apenas V606, por exemplo, não identifica um único resultado.
+
+
+Piso físico | Cota (m) | Projeto/planta | Redutor publicado | 
+5 | 35,28 | 0500 / TIPO | 0,40 | 
+6 | 38,08 | 0500 / TIPO | 0,20 | 
+7 | 40,88 | 0500 / TIPO | 0,00 | 
+8 | 43,68 | 0500 / TIPO | 0,00 | 
+9 | 46,48 | 0500 / TIPO | 0,00 | 
+
+Exemplos do piso 5: V601 → barras 1556,1559,1561,1563,1565,1567,1569,1571; V606 → 1605; V623 → 1682,1684. No piso 6, V606 → 1798; no piso 7 → 1991; no piso 8 → 2184; no piso 9 → 2377. A correspondência fina das barras auxiliares, offsets, nós e trechos físicos ainda precisa ser mapeada; a relação PORFOR sozinha não descreve todas as regiões de dimensionamento.
+
+
+Modelo principal: combinações 21–100, sendo 38 ELU1, 38 ELU2, 2 FOGO e 2 COMBFLU. Modelo ELS: combinações 21–42, sendo 20 ELS e 2 FOGO. O ID 21 tem significados distintos: no principal é ELU1/PERM/PP+PERM+EMPU; no ELS é FOGO/PERMVAR/PP+PERM+EMPU+0.3ACID. Não unir os catálogos pelo número isolado.
+
+
+A envoltória principal publicada para transferência às vigas reúne 38 combinações: 21–39 e 61–79. Isso precisa ser preservado ao comparar o pórtico com VGESFS. As demais combinações podem existir na base sem integrar a envoltória de vigas transferida nesta execução.
+
+
+A definição de combinação 23 no principal contém PP, PERM e EMPU com fatores 1,0, ACID com fator 1,0 e VENT1 com fator 0,6. Esses fatores pertencem ao arquivo de análise: não comprovam, por si só, a ausência de amplificações/normalizações em outras etapas. PORALF publica gammaF/gammaF3 = 1,27; PORFOR documenta GAMAZ e critérios de transferência. Parte das combinações é identificada como CBNL na listagem. Não reconstruir seus resultados por superposição linear dos casos sem validar o procedimento do TQS.
+
+
+6. Arquivos de exemplo entregues
+
+
+Arquivo gerado | Conteúdo | 
+catalogo_arquivos.csv | 163 fontes individualizadas; utilidade, conteúdo, esforços, datas e hashes. | 
+catalogo_casos_combinacoes.csv | 142 entradas: casos/combinações dos dois modelos, títulos, linhas e componentes. | 
+mapa_vigas_barras.csv | 1.550 associações de viga/piso/barra, com linha-fonte. | 
+reacoes_por_caso.csv | 10.792 registros de apoio/caso dos dois modelos; componentes e desvio da listagem. | 
+piloto_esforcos_v606_v623_piso5.csv | 426 linhas: V606 (1 barra) e V623 (2 barras), 100+42 casos/combinações; doze valores brutos por barra. | 
+modelo_e_combinacoes.json | Nós, barras, catálogo e envoltória; fontes textuais preservadas. | 
+validacao_extracao_rsx.json | Dimensões binárias, contagens e controles de comparação. | 
+extract_and_validate.py | Leitor local reproduzível para os arquivos desta cópia; sem gravação na pasta TQS. | 
+
+Exemplo real, V606 / piso 5 / barra 1605 / principal / caso 1: C1=-0,08838467 tf; C3=4,42697239 tf; C5=-0,14562112 tf·m; C7=0,08838467 tf; C9=4,19090748 tf; C11=0,89499760 tf·m. São valores das extremidades da barra, não a envoltória das 13 seções de VGESFS. O piloto é evidência de acesso aos dados, sem verificação resistente nova.
+
+
+7. Cuidados que afetam a próxima etapa
+
+
+Planilha histórica: PORLID2.XLSX foi modificada em 07/08/2026 e contém referência interna a um diretório R27. Apresenta grupos A/B/C e esforços de pilares associados a extremos de Fz. Precisa de confirmação de origem para qualquer uso na R35; não deve substituir RSX atual ou combinar máximos independentes.
+
+
+Histórico 3D: o último arquivo E3D pelo horário tem nome R34; os resultados de processamento principal/ELS são de 08/10/2026. O nome do diretório R35 não atualiza automaticamente todos os arquivos herdados.
+
+
+Avisos existentes: PGLOERR informa categorias de erros graves, incluindo mensagens de ancoragem, tração, cisalhamento/torção, espaçamento e deslocamento horizontal. O resumo não localiza todos esses avisos por elemento. MENAVI cita vigas 150/352. Esta investigação não atribui essas mensagens às vigas TIPO nem revisa sua validade; elas devem acompanhar a validação futura do modelo.
+
+
+Esforços ao longo da barra: os registros identificados no RSX são de extremidades. Para diagramas e seções intermediárias, será necessário combinar geometria, cargas, convenção local e formulação do elemento, ou obter os diagramas por exportação/consulta TQS. Não interpolar linearmente momentos quando houver cargas distribuídas ou pontos internos.
+
+
+Concomitância e suspensão: a base permite selecionar o mesmo caso para a viga apoiada e a receptora. A reação transmitida entre vigas precisa ser obtida por equilíbrio do nó/encontro, considerando todas as barras e cargas relevantes; as reações de fundação do RSX não substituem essa transferência.
+
+
+Validação restante: conferir em vigas selecionadas, no visualizador TQS, os seis componentes e sua orientação; relacionar extremidades nodais às faces físicas; confirmar natureza e fatores de resultados e transferência; comparar com VGESFS; verificar se o detalhamento TIPO representa envoltória dos cinco pisos. A estrutura binária reconhecida deve ser testada antes de reutilização em outra versão de TQS.
+
+
+8. Documentação externa consultada
+
+
+A documentação oficial descreve o POR como arquivo de dados do pórtico, com resultados de deslocamentos, esforços nas barras e reações obtidos pelo resolvedor. A identificação específica e a decodificação dos RSX desta pasta foram verificadas localmente; não foi localizada uma especificação pública do seu layout binário.
+
+
+TQS — Pórtico espacial / processamento. TQS — Transferência de esforços. Essas fontes sustentam a distinção entre análise e transferência; não substituem as comparações numéricas desta inspeção.
+

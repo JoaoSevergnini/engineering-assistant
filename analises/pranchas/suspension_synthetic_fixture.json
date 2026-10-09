@@ -1,0 +1,134 @@
+{
+  "receiving_beam": "SUPPORT",
+  "context": {
+    "section": {
+      "bw": 19,
+      "h": 52,
+      "cobrimento": 2.5,
+      "diametro_estribo_mm": 5
+    },
+    "fck_mpa": 40,
+    "fyk_mpa": 500,
+    "gamma_f": 1.4,
+    "gamma_c": 1.4,
+    "gamma_s": 1.15,
+    "effective_depth": {
+      "status": "PASS",
+      "d_cm": 46.7,
+      "selected": {
+        "provenance": {
+          "synthetic": "explicit audited physical centroid"
+        }
+      },
+      "rule": "engineer_confirmed_shear_effective_depth_max_layers_v1"
+    }
+  },
+  "spans": [
+    {
+      "span_id": 1,
+      "series": [
+        {
+          "quantity": "shear",
+          "unit": "kN",
+          "envelope": "max",
+          "sections": [
+            1,
+            2,
+            3
+          ],
+          "positions": [
+            0,
+            2,
+            4
+          ],
+          "values": [
+            100,
+            100,
+            100
+          ],
+          "provenance": {
+            "synthetic": "max"
+          }
+        }
+      ],
+      "reference_legs": 2,
+      "drawn_regions": [
+        {
+          "id": "R",
+          "diameter_mm": 8,
+          "spacing_cm": 12,
+          "legs": 2,
+          "interval_m": [
+            0,
+            4
+          ],
+          "source": {
+            "synthetic": "drawn stirrup"
+          }
+        }
+      ],
+      "support_geometry": {
+        "left": {
+          "type": "COLUMN",
+          "type_source": "fixture",
+          "source": "fixture",
+          "axis_m": -0.1,
+          "width_m": 0.2,
+          "left_face_m": -0.2,
+          "right_face_m": 0
+        },
+        "right": {
+          "type": "COLUMN",
+          "type_source": "fixture",
+          "source": "fixture",
+          "axis_m": 4.1,
+          "width_m": 0.2,
+          "left_face_m": 4,
+          "right_face_m": 4.2
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "J",
+      "type": "BEAM_ON_BEAM",
+      "receiving_beam_id": "SUPPORT",
+      "supported_beam_id": "SUPPORTED",
+      "transfer_confirmed": true,
+      "transfer_source": {
+        "synthetic": "supported beam support reaction explicitly to SUPPORT"
+      },
+      "suspension_applicable": true,
+      "applicability_source": {
+        "engineer": "synthetic internal indirect support"
+      },
+      "supported_geometry": {
+        "height_cm": 40,
+        "width_cm": 15,
+        "source": "synthetic structural geometry"
+      },
+      "placement": "INTERIOR",
+      "projected_axis_m": 2,
+      "axis_source": {
+        "mapping": "supported axis projection on receiving beam axis"
+      },
+      "reaction": {
+        "value": 100,
+        "unit": "kN",
+        "nature": "CHARACTERISTIC",
+        "is_total": true,
+        "total_source": "synthetic all-actions support envelope",
+        "combination": "synthetic C1",
+        "source": "synthetic support reaction record",
+        "downward_sign": 1,
+        "supported_beam_id": "SUPPORTED",
+        "receiving_beam_id": "SUPPORT"
+      }
+    }
+  ],
+  "inventory_complete": true,
+  "inventory_source": {
+    "type": "synthetic complete fixture, not actual project reaction"
+  }
+}

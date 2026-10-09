@@ -1,0 +1,142 @@
+       0.000000     FCK kgf/cm3
+    13900.0         VEC P/calculo de FCK
+              1     (0) nao (1) usa offset rigido
+       0.000000     Modulo de elasticidade longitudinal
+       0.000000     Modulo de elasticidade transversal
+   0.200000         Coeficiente de poisson
+    2.50000         Densidade do concreto
+              1     (0) Nao calcula eixos principais (1) calcula
+              1     (0) distribui vento prop area (1) area influe
+              0     (0) rigidez lateral em vigas c /laje (1) toda
+              1     (0) area real das barras (1) area *MULAXI
+    1.00000         Deimplementado
+    1.00000         Fator de reducao de torcao default
+    1.00000         Fator de reducao de inercia a flexao default
+    1.00000         Majorador de cargas verticais p/instab
+    1.40000         Majorador de cargas horizontais p/instab
+    1.00000         Deimplementado
+              0     (0)nao transfer carg vert laje plana(NTRNVER)
+    1.00000         Coeficiente multiplic transf esforc de vigas
+    1.00000         Coeficiente multiplic transf esforc de pilar
+              1     (0) nao (1) aplica auto GAMAZ na transferen
+    1.10000         GAMAZ minimo aplicado na transferencia
+    1.30000         GAMAZ maximo aplicado na transferencia
+              0     Deimplementado
+   0.100000E-02     Tolerancia relativa nao linear
+    1.00000         Fator multiplicativo pos-analise nao linear
+              0     (0) rigidez normal (1) mais matriz kl(r)
+              0     Aurelio (0) NB6123 (1) NB599
+              0     (0) Considera inercia T das vigas (1) nao
+              0     (1) Calculo de alfa metodo II
+    3.00000         Multiplicador da area das barras. def 3
+    1.00000         Engastamento parcial de vigas (1)=engaste
+              1     (0) nao (1) flexibilizar ligacao viga-pilar
+    1.00000         Redutor de mola ligacao viga-pilar
+    3.00000         Multipl largura equiv ligacao viga-pilar
+       0.000000     Desativado
+              0     (1) Solve: Listar entrada
+              0     (1) Solve: Listar resultados nos nos
+              0     (1) Solve: Listar resultados nas barras
+              1     (1) Solve: Listar reacoes de apoio
+       0.000000     Coeficiente de mola padrao RX
+       0.000000     Coeficiente de mola padrao RY
+       0.000000     Coeficiente de mola padrao RZ
+       0.000000     Coeficiente de mola padrao TX
+       0.000000     Coeficiente de mola padrao TY
+       0.000000     Coeficiente de mola padrao TZ
+              0     (1) Gamaz com carga acidental reduzida
+              1     (0) Esforços característicos (1) cálculo
+   0.950000         Multiplicador de GamaZ p/transf esfor
+              2     (0) GamaZ c/ECs (1) c/ECi (2) ECs+10%
+   0.100000E-04     Coeficiente de expansão térmica
+    300.000         Inverso do ângulo de desaprumo TetaA
+              1     (1) Considerar desloc hor carga vert no GamaZ
+              4     Núm mínimo de pisos onde vale o cálc de GamaZ
+    1.00000         Multiplic da área dos pilares para P-Delta
+   0.400000         Coeficiente de não linearidade para vigas
+   0.800000         Coeficiente de não linearidade para pilares
+              1     (0) Não (1) Separa ELU de ELS
+    1.00000         Coeficiente de nao linearid fisica p/instab
+    100.000         Redutor inércia à torção p/vigas sem torção
+    1.10000         GamaZ mínimo p/considerar estrut deslocável
+             50     Numero maximo de iteracoes nao linear
+              1     Norma p/verificação de limites de deslocamento
+    250.000         Máximo desloc vertical L/x
+    1700.00         Máximo desloc horiz H/x
+              0     (1) Se considerar deformação por cortante
+    850.000         Máximo desloc horiz entre pisos Hi/x
+              0     (1) Se calcular ELS com P-Delta
+    1.00000         Redutor de inércia à flexão para vigas faixa
+              1     Diafrag ríg (0)mult inércia (1) inércia fixa
+    100000.         Multipl inércia lat vigas (efeito diafragma)
+    10.0000         Inércia lateral fixa (efeito diafragma)
+              0     (1) Offset rígido vertical para vigas
+              1     (1) Se transferência de esfor axiais p/vigas
+   0.100000         Multipl de área p/pilares de compatibilização
+              0     (1)se desloc horiz carga vert ELS
+       0.000000     Tolerância na transf de forças grelha-pórtico
+       0.000000     Tolerância na transf de moment grelha-pórtico
+              0     16-05-2008 Desativado 
+   0.500000         mínimo valor de força externa a ser considera
+   0.200000E-01     máxima dif entre forças exter e reações (%)
+       0.000000     compr máximo de viga para discretização (m)
+       0.000000     compr máximo de pilar para discretização (m)
+              0     (0)ELU (-1)ELU1 (-2)ELU2 (>0) comb específica
+             -1     piso inicial
+             -1     piso inicial
+              0     (0)curva  (1)reta
+              0     (0)considera  (1)não considera
+              0     (0)considera  (1)não considera
+              0     (0)considera  (1)não considera
+              0     núm comb fixa p/cálc da rig bar: (0)cada comb
+       0.000000     multiplicador de rigidez de vigas
+       0.000000     mutliplicador de rigidez de pilares
+              0     verificação de ruptura no fim: (0)sim  (1)não
+       0.000000     coeficiente de fluência
+              1     (1) se P-Delta incremental
+              0     Verif lim (0) FAVt (1) GamaZ
+   0.500000         Multipl desloc hor PP < 1
+   0.750000         Multipl desloc hor PERM < 1
+              0     Verifica momento mínimo: (0)sim  (1)não
+              1     (1) p/correção de torsor de túnel de vento
+    30.0000         Compr min de faixa (30.)
+    100.000         Compr max de faixa (100.)
+    5.00000         20-10-2015 Desativado
+              1     20-10-2015 Desativado
+    2.00000         Divisor inér tor (1.) pilar parêde
+   0.300000         Coeficiente de NL para lajes ELU
+              0     (1) se carreg VTN sem MULAXI
+    1.00000         Coeficiente de NL para lajes ELS
+       0.000000     Coeficiente de NL para vigas prot modelo VI
+       0.000000     Coeficiente de NL para lajes prot modelo VI
+              1     (1) Se lajes consideradas no contorno
+              1     (1) Mantém arquivos p/reanálise
+              1     Desaprumo (0) NBR-6118:2003 (1) NBR-6118:2014
+              1     Desaprumo Número de prumadas consideradas
+              0     (1) Se calc P-Delta/desl hor carg vert
+    5.00000         Compr max em larguras de faixa (3.)
+              1     Número mín de faixas/lâmina (2)
+              0     DEIMPL Multipl Iy horiz para PP discret
+              0     Número de divisões verticais para PP discret
+              0     Norma de ações (0) NBR-8681 (1) CIRSOC
+   0.800000         Coef NL pilares parede não fissurados
+   0.800000         Coef NL pilares parede     fissurados
+   0.110000E-01     Máximo desloc horiz DeltaDesloc/Pédir
+    1.00000         Coeficiente NLF para vigas ELS
+    1.00000         Coeficiente NLF para pilares ELS
+    1.00000         Coef NL pilares parede não fissurados ELS
+    1.00000         Coef NL pilares parede     fissurados ELS
+    1.00000         Coef NL vigas protendidas modelo VI ELS
+    1.00000         Coef NL lajes protendidas modelo VI ELS
+    15.0000         Excentricidade % de vento
+              0     Criar barra no nív do pav (0)sim (1)não (2)uma
+    1000.00         Div inér torção pilares discret
+              0     ASCE7 (0)Larg edif dir orto vento (1) Mínima
+    10.0000         Tempo de recorrência.
+   0.630000         Probabilidade de ocorrência.
+              0     (1) Aplica NLF no pilar parede discretizado
+              1     (0) Toda a viga (1) Somente tramos
+    1.00000         Multipl Iy horiz para PP discret
+              0     (0) Não (1) apoios alternativos
+    1.00000         Mult molas apoios alternativos
+              0     (0) Aplicar vento no meio do lance (1) no topo

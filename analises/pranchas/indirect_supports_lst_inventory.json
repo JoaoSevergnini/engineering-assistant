@@ -1,0 +1,6647 @@
+{
+  "floor": "DIFERENCIADO",
+  "geometry_inventory_complete": false,
+  "plant_reading_deferred_by_engineer": true,
+  "beams_examined": [
+    "V501",
+    "V502",
+    "V503",
+    "V504",
+    "V505",
+    "V506",
+    "V507",
+    "V508",
+    "V509",
+    "V510",
+    "V511",
+    "V512",
+    "V513",
+    "V514",
+    "V515",
+    "V516",
+    "V517",
+    "V518",
+    "V519",
+    "V520",
+    "V521",
+    "V522",
+    "V523",
+    "V524",
+    "V525",
+    "V526",
+    "V527",
+    "V528",
+    "V529",
+    "V530",
+    "V531",
+    "V532",
+    "V533",
+    "V534",
+    "V535",
+    "V536",
+    "V537",
+    "V538",
+    "V539",
+    "V540",
+    "V541",
+    "V542",
+    "V543",
+    "V544",
+    "V545",
+    "V546",
+    "V547",
+    "V548",
+    "V549",
+    "V550",
+    "V551",
+    "V552",
+    "V553",
+    "V554",
+    "V555",
+    "V556",
+    "V557",
+    "V558",
+    "V559",
+    "V560",
+    "V561",
+    "V562",
+    "V563",
+    "V564",
+    "V565",
+    "V566",
+    "V567",
+    "V568",
+    "V569",
+    "V570",
+    "V571",
+    "V901",
+    "V902",
+    "V905",
+    "V906",
+    "V911",
+    "V912",
+    "V915",
+    "V916",
+    "V9514",
+    "V9534"
+  ],
+  "lst_directory": "C:\\TQS\\24-155-COLLINE-RESIDENCIAL-R60\\DIFERENCIADO\\VIGAS",
+  "connections": [
+    {
+      "supported_beam": "V502",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 56.682437,
+        "min": 36.7749375
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            5302,
+            5302
+          ],
+          "raw_pointer": "/categorias/apoios/23",
+          "reference": "s1013#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            5302,
+            5302
+          ],
+          "raw_pointer": "/categorias/apoios/23",
+          "reference": "s1013#/normalizacao",
+          "original_text": "     V548         5.78           3.75",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V502",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 56.69224365,
+        "min": 36.72590425
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            153,
+            153
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s1089#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            153,
+            153
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s1089#/normalizacao",
+          "original_text": "               1     5.781     3.745      0.19     0.00      2   V548       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V502",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 56.69224365,
+        "min": 36.72590425
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1932,
+            1932
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1136#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1932,
+            1932
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1136#/normalizacao",
+          "original_text": "         1    5.781   3.745    0.19    0.00    2. V548       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V504",
+      "supporting_beam": "V544",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -0.6864655,
+        "min": -1.176798
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            123,
+            123
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s386#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            123,
+            123
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s386#/normalizacao",
+          "original_text": "     V544        -0.07          -0.12",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V504",
+      "supporting_beam": "V544",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -0.6668522,
+        "min": -1.12776475
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            210,
+            210
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s406#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            210,
+            210
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s406#/normalizacao",
+          "original_text": "               1    -0.068    -0.115      0.14     0.00      2   V544       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V504",
+      "supporting_beam": "V544",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -0.6668522,
+        "min": -1.12776475
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            22,
+            22
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s432#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            22,
+            22
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s432#/normalizacao",
+          "original_text": "         1   -0.068  -0.115    0.14    0.00    2. V544       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V505",
+      "supporting_beam": "V562",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -0.4903325,
+        "min": -0.980665
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            189,
+            189
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s384#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            189,
+            189
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s384#/normalizacao",
+          "original_text": "     V562        -0.05          -0.10",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V505",
+      "supporting_beam": "V562",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -0.5099458,
+        "min": -0.93163175
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            236,
+            236
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s404#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            236,
+            236
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s404#/normalizacao",
+          "original_text": "               1    -0.052    -0.095      0.14     0.00      2   V562       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V505",
+      "supporting_beam": "V562",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -0.5099458,
+        "min": -0.93163175
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            43,
+            43
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s430#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            43,
+            43
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s430#/normalizacao",
+          "original_text": "         1   -0.052  -0.095    0.14    0.00    2. V562       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V506",
+      "supporting_beam": "V538",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.163029,
+        "min": -28.047019
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            255,
+            255
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s422#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            255,
+            255
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s422#/normalizacao",
+          "original_text": "     V538         2.26          -2.86",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V506",
+      "supporting_beam": "V538",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.1238024,
+        "min": -28.03721235
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            265,
+            265
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s444#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            265,
+            265
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s444#/normalizacao",
+          "original_text": "               1     2.256    -2.859      0.19     0.00      2   V538       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V506",
+      "supporting_beam": "V538",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.1238024,
+        "min": -28.03721235
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            64,
+            64
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s471#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            64,
+            64
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s471#/normalizacao",
+          "original_text": "         1    2.256  -2.859    0.19    0.00    2. V538       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V507",
+      "supporting_beam": "V542",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.2224255,
+        "min": -46.287388
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            322,
+            322
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s413#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            322,
+            322
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s413#/normalizacao",
+          "original_text": "     V542         2.47          -4.72",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V507",
+      "supporting_beam": "V542",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.1831989,
+        "min": -46.287388
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            295,
+            295
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s435#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            295,
+            295
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s435#/normalizacao",
+          "original_text": "               2     2.466    -4.720      0.14     0.00      2   V542       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V507",
+      "supporting_beam": "V542",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.1831989,
+        "min": -46.287388
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            86,
+            86
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s462#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            86,
+            86
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s462#/normalizacao",
+          "original_text": "         2    2.466  -4.720    0.14    0.00    2. V542       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V508",
+      "supporting_beam": "V545",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.3743225,
+        "min": -1.6671305
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            388,
+            388
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s411#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            388,
+            388
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s411#/normalizacao",
+          "original_text": "     V545         0.65          -0.17",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V508",
+      "supporting_beam": "V545",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.38412915,
+        "min": -1.6671305
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            324,
+            324
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s433#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            324,
+            324
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s433#/normalizacao",
+          "original_text": "               2     0.651    -0.170      0.19     0.00      2   V545       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V508",
+      "supporting_beam": "V545",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.38412915,
+        "min": -1.6671305
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            107,
+            107
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s460#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            107,
+            107
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s460#/normalizacao",
+          "original_text": "         2    0.651  -0.170    0.19    0.00    2. V545       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V509",
+      "supporting_beam": "V556",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 21.4765635,
+        "min": -28.047019
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            453,
+            453
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s429#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            453,
+            453
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s429#/normalizacao",
+          "original_text": "     V556         2.19          -2.86",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V509",
+      "supporting_beam": "V556",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 21.4765635,
+        "min": -28.01759905
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            352,
+            352
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s451#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            352,
+            352
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s451#/normalizacao",
+          "original_text": "               1     2.190    -2.857      0.19     0.00      2   V556       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V509",
+      "supporting_beam": "V556",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 21.4765635,
+        "min": -28.01759905
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            127,
+            127
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s478#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            127,
+            127
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s478#/normalizacao",
+          "original_text": "         1    2.190  -2.857    0.19    0.00    2. V556       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V510",
+      "supporting_beam": "V560",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.6533615,
+        "min": -46.3854545
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            520,
+            520
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s416#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            520,
+            520
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s416#/normalizacao",
+          "original_text": "     V560         2.31          -4.73",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V510",
+      "supporting_beam": "V560",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.6141349,
+        "min": -46.3854545
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            382,
+            382
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s438#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            382,
+            382
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s438#/normalizacao",
+          "original_text": "               2     2.306    -4.730      0.14     0.00      2   V560       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V510",
+      "supporting_beam": "V560",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.6141349,
+        "min": -46.3854545
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            149,
+            149
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s465#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            149,
+            149
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s465#/normalizacao",
+          "original_text": "         2    2.306  -4.730    0.14    0.00    2. V560       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V511",
+      "supporting_beam": "V563",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.1781895,
+        "min": -3.6284605
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            586,
+            586
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s410#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            586,
+            586
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s410#/normalizacao",
+          "original_text": "     V563         0.63          -0.37",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V511",
+      "supporting_beam": "V563",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.18799615,
+        "min": -3.6480738
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            411,
+            411
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s432#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            411,
+            411
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s432#/normalizacao",
+          "original_text": "               2     0.631    -0.372      0.19     0.00      2   V563       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V511",
+      "supporting_beam": "V563",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.18799615,
+        "min": -3.6480738
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            170,
+            170
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s459#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            170,
+            170
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s459#/normalizacao",
+          "original_text": "         2    0.631  -0.372    0.19    0.00    2. V563       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V512",
+      "supporting_beam": "V538",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 9.9047165,
+        "min": -0.2941995
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            652,
+            652
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s458#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            652,
+            652
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s458#/normalizacao",
+          "original_text": "     V538         1.01          -0.03",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V512",
+      "supporting_beam": "V538",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 9.93413645,
+        "min": -0.26477955
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            440,
+            440
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s480#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            440,
+            440
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s480#/normalizacao",
+          "original_text": "               2     1.013    -0.027      0.19     0.00      2   V538       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V512",
+      "supporting_beam": "V538",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 9.93413645,
+        "min": -0.26477955
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            191,
+            191
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s507#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            191,
+            191
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s507#/normalizacao",
+          "original_text": "         2    1.013  -0.027    0.19    0.00    2. V538       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V513",
+      "supporting_beam": "V545",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.825985,
+        "min": -4.314926
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            725,
+            725
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s671#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            725,
+            725
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s671#/normalizacao",
+          "original_text": "     V545         0.90          -0.44",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V513",
+      "supporting_beam": "V547",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 14.906108,
+        "min": 2.8439285
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            727,
+            727
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s673#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            727,
+            727
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s673#/normalizacao",
+          "original_text": "     V547         1.52           0.29",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V513",
+      "supporting_beam": "V545",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.77695175,
+        "min": -4.26589275
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            494,
+            494
+          ],
+          "raw_pointer": "/categorias/apoios/22",
+          "reference": "s715#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            494,
+            494
+          ],
+          "raw_pointer": "/categorias/apoios/22",
+          "reference": "s715#/normalizacao",
+          "original_text": "               1     0.895    -0.435      0.19     0.00      2   V545       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V513",
+      "supporting_beam": "V547",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 14.8864947,
+        "min": 2.8635418
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            496,
+            496
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s717#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            496,
+            496
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s717#/normalizacao",
+          "original_text": "               3     1.518     0.292      0.24     0.00      2   V547       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V513",
+      "supporting_beam": "V545",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.77695175,
+        "min": -4.26589275
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            224,
+            224
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s755#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            224,
+            224
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s755#/normalizacao",
+          "original_text": "         1    0.895  -0.435    0.19    0.00    2. V545       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V513",
+      "supporting_beam": "V547",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 14.8864947,
+        "min": 2.8635418
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            226,
+            226
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s757#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            226,
+            226
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s757#/normalizacao",
+          "original_text": "         3    1.518   0.292    0.24    0.00    2. V547       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V514",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 93.163175,
+        "min": 72.2750105
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            808,
+            808
+          ],
+          "raw_pointer": "/categorias/apoios/23",
+          "reference": "s888#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            808,
+            808
+          ],
+          "raw_pointer": "/categorias/apoios/23",
+          "reference": "s888#/normalizacao",
+          "original_text": "     V548         9.50           7.37",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V514",
+      "supporting_beam": "V554",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 117.9739995,
+        "min": 93.163175
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            811,
+            811
+          ],
+          "raw_pointer": "/categorias/apoios/26",
+          "reference": "s891#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            811,
+            811
+          ],
+          "raw_pointer": "/categorias/apoios/26",
+          "reference": "s891#/normalizacao",
+          "original_text": "     V554        12.03           9.50",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V514",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 93.1239484,
+        "min": 72.2750105
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            568,
+            568
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s948#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            568,
+            568
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s948#/normalizacao",
+          "original_text": "               1     9.496     7.370      0.19     0.00      2   V548       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V514",
+      "supporting_beam": "V554",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 117.94457955,
+        "min": 93.163175
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            571,
+            571
+          ],
+          "raw_pointer": "/categorias/apoios/30",
+          "reference": "s951#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            571,
+            571
+          ],
+          "raw_pointer": "/categorias/apoios/30",
+          "reference": "s951#/normalizacao",
+          "original_text": "               4    12.027     9.500      0.19     0.00      2   V554       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V514",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 93.1239484,
+        "min": 72.2750105
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            258,
+            258
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s989#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            258,
+            258
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s989#/normalizacao",
+          "original_text": "         1    9.496   7.370    0.19    0.00    2. V548       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V514",
+      "supporting_beam": "V554",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 117.94457955,
+        "min": 93.163175
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            261,
+            261
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s992#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            261,
+            261
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s992#/normalizacao",
+          "original_text": "         4   12.027   9.500    0.19    0.00    2. V554       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V515",
+      "supporting_beam": "V563",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.3356525,
+        "min": 0.6864655
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            876,
+            876
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s454#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            876,
+            876
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s454#/normalizacao",
+          "original_text": "     V563         0.85           0.07",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V515",
+      "supporting_beam": "V563",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.2964259,
+        "min": 0.71588545
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            599,
+            599
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s476#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            599,
+            599
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s476#/normalizacao",
+          "original_text": "               1     0.846     0.073      0.19     0.00      2   V563       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V515",
+      "supporting_beam": "V563",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.2964259,
+        "min": 0.71588545
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            281,
+            281
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s503#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            281,
+            281
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s503#/normalizacao",
+          "original_text": "         1    0.846   0.073    0.19    0.00    2. V563       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V524",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.3356525,
+        "min": 5.0013915
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1338,
+            1338
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s383#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1338,
+            1338
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s383#/normalizacao",
+          "original_text": "     V548         0.85           0.51",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V524",
+      "supporting_beam": "V550",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.908891,
+        "min": 19.221034
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1339,
+            1339
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s384#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1339,
+            1339
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s384#/normalizacao",
+          "original_text": "     V550         2.54           1.96",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V524",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.34545915,
+        "min": 5.01119815
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1001,
+            1001
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s406#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1001,
+            1001
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s406#/normalizacao",
+          "original_text": "               1     0.851     0.511      0.19     0.00      2   V548       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V524",
+      "supporting_beam": "V550",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.87947105,
+        "min": 19.19161405
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1002,
+            1002
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s407#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1002,
+            1002
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s407#/normalizacao",
+          "original_text": "               2     2.537     1.957      0.19     0.00      2   V550       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V524",
+      "supporting_beam": "V548",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 8.34545915,
+        "min": 5.01119815
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            428,
+            428
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s433#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            428,
+            428
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s433#/normalizacao",
+          "original_text": "         1    0.851   0.511    0.19    0.00    2. V548       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V524",
+      "supporting_beam": "V550",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.87947105,
+        "min": 19.19161405
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            429,
+            429
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s434#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            429,
+            429
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s434#/normalizacao",
+          "original_text": "         2    2.537   1.957    0.19    0.00    2. V550       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V525",
+      "supporting_beam": "V551",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 92.4767095,
+        "min": 67.3716855
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1421,
+            1421
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s936#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1421,
+            1421
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s936#/normalizacao",
+          "original_text": "     V551         9.43           6.87",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V525",
+      "supporting_beam": "V552",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 88.25985,
+        "min": -29.3218835
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1422,
+            1422
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s937#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1422,
+            1422
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s937#/normalizacao",
+          "original_text": "     V552         9.00          -2.99",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V525",
+      "supporting_beam": "V551",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 92.42767625,
+        "min": 67.40110545
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1075,
+            1075
+          ],
+          "raw_pointer": "/categorias/apoios/28",
+          "reference": "s996#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1075,
+            1075
+          ],
+          "raw_pointer": "/categorias/apoios/28",
+          "reference": "s996#/normalizacao",
+          "original_text": "               2     9.425     6.873      0.29     0.00      2   V551       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V525",
+      "supporting_beam": "V552",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 88.25004335,
+        "min": -29.29246355
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1076,
+            1076
+          ],
+          "raw_pointer": "/categorias/apoios/29",
+          "reference": "s997#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1076,
+            1076
+          ],
+          "raw_pointer": "/categorias/apoios/29",
+          "reference": "s997#/normalizacao",
+          "original_text": "               3     8.999    -2.987      0.29     0.00      2   V552       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V525",
+      "supporting_beam": "V551",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 92.42767625,
+        "min": 67.40110545
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            462,
+            462
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1037#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            462,
+            462
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1037#/normalizacao",
+          "original_text": "         2    9.425   6.873    0.29    0.00    2. V551       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V525",
+      "supporting_beam": "V552",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 88.25004335,
+        "min": -29.29246355
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            463,
+            463
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1038#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            463,
+            463
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1038#/normalizacao",
+          "original_text": "         3    8.999  -2.987    0.29    0.00    2. V552       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V526",
+      "supporting_beam": "V551",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 69.7252815,
+        "min": 36.7749375
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1505,
+            1505
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s926#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1505,
+            1505
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s926#/normalizacao",
+          "original_text": "     V551         7.11           3.75",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V526",
+      "supporting_beam": "V552",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 127.1922505,
+        "min": 88.848249
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1506,
+            1506
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s927#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1506,
+            1506
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s927#/normalizacao",
+          "original_text": "     V552        12.97           9.06",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V526",
+      "supporting_beam": "V551",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 69.6860549,
+        "min": 36.80435745
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1150,
+            1150
+          ],
+          "raw_pointer": "/categorias/apoios/28",
+          "reference": "s986#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1150,
+            1150
+          ],
+          "raw_pointer": "/categorias/apoios/28",
+          "reference": "s986#/normalizacao",
+          "original_text": "               2     7.106     3.753      0.29     0.00      2   V551       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V526",
+      "supporting_beam": "V552",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 127.1726372,
+        "min": 88.79921575
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1151,
+            1151
+          ],
+          "raw_pointer": "/categorias/apoios/29",
+          "reference": "s987#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1151,
+            1151
+          ],
+          "raw_pointer": "/categorias/apoios/29",
+          "reference": "s987#/normalizacao",
+          "original_text": "               3    12.968     9.055      0.29     0.00      2   V552       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V526",
+      "supporting_beam": "V551",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 69.6860549,
+        "min": 36.80435745
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            497,
+            497
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1027#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            497,
+            497
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1027#/normalizacao",
+          "original_text": "         2    7.106   3.753    0.29    0.00    2. V551       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V526",
+      "supporting_beam": "V552",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 127.1726372,
+        "min": 88.79921575
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            498,
+            498
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1028#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            498,
+            498
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1028#/normalizacao",
+          "original_text": "         3   12.968   9.055    0.29    0.00    2. V552       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V537",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 4.2168595,
+        "min": 3.138128
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1961,
+            1961
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1379#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1961,
+            1961
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1379#/normalizacao",
+          "original_text": "     V537         0.43           0.32",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V916",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -2.549729,
+        "min": -3.334261
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1962,
+            1962
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1380#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1962,
+            1962
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1380#/normalizacao",
+          "original_text": "     V916        -0.26          -0.34",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V568",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.555295,
+        "min": 17.3577705
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1963,
+            1963
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1381#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1963,
+            1963
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1381#/normalizacao",
+          "original_text": "     V568         2.30           1.77",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V569",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.320492,
+        "min": 18.7307015
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1964,
+            1964
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s1382#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1964,
+            1964
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s1382#/normalizacao",
+          "original_text": "     V569         2.48           1.91",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V911",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -2.353596,
+        "min": -3.4323275
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1965,
+            1965
+          ],
+          "raw_pointer": "/categorias/apoios/35",
+          "reference": "s1383#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1965,
+            1965
+          ],
+          "raw_pointer": "/categorias/apoios/35",
+          "reference": "s1383#/normalizacao",
+          "original_text": "     V911        -0.24          -0.35",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V549",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 26.5760215,
+        "min": 20.005566
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1966,
+            1966
+          ],
+          "raw_pointer": "/categorias/apoios/36",
+          "reference": "s1384#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            1966,
+            1966
+          ],
+          "raw_pointer": "/categorias/apoios/36",
+          "reference": "s1384#/normalizacao",
+          "original_text": "     V549         2.71           2.04",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V537",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 4.20705285,
+        "min": 3.0989014
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1548,
+            1548
+          ],
+          "raw_pointer": "/categorias/apoios/37",
+          "reference": "s1480#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1548,
+            1548
+          ],
+          "raw_pointer": "/categorias/apoios/37",
+          "reference": "s1480#/normalizacao",
+          "original_text": "               1     0.429     0.316      0.19     0.00      2   V537       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V916",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -2.50069575,
+        "min": -3.3538743
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1549,
+            1549
+          ],
+          "raw_pointer": "/categorias/apoios/38",
+          "reference": "s1481#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1549,
+            1549
+          ],
+          "raw_pointer": "/categorias/apoios/38",
+          "reference": "s1481#/normalizacao",
+          "original_text": "               2    -0.255    -0.342      0.19     0.00      2   V916       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V568",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.5160684,
+        "min": 17.32835055
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1550,
+            1550
+          ],
+          "raw_pointer": "/categorias/apoios/39",
+          "reference": "s1482#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1550,
+            1550
+          ],
+          "raw_pointer": "/categorias/apoios/39",
+          "reference": "s1482#/normalizacao",
+          "original_text": "               3     2.296     1.767      0.35     0.00      2   V568       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V569",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.2812654,
+        "min": 18.7699281
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1551,
+            1551
+          ],
+          "raw_pointer": "/categorias/apoios/40",
+          "reference": "s1483#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1551,
+            1551
+          ],
+          "raw_pointer": "/categorias/apoios/40",
+          "reference": "s1483#/normalizacao",
+          "original_text": "               4     2.476     1.914      0.35     0.00      2   V569       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V911",
+      "supported_beam_support_id": 5.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -2.3732093,
+        "min": -3.4519408
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1552,
+            1552
+          ],
+          "raw_pointer": "/categorias/apoios/41",
+          "reference": "s1484#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1552,
+            1552
+          ],
+          "raw_pointer": "/categorias/apoios/41",
+          "reference": "s1484#/normalizacao",
+          "original_text": "               5    -0.242    -0.352      0.19     0.00      2   V911       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V549",
+      "supported_beam_support_id": 6.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 26.58582815,
+        "min": 19.9859527
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1553,
+            1553
+          ],
+          "raw_pointer": "/categorias/apoios/42",
+          "reference": "s1485#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1553,
+            1553
+          ],
+          "raw_pointer": "/categorias/apoios/42",
+          "reference": "s1485#/normalizacao",
+          "original_text": "               6     2.711     2.038      0.19     0.00      2   V549       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V537",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 4.20705285,
+        "min": 3.0989014
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            683,
+            683
+          ],
+          "raw_pointer": "/categorias/apoios/43",
+          "reference": "s1547#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            683,
+            683
+          ],
+          "raw_pointer": "/categorias/apoios/43",
+          "reference": "s1547#/normalizacao",
+          "original_text": "         1    0.429   0.316    0.19    0.00    2. V537       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V916",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -2.50069575,
+        "min": -3.3538743
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            684,
+            684
+          ],
+          "raw_pointer": "/categorias/apoios/44",
+          "reference": "s1548#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            684,
+            684
+          ],
+          "raw_pointer": "/categorias/apoios/44",
+          "reference": "s1548#/normalizacao",
+          "original_text": "         2   -0.255  -0.342    0.19    0.00    2. V916       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V568",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 22.5160684,
+        "min": 17.32835055
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            685,
+            685
+          ],
+          "raw_pointer": "/categorias/apoios/45",
+          "reference": "s1549#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            685,
+            685
+          ],
+          "raw_pointer": "/categorias/apoios/45",
+          "reference": "s1549#/normalizacao",
+          "original_text": "         3    2.296   1.767    0.35    0.00    2. V568       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V569",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 24.2812654,
+        "min": 18.7699281
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            686,
+            686
+          ],
+          "raw_pointer": "/categorias/apoios/46",
+          "reference": "s1550#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            686,
+            686
+          ],
+          "raw_pointer": "/categorias/apoios/46",
+          "reference": "s1550#/normalizacao",
+          "original_text": "         4    2.476   1.914    0.35    0.00    2. V569       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V911",
+      "supported_beam_support_id": 5.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -2.3732093,
+        "min": -3.4519408
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            687,
+            687
+          ],
+          "raw_pointer": "/categorias/apoios/47",
+          "reference": "s1551#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            687,
+            687
+          ],
+          "raw_pointer": "/categorias/apoios/47",
+          "reference": "s1551#/normalizacao",
+          "original_text": "         5   -0.242  -0.352    0.19    0.00    2. V911       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V533",
+      "supporting_beam": "V549",
+      "supported_beam_support_id": 6.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 26.58582815,
+        "min": 19.9859527
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            688,
+            688
+          ],
+          "raw_pointer": "/categorias/apoios/48",
+          "reference": "s1552#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            688,
+            688
+          ],
+          "raw_pointer": "/categorias/apoios/48",
+          "reference": "s1552#/normalizacao",
+          "original_text": "         6    2.711   2.038    0.19    0.00    2. V549       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V534",
+      "supporting_beam": "V550",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 117.7778665,
+        "min": 31.2832135
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2047,
+            2047
+          ],
+          "raw_pointer": "/categorias/apoios/23",
+          "reference": "s904#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2047,
+            2047
+          ],
+          "raw_pointer": "/categorias/apoios/23",
+          "reference": "s904#/normalizacao",
+          "original_text": "     V550        12.01           3.19",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V534",
+      "supporting_beam": "V553",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 104.735022,
+        "min": 28.243152
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2050,
+            2050
+          ],
+          "raw_pointer": "/categorias/apoios/26",
+          "reference": "s907#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2050,
+            2050
+          ],
+          "raw_pointer": "/categorias/apoios/26",
+          "reference": "s907#/normalizacao",
+          "original_text": "     V553        10.68           2.88",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V534",
+      "supporting_beam": "V550",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 117.76805985,
+        "min": 31.3028268
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1626,
+            1626
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s965#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1626,
+            1626
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s965#/normalizacao",
+          "original_text": "               1    12.009     3.192      0.19     0.00      2   V550       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V534",
+      "supporting_beam": "V553",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 104.76444195,
+        "min": 28.21373205
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1629,
+            1629
+          ],
+          "raw_pointer": "/categorias/apoios/30",
+          "reference": "s968#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1629,
+            1629
+          ],
+          "raw_pointer": "/categorias/apoios/30",
+          "reference": "s968#/normalizacao",
+          "original_text": "               4    10.683     2.877      0.19     0.00      2   V553       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V534",
+      "supporting_beam": "V550",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 117.76805985,
+        "min": 31.3028268
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            720,
+            720
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1006#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            720,
+            720
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1006#/normalizacao",
+          "original_text": "         1   12.009   3.192    0.19    0.00    2. V550       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V534",
+      "supporting_beam": "V553",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 104.76444195,
+        "min": 28.21373205
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            723,
+            723
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s1009#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            723,
+            723
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s1009#/normalizacao",
+          "original_text": "         4   10.683   2.877    0.19    0.00    2. V553       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V537",
+      "supporting_beam": "V529",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -23.2417605,
+        "min": -30.400615
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3551,
+            3551
+          ],
+          "raw_pointer": "/categorias/apoios/14",
+          "reference": "s435#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3551,
+            3551
+          ],
+          "raw_pointer": "/categorias/apoios/14",
+          "reference": "s435#/normalizacao",
+          "original_text": "     V529        -2.37          -3.10",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V537",
+      "supporting_beam": "V529",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 0.0,
+        "min": 0.0
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3552,
+            3552
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s436#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3552,
+            3552
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s436#/normalizacao",
+          "original_text": "     V529         0.00           0.00",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V537",
+      "supporting_beam": "V529",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -23.25156715,
+        "min": -30.37119505
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1709,
+            1709
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s451#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1709,
+            1709
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s451#/normalizacao",
+          "original_text": "               1    -2.371    -3.097      0.19     0.00      2   V529       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V537",
+      "supporting_beam": "V529",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -23.25156715,
+        "min": -30.37119505
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1267,
+            1267
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s483#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1267,
+            1267
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s483#/normalizacao",
+          "original_text": "         1   -2.371  -3.097    0.09    0.00    2. V529       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V537",
+      "supporting_beam": "V529",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 0.0,
+        "min": 0.0
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1268,
+            1268
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s484#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1268,
+            1268
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s484#/normalizacao",
+          "original_text": "         2    0.000   0.000    0.09    0.00    2. V529       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V540",
+      "supporting_beam": "V516",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.5704555,
+        "min": 4.903325
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2313,
+            2313
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s405#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2313,
+            2313
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s405#/normalizacao",
+          "original_text": "     V516         0.67           0.50",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V540",
+      "supporting_beam": "V516",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.6096821,
+        "min": 4.85429175
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1790,
+            1790
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s427#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1790,
+            1790
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s427#/normalizacao",
+          "original_text": "               1     0.674     0.495      0.19     0.00      2   V516       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V540",
+      "supporting_beam": "V516",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.6096821,
+        "min": 4.85429175
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            806,
+            806
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s454#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            806,
+            806
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s454#/normalizacao",
+          "original_text": "         1    0.674   0.495    0.19    0.00    2. V516       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V541",
+      "supporting_beam": "V501",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.5373515,
+        "min": 22.359162
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2380,
+            2380
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s433#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2380,
+            2380
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s433#/normalizacao",
+          "original_text": "     V501         2.91           2.28",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V541",
+      "supporting_beam": "V501",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.50793155,
+        "min": 22.3983886
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1820,
+            1820
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s455#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1820,
+            1820
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s455#/normalizacao",
+          "original_text": "               2     2.907     2.284      0.19     0.00      2   V501       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V541",
+      "supporting_beam": "V501",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.50793155,
+        "min": 22.3983886
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            828,
+            828
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s482#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            828,
+            828
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s482#/normalizacao",
+          "original_text": "         2    2.907   2.284    0.19    0.00    2. V501       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V542",
+      "supporting_beam": "V516",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 35.892339,
+        "min": -3.6284605
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3763,
+            3763
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s473#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3763,
+            3763
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s473#/normalizacao",
+          "original_text": "     V516         3.66          -0.37",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V542",
+      "supporting_beam": "V501",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 38.1478685,
+        "min": 7.1588545
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3764,
+            3764
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s474#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3764,
+            3764
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s474#/normalizacao",
+          "original_text": "     V501         3.89           0.73",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V542",
+      "supporting_beam": "V516",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 35.88253235,
+        "min": -3.59904055
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1852,
+            1852
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s498#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1852,
+            1852
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s498#/normalizacao",
+          "original_text": "               1     3.659    -0.367      0.19     0.00      2   V516       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V542",
+      "supporting_beam": "V501",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 38.11844855,
+        "min": 7.10982125
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1853,
+            1853
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s499#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            1853,
+            1853
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s499#/normalizacao",
+          "original_text": "               2     3.887     0.725      0.19     0.00      2   V501       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V542",
+      "supporting_beam": "V516",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 35.88253235,
+        "min": -3.59904055
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1357,
+            1357
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s537#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1357,
+            1357
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s537#/normalizacao",
+          "original_text": "         1    3.659  -0.367    0.19    0.00    2. V516       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V542",
+      "supporting_beam": "V501",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 38.11844855,
+        "min": 7.10982125
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1358,
+            1358
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s538#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1358,
+            1358
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s538#/normalizacao",
+          "original_text": "         2    3.887   0.725    0.19    0.00    2. V501       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V551",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -25.3992235,
+        "min": -35.892339
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4391,
+            4391
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s779#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4391,
+            4391
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s779#/normalizacao",
+          "original_text": "     V502        -2.59          -3.66",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V551",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -25.3992235,
+        "min": -35.9315656
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2235,
+            2235
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s820#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2235,
+            2235
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s820#/normalizacao",
+          "original_text": "               3    -2.590    -3.664      0.19     0.00      2   V502       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V551",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -25.3992235,
+        "min": -35.9315656
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1584,
+            1584
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s854#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1584,
+            1584
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s854#/normalizacao",
+          "original_text": "         3   -2.590  -3.664    0.19    0.00    2. V502       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V552",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -10.591182,
+        "min": -39.618866
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4466,
+            4466
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s775#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4466,
+            4466
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s775#/normalizacao",
+          "original_text": "     V502        -1.08          -4.04",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V552",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -10.6304086,
+        "min": -39.6384793
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2287,
+            2287
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s816#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2287,
+            2287
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s816#/normalizacao",
+          "original_text": "               3    -1.084    -4.042      0.19     0.00      2   V502       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V552",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": -10.6304086,
+        "min": -39.6384793
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1612,
+            1612
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s850#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1612,
+            1612
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s850#/normalizacao",
+          "original_text": "         3   -1.084  -4.042    0.19    0.00    2. V502       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V554",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 109.638347,
+        "min": -32.165812
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            5213,
+            5213
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s742#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            5213,
+            5213
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s742#/normalizacao",
+          "original_text": "     V502        11.18          -3.28",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V554",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 109.638347,
+        "min": -32.17561865
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2385,
+            2385
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s784#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2385,
+            2385
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s784#/normalizacao",
+          "original_text": "               3    11.180    -3.281      0.19     0.00      2   V502       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V554",
+      "supporting_beam": "V502",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 109.638347,
+        "min": -32.17561865
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1894,
+            1894
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s818#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1894,
+            1894
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s818#/normalizacao",
+          "original_text": "         3   11.180  -3.281    0.19    0.00    2. V502       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V558",
+      "supporting_beam": "V517",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.3743225,
+        "min": 4.8052585
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2709,
+            2709
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s405#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2709,
+            2709
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s405#/normalizacao",
+          "original_text": "     V517         0.65           0.49",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V558",
+      "supporting_beam": "V517",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.34490255,
+        "min": 4.8052585
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2497,
+            2497
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s427#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2497,
+            2497
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s427#/normalizacao",
+          "original_text": "               1     0.647     0.490      0.19     0.00      2   V517       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V558",
+      "supporting_beam": "V517",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 6.34490255,
+        "min": 4.8052585
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            932,
+            932
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s454#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            932,
+            932
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s454#/normalizacao",
+          "original_text": "         1    0.647   0.490    0.19    0.00    2. V517       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V559",
+      "supporting_beam": "V503",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.5373515,
+        "min": 22.359162
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2776,
+            2776
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s429#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            2776,
+            2776
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s429#/normalizacao",
+          "original_text": "     V503         2.91           2.28",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V559",
+      "supporting_beam": "V503",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.56677145,
+        "min": 22.3983886
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2527,
+            2527
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s451#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2527,
+            2527
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s451#/normalizacao",
+          "original_text": "               2     2.913     2.284      0.19     0.00      2   V503       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V559",
+      "supporting_beam": "V503",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.56677145,
+        "min": 22.3983886
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            954,
+            954
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s478#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            954,
+            954
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s478#/normalizacao",
+          "original_text": "         2    2.913   2.284    0.19    0.00    2. V503       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V560",
+      "supporting_beam": "V517",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 35.696206,
+        "min": -2.941995
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4531,
+            4531
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s470#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4531,
+            4531
+          ],
+          "raw_pointer": "/categorias/apoios/15",
+          "reference": "s470#/normalizacao",
+          "original_text": "     V517         3.64          -0.30",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V560",
+      "supporting_beam": "V503",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 39.030467,
+        "min": 8.7279185
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4532,
+            4532
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s471#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            4532,
+            4532
+          ],
+          "raw_pointer": "/categorias/apoios/16",
+          "reference": "s471#/normalizacao",
+          "original_text": "     V503         3.98           0.89",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V560",
+      "supporting_beam": "V517",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 35.7158193,
+        "min": -2.95180165
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2559,
+            2559
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s495#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2559,
+            2559
+          ],
+          "raw_pointer": "/categorias/apoios/17",
+          "reference": "s495#/normalizacao",
+          "original_text": "               1     3.642    -0.301      0.19     0.00      2   V517       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V560",
+      "supporting_beam": "V503",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 39.05988695,
+        "min": 8.6886919
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2560,
+            2560
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s496#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            2560,
+            2560
+          ],
+          "raw_pointer": "/categorias/apoios/18",
+          "reference": "s496#/normalizacao",
+          "original_text": "               2     3.983     0.886      0.19     0.00      2   V503       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V560",
+      "supporting_beam": "V517",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 35.7158193,
+        "min": -2.95180165
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1646,
+            1646
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s534#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1646,
+            1646
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s534#/normalizacao",
+          "original_text": "         1    3.642  -0.301    0.19    0.00    2. V517       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V560",
+      "supporting_beam": "V503",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 39.05988695,
+        "min": 8.6886919
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1647,
+            1647
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s535#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1647,
+            1647
+          ],
+          "raw_pointer": "/categorias/apoios/20",
+          "reference": "s535#/normalizacao",
+          "original_text": "         2    3.983   0.886    0.19    0.00    2. V503       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9514",
+      "supporting_beam": "V554",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 13.6312435,
+        "min": 1.8632635
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3377,
+            3377
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s667#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3377,
+            3377
+          ],
+          "raw_pointer": "/categorias/apoios/19",
+          "reference": "s667#/normalizacao",
+          "original_text": "     V554         1.39           0.19",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9514",
+      "supporting_beam": "V556",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 7.7472535,
+        "min": -6.7665885
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3379,
+            3379
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s669#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3379,
+            3379
+          ],
+          "raw_pointer": "/categorias/apoios/21",
+          "reference": "s669#/normalizacao",
+          "original_text": "     V556         0.79          -0.69",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9514",
+      "supporting_beam": "V554",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 13.6312435,
+        "min": 1.8436502
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3150,
+            3150
+          ],
+          "raw_pointer": "/categorias/apoios/22",
+          "reference": "s711#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3150,
+            3150
+          ],
+          "raw_pointer": "/categorias/apoios/22",
+          "reference": "s711#/normalizacao",
+          "original_text": "               1     1.390     0.188      0.19     0.00      2   V554       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9514",
+      "supporting_beam": "V556",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 7.69822025,
+        "min": -6.7665885
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3152,
+            3152
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s713#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3152,
+            3152
+          ],
+          "raw_pointer": "/categorias/apoios/24",
+          "reference": "s713#/normalizacao",
+          "original_text": "               3     0.785    -0.690      0.19     0.00      2   V556       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9514",
+      "supporting_beam": "V554",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 13.6312435,
+        "min": 1.8436502
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1190,
+            1190
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s751#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1190,
+            1190
+          ],
+          "raw_pointer": "/categorias/apoios/25",
+          "reference": "s751#/normalizacao",
+          "original_text": "         1    1.390   0.188    0.19    0.00    2. V554       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9514",
+      "supporting_beam": "V556",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 7.69822025,
+        "min": -6.7665885
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1192,
+            1192
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s753#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1192,
+            1192
+          ],
+          "raw_pointer": "/categorias/apoios/27",
+          "reference": "s753#/normalizacao",
+          "original_text": "         3    0.785  -0.690    0.19    0.00    2. V556       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V553",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 34.715541,
+        "min": 27.654753
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3476,
+            3476
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1376#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3476,
+            3476
+          ],
+          "raw_pointer": "/categorias/apoios/31",
+          "reference": "s1376#/normalizacao",
+          "original_text": "     V553         3.54           2.82",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V912",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 0.980665,
+        "min": 0.4903325
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3477,
+            3477
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1377#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3477,
+            3477
+          ],
+          "raw_pointer": "/categorias/apoios/32",
+          "reference": "s1377#/normalizacao",
+          "original_text": "     V912         0.10           0.05",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V570",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.439285,
+        "min": 22.947561
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3478,
+            3478
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1378#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3478,
+            3478
+          ],
+          "raw_pointer": "/categorias/apoios/33",
+          "reference": "s1378#/normalizacao",
+          "original_text": "     V570         2.90           2.34",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V571",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 27.654753,
+        "min": 22.359162
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3479,
+            3479
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s1379#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3479,
+            3479
+          ],
+          "raw_pointer": "/categorias/apoios/34",
+          "reference": "s1379#/normalizacao",
+          "original_text": "     V571         2.82           2.28",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V915",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 1.2748645,
+        "min": 0.4903325
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3480,
+            3480
+          ],
+          "raw_pointer": "/categorias/apoios/35",
+          "reference": "s1380#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3480,
+            3480
+          ],
+          "raw_pointer": "/categorias/apoios/35",
+          "reference": "s1380#/normalizacao",
+          "original_text": "     V915         0.13           0.05",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V566",
+      "supported_beam_support_id": null,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 27.3605535,
+        "min": 21.8688295
+      },
+      "support_relation_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3481,
+            3481
+          ],
+          "raw_pointer": "/categorias/apoios/36",
+          "reference": "s1381#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELDTVGS.LST",
+          "lines": [
+            3481,
+            3481
+          ],
+          "raw_pointer": "/categorias/apoios/36",
+          "reference": "s1381#/normalizacao",
+          "original_text": "     V566         2.79           2.23",
+          "file_sha256": "afb844460916404f403bdf9e07741498624c75e783ccf6ad77cb998e63320186",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELDTVGS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V553",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 34.68612105,
+        "min": 27.6155264
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3268,
+            3268
+          ],
+          "raw_pointer": "/categorias/apoios/37",
+          "reference": "s1474#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3268,
+            3268
+          ],
+          "raw_pointer": "/categorias/apoios/37",
+          "reference": "s1474#/normalizacao",
+          "original_text": "               1     3.537     2.816      0.19     0.00      2   V553       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V912",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 0.97085835,
+        "min": 0.4903325
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3269,
+            3269
+          ],
+          "raw_pointer": "/categorias/apoios/38",
+          "reference": "s1475#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3269,
+            3269
+          ],
+          "raw_pointer": "/categorias/apoios/38",
+          "reference": "s1475#/normalizacao",
+          "original_text": "               2     0.099     0.050      0.19     0.00      2   V912       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V570",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.44909165,
+        "min": 22.95736765
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3270,
+            3270
+          ],
+          "raw_pointer": "/categorias/apoios/39",
+          "reference": "s1476#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3270,
+            3270
+          ],
+          "raw_pointer": "/categorias/apoios/39",
+          "reference": "s1476#/normalizacao",
+          "original_text": "               3     2.901     2.341      0.35     0.00      2   V570       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V571",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 27.70378625,
+        "min": 22.3395487
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3271,
+            3271
+          ],
+          "raw_pointer": "/categorias/apoios/40",
+          "reference": "s1477#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3271,
+            3271
+          ],
+          "raw_pointer": "/categorias/apoios/40",
+          "reference": "s1477#/normalizacao",
+          "original_text": "               4     2.825     2.278      0.35     0.00      2   V571       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V915",
+      "supported_beam_support_id": 5.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 1.3140911,
+        "min": 0.4511059
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3272,
+            3272
+          ],
+          "raw_pointer": "/categorias/apoios/41",
+          "reference": "s1478#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3272,
+            3272
+          ],
+          "raw_pointer": "/categorias/apoios/41",
+          "reference": "s1478#/normalizacao",
+          "original_text": "               5     0.134     0.046      0.19     0.00      2   V915       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V566",
+      "supported_beam_support_id": 6.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 27.33113355,
+        "min": 21.8492162
+      },
+      "support_relation_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3273,
+            3273
+          ],
+          "raw_pointer": "/categorias/apoios/42",
+          "reference": "s1479#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "RELGER.LST",
+          "lines": [
+            3273,
+            3273
+          ],
+          "raw_pointer": "/categorias/apoios/42",
+          "reference": "s1479#/normalizacao",
+          "original_text": "               6     2.787     2.228      0.19     0.00      2   V566       0.00   0.00      0      0      0      0      0      0",
+          "file_sha256": "ba702ee49ca64b87da9e292f1c7232af36396b8004094c70e0b28759d771dd9f",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "RELGER.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V553",
+      "supported_beam_support_id": 1.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 34.68612105,
+        "min": 27.6155264
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1236,
+            1236
+          ],
+          "raw_pointer": "/categorias/apoios/43",
+          "reference": "s1529#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1236,
+            1236
+          ],
+          "raw_pointer": "/categorias/apoios/43",
+          "reference": "s1529#/normalizacao",
+          "original_text": "         1    3.537   2.816    0.19    0.00    2. V553       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V912",
+      "supported_beam_support_id": 2.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 0.97085835,
+        "min": 0.4903325
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1237,
+            1237
+          ],
+          "raw_pointer": "/categorias/apoios/44",
+          "reference": "s1530#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1237,
+            1237
+          ],
+          "raw_pointer": "/categorias/apoios/44",
+          "reference": "s1530#/normalizacao",
+          "original_text": "         2    0.099   0.050    0.19    0.00    2. V912       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V570",
+      "supported_beam_support_id": 3.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 28.44909165,
+        "min": 22.95736765
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1238,
+            1238
+          ],
+          "raw_pointer": "/categorias/apoios/45",
+          "reference": "s1531#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1238,
+            1238
+          ],
+          "raw_pointer": "/categorias/apoios/45",
+          "reference": "s1531#/normalizacao",
+          "original_text": "         3    2.901   2.341    0.35    0.00    2. V570       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V571",
+      "supported_beam_support_id": 4.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 27.70378625,
+        "min": 22.3395487
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1239,
+            1239
+          ],
+          "raw_pointer": "/categorias/apoios/46",
+          "reference": "s1532#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1239,
+            1239
+          ],
+          "raw_pointer": "/categorias/apoios/46",
+          "reference": "s1532#/normalizacao",
+          "original_text": "         4    2.825   2.278    0.35    0.00    2. V571       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V915",
+      "supported_beam_support_id": 5.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 1.3140911,
+        "min": 0.4511059
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1240,
+            1240
+          ],
+          "raw_pointer": "/categorias/apoios/47",
+          "reference": "s1533#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1240,
+            1240
+          ],
+          "raw_pointer": "/categorias/apoios/47",
+          "reference": "s1533#/normalizacao",
+          "original_text": "         5    0.134   0.046    0.19    0.00    2. V915       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    },
+    {
+      "supported_beam": "V9534",
+      "supporting_beam": "V566",
+      "supported_beam_support_id": 6.0,
+      "reaction_unit": "kN",
+      "reaction_observations": {
+        "max": 27.33113355,
+        "min": 21.8492162
+      },
+      "support_relation_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1241,
+            1241
+          ],
+          "raw_pointer": "/categorias/apoios/48",
+          "reference": "s1534#/normalizacao"
+        }
+      ],
+      "reaction_source": [
+        {
+          "file": "VGESFS.LST",
+          "lines": [
+            1241,
+            1241
+          ],
+          "raw_pointer": "/categorias/apoios/48",
+          "reference": "s1534#/normalizacao",
+          "original_text": "         6    2.787   2.228    0.19    0.00    2. V566       0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. ",
+          "file_sha256": "e149098c9266b196ba28b07256257278e37d90fa8d3c6caac13236f56074f5f8",
+          "encoding": "cp1252"
+        }
+      ],
+      "file": "VGESFS.LST",
+      "status": "INCONCLUSIVE",
+      "floor": "DIFERENCIADO",
+      "geometry_source": null,
+      "intersection_coordinates": null,
+      "supporting_beam_axis_position": null,
+      "diagnostics": [
+        "plan_geometry_pending"
+      ]
+    }
+  ]
+}

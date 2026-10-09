@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<STYLE TYPE="TEXT/CSS">
+  BODY {FONT-FAMILY: COURIER NEW; FONT-SIZE:  90% }
+  BODY {COLOR: #000000; BACKGROUND: #FFFFFF}
+  BODY {MARGIN-LEFT:   1%; MARGIN-RIGHT:   1%; MARGIN-TOP:   1%; MARGIN-BOTTOM:   1%; }
+  DIV#DIV1 {WIDTH: 0985PX; PADDING: 20PX; BACKGROUND: #FFFFFF;BORDER: 02PX SOLID #D6D6D6}
+  H1 {FONT-FAMILY: ARIAL; FONT-SIZE: 200% }
+  H1 {COLOR: #000000; BACKGROUND: #FFFFFF}
+  H1 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H2 {FONT-FAMILY: ARIAL; FONT-SIZE: 150% }
+  H2 {COLOR: #0066CC              }
+  H2 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H3 {FONT-FAMILY: ARIAL; FONT-SIZE: 150% }
+  H3 {COLOR: #FF0000; BACKGROUND: #FFFFFF}
+  H3 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H4 {FONT-FAMILY: ARIAL; FONT-SIZE: 100% }
+  H4 {COLOR: #0000FF; BACKGROUND: #FFFFFF}
+  H4 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H5 {FONT-FAMILY: ARIAL; FONT-SIZE: 100% }
+  H5 {COLOR: #0000FF; BACKGROUND: #FFFFFF}
+  H5 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H6 {FONT-FAMILY: ARIAL; FONT-SIZE: 100% }
+  H6 {COLOR: #0000FF; BACKGROUND: #FFFFFF}
+  H6 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  DIV.BOX1 {BORDER: NONE; WIDTH: 100%; PADDING: 01%; BACKGROUND: #C8C8C8 }
+  DIV.BOX2 {BORDER: NONE; WIDTH: 100%; PADDING: 01%; BACKGROUND: #C8C8C8 }
+  DIV.BOX3 {BORDER: NONE; WIDTH: 100%; PADDING: 01%; BACKGROUND: #C8C8C8 }
+  DIV.EXP1 {PADDING: 01%;background-color: #EFEFEF;}  DIV.EXP1:HOVER {BACKGROUND-COLOR: WHITE;}  HR { MARGIN: 0%; }
+</STYLE>
+<HEAD>
+<TITLE>Resumo de plantas e materiais</TITLE>
+<meta id="meta" name="viewport" content="width=device-width, initial-scale=0.2, minimum-scale=0.1, maximum-scale=5, orientation: landscape;">
+<meta http-equiv="X-UA-Compatible"content="IE=10" >
+<SCRIPT LANGUAGE="JavaScript">
+function configDevice() {
+   var metatag = window.document.getElementById("meta");
+   var body = window.document.getElementById("body");
+   var isIphone = navigator.userAgent.match(/iPhone|iPad|iPod/i);
+   var isAndroid = navigator.userAgent.match(/Android/);
+   var isMobile = navigator.userAgent.match(/BlackBerry|Opera Mini|IEMobile/i);  
+   if (isAndroid) {
+        body.className = "android";
+        metatag.content = "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, orientation: landscape;"
+   }
+   if (isIphone) {
+       body.className = "apple";
+       metatag.content = "width=device-width, initial-scale=0.2, minimum-scale=0.2, maximum-scale=1, user-scalable=no, orientation: landscape;"
+   }
+   if (isIphone == true || isAndroid == true || isMobile == true) {
+   }
+   else {
+       body.className = "desktop";
+   }
+ 
+}
+ 
+function button_click(Arquivo)
+{
+if (window.external != null) window.external.ClickFromHTML(Arquivo);
+}
+function canvas_transformar(pto, escala,Dx, Dy) {
+return {
+x: pto.x * escala + Dx * escala,
+y: - pto.y * escala - Dy * escala
+}
+}
+function canvas_destransformar(pto,escala, Dx, Dy) {
+return {
+x: pto.x / escala - Dx,
+y: - pto.y / escala + Dy
+}
+}
+function canvas_MouseWheelHandler(evt) {
+var evt = evt || window.event;
+var ptoZoomTela = { x: evt.offsetX ||(evt.pageX - evt.target.offsetLeft), y:evt.offsetY || (evt.pageY - evt.target.offsetTop) };
+var ptoZoomAntes = canvas_destransformar(ptoZoomTela, evt.target.escala, evt.target.Dx, evt.target.Dy);
+ 
+var delta = Math.max(-1, Math.min(1, (evt.wheelDelta || -evt.detail)));
+if (delta > 0)
+evt.target.escala *= 1.05;
+else if (delta < 0)
+   evt.target.escala /= 1.05;
+ 
+var ptoZoomDepois = canvas_destransformar(ptoZoomTela, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Dx += ptoZoomDepois.x - ptoZoomAntes.x;
+evt.target.Dy += ptoZoomDepois.y -ptoZoomAntes.y;
+ 
+evt.target.Desenhar();
+return false;
+}
+function canvas_MouseDownHandler(evt) {
+evt.preventDefault()
+document.body.style.mozUserSelect = document.body.style.webkitUserSelect = document.body.style.userSelect = "none";
+var pto = { x: evt.offsetX || (evt.pageX - evt.target.offsetLeft), y: evt.offsetY || (evt.pageY - evt.target.offsetTop) };
+evt.target.BufferCoord = canvas_destransformar(pto, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Drag = true;
+}
+function canvas_MouseMoveHandler (evt) {
+evt.preventDefault()
+if (evt.target.Drag) {
+var pto = { x: evt.offsetX || (evt.pageX - evt.target.offsetLeft), y: evt.offsetY || (evt.pageY - evt.target.offsetTop) };
+var ptot = canvas_destransformar(pto,evt.target.escala, evt.target.Dx, evt.target.Dy);
+ 
+evt.target.Dx -= (evt.target.BufferCoord.x - ptot.x);
+evt.target.Dy -= (evt.target.BufferCoord.y - ptot.y);
+evt.target.BufferCoord = canvas_destransformar(pto,evt.target.escala, evt.target.Dx,evt.target.Dy);
+evt.target.Desenhar();
+}
+}
+function canvas_MouseUpHandler(evt) {
+evt.target.Drag = false;
+}
+function canvas_MouseInHandler(evt) {
+document.documentElement.style.overflow= "hidden";  // firefox, chrome
+document.body.scroll = "no"; // ie only
+}
+function canvas_MouseOutHandler(evt) {
+evt.target.Drag = false;
+document.documentElement.style.overflow="auto";  // firefox, chrome
+document.body.scroll = "yes"; // ie only
+}
+var mylatesttap;
+function canvas_touchstart(evt) {
+evt.preventDefault();
+if (evt.touches.length == 1) {
+ 
+var now = new Date().getTime();
+   var timesince = now - mylatesttap;
+   if((timesince < 200) && (timesince > 0)){ // Double tap
+        evt.target.escala = evt.target.width / evt.target.TamX;
+        evt.target.Dx = -evt.target.XSupEsq;
+        evt.target.Dy = -evt.target.YSupEsq;
+        evt.target.Desenhar();  
+   }else{
+        var pto = { x:evt.touches[0].pageX - evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+        evt.target.BufferCoord = canvas_destransformar(pto, evt.target.escala, evt.target.Dx, evt.target.Dy);
+        evt.target.Drag = true;
+        evt.target.TouchZoom = false;
+   }
+ 
+   mylatesttap = new Date().getTime();
+ 
+}
+if (evt.touches.length == 2) {
+var pto1 = { x: evt.touches[0].pageX -evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+var pto2 = { x:evt.touches[1].pageX - evt.target.offsetLeft, y: evt.touches[1].pageY - evt.target.offsetTop };
+var dist = Math.pow(pto1.x-pto2.x,2)+Math.pow(pto1.y - pto2.y, 2);
+evt.target.BufferDistTouchZoom = dist;
+evt.target.TouchZoom = true;
+evt.target.Drag = false;
+}
+}
+function canvas_touchmove(evt) {
+if (evt.target.Drag) {
+if (evt.touches.length == 1) {
+var pto = { x: evt.touches[0].pageX - evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+var ptot = canvas_destransformar(pto, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Dx -= (evt.target.BufferCoord.x - ptot.x);
+evt.target.Dy -= (evt.target.BufferCoord.y - ptot.y);
+evt.target.BufferCoord = canvas_destransformar(pto,evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Desenhar();
+}
+else {
+evt.target.Drag = false;
+canvas_touchend(evt);
+canvas_touchstart(evt);
+}
+}
+if (evt.target.TouchZoom) {
+if (evt.touches.length == 2) {
+var pto1 = { x: evt.touches[0].pageX - evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+var pto2 = { x: evt.touches[1].pageX - evt.target.offsetLeft, y: evt.touches[1].pageY - evt.target.offsetTop };
+var ptom = { x: (pto1.x + pto2.x)/2,  y: (pto1.y + pto2.y)/2 };
+var dist = Math.pow(pto1.x - pto2.x, 2)+Math.pow(pto1.y - pto2.y, 2);
+var ptoZoomAntes =canvas_destransformar(ptom, evt.target.escala, evt.target.Dx,evt.target.Dy);
+if(dist>evt.target.BufferDistTouchZoom)
+evt.target.escala *= 1.02;
+else
+evt.target.escala /= 1.02;
+evt.target.BufferDistTouchZoom = dist;
+var ptoZoomDepois = canvas_destransformar(ptom, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Dx += ptoZoomDepois.x -  ptoZoomAntes.x;
+evt.target.Dy += ptoZoomDepois.y -  ptoZoomAntes.y;
+evt.target.Desenhar();
+}
+else {
+evt.target.TouchZoom = false;
+canvas_touchend(evt);
+canvas_touchstart(evt);
+}
+}
+}
+function canvas_touchend(evt) {
+evt.target.Drag = false;
+evt.target.TouchZoom = false;
+}
+function canvas_dblclick(evt){ 
+evt.target.escala = evt.target.width / evt.target.TamX;
+evt.target.Dx = -evt.target.XSupEsq;
+evt.target.Dy = -evt.target.YSupEsq;
+evt.target.Desenhar();
+}
+function canvas_DefinirEventos(canv) {
+if (canv.addEventListener) {
+canv.addEventListener("mousewheel",canvas_MouseWheelHandler, false);// IE9, Chrome, Safari, Opera
+canv.addEventListener("DOMMouseScroll",canvas_MouseWheelHandler, false);// Firefox
+}
+else canv.attachEvent("onmousewheel",canvas_MouseWheelHandler);
+canv.addEventListener("mousedown",canvas_MouseDownHandler, false);
+canv.addEventListener("mousemove",canvas_MouseMoveHandler, false);
+canv.addEventListener("mouseup",canvas_MouseUpHandler, false);
+canv.addEventListener("mouseout", canvas_MouseOutHandler, false);
+canv.addEventListener("mouseover", canvas_MouseInHandler, false);
+canv.addEventListener("touchstart",canvas_touchstart, false);
+canv.addEventListener("touchmove",canvas_touchmove, false);
+canv.addEventListener("touchend",canvas_touchend, false);
+canv.addEventListener("dblclick",canvas_dblclick, false);
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<canvas id="er1" width="1" height="1"></canvas>
+<script>
+var er1=document.getElementById("er1");
+er1.Contexto=er1.getContext("2d");
+er1.Contexto.font="4px Cambria";
+</script>
+<IMG SRC="file://C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\ESPACIAL\RESEST_arquivos\RESEST.BMP" ALT="Logotipo TQS" BORDER=  0>
+ <H1> Resumo de plantas e materiais - Edifício 24-212-TGD-SILVA JARDIM-R35</H1>
+<P></P>
+ SIMON ENGENHARIA LTDA<BR>
+ RUA FELIZARDO, 711 3° ANDAR<BR>
+ 08/10/2026 13:05:39<BR>
+<P></P>
+<HR>
+ <H2> Conteúdo</H2>
+<A HREF="#A"> Relação de plantas</A>
+<BR>
+<A HREF="#B"> Resumo de materiais</A>
+<BR>
+<A HREF="#E"> Carbono incorporado na estrutura</A>
+<BR>
+<A HREF="#C"> Índices</A>
+<BR>
+<A HREF="#D"> Resumo de custos</A>
+<BR>
+<A HREF="#E"> Preços cadastrados</A>
+<BR>
+<P></P>
+<HR>
+<A NAME="A"></A>
+ <H2> Relação de plantas</H2>
+<P></P>
+<BR>
+<TABLE BORDER=    1%; CELLPADDING=    1%; WIDTH=  980EM; ALIGN=>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=CENTER ROWSPAN=  0 COLSPAN=  4><FONT SIZE=  4>Relação de plantas</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=LEFT ROWSPAN=  0 COLSPAN=  4><FONT SIZE=  3>SILVA JARDIM</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=LEFT ROWSPAN=  0 COLSPAN=  4><FONT SIZE=  3>TGD</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=LEFT><FONT SIZE=  2>No</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 32% ALIGN=LEFT><FONT SIZE=  2>Conteúdo</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 28% ALIGN=LEFT><FONT SIZE=  2>Pavimento</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 34% ALIGN=LEFT><FONT SIZE=  2>Arquivo</TD>
+  </TR>
+  <TR>
+  </TR>
+  <TR>
+  </TR>
+</TABLE>
+<P></P>
+<HR>
+<A NAME="B"></A>
+ <H2> Resumo de materiais</H2>
+<P></P>
+<BR>
+<TABLE BORDER=    1%; CELLPADDING=    1%; WIDTH= 1050EM; ALIGN=>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=CENTER ROWSPAN=  0 COLSPAN= 18><FONT SIZE=  4>Piso 19: COBRES</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>Bitola</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>3.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>4.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>6.3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>8</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>10</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>12.5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>16</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>20</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>22</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>25</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>32</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>40</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Aço</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Concreto</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Forma</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>fck</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>MPa</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Pilares</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>2.75</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>35.28</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Vigas</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>3.81</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>46.43</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Lajes</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Fundações</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Outros</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Totais</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>6.56</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>81.71</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+  </TR>
+  <TR>
+  </TR>
+</TABLE>
+<P></P>
+<BR>
+<TABLE BORDER=    1%; CELLPADDING=    1%; WIDTH= 1050EM; ALIGN=>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=CENTER ROWSPAN=  0 COLSPAN= 18><FONT SIZE=  4>Piso 18: PISORES</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>Bitola</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>3.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>4.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>6.3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>8</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>10</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>12.5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>16</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>20</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>22</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>25</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>32</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>40</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Aço</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Concreto</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Forma</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>fck</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>MPa</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Pilares</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>3.32</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>39.54</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Vigas</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>7.15</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>74.98</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Lajes</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>10.95</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>72.97</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Fundações</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Outros</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Totais</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>21.42</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>187.49</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+  </TR>
+  <TR>
+  </TR>
+</TABLE>
+<P></P>
+<BR>
+<TABLE BORDER=    1%; CELLPADDING=    1%; WIDTH= 1050EM; ALIGN=>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=CENTER ROWSPAN=  0 COLSPAN= 18><FONT SIZE=  4>Piso 17: COBELEV</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>Bitola</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>3.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>4.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>6.3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>8</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>10</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>12.5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>16</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>20</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>22</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>25</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>32</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>40</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Aço</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Concreto</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Forma</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>fck</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>MPa</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Pilares</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>3.44</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>41.31</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Vigas</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>1.34</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>14.74</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Lajes</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>1.80</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>11.99</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Fundações</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Outros</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Totais</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>6.58</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>68.04</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+  </TR>
+  <TR>
+  </TR>
+</TABLE>
+<P></P>
+<BR>
+<TABLE BORDER=    1%; CELLPADDING=    1%; WIDTH= 1050EM; ALIGN=>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=CENTER ROWSPAN=  0 COLSPAN= 18><FONT SIZE=  4>Piso 16: COBERTURA</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>Bitola</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>3.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>4.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>6.3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>8</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>10</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>12.5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>16</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>20</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>22</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>25</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>32</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>40</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Aço</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Concreto</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Forma</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>fck</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>MPa</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Pilares</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>14.97</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>182.31</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Vigas</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>18.31</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>201.37</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Lajes</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>36.54</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>286.55</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Fundações</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Outros</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Totais</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>69.82</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>670.23</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+  </TR>
+  <TR>
+  </TR>
+  <TR>
+  </TR>
+</TABLE>
+<P></P>
+<BR>
+<TABLE BORDER=    1%; CELLPADDING=    1%; WIDTH= 1050EM; ALIGN=>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=100% ALIGN=CENTER ROWSPAN=  0 COLSPAN= 18><FONT SIZE=  4>Piso 15: 15PAV</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>Bitola</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>3.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>4.2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>6.3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>8</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>10</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>12.5</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>16</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>20</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>22</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>25</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>32</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>40</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Aço</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Concreto</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>Forma</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>fck</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=CENTER><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>kgf</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m3</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>m2</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=CENTER><FONT SIZE=  2>MPa</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Pilares</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>16.10</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>196.97</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Vigas</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>23.78</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>272.42</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  6% ALIGN=RIGHT><FONT SIZE=  2>40</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH=  8% ALIGN=RIGHT><FONT SIZE=  2>Lajes</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH=  5% ALIGN=RIGHT><FONT SIZE=  2>-</TD>
+    <

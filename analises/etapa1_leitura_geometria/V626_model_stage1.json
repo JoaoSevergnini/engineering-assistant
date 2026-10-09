@@ -1,0 +1,1678 @@
+{
+  "schema_version": "1.1",
+  "model_type": "longitudinal_beam_detail",
+  "document_model": "V626_document_stage1.json",
+  "conventions": {
+    "length_unit": "cm",
+    "diameter_unit": "mm",
+    "layers": "Indice 0 = primeira camada; [0,1] = uma barra apenas na segunda.",
+    "intervals": "Extensao longitudinal fisica documentada; comprimento desenvolvido nao substitui a projecao em x.",
+    "geometry_basis": "Geometria ja interpretada no documental; nao reconstruida a partir de estribos."
+  },
+  "beam": {
+    "source": {
+      "document_model": "V626_document_stage1.json",
+      "json_pointer": "/identification"
+    },
+    "id": "V626",
+    "grouped": false
+  },
+  "coordinate_system": {
+    "unit": "cm",
+    "origin": "drawing left face",
+    "positive_direction": "right",
+    "source": {
+      "document_model": "V626_document_stage1.json",
+      "json_pointer": "/geometry/coordinate_system"
+    }
+  },
+  "section": {
+    "source": {
+      "document_model": "V626_document_stage1.json",
+      "json_pointer": "/section"
+    },
+    "width_cm": null,
+    "height_cm": null,
+    "cover_cm": null,
+    "shape": null,
+    "lateral_projections_dimensions": null
+  },
+  "supports": [],
+  "spans": [],
+  "overhangs": [],
+  "longitudinal_reinforcement": [],
+  "stirrup_regions": [],
+  "skin_reinforcement": [],
+  "anchorage_staples": [],
+  "indirect_supports": [],
+  "suspension_reinforcement": [],
+  "sections": [],
+  "uncertainties": [
+    {
+      "code": "unknown_section_dimension",
+      "entities": [
+        "width_cm",
+        "height_cm",
+        "cover_cm"
+      ]
+    },
+    {
+      "code": "unknown_lateral_projection_dimensions",
+      "entities": [
+        "section"
+      ]
+    }
+  ],
+  "physical_geometry": {
+    "schema_version": "1.0",
+    "coordinate_system": {
+      "unit": "m",
+      "origin": "historical drawing left face; registration to TQS remains pending",
+      "positive_direction": "right",
+      "provenance": [
+        {
+          "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0"
+        }
+      ]
+    },
+    "segments": [
+      {
+        "id": "V626-G1",
+        "geometry_type": "UNRESOLVED",
+        "x_start_m": {
+          "value": null,
+          "state": "MISSING",
+          "unit": "m",
+          "provenance": [],
+          "criterion": null
+        },
+        "x_end_m": {
+          "value": null,
+          "state": "MISSING",
+          "unit": "m",
+          "provenance": [],
+          "criterion": null
+        },
+        "geometry": {
+          "section_shape": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  635,
+                  480,
+                  1170,
+                  950
+                ],
+                "reference": "rectangular elevation/section views"
+              }
+            ],
+            "criterion": null
+          },
+          "width_cm": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  635,
+                  480,
+                  1170,
+                  950
+                ],
+                "reference": "section label / prior visual review"
+              }
+            ],
+            "criterion": null
+          },
+          "height_cm": {
+            "value": 47,
+            "state": "ENGINEERING_ASSUMPTION",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  635,
+                  480,
+                  1170,
+                  950
+                ],
+                "reference": "local section noted in prior review; explicit boundaries pending"
+              }
+            ],
+            "criterion": null
+          },
+          "top_level_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "bottom_level_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "lateral_offset_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "cover_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "stirrup_diameter_mm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "mm",
+            "provenance": [],
+            "criterion": null
+          }
+        },
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              635,
+              480,
+              1170,
+              950
+            ]
+          }
+        ]
+      },
+      {
+        "id": "V626-G2",
+        "geometry_type": "UNRESOLVED",
+        "x_start_m": {
+          "value": null,
+          "state": "MISSING",
+          "unit": "m",
+          "provenance": [],
+          "criterion": null
+        },
+        "x_end_m": {
+          "value": null,
+          "state": "MISSING",
+          "unit": "m",
+          "provenance": [],
+          "criterion": null
+        },
+        "geometry": {
+          "section_shape": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  635,
+                  480,
+                  1170,
+                  950
+                ],
+                "reference": "rectangular elevation/section views"
+              }
+            ],
+            "criterion": null
+          },
+          "width_cm": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  635,
+                  480,
+                  1170,
+                  950
+                ],
+                "reference": "section label / prior visual review"
+              }
+            ],
+            "criterion": null
+          },
+          "height_cm": {
+            "value": 57,
+            "state": "ENGINEERING_ASSUMPTION",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  635,
+                  480,
+                  1170,
+                  950
+                ],
+                "reference": "local section noted in prior review; explicit boundaries pending"
+              }
+            ],
+            "criterion": null
+          },
+          "top_level_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "bottom_level_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "lateral_offset_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "cover_cm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "provenance": [],
+            "criterion": null
+          },
+          "stirrup_diameter_mm": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "mm",
+            "provenance": [],
+            "criterion": null
+          }
+        },
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              635,
+              480,
+              1170,
+              950
+            ]
+          }
+        ]
+      }
+    ],
+    "occurrences": [
+      {
+        "mark": "N4",
+        "occurrence_id": "V626-N4-1",
+        "function": "negative",
+        "face": "upper",
+        "quantity": {
+          "value": 2,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                815.4443969726562,
+                721.53662109375,
+                864.4691162109375,
+                730.57470703125
+              ],
+              "text": "N4 2 Ø 25",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 1
+            }
+          ],
+          "criterion": null
+        },
+        "diameter_mm": {
+          "value": 25.0,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": "mm",
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                815.4443969726562,
+                721.53662109375,
+                864.4691162109375,
+                730.57470703125
+              ],
+              "text": "N4 2 Ø 25",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 1
+            }
+          ],
+          "criterion": null
+        },
+        "layers": {
+          "value": [
+            2
+          ],
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": null,
+          "provenance": [
+            {
+              "reference": "historical manual layer interpretation; section association requires confirmation",
+              "original": "manual visual interpretation with office rule and printed 2a/3aCAM"
+            }
+          ],
+          "criterion": null
+        },
+        "x_start_m": {
+          "value": -1.0996,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N4 2 Ø 25",
+                  "bbox": [
+                    815.4443969726562,
+                    721.53662109375,
+                    864.4691162109375,
+                    730.57470703125
+                  ]
+                },
+                "row_text": "N4 2 Ø 25 C=704",
+                "segment_pdf": {
+                  "x0": 683.2799682617188,
+                  "x1": 1032.719970703125,
+                  "y": 718.8400268554688
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "x_end_m": {
+          "value": 5.0699,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N4 2 Ø 25",
+                  "bbox": [
+                    815.4443969726562,
+                    721.53662109375,
+                    864.4691162109375,
+                    730.57470703125
+                  ]
+                },
+                "row_text": "N4 2 Ø 25 C=704",
+                "segment_pdf": {
+                  "x0": 683.2799682617188,
+                  "x1": 1032.719970703125,
+                  "y": 718.8400268554688
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              815.4443969726562,
+              721.53662109375,
+              864.4691162109375,
+              730.57470703125
+            ],
+            "text": "N4 2 Ø 25",
+            "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+            "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+            "instance": 1
+          }
+        ],
+        "nominal_length_cm": 704,
+        "continuity": {
+          "value": null,
+          "state": "MISSING",
+          "unit": null,
+          "provenance": [],
+          "criterion": null
+        },
+        "laps": [],
+        "extensions": [],
+        "termination": {}
+      },
+      {
+        "mark": "N3",
+        "occurrence_id": "V626-N3-2",
+        "function": "negative",
+        "face": "upper",
+        "quantity": {
+          "value": 2,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                730.6130981445312,
+                761.1773681640625,
+                779.6378173828125,
+                770.2154541015625
+              ],
+              "text": "N3 2 Ø 25",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 2
+            }
+          ],
+          "criterion": null
+        },
+        "diameter_mm": {
+          "value": 25.0,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": "mm",
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                730.6130981445312,
+                761.1773681640625,
+                779.6378173828125,
+                770.2154541015625
+              ],
+              "text": "N3 2 Ø 25",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 2
+            }
+          ],
+          "criterion": null
+        },
+        "layers": {
+          "value": [
+            0,
+            2
+          ],
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": null,
+          "provenance": [
+            {
+              "reference": "historical manual layer interpretation; section association requires confirmation",
+              "original": "manual visual interpretation with office rule and printed 2a/3aCAM"
+            }
+          ],
+          "criterion": null
+        },
+        "x_start_m": {
+          "value": -1.0996,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N3 2 Ø 25",
+                  "bbox": [
+                    730.6130981445312,
+                    761.1773681640625,
+                    779.6378173828125,
+                    770.2154541015625
+                  ]
+                },
+                "row_text": "N3 2 Ø 25 C=349",
+                "segment_pdf": {
+                  "x0": 683.2799682617188,
+                  "x1": 862.7999877929688,
+                  "y": 758.4400024414062
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "x_end_m": {
+          "value": 2.0699,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N3 2 Ø 25",
+                  "bbox": [
+                    730.6130981445312,
+                    761.1773681640625,
+                    779.6378173828125,
+                    770.2154541015625
+                  ]
+                },
+                "row_text": "N3 2 Ø 25 C=349",
+                "segment_pdf": {
+                  "x0": 683.2799682617188,
+                  "x1": 862.7999877929688,
+                  "y": 758.4400024414062
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              730.6130981445312,
+              761.1773681640625,
+              779.6378173828125,
+              770.2154541015625
+            ],
+            "text": "N3 2 Ø 25",
+            "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+            "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+            "instance": 2
+          }
+        ],
+        "nominal_length_cm": 349,
+        "continuity": {
+          "value": null,
+          "state": "MISSING",
+          "unit": null,
+          "provenance": [],
+          "criterion": null
+        },
+        "laps": [],
+        "extensions": [],
+        "termination": {}
+      },
+      {
+        "mark": "N6",
+        "occurrence_id": "V626-N6-3",
+        "function": "negative",
+        "face": "upper",
+        "quantity": {
+          "value": 1,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                908.9558715820312,
+                768.419677734375,
+                957.9805908203125,
+                777.457763671875
+              ],
+              "text": "N6 1 Ø 25",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 3
+            }
+          ],
+          "criterion": null
+        },
+        "diameter_mm": {
+          "value": 25.0,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": "mm",
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                908.9558715820312,
+                768.419677734375,
+                957.9805908203125,
+                777.457763671875
+              ],
+              "text": "N6 1 Ø 25",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 3
+            }
+          ],
+          "criterion": null
+        },
+        "layers": {
+          "value": [
+            0,
+            1
+          ],
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": null,
+          "provenance": [
+            {
+              "reference": "historical manual layer interpretation; section association requires confirmation",
+              "original": "manual visual interpretation with office rule and printed 2a/3aCAM"
+            }
+          ],
+          "criterion": null
+        },
+        "x_start_m": {
+          "value": 2.2203,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N6 1 Ø 25",
+                  "bbox": [
+                    908.9558715820312,
+                    768.419677734375,
+                    957.9805908203125,
+                    777.457763671875
+                  ]
+                },
+                "row_text": "N6 1 Ø 25 C=333",
+                "segment_pdf": {
+                  "x0": 871.3200073242188,
+                  "x1": 1031.6400146484375,
+                  "y": 765.760009765625
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "x_end_m": {
+          "value": 5.0508,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N6 1 Ø 25",
+                  "bbox": [
+                    908.9558715820312,
+                    768.419677734375,
+                    957.9805908203125,
+                    777.457763671875
+                  ]
+                },
+                "row_text": "N6 1 Ø 25 C=333",
+                "segment_pdf": {
+                  "x0": 871.3200073242188,
+                  "x1": 1031.6400146484375,
+                  "y": 765.760009765625
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              908.9558715820312,
+              768.419677734375,
+              957.9805908203125,
+              777.457763671875
+            ],
+            "text": "N6 1 Ø 25",
+            "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+            "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+            "instance": 3
+          }
+        ],
+        "nominal_length_cm": 333,
+        "continuity": {
+          "value": null,
+          "state": "MISSING",
+          "unit": null,
+          "provenance": [],
+          "criterion": null
+        },
+        "laps": [],
+        "extensions": [],
+        "termination": {}
+      },
+      {
+        "mark": "N5",
+        "occurrence_id": "V626-N5-4",
+        "function": "positive",
+        "face": "lower",
+        "quantity": {
+          "value": 3,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                824.646728515625,
+                886.6121826171875,
+                873.6714477539062,
+                895.6502685546875
+              ],
+              "text": "N5 3 Ø 16",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 4
+            }
+          ],
+          "criterion": null
+        },
+        "diameter_mm": {
+          "value": 16.0,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": "mm",
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                824.646728515625,
+                886.6121826171875,
+                873.6714477539062,
+                895.6502685546875
+              ],
+              "text": "N5 3 Ø 16",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 4
+            }
+          ],
+          "criterion": null
+        },
+        "layers": {
+          "value": [
+            3
+          ],
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": null,
+          "provenance": [
+            {
+              "reference": "historical manual layer interpretation; section association requires confirmation",
+              "original": "manual visual interpretation with office rule and printed 2a/3aCAM"
+            }
+          ],
+          "criterion": null
+        },
+        "x_start_m": {
+          "value": -0.4386,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N5 3 Ø 16",
+                  "bbox": [
+                    824.646728515625,
+                    886.6121826171875,
+                    873.6714477539062,
+                    895.6502685546875
+                  ]
+                },
+                "row_text": "N5 3 Ø 16 C=517",
+                "segment_pdf": {
+                  "x0": 720.719970703125,
+                  "x1": 1013.3999633789062,
+                  "y": 883.8400268554688
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "x_end_m": {
+          "value": 4.7288,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N5 3 Ø 16",
+                  "bbox": [
+                    824.646728515625,
+                    886.6121826171875,
+                    873.6714477539062,
+                    895.6502685546875
+                  ]
+                },
+                "row_text": "N5 3 Ø 16 C=517",
+                "segment_pdf": {
+                  "x0": 720.719970703125,
+                  "x1": 1013.3999633789062,
+                  "y": 883.8400268554688
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              824.646728515625,
+              886.6121826171875,
+              873.6714477539062,
+              895.6502685546875
+            ],
+            "text": "N5 3 Ø 16",
+            "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+            "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+            "instance": 4
+          }
+        ],
+        "nominal_length_cm": 517,
+        "continuity": {
+          "value": null,
+          "state": "MISSING",
+          "unit": null,
+          "provenance": [],
+          "criterion": null
+        },
+        "laps": [],
+        "extensions": [],
+        "termination": {}
+      },
+      {
+        "mark": "N2",
+        "occurrence_id": "V626-N2-5",
+        "function": "positive",
+        "face": "lower",
+        "quantity": {
+          "value": 2,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                660.3922729492188,
+                897.9381103515625,
+                709.4170532226562,
+                906.9761962890625
+              ],
+              "text": "N2 2 Ø 10",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 5
+            }
+          ],
+          "criterion": null
+        },
+        "diameter_mm": {
+          "value": 10.0,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": "mm",
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                660.3922729492188,
+                897.9381103515625,
+                709.4170532226562,
+                906.9761962890625
+              ],
+              "text": "N2 2 Ø 10",
+              "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+              "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+              "instance": 5
+            }
+          ],
+          "criterion": null
+        },
+        "layers": {
+          "value": [
+            2
+          ],
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": null,
+          "provenance": [
+            {
+              "reference": "historical manual layer interpretation; section association requires confirmation",
+              "original": "manual visual interpretation with office rule and printed 2a/3aCAM"
+            }
+          ],
+          "criterion": null
+        },
+        "x_start_m": {
+          "value": -1.0911,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N2 2 Ø 10",
+                  "bbox": [
+                    660.3922729492188,
+                    897.9381103515625,
+                    709.4170532226562,
+                    906.9761962890625
+                  ]
+                },
+                "row_text": "N2 2 Ø 10 C=57",
+                "segment_pdf": {
+                  "x0": 683.760009765625,
+                  "x1": 716.0399780273438,
+                  "y": 895.239990234375
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "x_end_m": {
+          "value": -0.5212,
+          "state": "ENGINEERING_ASSUMPTION",
+          "unit": "m",
+          "provenance": [
+            {
+              "reference": "historical graphical trace",
+              "original": {
+                "pdf": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "label": {
+                  "text": "N2 2 Ø 10",
+                  "bbox": [
+                    660.3922729492188,
+                    897.9381103515625,
+                    709.4170532226562,
+                    906.9761962890625
+                  ]
+                },
+                "row_text": "N2 2 Ø 10 C=57",
+                "segment_pdf": {
+                  "x0": 683.760009765625,
+                  "x1": 716.0399780273438,
+                  "y": 895.239990234375
+                },
+                "origin_pdf_x": 745.5599975585938,
+                "coordinate_method": "graphical trace; 0.5664 PDF points/cm, drawing 1:50; not substituted for explicit dimension",
+                "layers": "manual visual interpretation with office rule and printed 2a/3aCAM"
+              },
+              "warning": "not substituted for explicit dimensions"
+            }
+          ],
+          "criterion": null
+        },
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              660.3922729492188,
+              897.9381103515625,
+              709.4170532226562,
+              906.9761962890625
+            ],
+            "text": "N2 2 Ø 10",
+            "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+            "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+            "instance": 5
+          }
+        ],
+        "nominal_length_cm": 57,
+        "continuity": {
+          "value": null,
+          "state": "MISSING",
+          "unit": null,
+          "provenance": [],
+          "criterion": null
+        },
+        "laps": [],
+        "extensions": [],
+        "termination": {}
+      }
+    ],
+    "spans": [
+      {
+        "id": 1,
+        "tqs_span_token": "1B",
+        "provenance": [
+          "s634#/normalizacao/tipo_vao_documental"
+        ],
+        "physical_kind": {
+          "value": "CANTILEVER",
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                635,
+                480,
+                1170,
+                950
+              ],
+              "reference": "free extension left of P31 in elevation"
+            }
+          ],
+          "criterion": null
+        },
+        "orientation": {
+          "value": "LEFT",
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+              "page": 1,
+              "bbox": [
+                635,
+                480,
+                1170,
+                950
+              ],
+              "reference": "visual side relative to P31; no length from scale"
+            }
+          ],
+          "criterion": null
+        },
+        "documentary_kind": "CANTILEVER",
+        "kind": "CANTILEVER",
+        "conflicting": false,
+        "physical_validation": "PENDING"
+      },
+      {
+        "id": 2,
+        "tqs_span_token": "2",
+        "provenance": [
+          "s635#/normalizacao/tipo_vao_documental"
+        ],
+        "documentary_kind": "BETWEEN_SUPPORTS",
+        "kind": "BETWEEN_SUPPORTS",
+        "conflicting": false,
+        "orientation": {
+          "value": null,
+          "state": "MISSING",
+          "unit": null,
+          "provenance": [],
+          "criterion": null
+        },
+        "physical_validation": "PENDING"
+      }
+    ],
+    "support_faces": []
+  },
+  "documentary_reconciliation": {
+    "schema_version": "1.0",
+    "positions": [
+      {
+        "mark": "N2",
+        "representations": [
+          {
+            "mark": "N2",
+            "representation_id": "V626-N2-5",
+            "view": "ELEVATION",
+            "quantity": 2,
+            "quantity_scope": "OCCURRENCE",
+            "occurrence_id": "V626-N2-5",
+            "diameter_mm": 10.0,
+            "nominal_length_cm": 57,
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  660.3922729492188,
+                  897.9381103515625,
+                  709.4170532226562,
+                  906.9761962890625
+                ],
+                "text": "N2 2 Ø 10",
+                "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+                "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+                "instance": 5
+              }
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "field": "quantity",
+            "scope": [
+              "OCCURRENCE",
+              "V626-N2-5"
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 2,
+            "representation_ids": [
+              "V626-N2-5"
+            ]
+          },
+          {
+            "field": "diameter_mm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 10.0,
+            "representation_ids": [
+              "V626-N2-5"
+            ]
+          },
+          {
+            "field": "nominal_length_cm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 57,
+            "representation_ids": [
+              "V626-N2-5"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "SECTION",
+            "physical_absence_proved": false
+          },
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "STEEL_SCHEDULE",
+            "physical_absence_proved": false
+          }
+        ],
+        "physical_absence_proved": false,
+        "state": "INCOMPLETE"
+      },
+      {
+        "mark": "N3",
+        "representations": [
+          {
+            "mark": "N3",
+            "representation_id": "V626-N3-2",
+            "view": "ELEVATION",
+            "quantity": 2,
+            "quantity_scope": "OCCURRENCE",
+            "occurrence_id": "V626-N3-2",
+            "diameter_mm": 25.0,
+            "nominal_length_cm": 349,
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  730.6130981445312,
+                  761.1773681640625,
+                  779.6378173828125,
+                  770.2154541015625
+                ],
+                "text": "N3 2 Ø 25",
+                "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+                "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+                "instance": 2
+              }
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "field": "quantity",
+            "scope": [
+              "OCCURRENCE",
+              "V626-N3-2"
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 2,
+            "representation_ids": [
+              "V626-N3-2"
+            ]
+          },
+          {
+            "field": "diameter_mm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 25.0,
+            "representation_ids": [
+              "V626-N3-2"
+            ]
+          },
+          {
+            "field": "nominal_length_cm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 349,
+            "representation_ids": [
+              "V626-N3-2"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "SECTION",
+            "physical_absence_proved": false
+          },
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "STEEL_SCHEDULE",
+            "physical_absence_proved": false
+          }
+        ],
+        "physical_absence_proved": false,
+        "state": "INCOMPLETE"
+      },
+      {
+        "mark": "N4",
+        "representations": [
+          {
+            "mark": "N4",
+            "representation_id": "V626-N4-1",
+            "view": "ELEVATION",
+            "quantity": 2,
+            "quantity_scope": "OCCURRENCE",
+            "occurrence_id": "V626-N4-1",
+            "diameter_mm": 25.0,
+            "nominal_length_cm": 704,
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  815.4443969726562,
+                  721.53662109375,
+                  864.4691162109375,
+                  730.57470703125
+                ],
+                "text": "N4 2 Ø 25",
+                "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+                "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+                "instance": 1
+              }
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "field": "quantity",
+            "scope": [
+              "OCCURRENCE",
+              "V626-N4-1"
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 2,
+            "representation_ids": [
+              "V626-N4-1"
+            ]
+          },
+          {
+            "field": "diameter_mm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 25.0,
+            "representation_ids": [
+              "V626-N4-1"
+            ]
+          },
+          {
+            "field": "nominal_length_cm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 704,
+            "representation_ids": [
+              "V626-N4-1"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "SECTION",
+            "physical_absence_proved": false
+          },
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "STEEL_SCHEDULE",
+            "physical_absence_proved": false
+          }
+        ],
+        "physical_absence_proved": false,
+        "state": "INCOMPLETE"
+      },
+      {
+        "mark": "N5",
+        "representations": [
+          {
+            "mark": "N5",
+            "representation_id": "V626-N5-4",
+            "view": "ELEVATION",
+            "quantity": 3,
+            "quantity_scope": "OCCURRENCE",
+            "occurrence_id": "V626-N5-4",
+            "diameter_mm": 16.0,
+            "nominal_length_cm": 517,
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  824.646728515625,
+                  886.6121826171875,
+                  873.6714477539062,
+                  895.6502685546875
+                ],
+                "text": "N5 3 Ø 16",
+                "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+                "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+                "instance": 4
+              }
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "field": "quantity",
+            "scope": [
+              "OCCURRENCE",
+              "V626-N5-4"
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 3,
+            "representation_ids": [
+              "V626-N5-4"
+            ]
+          },
+          {
+            "field": "diameter_mm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 16.0,
+            "representation_ids": [
+              "V626-N5-4"
+            ]
+          },
+          {
+            "field": "nominal_length_cm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 517,
+            "representation_ids": [
+              "V626-N5-4"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "SECTION",
+            "physical_absence_proved": false
+          },
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "STEEL_SCHEDULE",
+            "physical_absence_proved": false
+          }
+        ],
+        "physical_absence_proved": false,
+        "state": "INCOMPLETE"
+      },
+      {
+        "mark": "N6",
+        "representations": [
+          {
+            "mark": "N6",
+            "representation_id": "V626-N6-3",
+            "view": "ELEVATION",
+            "quantity": 1,
+            "quantity_scope": "OCCURRENCE",
+            "occurrence_id": "V626-N6-3",
+            "diameter_mm": 25.0,
+            "nominal_length_cm": 333,
+            "provenance": [
+              {
+                "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+                "page": 1,
+                "bbox": [
+                  908.9558715820312,
+                  768.419677734375,
+                  957.9805908203125,
+                  777.457763671875
+                ],
+                "text": "N6 1 Ø 25",
+                "inventory": "analises\\silva_jardim_tipo\\drawing_inventory.json",
+                "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+                "instance": 3
+              }
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "field": "quantity",
+            "scope": [
+              "OCCURRENCE",
+              "V626-N6-3"
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 1,
+            "representation_ids": [
+              "V626-N6-3"
+            ]
+          },
+          {
+            "field": "diameter_mm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 25.0,
+            "representation_ids": [
+              "V626-N6-3"
+            ]
+          },
+          {
+            "field": "nominal_length_cm",
+            "scope": [
+              "POSITION",
+              null
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "value": 333,
+            "representation_ids": [
+              "V626-N6-3"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "SECTION",
+            "physical_absence_proved": false
+          },
+          {
+            "code": "REPRESENTATION_NOT_EXTRACTED",
+            "view": "STEEL_SCHEDULE",
+            "physical_absence_proved": false
+          }
+        ],
+        "physical_absence_proved": false,
+        "state": "INCOMPLETE"
+      }
+    ],
+    "coverage": [
+      {
+        "view": "ELEVATION",
+        "extraction": "PARTIAL",
+        "integrity": "UNVERIFIED",
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              635,
+              480,
+              1170,
+              950
+            ]
+          }
+        ]
+      },
+      {
+        "view": "SECTION",
+        "extraction": "NOT_EXTRACTED",
+        "integrity": "UNVERIFIED",
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              635,
+              480,
+              1170,
+              950
+            ]
+          }
+        ]
+      },
+      {
+        "view": "STEEL_SCHEDULE",
+        "extraction": "NOT_EXTRACTED",
+        "integrity": "UNVERIFIED",
+        "provenance": [
+          {
+            "file": "051-SJ-EST-LO-06303-VIG-TIP-R00.PDF",
+            "page": 1,
+            "bbox": [
+              635,
+              480,
+              1170,
+              950
+            ]
+          }
+        ]
+      }
+    ],
+    "source_priority_applied": false
+  },
+  "input_validation": {
+    "required_before_calculation": true,
+    "global_beam_block": false,
+    "envelope_policy": "TQS_ENVELOPES",
+    "concomitant_combinations_required": false
+  }
+}

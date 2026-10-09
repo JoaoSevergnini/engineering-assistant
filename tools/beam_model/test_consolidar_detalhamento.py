@@ -121,6 +121,14 @@ class BeamModelTests(unittest.TestCase):
         self.raw['identification']['beam']['value']='V999'
         self.assertEqual(transform(self.raw)['beam']['id'],'V999')
 
+    def test_explicit_shared_group_members(self):
+        self.raw['identification']['grouped_with_other_beams']['value']=True
+        self.raw['identification']['group_members']={'value':['V502','V999'],'sources':['title'],'classification':'explicit'}
+        self.assertEqual(transform(self.raw)['beam']['ids'],['V502','V999'])
+        for values in (['V999'],['V502','V502'],['V502',None]):
+            self.raw['identification']['group_members']['value']=values
+            with self.assertRaises(ValueError): transform(self.raw)
+
     def test_cli_valid_json_and_original_preserved(self):
         with tempfile.TemporaryDirectory() as tmp:
             source=Path(tmp)/'raw.json'

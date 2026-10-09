@@ -123,12 +123,12 @@ class MomentDiagram:
                 'interpretation': 'Máximo da representação linear; não máximo exato do diagrama estrutural real.'}
 
 
-def diagram_from_tqs(mapping, tqs, positioned, raw):
+def diagram_from_tqs(mapping, tqs, positioned, raw, *, flexure_sign="POSITIVE"):
     if mapping['beam_id'] != tqs['beam']['id'] or positioned['beam']['id'] != tqs['beam']['id']:
         raise ValueError('incompatible_beam_identity')
     if mapping['force_series'] != positioned['beam']['spans'][0]['internal_forces']:
         raise ValueError('mapping_positions_mismatch')
-    index, series, proofs = audited_moment_series(mapping, tqs, raw)
+    index, series, proofs = audited_moment_series(mapping, tqs, raw,flexure_sign=flexure_sign)
     if len({len(series[k]) for k in ('sections','positions','values')}) != 1:
         raise ValueError('series_lengths_mismatch')
     points = [{'section':s, 'x_m':x, 'value_knm':m, 'source_type':'tqs_section',
@@ -140,6 +140,54 @@ def diagram_from_tqs(mapping, tqs, positioned, raw):
               for j,(s,x,m) in enumerate(zip(series['sections'],series['positions'],series['values']))]
     provenance = {'beam_id':tqs['beam']['id'], 'span_id':tqs['beam']['spans'][0]['id'],
         'series':{k:copy.deepcopy(v) for k,v in series.items() if k not in ('sections','positions','values')},
-        'label_original':'M MX.', 'characteristic_level':'Msk confirmado pelo engenheiro',
+        'label_original':'M MX.' if flexure_sign=='POSITIVE' else 'M MN.', 'characteristic_level':'Msk confirmado pelo engenheiro',
         'evidence':[{'reference':p['reference'],'source':p['source']} for p in proofs]}
     return MomentDiagram(points, provenance)
+
+
+def tension_diagram(diagram, flexure_sign, *, domain=None):
+    """Non-destructive sign view; opposite moment remains opposite, never abs().
+
+    Optional caller-specified physical branch interval uses existing interpolation.
+    Source signed values and the complete original diagram remain in provenance.
+    """
+    if flexure_sign not in ('POSITIVE','NEGATIVE'):
+        raise ValueError('unknown_flexure_sign')
+    a,b=diagram.xs[0],diagram.xs[-1]
+    if domain is not None:
+        a,b=map(dec,domain)
+        if not diagram.xs[0]<=a<b<=diagram.xs[-1]:
+            raise ValueError('branch_outside_sampled_domain')
+    points=[]
+    for x in sorted({a,b,*[x for x in diagram.xs if a<=x<=b]}):
+        original=diagram.moment_at_x(float(x))
+        value=original['value_knm']
+        points.append({'section':original.get('section'),'x_m':float(x),
+            'value_knm':None if value is None else value*(1 if flexure_sign=='POSITIVE' else -1),
+            'Msk_signed':value,'Msk_abs':None if value is None else abs(value),
+            'source_type':original['source_type'],'provenance':original})
+    return MomentDiagram(points,{'flexure_sign':flexure_sign,'transformation':'identity' if flexure_sign=='POSITIVE' else '-Msk, preserving opposite sign',
+        'branch_domain_m':[float(a),float(b)],'original_diagram':diagram.as_dict()})
+
+
+def terminal_tension_branch(diagram, flexure_sign, support_side):
+    """Connected tension lobe attached to the selected sampled span terminal.
+
+    Retain the first adjacent opposite/zero sample to permit existing zero
+    interpolation. Multiple peaks in that physical lobe remain blocked by the
+    existing reference selector. No force mirroring or extrapolation.
+    """
+    from support_geometry import normalize_side
+    view=tension_diagram(diagram,flexure_sign)
+    indices=list(range(len(view.points)))
+    if normalize_side(support_side)=='RIGHT':indices.reverse()
+    if view.ms[indices[0]] is None or view.ms[indices[0]]<=0:
+        raise ValueError('terminal_has_no_selected_tension_lobe')
+    end=indices[0]
+    for i in indices:
+        if view.ms[i] is None:raise ValueError('incomplete_terminal_tension_branch')
+        end=i
+        if view.ms[i]<=0:break
+    bounds=sorted([view.xs[indices[0]],view.xs[end]])
+    if bounds[0]==bounds[1]:raise ValueError('terminal_tension_branch_missing')
+    return [float(x) for x in bounds]

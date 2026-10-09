@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<STYLE TYPE="TEXT/CSS">
+  BODY {FONT-FAMILY: CONSOLAS, COURIER NEW; FONT-SIZE:  95% }
+  BODY {COLOR: #000000; BACKGROUND: #E6E6E6}
+  BODY {MARGIN-LEFT:   1%; MARGIN-RIGHT:   1%; MARGIN-TOP:   1%; MARGIN-BOTTOM:   1%; }
+  DIV#CAIXA {WIDTH: 0985PX; PADDING: 20PX; BACKGROUND: #FFFFFF;BORDER: 02PX SOLID #D6D6D6}
+  H1 {FONT-FAMILY: ARIAL; FONT-SIZE: 200% }
+  H1 {COLOR: #000000; BACKGROUND: #FFFFFF}
+  H1 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H2 {FONT-FAMILY: ARIAL; FONT-SIZE: 150% }
+  H2 {COLOR: #0066CC              }
+  H2 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H3 {FONT-FAMILY: ARIAL; FONT-SIZE: 130% }
+  H3 {COLOR: #008CB4; BACKGROUND: #FFFFFF}
+  H3 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H4 {FONT-FAMILY: Palatino Linotype; FONT-SIZE: 120% }
+  H4 {COLOR: #000000; BACKGROUND: #FFFFFF}
+  H4 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H5 {FONT-FAMILY: CONSOLAS, COURIER NEW; FONT-SIZE:  80% }
+  H5 {COLOR: #7F7F7F; BACKGROUND: #FFFFFF}
+  H5 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  H6 {FONT-FAMILY: CONSOLAS, COURIER NEW; FONT-SIZE: 110% }
+  H6 {COLOR: #000000; BACKGROUND: #FFFFFF}
+  H6 {MARGIN-LEFT:   0%; MARGIN-RIGHT:   0%; MARGIN-TOP:   0%; MARGIN-BOTTOM:   0%; }
+  DIV.BOX1 {BORDER: NONE; WIDTH: 100%; PADDING: 01%; BACKGROUND: #C8C8C8 }
+  DIV.BOX2 {BORDER: NONE; WIDTH: 100%; PADDING: 01%; BACKGROUND: #C8C8C8 }
+  DIV.BOX3 {BORDER: NONE; WIDTH: 100%; PADDING: 01%; BACKGROUND: #C8C8C8 }
+  DIV.EXP1 {PADDING: 01%;background-color: #EFEFEF;}  DIV.EXP1:HOVER {BACKGROUND-COLOR: WHITE;}  HR { MARGIN: 0%; }
+</STYLE>
+<HEAD>
+<TITLE>Estabilidade global / Deslocamentos laterais</TITLE>
+<meta id="meta" name="viewport" content="width=device-width, initial-scale=0.2, minimum-scale=0.1, maximum-scale=5, orientation: landscape;">
+<meta http-equiv="X-UA-Compatible"content="IE=10" >
+<SCRIPT LANGUAGE="JavaScript">
+function configDevice() {
+   var metatag = window.document.getElementById("meta");
+   var body = window.document.getElementById("body");
+   var isIphone = navigator.userAgent.match(/iPhone|iPad|iPod/i);
+   var isAndroid = navigator.userAgent.match(/Android/);
+   var isMobile = navigator.userAgent.match(/BlackBerry|Opera Mini|IEMobile/i);  
+   if (isAndroid) {
+        body.className = "android";
+        metatag.content = "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, orientation: landscape;"
+   }
+   if (isIphone) {
+       body.className = "apple";
+       metatag.content = "width=device-width, initial-scale=0.2, minimum-scale=0.2, maximum-scale=1, user-scalable=no, orientation: landscape;"
+   }
+   if (isIphone == true || isAndroid == true || isMobile == true) {
+   }
+   else {
+       body.className = "desktop";
+   }
+ 
+}
+ 
+function button_click(Arquivo)
+{
+if (window.external != null) window.external.ClickFromHTML(Arquivo);
+}
+function canvas_transformar(pto, escala,Dx, Dy) {
+return {
+x: pto.x * escala + Dx * escala,
+y: - pto.y * escala - Dy * escala
+}
+}
+function canvas_destransformar(pto,escala, Dx, Dy) {
+return {
+x: pto.x / escala - Dx,
+y: - pto.y / escala + Dy
+}
+}
+function canvas_MouseWheelHandler(evt) {
+var evt = evt || window.event;
+var ptoZoomTela = { x: evt.offsetX ||(evt.pageX - evt.target.offsetLeft), y:evt.offsetY || (evt.pageY - evt.target.offsetTop) };
+var ptoZoomAntes = canvas_destransformar(ptoZoomTela, evt.target.escala, evt.target.Dx, evt.target.Dy);
+ 
+var delta = Math.max(-1, Math.min(1, (evt.wheelDelta || -evt.detail)));
+if (delta > 0)
+evt.target.escala *= 1.05;
+else if (delta < 0)
+   evt.target.escala /= 1.05;
+ 
+var ptoZoomDepois = canvas_destransformar(ptoZoomTela, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Dx += ptoZoomDepois.x - ptoZoomAntes.x;
+evt.target.Dy += ptoZoomDepois.y -ptoZoomAntes.y;
+ 
+evt.target.Desenhar();
+return false;
+}
+function canvas_MouseDownHandler(evt) {
+evt.preventDefault()
+document.body.style.mozUserSelect = document.body.style.webkitUserSelect = document.body.style.userSelect = "none";
+var pto = { x: evt.offsetX || (evt.pageX - evt.target.offsetLeft), y: evt.offsetY || (evt.pageY - evt.target.offsetTop) };
+evt.target.BufferCoord = canvas_destransformar(pto, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Drag = true;
+}
+function canvas_MouseMoveHandler (evt) {
+evt.preventDefault()
+if (evt.target.Drag) {
+var pto = { x: evt.offsetX || (evt.pageX - evt.target.offsetLeft), y: evt.offsetY || (evt.pageY - evt.target.offsetTop) };
+var ptot = canvas_destransformar(pto,evt.target.escala, evt.target.Dx, evt.target.Dy);
+ 
+evt.target.Dx -= (evt.target.BufferCoord.x - ptot.x);
+evt.target.Dy -= (evt.target.BufferCoord.y - ptot.y);
+evt.target.BufferCoord = canvas_destransformar(pto,evt.target.escala, evt.target.Dx,evt.target.Dy);
+evt.target.Desenhar();
+}
+}
+function canvas_MouseUpHandler(evt) {
+evt.target.Drag = false;
+}
+function canvas_MouseInHandler(evt) {
+document.documentElement.style.overflow= "hidden";  // firefox, chrome
+document.body.scroll = "no"; // ie only
+}
+function canvas_MouseOutHandler(evt) {
+evt.target.Drag = false;
+document.documentElement.style.overflow="auto";  // firefox, chrome
+document.body.scroll = "yes"; // ie only
+}
+var mylatesttap;
+function canvas_touchstart(evt) {
+evt.preventDefault();
+if (evt.touches.length == 1) {
+ 
+var now = new Date().getTime();
+   var timesince = now - mylatesttap;
+   if((timesince < 200) && (timesince > 0)){ // Double tap
+        evt.target.escala = evt.target.width / evt.target.TamX;
+        evt.target.Dx = -evt.target.XSupEsq;
+        evt.target.Dy = -evt.target.YSupEsq;
+        evt.target.Desenhar();  
+   }else{
+        var pto = { x:evt.touches[0].pageX - evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+        evt.target.BufferCoord = canvas_destransformar(pto, evt.target.escala, evt.target.Dx, evt.target.Dy);
+        evt.target.Drag = true;
+        evt.target.TouchZoom = false;
+   }
+ 
+   mylatesttap = new Date().getTime();
+ 
+}
+if (evt.touches.length == 2) {
+var pto1 = { x: evt.touches[0].pageX -evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+var pto2 = { x:evt.touches[1].pageX - evt.target.offsetLeft, y: evt.touches[1].pageY - evt.target.offsetTop };
+var dist = Math.pow(pto1.x-pto2.x,2)+Math.pow(pto1.y - pto2.y, 2);
+evt.target.BufferDistTouchZoom = dist;
+evt.target.TouchZoom = true;
+evt.target.Drag = false;
+}
+}
+function canvas_touchmove(evt) {
+if (evt.target.Drag) {
+if (evt.touches.length == 1) {
+var pto = { x: evt.touches[0].pageX - evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+var ptot = canvas_destransformar(pto, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Dx -= (evt.target.BufferCoord.x - ptot.x);
+evt.target.Dy -= (evt.target.BufferCoord.y - ptot.y);
+evt.target.BufferCoord = canvas_destransformar(pto,evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Desenhar();
+}
+else {
+evt.target.Drag = false;
+canvas_touchend(evt);
+canvas_touchstart(evt);
+}
+}
+if (evt.target.TouchZoom) {
+if (evt.touches.length == 2) {
+var pto1 = { x: evt.touches[0].pageX - evt.target.offsetLeft, y: evt.touches[0].pageY - evt.target.offsetTop };
+var pto2 = { x: evt.touches[1].pageX - evt.target.offsetLeft, y: evt.touches[1].pageY - evt.target.offsetTop };
+var ptom = { x: (pto1.x + pto2.x)/2,  y: (pto1.y + pto2.y)/2 };
+var dist = Math.pow(pto1.x - pto2.x, 2)+Math.pow(pto1.y - pto2.y, 2);
+var ptoZoomAntes =canvas_destransformar(ptom, evt.target.escala, evt.target.Dx,evt.target.Dy);
+if(dist>evt.target.BufferDistTouchZoom)
+evt.target.escala *= 1.02;
+else
+evt.target.escala /= 1.02;
+evt.target.BufferDistTouchZoom = dist;
+var ptoZoomDepois = canvas_destransformar(ptom, evt.target.escala, evt.target.Dx, evt.target.Dy);
+evt.target.Dx += ptoZoomDepois.x -  ptoZoomAntes.x;
+evt.target.Dy += ptoZoomDepois.y -  ptoZoomAntes.y;
+evt.target.Desenhar();
+}
+else {
+evt.target.TouchZoom = false;
+canvas_touchend(evt);
+canvas_touchstart(evt);
+}
+}
+}
+function canvas_touchend(evt) {
+evt.target.Drag = false;
+evt.target.TouchZoom = false;
+}
+function canvas_dblclick(evt){ 
+evt.target.escala = evt.target.width / evt.target.TamX;
+evt.target.Dx = -evt.target.XSupEsq;
+evt.target.Dy = -evt.target.YSupEsq;
+evt.target.Desenhar();
+}
+function canvas_DefinirEventos(canv) {
+if (canv.addEventListener) {
+canv.addEventListener("mousewheel",canvas_MouseWheelHandler, false);// IE9, Chrome, Safari, Opera
+canv.addEventListener("DOMMouseScroll",canvas_MouseWheelHandler, false);// Firefox
+}
+else canv.attachEvent("onmousewheel",canvas_MouseWheelHandler);
+canv.addEventListener("mousedown",canvas_MouseDownHandler, false);
+canv.addEventListener("mousemove",canvas_MouseMoveHandler, false);
+canv.addEventListener("mouseup",canvas_MouseUpHandler, false);
+canv.addEventListener("mouseout", canvas_MouseOutHandler, false);
+canv.addEventListener("mouseover", canvas_MouseInHandler, false);
+canv.addEventListener("touchstart",canvas_touchstart, false);
+canv.addEventListener("touchmove",canvas_touchmove, false);
+canv.addEventListener("touchend",canvas_touchend, false);
+canv.addEventListener("dblclick",canvas_dblclick, false);
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<canvas id="er1" width="1" height="1"></canvas>
+<script>
+var er1=document.getElementById("er1");
+er1.Contexto=er1.getContext("2d");
+er1.Contexto.font="4px Cambria";
+</script>
+<DIV ID="CAIXA">
+<IMG ALT="Logotipo TQS" SRC="data:image/png;base64,
+Qk3+dwAAAAAAADYEAAAoAAAA2QMAAB4AAAABAAgAAAAAAMhzAAASCwAAEgsAAAABAABAAAAA////AP79/AD++/kA/fr2AP348wD89vAA+/TtAPvy6gD68ecA+u/kAPnt4QD4694A+OnbAPfo2AD35tUA9eLPAPTfyQD03cYA89vDAPLXvQDx1LcA8NK0AO/QsQDvzq4A7s2rAO3JpQDsx6IA7MWfAOrAlgDpvJAA6LmKAOazgQDlsHsA5K54AOOs
+dQDiqW8A4aVpAOCjZgDgoWMA36BgAN+eXQDdmFQA3JdRANyVTgDbk0sA2Y5CANiKPADXiDkA14Y2ANaDMADUfyoA1H0nANN8JADTeiEA0ngeANF2GwDRdBgA0HESAM9vDwDObQwAzmsJAM1qBgDNaAMAzGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8/Pz8/Pz8dAAAAJT8/Pz8/Pz8/Pz8/Pz8nAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz80CQAADjg/Pz8/Pz8/
+Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89GAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAAw3Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAAS
+Oz8/Pz8/Pz8/Pz8/PzYKAAAKNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADDc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAik/Pz8/Pz8/Pz8/
+Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAo2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAAMNz8/
+Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKT8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACjY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/
+JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAAw3Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8AAAA/Pz8/Pz8dAAAAJT8/Pz8/Pz8/Pz8/Pz8nAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAA
+FD0/Pz8/Pz8/Pz8/Pz80CQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89GAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAAw3Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/
+Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADDc/Pz8/Pz8/Pz8/Pz86EAAABjE/
+Pz8/Pz8/Pz8/Pz89GAAAAik/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/
+Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAAMNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKT8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/
+Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAAw3Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/AAAAPz8/Pz8dAAAAJT8/Pz8/Pz8/
+Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz80CQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89GAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAAw3Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIp
+Pz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/
+Pz80CQAADDc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAik/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/
+Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAAMNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKT8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/
+GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAAw3Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/
+Pz8/Pz8/PwAAAD8/Pz8dAAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89GAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/
+Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/
+Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAik/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/
+PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKT8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/
+Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygB
+AQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYAAAA/Pz8dAAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89GAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8
+Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/
+Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAik/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/
+Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKT8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8v
+BQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/
+Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAAAPz8dAAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89GAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/
+Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/
+Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAik/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/
+NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKT8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/
+Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAA
+AAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAAAAD8dAAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89GAAAAiw/
+Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/
+PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAik/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/
+Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0Y
+AAACKT8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/
+Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIpPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAAAAAAdAAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/
+Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/
+Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/
+HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARo+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/
+Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGj4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAA
+ABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEaPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALAAAAAAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/
+Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/
+PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/
+Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4E
+AAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/
+Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNgAAAAAAJT8/Pz8/Pz8/Pz8/
+Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/
+Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80
+CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/
+Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAA
+Aik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/
+Pz8/PzYKAAALNj8AAAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/
+OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/
+Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEA
+AAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/
+Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEb
+Pj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/AAAAJT8/Pz8/Pz8/Pz8/Pz8mAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/
+Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/Pz8/Pz8/Pz8/PzsSAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8e
+AAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs2Pz8/Pz8/Pz8/Pz8/OxIAAAUwPz8/Pz8/
+Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAA
+Ejs/Pz8/Pz8/Pz8/Pz82CgAACzY/Pz8/Pz8/Pz8/Pz87EgAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/
+Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNj8/PwAAAD8/Pz8/Pz8/Pz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/
+JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/
+Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoA
+AAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/
+Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYx
+Pz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8AAAA/Pz8/Pz8/Pz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/
+Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsR
+AAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/
+Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAAC
+Kj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/
+Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/AAAAPz8/Pz8/Pz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCQAADjg/Pz8/Pz8/Pz8/Pz85
+DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/
+Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTc/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAA
+ACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANNz8/Pz8/Pz8/
+Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/
+Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA03Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/PwAAAD8/Pz8/Pz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/
+Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygB
+AQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/
+Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAAT
+PD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/
+Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8AAAA/Pz8/Pz8/Pz8l
+AAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FwAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/
+Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAA
+DTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAio/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/
+Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKj8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/
+Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIqPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/
+PzYKAAALNz8/Pz8/Pz8/AAAAPz8/Pz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAA
+AAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/
+Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIs
+Pz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/
+Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/
+Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/PwAAAD8/Pz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/
+Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAA
+Iz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/
+Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/
+Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/
+Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8AAAA/Pz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAA
+ABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/
+Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs+Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3
+Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/
+Pz8oAQEBGz4/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/
+Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPj8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/AAAAPz8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/
+Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PzsRAAAF
+MD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/
+Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAs3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/
+Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAACzc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/
+NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAALNz8/Pz8/Pz8/Pz8/PwAAAD8/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAA
+BzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/
+Pz8/PzYKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/
+Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/
+PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/
+Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAAMNz8/Pz8/Pz8/Pz8/PzsAAAA/Pz8lAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/
+Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEb
+Pz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/
+Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/
+Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/
+HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAAPz8kAAAA
+HD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/
+Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8hAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/
+Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NgoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyEAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/
+PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz82CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/
+Pz8/Pz8/Pz8/IQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzYK
+AAAMNz8/Pz8/Pz8/Pz8/PzsRAAAAAD8kAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYx
+Pz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8gAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/
+Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NQoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyAAAAIsPz8/
+Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz81CgAADDc/Pz8/Pz8/Pz8/Pz87
+EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/
+Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAAAAAkAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8zCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/
+Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8gAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/
+Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADTg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NQoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/
+PxkAAAIpPz8/Pz8/Pz8/Pz8/PyAAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAANOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/
+Pz8/Pz8/Pz81CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA04Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8A
+AAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFAAAAAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8yCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/
+Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/
+Pz8gAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADjg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NQoAAAw3Pz8/
+Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyAAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAAOOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8o
+AQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz81CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/
+Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMAAAAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8yCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FgAAAiw/Pz8/Pz8/Pz8/
+Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/
+Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8gAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADjg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAis/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/
+LwUAABI7Pz8/Pz8/Pz8/Pz8/NQoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyAAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAAOOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACKz8/Pz8/
+Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz81CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkA
+AA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIrPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8AAAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/Pz8yCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/
+Pz8/Pz8/Pz8/Pz89FQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIsPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/
+PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8gAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADjg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89GAAAAiw/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/
+Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NQoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyAAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/Pz8/Pz8/PzQJAAAOOD8/Pz8/Pz8/Pz8/PzoQ
+AAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACLD8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz81CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/
+Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIsPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/AAAAHD8/Pz8/Pz8/Pz8/Pz8tAwAAFD0/Pz8/Pz8/Pz8/
+Pz8yCAAADjg/Pz8/Pz8/Pz8/Pz85DwAABzI/Pz8/Pz8/Pz8/Pz89FQAAAiw/Pz8/Pz8/Pz8/Pz8/HgAAACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIsPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/
+Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/Pz8/Pz8/Pz8/Pz8ZAAACKT8/Pz8/Pz8/Pz8/Pz8gAAACLD8/Pz8/Pz8/Pz8/Pz8eAAAAIz8/Pz8/Pz8/Pz8/Pz8nAAAAGz8/Pz8/Pz8/Pz8/Pz8uBAAAEzw/Pz8/Pz8/Pz8/Pz80CQAADjg/Pz8/Pz8/Pz8/Pz86EAAABjE/Pz8/Pz8/Pz8/Pz89
+GAAAAiw/Pz8/Pz8/Pz8/Pz8/HwAAACI/Pz8/Pz8/Pz8/Pz8/KAEBARs/Pz8/Pz8/Pz8/Pz8/LwUAABI7Pz8/Pz8/Pz8/Pz8/NQoAAAw3Pz8/Pz8/Pz8/Pz8/OxEAAAUwPz8/Pz8/Pz8/Pz8/PxkAAAIpPz8/Pz8/Pz8/Pz8/PyAAAAIsPz8/Pz8/Pz8/Pz8/Px4AAAAjPz8/Pz8/Pz8/Pz8/PycAAAAbPz8/Pz8/Pz8/Pz8/Py4EAAATPD8/Pz8/
+Pz8/Pz8/PzQJAAAOOD8/Pz8/Pz8/Pz8/PzoQAAAGMT8/Pz8/Pz8/Pz8/Pz0YAAACLD8/Pz8/Pz8/Pz8/Pz8fAAAAIj8/Pz8/Pz8/Pz8/Pz8oAQEBGz8/Pz8/Pz8/Pz8/Pz8vBQAAEjs/Pz8/Pz8/Pz8/Pz81CgAADDc/Pz8/Pz8/Pz8/Pz87EQAABTA/Pz8/Pz8/Pz8/Pz8/GQAAAik/Pz8/Pz8/Pz8/Pz8/IAAAAiw/Pz8/Pz8/Pz8/Pz8/HgAA
+ACM/Pz8/Pz8/Pz8/Pz8/JwAAABs/Pz8/Pz8/Pz8/Pz8/LgQAABM8Pz8/Pz8/Pz8/Pz8/NAkAAA44Pz8/Pz8/Pz8/Pz8/OhAAAAYxPz8/Pz8/Pz8/Pz8/PRgAAAIsPz8/Pz8/Pz8/Pz8/Px8AAAAiPz8/Pz8/Pz8/Pz8/PygBAQEbPz8/Pz8/Pz8/Pz8/Py8FAAASOz8/Pz8/Pz8/Pz8/PzUKAAAMNz8/Pz8/Pz8/Pz8/PzsRAAAFMD8/PwAAAA==
+">
+ <H1> Estabilidade global / Deslocamentos laterais</H1>
+ <FONT COLOR=#007300> 08/10/26 12:57:01</FONT><BR>
+ <FONT COLOR=#007300> SILVA JARDIM</FONT><BR>
+ <FONT COLOR=#007300> TGD</FONT><BR>
+ <FONT COLOR=#007300> Projeto: 24-212-TGD-SILVA JARDIM-R35</FONT><BR>
+ RUA FELIZARDO, 711 3° ANDAR<BR>
+ <FONT COLOR=#007300> </FONT><BR>
+<HR>
+ <div class="EXP1" onClick="{var hidden=!(getElementById('IDdetalhes').style.display=='inline'); if(hidden) getElementById('IDdetalhes').style.display='inline';else getElementById('IDdetalhes').style.display='none';if(hidden) getElementById('PlusIdIDdetalhes').style.display='none';else getElementById('PlusIdIDdetalhes').style.display='inline';if(hidden) getElementById('MinusIdIDdetalhes').style.display='inline';else getElementById('MinusIdIDdetalhes').style.display='none';}" onMouseOver="this.style.cursor='pointer'">
+ <H2><span id="PlusIdIDdetalhes"><img alt="Embedded Image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHRJREFUOI3tzU0OQDAQQGGRsmuZPm5h4R5+biOxlLirO9jZSklJaoW3m8nkmyj6+2DGGHv3VmuNu4v3Q1aWtVJqyYuiucKAPknTRUQq76HAbGH1oUBvYRWYrh67aBuMHVDogrEzNBhz0UewHToKDI9gfy9oAx8wHNcsiZHeAAAAAElFTkSuQmCC" align="right"/></span>
+ <span id="MinusIdIDdetalhes" hidden="true"><img alt="Embedded Image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAANtJREFUOI3tj8FOg0AURe8jZZomUGLUThfzK27E9q+LG9eu+hmtBIYY8Q3vuWqCDQR1aTjLNzcnZ4CZGQCAc27lnFv9ZEtTg2S7vTfMBVQ7Zs699+c/C/uyy21KGo09WGs3hvkZqhxCeGTmHABiY4okSe5+VWit3XAIhYq0Xdft6rp+A4A0TW/jOD6AiD7bNm+a5jRZ2JN9iMjTRQYA3vszM+dQVbNcHoZKvxVmWXZDi8ULibyLyL6qqnLoB73SSEUeyrKsBguJaB2pvorIbkx2VXoEsB7bzfxXvgBHBIAALL1kUAAAAABJRU5ErkJggg==" align="right"/></span><span>1 - Informações de cálculo</span></div></H2><div id="IDdetalhes" hidden="true">
+<TABLE BORDER=    1%; CELLPADDING=    2%; WIDTH=  650EM; ALIGN=>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Caso de carga vertical</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         1</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Caso vertical tem carga acidental reduzida</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>&gamma;<SUB>z</SUB> - Total, FAVt - Total</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Majorador de cargas verticais    &gamma;<SUB>F</SUB> / &gamma;<SUB>F3</SUB></TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         1.27</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Majorador de cargas horizontais    &gamma;<SUB>F</SUB> / &gamma;<SUB>F3</SUB></TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         1.27</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Coeficiente de não linearidade física</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         1.00</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Módulo de elasticidade -CONCR</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>35060 MPa</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Tipo de módulo de elasticidade usado</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>Secante+10%</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Correção no &gamma;<SUB>z</SUB> para transferência de esforços</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         0.95</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Norma para cálculo de imperfeições globais</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>NBR-6118:2014</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>1/Ângulo mínimo p/desaprumo preponderante</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>       300.00</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Número de prumadas p/cálculo de Teta1</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         1</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Considerar deslocamento horiz das cargas verticais</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>Sim</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Fator de redução dos desloc horiz por peso próprio</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         0.50</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Fator de redução dos desloc horiz por carga perm</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         0.75</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Coeficiente p/classificar estrutura deslocável</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2> FAVt</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Valor de referência de estrutura deslocável</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         1.10</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Valor de referência de &alpha;</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         0.60</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Número mínimo de pisos no edifício p/aplicar &gamma;<SUB>z</SUB></TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>         4</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Cota final</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>74.5 m</TD>
+  </TR>
+  <TR>
+    <TD BGCOLOR=#FFFFFF WIDTH= 75% ALIGN=LEFT><FONT SIZE=  2>Cota inicial</TD>
+    <TD BGCOLOR=#FFFFFF WIDTH= 25% ALIGN=LEFT><FONT SIZE=  2>19.72 m</TD>
+  </TR>
+</TABLE>
+</div>
+<HR>
+ <div class="EXP1" onClick="{var hidden=!(getElementById('IDverifELU').style.display=='inline'); if(hidden) getElementById('IDverifELU').style.display='inline';else getElementById('IDverifELU').style.display='none';if(hidden) getElementById('PlusIdIDverifELU').style.display='none';else getElementById('PlusIdIDverifELU').style.display='inline';if(hidden) getElementById('MinusIdIDverifELU').style.display='inline';else getElementById('MinusIdIDverifELU').style.display='none';}" onMouseOver="this.style.cursor='pointer'">
+ <H2><span id="PlusIdIDverifELU"hidden="true"><img alt="Embedded Image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHRJREFUOI3tzU0OQDAQQGGRsmuZPm5h4R5+biOxlLirO9jZSklJaoW3m8nkmyj6+2DGGHv3VmuNu4v3Q1aWtVJqyYuiucKAPknTRUQq76HAbGH1oUBvYRWYrh67aBuMHVDogrEzNBhz0UewHToKDI9gfy9oAx8wHNcsiZHeAAAAAElFTkSuQmCC" align="right"/></span>
+ <span id="MinusIdIDverifELU" ><img alt="Embedded Image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAANtJREFUOI3tj8FOg0AURe8jZZomUGLUThfzK27E9q+LG9eu+hmtBIYY8Q3vuWqCDQR1aTjLNzcnZ4CZGQCAc27lnFv9ZEtTg2S7vTfMBVQ7Zs699+c/C/uyy21KGo09WGs3hvkZqhxCeGTmHABiY4okSe5+VWit3XAIhYq0Xdft6rp+A4A0TW/jOD6AiD7bNm+a5jRZ2JN9iMjTRQYA3vszM+dQVbNcHoZKvxVmWXZDi8ULibyLyL6qqnLoB73SSEUeyrKsBguJaB2pvorIbkx2VXoEsB7bzfxXvgBHBIAALL1kUAAAAABJRU5ErkJggg==" align="right"/></span><span>2 - ELU - Estabilidade Global</span></div></H2><div id="IDverifELU" >
+ <H3> a) Descrição dos casos/combinações</H3>
+ <div onClick="{var hidden=!(getElementById('IDcHor').style.display=='inline'); if(hidden) getElementById('IDcHor').style.display='inline';else getElementById('IDcHor').style.display='none';if(hidden) getElementById('PlusIdIDcHor').style.display='none';else getElementById('PlusIdIDcHor').style.display='inline';if(hidden) getElementById('MinusIdIDcHor').style.display='inline';else getElementById('MinusIdIDcHor').style.display='none';}" onMouseOver="this.style.cursor='pointer'">
+ <H4><span id="PlusIdIDcHor"><img alt="Embedded Image" src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAJdJREFUOI1jYBgFyIBfVNSAVD3MuCR4JCREWf/+vc7BxcXy4/v3AxQb+OvLl29cXFyXGBgYJpFiKE4DGRgYGL5//36TVEPxGkiOoQQNJNelRAFhYWE/IWHhn4LCwiW41DCRYzDj//9/yXcWFAgLC/sLCQv/EhISqqGGYQFUM0xISChwcBomLi4uRjXDYEBQUFCHaoYNXwAAV1I9RoT/a8cAAAAASUVORK5CYII='"
+ <img alt="Embedded Image" onmouseout="this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAJdJREFUOI1jYBgFyIBfVNSAVD3MuCR4JCREWf/+vc7BxcXy4/v3AxQb+OvLl29cXFyXGBgYJpFiKE4DGRgYGL5//36TVEPxGkiOoQQNJNelRAFhYWE/IWHhn4LCwiW41DCRYzDj

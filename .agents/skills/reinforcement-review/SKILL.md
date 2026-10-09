@@ -51,8 +51,10 @@ Trabalhar elemento por elemento.
 Para vigas, seguir preferencialmente:
 
 Geometria
-→ armaduras positivas
-→ ancoragem das positivas
+→ interpretação das armaduras positivas e regiões de composição
+→ resistência à flexão positiva
+→ escalonamento positivo dentro do vão, quando houver interrupção
+→ ancoragem das positivas nos apoios
 → armaduras negativas
 → ancoragem das negativas
 → cisalhamento
@@ -149,39 +151,70 @@ a altura útil forem relevantes.
 
 ---
 
-## 7. Apoio de extremidade da armadura positiva
+## 6.1 Escalonamento positivo dentro do vão
 
-Quando a armadura positiva chegar a um apoio de extremidade:
+Quando uma marca positiva termina dentro do vão, executar o procedimento
+[Escalonamento positivo](references/positive-bar-scaling.md) após construir as
+regiões e verificar a flexão positiva, antes de tratar ancoragem nos apoios.
+Usar `tools/reinforcement_checks/bar_scaling.check_bar_scaling`, que reutiliza
+regiões, diagrama TQS e Concretopy; não recalcular resistência, fbd, lb ou al.
 
-- verificar comprimento disponível;
-- verificar barras que efetivamente chegam ao apoio;
-- considerar esforço cortante;
-- considerar momento positivo no apoio quando houver;
-- verificar comprimento de ancoragem necessário;
-- verificar necessidade de grampos.
+Identificar lado do corte, composições antes/depois, capacidade remanescente,
+referências do diagrama e entradas de al/lb; preservar separadamente condições
+A/B, diagnósticos e provenance. Consultar as regras de Vk, d e aderência
+indicadas na referência. Geometria/composição/modelo não resolvido, ramo/cruzamento
+ambíguo ou caso fora do escopo bloqueiam a conclusão (`scaling_passes=null`).
 
-Utilizar a ferramenta de cálculo de apoio de extremidade quando
-disponível.
+**Escalonamento não substitui ancoragem nos apoios.** Atender ao corte no vão
+não aprova a viga nem demonstra ancoragem suficiente em um apoio.
+
+---
+
+## 7. Apoios da armadura positiva
+
+Para qualquer apoio, começar por [Ancoragem positiva em apoios](references/positive-support-anchorage.md): END/INTERMEDIATE, LEFT/RIGHT relativo ao vão, seção terminal e controles aplicáveis.
+Quando a armadura positiva chegar ao apoio extremo END, consultar
+[Apoio positivo](references/positive-end-support.md) e, para corrigir falha,
+[Correção orientada pelo detalhamento](references/positive-support-correction.md).
+Verificar existente; depois prolongar barras escalonadas mantendo camada/bitola;
+só sem prolongamento adequado estudar redistribuição simples com recálculo completo.
+Conferir cabimento com a regra confirmada max(2 cm, diâmetro) e compatibilidade
+com flexão em todas as regiões. Diferença de uma ou duas posições na série de
+bitolas é preferência de detalhamento, não prescrição da NBR.
+
+A busca genérica permanece exploratória; não recomenda isoladamente alteração
+de prancha. Separar validade calculada, recomendação para análise e decisão do
+engenheiro. Para estudar armadura complementar, consultar
+[Grampos complementares](references/positive-support-staples.md): demanda inicial
+As_adicional, peça em U de dois ramos, L_long=max(2*lb+lb_ef,60 cm) por ramo
+com lb básico da própria bitola, e conector b−2*cobrimento−1 cm.
+Bitolas usuais próprias Ø6,3/Ø8/Ø10, configuráveis; acima de três peças requer
+avaliação especial, sem reprovação estrutural automática. São decisões do engenheiro. Distribuir verticalmente de baixo para cima com 2 cm livres entre peças;
+conferir altura ocupada separadamente das interferências do nó.
+Não converter área calculada em detalhamento pronto.
+Preservar prolongamentos válidos na comparação e selected_solution=null.
+Para regressão integrada, consultar o
+[golden positivo V536 atualizado](../../../.codex/analises/support_anchorage_generalization_audit.md):
+resultados por etapa, falha original de ancoragem e pendências explícitas;
+não usar o nome golden como aprovação global.
+A posição desenhada não substitui lb_ef=L_apoio-cobrimento. Gancho/interferências
+no nó ainda exigem revisão. A limitação anterior ao extremo esquerdo foi superada em orientação; INTERMEDIATE segue regras próprias, sem aplicar grampos/gancho END automaticamente.
 
 ---
 
 ## 8. Armaduras negativas
 
-Para todos os apoios:
-
-1. identificar armadura detalhada;
-2. obter momento solicitante;
-3. verificar momento resistente;
-4. verificar armadura mínima;
-5. verificar distribuição entre camadas;
-6. verificar ancoragem;
-7. verificar possibilidade de escalonamento.
-
-Utilizar o diagrama de solicitações para determinar regiões onde
-barras podem ser interrompidas.
-
-Considerar os comprimentos de ancoragem e deslocamentos de diagrama
-aplicáveis.
+Após a positiva, consultar [Revisão longitudinal negativa](references/negative-longitudinal-review.md).
+Identificar função das barras, camadas desde a face superior e regiões; verificar
+resistência regional, escalonamentos sucessivos, término no vão, continuidade,
+nó extremo e balanço somente quando aplicáveis. Usar `longitudinal_review` e
+`negative_detailing`, reutilizando regiões, interpolação e Concretopy.
+Preservar momentos originais com sinal; negativa comprime a face inferior.
+Nas marcas que atravessam apoio intermediário, primeiro [classificar a necessidade no vão adjacente](references/intermediate-support-longitudinal-verification.md): SCALING, ancoragem básica desde a face física, ou INCONCLUSIVE. Provar suficiência da remanescente em todo o ramo; crossing ausente isoladamente não determina a classificação. Esta etapa verifica o desenho existente, sem otimização.
+Separar os controles al+lb e al+10φ quando aplicáveis, má aderência confirmada, geometria da dobra
+e resistência de ancoragem. Dados/ramo/continuidade não resolvidos mantêm null.
+Não transportar automaticamente as regras ou grampos positivos para negativas.
+Nos apoios extremos em pilares, seguir [apoio negativo de extremidade](references/negative-end-support.md): resistência terminal S1/S13, ancoragem física, perna vertical documentada e controles transversais independentes. Não somar os trechos da dobra como lb reto nem aplicar α=0,7. Verificar um corredor livre ≥4 cm, conservando os mínimos existentes. Sem dimensão transversal do pilar/centros das barras, registrar o controle pendente; não modificar d ou a seção resistente pelo cobrimento lateral efetivo.
 
 ---
 
@@ -440,7 +473,54 @@ interpretação
 → decisões de detalhamento
 → validação final.
 
-## Refer?ncia de dados TQS
+## Referências operacionais de vigas
 
 Para extrair, consolidar ou compatibilizar dados LST de vigas, consultar
-[Sem?ntica dos dados de vigas TQS](references/tqs-beam-data.md).
+[Semântica dos dados de vigas TQS](references/tqs-beam-data.md).
+
+Para o processo geral e a leitura documental, consultar
+[Revisão de vigas](references/beam-review.md) e
+[Convenções de prancha](references/beam-drawing-convections.md).
+Para cortes positivos no vão, consultar
+[Escalonamento positivo](references/positive-bar-scaling.md), que encaminha
+às regras de Vk, centroide anterior, aderência e ferramentas existentes.
+
+Para ancoragem positiva em apoios END/INTERMEDIATE, LEFT/RIGHT relativo ao vão,
+consultar [Ancoragem positiva em apoios](references/positive-support-anchorage.md).
+Separar demanda, ancoragem longitudinal e verificação completa do nó; gerar
+correções somente após falha resolvida, preservando inconclusivos.
+
+Para negativas, consultar [Revisão longitudinal negativa](references/negative-longitudinal-review.md),
+com regras próprias de cortes, término, continuidade, nós e balanço.
+
+Términos longitudinais coincidentes: consultar [eventos independentes por marca](references/longitudinal-termination-events.md). Usar a composição física posterior, sem sequência artificial; separar término desenhado e posição requerida.
+
+### Relações entre negativas de apoios consecutivos
+
+Após a revisão regional, executar [relações de armaduras negativas](references/negative-reinforcement-relations.md): identidade física -> comportamento do momento -> CONTINUOUS / DETAILING_OVERLAP / REINFORCEMENT_LAP_TRANSITION / INDEPENDENT (ou INCONCLUSIVE) -> comprimento -> comparação local de massa, quando comprovada -> resistência de toda a sobreposição -> construtibilidade. Usar `negative_reinforcement_relations`, sem modificar os motores de flexão ou SCALING.
+
+Manter distintos: 80 cm limita o gap para comparação econômica; 30 cm é ultrapassagem de detalhamento; 2lb é transição resistente. Menor As total escolhe a candidata ao prolongamento; menor bitola define lb; o grupo completo de menor bitola, isolado, verifica resistência do encontro. Não somar grupos ou criar centroide misto. A exceção de espaçamento é local; continuidade não substitui resistência. Preservar histórico SUPERSEDED e pendências físicas reais. Sem limites estruturais, dados de porta-estribo ou centros físicos, bloquear apenas os controles dependentes. `selected_solution` e `detailing_optimization` permanecem null.
+
+### Armadura transversal ao cortante
+
+Executar [revisão de cortante](references/shear-reinforcement-review.md): séries Vk/domínio TQS -> referência por terços -> faixas reais da prancha -> máximo próprio da faixa -> Concretopy -> controles independentes de VRd2, Asw/s e smax -> prática usual -> ramos/porta-estribo -> conclusão específica. Usar `shear_diagram` e `shear_review`, preservando os motores longitudinais.
+
+Terços são referência, não fronteiras obrigatórias do desenho. Selecionar d de centroides regionais existentes: máximo número de camadas, maior As em empate e menor d em novo empate. Preservar sinal, série, gaps e limites documentais. Não inferir ramos de peças não convencionais, estender faixas para nós sem fonte ou converter REVIEW em FAIL. Suspensão fica NOT_EVALUATED; selected_solution/detailing_optimization null. Aprovação de cortante não significa aprovação global da viga.
+
+Na revisão de cortante, classificar primeiro a função documental da peça: negativa de laje adjacente não fornece Asw/s da viga. Separar domínio TQS de cobertura física entre faces comprovadas dos pilares; dentro destes a exigência de estribos da viga é NOT_APPLICABLE. Falta de estribos no trecho físico da viga e geometria ambígua continuam inconclusivas. Consultar a referência de cortante e `shear_coverage`; não inferir função pela marca ou prolongar faixas.
+
+### Suspensão após a revisão independente de cortante
+
+Executar [revisão de suspensão](references/suspension-reinforcement-review.md) na viga receptora somente a partir de ligação e reação total comprovadas. Usar `suspension_review`, preservando o cortante independente. Interpretar fontes -> classificar ligação -> validar reação/natureza -> distribuir fisicamente -> máximo próprio da região -> Concretopy sem mínimo -> combinar taxas -> verificar todas as faixas reais. Dados ausentes, origem do balanço não confirmada e sobreposições sem regra conservam INCONCLUSIVE; falhas conhecidas não são ocultadas. Não selecionar armadura ou redesenhar. A marca N12 do caso real continua excluída como negativa de laje adjacente.
+
+Para identificar apoios indiretos antes da suspensão, consultar [planta, direção e reações LST](references/indirect-support-identification.md); geometria não determina direção da transferência de carga.
+
+### Diagnóstico consolidado por viga
+
+Após as revisões independentes, seguir [diagnóstico consolidado](references/beam-diagnostic.md). Usar resultados existentes com identidade/pavimento/coordenadas comprovados; separar falhas, pendências e revisão de engenharia. Não recalcular nem selecionar correções. Módulo ausente é pendência, não inaplicabilidade comprovada.
+
+Na consolida��o, separar execu��o de resultado t�cnico conforme [beam-diagnostic](references/beam-diagnostic.md). Pontas sem cota exigem conven��o geom�trica rastre�vel; propostas e refer�ncias gr�ficas s�o contratos futuros, sem otimiza��o ou edi��o autom�tica.
+
+## Validação documental e geometria física — Etapa 1
+
+Nas novas revisões, aplicar [documentary-physical-preflight](references/documentary-physical-preflight.md) para conciliação de documentos, ocorrências físicas, geometria por trecho e liberação local das entradas. Este procedimento preserva os métodos resistentes existentes e a compatibilidade dos contratos antigos. Restrições específicas da Etapa 1 prevalecem sobre requisitos de módulos posteriores: não tornar obrigatórios pinos, trajetórias curvas, interferência com armaduras de pilares ou combinações concomitantes.

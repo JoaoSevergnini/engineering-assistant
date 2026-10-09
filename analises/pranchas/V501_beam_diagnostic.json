@@ -1,0 +1,1673 @@
+{
+  "schema_version": "1.0",
+  "model_type": "BEAM_STRUCTURAL_DIAGNOSTIC",
+  "context": {
+    "beam_id": "V501",
+    "floor": "DIFERENCIADO",
+    "floor_source": {
+      "project_directory": "C:\\TQS\\24-155-COLLINE-RESIDENCIAL-R60\\DIFERENCIADO\\VIGAS"
+    },
+    "coordinate_system": {
+      "origin": "left_support_axis",
+      "positive_direction": "left_to_right",
+      "unit": "m"
+    },
+    "geometry": [
+      {
+        "id": 1,
+        "geometry": {
+          "length": 7.552,
+          "width": 0.19,
+          "height": 0.72,
+          "top_flange_width": 0.0,
+          "bottom_flange_width": 0.0,
+          "section_type": 1.0,
+          "top_slab_thickness": 0.0,
+          "bottom_slab_thickness": 0.0,
+          "top_face_to_axis": 0.36,
+          "side_face_to_axis": 0.095,
+          "support_axis_length": null,
+          "clear_span_length": null
+        }
+      }
+    ],
+    "materials": {
+      "concrete": {
+        "fck": null
+      },
+      "steel": {
+        "grade": null
+      },
+      "aggregate_max_size": 0.015
+    },
+    "tqs_source": {
+      "path": "analises\\pranchas\\V501_tqs.json",
+      "sha256": "0cf0847d245630e5ac2ab6036e3264d2983e735a1a4940072ac93b50bb9c6067"
+    },
+    "data_version": "1.1",
+    "drawing_source": {
+      "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\pranchas\\V501_V503_beam_model.json",
+      "sha256": "a454b67725ad2b57d43eb67db043697adbfd99f64c4e46b01252187fc1868506"
+    },
+    "coordinate_source": {
+      "path": "analises\\pranchas\\V501_beam_mapping.json",
+      "sha256": "d14d54a4a666a2bb1fbaa34084e4082ebf9b37b79aa30ad897c2057e4f77dc05"
+    },
+    "physical_geometry": {
+      "detailing_clear_span": 7.11,
+      "tqs_clear_span": 7.12,
+      "difference": 0.01,
+      "tqs_minus_detail": 0.01,
+      "status": "mismatch",
+      "tqs_length": 7.552,
+      "support_axis_length": 8.43
+    }
+  },
+  "module_availability": {
+    "positive_flexure": [
+      {
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d"
+        },
+        "version": "historical-json-adapter-v1",
+        "complete": false,
+        "applicability": null,
+        "applicability_evidence": null
+      }
+    ],
+    "negative_flexure": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ],
+    "anchorage": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ],
+    "shear": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ],
+    "suspension": [
+      {
+        "availability": "NOT_EXECUTED"
+      }
+    ]
+  },
+  "source_modules": [
+    {
+      "discipline": "positive_flexure",
+      "beam_id": "V501",
+      "floor": "DIFERENCIADO",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d"
+      },
+      "version": "historical-json-adapter-v1",
+      "complete": false,
+      "checks": [
+        {
+          "check_id": "R1",
+          "check_type": "flexural_capacity",
+          "status": "INCONCLUSIVE",
+          "span_id": 1,
+          "physical_interval": [
+            0.0,
+            0.07
+          ],
+          "drawing_reinforcement_ids": [],
+          "required_value": null,
+          "provided_value": null,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "demand_not_sampled",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "INCONCLUSIVE",
+              "reason": "demand_not_sampled",
+              "blockers": [
+                "no_positive_reinforcement",
+                "unresolved_transverse_geometry"
+              ]
+            },
+            "original_status": "INCONCLUSIVE",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/0"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/0"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/0"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/0"
+          },
+          "missing_information": [
+            "demand_not_sampled"
+          ]
+        },
+        {
+          "check_id": "R2",
+          "check_type": "flexural_capacity",
+          "status": "NOT_APPLICABLE",
+          "span_id": 1,
+          "physical_interval": [
+            0.07,
+            0.6
+          ],
+          "drawing_reinforcement_ids": [
+            "N5"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "no_positive_demand",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "NOT_APPLICABLE",
+              "reason": "no_positive_demand",
+              "blockers": [
+                "unresolved_transverse_geometry"
+              ]
+            },
+            "original_status": "NOT_APPLICABLE",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/1"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/1"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/1"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/1"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "R3",
+          "check_type": "flexural_capacity",
+          "status": "PASS",
+          "span_id": 1,
+          "physical_interval": [
+            0.6,
+            5.97
+          ],
+          "drawing_reinforcement_ids": [
+            "N5"
+          ],
+          "required_value": 61.5073088,
+          "provided_value": 99.47034565405093,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "checked",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "PASS",
+              "reason": "checked",
+              "blockers": []
+            },
+            "original_status": "PASS",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/2"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/2"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/2"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/2"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "R4",
+          "check_type": "flexural_capacity",
+          "status": "INCONCLUSIVE",
+          "span_id": 1,
+          "physical_interval": [
+            5.97,
+            5.97
+          ],
+          "drawing_reinforcement_ids": [
+            "N5"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "demand_not_sampled",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "INCONCLUSIVE",
+              "reason": "demand_not_sampled",
+              "blockers": [
+                "unresolved_transverse_geometry"
+              ]
+            },
+            "original_status": "INCONCLUSIVE",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/3"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/3"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/3"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/3"
+          },
+          "missing_information": [
+            "demand_not_sampled"
+          ]
+        },
+        {
+          "check_id": "R5",
+          "check_type": "flexural_capacity",
+          "status": "PASS",
+          "span_id": 1,
+          "physical_interval": [
+            5.97,
+            6.69
+          ],
+          "drawing_reinforcement_ids": [
+            "N5"
+          ],
+          "required_value": 50.80825365,
+          "provided_value": 99.27216676965328,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "checked",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "PASS",
+              "reason": "checked",
+              "blockers": []
+            },
+            "original_status": "PASS",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/4"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/4"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/4"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/4"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "R6",
+          "check_type": "flexural_capacity",
+          "status": "INCONCLUSIVE",
+          "span_id": 1,
+          "physical_interval": [
+            6.69,
+            6.69
+          ],
+          "drawing_reinforcement_ids": [
+            "N5"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "demand_not_sampled",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "INCONCLUSIVE",
+              "reason": "demand_not_sampled",
+              "blockers": [
+                "unresolved_transverse_geometry"
+              ]
+            },
+            "original_status": "INCONCLUSIVE",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/5"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/5"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/5"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/5"
+          },
+          "missing_information": [
+            "demand_not_sampled"
+          ]
+        },
+        {
+          "check_id": "R7",
+          "check_type": "flexural_capacity",
+          "status": "PASS",
+          "span_id": 1,
+          "physical_interval": [
+            6.69,
+            7.71
+          ],
+          "drawing_reinforcement_ids": [
+            "N5"
+          ],
+          "required_value": 15.0826277,
+          "provided_value": 99.47034565405093,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "checked",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "PASS",
+              "reason": "checked",
+              "blockers": []
+            },
+            "original_status": "PASS",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/6"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/6"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/6"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/6"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "R8",
+          "check_type": "flexural_capacity",
+          "status": "NOT_APPLICABLE",
+          "span_id": 1,
+          "physical_interval": [
+            7.71,
+            8.22
+          ],
+          "drawing_reinforcement_ids": [
+            "N5"
+          ],
+          "required_value": null,
+          "provided_value": null,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "no_positive_demand",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "NOT_APPLICABLE",
+              "reason": "no_positive_demand",
+              "blockers": [
+                "unresolved_transverse_geometry"
+              ]
+            },
+            "original_status": "NOT_APPLICABLE",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/7"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/7"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/7"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/7"
+          },
+          "missing_information": []
+        },
+        {
+          "check_id": "R9",
+          "check_type": "flexural_capacity",
+          "status": "INCONCLUSIVE",
+          "span_id": 1,
+          "physical_interval": [
+            8.22,
+            8.43
+          ],
+          "drawing_reinforcement_ids": [],
+          "required_value": null,
+          "provided_value": null,
+          "units": "kN.m",
+          "comparison": "provided_ge_required",
+          "reason": "demand_not_sampled",
+          "criterion": null,
+          "evidence": {
+            "original_control": {
+              "status": "INCONCLUSIVE",
+              "reason": "demand_not_sampled",
+              "blockers": [
+                "no_positive_reinforcement",
+                "unresolved_transverse_geometry"
+              ]
+            },
+            "original_status": "INCONCLUSIVE",
+            "source": {
+              "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+              "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+              "pointer": "/regions/8"
+            }
+          },
+          "demand_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/8"
+          },
+          "drawing_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/8"
+          },
+          "calculation_source": {
+            "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+            "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+            "pointer": "/regions/8"
+          },
+          "missing_information": [
+            "demand_not_sampled"
+          ]
+        }
+      ],
+      "original_summary": {
+        "regions_total": 9,
+        "regions_checked": 3,
+        "regions_unresolved": 6,
+        "regions_without_sampled_demand": 4,
+        "regions_without_positive_demand": 2,
+        "regions_not_checked": 6,
+        "all_checked_regions_capacity_sufficient": true,
+        "maximum_utilization": {
+          "value": 0.618348196093708,
+          "region_id": "R3",
+          "tqs_section": 8,
+          "x_m": 4.789333333333333
+        },
+        "incomplete": true
+      }
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "R5",
+      "check_type": "flexural_capacity",
+      "status": "PASS",
+      "span_id": 1,
+      "physical_interval": [
+        5.97,
+        6.69
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": 50.80825365,
+      "provided_value": 99.27216676965328,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "checked",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "PASS",
+          "reason": "checked",
+          "blockers": []
+        },
+        "original_status": "PASS",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/4"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/4"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/4"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/4"
+      },
+      "missing_information": [],
+      "id": "0629f1d62842f92d72497b89",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "R4",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        5.97,
+        5.97
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/3"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/3"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/3"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/3"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "0c6dba5441257063fe8e29b3",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "R9",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        8.22,
+        8.43
+      ],
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "no_positive_reinforcement",
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/8"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/8"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/8"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/8"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "21d95d7e105ceb451ce1af9f",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "R2",
+      "check_type": "flexural_capacity",
+      "status": "NOT_APPLICABLE",
+      "span_id": 1,
+      "physical_interval": [
+        0.07,
+        0.6
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "no_positive_demand",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "NOT_APPLICABLE",
+          "reason": "no_positive_demand",
+          "blockers": [
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "NOT_APPLICABLE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/1"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/1"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/1"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/1"
+      },
+      "missing_information": [],
+      "id": "24e018daf7c70418b706544a",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "id": "2e6d63da5dae2dbc58f3fdbf",
+      "beam_id": "V501",
+      "discipline": "shear",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    },
+    {
+      "check_id": "R8",
+      "check_type": "flexural_capacity",
+      "status": "NOT_APPLICABLE",
+      "span_id": 1,
+      "physical_interval": [
+        7.71,
+        8.22
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "no_positive_demand",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "NOT_APPLICABLE",
+          "reason": "no_positive_demand",
+          "blockers": [
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "NOT_APPLICABLE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/7"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/7"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/7"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/7"
+      },
+      "missing_information": [],
+      "id": "33c15c7040cd07f396cecaee",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "R7",
+      "check_type": "flexural_capacity",
+      "status": "PASS",
+      "span_id": 1,
+      "physical_interval": [
+        6.69,
+        7.71
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": 15.0826277,
+      "provided_value": 99.47034565405093,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "checked",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "PASS",
+          "reason": "checked",
+          "blockers": []
+        },
+        "original_status": "PASS",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/6"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/6"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/6"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/6"
+      },
+      "missing_information": [],
+      "id": "3a7dabf288b078963ac59c7f",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "R3",
+      "check_type": "flexural_capacity",
+      "status": "PASS",
+      "span_id": 1,
+      "physical_interval": [
+        0.6,
+        5.97
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": 61.5073088,
+      "provided_value": 99.47034565405093,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "checked",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "PASS",
+          "reason": "checked",
+          "blockers": []
+        },
+        "original_status": "PASS",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/2"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/2"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/2"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/2"
+      },
+      "missing_information": [],
+      "id": "3e5f61e5e70dbfefaad6856c",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "R6",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        6.69,
+        6.69
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/5"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/5"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/5"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/5"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "5c8f357a2aa99f71ba2f9d75",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "check_id": "module_coverage",
+      "check_type": "module_coverage",
+      "status": "INCONCLUSIVE",
+      "reason": "module_scope_incomplete",
+      "missing_information": [
+        "applicable checks not completely documented",
+        "physical_location_not_documented"
+      ],
+      "id": "988982da5a924a5060ff0a3d",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "calculation_source": {
+        "module": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d"
+        },
+        "version": "historical-json-adapter-v1"
+      },
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "span_id": null,
+      "physical_interval": null,
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "drawing_reinforcement_ids": [],
+      "evidence": {}
+    },
+    {
+      "id": "b961e6bce955384294c911ef",
+      "beam_id": "V501",
+      "discipline": "anchorage",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    },
+    {
+      "id": "bb304beb0185514082028fcd",
+      "beam_id": "V501",
+      "discipline": "negative_flexure",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    },
+    {
+      "check_id": "R1",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        0.0,
+        0.07
+      ],
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "no_positive_reinforcement",
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/0"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/0"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/0"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/0"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "d566c3064b4e16488ab4fb2e",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      }
+    },
+    {
+      "id": "da419a72cd16334149e40c91",
+      "beam_id": "V501",
+      "discipline": "suspension",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {}
+    }
+  ],
+  "occurrences": [
+    {
+      "check_id": "R4",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        5.97,
+        5.97
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/3"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/3"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/3"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/3"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "0c6dba5441257063fe8e29b3",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-0c6dba5441257063fe8e29b3",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [
+        "5c8f357a2aa99f71ba2f9d75"
+      ],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "R9",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        8.22,
+        8.43
+      ],
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "no_positive_reinforcement",
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/8"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/8"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/8"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/8"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "21d95d7e105ceb451ce1af9f",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-21d95d7e105ceb451ce1af9f",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "id": "2e6d63da5dae2dbc58f3fdbf",
+      "beam_id": "V501",
+      "discipline": "shear",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-2e6d63da5dae2dbc58f3fdbf",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "R6",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        6.69,
+        6.69
+      ],
+      "drawing_reinforcement_ids": [
+        "N5"
+      ],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/5"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/5"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/5"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/5"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "5c8f357a2aa99f71ba2f9d75",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-5c8f357a2aa99f71ba2f9d75",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [
+        "0c6dba5441257063fe8e29b3"
+      ],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "module_coverage",
+      "check_type": "module_coverage",
+      "status": "INCONCLUSIVE",
+      "reason": "module_scope_incomplete",
+      "missing_information": [
+        "applicable checks not completely documented",
+        "physical_location_not_documented"
+      ],
+      "id": "988982da5a924a5060ff0a3d",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "calculation_source": {
+        "module": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d"
+        },
+        "version": "historical-json-adapter-v1"
+      },
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "span_id": null,
+      "physical_interval": null,
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "drawing_reinforcement_ids": [],
+      "evidence": {},
+      "occurrence_id": "occ-988982da5a924a5060ff0a3d",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "id": "b961e6bce955384294c911ef",
+      "beam_id": "V501",
+      "discipline": "anchorage",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-b961e6bce955384294c911ef",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "id": "bb304beb0185514082028fcd",
+      "beam_id": "V501",
+      "discipline": "negative_flexure",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-bb304beb0185514082028fcd",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "check_id": "R1",
+      "check_type": "flexural_capacity",
+      "status": "INCONCLUSIVE",
+      "span_id": 1,
+      "physical_interval": [
+        0.0,
+        0.07
+      ],
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": "kN.m",
+      "comparison": "provided_ge_required",
+      "reason": "demand_not_sampled",
+      "criterion": null,
+      "evidence": {
+        "original_control": {
+          "status": "INCONCLUSIVE",
+          "reason": "demand_not_sampled",
+          "blockers": [
+            "no_positive_reinforcement",
+            "unresolved_transverse_geometry"
+          ]
+        },
+        "original_status": "INCONCLUSIVE",
+        "source": {
+          "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+          "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+          "pointer": "/regions/0"
+        }
+      },
+      "demand_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/0"
+      },
+      "drawing_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/0"
+      },
+      "calculation_source": {
+        "path": "analises\\pranchas\\V501_positive_flexure_regions.json",
+        "sha256": "6eec1d9da9f1758aeb17169b04d7b1580c18fac36c2ee236b6679cb5c2a9e43d",
+        "pointer": "/regions/0"
+      },
+      "missing_information": [
+        "demand_not_sampled"
+      ],
+      "id": "d566c3064b4e16488ab4fb2e",
+      "beam_id": "V501",
+      "discipline": "positive_flexure",
+      "coordinate_system": {
+        "origin": "left_support_axis",
+        "positive_direction": "left_to_right",
+        "unit": "m"
+      },
+      "occurrence_id": "occ-d566c3064b4e16488ab4fb2e",
+      "category": "MISSING_DOCUMENTARY_EVIDENCE",
+      "related_checks": [],
+      "provided_minus_required": null
+    },
+    {
+      "id": "da419a72cd16334149e40c91",
+      "beam_id": "V501",
+      "discipline": "suspension",
+      "check_type": "module_availability",
+      "check_id": "missing",
+      "status": "INCONCLUSIVE",
+      "reason": "module_not_executed",
+      "missing_information": [
+        "module results unavailable"
+      ],
+      "span_id": null,
+      "physical_interval": null,
+      "drawing_reinforcement_ids": [],
+      "required_value": null,
+      "provided_value": null,
+      "units": null,
+      "demand_source": null,
+      "drawing_source": null,
+      "calculation_source": null,
+      "evidence": {},
+      "occurrence_id": "occ-da419a72cd16334149e40c91",
+      "category": "UNVERIFIED_SUSPENSION",
+      "related_checks": [],
+      "provided_minus_required": null
+    }
+  ],
+  "proven_nonconformities": [],
+  "pending_occurrences": [
+    "occ-0c6dba5441257063fe8e29b3",
+    "occ-21d95d7e105ceb451ce1af9f",
+    "occ-2e6d63da5dae2dbc58f3fdbf",
+    "occ-5c8f357a2aa99f71ba2f9d75",
+    "occ-988982da5a924a5060ff0a3d",
+    "occ-b961e6bce955384294c911ef",
+    "occ-bb304beb0185514082028fcd",
+    "occ-d566c3064b4e16488ab4fb2e",
+    "occ-da419a72cd16334149e40c91"
+  ],
+  "engineering_review_occurrences": [],
+  "relations": [
+    {
+      "occurrences": [
+        "occ-0c6dba5441257063fe8e29b3",
+        "occ-5c8f357a2aa99f71ba2f9d75"
+      ],
+      "shared_reinforcement": [
+        "N5"
+      ],
+      "physical_overlap": false,
+      "single_correction_proven": false
+    }
+  ],
+  "discipline_status": {
+    "positive_flexure": "INCONCLUSIVE",
+    "negative_flexure": "INCONCLUSIVE",
+    "anchorage": "INCONCLUSIVE",
+    "shear": "INCONCLUSIVE",
+    "suspension": "INCONCLUSIVE"
+  },
+  "overall_status": "INCONCLUSIVE",
+  "beam_checks_approval": null,
+  "structural_safety_declaration": null,
+  "selected_solution": null,
+  "detailing_optimization": null,
+  "historical_interpretation_audit": []
+}

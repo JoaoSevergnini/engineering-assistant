@@ -1,0 +1,126 @@
+
+------------------------------------------------------------------------------
+TQS Formas 24   - Processamento de arquivo LDF 08/10/26 13:02:28
+SIMON ENGENHARIA LTDA                   
+RUA FELIZARDO, 711 3° ANDAR             
+93.507.960/0001-23  ISENTA             9405030 
+C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\ESPACIAL
+------------------------------------------------------------------------------
+
+       1> $
+       2> $   PILAR.LDF - Arquivo para interface CAD/Formas - CAD/Pilar
+       3> $   Gravado em 08/10/26 12:45:06
+       4> $
+       5> 
+       6> CAD/PILAR
+       7> 
+       8> FIM
+
+Processamento de plantas do edifício
+====================================
+Edifício ..... 24-212-TGD-SILVA JARDIM-R35
+     Projeto  212
+     Planta SUBSOLO
+            Projeto  100  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\SUBSOLO
+     Planta TERREO
+            Projeto  200  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\TERREO
+     Planta 2PAV
+            Projeto  300  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\2PAV
+     Planta 3pav
+            Projeto  400  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\3pav
+     Planta 4PAV
+            Projeto  401  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\4PAV
+     Planta TIPO
+            Projeto  500  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\TIPO
+     Planta 10PAV
+            Projeto  600  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\10PAV
+     Planta 11PAV
+            Projeto  700  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\11PAV
+     Planta 12PAV
+            Projeto  800  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\12PAV
+     Planta 13PAV
+            Projeto  900  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\13PAV
+     Planta 14PAV
+            Projeto 1000  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\14PAV
+     Planta 15PAV
+            Projeto 1100  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\15PAV
+     Planta COBERTURA
+            Projeto 1200  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\COBERTURA
+     Planta COBELEV
+            Projeto 1201  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\COBELEV
+     Planta PISORES
+            Projeto 1300  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\PISORES
+     Planta COBRES
+            Projeto 1400  Pasta C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\COBRES
+
+***001 AVISO: Viga  150 Nó   11 posicionado após centro do apoio
+***002 AVISO: A distribuição de cargas desta viga pode estar inválida
+***003 AVISO: Reposicione ou elimine o nó tipo "N"
+***001 AVISO: Viga  352 Nó  186 posicionado após centro do apoio
+***002 AVISO: A distribuição de cargas desta viga pode estar inválida
+***003 AVISO: Reposicione ou elimine o nó tipo "N"
+***007 AVISO: Momento das vigas nos pilares não gravado
+
+Arquivo de critérios: C:\TQS\TGD - SILVA JARDIM\24-212-TGD-SILVA JARDIM-R35\PARFOR.DAT
+Critérios gerais
+=================
+
+Entrada gráfica:
+     Caso 1 na entrada gráfica agrupa outros casos ...              Sim     (       )
+Geometria:
+     Piso de processamento ...........................                0     ( PISO  )
+     Largura default de vigas (cm) ...................               20     ( DIMVIG)
+     Altura  default de vigas (cm) ...................               50     ( DIMVIG)
+     Largura default de pilares (cm) .................               40     ( DIMPIL)
+     Profundidade default de pilares (cm) ............               40     ( DIMPIL)
+     Altura default de lajes (cm) ....................               10     ( DIMLAJ)
+     Consideração da area do fundo das vigas..........              Sim     ( FFUNDV)
+Cargas:
+     Geometria do contorno das lajes .................            Faces     ( DISCIN)
+     Critério de distribuição de cargas concentradas..        Ponderado     ( DISCCP)
+     Fator de engastamento parcial....................            1.000     ( ENGPAR)
+     Módulo de discretização p/distrib cargas (cm) ...               10     ( DISCRE)
+     Número mínimo de pontos discretos por eixo.......               10     ( DISMIN)
+     Número máximo de pontos discretos por eixo.......              150     ( DISMAX)
+     Homogeneização das cargas por lado de laje.......              Sim     ( DISTCA)
+     Calculo automático do peso próprio das lajes ....              Sim     ( PPLAJ )
+     Calculo automático do peso próprio das vigas ....              Sim     ( PPVIG )
+     Espaçamento p/discret de cargas p/área de lajes..               50     ( DISARE)
+     Gera engastamentos auto. em lajes contíguas .....              Sim     ( ENGAUT)
+     Percent distrib cargas lados nao apoiados laje pr           12.500
+Desenho - Escala:
+     Escala geral de desenho .........................           50.000     ( ESCALA)
+TQS Vigas:
+     Vao p/cálculo de excentricidade de apoio ........           HViga      (       )
+     Altura da viga p/excentricidade de apoio.........            0.300
+     Fator de extensão do apoio dentro do pilar ......             .030     ( EXTAPO)
+     Extensão fixa da viga dentro do apoio (cm) ......             .000     ( EXTFIX)
+     Extensão mínima da viga dentro do apoio (cm) ....             .000     ( EXTMIN)
+     Código de redução de alívio de cortante .........                0     ( RALCOR)
+     Fator de alternância de cargas ............. ....             .850     ( ALTERN)
+     Grava .DAT de vigas mesmo que ja exista .........              Sim     ( GRVVIG)
+     Multiplica armadura de vigas pelo num de pisos ..              Sim     ( MULFER)
+     Colaboração das lajes na rigidez das vigas ......              Sim     ( BCOLAB)
+     Articula pilares intermediários .................              Não     (NARTPIN)
+     Le COMPII/COMPIS do edificio, se zerados ........              Não     (NCOMEDI)
+     Comprimento do pilar superior (m) ...............                0     ( COMPIS)
+     Comprimento do pilar inferior (m) ...............                0     ( COMPII)
+     Vinculação do pilar superior ....................         Articula     ( VINPIS)
+     Vinculação do pilar inferior ....................         Articula     ( VINPII)
+     Redutor de mola para vigas contínuas ............            1.000     ( REDMOV)
+     Multipl larg equiv de pilar/portic simplif de vig            1.000     ( LEPMOV)
+TQS Pilar:
+     Grava arquivo de dados p/o TQS Pilar ............              Sim     ( GRVPIL)
+     Transfere reações de vigas para pilares .........              Sim     ( REACOE)
+     Grava momento de excen de apoio da viga no pilar.              Sim     ( MOMVPL)
+     Pilar deslocável ................................              Não     (NPILDES)
+     Grava momentos de pórtico simpificado de vigas ..              Não     (NMOMEPL)
+     Desconta altura das vigas dos PD dos pilares ....              Não     (NPILHVG)
+     Grava altura da viga correspondente ao pilar ....              Sim     ( PILGRH)
+     Altura default da fundação (cm) .................              100     ( HFUN  )
+     Inibe relat portico simplif. no resumo de cargas.              Sim     ( RLPSIM)
+     % do vão de viga com laje para travar pilar .....          100.000
+TQS Lajes:
+     Vinculações de lajes ............................    da forma          ( LAJENF)
+     Gravação automática do arquivo .LAJ .............              Sim     ( GRVLAJ)
+

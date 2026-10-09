@@ -1,0 +1,66 @@
+{
+  "preferences": {
+    "schema_version": "1.0",
+    "authority": "engineer_confirmed_detailing_preferences_v1",
+    "allowed_operations": [
+      "ALTER_QUANTITY",
+      "ALTER_DIAMETER",
+      "ALTER_LENGTH",
+      "REDISTRIBUTE_BARS",
+      "ADD_POSITION",
+      "MIX_DIAMETERS"
+    ],
+    "commercial_diameter_series": [
+      5,
+      6.3,
+      8,
+      10,
+      12.5,
+      16,
+      20,
+      25
+    ],
+    "preferred_max_diameter_steps": 2,
+    "diameter_step_preference_is_normative": false,
+    "priorities": [
+      "structural_validity",
+      "constructibility",
+      "reuse_existing_detailing",
+      "simplicity"
+    ],
+    "moderate_excess_area_and_anchorage_acceptable": true,
+    "excess_limits": null,
+    "values_below_required_acceptable": false,
+    "avoid": [
+      "excessive_optimization",
+      "unnecessary_scaling",
+      "excess_positions",
+      "excess_rework"
+    ],
+    "optimizer_implemented": false
+  },
+  "proposal_contract": {
+    "schema_version": "1.0",
+    "beam_id": null,
+    "floor": null,
+    "drawing_source": null,
+    "drawing_version": null,
+    "reinforcement_mark": null,
+    "original_geometry": null,
+    "proposed_geometry": null,
+    "operation": null,
+    "quantities_before": {},
+    "quantities_after": {},
+    "units": {},
+    "affected_checks": [],
+    "reverification_results": [],
+    "evidence": [],
+    "pending_information": [],
+    "approval_state": "DRAFT",
+    "approval_evidence": null,
+    "graphical_reference": null,
+    "physical_to_graphical_mapping_evidence": null,
+    "ready_for_graphical_application": false
+  },
+  "generated_real_proposals": []
+}

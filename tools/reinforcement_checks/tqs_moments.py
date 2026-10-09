@@ -7,7 +7,10 @@ def at(doc, pointer):
     return doc
 
 
-def audited_moment_series(mapping, tqs, raw):
+def audited_moment_series(mapping, tqs, raw, *, flexure_sign="POSITIVE"):
+    if flexure_sign not in ("POSITIVE","NEGATIVE"):
+        raise ValueError("unknown_flexure_sign")
+    label,envelope=("M MX.","max") if flexure_sign=="POSITIVE" else ("M MN.","min")
     candidates = []
     for i, series in enumerate(mapping['force_series']):
         if series.get('quantity') != 'bending_moment':
@@ -17,8 +20,8 @@ def audited_moment_series(mapping, tqs, raw):
             src = tqs['sources'][ref.split('#')[0]]
             rec = at(raw, src['raw_pointer'])
             norm = rec.get('normalizacao') or {}
-            if src['file'] == 'VGESFS.LST' and norm.get('grandeza_original') == 'M MX.' and norm.get('vao_original') == tqs['beam']['spans'][0]['report_span_ids']['VGESFS.LST']:
-                if series.get('envelope') != 'max' or series.get('stage') != 'model_input' or series.get('unit') != 'kN.m':
+            if src['file'] == 'VGESFS.LST' and norm.get('grandeza_original') == label and norm.get('vao_original') == tqs['beam']['spans'][0]['report_span_ids']['VGESFS.LST']:
+                if series.get('envelope') != envelope or series.get('stage') != 'model_input' or series.get('unit') != 'kN.m':
                     raise ValueError('Contrato da série M MX. incompatível.')
                 if [v['normalizado']['valor'] for v in norm['valores']] != series['values']:
                     raise ValueError('Valores da série divergem da origem raw.')
