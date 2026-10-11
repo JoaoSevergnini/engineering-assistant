@@ -1,0 +1,140 @@
+{
+  "V607": {
+    "MRd_knm": 22.19306728728441,
+    "utilization": 0.30003582937880474,
+    "unchanged": true
+  },
+  "V611": {
+    "regional_method_scope": [
+      {
+        "segment_id": "V611-FORM-1",
+        "interval_m": [
+          0,
+          2.82
+        ],
+        "implementation": "EXISTING_CONSTANT_SECTION_METHOD",
+        "structural_verdict": null
+      },
+      {
+        "segment_id": "V611-FORM-2",
+        "interval_m": [
+          3.52,
+          6.19
+        ],
+        "implementation": "EXISTING_CONSTANT_SECTION_METHOD",
+        "structural_verdict": null
+      },
+      {
+        "segment_id": "V611-FORM-3",
+        "interval_m": [
+          6.89,
+          9.31
+        ],
+        "implementation": "EXISTING_CONSTANT_SECTION_METHOD",
+        "structural_verdict": null
+      },
+      {
+        "segment_id": "V611-P28-NODE",
+        "interval_m": [
+          -0.7,
+          0
+        ],
+        "implementation": "UNRESOLVED_GEOMETRY",
+        "structural_verdict": null
+      },
+      {
+        "segment_id": "V611-P19-NODE",
+        "interval_m": [
+          2.82,
+          3.52
+        ],
+        "implementation": "UNRESOLVED_GEOMETRY",
+        "structural_verdict": null
+      },
+      {
+        "segment_id": "V611-P10-NODE",
+        "interval_m": [
+          6.19,
+          6.89
+        ],
+        "implementation": "UNRESOLVED_GEOMETRY",
+        "structural_verdict": null
+      },
+      {
+        "segment_id": "V611-P1-NODE",
+        "interval_m": [
+          9.31,
+          10.01
+        ],
+        "implementation": "UNRESOLVED_GEOMETRY",
+        "structural_verdict": null
+      },
+      {
+        "interval_m": [
+          2.82,
+          3.52
+        ],
+        "implementation": "NOT_IMPLEMENTED",
+        "position_state": "ABSENT_IN_DRAWING",
+        "clarification": "Cotar a mudança 57→47 dentro de P19.",
+        "structural_verdict": null
+      },
+      {
+        "interval_m": [
+          6.19,
+          6.89
+        ],
+        "implementation": "NOT_IMPLEMENTED",
+        "position_state": "ABSENT_IN_DRAWING",
+        "clarification": "Cotar mudança 47→57 dentro de P10.",
+        "structural_verdict": null
+      }
+    ],
+    "structural_approval": null
+  },
+  "V623": {
+    "suspended": true,
+    "affected_marks": [
+      "N2"
+    ],
+    "required_action": "Correct/reissue longitudinal detailing before complete structural review.",
+    "evidence": [
+      {
+        "mark": "N2",
+        "evidence": {
+          "code": "PLOTTING_INTEGRITY",
+          "view": "ELEVATION",
+          "provenance": [
+            {
+              "view": "ELEVATION",
+              "extraction": "PARTIAL",
+              "integrity": "TRUNCATED",
+              "provenance": [
+                {
+                  "reference": "User stage-1 request",
+                  "text": "elevação da V623 foi cortada na plotagem do PDF"
+                }
+              ],
+              "marks": [
+                "N2"
+              ],
+              "affected_scope": "N2 lower elevation/longitudinal extent",
+              "unverifiable": [
+                "x_start",
+                "x_end",
+                "cuts",
+                "extensions",
+                "laps",
+                "longitudinal layers"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "V626": {
+    "pending": "cantilever_force_series_unavailable: span=1; no corresponding VGESFS series; adjacent span not substituted",
+    "structural_approval": null
+  }
+}

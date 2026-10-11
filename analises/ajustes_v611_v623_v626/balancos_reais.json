@@ -1,0 +1,265 @@
+{
+  "V626": {
+    "context": {
+      "1": {
+        "orientation": {
+          "value": "LEFT",
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+              "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+              "page": 1,
+              "page_rotation": 90,
+              "bbox_display": [
+                2110,
+                1080,
+                2310,
+                1570
+              ],
+              "text": "Livre no sentido negativo do eixo comum",
+              "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+            }
+          ],
+          "criterion": null
+        },
+        "physical_bounds": {
+          "x_start_m": {
+            "value": -0.93,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  2110,
+                  1080,
+                  2310,
+                  1570
+                ],
+                "text": "80+13 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          },
+          "x_end_m": {
+            "value": -0.4,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  2110,
+                  1080,
+                  2310,
+                  1570
+                ],
+                "text": "Eixo P31 a -40 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        }
+      }
+    },
+    "pending": "cantilever_force_series_unavailable: span=1; no corresponding VGESFS series; adjacent span not substituted",
+    "VGESFS_geometry_length_m": 0.949,
+    "form_free_to_support_axis_m": 0.53,
+    "series_in_preserved_VGESFS": [
+      {
+        "line": 819,
+        "span": 2
+      },
+      {
+        "line": 822,
+        "span": 2
+      },
+      {
+        "line": 825,
+        "span": 2
+      },
+      {
+        "line": 828,
+        "span": 2
+      },
+      {
+        "line": 831,
+        "span": 2
+      }
+    ],
+    "structural_verdict": null
+  },
+  "other_cantilever_candidates": [
+    {
+      "beam": "V617",
+      "record": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 366,
+        "linha_final": 366,
+        "texto": "    2B      1.329     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+      },
+      "tokens": [
+        "2B",
+        "1.329",
+        "0.190",
+        "0.570",
+        "0.000",
+        "0.000",
+        "1.000",
+        "0.000",
+        "0.000",
+        "0.285",
+        "0.095"
+      ],
+      "form_orientation_validated_in_this_run": false
+    },
+    {
+      "beam": "V620",
+      "record": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 414,
+        "linha_final": 414,
+        "texto": "    2B      1.417     0.190     0.610     0.000     0.000     1.000     0.000     0.000     0.305     0.095"
+      },
+      "tokens": [
+        "2B",
+        "1.417",
+        "0.190",
+        "0.610",
+        "0.000",
+        "0.000",
+        "1.000",
+        "0.000",
+        "0.000",
+        "0.305",
+        "0.095"
+      ],
+      "form_orientation_validated_in_this_run": false
+    },
+    {
+      "beam": "V622",
+      "record": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 441,
+        "linha_final": 441,
+        "texto": "    2B      1.429     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+      },
+      "tokens": [
+        "2B",
+        "1.429",
+        "0.190",
+        "0.570",
+        "0.000",
+        "0.000",
+        "1.000",
+        "0.000",
+        "0.000",
+        "0.285",
+        "0.095"
+      ],
+      "form_orientation_validated_in_this_run": false
+    },
+    {
+      "beam": "V625",
+      "record": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 489,
+        "linha_final": 489,
+        "texto": "    2B      1.329     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+      },
+      "tokens": [
+        "2B",
+        "1.329",
+        "0.190",
+        "0.570",
+        "0.000",
+        "0.000",
+        "1.000",
+        "0.000",
+        "0.000",
+        "0.285",
+        "0.095"
+      ],
+      "form_orientation_validated_in_this_run": false
+    },
+    {
+      "beam": "V626",
+      "record": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 814,
+        "linha_final": 814,
+        "texto": "    1B      0.949     0.190     0.470     0.570     0.000     2.000     0.120     0.000     0.235     0.095"
+      },
+      "tokens": [
+        "1B",
+        "0.949",
+        "0.190",
+        "0.470",
+        "0.570",
+        "0.000",
+        "2.000",
+        "0.120",
+        "0.000",
+        "0.235",
+        "0.095"
+      ],
+      "form_orientation_validated_in_this_run": true
+    },
+    {
+      "beam": "V627",
+      "record": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 516,
+        "linha_final": 516,
+        "texto": "    2B      1.329     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+      },
+      "tokens": [
+        "2B",
+        "1.329",
+        "0.190",
+        "0.570",
+        "0.000",
+        "0.000",
+        "1.000",
+        "0.000",
+        "0.000",
+        "0.285",
+        "0.095"
+      ],
+      "form_orientation_validated_in_this_run": false
+    },
+    {
+      "beam": "V629",
+      "record": {
+        "arquivo": "VGESFS.LST",
+        "linha_inicial": 566,
+        "linha_final": 566,
+        "texto": "    4B      1.429     0.190     0.570     0.000     0.000     1.000     0.000     0.000     0.285     0.095"
+      },
+      "tokens": [
+        "4B",
+        "1.429",
+        "0.190",
+        "0.570",
+        "0.000",
+        "0.000",
+        "1.000",
+        "0.000",
+        "0.000",
+        "0.285",
+        "0.095"
+      ],
+      "form_orientation_validated_in_this_run": false
+    }
+  ]
+}

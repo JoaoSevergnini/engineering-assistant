@@ -1,0 +1,1347 @@
+{
+  "case_type": "SYNTHETIC",
+  "spec": {
+    "floor": "SYNTHETIC",
+    "beams": [
+      {
+        "beam_id": "SYNTHETIC",
+        "model": {
+          "longitudinal_reinforcement": [
+            {
+              "mark": "N1"
+            }
+          ],
+          "skin_reinforcement": [],
+          "schema_version": "1.1",
+          "physical_geometry": {
+            "schema_version": "1.0",
+            "coordinate_system": {
+              "unit": "m",
+              "origin": "synthetic left face",
+              "positive_direction": "right",
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST"
+                }
+              ]
+            },
+            "segments": [
+              {
+                "id": "G1",
+                "x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "x_end_m": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "geometry_type": "CONSTANT",
+                "geometry": {
+                  "section_shape": {
+                    "value": "RECTANGULAR",
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": null,
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "width_cm": {
+                    "value": 19,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "height_cm": {
+                    "value": 57,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "top_level_cm": {
+                    "value": 57,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "bottom_level_cm": {
+                    "value": 0,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "lateral_offset_cm": {
+                    "value": null,
+                    "state": "MISSING",
+                    "unit": "cm",
+                    "provenance": [],
+                    "criterion": null
+                  },
+                  "cover_cm": {
+                    "value": 2.5,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "stirrup_diameter_mm": {
+                    "value": 6.3,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "mm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "provenance": [
+                  {
+                    "fixture": "SYNTHETIC_CONTRACT_TEST"
+                  }
+                ]
+              },
+              {
+                "id": "G2",
+                "x_start_m": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "x_end_m": {
+                  "value": 4,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "geometry_type": "CONSTANT",
+                "geometry": {
+                  "section_shape": {
+                    "value": "RECTANGULAR",
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": null,
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "width_cm": {
+                    "value": 19,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "height_cm": {
+                    "value": 47,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "top_level_cm": {
+                    "value": 57,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "bottom_level_cm": {
+                    "value": 10,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "lateral_offset_cm": {
+                    "value": null,
+                    "state": "MISSING",
+                    "unit": "cm",
+                    "provenance": [],
+                    "criterion": null
+                  },
+                  "cover_cm": {
+                    "value": 2.5,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  },
+                  "stirrup_diameter_mm": {
+                    "value": 6.3,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "mm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "provenance": [
+                  {
+                    "fixture": "SYNTHETIC_CONTRACT_TEST"
+                  }
+                ]
+              }
+            ],
+            "occurrences": [
+              {
+                "mark": "N1",
+                "occurrence_id": "O1",
+                "function": "positive",
+                "face": "lower",
+                "quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "diameter_mm": {
+                  "value": 16,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "x_end_m": {
+                  "value": 4,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "provenance": [
+                  {
+                    "fixture": "SYNTHETIC_CONTRACT_TEST"
+                  }
+                ],
+                "continuity": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "provenance": [],
+                  "criterion": null
+                },
+                "laps": [],
+                "extensions": [],
+                "termination": {}
+              },
+              {
+                "mark": "N2",
+                "occurrence_id": "O2",
+                "function": "negative",
+                "face": "upper",
+                "quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "diameter_mm": {
+                  "value": 16,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "x_end_m": {
+                  "value": 4,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "provenance": [
+                  {
+                    "fixture": "SYNTHETIC_CONTRACT_TEST"
+                  }
+                ],
+                "continuity": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "provenance": [],
+                  "criterion": null
+                },
+                "laps": [],
+                "extensions": [],
+                "termination": {}
+              }
+            ],
+            "spans": [],
+            "support_faces": []
+          },
+          "documentary_reconciliation": {
+            "schema_version": "1.0",
+            "positions": [
+              {
+                "mark": "N1",
+                "representations": [],
+                "comparisons": [],
+                "issues": [
+                  {
+                    "code": "REPRESENTATION_NOT_EXTRACTED",
+                    "view": "ELEVATION",
+                    "physical_absence_proved": false
+                  },
+                  {
+                    "code": "REPRESENTATION_NOT_EXTRACTED",
+                    "view": "SECTION",
+                    "physical_absence_proved": false
+                  },
+                  {
+                    "code": "REPRESENTATION_NOT_EXTRACTED",
+                    "view": "STEEL_SCHEDULE",
+                    "physical_absence_proved": false
+                  }
+                ],
+                "physical_absence_proved": false,
+                "state": "INCOMPLETE"
+              }
+            ],
+            "coverage": [],
+            "source_priority_applied": false
+          },
+          "input_validation": {
+            "required_before_calculation": true,
+            "global_beam_block": false,
+            "envelope_policy": "TQS_ENVELOPES",
+            "concomitant_combinations_required": false
+          }
+        },
+        "form": {
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "synthetic left face",
+            "positive_direction": "right",
+            "provenance": [
+              {
+                "fixture": "SYNTHETIC_CONTRACT_TEST"
+              }
+            ]
+          },
+          "provenance": [
+            {
+              "fixture": "SYNTHETIC_FORM"
+            }
+          ],
+          "segments": [
+            {
+              "id": "G1",
+              "geometry_type": "CONSTANT",
+              "fields": {
+                "section_shape": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": "RECTANGULAR",
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": null,
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "width_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 19,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "height_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 57,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "top_level_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 57,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "bottom_level_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 0,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "x_start_m": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 0,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "m",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "x_end_m": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 2,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "m",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                }
+              }
+            },
+            {
+              "id": "G2",
+              "geometry_type": "CONSTANT",
+              "fields": {
+                "section_shape": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": "RECTANGULAR",
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": null,
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "width_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 19,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "height_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 47,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "top_level_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 57,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "bottom_level_cm": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 10,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "cm",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "x_start_m": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 2,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "m",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                },
+                "x_end_m": {
+                  "documentary_state": "PROVED",
+                  "fact": {
+                    "value": 4,
+                    "state": "DOCUMENTED_CONFIRMED",
+                    "unit": "m",
+                    "provenance": [
+                      {
+                        "fixture": "SYNTHETIC_CONTRACT_TEST",
+                        "reference": "explicit test datum"
+                      }
+                    ],
+                    "criterion": null
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "review_interval_m": [
+          0,
+          4
+        ],
+        "layer_observations": {
+          "O1": {
+            "near_bar_text": {
+              "value": [
+                2
+              ],
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            }
+          },
+          "O2": {
+            "section": {
+              "value": [
+                2
+              ],
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            }
+          }
+        },
+        "positioned_tqs": {
+          "beam": {
+            "spans": [
+              {
+                "id": 1,
+                "internal_forces": [
+                  {
+                    "quantity": "bending_moment",
+                    "unit": "kN.m",
+                    "envelope": "max",
+                    "stage": "model_input",
+                    "positions": [
+                      0,
+                      1,
+                      2,
+                      2.1,
+                      3,
+                      4
+                    ],
+                    "sections": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "values": [
+                      0,
+                      10,
+                      20,
+                      40,
+                      25,
+                      0
+                    ],
+                    "sources": [
+                      "synthetic-reviewed-TQS"
+                    ]
+                  },
+                  {
+                    "quantity": "bending_moment",
+                    "unit": "kN.m",
+                    "envelope": "min",
+                    "stage": "model_input",
+                    "positions": [
+                      0,
+                      1,
+                      2,
+                      2.1,
+                      3,
+                      4
+                    ],
+                    "sections": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "values": [
+                      0,
+                      -30,
+                      -10,
+                      -5,
+                      -25,
+                      0
+                    ],
+                    "sources": [
+                      "synthetic-reviewed-TQS"
+                    ]
+                  },
+                  {
+                    "quantity": "shear",
+                    "unit": "kN",
+                    "envelope": "max",
+                    "stage": "model_input",
+                    "positions": [
+                      0,
+                      1,
+                      2,
+                      2.1,
+                      3,
+                      4
+                    ],
+                    "sections": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "values": [
+                      10,
+                      20,
+                      30,
+                      200,
+                      50,
+                      20
+                    ],
+                    "sources": [
+                      "synthetic-reviewed-TQS"
+                    ]
+                  },
+                  {
+                    "quantity": "shear",
+                    "unit": "kN",
+                    "envelope": "min",
+                    "stage": "model_input",
+                    "positions": [
+                      0,
+                      1,
+                      2,
+                      2.1,
+                      3,
+                      4
+                    ],
+                    "sections": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "values": [
+                      -5,
+                      -10,
+                      -20,
+                      -100,
+                      -30,
+                      -5
+                    ],
+                    "sources": [
+                      "synthetic-reviewed-TQS"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "registrations": {
+          "1": {
+            "span_id": 1,
+            "coordinate_system": {
+              "unit": "m",
+              "origin": "synthetic left face",
+              "positive_direction": "right",
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST"
+                }
+              ]
+            },
+            "anchors": [
+              {
+                "local_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "common_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                }
+              },
+              {
+                "local_m": {
+                  "value": 4,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "common_m": {
+                  "value": 4,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "fixture": "SYNTHETIC_CONTRACT_TEST",
+                      "reference": "explicit test datum"
+                    }
+                  ],
+                  "criterion": null
+                }
+              }
+            ]
+          }
+        },
+        "jobs": [],
+        "context": {
+          "section": {
+            "bw": 19,
+            "h": 72,
+            "cobrimento": 2.5,
+            "diametro_estribo_mm": 5
+          },
+          "fck_mpa": 40,
+          "fyk_mpa": 500,
+          "gamma_f": 1.4,
+          "gamma_c": 1.4,
+          "gamma_s": 1.15,
+          "horizontal": true,
+          "sliding_formwork": false,
+          "al_scope_confirmed": true,
+          "longitudinal_provenance": {
+            "synthetic": "explicit uniform geometry"
+          },
+          "layer_order_basis": "from_tension_face",
+          "layer_order_provenance": {
+            "synthetic": "physical layers read from top face"
+          },
+          "support_element": "COLUMN",
+          "support_scenario_provenance": {
+            "synthetic": "engineer supplied scenario"
+          },
+          "cantilever_type": "SINGLE_FIXED_COLUMN",
+          "span_count": 1,
+          "stirrup_angle_degrees": 90,
+          "axial_force_kn": 0,
+          "al_scope_provenance": {
+            "fixture": "vertical stirrups, Vc=Vc0, no normal force"
+          }
+        },
+        "control_inputs": {
+          "positive_flexure": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "moment_envelope": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "force_position_mapping": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "layer_order": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "physical_inventory_complete": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            }
+          },
+          "negative_flexure": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "moment_envelope": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "force_position_mapping": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "layer_order": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "physical_inventory_complete": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            }
+          },
+          "shear": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "shear_envelope": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "force_position_mapping": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "stirrup_regions": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "effective_depth": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "physical_inventory_complete": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            }
+          },
+          "suspension": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "supported_reaction": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "indirect_support": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "suspension_bars": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            },
+            "physical_inventory_complete": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "fixture": "SYNTHETIC_CONTRACT_TEST",
+                  "reference": "explicit test datum"
+                }
+              ],
+              "criterion": null
+            }
+          }
+        },
+        "section_checks": {
+          "domains": [
+            {
+              "span_id": 1,
+              "interval_m": {
+                "value": [
+                  0,
+                  4
+                ],
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "fixture": "SYNTHETIC_CONTRACT_TEST",
+                    "reference": "explicit test datum"
+                  }
+                ],
+                "criterion": null
+              }
+            }
+          ],
+          "drawn_stirrup_regions": [
+            {
+              "id": "E",
+              "interval_m": [
+                0,
+                4
+              ],
+              "diameter_mm": 6.3,
+              "spacing_cm": 8,
+              "legs": 2,
+              "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+              "source": {
+                "fixture": "documented closed stirrup throughout synthetic beam"
+              },
+              "position_state": "DOCUMENTED_CONFIRMED"
+            }
+          ],
+          "gamma_n": {
+            "value": 1.1,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "fixture": "SYNTHETIC_CONTRACT_TEST",
+                "reference": "explicit test datum"
+              }
+            ],
+            "criterion": null
+          }
+        }
+      }
+    ],
+    "sources": {
+      "form": {
+        "extraction_archive": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\suspensao_desnivel_inferior\\synthetic_extraction.json",
+        "archive_sha256": "370b94c894197e5878cae0adee1abf20bbb9718b4ce0b7756a553afe1811016d"
+      },
+      "detailing": {
+        "extraction_archive": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\suspensao_desnivel_inferior\\synthetic_extraction.json",
+        "archive_sha256": "370b94c894197e5878cae0adee1abf20bbb9718b4ce0b7756a553afe1811016d"
+      },
+      "tqs": {
+        "extraction_archive": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\suspensao_desnivel_inferior\\synthetic_extraction.json",
+        "archive_sha256": "370b94c894197e5878cae0adee1abf20bbb9718b4ce0b7756a553afe1811016d"
+      }
+    }
+  }
+}

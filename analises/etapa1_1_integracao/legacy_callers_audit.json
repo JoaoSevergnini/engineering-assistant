@@ -1,0 +1,456 @@
+{
+  "method": "AST inventory; guard import alone is not proof of protected execution",
+  "files": [
+    {
+      "file": "tools/beam_mapping/map_beam.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 223,
+          "function": "map_beam"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/bar_scaling.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 447,
+          "function": "check_scaling_event"
+        },
+        {
+          "line": 437,
+          "function": "check_positive_flexure"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/floor_review.py",
+      "imports_guard": true,
+      "classification": "GUARD_IMPORT_REQUIRES_PATH_REVIEW",
+      "calls": [
+        {
+          "line": 50,
+          "function": "check_flexure_regions"
+        },
+        {
+          "line": 260,
+          "function": "review_floor"
+        },
+        {
+          "line": 241,
+          "function": "review_beam"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/intermediate_support_review.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 18,
+          "function": "check_longitudinal"
+        },
+        {
+          "line": 74,
+          "function": "check_bar_event"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/longitudinal_review.py",
+      "imports_guard": true,
+      "classification": "GUARD_IMPORT_REQUIRES_PATH_REVIEW",
+      "calls": [
+        {
+          "line": 112,
+          "function": "check_longitudinal"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/negative_end_support_review.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 122,
+          "function": "check_negative_end_node"
+        },
+        {
+          "line": 211,
+          "function": "check_negative_end_support"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/negative_reinforcement_relations.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 64,
+          "function": "check_stirrup_holder"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/positive_flexure.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 196,
+          "function": "check_positive_flexure"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/shear_review.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 295,
+          "function": "check_drawn_region"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/support_alternatives.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 211,
+          "function": "evaluate_configuration"
+        },
+        {
+          "line": 223,
+          "function": "evaluate_configuration"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/support_anchorage.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 310,
+          "function": "check_support"
+        },
+        {
+          "line": 311,
+          "function": "check_longitudinal"
+        },
+        {
+          "line": 96,
+          "function": "evaluate_configuration"
+        },
+        {
+          "line": 274,
+          "function": "check_support"
+        },
+        {
+          "line": 275,
+          "function": "check_longitudinal"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/support_correction.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 275,
+          "function": "evaluate_configuration"
+        },
+        {
+          "line": 279,
+          "function": "check_longitudinal"
+        },
+        {
+          "line": 286,
+          "function": "check_longitudinal"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/suspension_review.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 221,
+          "function": "review_connection"
+        },
+        {
+          "line": 177,
+          "function": "check_drawn_region"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/v1001_moment_interpolation.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 17,
+          "function": "check_positive_flexure"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/v1001_scaling.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 22,
+          "function": "check_bar_scaling"
+        }
+      ]
+    },
+    {
+      "file": "tools/reinforcement_checks/v501_positive_flexure.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 150,
+          "function": "check_case"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/reproduzir_v536_v565.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 44,
+          "function": "map_beam"
+        },
+        {
+          "line": 48,
+          "function": "check_bar_scaling"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_atualizacao_diagnostico.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 58,
+          "function": "check_positive_flexure"
+        },
+        {
+          "line": 59,
+          "function": "check_longitudinal"
+        },
+        {
+          "line": 60,
+          "function": "check_bar_scaling"
+        },
+        {
+          "line": 64,
+          "function": "check_support"
+        },
+        {
+          "line": 74,
+          "function": "check_support"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_suspensao.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 16,
+          "function": "review_suspension"
+        },
+        {
+          "line": 29,
+          "function": "review_suspension"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_v1001_negativo.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 29,
+          "function": "check_flexure_regions"
+        },
+        {
+          "line": 30,
+          "function": "check_bar_event"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_v516_v517_cortante.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 49,
+          "function": "review_shear_spans"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_v516_v517_negativo.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 142,
+          "function": "check_negative_end_node"
+        },
+        {
+          "line": 145,
+          "function": "review_negative_end_support"
+        },
+        {
+          "line": 175,
+          "function": "review_negative_relation"
+        },
+        {
+          "line": 105,
+          "function": "check_flexure_regions"
+        },
+        {
+          "line": 135,
+          "function": "check_intermediate_bar_event"
+        },
+        {
+          "line": 137,
+          "function": "check_bar_event"
+        },
+        {
+          "line": 161,
+          "function": "check_intermediate_continuity"
+        },
+        {
+          "line": 194,
+          "function": "check_intermediate_bar_event"
+        },
+        {
+          "line": 102,
+          "function": "check_flexure_regions"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_v536_apoio_direito.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 49,
+          "function": "check_support"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_v536_positivo_completo.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 37,
+          "function": "check_positive_flexure"
+        },
+        {
+          "line": 39,
+          "function": "check_bar_scaling"
+        }
+      ]
+    },
+    {
+      "file": "analises/pranchas/validar_v536_v565_apoio_esquerdo.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 63,
+          "function": "evaluate_configuration"
+        }
+      ]
+    },
+    {
+      "file": "analises/silva_jardim_tipo/add_checks.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 37,
+          "function": "check_support"
+        },
+        {
+          "line": 53,
+          "function": "review_negative_end_support"
+        },
+        {
+          "line": 42,
+          "function": "check_support"
+        },
+        {
+          "line": 80,
+          "function": "check_bar_event"
+        },
+        {
+          "line": 100,
+          "function": "check_scaling_event"
+        }
+      ]
+    },
+    {
+      "file": "analises/silva_jardim_tipo/cantilever_and_suspension.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 41,
+          "function": "check_flexure_regions"
+        }
+      ]
+    },
+    {
+      "file": "analises/silva_jardim_tipo/review.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 73,
+          "function": "check_flexure_regions"
+        }
+      ]
+    },
+    {
+      "file": "analises/silva_jardim_tipo/suspension_regional.py",
+      "imports_guard": false,
+      "classification": "LEGACY_OR_LOW_LEVEL_NO_PREFLIGHT_IMPORT",
+      "calls": [
+        {
+          "line": 27,
+          "function": "review_connection"
+        }
+      ]
+    }
+  ]
+}

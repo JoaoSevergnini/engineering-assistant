@@ -35,13 +35,18 @@ def overlaps(a, b, c, d):
     return (a is None or a < d) and (b is None or b > c)
 
 
-def preflight(model, *, region_id, interval_m, control, inputs=None, allow_assumptions=False, applicability=None):
+def preflight(model, *, region_id, interval_m, control, inputs=None, allow_assumptions=False, applicability=None, uses_layers_for_resistance=False, al_only=False, height_change_suspension=False):
     if control not in CONTROLS:
         raise ValueError('unknown_preflight_control')
+    if al_only and control != 'shear':raise ValueError('al_preflight_requires_shear_control')
+    if height_change_suspension and control!='shear':raise ValueError('height_change_preflight_requires_shear_control')
     a, z = interval_m
     if a >= z:
         raise ValueError('positive_control_interval_required')
     inputs = inputs or {}
+    limitations = []
+    plotting = [dict(mark=p['mark'], issue=i) for p in model.get('documentary_reconciliation', {}).get('positions', [])
+                for i in p.get('issues', []) if i['code'] == 'PLOTTING_INTEGRITY' and i.get('view') == 'ELEVATION']
     accepted = PROVED + (('ENGINEERING_ASSUMPTION',) if allow_assumptions else ())
     required, pending, assumptions = {}, [], []
     def need(name, item):
@@ -55,9 +60,25 @@ def preflight(model, *, region_id, interval_m, control, inputs=None, allow_assum
             assumptions.append(name)
     if applicability is not None:
         item = validate_fact(applicability)
-        if item['state'] == 'NOT_APPLICABLE' and item['provenance']:
+        if item['state'] == 'NOT_APPLICABLE' and item['provenance'] and not plotting:
             return dict(region_id=region_id, interval_m=list(interval_m), control=control, readiness='NOT_APPLICABLE', pending=[], assumptions=[], evidence=dict(applicability=item))
     segments = model.get('physical_geometry', {}).get('segments', [])
+    # A proved plotting failure suspends the whole beam review. Keep its marks
+    # in the documentary inventory; neither schedule totals nor cuts locate bars.
+    if plotting:
+        pending.append('documentary_plotting_failure_beam_review_suspended')
+        limitations.append(dict(kind='DOCUMENTARY', reason='Correct/reissue longitudinal detailing before complete structural review.', affected_marks=sorted({p['mark'] for p in plotting}), evidence=plotting))
+    # Unsupported transition mechanics and unproved transition location are
+    # separate limitations. Neither extends to independent constant regions.
+    if GEOMETRY_DEPENDENCIES[control]:
+        transitions = [t for t in model.get('form_interpretation', {}).get('transitions', [])
+                       if t.get('physical_interval_m') and overlaps(*t['physical_interval_m'], a, z)]
+        variable = [s for s in segments if s['geometry_type'] in ('VARIABLE', 'TRANSITION') and
+                    overlaps(s['x_start_m']['value'], s['x_end_m']['value'], a, z)]
+        if transitions or variable:
+            pending.append('transition_resistant_method_not_implemented')
+            limitations.append(dict(kind='METHOD', implementation='NOT_IMPLEMENTED', evidence=transitions + variable,
+                                    reason='Transition/variable-section procedure awaits responsible engineer; no average section.'))
     relevant = [s for s in segments if overlaps(s['x_start_m']['value'] if s['x_start_m']['state'] in PROVED else None,
                                                s['x_end_m']['value'] if s['x_end_m']['state'] in PROVED else None, a,z)]
     if GEOMETRY_DEPENDENCIES[control]:
@@ -71,11 +92,20 @@ def preflight(model, *, region_id, interval_m, control, inputs=None, allow_assum
                 pending.append('unsupported_section_shape')
             for k in GEOMETRY_DEPENDENCIES[control]:
                 need('geometry.' + k, contained[0]['geometry'][k])
-    for k in EXTERNAL_DEPENDENCIES[control]:
+    dependencies = ('materials','shear_envelope','force_position_mapping','effective_depth','al_scope') if al_only else EXTERNAL_DEPENDENCIES[control]
+    if height_change_suspension:dependencies+=('transition_geometry','gamma_n','shear_method_scope')
+    for k in dependencies:
         from input_evidence import fact
         need(k, inputs.get(k, fact()))
+    layer_dependent = control in ('positive_flexure', 'negative_flexure', 'scaling') or uses_layers_for_resistance
+    if model.get('operational_review', {}).get('require_layer_fit') and layer_dependent:
+        need('layer_fit', inputs.get('layer_fit', fact()))
+        if inputs.get('layer_fit', {}).get('value') is not True:
+            pending.append('layer_fit')
+        if uses_layers_for_resistance and control not in ('positive_flexure', 'negative_flexure', 'scaling'):
+            need('layer_order', inputs.get('layer_order', fact()))
     bars = model.get('physical_geometry', {}).get('occurrences', [])
-    if control in ('positive_flexure','negative_flexure','scaling'):
+    if layer_dependent:
         function = 'positive' if control == 'positive_flexure' else 'negative' if control == 'negative_flexure' else None
         local = [b for b in bars if b.get('function') in (function, None) or function is None]
         local = [b for b in local if overlaps(b['x_start_m']['value'] if b['x_start_m']['state'] in PROVED else None,
@@ -103,6 +133,8 @@ def preflight(model, *, region_id, interval_m, control, inputs=None, allow_assum
     return dict(region_id=region_id, interval_m=list(interval_m), control=control,
                 readiness='PENDING' if pending else 'RUNNABLE_WITH_ASSUMPTIONS' if assumptions else 'RUNNABLE',
                 pending=sorted(set(pending)), assumptions=assumptions, evidence=required,
+                limitations=limitations,
+                purpose='SECTION_AL' if al_only else 'RESISTANT_CONTROL',
                 scope=dict(force_policy='TQS_ENVELOPES', concomitant_combinations_required=False,
                            mandatory_curved_path=False, mandatory_pin_check=False, mandatory_column_reinforcement_interference=False))
 

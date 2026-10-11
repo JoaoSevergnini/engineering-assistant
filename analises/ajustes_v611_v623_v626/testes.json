@@ -1,0 +1,66 @@
+[
+  {
+    "suite": "beam_model",
+    "command": [
+      "C:\\Program Files (x86)\\Python310-32\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/beam_model",
+      "-p",
+      "test_*.py",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "----------------------------------------------------------------------\nRan 71 tests in 0.679s\n\nOK\n"
+  },
+  {
+    "suite": "extrator_lst",
+    "command": [
+      "C:\\Program Files (x86)\\Python310-32\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/extrator_lst",
+      "-p",
+      "test_*.py",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "----------------------------------------------------------------------\nRan 48 tests in 4.707s\n\nOK (skipped=2)\n"
+  },
+  {
+    "suite": "beam_mapping",
+    "command": [
+      "C:\\Program Files (x86)\\Python310-32\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/beam_mapping",
+      "-p",
+      "test_*.py",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "----------------------------------------------------------------------\nRan 57 tests in 0.661s\n\nOK\n"
+  },
+  {
+    "suite": "reinforcement_checks",
+    "command": [
+      "C:\\Program Files (x86)\\Python310-32\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/reinforcement_checks",
+      "-p",
+      "test_*.py",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "----------------------------------------------------------------------\nRan 999 tests in 44.858s\n\nOK\n"
+  }
+]

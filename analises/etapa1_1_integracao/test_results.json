@@ -1,0 +1,75 @@
+{
+  "suites": [
+    {
+      "suite": "beam_model",
+      "command": [
+        "C:\\Program Files (x86)\\Python310-32\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/beam_model",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 71,
+      "exit_code": 0,
+      "output": "----------------------------------------------------------------------\nRan 71 tests in 1.205s\n\nOK\n"
+    },
+    {
+      "suite": "extrator_lst",
+      "command": [
+        "C:\\Program Files (x86)\\Python310-32\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/extrator_lst",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 42,
+      "exit_code": 0,
+      "output": "----------------------------------------------------------------------\nRan 42 tests in 7.141s\n\nOK (skipped=2)\n"
+    },
+    {
+      "suite": "beam_mapping",
+      "command": [
+        "C:\\Program Files (x86)\\Python310-32\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/beam_mapping",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 57,
+      "exit_code": 0,
+      "output": "----------------------------------------------------------------------\nRan 57 tests in 0.670s\n\nOK\n"
+    },
+    {
+      "suite": "reinforcement_checks",
+      "command": [
+        "C:\\Program Files (x86)\\Python310-32\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/reinforcement_checks",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "tests": 996,
+      "exit_code": 0,
+      "output": "----------------------------------------------------------------------\nRan 996 tests in 48.030s\n\nOK\n"
+    }
+  ],
+  "total": 1166,
+  "all_passed": true,
+  "interpreter": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:20:04) [MSC v.1929 32 bit (Intel)]"
+}

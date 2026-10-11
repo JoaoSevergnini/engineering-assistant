@@ -18,6 +18,19 @@ def diagram(values, xs=None):
 
 
 class LinearDiagramTests(unittest.TestCase):
+    def test_interval_extrema_signed_and_interpolated_limits(self):
+        r=diagram([0,-30,40,0],[0,1,2,3]).extrema(.5,2.5)
+        self.assertTrue(r['complete']);self.assertEqual(r['positive']['x_m'],2);self.assertEqual(r['negative']['x_m'],1)
+        self.assertEqual(r['points'][0]['value_knm'],-15)
+    def test_extrema_does_not_extrapolate_or_hide_missing_values(self):
+        self.assertFalse(diagram([0,10]).extrema(-1,.5)['complete'])
+        self.assertFalse(diagram([0,None,10]).extrema(0,2)['complete'])
+    def test_known_discontinuity_is_not_interpolated(self):
+        d=MomentDiagram([dict(section=1,x_m=0,value_knm=10),dict(section=2,x_m=2,value_knm=-20)],dict(discontinuities_m=[1]))
+        self.assertEqual(d.moment_at_x(.5)['status'],'discontinuity_requires_one_sided_values')
+        self.assertIsNone(d.moment_at_x(.5)['value_knm']);self.assertFalse(d.extrema(0,2)['complete'])
+        self.assertFalse(d.find_crossings(0)['crossings'])
+        self.assertTrue(d.find_crossings(0)['unresolved_segments'])
     def test_increasing(self): self.assertEqual(diagram([2,6]).moment_at_x(.25)['value_knm'],3)
     def test_decreasing(self): self.assertEqual(diagram([6,2]).moment_at_x(.25)['value_knm'],5)
     def test_sign_preserved(self): self.assertEqual(diagram([3,-26]).moment_at_x(.5)['value_knm'],-11.5)

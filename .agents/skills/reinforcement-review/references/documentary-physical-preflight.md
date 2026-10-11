@@ -11,3 +11,5 @@ Aplicar o [contrato da Etapa 1](../../../../tools/beam_model/STAGE1_CONTRACT.md)
 V623 do Silva Jardim: N2, 4Ø16 C464, consta na tabela/corte; o usuário confirmou truncamento da elevação na plotagem. Registrar falha de integridade e posição longitudinal não verificável. Nunca converter isso em ausência da armadura positiva.
 
 Auditoria e regressões: `analises/etapa1_leitura_geometria/`. Não editar pranchas ou gerar propostas de melhoria quando o escopo solicitado for somente esta etapa.
+
+Para pavimentos completos, aplicar obrigatoriamente [Etapa 1.1](floor-operational-review.md), com forma, detalhamento, TQS e cabimento antes da resistência. Scripts históricos sem guarda não substituem a entrada protegida.

@@ -1,0 +1,51 @@
+{
+  "as_total_cm2": 1.5707963267948966,
+  "as_por_camada_cm2": [
+    1.5707963267948966
+  ],
+  "d_por_camada_cm": [
+    33.5
+  ],
+  "d_equivalente_cm": 33.5,
+  "linha_neutra_cm": 2.5108636937258573,
+  "x_sobre_d": 0.07495115503659275,
+  "limite_x_sobre_d": 0.45,
+  "ductilidade_atendida": true,
+  "mrd_kncm": 2219.306728728441,
+  "mk_equivalente_kncm": 1585.2190919488867,
+  "hipoteses_validas": true,
+  "deformacoes_aco": [
+    0.01
+  ],
+  "camadas_escoadas": [
+    true
+  ],
+  "as_min_cm2": 0.9272199999999999,
+  "armadura_minima_atendida": true,
+  "parametros": {
+    "modelo": "bloco_retangular_camadas_escoadas_v1",
+    "unidade_momento": "kN.cm",
+    "unidade_tensao": "MPa",
+    "gamma_c": 1.4,
+    "gamma_s": 1.15,
+    "gamma_f": 1.4,
+    "fck": 40,
+    "fyk": 500,
+    "es": 210000.0,
+    "fcd": 28.571428571428573,
+    "fyd": 434.7826086956522,
+    "alfa_c": 0.85,
+    "lambda": 0.8,
+    "ecu": 0.0035,
+    "eyu": 0.01,
+    "eyd": 0.002070393374741201,
+    "eps_c_adotada": 0.0008102399721342027,
+    "bw_cm": 14,
+    "h_cm": 37,
+    "cobrimento_cm": 2.5,
+    "diametro_estribo_mm": 5
+  },
+  "avisos": [
+    "Alturas úteis omitidas calculadas pelo critério da planilha VIGAS!K5:K7."
+  ]
+}

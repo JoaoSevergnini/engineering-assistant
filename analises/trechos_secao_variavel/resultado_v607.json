@@ -1,0 +1,2454 @@
+{
+  "traceability": {
+    "inputs": "entrada_v611.json / entrada_sintetico_*.json / ../verificacao_flexao_V607/entrada.json",
+    "note": "Árvores documentais repetidas omitidas nesta exportação; entradas preservam fontes, fatos e séries integrais."
+  },
+  "result": {
+    "schema_version": "1.1",
+    "floor": "TIPO-verificacao-local-V607",
+    "stages": [
+      "DOCUMENTARY_EXTRACTION",
+      "RECONCILIATION",
+      "FORM_PHYSICAL_MODEL",
+      "COMMON_AXIS_REGISTRATION",
+      "LAYER_INTERPRETATION",
+      "INPUT_PREFLIGHT",
+      "EXISTING_CHECKERS",
+      "DIAGNOSTIC_CONSOLIDATION"
+    ],
+    "documents": {
+      "form": {
+        "available": true,
+        "mode": "RAW_SOURCE",
+        "path": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+        "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+        "observations": [],
+        "coverage": []
+      },
+      "detailing": {
+        "available": true,
+        "mode": "PRESERVED_INPUT_FILE",
+        "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\drawing_inventory.json",
+        "sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0",
+        "observations": [],
+        "coverage": []
+      },
+      "tqs": {
+        "available": true,
+        "mode": "PRESERVED_INPUT_FILE",
+        "path": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_tqs_raw.json",
+        "sha256": "4e0b60899bada7a8ce7de5a99e56dac39fb1aad8b46d1d80d0959e949a05059d",
+        "observations": [],
+        "coverage": []
+      }
+    },
+    "beams": [
+      {
+        "beam_id": "V607",
+        "stages": [
+          "DOCUMENTARY_EXTRACTION",
+          "RECONCILIATION",
+          "FORM_PHYSICAL_MODEL",
+          "COMMON_AXIS_REGISTRATION",
+          "LAYER_INTERPRETATION",
+          "INPUT_PREFLIGHT",
+          "EXISTING_CHECKERS",
+          "DIAGNOSTIC_CONSOLIDATION"
+        ],
+        "section_checks": null,
+        "regional_method_scope": [
+          {
+            "segment_id": "V607-vao-livre",
+            "interval_m": [
+              0,
+              2.04
+            ],
+            "implementation": "EXISTING_CONSTANT_SECTION_METHOD",
+            "structural_verdict": null
+          }
+        ],
+        "documentary_review": {
+          "suspended": false,
+          "affected_marks": [],
+          "required_action": null,
+          "evidence": []
+        },
+        "registration_pending": [],
+        "boundary_pending": [],
+        "controls": [
+          {
+            "job_id": "V607-flexao-positiva-vao-livre",
+            "control": "positive_flexure",
+            "layer_fit": {
+              "fits": true,
+              "checks": [
+                {
+                  "face": "lower",
+                  "cabimento_transversal": true,
+                  "layers": [
+                    {
+                      "layer": 1,
+                      "diameters_mm": [
+                        10,
+                        10
+                      ],
+                      "available_width_cm": 8.0,
+                      "required_width_cm": 4.0,
+                      "minimum_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "adopted_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "clear_spacing_if_uniform_cm": 6.0,
+                      "minimum_per_bar_cm": [
+                        2.0,
+                        2.0
+                      ],
+                      "maximum_uniform_bar_count": 3,
+                      "fits": true
+                    }
+                  ],
+                  "rule": "engineer_confirmed_positive_bar_clear_spacing_v1",
+                  "diagnostics": []
+                }
+              ],
+              "diagnostics": [],
+              "resistant_methods_modified": false
+            },
+            "status": "PASS",
+            "execution_state": "EXECUTED_COMPLETE",
+            "conditional": false,
+            "input_validation": {
+              "region_id": "V607-flexao-positiva-vao-livre",
+              "interval_m": [
+                0,
+                2.04
+              ],
+              "control": "positive_flexure",
+              "readiness": "RUNNABLE",
+              "pending": [],
+              "assumptions": [],
+              "evidence": {
+                "geometry.section_shape": {
+                  "value": "RECTANGULAR",
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "geometry.width_cm": {
+                  "value": 14,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.height_cm": {
+                  "value": 37,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.cover_cm": {
+                  "value": 2.5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.stirrup_diameter_mm": {
+                  "value": 5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "materials": {
+                  "value": {
+                    "fck_mpa": 40.0,
+                    "fyk_mpa": 500.0,
+                    "gamma_f": 1.4,
+                    "gamma_c": 1.4,
+                    "gamma_s": 1.15,
+                    "horizontal": true,
+                    "sliding_formwork": false,
+                    "al_scope_confirmed": true,
+                    "longitudinal_provenance": [
+                      {
+                        "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                        "page": 1,
+                        "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                        "bbox": [
+                          3020,
+                          510,
+                          3320,
+                          920
+                        ],
+                        "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                      }
+                    ]
+                  },
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "moment_envelope": {
+                  "value": {
+                    "quantity": "bending_moment",
+                    "envelope": "max",
+                    "stage": "model_input",
+                    "unit": "kN.m",
+                    "sections": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "positions": [
+                      -0.095,
+                      0.09083333333333332,
+                      0.2766666666666666,
+                      0.4625,
+                      0.6483333333333333,
+                      0.8341666666666667,
+                      1.02,
+                      1.2058333333333333,
+                      1.3916666666666666,
+                      1.5775000000000001,
+                      1.7633333333333334,
+                      1.949166666666667,
+                      2.135
+                    ],
+                    "values": [
+                      0.34323275,
+                      1.6475172,
+                      2.745862,
+                      3.63826715,
+                      4.2756994,
+                      4.6483521,
+                      4.75622525,
+                      4.59931885,
+                      4.18743955,
+                      3.52058735,
+                      2.57914895,
+                      1.38273765,
+                      -0.0784532
+                    ],
+                    "sources": [
+                      "s430#/normalizacao"
+                    ],
+                    "local_positions": [
+                      0.0,
+                      0.18583333333333332,
+                      0.37166666666666665,
+                      0.5575,
+                      0.7433333333333333,
+                      0.9291666666666667,
+                      1.115,
+                      1.3008333333333333,
+                      1.4866666666666666,
+                      1.6725,
+                      1.8583333333333334,
+                      2.044166666666667,
+                      2.23
+                    ]
+                  },
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "force_position_mapping": {
+                  "value": true,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "layer_order": {
+                  "value": "from_tension_face",
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "layer_fit": {
+                  "value": true,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.diameter_mm": {
+                  "value": 10,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.x_end_m": {
+                  "value": 2.04,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "physical_inventory_complete": {
+                  "value": true,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                }
+              },
+              "limitations": [],
+              "purpose": "RESISTANT_CONTROL",
+              "scope": {
+                "force_policy": "TQS_ENVELOPES",
+                "concomitant_combinations_required": false,
+                "mandatory_curved_path": false,
+                "mandatory_pin_check": false,
+                "mandatory_column_reinforcement_interference": false
+              }
+            },
+            "result": {
+              "flexure_sign": "POSITIVE",
+              "regions": [
+                {
+                  "geometry": {
+                    "kind": "interval",
+                    "x_start_m": 0.0,
+                    "x_end_m": 2.04,
+                    "include_start": true,
+                    "include_end": true,
+                    "geometric_reinforcement": {
+                      "marks": [
+                        "N1@V607-N1-clearspan"
+                      ],
+                      "layers": [
+                        {
+                          "layer": 1,
+                          "components": [
+                            {
+                              "mark": "N1@V607-N1-clearspan",
+                              "count": 2,
+                              "diameter_mm": 10,
+                              "source": [
+                                {
+                                  "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                                  "page": 1,
+                                  "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                                  "bbox": [
+                                    3020,
+                                    510,
+                                    3320,
+                                    920
+                                  ],
+                                  "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                                }
+                              ]
+                            }
+                          ],
+                          "numero_barras": 2,
+                          "diametro_mm": 10,
+                          "d_cm": null
+                        }
+                      ],
+                      "status": "resolved",
+                      "issues": [],
+                      "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+                    },
+                    "transverse_geometry": null,
+                    "transverse_status": "unresolved",
+                    "region_id": "R1"
+                  },
+                  "configuration": {
+                    "id": "R1",
+                    "layers": [
+                      {
+                        "count": 2,
+                        "diameter_mm": 10,
+                        "d_cm": 33.5,
+                        "layer": 1
+                      }
+                    ]
+                  },
+                  "demand_points": [
+                    {
+                      "x_m": 0.0,
+                      "x_decimal": "0.0",
+                      "value_knm": 1.0099969979820629,
+                      "value_decimal": "1.0099969979820629",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": null,
+                      "segment_ids": [
+                        "SEG1"
+                      ]
+                    },
+                    {
+                      "x_m": 0.09083333333333332,
+                      "x_decimal": "0.09083333333333332",
+                      "value_knm": 1.6475172,
+                      "value_decimal": "1.6475172",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 2,
+                      "segment_ids": [
+                        "SEG1",
+                        "SEG2"
+                      ]
+                    },
+                    {
+                      "x_m": 0.2766666666666666,
+                      "x_decimal": "0.2766666666666666",
+                      "value_knm": 2.745862,
+                      "value_decimal": "2.745862",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 3,
+                      "segment_ids": [
+                        "SEG2",
+                        "SEG3"
+                      ]
+                    },
+                    {
+                      "x_m": 0.4625,
+                      "x_decimal": "0.4625",
+                      "value_knm": 3.63826715,
+                      "value_decimal": "3.63826715",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 4,
+                      "segment_ids": [
+                        "SEG3",
+                        "SEG4"
+                      ]
+                    },
+                    {
+                      "x_m": 0.6483333333333333,
+                      "x_decimal": "0.6483333333333333",
+                      "value_knm": 4.2756994,
+                      "value_decimal": "4.2756994",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 5,
+                      "segment_ids": [
+                        "SEG4",
+                        "SEG5"
+                      ]
+                    },
+                    {
+                      "x_m": 0.8341666666666667,
+                      "x_decimal": "0.8341666666666667",
+                      "value_knm": 4.6483521,
+                      "value_decimal": "4.6483521",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 6,
+                      "segment_ids": [
+                        "SEG5",
+                        "SEG6"
+                      ]
+                    },
+                    {
+                      "x_m": 1.02,
+                      "x_decimal": "1.02",
+                      "value_knm": 4.75622525,
+                      "value_decimal": "4.75622525",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 7,
+                      "segment_ids": [
+                        "SEG6",
+                        "SEG7"
+                      ]
+                    },
+                    {
+                      "x_m": 1.2058333333333333,
+                      "x_decimal": "1.2058333333333333",
+                      "value_knm": 4.59931885,
+                      "value_decimal": "4.59931885",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 8,
+                      "segment_ids": [
+                        "SEG7",
+                        "SEG8"
+                      ]
+                    },
+                    {
+                      "x_m": 1.3916666666666666,
+                      "x_decimal": "1.3916666666666666",
+                      "value_knm": 4.18743955,
+                      "value_decimal": "4.18743955",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 9,
+                      "segment_ids": [
+                        "SEG8",
+                        "SEG9"
+                      ]
+                    },
+                    {
+                      "x_m": 1.5775000000000001,
+                      "x_decimal": "1.5775000000000001",
+                      "value_knm": 3.52058735,
+                      "value_decimal": "3.52058735",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 10,
+                      "segment_ids": [
+                        "SEG9",
+                        "SEG10"
+                      ]
+                    },
+                    {
+                      "x_m": 1.7633333333333334,
+                      "x_decimal": "1.7633333333333334",
+                      "value_knm": 2.57914895,
+                      "value_decimal": "2.57914895",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 11,
+                      "segment_ids": [
+                        "SEG10",
+                        "SEG11"
+                      ]
+                    },
+                    {
+                      "x_m": 1.949166666666667,
+                      "x_decimal": "1.949166666666667",
+                      "value_knm": 1.38273765,
+                      "value_decimal": "1.38273765",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 12,
+                      "segment_ids": [
+                        "SEG11",
+                        "SEG12"
+                      ]
+                    },
+                    {
+                      "x_m": 2.04,
+                      "x_decimal": "2.04",
+                      "value_knm": 0.6685232883408085,
+                      "value_decimal": "0.6685232883408085",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": null,
+                      "segment_ids": [
+                        "SEG12"
+                      ]
+                    }
+                  ],
+                  "governing_demand": {
+                    "x_m": 1.02,
+                    "x_decimal": "1.02",
+                    "value_knm": 4.75622525,
+                    "value_decimal": "4.75622525",
+                    "rule": {
+                      "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                      "author": "João Severgnini",
+                      "date": "2026-10-04",
+                      "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                      "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                      "decimal_precision": 50
+                    },
+                    "status": "resolved",
+                    "source_type": "tqs_section",
+                    "section": 7,
+                    "segment_ids": [
+                      "SEG6",
+                      "SEG7"
+                    ]
+                  },
+                  "concretopy": {
+                    "as_total_cm2": 1.5707963267948966,
+                    "as_por_camada_cm2": [
+                      1.5707963267948966
+                    ],
+                    "d_por_camada_cm": [
+                      33.5
+                    ],
+                    "d_equivalente_cm": 33.5,
+                    "linha_neutra_cm": 2.5108636937258573,
+                    "x_sobre_d": 0.07495115503659275,
+                    "limite_x_sobre_d": 0.45,
+                    "ductilidade_atendida": true,
+                    "mrd_kncm": 2219.306728728441,
+                    "mk_equivalente_kncm": 1585.2190919488867,
+                    "hipoteses_validas": true,
+                    "deformacoes_aco": [
+                      0.01
+                    ],
+                    "camadas_escoadas": [
+                      true
+                    ],
+                    "as_min_cm2": null,
+                    "armadura_minima_atendida": null,
+                    "parametros": {
+                      "modelo": "bloco_retangular_camadas_escoadas_v1",
+                      "unidade_momento": "kN.cm",
+                      "unidade_tensao": "MPa",
+                      "gamma_c": 1.4,
+                      "gamma_s": 1.15,
+                      "gamma_f": 1.4,
+                      "fck": 40.0,
+                      "fyk": 500.0,
+                      "es": 210000.0,
+                      "fcd": 28.571428571428573,
+                      "fyd": 434.7826086956522,
+                      "alfa_c": 0.85,
+                      "lambda": 0.8,
+                      "ecu": 0.0035,
+                      "eyu": 0.01,
+                      "eyd": 0.002070393374741201,
+                      "eps_c_adotada": 0.0008102399721342027,
+                      "bw_cm": 14,
+                      "h_cm": 37,
+                      "cobrimento_cm": 2.5,
+                      "diametro_estribo_mm": 5
+                    },
+                    "avisos": []
+                  },
+                  "capacity_sufficient": true,
+                  "transverse_fit": {
+                    "cabimento_transversal": true,
+                    "layers": [
+                      {
+                        "layer": 1,
+                        "diameters_mm": [
+                          10,
+                          10
+                        ],
+                        "available_width_cm": 8.0,
+                        "required_width_cm": 4.0,
+                        "minimum_clear_gaps_cm": [
+                          2.0
+                        ],
+                        "adopted_clear_gaps_cm": [
+                          2.0
+                        ],
+                        "clear_spacing_if_uniform_cm": 6.0,
+                        "minimum_per_bar_cm": [
+                          2.0,
+                          2.0
+                        ],
+                        "maximum_uniform_bar_count": 3,
+                        "fits": true
+                      }
+                    ],
+                    "rule": "engineer_confirmed_positive_bar_clear_spacing_v1",
+                    "diagnostics": []
+                  },
+                  "flexure_sign": "POSITIVE",
+                  "tension_face": "BOTTOM",
+                  "compression_face": "TOP",
+                  "first_layer": {
+                    "count": 2,
+                    "diameter_mm": 10,
+                    "d_cm": 33.5,
+                    "layer": 1
+                  },
+                  "passes": true,
+                  "governing_moment_signed": 4.75622525,
+                  "governing_moment_abs": 4.75622525,
+                  "MRd_knm": 22.19306728728441,
+                  "Mk_equivalent_knm": 15.852190919488867,
+                  "utilization": 0.30003582937880474
+                }
+              ],
+              "passes": true,
+              "diagnostics": [],
+              "selected_solution": null,
+              "physical_reinforcement": [
+                {
+                  "mark": "N1@V607-N1-clearspan",
+                  "documentary_mark": "N1",
+                  "occurrence_id": "V607-N1-clearspan",
+                  "bars": 2,
+                  "diameter_mm": 10,
+                  "layers": [
+                    2
+                  ],
+                  "x_start_common": 0,
+                  "x_end_common": 2.04,
+                  "function": "positive",
+                  "face": "lower",
+                  "source": [
+                    {
+                      "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                      "page": 1,
+                      "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                      "bbox": [
+                        3020,
+                        510,
+                        3320,
+                        920
+                      ],
+                      "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                    }
+                  ],
+                  "physical_evidence": {
+                    "mark": "N1",
+                    "occurrence_id": "V607-N1-clearspan",
+                    "function": "positive",
+                    "face": "lower",
+                    "quantity": {
+                      "value": 2,
+                      "state": "DOCUMENTED_CONFIRMED",
+                      "unit": null,
+                      "criterion": null
+                    },
+                    "diameter_mm": {
+                      "value": 10,
+                      "state": "DOCUMENTED_CONFIRMED",
+                      "unit": "mm",
+                      "criterion": null
+                    },
+                    "layers": {
+                      "value": [
+                        2
+                      ],
+                      "state": "DOCUMENTED_CONFIRMED",
+                      "unit": null,
+                      "criterion": null
+                    },
+                    "x_start_m": {
+                      "value": 0,
+                      "state": "DOCUMENTED_CONFIRMED",
+                      "unit": "m",
+                      "criterion": null
+                    },
+                    "x_end_m": {
+                      "value": 2.04,
+                      "state": "DOCUMENTED_CONFIRMED",
+                      "unit": "m",
+                      "criterion": null
+                    },
+                    "continuity": {
+                      "value": null,
+                      "state": "MISSING",
+                      "unit": null,
+                      "criterion": null
+                    },
+                    "laps": [],
+                    "extensions": [],
+                    "termination": {},
+                    "layer_interpretation": {
+                      "priority": "NEAR_BAR_TEXT_THEN_SECTION",
+                      "observations": {
+                        "section": {
+                          "value": [
+                            2
+                          ],
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": null,
+                          "criterion": null
+                        }
+                      },
+                      "documental_proof": true,
+                      "convention": false
+                    }
+                  },
+                  "layer_provenance": {
+                    "rule": "engineer_confirmed_reinforcement_layer_face_order_v1",
+                    "basis": [
+                      {
+                        "value": [
+                          2
+                        ],
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      },
+                      {
+                        "value": [
+                          2
+                        ],
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    ],
+                    "position_api": {
+                      "interface": "concretopy.verificacoes.flexao.calcular_alturas_uteis_camadas",
+                      "signature": "(secao: 'SecaoRetangular | SecaoT', camadas: 'Sequence[CamadaArmaduraLongitudinal]') -> 'tuple[float, ...]'",
+                      "file": "C:\\Users\\João Severgnini\\Documents\\concretopy\\concretopy\\verificacoes\\flexao.py",
+                      "sha256": "d03a9cc1f513759ef489572e5d0b9709b63efcec6e31a1ff489f7d6ccb0f5cd8"
+                    },
+                    "documentary_geometry": "layer order only; centers are adopted Concretopy convention, not PDF dimensions"
+                  },
+                  "d_by_layer_cm": [
+                    33.5
+                  ],
+                  "d_cm": 33.5,
+                  "flexure_sign": "POSITIVE",
+                  "vertical_geometry": {
+                    "tension_face": "BOTTOM",
+                    "compression_face": "TOP",
+                    "d_measured_from": "compression_face"
+                  }
+                }
+              ],
+              "result": {
+                "compatibilidade_flexao_positiva": true,
+                "regions": [
+                  {
+                    "geometry": {
+                      "kind": "interval",
+                      "x_start_m": 0.0,
+                      "x_end_m": 2.04,
+                      "include_start": true,
+                      "include_end": true,
+                      "geometric_reinforcement": {
+                        "marks": [
+                          "N1@V607-N1-clearspan"
+                        ],
+                        "layers": [
+                          {
+                            "layer": 1,
+                            "components": [
+                              {
+                                "mark": "N1@V607-N1-clearspan",
+                                "count": 2,
+                                "diameter_mm": 10,
+                                "source": [
+                                  {
+                                    "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                                    "page": 1,
+                                    "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                                    "bbox": [
+                                      3020,
+                                      510,
+                                      3320,
+                                      920
+                                    ],
+                                    "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                                  }
+                                ]
+                              }
+                            ],
+                            "numero_barras": 2,
+                            "diametro_mm": 10,
+                            "d_cm": null
+                          }
+                        ],
+                        "status": "resolved",
+                        "issues": [],
+                        "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+                      },
+                      "transverse_geometry": null,
+                      "transverse_status": "unresolved",
+                      "region_id": "R1"
+                    },
+                    "configuration": {
+                      "id": "R1",
+                      "layers": [
+                        {
+                          "count": 2,
+                          "diameter_mm": 10,
+                          "d_cm": 33.5,
+                          "layer": 1
+                        }
+                      ]
+                    },
+                    "demand_points": [
+                      {
+                        "x_m": 0.0,
+                        "x_decimal": "0.0",
+                        "value_knm": 1.0099969979820629,
+                        "value_decimal": "1.0099969979820629",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": null,
+                        "segment_ids": [
+                          "SEG1"
+                        ]
+                      },
+                      {
+                        "x_m": 0.09083333333333332,
+                        "x_decimal": "0.09083333333333332",
+                        "value_knm": 1.6475172,
+                        "value_decimal": "1.6475172",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 2,
+                        "segment_ids": [
+                          "SEG1",
+                          "SEG2"
+                        ]
+                      },
+                      {
+                        "x_m": 0.2766666666666666,
+                        "x_decimal": "0.2766666666666666",
+                        "value_knm": 2.745862,
+                        "value_decimal": "2.745862",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 3,
+                        "segment_ids": [
+                          "SEG2",
+                          "SEG3"
+                        ]
+                      },
+                      {
+                        "x_m": 0.4625,
+                        "x_decimal": "0.4625",
+                        "value_knm": 3.63826715,
+                        "value_decimal": "3.63826715",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 4,
+                        "segment_ids": [
+                          "SEG3",
+                          "SEG4"
+                        ]
+                      },
+                      {
+                        "x_m": 0.6483333333333333,
+                        "x_decimal": "0.6483333333333333",
+                        "value_knm": 4.2756994,
+                        "value_decimal": "4.2756994",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 5,
+                        "segment_ids": [
+                          "SEG4",
+                          "SEG5"
+                        ]
+                      },
+                      {
+                        "x_m": 0.8341666666666667,
+                        "x_decimal": "0.8341666666666667",
+                        "value_knm": 4.6483521,
+                        "value_decimal": "4.6483521",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 6,
+                        "segment_ids": [
+                          "SEG5",
+                          "SEG6"
+                        ]
+                      },
+                      {
+                        "x_m": 1.02,
+                        "x_decimal": "1.02",
+                        "value_knm": 4.75622525,
+                        "value_decimal": "4.75622525",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 7,
+                        "segment_ids": [
+                          "SEG6",
+                          "SEG7"
+                        ]
+                      },
+                      {
+                        "x_m": 1.2058333333333333,
+                        "x_decimal": "1.2058333333333333",
+                        "value_knm": 4.59931885,
+                        "value_decimal": "4.59931885",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 8,
+                        "segment_ids": [
+                          "SEG7",
+                          "SEG8"
+                        ]
+                      },
+                      {
+                        "x_m": 1.3916666666666666,
+                        "x_decimal": "1.3916666666666666",
+                        "value_knm": 4.18743955,
+                        "value_decimal": "4.18743955",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 9,
+                        "segment_ids": [
+                          "SEG8",
+                          "SEG9"
+                        ]
+                      },
+                      {
+                        "x_m": 1.5775000000000001,
+                        "x_decimal": "1.5775000000000001",
+                        "value_knm": 3.52058735,
+                        "value_decimal": "3.52058735",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 10,
+                        "segment_ids": [
+                          "SEG9",
+                          "SEG10"
+                        ]
+                      },
+                      {
+                        "x_m": 1.7633333333333334,
+                        "x_decimal": "1.7633333333333334",
+                        "value_knm": 2.57914895,
+                        "value_decimal": "2.57914895",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 11,
+                        "segment_ids": [
+                          "SEG10",
+                          "SEG11"
+                        ]
+                      },
+                      {
+                        "x_m": 1.949166666666667,
+                        "x_decimal": "1.949166666666667",
+                        "value_knm": 1.38273765,
+                        "value_decimal": "1.38273765",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": 12,
+                        "segment_ids": [
+                          "SEG11",
+                          "SEG12"
+                        ]
+                      },
+                      {
+                        "x_m": 2.04,
+                        "x_decimal": "2.04",
+                        "value_knm": 0.6685232883408085,
+                        "value_decimal": "0.6685232883408085",
+                        "rule": {
+                          "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                          "author": "João Severgnini",
+                          "date": "2026-10-04",
+                          "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                          "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                          "decimal_precision": 50
+                        },
+                        "status": "resolved",
+                        "source_type": "tqs_section",
+                        "section": null,
+                        "segment_ids": [
+                          "SEG12"
+                        ]
+                      }
+                    ],
+                    "governing_demand": {
+                      "x_m": 1.02,
+                      "x_decimal": "1.02",
+                      "value_knm": 4.75622525,
+                      "value_decimal": "4.75622525",
+                      "rule": {
+                        "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                        "author": "João Severgnini",
+                        "date": "2026-10-04",
+                        "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                        "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                        "decimal_precision": 50
+                      },
+                      "status": "resolved",
+                      "source_type": "tqs_section",
+                      "section": 7,
+                      "segment_ids": [
+                        "SEG6",
+                        "SEG7"
+                      ]
+                    },
+                    "concretopy": {
+                      "as_total_cm2": 1.5707963267948966,
+                      "as_por_camada_cm2": [
+                        1.5707963267948966
+                      ],
+                      "d_por_camada_cm": [
+                        33.5
+                      ],
+                      "d_equivalente_cm": 33.5,
+                      "linha_neutra_cm": 2.5108636937258573,
+                      "x_sobre_d": 0.07495115503659275,
+                      "limite_x_sobre_d": 0.45,
+                      "ductilidade_atendida": true,
+                      "mrd_kncm": 2219.306728728441,
+                      "mk_equivalente_kncm": 1585.2190919488867,
+                      "hipoteses_validas": true,
+                      "deformacoes_aco": [
+                        0.01
+                      ],
+                      "camadas_escoadas": [
+                        true
+                      ],
+                      "as_min_cm2": null,
+                      "armadura_minima_atendida": null,
+                      "parametros": {
+                        "modelo": "bloco_retangular_camadas_escoadas_v1",
+                        "unidade_momento": "kN.cm",
+                        "unidade_tensao": "MPa",
+                        "gamma_c": 1.4,
+                        "gamma_s": 1.15,
+                        "gamma_f": 1.4,
+                        "fck": 40.0,
+                        "fyk": 500.0,
+                        "es": 210000.0,
+                        "fcd": 28.571428571428573,
+                        "fyd": 434.7826086956522,
+                        "alfa_c": 0.85,
+                        "lambda": 0.8,
+                        "ecu": 0.0035,
+                        "eyu": 0.01,
+                        "eyd": 0.002070393374741201,
+                        "eps_c_adotada": 0.0008102399721342027,
+                        "bw_cm": 14,
+                        "h_cm": 37,
+                        "cobrimento_cm": 2.5,
+                        "diametro_estribo_mm": 5
+                      },
+                      "avisos": []
+                    },
+                    "capacity_sufficient": true,
+                    "transverse_fit": {
+                      "cabimento_transversal": true,
+                      "layers": [
+                        {
+                          "layer": 1,
+                          "diameters_mm": [
+                            10,
+                            10
+                          ],
+                          "available_width_cm": 8.0,
+                          "required_width_cm": 4.0,
+                          "minimum_clear_gaps_cm": [
+                            2.0
+                          ],
+                          "adopted_clear_gaps_cm": [
+                            2.0
+                          ],
+                          "clear_spacing_if_uniform_cm": 6.0,
+                          "minimum_per_bar_cm": [
+                            2.0,
+                            2.0
+                          ],
+                          "maximum_uniform_bar_count": 3,
+                          "fits": true
+                        }
+                      ],
+                      "rule": "engineer_confirmed_positive_bar_clear_spacing_v1",
+                      "diagnostics": []
+                    },
+                    "flexure_sign": "POSITIVE",
+                    "tension_face": "BOTTOM",
+                    "compression_face": "TOP",
+                    "first_layer": {
+                      "count": 2,
+                      "diameter_mm": 10,
+                      "d_cm": 33.5,
+                      "layer": 1
+                    },
+                    "passes": true,
+                    "governing_moment_signed": 4.75622525,
+                    "governing_moment_abs": 4.75622525,
+                    "MRd_knm": 22.19306728728441,
+                    "Mk_equivalent_knm": 15.852190919488867,
+                    "utilization": 0.30003582937880474
+                  }
+                ],
+                "diagnostics": []
+              }
+            }
+          },
+          {
+            "job_id": "V607-negative_flexure-1-R1",
+            "control": "negative_flexure",
+            "layer_fit": {
+              "fits": true,
+              "checks": [
+                {
+                  "face": "upper",
+                  "cabimento_transversal": true,
+                  "layers": [
+                    {
+                      "layer": 1,
+                      "diameters_mm": [
+                        6.3,
+                        6.3
+                      ],
+                      "available_width_cm": 8.0,
+                      "required_width_cm": 3.26,
+                      "minimum_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "adopted_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "clear_spacing_if_uniform_cm": 6.74,
+                      "minimum_per_bar_cm": [
+                        2.0,
+                        2.0
+                      ],
+                      "maximum_uniform_bar_count": 3,
+                      "fits": true
+                    }
+                  ],
+                  "rule": "engineer_confirmed_positive_bar_clear_spacing_v1",
+                  "diagnostics": []
+                }
+              ],
+              "diagnostics": [],
+              "resistant_methods_modified": false
+            },
+            "status": "INCONCLUSIVE",
+            "execution_state": "NOT_EXECUTED",
+            "input_validation": {
+              "region_id": "V607-negative_flexure-1-R1",
+              "interval_m": [
+                0.0,
+                2.04
+              ],
+              "control": "negative_flexure",
+              "readiness": "PENDING",
+              "pending": [
+                "layer_order",
+                "materials",
+                "physical_inventory_complete",
+                "resistant_context_unavailable"
+              ],
+              "assumptions": [],
+              "evidence": {
+                "geometry.section_shape": {
+                  "value": "RECTANGULAR",
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "geometry.width_cm": {
+                  "value": 14,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.height_cm": {
+                  "value": 37,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.cover_cm": {
+                  "value": 2.5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.stirrup_diameter_mm": {
+                  "value": 5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "materials": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "moment_envelope": {
+                  "value": {
+                    "quantity": "bending_moment",
+                    "envelope": "min",
+                    "stage": "model_input",
+                    "unit": "kN.m",
+                    "sections": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "positions": [
+                      -0.095,
+                      0.09083333333333332,
+                      0.2766666666666666,
+                      0.4625,
+                      0.6483333333333333,
+                      0.8341666666666667,
+                      1.02,
+                      1.2058333333333333,
+                      1.3916666666666666,
+                      1.5775000000000001,
+                      1.7633333333333334,
+                      1.949166666666667,
+                      2.135
+                    ],
+                    "values": [
+                      0.14709975,
+                      1.3337044,
+                      2.24572285,
+                      2.9223817,
+                      3.38329425,
+                      3.6088472,
+                      3.61865385,
+                      3.38329425,
+                      2.77528195,
+                      1.9024901,
+                      0.7649187,
+                      -0.6276256,
+                      -2.28494945
+                    ],
+                    "sources": [
+                      "s428#/normalizacao"
+                    ],
+                    "local_positions": [
+                      0.0,
+                      0.18583333333333332,
+                      0.37166666666666665,
+                      0.5575,
+                      0.7433333333333333,
+                      0.9291666666666667,
+                      1.115,
+                      1.3008333333333333,
+                      1.4866666666666666,
+                      1.6725,
+                      1.8583333333333334,
+                      2.044166666666667,
+                      2.23
+                    ]
+                  },
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "force_position_mapping": {
+                  "value": true,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "layer_order": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "layer_fit": {
+                  "value": true,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.diameter_mm": {
+                  "value": 6.3,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.x_end_m": {
+                  "value": 2.04,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "physical_inventory_complete": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                }
+              },
+              "limitations": [],
+              "purpose": "RESISTANT_CONTROL",
+              "scope": {
+                "force_policy": "TQS_ENVELOPES",
+                "concomitant_combinations_required": false,
+                "mandatory_curved_path": false,
+                "mandatory_pin_check": false,
+                "mandatory_column_reinforcement_interference": false
+              }
+            },
+            "result": null
+          },
+          {
+            "job_id": "V607-anchorage-unplanned",
+            "control": "anchorage",
+            "layer_fit": null,
+            "status": "INCONCLUSIVE",
+            "execution_state": "NOT_EXECUTED",
+            "input_validation": {
+              "region_id": "V607-anchorage-unplanned",
+              "interval_m": [
+                0,
+                2.04
+              ],
+              "control": "anchorage",
+              "readiness": "PENDING",
+              "pending": [
+                "anchorage_demand",
+                "anchorage_scope",
+                "bar_termination",
+                "existing_checker_adapter_unavailable",
+                "materials",
+                "support_faces"
+              ],
+              "assumptions": [],
+              "evidence": {
+                "materials": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "anchorage_demand": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "support_faces": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar_termination": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "anchorage_scope": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                }
+              },
+              "limitations": [],
+              "purpose": "RESISTANT_CONTROL",
+              "scope": {
+                "force_policy": "TQS_ENVELOPES",
+                "concomitant_combinations_required": false,
+                "mandatory_curved_path": false,
+                "mandatory_pin_check": false,
+                "mandatory_column_reinforcement_interference": false
+              }
+            },
+            "result": null
+          },
+          {
+            "job_id": "V607-shear-unplanned",
+            "control": "shear",
+            "layer_fit": null,
+            "status": "INCONCLUSIVE",
+            "execution_state": "NOT_EXECUTED",
+            "input_validation": {
+              "region_id": "V607-shear-unplanned",
+              "interval_m": [
+                0,
+                2.04
+              ],
+              "control": "shear",
+              "readiness": "PENDING",
+              "pending": [
+                "effective_depth",
+                "existing_checker_adapter_unavailable",
+                "force_position_mapping",
+                "materials",
+                "shear_envelope",
+                "stirrup_regions"
+              ],
+              "assumptions": [],
+              "evidence": {
+                "geometry.section_shape": {
+                  "value": "RECTANGULAR",
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "geometry.width_cm": {
+                  "value": 14,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.height_cm": {
+                  "value": 37,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.cover_cm": {
+                  "value": 2.5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.stirrup_diameter_mm": {
+                  "value": 5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "materials": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "shear_envelope": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "force_position_mapping": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "stirrup_regions": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "effective_depth": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                }
+              },
+              "limitations": [],
+              "purpose": "RESISTANT_CONTROL",
+              "scope": {
+                "force_policy": "TQS_ENVELOPES",
+                "concomitant_combinations_required": false,
+                "mandatory_curved_path": false,
+                "mandatory_pin_check": false,
+                "mandatory_column_reinforcement_interference": false
+              }
+            },
+            "result": null
+          },
+          {
+            "job_id": "V607-scaling-unplanned",
+            "control": "scaling",
+            "layer_fit": {
+              "fits": true,
+              "checks": [
+                {
+                  "face": "lower",
+                  "cabimento_transversal": true,
+                  "layers": [
+                    {
+                      "layer": 1,
+                      "diameters_mm": [
+                        10,
+                        10
+                      ],
+                      "available_width_cm": 8.0,
+                      "required_width_cm": 4.0,
+                      "minimum_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "adopted_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "clear_spacing_if_uniform_cm": 6.0,
+                      "minimum_per_bar_cm": [
+                        2.0,
+                        2.0
+                      ],
+                      "maximum_uniform_bar_count": 3,
+                      "fits": true
+                    }
+                  ],
+                  "rule": "engineer_confirmed_positive_bar_clear_spacing_v1",
+                  "diagnostics": []
+                },
+                {
+                  "face": "upper",
+                  "cabimento_transversal": true,
+                  "layers": [
+                    {
+                      "layer": 1,
+                      "diameters_mm": [
+                        6.3,
+                        6.3
+                      ],
+                      "available_width_cm": 8.0,
+                      "required_width_cm": 3.26,
+                      "minimum_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "adopted_clear_gaps_cm": [
+                        2.0
+                      ],
+                      "clear_spacing_if_uniform_cm": 6.74,
+                      "minimum_per_bar_cm": [
+                        2.0,
+                        2.0
+                      ],
+                      "maximum_uniform_bar_count": 3,
+                      "fits": true
+                    }
+                  ],
+                  "rule": "engineer_confirmed_positive_bar_clear_spacing_v1",
+                  "diagnostics": []
+                }
+              ],
+              "diagnostics": [],
+              "resistant_methods_modified": false
+            },
+            "status": "INCONCLUSIVE",
+            "execution_state": "NOT_EXECUTED",
+            "input_validation": {
+              "region_id": "V607-scaling-unplanned",
+              "interval_m": [
+                0,
+                2.04
+              ],
+              "control": "scaling",
+              "readiness": "PENDING",
+              "pending": [
+                "bar_cut",
+                "existing_checker_adapter_unavailable",
+                "force_position_mapping",
+                "layer_order",
+                "materials",
+                "moment_envelope",
+                "physical_inventory_complete",
+                "scaling_scope",
+                "shear_envelope"
+              ],
+              "assumptions": [],
+              "evidence": {
+                "geometry.section_shape": {
+                  "value": "RECTANGULAR",
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "geometry.width_cm": {
+                  "value": 14,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.height_cm": {
+                  "value": 37,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.cover_cm": {
+                  "value": 2.5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "criterion": null
+                },
+                "geometry.stirrup_diameter_mm": {
+                  "value": 5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "materials": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "moment_envelope": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "shear_envelope": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "force_position_mapping": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar_cut": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "scaling_scope": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "layer_order": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "layer_fit": {
+                  "value": true,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.diameter_mm": {
+                  "value": 10,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "bar.V607-N1-clearspan.x_end_m": {
+                  "value": 2.04,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.diameter_mm": {
+                  "value": 6.3,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "bar.V607-N2-clearspan.x_end_m": {
+                  "value": 2.04,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "physical_inventory_complete": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                }
+              },
+              "limitations": [],
+              "purpose": "RESISTANT_CONTROL",
+              "scope": {
+                "force_policy": "TQS_ENVELOPES",
+                "concomitant_combinations_required": false,
+                "mandatory_curved_path": false,
+                "mandatory_pin_check": false,
+                "mandatory_column_reinforcement_interference": false
+              }
+            },
+            "result": null
+          },
+          {
+            "job_id": "V607-suspension-unplanned",
+            "control": "suspension",
+            "layer_fit": null,
+            "status": "INCONCLUSIVE",
+            "execution_state": "NOT_EXECUTED",
+            "input_validation": {
+              "region_id": "V607-suspension-unplanned",
+              "interval_m": [
+                0,
+                2.04
+              ],
+              "control": "suspension",
+              "readiness": "PENDING",
+              "pending": [
+                "existing_checker_adapter_unavailable",
+                "indirect_support",
+                "materials",
+                "supported_reaction",
+                "suspension_bars"
+              ],
+              "assumptions": [],
+              "evidence": {
+                "materials": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "supported_reaction": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "indirect_support": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "suspension_bars": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                }
+              },
+              "limitations": [],
+              "purpose": "RESISTANT_CONTROL",
+              "scope": {
+                "force_policy": "TQS_ENVELOPES",
+                "concomitant_combinations_required": false,
+                "mandatory_curved_path": false,
+                "mandatory_pin_check": false,
+                "mandatory_column_reinforcement_interference": false
+              }
+            },
+            "result": null
+          }
+        ],
+        "longitudinal_inventory": [
+          {
+            "occurrence_id": "V607-N1-clearspan",
+            "documentary_mark": "N1",
+            "x_start_m": {
+              "value": 0,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": "m",
+              "criterion": null
+            },
+            "x_end_m": {
+              "value": 2.04,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": "m",
+              "criterion": null
+            },
+            "continuity": {
+              "value": null,
+              "state": "MISSING",
+              "unit": null,
+              "criterion": null
+            },
+            "extensions": [],
+            "laps": [],
+            "termination": {},
+            "longitudinal_position_proved": true,
+            "normative_verdict": null
+          },
+          {
+            "occurrence_id": "V607-N2-clearspan",
+            "documentary_mark": "N2",
+            "x_start_m": {
+              "value": 0,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": "m",
+              "criterion": null
+            },
+            "x_end_m": {
+              "value": 2.04,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": "m",
+              "criterion": null
+            },
+            "continuity": {
+              "value": null,
+              "state": "MISSING",
+              "unit": null,
+              "criterion": null
+            },
+            "extensions": [],
+            "laps": [],
+            "termination": {},
+            "longitudinal_position_proved": true,
+            "normative_verdict": null
+          }
+        ],
+        "positive_batches": {
+          "regions": [
+            {
+              "kind": "interval",
+              "x_start_m": 0.0,
+              "x_end_m": 2.04,
+              "include_start": true,
+              "include_end": true,
+              "geometric_reinforcement": {
+                "marks": [
+                  "N1@V607-N1-clearspan"
+                ],
+                "layers": [
+                  {
+                    "layer": 1,
+                    "components": [
+                      {
+                        "mark": "N1@V607-N1-clearspan",
+                        "count": 2,
+                        "diameter_mm": 10,
+                        "source": [
+                          {
+                            "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                            "page": 1,
+                            "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                            "bbox": [
+                              3020,
+                              510,
+                              3320,
+                              920
+                            ],
+                            "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                          }
+                        ]
+                      }
+                    ],
+                    "numero_barras": 2,
+                    "diametro_mm": 10,
+                    "d_cm": null
+                  }
+                ],
+                "status": "resolved",
+                "issues": [],
+                "layer_identity_basis": "Índice explícito do vetor beam_model, mesma face lower; não inferido por bitola."
+              },
+              "transverse_geometry": {
+                "bw_cm": 14,
+                "h_cm": 37,
+                "cover_cm": 2.5,
+                "stirrup_diameter_mm": 5
+              },
+              "transverse_status": "resolved",
+              "region_id": "R1"
+            }
+          ],
+          "pending_geometry": [],
+          "bars": [
+            {
+              "mark": "N1@V607-N1-clearspan",
+              "documentary_mark": "N1",
+              "occurrence_id": "V607-N1-clearspan",
+              "bars": 2,
+              "diameter_mm": 10,
+              "layers": [
+                2
+              ],
+              "x_start_common": 0,
+              "x_end_common": 2.04,
+              "function": "positive",
+              "face": "lower",
+              "source": [
+                {
+                  "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                  "page": 1,
+                  "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                  "bbox": [
+                    3020,
+                    510,
+                    3320,
+                    920
+                  ],
+                  "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                }
+              ],
+              "physical_evidence": {
+                "mark": "N1",
+                "occurrence_id": "V607-N1-clearspan",
+                "function": "positive",
+                "face": "lower",
+                "quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "diameter_mm": {
+                  "value": 10,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "x_end_m": {
+                  "value": 2.04,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "continuity": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "laps": [],
+                "extensions": [],
+                "termination": {},
+                "layer_interpretation": {
+                  "priority": "NEAR_BAR_TEXT_THEN_SECTION",
+                  "observations": {
+                    "section": {
+                      "value": [
+                        2
+                      ],
+                      "state": "DOCUMENTED_CONFIRMED",
+                      "unit": null,
+                      "criterion": null
+                    }
+                  },
+                  "documental_proof": true,
+                  "convention": false
+                }
+              }
+            }
+          ],
+          "correction_generation_enabled": false
+        },
+        "negative_batches": {
+          "regions": [
+            {
+              "kind": "interval",
+              "x_start_m": 0.0,
+              "x_end_m": 2.04,
+              "include_start": true,
+              "include_end": true,
+              "geometric_reinforcement": {
+                "marks": [
+                  "N2@V607-N2-clearspan"
+                ],
+                "layers": [
+                  {
+                    "layer": 1,
+                    "components": [
+                      {
+                        "mark": "N2@V607-N2-clearspan",
+                        "count": 2,
+                        "diameter_mm": 6.3,
+                        "source": [
+                          {
+                            "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                            "page": 1,
+                            "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                            "bbox": [
+                              3020,
+                              510,
+                              3320,
+                              920
+                            ],
+                            "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                          }
+                        ]
+                      }
+                    ],
+                    "numero_barras": 2,
+                    "diametro_mm": 6.3,
+                    "d_cm": null
+                  }
+                ],
+                "status": "resolved",
+                "issues": [],
+                "layer_identity_basis": "Physical layer order from upper tension face; geometry/provenance required."
+              },
+              "transverse_geometry": {
+                "bw_cm": 14,
+                "h_cm": 37,
+                "cover_cm": 2.5,
+                "stirrup_diameter_mm": 5
+              },
+              "transverse_status": "resolved",
+              "region_id": "R1"
+            }
+          ],
+          "pending_geometry": [],
+          "bars": [
+            {
+              "mark": "N2@V607-N2-clearspan",
+              "documentary_mark": "N2",
+              "occurrence_id": "V607-N2-clearspan",
+              "bars": 2,
+              "diameter_mm": 6.3,
+              "layers": [
+                2
+              ],
+              "x_start_common": 0,
+              "x_end_common": 2.04,
+              "function": "negative",
+              "face": "upper",
+              "source": [
+                {
+                  "document": "051-SJ-EST-LO-06301-VIG-TIP-R00.PDF",
+                  "page": 1,
+                  "preserved_image": "C:\\Users\\João Severgnini\\Documents\\engineering-assistant\\analises\\silva_jardim_tipo\\V607_detail.png",
+                  "bbox": [
+                    3020,
+                    510,
+                    3320,
+                    920
+                  ],
+                  "evidence": "N1 2 diam10 C274, horizontal234 + ganchos20+20; N2 2 diam6.3 C264 horizontal234 +15+15; corte A dois pontos em cada face; N3 diam5 C97, dimensoes9x32"
+                }
+              ],
+              "physical_evidence": {
+                "mark": "N2",
+                "occurrence_id": "V607-N2-clearspan",
+                "function": "negative",
+                "face": "upper",
+                "quantity": {
+                  "value": 2,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "diameter_mm": {
+                  "value": 6.3,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "criterion": null
+                },
+                "layers": {
+                  "value": [
+                    2
+                  ],
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "criterion": null
+                },
+                "x_start_m": {
+                  "value": 0,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "x_end_m": {
+                  "value": 2.04,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "criterion": null
+                },
+                "continuity": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": null,
+                  "criterion": null
+                },
+                "laps": [],
+                "extensions": [],
+                "termination": {},
+                "layer_interpretation": {
+                  "priority": "NEAR_BAR_TEXT_THEN_SECTION",
+                  "observations": {
+                    "section": {
+                      "value": [
+                        2
+                      ],
+                      "state": "DOCUMENTED_CONFIRMED",
+                      "unit": null,
+                      "criterion": null
+                    }
+                  },
+                  "documental_proof": true,
+                  "convention": false
+                }
+              }
+            }
+          ],
+          "correction_generation_enabled": false
+        }
+      }
+    ],
+    "overall_status": "INCONCLUSIVE",
+    "beam_inventory_complete": false,
+    "floor_approval": null,
+    "correction_generation_enabled": false,
+    "pdf_modification_enabled": false
+  }
+}

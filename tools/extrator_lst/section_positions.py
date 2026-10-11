@@ -26,7 +26,7 @@ def metres(field):
     return value
 
 
-def fill_positions(model, raw):
+def fill_positions(model, raw, *, cantilever_contexts=None):
     """Retorna copia de ensaio com somente series VGESFS e positions em m.
 
     Origem local: eixo fisico esquerdo de cada vao. Sem offset global de viga.
@@ -50,7 +50,25 @@ def fill_positions(model, raw):
     for index, span in enumerate(out['beam']['spans']):
         report_span = span['report_span_ids'].get('VGESFS.LST')
         names = span.get('support_ids')
-        if report_span is None or not names or len(names) != 2:
+        cantilever = span.get('documentary_span_kind') == 'CANTILEVER' or any(str(t).endswith('B') for t in span.get('original_span_tokens', []))
+        context = (cantilever_contexts or {}).get(str(span['id']), {}) if cantilever else {}
+        if cantilever:
+            # Apply only to this identified span's series, never file endpoints.
+            import sys
+            sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'beam_model'))
+            from input_evidence import validate_fact, PROVED
+            orientation = validate_fact(context.get('orientation', dict(value=None,state='MISSING',unit=None,provenance=[],criterion=None)))
+            if orientation['state'] not in PROVED or orientation['value'] not in ('LEFT','RIGHT'):
+                raise ValueError('cantilever_orientation_unproved: span=' + str(span['id']))
+            bounds = context.get('physical_bounds', {})
+            if any(k not in bounds for k in ('x_start_m','x_end_m')):
+                raise ValueError('cantilever_form_bounds_unproved: span=' + str(span['id']))
+            checked = [validate_fact(bounds[k], 'm') for k in ('x_start_m','x_end_m')]
+            if any(v['state'] != 'DOCUMENTED_CONFIRMED' for v in checked) or checked[1]['value'] <= checked[0]['value']:
+                raise ValueError('cantilever_form_bounds_unproved: span=' + str(span['id']))
+            if not any(any(out['sources'][ref.split('#')[0]]['file'].upper() == 'VGESFS.LST' for ref in s['sources']) for s in span['internal_forces']):
+                raise ValueError('cantilever_force_series_unavailable: span=' + str(span['id']) + '; no corresponding VGESFS series; adjacent span not substituted')
+        if report_span is None or (not cantilever and (not names or len(names) != 2)):
             raise ValueError('Vao sem numeracao VGESFS ou orientacao dos apoios.')
         lengths, offsets = [], []
         for sid, source, record in records:
@@ -58,10 +76,15 @@ def fill_positions(model, raw):
             fields = data.get('campos') or {}
             if source['file'].upper() == 'VGESFS.LST' and data.get('tipo') == 'geometria_tabular' and fields['vao']['valor'] == report_span:
                 lengths.append((fields['comprimento'], sid+'#/normalizacao/campos/comprimento'))
-            if source['file'].upper() == 'RELDTFPS.LST' and data.get('tipo') == 'apoio' and fields.get('nome') == names[0]:
+            if not cantilever and source['file'].upper() == 'RELDTFPS.LST' and data.get('tipo') == 'apoio' and fields.get('nome') == names[0]:
                 offsets.append((fields['excentricidade'], sid+'#/normalizacao/campos/excentricidade'))
         length, length_refs = unique(lengths, 'comprimento VGESFS')
-        offset, offset_refs = unique(offsets, 'DEPEV esquerdo RELDTFPS')
+        if cantilever:
+            offset, offset_refs = 0, []
+            if not math.isclose(length, checked[1]['value']-checked[0]['value'], rel_tol=0, abs_tol=1e-8):
+                raise ValueError('cantilever_length_form_conflict: span=' + str(span['id']))
+        else:
+            offset, offset_refs = unique(offsets, 'DEPEV esquerdo RELDTFPS')
         if length <= 0 or offset < 0:
             raise ValueError('Comprimento nao positivo ou DEPEV negativo fora do padrao confirmado.')
         selected = []
@@ -80,6 +103,9 @@ def fill_positions(model, raw):
             series['sources'] = refs
             series['positions'] = [offset + i * length / 12 for i in range(13)]
             series['positions'][-1] = offset + length
+            if cantilever:
+                series['position_interpretation'] = dict(origin='FREE_LEFT_FACE' if orientation['value']=='LEFT' else 'PROVED_LEFT_BOUND',
+                    free_section=1 if orientation['value']=='LEFT' else 13, engineer_convention='left first/right last section of the corresponding cantilever series', context=copy.deepcopy(context))
             path = f'/beam/spans/{index}/internal_forces/{len(selected)}/positions'
             out['provenance'][path] = sorted(set(length_refs + offset_refs + refs))
             selected.append(series)
@@ -93,7 +119,7 @@ def fill_positions(model, raw):
             raise ValueError('Proveniencia por indice de serie exige remapeamento explicito.')
         span['internal_forces'] = selected
     out['policies']['forces'] = 'Ensaio: somente series VGESFS, valores e sinais preservados; sem interpolacao ou majoracao.'
-    out['policies']['section_positions'] = 'Em m; origem local no eixo fisico esquerdo de cada vao; x_i=DEPEV_esq(RELDTFPS)+(i-1)*length(VGESFS)/12. Demais campos e warnings herdados do modelo anterior; nao representam migracao integral das politicas de fontes.'
+    out['policies']['section_positions'] = 'Em m; vaos usuais: origem no eixo fisico esquerdo, x_i=DEPEV_esq+(i-1)*length/12. Balancos identificados: origem no limite esquerdo comprovado, face livre na primeira secao (LEFT) ou ultima (RIGHT) da propria serie; comprimento confrontado com forma. Demais campos e warnings herdados.'
     return out, count
 
 

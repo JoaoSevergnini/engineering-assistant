@@ -1,0 +1,1156 @@
+{
+  "V610": {
+    "fixture_kind": "REAL_FORM_REVIEW_WITH_PRESERVED_DETAILING_AND_TQS",
+    "stage1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "stage1_1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "occurrences_before": 16,
+    "occurrences_after": 16,
+    "documentary_reconciliation_preserved": true,
+    "layer_states_before": [
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION"
+    ],
+    "layer_states_after": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ],
+    "physical_regions_certified": false,
+    "local_constant_regions_documented": true,
+    "resistant_recalculation": false,
+    "numeric_change": null,
+    "certified_constant_segments": [
+      {
+        "id": "V610-FORM-STAIR-1",
+        "start": 0,
+        "end": 1.22,
+        "height": 129.5
+      },
+      {
+        "id": "V610-FORM-STAIR-2",
+        "start": 1.22,
+        "end": 2.38,
+        "height": 47
+      },
+      {
+        "id": "V610-FORM-STAIR-3",
+        "start": 2.38,
+        "end": 3.6,
+        "height": 122
+      }
+    ],
+    "registered_force_spans": [
+      "1",
+      "2",
+      "3"
+    ],
+    "positioning_pending": null,
+    "form_state": "EXAMINED_RELEVANT_REGIONS",
+    "tqs_preserved_sha256": "54cce65851cc67cc0ab084acc8f845935c2e6cfc0e7765bc3311e6ad1fde0433",
+    "tqs_documentary_cantilevers": [],
+    "pending": [
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V610-N1-16.layers",
+          "bar.V610-N1-16.x_end_m",
+          "bar.V610-N1-16.x_start_m",
+          "bar.V610-N10-15.layers",
+          "bar.V610-N10-15.x_end_m",
+          "bar.V610-N10-15.x_start_m",
+          "bar.V610-N14-14.layers",
+          "bar.V610-N14-14.x_end_m",
+          "bar.V610-N14-14.x_start_m",
+          "bar.V610-N15-12.layers",
+          "bar.V610-N15-12.x_end_m",
+          "bar.V610-N15-12.x_start_m",
+          "bar.V610-N4-13.layers",
+          "bar.V610-N4-13.x_end_m",
+          "bar.V610-N4-13.x_start_m",
+          "bar.V610-N9-11.layers",
+          "bar.V610-N9-11.x_end_m",
+          "bar.V610-N9-11.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V610-N1-16.layers",
+          "bar.V610-N1-16.x_end_m",
+          "bar.V610-N1-16.x_start_m",
+          "bar.V610-N10-15.layers",
+          "bar.V610-N10-15.x_end_m",
+          "bar.V610-N10-15.x_start_m",
+          "bar.V610-N14-14.layers",
+          "bar.V610-N14-14.x_end_m",
+          "bar.V610-N14-14.x_start_m",
+          "bar.V610-N15-12.layers",
+          "bar.V610-N15-12.x_end_m",
+          "bar.V610-N15-12.x_start_m",
+          "bar.V610-N4-13.layers",
+          "bar.V610-N4-13.x_end_m",
+          "bar.V610-N4-13.x_start_m",
+          "bar.V610-N9-11.layers",
+          "bar.V610-N9-11.x_end_m",
+          "bar.V610-N9-11.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V610-N1-16.layers",
+          "bar.V610-N1-16.x_end_m",
+          "bar.V610-N1-16.x_start_m",
+          "bar.V610-N10-15.layers",
+          "bar.V610-N10-15.x_end_m",
+          "bar.V610-N10-15.x_start_m",
+          "bar.V610-N14-14.layers",
+          "bar.V610-N14-14.x_end_m",
+          "bar.V610-N14-14.x_start_m",
+          "bar.V610-N15-12.layers",
+          "bar.V610-N15-12.x_end_m",
+          "bar.V610-N15-12.x_start_m",
+          "bar.V610-N4-13.layers",
+          "bar.V610-N4-13.x_end_m",
+          "bar.V610-N4-13.x_start_m",
+          "bar.V610-N9-11.layers",
+          "bar.V610-N9-11.x_end_m",
+          "bar.V610-N9-11.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V610-N11-3.layers",
+          "bar.V610-N11-3.x_end_m",
+          "bar.V610-N11-3.x_start_m",
+          "bar.V610-N12-7.layers",
+          "bar.V610-N12-7.x_end_m",
+          "bar.V610-N12-7.x_start_m",
+          "bar.V610-N13-10.layers",
+          "bar.V610-N13-10.x_end_m",
+          "bar.V610-N13-10.x_start_m",
+          "bar.V610-N16-4.layers",
+          "bar.V610-N16-4.x_end_m",
+          "bar.V610-N16-4.x_start_m",
+          "bar.V610-N17-8.layers",
+          "bar.V610-N17-8.x_end_m",
+          "bar.V610-N17-8.x_start_m",
+          "bar.V610-N3-5.layers",
+          "bar.V610-N3-5.x_end_m",
+          "bar.V610-N3-5.x_start_m",
+          "bar.V610-N5-1.layers",
+          "bar.V610-N5-1.x_end_m",
+          "bar.V610-N5-1.x_start_m",
+          "bar.V610-N6-6.layers",
+          "bar.V610-N6-6.x_end_m",
+          "bar.V610-N6-6.x_start_m",
+          "bar.V610-N7-2.layers",
+          "bar.V610-N7-2.x_end_m",
+          "bar.V610-N7-2.x_start_m",
+          "bar.V610-N8-9.layers",
+          "bar.V610-N8-9.x_end_m",
+          "bar.V610-N8-9.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V610-N11-3.layers",
+          "bar.V610-N11-3.x_end_m",
+          "bar.V610-N11-3.x_start_m",
+          "bar.V610-N12-7.layers",
+          "bar.V610-N12-7.x_end_m",
+          "bar.V610-N12-7.x_start_m",
+          "bar.V610-N13-10.layers",
+          "bar.V610-N13-10.x_end_m",
+          "bar.V610-N13-10.x_start_m",
+          "bar.V610-N16-4.layers",
+          "bar.V610-N16-4.x_end_m",
+          "bar.V610-N16-4.x_start_m",
+          "bar.V610-N17-8.layers",
+          "bar.V610-N17-8.x_end_m",
+          "bar.V610-N17-8.x_start_m",
+          "bar.V610-N3-5.layers",
+          "bar.V610-N3-5.x_end_m",
+          "bar.V610-N3-5.x_start_m",
+          "bar.V610-N5-1.layers",
+          "bar.V610-N5-1.x_end_m",
+          "bar.V610-N5-1.x_start_m",
+          "bar.V610-N6-6.layers",
+          "bar.V610-N6-6.x_end_m",
+          "bar.V610-N6-6.x_start_m",
+          "bar.V610-N7-2.layers",
+          "bar.V610-N7-2.x_end_m",
+          "bar.V610-N7-2.x_start_m",
+          "bar.V610-N8-9.layers",
+          "bar.V610-N8-9.x_end_m",
+          "bar.V610-N8-9.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V610-N11-3.layers",
+          "bar.V610-N11-3.x_end_m",
+          "bar.V610-N11-3.x_start_m",
+          "bar.V610-N12-7.layers",
+          "bar.V610-N12-7.x_end_m",
+          "bar.V610-N12-7.x_start_m",
+          "bar.V610-N13-10.layers",
+          "bar.V610-N13-10.x_end_m",
+          "bar.V610-N13-10.x_start_m",
+          "bar.V610-N16-4.layers",
+          "bar.V610-N16-4.x_end_m",
+          "bar.V610-N16-4.x_start_m",
+          "bar.V610-N17-8.layers",
+          "bar.V610-N17-8.x_end_m",
+          "bar.V610-N17-8.x_start_m",
+          "bar.V610-N3-5.layers",
+          "bar.V610-N3-5.x_end_m",
+          "bar.V610-N3-5.x_start_m",
+          "bar.V610-N5-1.layers",
+          "bar.V610-N5-1.x_end_m",
+          "bar.V610-N5-1.x_start_m",
+          "bar.V610-N6-6.layers",
+          "bar.V610-N6-6.x_end_m",
+          "bar.V610-N6-6.x_start_m",
+          "bar.V610-N7-2.layers",
+          "bar.V610-N7-2.x_end_m",
+          "bar.V610-N7-2.x_start_m",
+          "bar.V610-N8-9.layers",
+          "bar.V610-N8-9.x_end_m",
+          "bar.V610-N8-9.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "anchorage",
+        "missing": [
+          "anchorage_demand",
+          "anchorage_scope",
+          "bar_termination",
+          "existing_checker_adapter_unavailable",
+          "materials",
+          "support_faces"
+        ]
+      },
+      {
+        "control": "shear",
+        "missing": [
+          "effective_depth",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "materials",
+          "shear_envelope",
+          "stirrup_regions",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "scaling",
+        "missing": [
+          "bar.V610-N1-16.layers",
+          "bar.V610-N1-16.x_end_m",
+          "bar.V610-N1-16.x_start_m",
+          "bar.V610-N10-15.layers",
+          "bar.V610-N10-15.x_end_m",
+          "bar.V610-N10-15.x_start_m",
+          "bar.V610-N11-3.layers",
+          "bar.V610-N11-3.x_end_m",
+          "bar.V610-N11-3.x_start_m",
+          "bar.V610-N12-7.layers",
+          "bar.V610-N12-7.x_end_m",
+          "bar.V610-N12-7.x_start_m",
+          "bar.V610-N13-10.layers",
+          "bar.V610-N13-10.x_end_m",
+          "bar.V610-N13-10.x_start_m",
+          "bar.V610-N14-14.layers",
+          "bar.V610-N14-14.x_end_m",
+          "bar.V610-N14-14.x_start_m",
+          "bar.V610-N15-12.layers",
+          "bar.V610-N15-12.x_end_m",
+          "bar.V610-N15-12.x_start_m",
+          "bar.V610-N16-4.layers",
+          "bar.V610-N16-4.x_end_m",
+          "bar.V610-N16-4.x_start_m",
+          "bar.V610-N17-8.layers",
+          "bar.V610-N17-8.x_end_m",
+          "bar.V610-N17-8.x_start_m",
+          "bar.V610-N3-5.layers",
+          "bar.V610-N3-5.x_end_m",
+          "bar.V610-N3-5.x_start_m",
+          "bar.V610-N4-13.layers",
+          "bar.V610-N4-13.x_end_m",
+          "bar.V610-N4-13.x_start_m",
+          "bar.V610-N5-1.layers",
+          "bar.V610-N5-1.x_end_m",
+          "bar.V610-N5-1.x_start_m",
+          "bar.V610-N6-6.layers",
+          "bar.V610-N6-6.x_end_m",
+          "bar.V610-N6-6.x_start_m",
+          "bar.V610-N7-2.layers",
+          "bar.V610-N7-2.x_end_m",
+          "bar.V610-N7-2.x_start_m",
+          "bar.V610-N8-9.layers",
+          "bar.V610-N8-9.x_end_m",
+          "bar.V610-N8-9.x_start_m",
+          "bar.V610-N9-11.layers",
+          "bar.V610-N9-11.x_end_m",
+          "bar.V610-N9-11.x_start_m",
+          "bar_cut",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "moment_envelope",
+          "physical_inventory_complete",
+          "scaling_scope",
+          "shear_envelope",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "suspension",
+        "missing": [
+          "existing_checker_adapter_unavailable",
+          "indirect_support",
+          "materials",
+          "supported_reaction",
+          "suspension_bars"
+        ]
+      }
+    ]
+  },
+  "V611": {
+    "fixture_kind": "REAL_FORM_REVIEW_WITH_PRESERVED_DETAILING_AND_TQS",
+    "stage1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "stage1_1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "occurrences_before": 6,
+    "occurrences_after": 6,
+    "documentary_reconciliation_preserved": true,
+    "layer_states_before": [
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION"
+    ],
+    "layer_states_after": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ],
+    "physical_regions_certified": false,
+    "local_constant_regions_documented": true,
+    "resistant_recalculation": false,
+    "numeric_change": null,
+    "certified_constant_segments": [
+      {
+        "id": "V611-FORM-1",
+        "start": 0,
+        "end": 2.82,
+        "height": 57
+      },
+      {
+        "id": "V611-FORM-2",
+        "start": 3.52,
+        "end": 6.19,
+        "height": 47
+      },
+      {
+        "id": "V611-FORM-3",
+        "start": 6.89,
+        "end": 9.31,
+        "height": 57
+      }
+    ],
+    "registered_force_spans": [
+      "1",
+      "2",
+      "3"
+    ],
+    "positioning_pending": null,
+    "form_state": "EXAMINED_RELEVANT_REGIONS",
+    "tqs_preserved_sha256": "83ecec6d8f996d3828eaaf20c71a8fd62dd782899c82919d07eb1182d076ee0e",
+    "tqs_documentary_cantilevers": [],
+    "pending": [
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "anchorage",
+        "missing": [
+          "anchorage_demand",
+          "anchorage_scope",
+          "bar_termination",
+          "existing_checker_adapter_unavailable",
+          "materials",
+          "support_faces"
+        ]
+      },
+      {
+        "control": "shear",
+        "missing": [
+          "effective_depth",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "materials",
+          "shear_envelope",
+          "stirrup_regions",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "scaling",
+        "missing": [
+          "bar.V611-N1-5.layers",
+          "bar.V611-N1-5.x_end_m",
+          "bar.V611-N1-5.x_start_m",
+          "bar.V611-N2-1.layers",
+          "bar.V611-N2-1.x_end_m",
+          "bar.V611-N2-1.x_start_m",
+          "bar.V611-N3-4.layers",
+          "bar.V611-N3-4.x_end_m",
+          "bar.V611-N3-4.x_start_m",
+          "bar.V611-N4-2.layers",
+          "bar.V611-N4-2.x_end_m",
+          "bar.V611-N4-2.x_start_m",
+          "bar.V611-N5-6.layers",
+          "bar.V611-N5-6.x_end_m",
+          "bar.V611-N5-6.x_start_m",
+          "bar.V611-N6-3.layers",
+          "bar.V611-N6-3.x_end_m",
+          "bar.V611-N6-3.x_start_m",
+          "bar_cut",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "moment_envelope",
+          "physical_inventory_complete",
+          "scaling_scope",
+          "shear_envelope",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "suspension",
+        "missing": [
+          "existing_checker_adapter_unavailable",
+          "indirect_support",
+          "materials",
+          "supported_reaction",
+          "suspension_bars"
+        ]
+      }
+    ]
+  },
+  "V623": {
+    "fixture_kind": "REAL_FORM_REVIEW_WITH_PRESERVED_DETAILING_AND_TQS",
+    "stage1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "stage1_1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "occurrences_before": 4,
+    "occurrences_after": 4,
+    "documentary_reconciliation_preserved": true,
+    "layer_states_before": [
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "MISSING"
+    ],
+    "layer_states_after": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ],
+    "physical_regions_certified": false,
+    "local_constant_regions_documented": true,
+    "resistant_recalculation": false,
+    "numeric_change": null,
+    "certified_constant_segments": [
+      {
+        "id": "V623-FORM-CLEAR",
+        "start": 0,
+        "end": 3.76,
+        "height": 57
+      }
+    ],
+    "registered_force_spans": [
+      "1"
+    ],
+    "positioning_pending": null,
+    "form_state": "EXAMINED_RELEVANT_REGIONS",
+    "tqs_preserved_sha256": "da6e79c312e8cde8609868fa9896119b56583306c3346cbbf6fd8e17a670b269",
+    "tqs_documentary_cantilevers": [],
+    "pending": [
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V623-N2-UNLOCATED.layers",
+          "bar.V623-N2-UNLOCATED.x_end_m",
+          "bar.V623-N2-UNLOCATED.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V623-N1-2.layers",
+          "bar.V623-N1-2.x_end_m",
+          "bar.V623-N1-2.x_start_m",
+          "bar.V623-N1-3.layers",
+          "bar.V623-N1-3.x_end_m",
+          "bar.V623-N1-3.x_start_m",
+          "bar.V623-N3-1.layers",
+          "bar.V623-N3-1.x_end_m",
+          "bar.V623-N3-1.x_start_m",
+          "geometry.cover_cm",
+          "geometry.stirrup_diameter_mm",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "physical_inventory_complete",
+          "resistant_context_unavailable"
+        ]
+      },
+      {
+        "control": "anchorage",
+        "missing": [
+          "anchorage_demand",
+          "anchorage_scope",
+          "bar_termination",
+          "existing_checker_adapter_unavailable",
+          "materials",
+          "support_faces"
+        ]
+      },
+      {
+        "control": "shear",
+        "missing": [
+          "effective_depth",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "materials",
+          "shear_envelope",
+          "stirrup_regions",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "scaling",
+        "missing": [
+          "bar.V623-N1-2.layers",
+          "bar.V623-N1-2.x_end_m",
+          "bar.V623-N1-2.x_start_m",
+          "bar.V623-N1-3.layers",
+          "bar.V623-N1-3.x_end_m",
+          "bar.V623-N1-3.x_start_m",
+          "bar.V623-N2-UNLOCATED.layers",
+          "bar.V623-N2-UNLOCATED.x_end_m",
+          "bar.V623-N2-UNLOCATED.x_start_m",
+          "bar.V623-N3-1.layers",
+          "bar.V623-N3-1.x_end_m",
+          "bar.V623-N3-1.x_start_m",
+          "bar_cut",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "moment_envelope",
+          "physical_inventory_complete",
+          "scaling_scope",
+          "shear_envelope",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "suspension",
+        "missing": [
+          "existing_checker_adapter_unavailable",
+          "indirect_support",
+          "materials",
+          "supported_reaction",
+          "suspension_bars"
+        ]
+      }
+    ]
+  },
+  "V626": {
+    "fixture_kind": "REAL_FORM_REVIEW_WITH_PRESERVED_DETAILING_AND_TQS",
+    "stage1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "stage1_1_readiness": {
+      "positive_flexure": "PENDING",
+      "negative_flexure": "PENDING",
+      "anchorage": "PENDING",
+      "shear": "PENDING",
+      "scaling": "PENDING",
+      "suspension": "PENDING"
+    },
+    "occurrences_before": 5,
+    "occurrences_after": 5,
+    "documentary_reconciliation_preserved": true,
+    "layer_states_before": [
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION",
+      "ENGINEERING_ASSUMPTION"
+    ],
+    "layer_states_after": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ],
+    "physical_regions_certified": false,
+    "local_constant_regions_documented": true,
+    "resistant_recalculation": false,
+    "numeric_change": null,
+    "certified_constant_segments": [
+      {
+        "id": "V626-FORM-FREE",
+        "start": -0.93,
+        "end": -0.8,
+        "height": 47
+      },
+      {
+        "id": "V626-FORM-CLEAR",
+        "start": 0,
+        "end": 4.29,
+        "height": 57
+      }
+    ],
+    "registered_force_spans": [],
+    "positioning_pending": "Vao sem numeracao VGESFS ou orientacao dos apoios.",
+    "form_state": "EXAMINED_RELEVANT_REGIONS",
+    "tqs_preserved_sha256": "c312f183786e3e535c07fe7055d2777f53946505fb4021aefb3f69f30d250548",
+    "tqs_documentary_cantilevers": [
+      [
+        "1B"
+      ]
+    ],
+    "pending": [
+      {
+        "control": "positive_flexure",
+        "missing": [
+          "bar.V626-N2-5.layers",
+          "bar.V626-N2-5.x_end_m",
+          "bar.V626-N2-5.x_start_m",
+          "bar.V626-N5-4.layers",
+          "bar.V626-N5-4.x_end_m",
+          "bar.V626-N5-4.x_start_m",
+          "force_position_mapping",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "moment_envelope",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "negative_flexure",
+        "missing": [
+          "bar.V626-N3-2.layers",
+          "bar.V626-N3-2.x_end_m",
+          "bar.V626-N3-2.x_start_m",
+          "bar.V626-N4-1.layers",
+          "bar.V626-N4-1.x_end_m",
+          "bar.V626-N4-1.x_start_m",
+          "bar.V626-N6-3.layers",
+          "bar.V626-N6-3.x_end_m",
+          "bar.V626-N6-3.x_start_m",
+          "force_position_mapping",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "moment_envelope",
+          "physical_inventory_complete",
+          "resistant_context_unavailable",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "anchorage",
+        "missing": [
+          "anchorage_demand",
+          "anchorage_scope",
+          "bar_termination",
+          "existing_checker_adapter_unavailable",
+          "materials",
+          "support_faces"
+        ]
+      },
+      {
+        "control": "shear",
+        "missing": [
+          "effective_depth",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "materials",
+          "shear_envelope",
+          "stirrup_regions",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "scaling",
+        "missing": [
+          "bar.V626-N2-5.layers",
+          "bar.V626-N2-5.x_end_m",
+          "bar.V626-N2-5.x_start_m",
+          "bar.V626-N3-2.layers",
+          "bar.V626-N3-2.x_end_m",
+          "bar.V626-N3-2.x_start_m",
+          "bar.V626-N4-1.layers",
+          "bar.V626-N4-1.x_end_m",
+          "bar.V626-N4-1.x_start_m",
+          "bar.V626-N5-4.layers",
+          "bar.V626-N5-4.x_end_m",
+          "bar.V626-N5-4.x_start_m",
+          "bar.V626-N6-3.layers",
+          "bar.V626-N6-3.x_end_m",
+          "bar.V626-N6-3.x_start_m",
+          "bar_cut",
+          "existing_checker_adapter_unavailable",
+          "force_position_mapping",
+          "layer_fit",
+          "layer_order",
+          "materials",
+          "moment_envelope",
+          "physical_inventory_complete",
+          "scaling_scope",
+          "shear_envelope",
+          "unique_constant_physical_segment"
+        ]
+      },
+      {
+        "control": "suspension",
+        "missing": [
+          "existing_checker_adapter_unavailable",
+          "indirect_support",
+          "materials",
+          "supported_reaction",
+          "suspension_bars"
+        ]
+      }
+    ]
+  }
+}

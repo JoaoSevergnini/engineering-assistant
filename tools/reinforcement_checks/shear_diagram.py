@@ -17,7 +17,8 @@ class ShearDiagram:
             if identity is None or identity in seen:raise ValueError('missing_or_duplicate_shear_series_identity')
             seen.add(identity)
             points=[{'x_m':x,'value_knm':v,'section':s,'provenance':{'sample_index':j,'series':deepcopy(item['provenance'])}} for j,(x,v,s) in enumerate(zip(xs,values,sections))]
-            linear=MomentDiagram(points,{'quantity':'shear','unit':'kN','series_id':identity,'source':deepcopy(item['provenance'])})
+            linear=MomentDiagram(points,{'quantity':'shear','unit':'kN','series_id':identity,'source':deepcopy(item['provenance']),
+                                         'discontinuities_m':deepcopy(item.get('discontinuities_m', []))})
             self.diagrams.append((identity,linear))
         self.domain=[float(min(d.xs[0] for _,d in self.diagrams)),float(max(d.xs[-1] for _,d in self.diagrams))]
 
@@ -38,7 +39,8 @@ class ShearDiagram:
                 if x>a:coverage['uncovered_intervals_m'].append([float(a),float(x)])
                 if y<b:coverage['uncovered_intervals_m'].append([float(y),float(b)])
                 if coverage['uncovered_intervals_m']:complete=False
-                queries=[diagram.moment_at_x(float(q)) for q in sorted({x,y,*[q for q in diagram.xs if x<=q<=y]})]
+                queries=[diagram.moment_at_x(float(q)) for q in sorted({x,y,*[q for q in diagram.xs if x<=q<=y],
+                    *[dec(q) for q in diagram.provenance.get('discontinuities_m', []) if x<=dec(q)<=y]})]
                 for p in queries:
                     if p['status']!='resolved':
                         complete=False;coverage['unresolved_queries'].append(p);continue

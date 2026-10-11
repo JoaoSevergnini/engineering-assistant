@@ -1,0 +1,9 @@
+{
+  "official_validator_native_windows": "PASS",
+  "utf8_strict_read": "PREEXISTING_INVALID_BYTES_PRESERVED",
+  "historical_content_prefix_preserved": {
+    ".agents/skills/reinforcement-review/SKILL.md": true,
+    ".agents/skills/reinforcement-review/references/documentary-physical-preflight.md": true
+  },
+  "comparison_method": "Git HEAD content prefix after CRLF/LF normalization; update script appended bytes without transcoding originals"
+}

@@ -1,0 +1,1426 @@
+{
+  "coordinate_system": {
+    "unit": "m",
+    "origin": "historical drawing left face; registration to TQS remains pending",
+    "positive_direction": "right",
+    "provenance": [
+      {
+        "inventory_sha256": "f4b48ae376a4d983698c321079e774a48d44fd538ef8da3f2499f33d1fbf24f0"
+      }
+    ],
+    "physical_origin_registration": {
+      "value": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+      "state": "DOCUMENTED_CONFIRMED",
+      "unit": null,
+      "provenance": [
+        {
+          "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+          "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+          "page": 1,
+          "page_rotation": 90,
+          "bbox_display": [
+            1480,
+            1420,
+            2650,
+            2050
+          ],
+          "text": "Origem física explicitada pela forma; extremos históricos das barras continuam não comprovados.",
+          "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+        }
+      ],
+      "criterion": null
+    }
+  },
+  "provenance": [
+    {
+      "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+      "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+      "page": 1,
+      "page_rotation": 90,
+      "bbox_display": [
+        1480,
+        1420,
+        2650,
+        2050
+      ],
+      "text": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+      "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+    }
+  ],
+  "segments": [
+    {
+      "id": "V610-FORM-STAIR-1",
+      "geometry_type": "CONSTANT",
+      "fields": {
+        "x_start_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 0,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "DET ESCADA: primeiro trecho 122 cm, 19/129,5",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "x_end_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 1.22,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "DET ESCADA: primeiro trecho 122 cm, 19/129,5",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "section_shape": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Seção b/h da viga; não reconstrói mesa de laje nem amplia o método resistente.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "width_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "DET ESCADA: primeiro trecho 122 cm, 19/129,5",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "height_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 129.5,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "DET ESCADA: primeiro trecho 122 cm, 19/129,5",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "top_level_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3808,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "DET ESCADA: primeiro trecho 122 cm, 19/129,5",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "bottom_level_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3678.5,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "DET ESCADA: primeiro trecho 122 cm, 19/129,5",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "lateral_offset_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Registrar eixo/offset transversal da viga e faces dos pilares."
+        }
+      }
+    },
+    {
+      "id": "V610-FORM-STAIR-2",
+      "geometry_type": "CONSTANT",
+      "fields": {
+        "x_start_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 1.22,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116 cm: região central 19/47 na planta",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "x_end_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 2.38,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116 cm: região central 19/47 na planta",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "section_shape": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Seção b/h da viga; não reconstrói mesa de laje nem amplia o método resistente.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "width_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116 cm: região central 19/47 na planta",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "height_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 47,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116 cm: região central 19/47 na planta",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "top_level_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3808,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116 cm: região central 19/47 na planta",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "bottom_level_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3761,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116 cm: região central 19/47 na planta",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "lateral_offset_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Registrar eixo/offset transversal da viga e faces dos pilares."
+        }
+      }
+    },
+    {
+      "id": "V610-FORM-STAIR-3",
+      "geometry_type": "CONSTANT",
+      "fields": {
+        "x_start_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 2.38,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116+122=360 cm; 19/122 D:+75 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "x_end_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3.6,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116+122=360 cm; 19/122 D:+75 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "section_shape": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Seção b/h da viga; não reconstrói mesa de laje nem amplia o método resistente.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "width_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116+122=360 cm; 19/122 D:+75 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "height_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 122,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116+122=360 cm; 19/122 D:+75 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "top_level_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3883,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116+122=360 cm; 19/122 D:+75 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "bottom_level_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3761,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "122+116+122=360 cm; 19/122 D:+75 cm",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "lateral_offset_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Registrar eixo/offset transversal da viga e faces dos pilares."
+        }
+      }
+    },
+    {
+      "id": "V610-P35-NODE",
+      "geometry_type": "UNRESOLVED",
+      "fields": {
+        "x_start_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": -0.19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "printed section label and cotas",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "x_end_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 0,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "printed section label and cotas",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "section_shape": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Seção b/h da viga; não reconstrói mesa de laje nem amplia o método resistente.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "width_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "printed section label and cotas",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "height_cm": {
+          "documentary_state": "ABSENT_IN_DRAWING",
+          "review": {
+            "relevant_region_examined": true,
+            "scope": "V610-P35-NODE localização da mudança dentro do apoio",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ]
+          },
+          "clarification": "Cotar na forma a posição longitudinal da transição dentro do apoio e indicar seção/níveis de cada lado."
+        },
+        "top_level_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Associar explicitamente nível ao trecho."
+        },
+        "bottom_level_cm": {
+          "documentary_state": "NOT_EXAMINED"
+        },
+        "lateral_offset_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Registrar eixo/offset transversal da viga e faces dos pilares."
+        }
+      }
+    },
+    {
+      "id": "V610-P32-NODE",
+      "geometry_type": "UNRESOLVED",
+      "fields": {
+        "x_start_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3.6,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "printed section label and cotas",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "x_end_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3.79,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "printed section label and cotas",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "section_shape": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Seção b/h da viga; não reconstrói mesa de laje nem amplia o método resistente.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "width_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "printed section label and cotas",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "height_cm": {
+          "documentary_state": "ABSENT_IN_DRAWING",
+          "review": {
+            "relevant_region_examined": true,
+            "scope": "V610-P32-NODE localização da mudança dentro do apoio",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ]
+          },
+          "clarification": "Cotar na forma a posição longitudinal da transição dentro do apoio e indicar seção/níveis de cada lado."
+        },
+        "top_level_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Associar explicitamente nível ao trecho."
+        },
+        "bottom_level_cm": {
+          "documentary_state": "NOT_EXAMINED"
+        },
+        "lateral_offset_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Registrar eixo/offset transversal da viga e faces dos pilares."
+        }
+      }
+    },
+    {
+      "id": "V610-FORM-RIGHT",
+      "geometry_type": "UNRESOLVED",
+      "fields": {
+        "x_start_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 3.79,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Cota externa total P35–P33 1909,5 cm; origem na face interna P35: face externa P33 em 18,905 m e interna em 18,715 m.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "x_end_m": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 18.715,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "m",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Cota externa total P35–P33 1909,5 cm; origem na face interna P35: face externa P33 em 18,905 m e interna em 18,715 m.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "section_shape": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Seção b/h da viga; não reconstrói mesa de laje nem amplia o método resistente.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "width_cm": {
+          "documentary_state": "PROVED",
+          "fact": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "provenance": [
+              {
+                "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+                "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+                "page": 1,
+                "page_rotation": 90,
+                "bbox_display": [
+                  1480,
+                  1420,
+                  2650,
+                  2050
+                ],
+                "text": "Cota externa total P35–P33 1909,5 cm; origem na face interna P35: face externa P33 em 18,905 m e interna em 18,715 m.",
+                "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "height_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Associar explicitamente seção nominal h=47 cm dos LST aos trechos à direita de P32; não usar rótulos das vigas transversais V624/V628 como prova da seção da V610."
+        },
+        "top_level_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Associar explicitamente nível ao trecho."
+        },
+        "bottom_level_cm": {
+          "documentary_state": "NOT_EXAMINED"
+        },
+        "lateral_offset_cm": {
+          "documentary_state": "PRESENT_NOT_EXTRACTED",
+          "clarification": "Registrar eixo/offset transversal da viga e faces dos pilares."
+        }
+      }
+    }
+  ],
+  "segment_inventory_complete": {
+    "value": true,
+    "state": "DOCUMENTED_CONFIRMED",
+    "unit": null,
+    "provenance": [
+      {
+        "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+        "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+        "page": 1,
+        "page_rotation": 90,
+        "bbox_display": [
+          1480,
+          1420,
+          2650,
+          2050
+        ],
+        "text": "Região completa da viga na planta e detalhes pertinentes examinados; nós não definidos têm segmentos pendentes próprios.",
+        "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+      }
+    ],
+    "criterion": null
+  },
+  "support_faces": [
+    {
+      "support_id": "P35",
+      "x_start_m": {
+        "value": -0.19,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "P35 19/107; largura longitudinal 19 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "x_end_m": {
+        "value": 0,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "P35 19/107; largura longitudinal 19 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "axis_m": {
+        "value": -0.095,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "P35 19/107; largura longitudinal 19 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "provenance": [
+        {
+          "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+          "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+          "page": 1,
+          "page_rotation": 90,
+          "bbox_display": [
+            1480,
+            1420,
+            2650,
+            2050
+          ],
+          "text": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+          "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+        }
+      ]
+    },
+    {
+      "support_id": "P32",
+      "x_start_m": {
+        "value": 3.6,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "P32 19/125; vão livre P35–P32 360 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "x_end_m": {
+        "value": 3.79,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "P32 19/125; vão livre P35–P32 360 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "axis_m": {
+        "value": 3.695,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "P32 19/125; vão livre P35–P32 360 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "provenance": [
+        {
+          "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+          "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+          "page": 1,
+          "page_rotation": 90,
+          "bbox_display": [
+            1480,
+            1420,
+            2650,
+            2050
+          ],
+          "text": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+          "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+        }
+      ]
+    },
+    {
+      "support_id": "V626",
+      "x_start_m": {
+        "value": 11.16,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "Eixo V626 X=824 cm e P35 X=-311 cm: 1135 cm entre eixos; origem face interna P35 a +9,5 cm do eixo. V626 largura 19 cm; geometria do encontro não prova direção de carga.",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "x_end_m": {
+        "value": 11.35,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "Eixo V626 X=824 cm e P35 X=-311 cm: 1135 cm entre eixos; origem face interna P35 a +9,5 cm do eixo. V626 largura 19 cm; geometria do encontro não prova direção de carga.",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "axis_m": {
+        "value": 11.255,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "Eixo V626 X=824 cm e P35 X=-311 cm: 1135 cm entre eixos; origem face interna P35 a +9,5 cm do eixo. V626 largura 19 cm; geometria do encontro não prova direção de carga.",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "provenance": [
+        {
+          "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+          "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+          "page": 1,
+          "page_rotation": 90,
+          "bbox_display": [
+            1480,
+            1420,
+            2650,
+            2050
+          ],
+          "text": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+          "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+        }
+      ]
+    },
+    {
+      "support_id": "P33",
+      "x_start_m": {
+        "value": 18.715,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "Cota externa P35–P33 1909,5 cm; ambos com largura longitudinal 19 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "x_end_m": {
+        "value": 18.905,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "Cota externa P35–P33 1909,5 cm; ambos com largura longitudinal 19 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "axis_m": {
+        "value": 18.81,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "Cota externa P35–P33 1909,5 cm; ambos com largura longitudinal 19 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "provenance": [
+        {
+          "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+          "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+          "page": 1,
+          "page_rotation": 90,
+          "bbox_display": [
+            1480,
+            1420,
+            2650,
+            2050
+          ],
+          "text": "Face de P35 voltada a P32; x positivo ao longo da V610 para P33",
+          "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+        }
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "x_m": {
+        "value": 1.22,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "DET ESCADA: 122 e 122+116 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "position_state": "PROVED"
+    },
+    {
+      "x_m": {
+        "value": 2.38,
+        "state": "DOCUMENTED_CONFIRMED",
+        "unit": "m",
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Documents\\arquivos\\051-SJ-EST-EX-010-PLB-TP-R01.pdf",
+            "sha256": "ff687bb52676bbf1875f429a0a4126c2ab155d32eef2328834e7f706ab2d75b1",
+            "page": 1,
+            "page_rotation": 90,
+            "bbox_display": [
+              1480,
+              1420,
+              2650,
+              2050
+            ],
+            "text": "DET ESCADA: 122 e 122+116 cm",
+            "method": "printed dimension/label and explicit arithmetic; no graphical scale"
+          }
+        ],
+        "criterion": null
+      },
+      "position_state": "PROVED"
+    }
+  ]
+}

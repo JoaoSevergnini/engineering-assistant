@@ -1,0 +1,1690 @@
+{
+  "case_type": "REAL",
+  "input": "entrada_v611.json",
+  "transitions": [
+    {
+      "transition_id": "V611-FORM-1--V611-FORM-2",
+      "classification": {
+        "status": "PASS",
+        "suspended_side": "LEFT",
+        "section_ids": [
+          "V611-FORM-1",
+          "V611-FORM-2"
+        ],
+        "pending": [],
+        "bottom_levels": [
+          {
+            "value": 3751,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          {
+            "value": 3761,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          }
+        ]
+      },
+      "local_discontinuity_approval": null,
+      "position_pending_interval_m": [
+        2.82,
+        3.52
+      ],
+      "status": "INCONCLUSIVE",
+      "execution_state": "NOT_EXECUTED",
+      "input_validation": {
+        "region_id": "V611-FORM-1--V611-FORM-2",
+        "interval_m": [
+          0,
+          2.82
+        ],
+        "control": "shear",
+        "readiness": "PENDING",
+        "pending": [
+          "effective_depth",
+          "gamma_n",
+          "shear_method_scope",
+          "transition_geometry"
+        ],
+        "assumptions": [],
+        "evidence": {
+          "geometry.section_shape": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "geometry.width_cm": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          "geometry.height_cm": {
+            "value": 57,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          "geometry.cover_cm": {
+            "value": 2.5,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          "geometry.stirrup_diameter_mm": {
+            "value": 5,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "mm",
+            "criterion": null
+          },
+          "materials": {
+            "value": {
+              "extraction": "analises/silva_jardim_tipo/V611_tqs_raw.json",
+              "fck": [
+                {
+                  "value": 40.0,
+                  "field": {
+                    "rotulo_original": "fck",
+                    "chave": "fck",
+                    "coluna": 37,
+                    "valor": 40.0,
+                    "unidade_original": "MPa",
+                    "normalizado": {
+                      "valor": 40.0,
+                      "unidade": "MPa",
+                      "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+                    }
+                  },
+                  "raw_pointer": "/categorias/materiais/9/campos_explicitos/1",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4428,
+                    "linha_final": 4428,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=   40.0 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi=  27.5"
+                  }
+                },
+                {
+                  "value": 40.0,
+                  "field": {
+                    "rotulo_original": "fck",
+                    "chave": "fck",
+                    "coluna": 37,
+                    "valor": 40.0,
+                    "unidade_original": "MPa",
+                    "normalizado": {
+                      "valor": 40.0,
+                      "unidade": "MPa",
+                      "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+                    }
+                  },
+                  "raw_pointer": "/categorias/materiais/10/campos_explicitos/1",
+                  "record": {
+                    "arquivo": "RELDTFPS.LST",
+                    "linha_inicial": 6772,
+                    "linha_final": 6772,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=  40.00 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi= 27.54"
+                  }
+                }
+              ],
+              "gamma_f": [
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamaf",
+                    "chave": "gamaf",
+                    "coluna": 77,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/0/campos_explicitos/2",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4318,
+                    "linha_final": 4318,
+                    "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+                  }
+                }
+              ],
+              "gamma_c": [
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamac",
+                    "chave": "gamac",
+                    "coluna": 34,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/0/campos_explicitos/1",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4318,
+                    "linha_final": 4318,
+                    "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+                  }
+                },
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamac",
+                    "chave": "gamac",
+                    "coluna": 54,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/9/campos_explicitos/2",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4428,
+                    "linha_final": 4428,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=   40.0 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi=  27.5"
+                  }
+                },
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamac",
+                    "chave": "gamac",
+                    "coluna": 54,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/10/campos_explicitos/2",
+                  "record": {
+                    "arquivo": "RELDTFPS.LST",
+                    "linha_inicial": 6772,
+                    "linha_final": 6772,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=  40.00 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi= 27.54"
+                  }
+                }
+              ],
+              "steel": {
+                "status": "consistent",
+                "normalized_class": "CA-50",
+                "derived_fyk_mpa": 500.0,
+                "unit": "MPa",
+                "rule": {
+                  "id": "engineer_confirmed_ca50_fyk_500_v1",
+                  "authority": "Engenheiro responsável João; confirmação explícita neste fluxo em 04/10/2026",
+                  "aliases": [
+                    "CA50",
+                    "CA-50",
+                    "CA-50A"
+                  ],
+                  "normalized_class": "CA-50",
+                  "fyk_mpa": 500.0,
+                  "scope": "Resistência característica do aço neste fluxo; CA-50A não implica equivalência de outras propriedades."
+                },
+                "observations": [
+                  {
+                    "original_text": "CA-50A",
+                    "normalized_class": "CA-50",
+                    "derived_fyk_mpa": 500.0,
+                    "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1"
+                  },
+                  {
+                    "original_text": "CA50",
+                    "normalized_class": "CA-50",
+                    "derived_fyk_mpa": 500.0,
+                    "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1"
+                  }
+                ],
+                "excluded_observations": [
+                  {
+                    "original_text": "CA-50",
+                    "normalized_class": "CA-50",
+                    "derived_fyk_mpa": 500.0,
+                    "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+                    "exclusion_reason": "RELDTVeT excluído pela política operacional confirmada"
+                  }
+                ]
+              }
+            },
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "shear_envelope": {
+            "value": {
+              "LEFT": [
+                {
+                  "quantity": "shear",
+                  "envelope": "max",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    -0.17099999999999999,
+                    0.09250000000000003,
+                    0.356,
+                    0.6195,
+                    0.8830000000000001,
+                    1.1465,
+                    1.4100000000000001,
+                    1.6734999999999998,
+                    1.9369999999999998,
+                    2.2004999999999995,
+                    2.4639999999999995,
+                    2.7274999999999996,
+                    2.9909999999999997
+                  ],
+                  "values": [
+                    78.44339335,
+                    75.8642444,
+                    72.55940335,
+                    68.64655,
+                    66.06740105,
+                    61.7426684,
+                    57.270836,
+                    52.7793903,
+                    50.20024135,
+                    45.8558954,
+                    41.9920753,
+                    39.21679335,
+                    36.64745105
+                  ],
+                  "sources": [
+                    "s1113#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.4425,
+                    0.706,
+                    0.9695,
+                    1.233,
+                    1.4965,
+                    1.7600000000000002,
+                    2.0235,
+                    2.287,
+                    2.5504999999999995,
+                    2.8139999999999996,
+                    3.0774999999999997,
+                    3.3409999999999997
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 1,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": -0.35,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.52,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 3.17,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                },
+                {
+                  "quantity": "shear",
+                  "envelope": "min",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    -0.17099999999999999,
+                    0.09250000000000003,
+                    0.356,
+                    0.6195,
+                    0.8830000000000001,
+                    1.1465,
+                    1.4100000000000001,
+                    1.6734999999999998,
+                    1.9369999999999998,
+                    2.2004999999999995,
+                    2.4639999999999995,
+                    2.7274999999999996,
+                    2.9909999999999997
+                  ],
+                  "values": [
+                    -39.3442798,
+                    -41.9136221,
+                    -45.21846315,
+                    -49.1313165,
+                    -51.71046545,
+                    -56.0351981,
+                    -60.5070305,
+                    -64.9984762,
+                    -67.57762515,
+                    -71.9219711,
+                    -75.79559785,
+                    -78.56107315,
+                    -81.1402221
+                  ],
+                  "sources": [
+                    "s1107#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.4425,
+                    0.706,
+                    0.9695,
+                    1.233,
+                    1.4965,
+                    1.7600000000000002,
+                    2.0235,
+                    2.287,
+                    2.5504999999999995,
+                    2.8139999999999996,
+                    3.0774999999999997,
+                    3.3409999999999997
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 1,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": -0.35,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.52,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 3.17,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                }
+              ],
+              "RIGHT": [
+                {
+                  "quantity": "shear",
+                  "envelope": "max",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    3.3489999999999998,
+                    3.6,
+                    3.851,
+                    4.102,
+                    4.353,
+                    4.604,
+                    4.855,
+                    5.106,
+                    5.356999999999999,
+                    5.608,
+                    5.859,
+                    6.109999999999999,
+                    6.361
+                  ],
+                  "values": [
+                    106.86306505,
+                    104.41140255,
+                    74.8443528,
+                    71.7454514,
+                    69.40166205,
+                    66.2341141,
+                    63.12540605,
+                    60.1736044,
+                    57.8396217,
+                    26.8113811,
+                    24.0655191,
+                    21.6138566,
+                    19.2798739
+                  ],
+                  "sources": [
+                    "s1114#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.43,
+                    0.681,
+                    0.9319999999999999,
+                    1.183,
+                    1.4340000000000002,
+                    1.685,
+                    1.936,
+                    2.187,
+                    2.4379999999999997,
+                    2.689,
+                    2.9399999999999995,
+                    3.191
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 2,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 3.17,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.37,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 6.54,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                },
+                {
+                  "quantity": "shear",
+                  "envelope": "min",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    3.3489999999999998,
+                    3.6,
+                    3.851,
+                    4.102,
+                    4.353,
+                    4.604,
+                    4.855,
+                    5.106,
+                    5.356999999999999,
+                    5.608,
+                    5.859,
+                    6.109999999999999,
+                    6.361
+                  ],
+                  "values": [
+                    -17.24989735,
+                    -19.70155985,
+                    -50.0923682,
+                    -53.20107625,
+                    -55.53505895,
+                    -58.71241355,
+                    -61.8211216,
+                    -64.7631166,
+                    -67.10690595,
+                    -97.5173276,
+                    -100.27299625,
+                    -102.72465875,
+                    -105.0488348
+                  ],
+                  "sources": [
+                    "s1108#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.43,
+                    0.681,
+                    0.9319999999999999,
+                    1.183,
+                    1.4340000000000002,
+                    1.685,
+                    1.936,
+                    2.187,
+                    2.4379999999999997,
+                    2.689,
+                    2.9399999999999995,
+                    3.191
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 2,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 3.17,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.37,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 6.54,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                }
+              ]
+            },
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "force_position_mapping": {
+            "value": true,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "stirrup_regions": {
+            "value": [
+              {
+                "id": "N7-1",
+                "interval_m": [
+                  0,
+                  2.82
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 14,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N7-2",
+                "interval_m": [
+                  3.52,
+                  3.88
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 10,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N8",
+                "interval_m": [
+                  3.88,
+                  5.43
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 8,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N7-3",
+                "interval_m": [
+                  5.43,
+                  6.19
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 10,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N7-4",
+                "interval_m": [
+                  6.89,
+                  9.31
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 14,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              }
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "effective_depth": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "criterion": null
+          },
+          "transition_geometry": {
+            "value": null,
+            "state": "MISSING",
+            "unit": null,
+            "criterion": null
+          },
+          "gamma_n": {
+            "value": null,
+            "state": "MISSING",
+            "unit": null,
+            "criterion": null
+          },
+          "shear_method_scope": {
+            "value": null,
+            "state": "MISSING",
+            "unit": null,
+            "criterion": null
+          }
+        },
+        "limitations": [],
+        "purpose": "RESISTANT_CONTROL",
+        "scope": {
+          "force_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false,
+          "mandatory_curved_path": false,
+          "mandatory_pin_check": false,
+          "mandatory_column_reinforcement_interference": false
+        }
+      },
+      "result": null
+    },
+    {
+      "transition_id": "V611-FORM-2--V611-FORM-3",
+      "classification": {
+        "status": "PASS",
+        "suspended_side": "RIGHT",
+        "section_ids": [
+          "V611-FORM-2",
+          "V611-FORM-3"
+        ],
+        "pending": [],
+        "bottom_levels": [
+          {
+            "value": 3761,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          {
+            "value": 3751,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          }
+        ]
+      },
+      "local_discontinuity_approval": null,
+      "position_pending_interval_m": [
+        6.19,
+        6.89
+      ],
+      "status": "INCONCLUSIVE",
+      "execution_state": "NOT_EXECUTED",
+      "input_validation": {
+        "region_id": "V611-FORM-2--V611-FORM-3",
+        "interval_m": [
+          6.89,
+          9.31
+        ],
+        "control": "shear",
+        "readiness": "PENDING",
+        "pending": [
+          "effective_depth",
+          "gamma_n",
+          "shear_method_scope",
+          "transition_geometry"
+        ],
+        "assumptions": [],
+        "evidence": {
+          "geometry.section_shape": {
+            "value": "RECTANGULAR",
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "geometry.width_cm": {
+            "value": 19,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          "geometry.height_cm": {
+            "value": 57,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          "geometry.cover_cm": {
+            "value": 2.5,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "cm",
+            "criterion": null
+          },
+          "geometry.stirrup_diameter_mm": {
+            "value": 5,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": "mm",
+            "criterion": null
+          },
+          "materials": {
+            "value": {
+              "extraction": "analises/silva_jardim_tipo/V611_tqs_raw.json",
+              "fck": [
+                {
+                  "value": 40.0,
+                  "field": {
+                    "rotulo_original": "fck",
+                    "chave": "fck",
+                    "coluna": 37,
+                    "valor": 40.0,
+                    "unidade_original": "MPa",
+                    "normalizado": {
+                      "valor": 40.0,
+                      "unidade": "MPa",
+                      "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+                    }
+                  },
+                  "raw_pointer": "/categorias/materiais/9/campos_explicitos/1",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4428,
+                    "linha_final": 4428,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=   40.0 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi=  27.5"
+                  }
+                },
+                {
+                  "value": 40.0,
+                  "field": {
+                    "rotulo_original": "fck",
+                    "chave": "fck",
+                    "coluna": 37,
+                    "valor": 40.0,
+                    "unidade_original": "MPa",
+                    "normalizado": {
+                      "valor": 40.0,
+                      "unidade": "MPa",
+                      "criterio": "conversao literal da unidade impressa; sem correcao de inconsistencias do TQS"
+                    }
+                  },
+                  "raw_pointer": "/categorias/materiais/10/campos_explicitos/1",
+                  "record": {
+                    "arquivo": "RELDTFPS.LST",
+                    "linha_inicial": 6772,
+                    "linha_final": 6772,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=  40.00 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi= 27.54"
+                  }
+                }
+              ],
+              "gamma_f": [
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamaf",
+                    "chave": "gamaf",
+                    "coluna": 77,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/0/campos_explicitos/2",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4318,
+                    "linha_final": 4318,
+                    "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+                  }
+                }
+              ],
+              "gamma_c": [
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamac",
+                    "chave": "gamac",
+                    "coluna": 34,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/0/campos_explicitos/1",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4318,
+                    "linha_final": 4318,
+                    "texto": "  Concreto - fck =  400.0 Kgf/cm2      ---      AÇO - CA-50A     Gamac=  1.4     Gamaf=  1.4"
+                  }
+                },
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamac",
+                    "chave": "gamac",
+                    "coluna": 54,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/9/campos_explicitos/2",
+                  "record": {
+                    "arquivo": "RELDTFNG.LST",
+                    "linha_inicial": 4428,
+                    "linha_final": 4428,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=   40.0 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi=  27.5"
+                  }
+                },
+                {
+                  "value": 1.4,
+                  "field": {
+                    "rotulo_original": "Gamac",
+                    "chave": "gamac",
+                    "coluna": 54,
+                    "valor": 1.4,
+                    "unidade_original": null
+                  },
+                  "raw_pointer": "/categorias/materiais/10/campos_explicitos/2",
+                  "record": {
+                    "arquivo": "RELDTFPS.LST",
+                    "linha_inicial": 6772,
+                    "linha_final": 6772,
+                    "texto": " Compr. ancoragem  fyd=   4.35 tf/m2  fck=  40.00 MPa    Gamac=  1.4  Eta1=  2.2   lb1/fi= 27.54"
+                  }
+                }
+              ],
+              "steel": {
+                "status": "consistent",
+                "normalized_class": "CA-50",
+                "derived_fyk_mpa": 500.0,
+                "unit": "MPa",
+                "rule": {
+                  "id": "engineer_confirmed_ca50_fyk_500_v1",
+                  "authority": "Engenheiro responsável João; confirmação explícita neste fluxo em 04/10/2026",
+                  "aliases": [
+                    "CA50",
+                    "CA-50",
+                    "CA-50A"
+                  ],
+                  "normalized_class": "CA-50",
+                  "fyk_mpa": 500.0,
+                  "scope": "Resistência característica do aço neste fluxo; CA-50A não implica equivalência de outras propriedades."
+                },
+                "observations": [
+                  {
+                    "original_text": "CA-50A",
+                    "normalized_class": "CA-50",
+                    "derived_fyk_mpa": 500.0,
+                    "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1"
+                  },
+                  {
+                    "original_text": "CA50",
+                    "normalized_class": "CA-50",
+                    "derived_fyk_mpa": 500.0,
+                    "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1"
+                  }
+                ],
+                "excluded_observations": [
+                  {
+                    "original_text": "CA-50",
+                    "normalized_class": "CA-50",
+                    "derived_fyk_mpa": 500.0,
+                    "derivation_rule": "engineer_confirmed_ca50_fyk_500_v1",
+                    "exclusion_reason": "RELDTVeT excluído pela política operacional confirmada"
+                  }
+                ]
+              }
+            },
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "shear_envelope": {
+            "value": {
+              "LEFT": [
+                {
+                  "quantity": "shear",
+                  "envelope": "max",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    3.3489999999999998,
+                    3.6,
+                    3.851,
+                    4.102,
+                    4.353,
+                    4.604,
+                    4.855,
+                    5.106,
+                    5.356999999999999,
+                    5.608,
+                    5.859,
+                    6.109999999999999,
+                    6.361
+                  ],
+                  "values": [
+                    106.86306505,
+                    104.41140255,
+                    74.8443528,
+                    71.7454514,
+                    69.40166205,
+                    66.2341141,
+                    63.12540605,
+                    60.1736044,
+                    57.8396217,
+                    26.8113811,
+                    24.0655191,
+                    21.6138566,
+                    19.2798739
+                  ],
+                  "sources": [
+                    "s1114#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.43,
+                    0.681,
+                    0.9319999999999999,
+                    1.183,
+                    1.4340000000000002,
+                    1.685,
+                    1.936,
+                    2.187,
+                    2.4379999999999997,
+                    2.689,
+                    2.9399999999999995,
+                    3.191
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 2,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 3.17,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.37,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 6.54,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                },
+                {
+                  "quantity": "shear",
+                  "envelope": "min",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    3.3489999999999998,
+                    3.6,
+                    3.851,
+                    4.102,
+                    4.353,
+                    4.604,
+                    4.855,
+                    5.106,
+                    5.356999999999999,
+                    5.608,
+                    5.859,
+                    6.109999999999999,
+                    6.361
+                  ],
+                  "values": [
+                    -17.24989735,
+                    -19.70155985,
+                    -50.0923682,
+                    -53.20107625,
+                    -55.53505895,
+                    -58.71241355,
+                    -61.8211216,
+                    -64.7631166,
+                    -67.10690595,
+                    -97.5173276,
+                    -100.27299625,
+                    -102.72465875,
+                    -105.0488348
+                  ],
+                  "sources": [
+                    "s1108#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.43,
+                    0.681,
+                    0.9319999999999999,
+                    1.183,
+                    1.4340000000000002,
+                    1.685,
+                    1.936,
+                    2.187,
+                    2.4379999999999997,
+                    2.689,
+                    2.9399999999999995,
+                    3.191
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 2,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 3.17,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.37,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 6.54,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                }
+              ],
+              "RIGHT": [
+                {
+                  "quantity": "shear",
+                  "envelope": "max",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    6.719,
+                    6.949166666666667,
+                    7.179333333333333,
+                    7.4094999999999995,
+                    7.639666666666667,
+                    7.869833333333333,
+                    8.1,
+                    8.330166666666667,
+                    8.560333333333332,
+                    8.7905,
+                    9.020666666666667,
+                    9.250833333333333,
+                    9.481
+                  ],
+                  "values": [
+                    85.79838085,
+                    83.552658,
+                    81.30693515,
+                    79.0023724,
+                    75.48178505,
+                    73.2360622,
+                    69.3330155,
+                    65.4495821,
+                    63.1940526,
+                    59.5459788,
+                    56.4274641,
+                    54.18174125,
+                    51.1122598
+                  ],
+                  "sources": [
+                    "s1115#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.4091666666666667,
+                    0.6393333333333333,
+                    0.8694999999999999,
+                    1.0996666666666666,
+                    1.3298333333333334,
+                    1.56,
+                    1.7901666666666667,
+                    2.0203333333333333,
+                    2.2504999999999997,
+                    2.4806666666666666,
+                    2.7108333333333334,
+                    2.941
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 3,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 6.54,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.12,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 9.66,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                },
+                {
+                  "quantity": "shear",
+                  "envelope": "min",
+                  "stage": "model_input",
+                  "unit": "kN",
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "positions": [
+                    6.719,
+                    6.949166666666667,
+                    7.179333333333333,
+                    7.4094999999999995,
+                    7.639666666666667,
+                    7.869833333333333,
+                    8.1,
+                    8.330166666666667,
+                    8.560333333333332,
+                    8.7905,
+                    9.020666666666667,
+                    9.250833333333333,
+                    9.481
+                  ],
+                  "values": [
+                    -53.8581218,
+                    -56.1136513,
+                    -58.35937415,
+                    -60.6639369,
+                    -64.18452425,
+                    -66.4302471,
+                    -70.3332938,
+                    -74.2167272,
+                    -76.4722567,
+                    -80.1203305,
+                    -83.2388452,
+                    -85.48456805,
+                    -88.5540495
+                  ],
+                  "sources": [
+                    "s1109#/normalizacao"
+                  ],
+                  "local_positions": [
+                    0.179,
+                    0.4091666666666667,
+                    0.6393333333333333,
+                    0.8694999999999999,
+                    1.0996666666666666,
+                    1.3298333333333334,
+                    1.56,
+                    1.7901666666666667,
+                    2.0203333333333333,
+                    2.2504999999999997,
+                    2.4806666666666666,
+                    2.7108333333333334,
+                    2.941
+                  ],
+                  "mapping_provenance": {
+                    "span_id": 3,
+                    "coordinate_system": {
+                      "unit": "m",
+                      "origin": "historical drawing left face; registration to TQS remains pending",
+                      "positive_direction": "right",
+                      "physical_origin_registration": {
+                        "value": "Face de P28 voltada a P19 (Y=2115 cm); x=(Y-2115)/100",
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": null,
+                        "criterion": null
+                      }
+                    },
+                    "anchors": [
+                      {
+                        "local_m": {
+                          "value": 0,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 6.54,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      },
+                      {
+                        "local_m": {
+                          "value": 3.12,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        },
+                        "common_m": {
+                          "value": 9.66,
+                          "state": "DOCUMENTED_CONFIRMED",
+                          "unit": "m",
+                          "criterion": null
+                        }
+                      }
+                    ]
+                  },
+                  "discontinuities_m": []
+                }
+              ]
+            },
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "force_position_mapping": {
+            "value": true,
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "stirrup_regions": {
+            "value": [
+              {
+                "id": "N7-1",
+                "interval_m": [
+                  0,
+                  2.82
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 14,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N7-2",
+                "interval_m": [
+                  3.52,
+                  3.88
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 10,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N8",
+                "interval_m": [
+                  3.88,
+                  5.43
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 8,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N7-3",
+                "interval_m": [
+                  5.43,
+                  6.19
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 10,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              },
+              {
+                "id": "N7-4",
+                "interval_m": [
+                  6.89,
+                  9.31
+                ],
+                "diameter_mm": 5,
+                "spacing_cm": 14,
+                "legs": 2,
+                "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+                "source": {
+                  "extraction": "analises/silva_jardim_tipo/V611_detail.txt",
+                  "image": "analises/silva_jardim_tipo/V611_detail.png",
+                  "basis": "comprimentos impressos 282;36+155+76=267;242 cm, a partir das faces dos vãos livres da forma; não prova transições"
+                }
+              }
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "criterion": null
+          },
+          "effective_depth": {
+            "value": null,
+            "state": "MISSING",
+            "unit": "cm",
+            "criterion": null
+          },
+          "transition_geometry": {
+            "value": null,
+            "state": "MISSING",
+            "unit": null,
+            "criterion": null
+          },
+          "gamma_n": {
+            "value": null,
+            "state": "MISSING",
+            "unit": null,
+            "criterion": null
+          },
+          "shear_method_scope": {
+            "value": null,
+            "state": "MISSING",
+            "unit": null,
+            "criterion": null
+          }
+        },
+        "limitations": [],
+        "purpose": "RESISTANT_CONTROL",
+        "scope": {
+          "force_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false,
+          "mandatory_curved_path": false,
+          "mandatory_pin_check": false,
+          "mandatory_column_reinforcement_interference": false
+        }
+      },
+      "result": null
+    }
+  ]
+}

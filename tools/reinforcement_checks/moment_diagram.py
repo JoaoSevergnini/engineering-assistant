@@ -58,6 +58,10 @@ class MomentDiagram:
                'value_decimal': None, 'provenance': copy.deepcopy(self.provenance), 'rule': copy.deepcopy(RULE)}
         if q < self.xs[0] or q > self.xs[-1]:
             return {**out, 'status': 'outside_sampled_domain', 'source_type': None}
+        jumps = [dec(x) for x in self.provenance.get('discontinuities_m', [])]
+        if q in jumps or any(self.xs[i] < jump < self.xs[i+1] and self.xs[i] < q < self.xs[i+1]
+                             for jump in jumps for i in range(len(self.xs)-1)):
+            return {**out, 'status': 'discontinuity_requires_one_sided_values', 'source_type': None}
         if q in self.xs:
             i = self.xs.index(q)
             return {**out, 'status': 'unresolved_missing_value' if self.ms[i] is None else 'resolved',
@@ -76,6 +80,20 @@ class MomentDiagram:
             out.update(value_knm=float(m), value_decimal=str(m))
         return out
 
+    def extrema(self, start, end):
+        """Signed extrema on a physical/search interval, reusing existing queries."""
+        a,b=dec(start),dec(end)
+        if a>=b:raise ValueError('positive_extrema_interval_required')
+        queries=sorted({a,b,*[x for x in self.xs if a<=x<=b],
+                        *[dec(x) for x in self.provenance.get('discontinuities_m', []) if a<=dec(x)<=b]})
+        points=[self.moment_at_x(float(x)) for x in queries]
+        valid=[p for p in points if p['status']=='resolved']
+        positive=[p for p in valid if p['value_knm']>0];negative=[p for p in valid if p['value_knm']<0]
+        complete=all(p['status']=='resolved' for p in points)
+        return dict(interval_m=[start,end],status='PASS' if complete else 'INCONCLUSIVE',complete=complete,
+                    positive=max(positive,key=lambda p:p['value_knm']) if positive else None,
+                    negative=min(negative,key=lambda p:p['value_knm']) if negative else None,points=points)
+
     def find_crossings(self, m_limit):
         limit = dec(m_limit)
         events, gaps = {}, []
@@ -83,7 +101,7 @@ class MomentDiagram:
             ctx.prec = RULE['decimal_precision']
             for i,s in enumerate(self.segments):
                 a,b = self.ms[i:i+2]; x1,x2 = self.xs[i:i+2]
-                if a is None or b is None:
+                if a is None or b is None or any(x1 <= dec(x) <= x2 for x in self.provenance.get('discontinuities_m', [])):
                     gaps.append(s['segment_id']); continue
                 direction = 'constant' if a == b else 'increasing' if b > a else 'decreasing'
                 origin = {'segment_id': s['segment_id'], 'direction': direction, 'base_points': copy.deepcopy(s['base_points'])}

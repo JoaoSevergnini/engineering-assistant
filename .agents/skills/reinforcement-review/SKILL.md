@@ -524,3 +524,7 @@ Na consolida��o, separar execu��o de resultado t�cnico conforme [beam-diagnostic
 ## Validação documental e geometria física — Etapa 1
 
 Nas novas revisões, aplicar [documentary-physical-preflight](references/documentary-physical-preflight.md) para conciliação de documentos, ocorrências físicas, geometria por trecho e liberação local das entradas. Este procedimento preserva os métodos resistentes existentes e a compatibilidade dos contratos antigos. Restrições específicas da Etapa 1 prevalecem sobre requisitos de módulos posteriores: não tornar obrigatórios pinos, trajetórias curvas, interferência com armaduras de pilares ou combinações concomitantes.
+
+## Integração operacional de pavimentos — Etapa 1.1
+
+Para pavimentos completos, aplicar obrigatoriamente [floor-operational-review](references/floor-operational-review.md): forma, detalhamento e TQS; eixo comum existente; camadas e cabimento; preflight por controle; verificadores e diagnóstico. Usar floor_review.py como entrada principal. Scripts históricos servem para regressão. Nesta etapa, não editar PDFs nem gerar propostas de correção.

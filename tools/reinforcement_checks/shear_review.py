@@ -213,7 +213,7 @@ def transition_check(shear,capacity,*,drawn_x,side,branch_domain=None):
  return out
 
 
-def check_drawn_region(shear,context,api,region):
+def check_drawn_region(shear,context,api,region,*,demand_interval_m=None):
  classification=classify_piece(region)
  if classification['contributes_to_beam_shear'] is False:
   return {'verification':'SHEAR_DRAWN_REGION_CHECK','region':deepcopy(region),'classification':classification,
@@ -227,7 +227,11 @@ def check_drawn_region(shear,context,api,region):
  out['checks']={name:control() for name in names}
  try:
   if not region.get('source'):raise ValueError('drawn_region_source_missing')
-  a,b=region['interval_m'];demand=shear.maximum(a,b,allow_intersection=True);out['demand']=demand
+  a,b=region['interval_m']
+  search=demand_interval_m or [a,b]
+  if not search[0]<=a<b<=search[1]:raise ValueError('drawn_region_outside_physical_demand_interval')
+  demand=shear.maximum(*search,allow_intersection=True);out['demand']=demand
+  out['physical_reinforcement_interval_m']=[a,b];out['shear_search_interval_m']=list(search)
   phi,spacing,legs=(region.get(k) for k in ('diameter_mm','spacing_cm','legs'))
   if phi is None or spacing is None or dec(phi)<=0 or dec(spacing)<=0:raise ValueError('stirrup_diameter_or_spacing_unresolved')
   out['checks']['usual_minimum_spacing']=practice(spacing>=8,'STIRRUP_SPACING_BELOW_USUAL_LIMIT',limit_cm=8,drawn_cm=spacing,rule=RULES['spacing'])
