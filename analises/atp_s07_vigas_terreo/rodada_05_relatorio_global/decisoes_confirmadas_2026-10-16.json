@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-16",
+  "source": "Respostas expressas de Joao nesta conversa",
+  "block_levels": {
+    "P756": 8.38,
+    "P761": 8.38,
+    "confirmed": true,
+    "interpretation": "NB corretos; blocos abaixo da V15; usar faces dos pilares nesses apoios"
+  },
+  "material": {
+    "fck_mpa": 35,
+    "whole_final_section": true,
+    "simplification": "C35 uniforme na secao final; projeto tem C40 primeira etapa e C35 segunda"
+  },
+  "reinforcement_conflicts": {
+    "adopt": "marcas individuais e cortes",
+    "record_elevation_conflicts": true,
+    "beams": [
+      "V3",
+      "V6",
+      "V18",
+      "V19",
+      "V20",
+      "V21",
+      "V22"
+    ]
+  },
+  "vibrator_diameter_cm": 4,
+  "annotations": "Propostas de correcao separadas; verificar desenho original",
+  "h165": "Incluir calculo de viga convencional; excluir criterios especificos de viga-parede",
+  "PAR": "Fora do escopo",
+  "direct_support_d_over_2": {
+    "confirmed_by_engineer": true,
+    "locations": [
+      "V21-PC55C",
+      "V37-P725"
+    ],
+    "source": "Resposta expressa nesta conversa; cargas superiores e reacao inferior confirmadas",
+    "scope": "Somente dois locais confirmados; NBR6118:2023 17.4.1.2.1"
+  },
+  "latest_confirmations": {
+    "source": "Respostas expressas de Joao, retomadas em 16/10/2026",
+    "h165_composite_stirrups": "Usar apenas os detalhes das pranchas recebidas; nao presumir detalhe complementar de fechamento/ancoragem.",
+    "V31_V41_model_origin": "Inicio do balanco coincide com eixo V12/V13; nao com face externa.",
+    "V31_V12_transfer": "V31 apoia na V12. Papel indicado como apoio no TQS esta invertido; reacao negativa corresponde a acao oposta sobre a V12, nao a levantamento nesta ligacao.",
+    "V41_V13_transfer": "Confirmacao expressa adicional: Sim, V41 apoia na V13",
+    "V49_PC21C": "Apoio direto no bloco PC21C confirmado; nao verificar suspensao V49 sobre V26."
+  },
+  "reaction_sign_criterion": {
+    "source": "Joao:resposta nesta retomada",
+    "gravity": "Caso de cargas permanentes e sobrecarga com reacao negativa indica apoio invertido.",
+    "wind": "Com vento, reacao negativa indica levantamento da receptora pela viga apoiada.",
+    "separate_engineer_review": [
+      "V17-V23",
+      "V17-V42",
+      "V35-V15",
+      "V36-V5"
+    ],
+    "disposition": "Joao autorizou deixar os quatro itens pendentes para sua analise separada; ele procurara informacao por carregamento."
+  },
+  "negative_support_each_side": {
+    "source": "Correcao expressa deJoao,16/10/2026",
+    "rule": "Cada lado do apoio separadamente, usando maximo do proprio trecho/extremidade. Sem unificar com o trecho vizinho e sem reduzir para face interna.",
+    "example_V43_P723": {
+      "end_span3_Mk_tf_m": -8.697,
+      "start_span4_Mk_tf_m": -12.707
+    }
+  }
+}

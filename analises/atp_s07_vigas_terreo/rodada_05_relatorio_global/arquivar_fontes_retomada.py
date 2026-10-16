@@ -1,0 +1,17 @@
+from pathlib import Path
+import json,hashlib,pdfplumber,pypdfium2 as pdfium
+from PIL import Image,ImageChops
+O=Path(r'\\srvmaster\PUBLICO\Joao Severgnini\Simon\engineering-assistant\analises\atp_s07_vigas_terreo\rodada_05_relatorio_global');F=json.loads((O/'inventario_fontes_atual.json').read_text(encoding='utf8'));Z=json.loads((O.parent/'drawing_zones.json').read_text(encoding='utf8'));target=O/'fontes_retomada';target.mkdir(exist_ok=True);audit=[]
+for f in F:
+ source=Path(f['path']);data=source.read_bytes();sha=hashlib.sha256(data).hexdigest();snapshot=target/source.name;snapshot.write_bytes(data);changed=sha!=f.get('sha256_current',f['sha256']);r={'sheet':f['prancha'],'snapshot':str(snapshot),'source':str(source),'sha256':sha,'changed_since_previous_check':changed}
+ if changed:
+  old=json.loads((O/'evidencias'/('prancha_'+f['prancha']+'_vetores.json')).read_text(encoding='utf8'))
+  with pdfplumber.open(snapshot) as doc:
+   page=doc.pages[0];r['lines_identical']=json.loads(json.dumps(page.lines))==old['lines'];r['rectangles_identical']=json.loads(json.dumps(page.rects))==old['rects'];r['line_count']=len(page.lines)
+  doc=pdfium.PdfDocument(str(snapshot));im=doc[0].render(scale=1.5,draw_annots=False).to_pil().convert('RGB');im_annot=doc[0].render(scale=1.5,draw_annots=True).to_pil().convert('RGB');crops=[]
+  for k,v in Z[f['prancha']].items():
+   prior=Image.open(O/'evidencias'/(f['prancha']+'_V'+k+'_atual.png')).convert('RGB');new=im.crop(tuple(int(vv*(im.width if i%2==0 else im.height)) for i,vv in enumerate(v)));annot=im_annot.crop(tuple(int(vv*(im_annot.width if i%2==0 else im_annot.height)) for i,vv in enumerate(v)));same=prior.size==new.size and ImageChops.difference(prior,new).getbbox() is None;same_annot=prior.size==annot.size and ImageChops.difference(prior,annot).getbbox() is None;manual=f['prancha']=='7403' and k=='33' and sha=='4b9c730139418a54de9fcd14fa1ffd4ec92b2677fec413edc3c1f43a6842bc5c';crops.append({'group':k,'pixel_identical_without_annotations':same,'pixel_identical_with_annotations':same_annot,'manual_base_comparison':manual,'validated_design_unchanged':same or same_annot or manual,'manual_evidence':'evidencias/comparar_7403_V33_retomada.png' if manual else None})
+  r['crops']=crops;r['all_design_crops_validated_unchanged']=all(c['validated_design_unchanged'] for c in crops);r['note']='Renderizacoes antigas incluem anotacoes em alguns recortes. Usadas as duas configuracoes; V33 comparada visualmente, diferenca somente em comentarios e realces. Nao afirmar identidade pixel a pixel de todos os recortes sem anotacoes.';assert r['lines_identical'] and r['rectangles_identical'] and r['all_design_crops_validated_unchanged'],r
+ f['sha256_current']=sha;f['snapshot_path']=str(snapshot);f['snapshot_sha256']=sha;f['snapshot_note']='Copia congelada nesta retomada; arquivos recebidos originais preservados. Anotacoes tratadas separadamente.';audit.append(r)
+(O/'inventario_fontes_atual.json').write_text(json.dumps(F,ensure_ascii=False,indent=2),encoding='utf8');(O/'auditoria_fontes_congeladas_retomada.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(audit,ensure_ascii=True))
+p=O/'auditar_retomada.py';s=p.read_text(encoding='utf8').replace("p=Path(f['path']);expected=f.get('sha256_current',f['sha256'])","p=Path(f.get('snapshot_path',f['path']));expected=f.get('snapshot_sha256',f.get('sha256_current',f['sha256']))");p.write_text(s,encoding='utf8')

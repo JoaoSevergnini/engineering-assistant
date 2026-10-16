@@ -1,0 +1,13 @@
+# S07 — seção final e limites físicos das faixas
+
+Origem: orientação explícita de João em 16/10/2026, nesta conversa, acompanhada de imagem anotada da V4. Trata-se de premissa de revisão deste projeto, não de prescrição normativa genérica.
+
+1. Excluir da resistência e da definição de d as barras longitudinais intermediárias situadas no topo da primeira etapa de concretagem. Não as deslocar para a face externa, não somá-las à armadura tracionada final e não manter pendência de sua cota apenas para esses cálculos.
+2. Considerar a seção final com a altura total das duas etapas e as armaduras inferior e superior efetivamente detalhadas para a viga completa. Positiva: inferiores tracionadas, sem contribuição das superiores. Negativa: superiores finais tracionadas, sem recuperar barras do topo da primeira etapa. Não adotar altura somente da primeira concretagem.
+3. Para d, usar os centroides físicos das camadas externas pertinentes retornados pelo Concretopy. No cortante aplicar a seleção vigente: maior número de camadas externas, maior As em empate e menor d em novo empate. Não substituir o centroide por uma barra da camada mais interna isolada. Preservar cobrimento e estribo físicos.
+4. As faixas de estribos terminam na face do bloco que intercepta a viga, não necessariamente na face do pilar. A imagem fornecida demonstra esse significado na V4. Confrontar forma e detalhe com a mesma referência física; não apontar falta de estribos somente pela diferença até a face do pilar.
+5. Não inferir comprimento de bloco a partir da soma de faixas. Obter as faces na documentação, associá-las ao eixo TQS e consultar cada faixa real com seu próprio máximo |Vk|. Não comparar automaticamente o máximo de todo o vão à faixa mais fraca.
+6. O esclarecimento resolve a interpretação do término junto aos blocos; não equivale a medir todos os blocos, comprovar toda a cobertura ou verificar a armadura dentro de cada nó. Controles do bloco/nó, suspensão, interface entre concretagens e fases de execução não são aprovados por essa leitura. Não acrescentar esses controles ao escopo sem distingui-los.
+7. Preservar níveis e materiais do contexto, modelo TQS como fonte de esforços, máximos negativos no apoio, saída oficial Concretopy e apresentação tf/tf·m característica/equivalente. Vigas-parede/PAR continuam separados para João.
+
+As divergências quantitativas anteriores V4=25,40 cm, V5=100 cm e V33/V40=89,50 cm ficam retiradas como provas de cobertura insuficiente: foram obtidas com referência física inadequada. A hipótese de falta de informação sobre barras do topo da primeira etapa fica igualmente retirada para resistência e d. Mantêm-se, quando aplicáveis, as verdadeiras dúvidas sobre degraus, marcas, bitolas e faixas.

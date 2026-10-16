@@ -1,0 +1,4284 @@
+{
+  "negative_sides_audited": 190,
+  "demand_rows_changed": 45,
+  "capacity_outcomes_changed_C35": 14,
+  "changes": [
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "2",
+      "end": "left",
+      "support": "P705",
+      "previous_shared_Mk_tf_m": 13.403,
+      "own_side_Mk_tf_m": 12.346,
+      "signed_Mk_tf_m": -12.346,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 39,
+        "text": "M MN. VAO= 2   -12.346   -7.241   -2.229    1.318    3.554    4.870    5.294    4.846    3.517    1.275   -2.310   -7.256  -12.713"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "2",
+      "end": "right",
+      "support": "P706",
+      "previous_shared_Mk_tf_m": 14.109,
+      "own_side_Mk_tf_m": 12.713,
+      "signed_Mk_tf_m": -12.713,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 39,
+        "text": "M MN. VAO= 2   -12.346   -7.241   -2.229    1.318    3.554    4.870    5.294    4.846    3.517    1.275   -2.310   -7.256  -12.713"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC24C",
+      "previous_shared_Mk_tf_m": 3.197,
+      "own_side_Mk_tf_m": 0.565,
+      "signed_Mk_tf_m": -0.565,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 305,
+        "text": "M MN. VAO= 2    -0.565   -0.312   -0.130    0.038    0.185    0.295    0.359    0.256    0.179    0.057   -0.111   -0.309   -0.611"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC20C",
+      "previous_shared_Mk_tf_m": 3.659,
+      "own_side_Mk_tf_m": 0.611,
+      "signed_Mk_tf_m": -0.611,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 305,
+        "text": "M MN. VAO= 2    -0.565   -0.312   -0.130    0.038    0.185    0.295    0.359    0.256    0.179    0.057   -0.111   -0.309   -0.611"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "1",
+      "end": "right",
+      "support": "P756",
+      "previous_shared_Mk_tf_m": 29.229,
+      "own_side_Mk_tf_m": 21.588,
+      "signed_Mk_tf_m": -21.588,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1214,
+        "text": "M MN. VAO= 1   -16.851   -9.572   -1.380    2.983    5.426    6.660    7.434    8.082    5.958    1.653   -4.579  -12.470  -21.588"
+      },
+      "capacity_C35_tf_m": 23.90659856256908,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "3",
+      "end": "left",
+      "support": "P760",
+      "previous_shared_Mk_tf_m": 23.719,
+      "own_side_Mk_tf_m": 22.871,
+      "signed_Mk_tf_m": -22.871,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1216,
+        "text": "M MN. VAO= 3   -22.871  -14.424   -4.224    2.413    6.477    8.964    9.929    9.357    7.291    3.550   -2.737  -13.277  -28.492"
+      },
+      "capacity_C35_tf_m": 10.955041803925555,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "3",
+      "end": "right",
+      "support": "P758",
+      "previous_shared_Mk_tf_m": 30.378,
+      "own_side_Mk_tf_m": 28.492,
+      "signed_Mk_tf_m": -28.492,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1216,
+        "text": "M MN. VAO= 3   -22.871  -14.424   -4.224    2.413    6.477    8.964    9.929    9.357    7.291    3.550   -2.737  -13.277  -28.492"
+      },
+      "capacity_C35_tf_m": 30.198522481314207,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "2",
+      "end": "left",
+      "support": "V901",
+      "previous_shared_Mk_tf_m": 7.013,
+      "own_side_Mk_tf_m": 7.01,
+      "signed_Mk_tf_m": -7.01,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 374,
+        "text": "M MN. VAO= 2    -7.010   -3.138   -0.301    0.780    1.289    1.525    1.574    1.467    1.198    0.702   -0.379   -3.019   -6.215"
+      },
+      "capacity_C35_tf_m": 23.805120189193097,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "3",
+      "end": "right",
+      "support": "V903",
+      "previous_shared_Mk_tf_m": 6.862,
+      "own_side_Mk_tf_m": 6.856,
+      "signed_Mk_tf_m": -6.856,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 375,
+        "text": "M MN. VAO= 3    -6.215   -3.072   -0.519    0.624    1.127    1.401    1.520    1.490    1.278    0.691   -0.450   -3.157   -6.856"
+      },
+      "capacity_C35_tf_m": 27.213083030495703,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "5",
+      "end": "right",
+      "support": "V905",
+      "previous_shared_Mk_tf_m": 7.5,
+      "own_side_Mk_tf_m": 7.494,
+      "signed_Mk_tf_m": -7.494,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 377,
+        "text": "M MN. VAO= 5    -7.020   -3.360   -0.502    0.701    1.247    1.539    1.651    1.566    1.298    0.757   -0.466   -3.433   -7.494"
+      },
+      "capacity_C35_tf_m": 30.06321798347957,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC55C",
+      "previous_shared_Mk_tf_m": 23.756,
+      "own_side_Mk_tf_m": 23.442,
+      "signed_Mk_tf_m": -23.442,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 472,
+        "text": "M MN. VAO= 2   -23.442  -12.982   -5.330    0.377    3.513    5.072    5.641    5.056    3.436    0.776   -3.660   -9.559  -17.701"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "3",
+      "end": "left",
+      "support": "PC56C",
+      "previous_shared_Mk_tf_m": 17.701,
+      "own_side_Mk_tf_m": 17.322,
+      "signed_Mk_tf_m": -17.322,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 473,
+        "text": "M MN. VAO= 3   -17.322   -8.304   -0.862    2.999    5.599    7.001    6.692    5.705    3.607    0.634   -4.660  -10.981  -19.794"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "5",
+      "end": "left",
+      "support": "PC59C",
+      "previous_shared_Mk_tf_m": 12.049,
+      "own_side_Mk_tf_m": 12.048,
+      "signed_Mk_tf_m": -12.048,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 475,
+        "text": "M MN. VAO= 5   -12.048   -8.763   -6.945   -5.578   -4.636   -4.124   -4.037   -4.376   -5.168   -6.448   -8.294  -10.635  -13.810"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "6",
+      "end": "left",
+      "support": "PC60C",
+      "previous_shared_Mk_tf_m": 13.81,
+      "own_side_Mk_tf_m": 13.485,
+      "signed_Mk_tf_m": -13.485,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 476,
+        "text": "M MN. VAO= 6   -13.485   -9.848   -6.852   -4.267   -2.124   -0.235    1.386    2.273    2.690    2.958    2.584    1.834    0.474"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC61C",
+      "previous_shared_Mk_tf_m": 10.762,
+      "own_side_Mk_tf_m": 10.466,
+      "signed_Mk_tf_m": -10.466,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1054,
+        "text": "M MN. VAO= 2    -1.281    0.871    2.151    2.998    3.427    3.295    3.057    2.086    0.835   -0.934   -3.577   -6.594  -10.466"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "3",
+      "end": "left",
+      "support": "P730",
+      "previous_shared_Mk_tf_m": 16.625,
+      "own_side_Mk_tf_m": 6.915,
+      "signed_Mk_tf_m": -6.915,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1510,
+        "text": "M MN. VAO= 3    -6.915   -4.219   -1.617    0.598    1.937    2.771    3.085    2.809    2.008    0.700   -1.408   -4.065   -6.498"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "3",
+      "end": "right",
+      "support": "P727",
+      "previous_shared_Mk_tf_m": 13.317,
+      "own_side_Mk_tf_m": 6.498,
+      "signed_Mk_tf_m": -6.498,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1510,
+        "text": "M MN. VAO= 3    -6.915   -4.219   -1.617    0.598    1.937    2.771    3.085    2.809    2.008    0.700   -1.408   -4.065   -6.498"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "5",
+      "end": "left",
+      "support": "P708",
+      "previous_shared_Mk_tf_m": 8.308,
+      "own_side_Mk_tf_m": 3.2099638554216865,
+      "signed_Mk_tf_m": -3.2099638554216865,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1512,
+        "text": "M MN. VAO= 5    -2.469   -4.109   -3.225   -1.737   -0.473    0.485    1.042    1.226    1.133    0.785    0.231   -0.380   -0.659"
+      },
+      "capacity_C35_tf_m": 5.128664776760401,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC21C",
+      "previous_shared_Mk_tf_m": 3.521,
+      "own_side_Mk_tf_m": 2.188,
+      "signed_Mk_tf_m": -2.188,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1470,
+        "text": "M MN. VAO= 2    -2.188   -0.679    0.420    0.433    0.445    0.411    0.364    0.248    0.127   -0.022   -0.219   -0.390   -0.689"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC19C",
+      "previous_shared_Mk_tf_m": 1.726,
+      "own_side_Mk_tf_m": 0.689,
+      "signed_Mk_tf_m": -0.689,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1470,
+        "text": "M MN. VAO= 2    -2.188   -0.679    0.420    0.433    0.445    0.411    0.364    0.248    0.127   -0.022   -0.219   -0.390   -0.689"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V28",
+      "model": "V28",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC28C",
+      "previous_shared_Mk_tf_m": 16.067,
+      "own_side_Mk_tf_m": 15.344000000000001,
+      "signed_Mk_tf_m": -15.344000000000001,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 582,
+        "text": "M MN. VAO= 1   -16.549   -8.782   -2.199    1.824    4.711    6.624    7.474    7.387    6.169    3.837    0.080   -7.187  -15.344"
+      },
+      "capacity_C35_tf_m": 16.577226306736993,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V32",
+      "model": "V32",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC29C",
+      "previous_shared_Mk_tf_m": 13.095,
+      "own_side_Mk_tf_m": 12.1,
+      "signed_Mk_tf_m": -12.1,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 631,
+        "text": "M MN. VAO= 1   -14.410   -6.118   -0.252    3.882    6.878    8.881    9.801    9.768    8.599    6.303    2.612   -2.769  -12.100"
+      },
+      "capacity_C35_tf_m": 16.577226306736993,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "3",
+      "end": "left",
+      "support": "P737",
+      "previous_shared_Mk_tf_m": 15.784,
+      "own_side_Mk_tf_m": 8.837,
+      "signed_Mk_tf_m": -8.837,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1427,
+        "text": "M MN. VAO= 3    -8.837   -5.428   -1.939    0.814    2.497    3.544    3.891    3.568    2.568    0.903   -1.740   -5.225   -8.697"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "3",
+      "end": "right",
+      "support": "P723",
+      "previous_shared_Mk_tf_m": 12.707,
+      "own_side_Mk_tf_m": 8.697,
+      "signed_Mk_tf_m": -8.697,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1427,
+        "text": "M MN. VAO= 3    -8.837   -5.428   -1.939    0.814    2.497    3.544    3.891    3.568    2.568    0.903   -1.740   -5.225   -8.697"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "5",
+      "end": "left",
+      "support": "P714",
+      "previous_shared_Mk_tf_m": 11.751,
+      "own_side_Mk_tf_m": 5.921,
+      "signed_Mk_tf_m": -5.921,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1429,
+        "text": "M MN. VAO= 5    -5.921   -4.518   -3.190   -1.601   -0.221    0.826    1.363    1.570    1.484    1.116    0.484   -0.359   -1.340"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V18",
+      "model": "V18",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC45C",
+      "previous_shared_Mk_tf_m": 18.45,
+      "own_side_Mk_tf_m": 18.41,
+      "signed_Mk_tf_m": -18.41,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 436,
+        "text": "M MN. VAO= 2   -18.410   -9.096   -1.219    2.198    4.028    5.069    5.576    5.624    5.192    4.106    1.980   -3.306   -9.247"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V35",
+      "model": "V35",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC30C",
+      "previous_shared_Mk_tf_m": 22.808,
+      "own_side_Mk_tf_m": 21.953,
+      "signed_Mk_tf_m": -21.953,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 680,
+        "text": "M MN. VAO= 1   -10.145   -3.503    1.891    5.023    6.953    7.908    7.897    6.990    5.074    2.073   -2.576  -10.933  -21.953"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V23",
+      "model": "V23",
+      "span_token": "1",
+      "end": "right",
+      "support": "P799",
+      "previous_shared_Mk_tf_m": 8.639239687145201,
+      "own_side_Mk_tf_m": 6.514983127839066,
+      "signed_Mk_tf_m": -6.514983127839066,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1087,
+        "text": "M MN. VAO= 1     0.807    1.087    1.156    1.061    0.763    0.205   -0.767   -2.029   -3.538   -5.319   -6.621   -6.615   -5.089"
+      },
+      "capacity_C35_tf_m": 13.946824790646682,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V24",
+      "model": "V23",
+      "span_token": "3",
+      "end": "left",
+      "support": "P785",
+      "previous_shared_Mk_tf_m": 12.997,
+      "own_side_Mk_tf_m": 11.64,
+      "signed_Mk_tf_m": -11.64,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1089,
+        "text": "M MN. VAO= 3   -11.640   -7.906   -0.701    3.993    7.224    9.256   10.062    9.639    8.021    5.274    1.484   -4.292   -8.565"
+      },
+      "capacity_C35_tf_m": 18.421141911248508,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "1",
+      "end": "left",
+      "support": "P778",
+      "previous_shared_Mk_tf_m": 8.565,
+      "own_side_Mk_tf_m": 3.2893717728055076,
+      "signed_Mk_tf_m": -3.2893717728055076,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 521,
+        "text": "M MN. VAO= 1    -3.145   -3.611   -0.928    1.061    2.342    3.098    3.337    3.014    2.112    0.677   -1.604   -4.462   -7.560"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "1",
+      "end": "right",
+      "support": "P769",
+      "previous_shared_Mk_tf_m": 10.745,
+      "own_side_Mk_tf_m": 7.56,
+      "signed_Mk_tf_m": -7.56,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 521,
+        "text": "M MN. VAO= 1    -3.145   -3.611   -0.928    1.061    2.342    3.098    3.337    3.014    2.112    0.677   -1.604   -4.462   -7.560"
+      },
+      "capacity_C35_tf_m": 6.773167015611063,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "3",
+      "end": "left",
+      "support": "P759",
+      "previous_shared_Mk_tf_m": 9.792,
+      "own_side_Mk_tf_m": 1.161,
+      "signed_Mk_tf_m": -1.161,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 523,
+        "text": "M MN. VAO= 3    -1.161   -0.990   -0.757   -0.500   -0.136    0.180    0.391    0.435    0.452    0.271    0.010   -0.200   -0.777"
+      },
+      "capacity_C35_tf_m": 6.773167015611063,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "2",
+      "end": "left",
+      "support": "P807C",
+      "previous_shared_Mk_tf_m": 5.088,
+      "own_side_Mk_tf_m": 2.019,
+      "signed_Mk_tf_m": -2.019,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1353,
+        "text": "M MN. VAO= 2    -2.019   -1.486   -1.018   -0.453   -0.049    0.130    0.167    0.014   -0.375   -0.930   -1.628   -2.401   -3.343"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "2",
+      "end": "right",
+      "support": "P797",
+      "previous_shared_Mk_tf_m": 7.362,
+      "own_side_Mk_tf_m": 3.343,
+      "signed_Mk_tf_m": -3.343,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1353,
+        "text": "M MN. VAO= 2    -2.019   -1.486   -1.018   -0.453   -0.049    0.130    0.167    0.014   -0.375   -0.930   -1.628   -2.401   -3.343"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "3",
+      "end": "right",
+      "support": "P791",
+      "previous_shared_Mk_tf_m": 11.789,
+      "own_side_Mk_tf_m": 9.686,
+      "signed_Mk_tf_m": -9.686,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1354,
+        "text": "M MN. VAO= 3    -7.362   -3.725   -0.564    1.366    2.586    3.232    3.377    2.866    1.884    0.218   -2.780   -6.272   -9.686"
+      },
+      "capacity_C35_tf_m": 13.946824790646682,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "5",
+      "end": "left",
+      "support": "P784",
+      "previous_shared_Mk_tf_m": 14.964,
+      "own_side_Mk_tf_m": 9.958,
+      "signed_Mk_tf_m": -9.958,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1356,
+        "text": "M MN. VAO= 5    -9.958   -6.416   -2.820    0.131    1.957    3.103    3.518    3.335    2.467    1.027   -1.328   -4.481   -7.737"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "5",
+      "end": "right",
+      "support": "P764",
+      "previous_shared_Mk_tf_m": 10.3,
+      "own_side_Mk_tf_m": 7.737,
+      "signed_Mk_tf_m": -7.737,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1356,
+        "text": "M MN. VAO= 5    -9.958   -6.416   -2.820    0.131    1.957    3.103    3.518    3.335    2.467    1.027   -1.328   -4.481   -7.737"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "7",
+      "end": "left",
+      "support": "P762",
+      "previous_shared_Mk_tf_m": 8.956,
+      "own_side_Mk_tf_m": 1.2142291169451074,
+      "signed_Mk_tf_m": -1.2142291169451074,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1358,
+        "text": "M MN. VAO= 7    -1.118   -1.230   -1.201   -0.921   -0.639   -0.340   -0.119    0.117    0.197    0.290    0.264    0.228    0.165"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V31",
+      "model": "V31",
+      "span_token": "2",
+      "end": "left",
+      "support": "P746",
+      "previous_shared_Mk_tf_m": 17.342,
+      "own_side_Mk_tf_m": 0.375,
+      "signed_Mk_tf_m": -0.375,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1163,
+        "text": "M MN. VAO= 2    -0.375   -0.344   -0.313   -0.281   -0.250   -0.219   -0.188   -0.156   -0.125   -0.094   -0.063   -0.031   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V31",
+      "model": "V31",
+      "span_token": "2",
+      "end": "right",
+      "support": "P746",
+      "previous_shared_Mk_tf_m": 17.342,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.0,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1163,
+        "text": "M MN. VAO= 2    -0.375   -0.344   -0.313   -0.281   -0.250   -0.219   -0.188   -0.156   -0.125   -0.094   -0.063   -0.031   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V41",
+      "model": "V41",
+      "span_token": "2",
+      "end": "left",
+      "support": "P744",
+      "previous_shared_Mk_tf_m": 4.061,
+      "own_side_Mk_tf_m": 0.184,
+      "signed_Mk_tf_m": -0.184,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1316,
+        "text": "M MN. VAO= 2    -0.184   -0.169   -0.153   -0.138   -0.123   -0.107   -0.092   -0.077   -0.061   -0.046   -0.031   -0.015   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V41",
+      "model": "V41",
+      "span_token": "2",
+      "end": "right",
+      "support": "P744",
+      "previous_shared_Mk_tf_m": 4.061,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.0,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1316,
+        "text": "M MN. VAO= 2    -0.184   -0.169   -0.153   -0.138   -0.123   -0.107   -0.092   -0.077   -0.061   -0.046   -0.031   -0.015   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "1B",
+      "end": "right",
+      "support": "P748",
+      "previous_shared_Mk_tf_m": 8.222,
+      "own_side_Mk_tf_m": 0.14054545454545456,
+      "signed_Mk_tf_m": -0.14054545454545456,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1425,
+        "text": "M MN. VAO= 1B   -0.014   -0.032   -0.056   -0.083   -0.112   -0.144   -0.178   -0.219   -0.189   -0.161   -0.136   -0.113   -0.093"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "1B",
+      "end": "right",
+      "support": "PC62C",
+      "previous_shared_Mk_tf_m": 1.281,
+      "own_side_Mk_tf_m": 1.279,
+      "signed_Mk_tf_m": -1.279,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1053,
+        "text": "M MN. VAO= 1B    0.242    0.125    0.006   -0.115   -0.236   -0.360   -0.494   -0.641   -0.789   -0.802   -0.960   -1.118   -1.279"
+      },
+      "capacity_C35_tf_m": 3.45163619454167,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "1B",
+      "end": "right",
+      "support": "P745",
+      "previous_shared_Mk_tf_m": 8.961,
+      "own_side_Mk_tf_m": 0.52,
+      "signed_Mk_tf_m": -0.52,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1508,
+        "text": "M MN. VAO= 1B   -0.016   -0.037   -0.061   -0.088   -0.116   -0.147   -0.181   -0.267   -0.313   -0.361   -0.411   -0.465   -0.520"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    }
+  ],
+  "V43_P723": [
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "3",
+      "end": "right",
+      "support": "P723",
+      "previous_shared_Mk_tf_m": 12.707,
+      "own_side_Mk_tf_m": 8.697,
+      "signed_Mk_tf_m": -8.697,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1427,
+        "text": "M MN. VAO= 3    -8.837   -5.428   -1.939    0.814    2.497    3.544    3.891    3.568    2.568    0.903   -1.740   -5.225   -8.697"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "4",
+      "end": "left",
+      "support": "P723",
+      "previous_shared_Mk_tf_m": 12.707,
+      "own_side_Mk_tf_m": 12.707,
+      "signed_Mk_tf_m": -12.707,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1428,
+        "text": "M MN. VAO= 4   -12.707   -8.189   -2.977    1.015    3.334    4.739    5.299    5.012    3.879    1.893   -1.441   -6.513  -11.751"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    }
+  ],
+  "all_sides": [
+    {
+      "beam": "V1",
+      "model": "V1",
+      "span_token": "1",
+      "end": "left",
+      "support": "P701",
+      "previous_shared_Mk_tf_m": 11.127,
+      "own_side_Mk_tf_m": 11.127,
+      "signed_Mk_tf_m": -11.127,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 13,
+        "text": "M MN. VAO= 1   -11.127   -6.084   -0.740    2.885    5.334    6.724    7.117    6.542    5.025    2.588   -0.908   -5.661  -11.144"
+      },
+      "capacity_C35_tf_m": 12.053871424912373,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V1",
+      "model": "V1",
+      "span_token": "1",
+      "end": "right",
+      "support": "P702",
+      "previous_shared_Mk_tf_m": 11.144,
+      "own_side_Mk_tf_m": 11.144,
+      "signed_Mk_tf_m": -11.144,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 13,
+        "text": "M MN. VAO= 1   -11.127   -6.084   -0.740    2.885    5.334    6.724    7.117    6.542    5.025    2.588   -0.908   -5.661  -11.144"
+      },
+      "capacity_C35_tf_m": 12.053871424912373,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "1",
+      "end": "left",
+      "support": "P704",
+      "previous_shared_Mk_tf_m": 9.854,
+      "own_side_Mk_tf_m": 9.854,
+      "signed_Mk_tf_m": -9.854,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 38,
+        "text": "M MN. VAO= 1    -9.854   -4.929   -0.433    2.668    4.765    5.925    6.163    5.496    3.890    1.329   -2.643   -8.124  -13.403"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "1",
+      "end": "right",
+      "support": "P705",
+      "previous_shared_Mk_tf_m": 13.403,
+      "own_side_Mk_tf_m": 13.403,
+      "signed_Mk_tf_m": -13.403,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 38,
+        "text": "M MN. VAO= 1    -9.854   -4.929   -0.433    2.668    4.765    5.925    6.163    5.496    3.890    1.329   -2.643   -8.124  -13.403"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "2",
+      "end": "left",
+      "support": "P705",
+      "previous_shared_Mk_tf_m": 13.403,
+      "own_side_Mk_tf_m": 12.346,
+      "signed_Mk_tf_m": -12.346,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 39,
+        "text": "M MN. VAO= 2   -12.346   -7.241   -2.229    1.318    3.554    4.870    5.294    4.846    3.517    1.275   -2.310   -7.256  -12.713"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "2",
+      "end": "right",
+      "support": "P706",
+      "previous_shared_Mk_tf_m": 14.109,
+      "own_side_Mk_tf_m": 12.713,
+      "signed_Mk_tf_m": -12.713,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 39,
+        "text": "M MN. VAO= 2   -12.346   -7.241   -2.229    1.318    3.554    4.870    5.294    4.846    3.517    1.275   -2.310   -7.256  -12.713"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "3",
+      "end": "left",
+      "support": "P706",
+      "previous_shared_Mk_tf_m": 14.109,
+      "own_side_Mk_tf_m": 14.109,
+      "signed_Mk_tf_m": -14.109,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 40,
+        "text": "M MN. VAO= 3   -14.109   -8.631   -2.972    1.265    3.969    5.746    6.584    6.457    5.330    3.173    0.035   -5.026  -11.420"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V2",
+      "model": "V2",
+      "span_token": "3",
+      "end": "right",
+      "support": "P707",
+      "previous_shared_Mk_tf_m": 11.42,
+      "own_side_Mk_tf_m": 11.42,
+      "signed_Mk_tf_m": -11.42,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 40,
+        "text": "M MN. VAO= 3   -14.109   -8.631   -2.972    1.265    3.969    5.746    6.584    6.457    5.330    3.173    0.035   -5.026  -11.420"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V4",
+      "model": "V4",
+      "span_token": "1",
+      "end": "left",
+      "support": "P746",
+      "previous_shared_Mk_tf_m": 11.59,
+      "own_side_Mk_tf_m": 11.59,
+      "signed_Mk_tf_m": -11.59,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 97,
+        "text": "M MN. VAO= 1   -11.590   -8.621   -1.444    2.833    5.520    7.174    7.840    7.479    6.032    3.368   -1.124   -9.468  -10.321"
+      },
+      "capacity_C35_tf_m": 23.90659856256908,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V4",
+      "model": "V4",
+      "span_token": "1",
+      "end": "right",
+      "support": "P747",
+      "previous_shared_Mk_tf_m": 10.321,
+      "own_side_Mk_tf_m": 10.321,
+      "signed_Mk_tf_m": -10.321,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 97,
+        "text": "M MN. VAO= 1   -11.590   -8.621   -1.444    2.833    5.520    7.174    7.840    7.479    6.032    3.368   -1.124   -9.468  -10.321"
+      },
+      "capacity_C35_tf_m": 20.32184917611441,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC26C",
+      "previous_shared_Mk_tf_m": 0.576,
+      "own_side_Mk_tf_m": 0.576,
+      "signed_Mk_tf_m": -0.576,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 304,
+        "text": "M MN. VAO= 1    -0.576   -0.360   -0.177    0.143    0.346    0.321    0.363    0.167    0.079   -0.273   -0.787   -2.015   -3.197"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC24C",
+      "previous_shared_Mk_tf_m": 3.197,
+      "own_side_Mk_tf_m": 3.197,
+      "signed_Mk_tf_m": -3.197,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 304,
+        "text": "M MN. VAO= 1    -0.576   -0.360   -0.177    0.143    0.346    0.321    0.363    0.167    0.079   -0.273   -0.787   -2.015   -3.197"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC24C",
+      "previous_shared_Mk_tf_m": 3.197,
+      "own_side_Mk_tf_m": 0.565,
+      "signed_Mk_tf_m": -0.565,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 305,
+        "text": "M MN. VAO= 2    -0.565   -0.312   -0.130    0.038    0.185    0.295    0.359    0.256    0.179    0.057   -0.111   -0.309   -0.611"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC20C",
+      "previous_shared_Mk_tf_m": 3.659,
+      "own_side_Mk_tf_m": 0.611,
+      "signed_Mk_tf_m": -0.611,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 305,
+        "text": "M MN. VAO= 2    -0.565   -0.312   -0.130    0.038    0.185    0.295    0.359    0.256    0.179    0.057   -0.111   -0.309   -0.611"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "3",
+      "end": "left",
+      "support": "PC20C",
+      "previous_shared_Mk_tf_m": 3.659,
+      "own_side_Mk_tf_m": 3.659,
+      "signed_Mk_tf_m": -3.659,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 306,
+        "text": "M MN. VAO= 3    -3.659   -2.343   -1.121   -0.577   -0.062   -0.118    0.062    0.038    0.073    0.005    0.090    0.040   -0.009"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V14",
+      "model": "V14",
+      "span_token": "3",
+      "end": "right",
+      "support": "V43",
+      "previous_shared_Mk_tf_m": 0.009000000000000001,
+      "own_side_Mk_tf_m": 0.009000000000000001,
+      "signed_Mk_tf_m": -0.009000000000000001,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 306,
+        "text": "M MN. VAO= 3    -3.659   -2.343   -1.121   -0.577   -0.062   -0.118    0.062    0.038    0.073    0.005    0.090    0.040   -0.009"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "1",
+      "end": "left",
+      "support": "P757",
+      "previous_shared_Mk_tf_m": 16.851,
+      "own_side_Mk_tf_m": 16.851,
+      "signed_Mk_tf_m": -16.851,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1214,
+        "text": "M MN. VAO= 1   -16.851   -9.572   -1.380    2.983    5.426    6.660    7.434    8.082    5.958    1.653   -4.579  -12.470  -21.588"
+      },
+      "capacity_C35_tf_m": 6.838219702347201,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "1",
+      "end": "right",
+      "support": "P756",
+      "previous_shared_Mk_tf_m": 29.229,
+      "own_side_Mk_tf_m": 21.588,
+      "signed_Mk_tf_m": -21.588,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1214,
+        "text": "M MN. VAO= 1   -16.851   -9.572   -1.380    2.983    5.426    6.660    7.434    8.082    5.958    1.653   -4.579  -12.470  -21.588"
+      },
+      "capacity_C35_tf_m": 23.90659856256908,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "2",
+      "end": "left",
+      "support": "P756",
+      "previous_shared_Mk_tf_m": 29.229,
+      "own_side_Mk_tf_m": 29.229,
+      "signed_Mk_tf_m": -29.229,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1215,
+        "text": "M MN. VAO= 2   -29.229  -14.607   -3.428    3.132    7.393   10.373    9.590    8.574    6.445    2.852   -3.103  -12.881  -23.719"
+      },
+      "capacity_C35_tf_m": 23.90659856256908,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "2",
+      "end": "right",
+      "support": "P760",
+      "previous_shared_Mk_tf_m": 23.719,
+      "own_side_Mk_tf_m": 23.719,
+      "signed_Mk_tf_m": -23.719,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1215,
+        "text": "M MN. VAO= 2   -29.229  -14.607   -3.428    3.132    7.393   10.373    9.590    8.574    6.445    2.852   -3.103  -12.881  -23.719"
+      },
+      "capacity_C35_tf_m": 10.955041803925555,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "3",
+      "end": "left",
+      "support": "P760",
+      "previous_shared_Mk_tf_m": 23.719,
+      "own_side_Mk_tf_m": 22.871,
+      "signed_Mk_tf_m": -22.871,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1216,
+        "text": "M MN. VAO= 3   -22.871  -14.424   -4.224    2.413    6.477    8.964    9.929    9.357    7.291    3.550   -2.737  -13.277  -28.492"
+      },
+      "capacity_C35_tf_m": 10.955041803925555,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "3",
+      "end": "right",
+      "support": "P758",
+      "previous_shared_Mk_tf_m": 30.378,
+      "own_side_Mk_tf_m": 28.492,
+      "signed_Mk_tf_m": -28.492,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1216,
+        "text": "M MN. VAO= 3   -22.871  -14.424   -4.224    2.413    6.477    8.964    9.929    9.357    7.291    3.550   -2.737  -13.277  -28.492"
+      },
+      "capacity_C35_tf_m": 30.198522481314207,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "4",
+      "end": "left",
+      "support": "P758",
+      "previous_shared_Mk_tf_m": 30.378,
+      "own_side_Mk_tf_m": 30.378,
+      "signed_Mk_tf_m": -30.378,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1217,
+        "text": "M MN. VAO= 4   -30.378  -14.516   -3.499    3.225    7.224    9.507   10.406   10.150    8.584    4.754   -1.234  -10.089  -18.080"
+      },
+      "capacity_C35_tf_m": 30.198522481314207,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V15",
+      "model": "V15",
+      "span_token": "4",
+      "end": "right",
+      "support": "P761",
+      "previous_shared_Mk_tf_m": 18.08,
+      "own_side_Mk_tf_m": 18.08,
+      "signed_Mk_tf_m": -18.08,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1217,
+        "text": "M MN. VAO= 4   -30.378  -14.516   -3.499    3.225    7.224    9.507   10.406   10.150    8.584    4.754   -1.234  -10.089  -18.080"
+      },
+      "capacity_C35_tf_m": 23.90659856256908,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V16",
+      "model": "V16",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC40C",
+      "previous_shared_Mk_tf_m": 9.398,
+      "own_side_Mk_tf_m": 9.398,
+      "signed_Mk_tf_m": -9.398,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 342,
+        "text": "M MN. VAO= 1    -9.398   -5.421    2.682    6.731    9.389   10.825   11.305   10.867    9.453    6.694    2.451   -6.261  -13.769"
+      },
+      "capacity_C35_tf_m": 10.955041803925555,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V16",
+      "model": "V16",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC41C",
+      "previous_shared_Mk_tf_m": 13.769,
+      "own_side_Mk_tf_m": 13.769,
+      "signed_Mk_tf_m": -13.769,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 342,
+        "text": "M MN. VAO= 1    -9.398   -5.421    2.682    6.731    9.389   10.825   11.305   10.867    9.453    6.694    2.451   -6.261  -13.769"
+      },
+      "capacity_C35_tf_m": 10.955041803925555,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "1",
+      "end": "left",
+      "support": "V23",
+      "previous_shared_Mk_tf_m": 0.6927893738140417,
+      "own_side_Mk_tf_m": 0.6927893738140417,
+      "signed_Mk_tf_m": -0.6927893738140417,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 373,
+        "text": "M MN. VAO= 1    -0.300   -2.025   -0.255    0.812    1.311    1.588    1.703    1.655    1.402    0.846   -0.359   -3.401   -7.013"
+      },
+      "capacity_C35_tf_m": 4.416948039513524,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "1",
+      "end": "right",
+      "support": "V901",
+      "previous_shared_Mk_tf_m": 7.013,
+      "own_side_Mk_tf_m": 7.013,
+      "signed_Mk_tf_m": -7.013,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 373,
+        "text": "M MN. VAO= 1    -0.300   -2.025   -0.255    0.812    1.311    1.588    1.703    1.655    1.402    0.846   -0.359   -3.401   -7.013"
+      },
+      "capacity_C35_tf_m": 23.805120189193097,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "2",
+      "end": "left",
+      "support": "V901",
+      "previous_shared_Mk_tf_m": 7.013,
+      "own_side_Mk_tf_m": 7.01,
+      "signed_Mk_tf_m": -7.01,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 374,
+        "text": "M MN. VAO= 2    -7.010   -3.138   -0.301    0.780    1.289    1.525    1.574    1.467    1.198    0.702   -0.379   -3.019   -6.215"
+      },
+      "capacity_C35_tf_m": 23.805120189193097,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "2",
+      "end": "right",
+      "support": "V902",
+      "previous_shared_Mk_tf_m": 6.215,
+      "own_side_Mk_tf_m": 6.215,
+      "signed_Mk_tf_m": -6.215,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 374,
+        "text": "M MN. VAO= 2    -7.010   -3.138   -0.301    0.780    1.289    1.525    1.574    1.467    1.198    0.702   -0.379   -3.019   -6.215"
+      },
+      "capacity_C35_tf_m": 20.237283864967758,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "3",
+      "end": "left",
+      "support": "V902",
+      "previous_shared_Mk_tf_m": 6.215,
+      "own_side_Mk_tf_m": 6.215,
+      "signed_Mk_tf_m": -6.215,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 375,
+        "text": "M MN. VAO= 3    -6.215   -3.072   -0.519    0.624    1.127    1.401    1.520    1.490    1.278    0.691   -0.450   -3.157   -6.856"
+      },
+      "capacity_C35_tf_m": 20.237283864967758,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "3",
+      "end": "right",
+      "support": "V903",
+      "previous_shared_Mk_tf_m": 6.862,
+      "own_side_Mk_tf_m": 6.856,
+      "signed_Mk_tf_m": -6.856,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 375,
+        "text": "M MN. VAO= 3    -6.215   -3.072   -0.519    0.624    1.127    1.401    1.520    1.490    1.278    0.691   -0.450   -3.157   -6.856"
+      },
+      "capacity_C35_tf_m": 27.213083030495703,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "4",
+      "end": "left",
+      "support": "V903",
+      "previous_shared_Mk_tf_m": 6.862,
+      "own_side_Mk_tf_m": 6.862,
+      "signed_Mk_tf_m": -6.862,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 376,
+        "text": "M MN. VAO= 4    -6.862   -3.336   -0.429    0.781    1.331    1.604    1.687    1.604    1.266    0.709   -0.524   -3.396   -7.020"
+      },
+      "capacity_C35_tf_m": 27.213083030495703,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "4",
+      "end": "right",
+      "support": "V904",
+      "previous_shared_Mk_tf_m": 7.02,
+      "own_side_Mk_tf_m": 7.02,
+      "signed_Mk_tf_m": -7.02,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 376,
+        "text": "M MN. VAO= 4    -6.862   -3.336   -0.429    0.781    1.331    1.604    1.687    1.604    1.266    0.709   -0.524   -3.396   -7.020"
+      },
+      "capacity_C35_tf_m": 27.213083030495703,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "5",
+      "end": "left",
+      "support": "V904",
+      "previous_shared_Mk_tf_m": 7.02,
+      "own_side_Mk_tf_m": 7.02,
+      "signed_Mk_tf_m": -7.02,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 377,
+        "text": "M MN. VAO= 5    -7.020   -3.360   -0.502    0.701    1.247    1.539    1.651    1.566    1.298    0.757   -0.466   -3.433   -7.494"
+      },
+      "capacity_C35_tf_m": 27.213083030495703,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "5",
+      "end": "right",
+      "support": "V905",
+      "previous_shared_Mk_tf_m": 7.5,
+      "own_side_Mk_tf_m": 7.494,
+      "signed_Mk_tf_m": -7.494,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 377,
+        "text": "M MN. VAO= 5    -7.020   -3.360   -0.502    0.701    1.247    1.539    1.651    1.566    1.298    0.757   -0.466   -3.433   -7.494"
+      },
+      "capacity_C35_tf_m": 30.06321798347957,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "6",
+      "end": "left",
+      "support": "V905",
+      "previous_shared_Mk_tf_m": 7.5,
+      "own_side_Mk_tf_m": 7.5,
+      "signed_Mk_tf_m": -7.5,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 378,
+        "text": "M MN. VAO= 6    -7.500   -3.833   -0.678    0.747    1.463    1.751    1.836    1.762    1.544    1.147    0.431   -0.397   -0.382"
+      },
+      "capacity_C35_tf_m": 30.06321798347957,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V17",
+      "model": "V17",
+      "span_token": "6",
+      "end": "right",
+      "support": "V42",
+      "previous_shared_Mk_tf_m": 0.3854198860037999,
+      "own_side_Mk_tf_m": 0.3854198860037999,
+      "signed_Mk_tf_m": -0.3854198860037999,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 378,
+        "text": "M MN. VAO= 6    -7.500   -3.833   -0.678    0.747    1.463    1.751    1.836    1.762    1.544    1.147    0.431   -0.397   -0.382"
+      },
+      "capacity_C35_tf_m": 4.416948039513524,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC54C",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.053,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 471,
+        "text": "M MN. VAO= 1     0.053    4.812    8.623   10.685   12.045   12.230   11.263    8.571    5.505    1.477   -4.970  -13.454  -23.756"
+      },
+      "capacity_C35_tf_m": 4.3903024590264,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC55C",
+      "previous_shared_Mk_tf_m": 23.756,
+      "own_side_Mk_tf_m": 23.756,
+      "signed_Mk_tf_m": -23.756,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 471,
+        "text": "M MN. VAO= 1     0.053    4.812    8.623   10.685   12.045   12.230   11.263    8.571    5.505    1.477   -4.970  -13.454  -23.756"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC55C",
+      "previous_shared_Mk_tf_m": 23.756,
+      "own_side_Mk_tf_m": 23.442,
+      "signed_Mk_tf_m": -23.442,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 472,
+        "text": "M MN. VAO= 2   -23.442  -12.982   -5.330    0.377    3.513    5.072    5.641    5.056    3.436    0.776   -3.660   -9.559  -17.701"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC56C",
+      "previous_shared_Mk_tf_m": 17.701,
+      "own_side_Mk_tf_m": 17.701,
+      "signed_Mk_tf_m": -17.701,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 472,
+        "text": "M MN. VAO= 2   -23.442  -12.982   -5.330    0.377    3.513    5.072    5.641    5.056    3.436    0.776   -3.660   -9.559  -17.701"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "3",
+      "end": "left",
+      "support": "PC56C",
+      "previous_shared_Mk_tf_m": 17.701,
+      "own_side_Mk_tf_m": 17.322,
+      "signed_Mk_tf_m": -17.322,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 473,
+        "text": "M MN. VAO= 3   -17.322   -8.304   -0.862    2.999    5.599    7.001    6.692    5.705    3.607    0.634   -4.660  -10.981  -19.794"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "3",
+      "end": "right",
+      "support": "PC57C",
+      "previous_shared_Mk_tf_m": 19.794,
+      "own_side_Mk_tf_m": 19.794,
+      "signed_Mk_tf_m": -19.794,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 473,
+        "text": "M MN. VAO= 3   -17.322   -8.304   -0.862    2.999    5.599    7.001    6.692    5.705    3.607    0.634   -4.660  -10.981  -19.794"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "4",
+      "end": "left",
+      "support": "PC57C",
+      "previous_shared_Mk_tf_m": 19.794,
+      "own_side_Mk_tf_m": 19.794,
+      "signed_Mk_tf_m": -19.794,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 474,
+        "text": "M MN. VAO= 4   -19.794  -10.594   -3.287    1.897    4.871    6.879    7.739    7.481    5.761    3.585    0.539   -4.769  -12.049"
+      },
+      "capacity_C35_tf_m": 19.571144352789695,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "4",
+      "end": "right",
+      "support": "PC59C",
+      "previous_shared_Mk_tf_m": 12.049,
+      "own_side_Mk_tf_m": 12.049,
+      "signed_Mk_tf_m": -12.049,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 474,
+        "text": "M MN. VAO= 4   -19.794  -10.594   -3.287    1.897    4.871    6.879    7.739    7.481    5.761    3.585    0.539   -4.769  -12.049"
+      },
+      "capacity_C35_tf_m": 10.737119888338063,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "5",
+      "end": "left",
+      "support": "PC59C",
+      "previous_shared_Mk_tf_m": 12.049,
+      "own_side_Mk_tf_m": 12.048,
+      "signed_Mk_tf_m": -12.048,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 475,
+        "text": "M MN. VAO= 5   -12.048   -8.763   -6.945   -5.578   -4.636   -4.124   -4.037   -4.376   -5.168   -6.448   -8.294  -10.635  -13.810"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "5",
+      "end": "right",
+      "support": "PC60C",
+      "previous_shared_Mk_tf_m": 13.81,
+      "own_side_Mk_tf_m": 13.81,
+      "signed_Mk_tf_m": -13.81,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 475,
+        "text": "M MN. VAO= 5   -12.048   -8.763   -6.945   -5.578   -4.636   -4.124   -4.037   -4.376   -5.168   -6.448   -8.294  -10.635  -13.810"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "6",
+      "end": "left",
+      "support": "PC60C",
+      "previous_shared_Mk_tf_m": 13.81,
+      "own_side_Mk_tf_m": 13.485,
+      "signed_Mk_tf_m": -13.485,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 476,
+        "text": "M MN. VAO= 6   -13.485   -9.848   -6.852   -4.267   -2.124   -0.235    1.386    2.273    2.690    2.958    2.584    1.834    0.474"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V21",
+      "model": "V21",
+      "span_token": "6",
+      "end": "right",
+      "support": "V22",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 1.0173531510107032,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 476,
+        "text": "M MN. VAO= 6   -13.485   -9.848   -6.852   -4.267   -2.124   -0.235    1.386    2.273    2.690    2.958    2.584    1.834    0.474"
+      },
+      "capacity_C35_tf_m": 2.230253341114988,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC62C",
+      "previous_shared_Mk_tf_m": 1.281,
+      "own_side_Mk_tf_m": 1.281,
+      "signed_Mk_tf_m": -1.281,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1054,
+        "text": "M MN. VAO= 2    -1.281    0.871    2.151    2.998    3.427    3.295    3.057    2.086    0.835   -0.934   -3.577   -6.594  -10.466"
+      },
+      "capacity_C35_tf_m": 3.45163619454167,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC61C",
+      "previous_shared_Mk_tf_m": 10.762,
+      "own_side_Mk_tf_m": 10.466,
+      "signed_Mk_tf_m": -10.466,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1054,
+        "text": "M MN. VAO= 2    -1.281    0.871    2.151    2.998    3.427    3.295    3.057    2.086    0.835   -0.934   -3.577   -6.594  -10.466"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "3",
+      "end": "left",
+      "support": "PC61C",
+      "previous_shared_Mk_tf_m": 10.762,
+      "own_side_Mk_tf_m": 10.762,
+      "signed_Mk_tf_m": -10.762,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1055,
+        "text": "M MN. VAO= 3   -10.762   -5.774   -1.917    0.852    2.549    3.858    4.652    5.023    4.947    4.382    3.566    2.230    0.463"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "3",
+      "end": "right",
+      "support": "PC58C",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.9301567717996266,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1055,
+        "text": "M MN. VAO= 3   -10.762   -5.774   -1.917    0.852    2.549    3.858    4.652    5.023    4.947    4.382    3.566    2.230    0.463"
+      },
+      "capacity_C35_tf_m": 2.230253341114988,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "2",
+      "end": "left",
+      "support": "P745",
+      "previous_shared_Mk_tf_m": 8.961,
+      "own_side_Mk_tf_m": 8.961,
+      "signed_Mk_tf_m": -8.961,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1509,
+        "text": "M MN. VAO= 2    -8.961   -3.535    0.838    3.348    5.041    5.938    6.031    5.226    3.561    0.994   -3.602   -9.870  -16.625"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "2",
+      "end": "right",
+      "support": "P730",
+      "previous_shared_Mk_tf_m": 16.625,
+      "own_side_Mk_tf_m": 16.625,
+      "signed_Mk_tf_m": -16.625,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1509,
+        "text": "M MN. VAO= 2    -8.961   -3.535    0.838    3.348    5.041    5.938    6.031    5.226    3.561    0.994   -3.602   -9.870  -16.625"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "3",
+      "end": "left",
+      "support": "P730",
+      "previous_shared_Mk_tf_m": 16.625,
+      "own_side_Mk_tf_m": 6.915,
+      "signed_Mk_tf_m": -6.915,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1510,
+        "text": "M MN. VAO= 3    -6.915   -4.219   -1.617    0.598    1.937    2.771    3.085    2.809    2.008    0.700   -1.408   -4.065   -6.498"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "3",
+      "end": "right",
+      "support": "P727",
+      "previous_shared_Mk_tf_m": 13.317,
+      "own_side_Mk_tf_m": 6.498,
+      "signed_Mk_tf_m": -6.498,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1510,
+        "text": "M MN. VAO= 3    -6.915   -4.219   -1.617    0.598    1.937    2.771    3.085    2.809    2.008    0.700   -1.408   -4.065   -6.498"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "4",
+      "end": "left",
+      "support": "P727",
+      "previous_shared_Mk_tf_m": 13.317,
+      "own_side_Mk_tf_m": 13.317,
+      "signed_Mk_tf_m": -13.317,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1511,
+        "text": "M MN. VAO= 4   -13.317   -8.182   -2.835    1.157    3.467    4.833    5.322    4.937    3.687    1.583   -1.949   -6.769   -8.308"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "4",
+      "end": "right",
+      "support": "P708",
+      "previous_shared_Mk_tf_m": 8.308,
+      "own_side_Mk_tf_m": 8.308,
+      "signed_Mk_tf_m": -8.308,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1511,
+        "text": "M MN. VAO= 4   -13.317   -8.182   -2.835    1.157    3.467    4.833    5.322    4.937    3.687    1.583   -1.949   -6.769   -8.308"
+      },
+      "capacity_C35_tf_m": 5.128664776760401,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "5",
+      "end": "left",
+      "support": "P708",
+      "previous_shared_Mk_tf_m": 8.308,
+      "own_side_Mk_tf_m": 3.2099638554216865,
+      "signed_Mk_tf_m": -3.2099638554216865,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1512,
+        "text": "M MN. VAO= 5    -2.469   -4.109   -3.225   -1.737   -0.473    0.485    1.042    1.226    1.133    0.785    0.231   -0.380   -0.659"
+      },
+      "capacity_C35_tf_m": 5.128664776760401,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "5",
+      "end": "right",
+      "support": "P701",
+      "previous_shared_Mk_tf_m": 0.659,
+      "own_side_Mk_tf_m": 0.659,
+      "signed_Mk_tf_m": -0.659,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1512,
+        "text": "M MN. VAO= 5    -2.469   -4.109   -3.225   -1.737   -0.473    0.485    1.042    1.226    1.133    0.785    0.231   -0.380   -0.659"
+      },
+      "capacity_C35_tf_m": 3.3253958263071404,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC25C",
+      "previous_shared_Mk_tf_m": 0.566,
+      "own_side_Mk_tf_m": 0.566,
+      "signed_Mk_tf_m": -0.566,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1469,
+        "text": "M MN. VAO= 1    -0.566   -0.489   -0.191   -0.056    0.139    0.085    0.194    0.047   -0.180   -0.564   -1.027   -2.072   -3.521"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC21C",
+      "previous_shared_Mk_tf_m": 3.521,
+      "own_side_Mk_tf_m": 3.521,
+      "signed_Mk_tf_m": -3.521,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1469,
+        "text": "M MN. VAO= 1    -0.566   -0.489   -0.191   -0.056    0.139    0.085    0.194    0.047   -0.180   -0.564   -1.027   -2.072   -3.521"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC21C",
+      "previous_shared_Mk_tf_m": 3.521,
+      "own_side_Mk_tf_m": 2.188,
+      "signed_Mk_tf_m": -2.188,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1470,
+        "text": "M MN. VAO= 2    -2.188   -0.679    0.420    0.433    0.445    0.411    0.364    0.248    0.127   -0.022   -0.219   -0.390   -0.689"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC19C",
+      "previous_shared_Mk_tf_m": 1.726,
+      "own_side_Mk_tf_m": 0.689,
+      "signed_Mk_tf_m": -0.689,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1470,
+        "text": "M MN. VAO= 2    -2.188   -0.679    0.420    0.433    0.445    0.411    0.364    0.248    0.127   -0.022   -0.219   -0.390   -0.689"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "3",
+      "end": "left",
+      "support": "PC19C",
+      "previous_shared_Mk_tf_m": 1.726,
+      "own_side_Mk_tf_m": 1.726,
+      "signed_Mk_tf_m": -1.726,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1471,
+        "text": "M MN. VAO= 3    -1.726   -1.059   -0.391   -0.259   -0.082    0.082    0.134    0.155    0.146    0.115    0.043    0.028   -0.030"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V26",
+      "model": "V26",
+      "span_token": "3",
+      "end": "right",
+      "support": "V25",
+      "previous_shared_Mk_tf_m": 0.029999999999999995,
+      "own_side_Mk_tf_m": 0.029999999999999995,
+      "signed_Mk_tf_m": -0.029999999999999995,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1471,
+        "text": "M MN. VAO= 3    -1.726   -1.059   -0.391   -0.259   -0.082    0.082    0.134    0.155    0.146    0.115    0.043    0.028   -0.030"
+      },
+      "capacity_C35_tf_m": 5.463734759098535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V28",
+      "model": "V28",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC34C",
+      "previous_shared_Mk_tf_m": 16.549,
+      "own_side_Mk_tf_m": 16.549,
+      "signed_Mk_tf_m": -16.549,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 582,
+        "text": "M MN. VAO= 1   -16.549   -8.782   -2.199    1.824    4.711    6.624    7.474    7.387    6.169    3.837    0.080   -7.187  -15.344"
+      },
+      "capacity_C35_tf_m": 10.955041803925555,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V28",
+      "model": "V28",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC28C",
+      "previous_shared_Mk_tf_m": 16.067,
+      "own_side_Mk_tf_m": 15.344000000000001,
+      "signed_Mk_tf_m": -15.344000000000001,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 582,
+        "text": "M MN. VAO= 1   -16.549   -8.782   -2.199    1.824    4.711    6.624    7.474    7.387    6.169    3.837    0.080   -7.187  -15.344"
+      },
+      "capacity_C35_tf_m": 16.577226306736993,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V28",
+      "model": "V28",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC28C",
+      "previous_shared_Mk_tf_m": 16.067,
+      "own_side_Mk_tf_m": 16.067,
+      "signed_Mk_tf_m": -16.067,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 583,
+        "text": "M MN. VAO= 2   -16.067  -13.236   -8.642   -4.942   -2.092   -0.167    1.007    1.900    2.358    2.491    2.238    1.500    0.170"
+      },
+      "capacity_C35_tf_m": 16.577226306736993,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V28",
+      "model": "V28",
+      "span_token": "2",
+      "end": "right",
+      "support": "V15",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.8575358989086733,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 583,
+        "text": "M MN. VAO= 2   -16.067  -13.236   -8.642   -4.942   -2.092   -0.167    1.007    1.900    2.358    2.491    2.238    1.500    0.170"
+      },
+      "capacity_C35_tf_m": 4.4338611017428535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V29",
+      "model": "V29",
+      "span_token": "1",
+      "end": "left",
+      "support": "P753",
+      "previous_shared_Mk_tf_m": 1.128,
+      "own_side_Mk_tf_m": 1.128,
+      "signed_Mk_tf_m": -1.128,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1139,
+        "text": "M MN. VAO= 1    -1.128    4.258    9.411   14.052   18.030   20.752   21.217   21.072   18.619   14.835   10.290    5.032   -1.155"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V29",
+      "model": "V29",
+      "span_token": "1",
+      "end": "right",
+      "support": "P740",
+      "previous_shared_Mk_tf_m": 1.1550000000000002,
+      "own_side_Mk_tf_m": 1.1550000000000002,
+      "signed_Mk_tf_m": -1.1550000000000002,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1139,
+        "text": "M MN. VAO= 1    -1.128    4.258    9.411   14.052   18.030   20.752   21.217   21.072   18.619   14.835   10.290    5.032   -1.155"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V31",
+      "model": "V31",
+      "span_token": "1B",
+      "end": "left",
+      "support": "EXTREMIDADE_LIVRE",
+      "previous_shared_Mk_tf_m": 0.473,
+      "own_side_Mk_tf_m": 0.473,
+      "signed_Mk_tf_m": -0.473,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1162,
+        "text": "M MN. VAO= 1B   -0.473    5.912   11.487   16.078   19.705   22.382   21.416   19.312   14.581    7.954    0.731   -9.822  -17.342"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V31",
+      "model": "V31",
+      "span_token": "1B",
+      "end": "right",
+      "support": "P746",
+      "previous_shared_Mk_tf_m": 17.342,
+      "own_side_Mk_tf_m": 17.342,
+      "signed_Mk_tf_m": -17.342,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1162,
+        "text": "M MN. VAO= 1B   -0.473    5.912   11.487   16.078   19.705   22.382   21.416   19.312   14.581    7.954    0.731   -9.822  -17.342"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V32",
+      "model": "V32",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC35C",
+      "previous_shared_Mk_tf_m": 14.41,
+      "own_side_Mk_tf_m": 14.41,
+      "signed_Mk_tf_m": -14.41,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 631,
+        "text": "M MN. VAO= 1   -14.410   -6.118   -0.252    3.882    6.878    8.881    9.801    9.768    8.599    6.303    2.612   -2.769  -12.100"
+      },
+      "capacity_C35_tf_m": 10.955041803925555,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V32",
+      "model": "V32",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC29C",
+      "previous_shared_Mk_tf_m": 13.095,
+      "own_side_Mk_tf_m": 12.1,
+      "signed_Mk_tf_m": -12.1,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 631,
+        "text": "M MN. VAO= 1   -14.410   -6.118   -0.252    3.882    6.878    8.881    9.801    9.768    8.599    6.303    2.612   -2.769  -12.100"
+      },
+      "capacity_C35_tf_m": 16.577226306736993,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V32",
+      "model": "V32",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC29C",
+      "previous_shared_Mk_tf_m": 13.095,
+      "own_side_Mk_tf_m": 13.095,
+      "signed_Mk_tf_m": -13.095,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 632,
+        "text": "M MN. VAO= 2   -13.095   -9.321   -5.517   -2.462   -0.870    0.283    1.058    1.543    1.652    1.522    1.189    0.710   -0.251"
+      },
+      "capacity_C35_tf_m": 16.577226306736993,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V32",
+      "model": "V32",
+      "span_token": "2",
+      "end": "right",
+      "support": "V15",
+      "previous_shared_Mk_tf_m": 0.251,
+      "own_side_Mk_tf_m": 0.251,
+      "signed_Mk_tf_m": -0.251,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 632,
+        "text": "M MN. VAO= 2   -13.095   -9.321   -5.517   -2.462   -0.870    0.283    1.058    1.543    1.652    1.522    1.189    0.710   -0.251"
+      },
+      "capacity_C35_tf_m": 4.4338611017428535,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V34",
+      "model": "V34",
+      "span_token": "1",
+      "end": "left",
+      "support": "P760",
+      "previous_shared_Mk_tf_m": 29.375,
+      "own_side_Mk_tf_m": 29.375,
+      "signed_Mk_tf_m": -29.375,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1562,
+        "text": "M MN. VAO= 1   -29.375  -13.700   -2.114    4.886    9.140   11.703   13.090   13.075    8.533    2.551   -6.023  -16.584  -26.171"
+      },
+      "capacity_C35_tf_m": 16.577226306736993,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V34",
+      "model": "V34",
+      "span_token": "1",
+      "end": "right",
+      "support": "P747",
+      "previous_shared_Mk_tf_m": 26.171,
+      "own_side_Mk_tf_m": 26.171,
+      "signed_Mk_tf_m": -26.171,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1562,
+        "text": "M MN. VAO= 1   -29.375  -13.700   -2.114    4.886    9.140   11.703   13.090   13.075    8.533    2.551   -6.023  -16.584  -26.171"
+      },
+      "capacity_C35_tf_m": 23.90659856256908,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V39",
+      "model": "V39",
+      "span_token": "1",
+      "end": "left",
+      "support": "P754",
+      "previous_shared_Mk_tf_m": 1.239,
+      "own_side_Mk_tf_m": 1.239,
+      "signed_Mk_tf_m": -1.239,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1271,
+        "text": "M MN. VAO= 1    -1.239    4.549   10.660   16.268   21.101   24.415   24.974   24.609   21.469   17.082   11.823    5.592   -1.265"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V39",
+      "model": "V39",
+      "span_token": "1",
+      "end": "right",
+      "support": "P743",
+      "previous_shared_Mk_tf_m": 1.2649999999999997,
+      "own_side_Mk_tf_m": 1.2649999999999997,
+      "signed_Mk_tf_m": -1.2649999999999997,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1271,
+        "text": "M MN. VAO= 1    -1.239    4.549   10.660   16.268   21.101   24.415   24.974   24.609   21.469   17.082   11.823    5.592   -1.265"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V41",
+      "model": "V41",
+      "span_token": "1B",
+      "end": "left",
+      "support": "EXTREMIDADE_LIVRE",
+      "previous_shared_Mk_tf_m": 0.13,
+      "own_side_Mk_tf_m": 0.13,
+      "signed_Mk_tf_m": -0.13,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1315,
+        "text": "M MN. VAO= 1B   -0.130    7.186   13.483   18.854   23.284   26.498   26.577   25.453   20.736   14.715    7.901    0.441   -4.061"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V41",
+      "model": "V41",
+      "span_token": "1B",
+      "end": "right",
+      "support": "P744",
+      "previous_shared_Mk_tf_m": 4.061,
+      "own_side_Mk_tf_m": 4.061,
+      "signed_Mk_tf_m": -4.061,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1315,
+        "text": "M MN. VAO= 1B   -0.130    7.186   13.483   18.854   23.284   26.498   26.577   25.453   20.736   14.715    7.901    0.441   -4.061"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "2",
+      "end": "left",
+      "support": "P748",
+      "previous_shared_Mk_tf_m": 8.222,
+      "own_side_Mk_tf_m": 8.222,
+      "signed_Mk_tf_m": -8.222,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1426,
+        "text": "M MN. VAO= 2    -8.222   -3.849    0.679    3.296    5.076    6.018    6.104    5.281    3.543    0.927   -3.646   -9.790  -15.784"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "2",
+      "end": "right",
+      "support": "P737",
+      "previous_shared_Mk_tf_m": 15.784,
+      "own_side_Mk_tf_m": 15.784,
+      "signed_Mk_tf_m": -15.784,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1426,
+        "text": "M MN. VAO= 2    -8.222   -3.849    0.679    3.296    5.076    6.018    6.104    5.281    3.543    0.927   -3.646   -9.790  -15.784"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "3",
+      "end": "left",
+      "support": "P737",
+      "previous_shared_Mk_tf_m": 15.784,
+      "own_side_Mk_tf_m": 8.837,
+      "signed_Mk_tf_m": -8.837,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1427,
+        "text": "M MN. VAO= 3    -8.837   -5.428   -1.939    0.814    2.497    3.544    3.891    3.568    2.568    0.903   -1.740   -5.225   -8.697"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "3",
+      "end": "right",
+      "support": "P723",
+      "previous_shared_Mk_tf_m": 12.707,
+      "own_side_Mk_tf_m": 8.697,
+      "signed_Mk_tf_m": -8.697,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1427,
+        "text": "M MN. VAO= 3    -8.837   -5.428   -1.939    0.814    2.497    3.544    3.891    3.568    2.568    0.903   -1.740   -5.225   -8.697"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "4",
+      "end": "left",
+      "support": "P723",
+      "previous_shared_Mk_tf_m": 12.707,
+      "own_side_Mk_tf_m": 12.707,
+      "signed_Mk_tf_m": -12.707,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1428,
+        "text": "M MN. VAO= 4   -12.707   -8.189   -2.977    1.015    3.334    4.739    5.299    5.012    3.879    1.893   -1.441   -6.513  -11.751"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "4",
+      "end": "right",
+      "support": "P714",
+      "previous_shared_Mk_tf_m": 11.751,
+      "own_side_Mk_tf_m": 11.751,
+      "signed_Mk_tf_m": -11.751,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1428,
+        "text": "M MN. VAO= 4   -12.707   -8.189   -2.977    1.015    3.334    4.739    5.299    5.012    3.879    1.893   -1.441   -6.513  -11.751"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "5",
+      "end": "left",
+      "support": "P714",
+      "previous_shared_Mk_tf_m": 11.751,
+      "own_side_Mk_tf_m": 5.921,
+      "signed_Mk_tf_m": -5.921,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1429,
+        "text": "M MN. VAO= 5    -5.921   -4.518   -3.190   -1.601   -0.221    0.826    1.363    1.570    1.484    1.116    0.484   -0.359   -1.340"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "5",
+      "end": "right",
+      "support": "P707",
+      "previous_shared_Mk_tf_m": 1.34,
+      "own_side_Mk_tf_m": 1.34,
+      "signed_Mk_tf_m": -1.34,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1429,
+        "text": "M MN. VAO= 5    -5.921   -4.518   -3.190   -1.601   -0.221    0.826    1.363    1.570    1.484    1.116    0.484   -0.359   -1.340"
+      },
+      "capacity_C35_tf_m": 4.40721552125573,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V5",
+      "model": "V5",
+      "span_token": "1",
+      "end": "left",
+      "support": "P741",
+      "previous_shared_Mk_tf_m": 8.659,
+      "own_side_Mk_tf_m": 8.659,
+      "signed_Mk_tf_m": -8.659,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1250,
+        "text": "M MN. VAO= 1    -8.659   -6.178   -1.557    1.066    2.564    3.666    4.250    4.176    2.860    1.743   -1.012   -5.812  -10.901"
+      },
+      "capacity_C35_tf_m": 8.181334013018082,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V5",
+      "model": "V5",
+      "span_token": "1",
+      "end": "right",
+      "support": "P742",
+      "previous_shared_Mk_tf_m": 10.901,
+      "own_side_Mk_tf_m": 10.901,
+      "signed_Mk_tf_m": -10.901,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1250,
+        "text": "M MN. VAO= 1    -8.659   -6.178   -1.557    1.066    2.564    3.666    4.250    4.176    2.860    1.743   -1.012   -5.812  -10.901"
+      },
+      "capacity_C35_tf_m": 11.369182983848793,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V11",
+      "model": "V11",
+      "span_token": "1",
+      "end": "left",
+      "support": "P752",
+      "previous_shared_Mk_tf_m": 3.196,
+      "own_side_Mk_tf_m": 3.196,
+      "signed_Mk_tf_m": -3.196,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 230,
+        "text": "M MN. VAO= 1    -3.196    0.136    1.827    3.120    3.868    4.233    4.236    3.877    3.244    2.279    0.841   -1.164   -0.816"
+      },
+      "capacity_C35_tf_m": 5.536216420963681,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V11",
+      "model": "V11",
+      "span_token": "1",
+      "end": "right",
+      "support": "P754",
+      "previous_shared_Mk_tf_m": 0.9444923076923077,
+      "own_side_Mk_tf_m": 0.9444923076923077,
+      "signed_Mk_tf_m": -0.9444923076923077,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 230,
+        "text": "M MN. VAO= 1    -3.196    0.136    1.827    3.120    3.868    4.233    4.236    3.877    3.244    2.279    0.841   -1.164   -0.816"
+      },
+      "capacity_C35_tf_m": 5.7539237871082065,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V18",
+      "model": "V18",
+      "span_token": "1",
+      "end": "left",
+      "support": "V23",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.007,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 435,
+        "text": "M MN. VAO= 1     0.007    1.049    1.874    2.389    2.581    2.391    1.778    0.689   -1.025   -4.376   -8.995  -15.648  -18.450"
+      },
+      "capacity_C35_tf_m": 2.230253341114988,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V18",
+      "model": "V18",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC45C",
+      "previous_shared_Mk_tf_m": 18.45,
+      "own_side_Mk_tf_m": 18.45,
+      "signed_Mk_tf_m": -18.45,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 435,
+        "text": "M MN. VAO= 1     0.007    1.049    1.874    2.389    2.581    2.391    1.778    0.689   -1.025   -4.376   -8.995  -15.648  -18.450"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V18",
+      "model": "V18",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC45C",
+      "previous_shared_Mk_tf_m": 18.45,
+      "own_side_Mk_tf_m": 18.41,
+      "signed_Mk_tf_m": -18.41,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 436,
+        "text": "M MN. VAO= 2   -18.410   -9.096   -1.219    2.198    4.028    5.069    5.576    5.624    5.192    4.106    1.980   -3.306   -9.247"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V18",
+      "model": "V18",
+      "span_token": "2",
+      "end": "right",
+      "support": "PC46C",
+      "previous_shared_Mk_tf_m": 9.247,
+      "own_side_Mk_tf_m": 9.247,
+      "signed_Mk_tf_m": -9.247,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 436,
+        "text": "M MN. VAO= 2   -18.410   -9.096   -1.219    2.198    4.028    5.069    5.576    5.624    5.192    4.106    1.980   -3.306   -9.247"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V19",
+      "model": "V19",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC47C",
+      "previous_shared_Mk_tf_m": 9.146,
+      "own_side_Mk_tf_m": 9.146,
+      "signed_Mk_tf_m": -9.146,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1187,
+        "text": "M MN. VAO= 1    -9.146   -3.534    1.552    3.369    4.083    4.149    4.858    4.046    3.929    3.170    1.310   -4.100  -12.249"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V19",
+      "model": "V19",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC48C",
+      "previous_shared_Mk_tf_m": 12.249,
+      "own_side_Mk_tf_m": 12.249,
+      "signed_Mk_tf_m": -12.249,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1187,
+        "text": "M MN. VAO= 1    -9.146   -3.534    1.552    3.369    4.083    4.149    4.858    4.046    3.929    3.170    1.310   -4.100  -12.249"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V20",
+      "model": "V20",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC49C",
+      "previous_shared_Mk_tf_m": 12.604,
+      "own_side_Mk_tf_m": 12.604,
+      "signed_Mk_tf_m": -12.604,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1292,
+        "text": "M MN. VAO= 1   -12.604   -4.304    1.247    3.178    3.995    4.157    4.890    4.259    4.238    3.554    1.797   -2.827   -8.195"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V20",
+      "model": "V20",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC50C",
+      "previous_shared_Mk_tf_m": 8.195,
+      "own_side_Mk_tf_m": 8.195,
+      "signed_Mk_tf_m": -8.195,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1292,
+        "text": "M MN. VAO= 1   -12.604   -4.304    1.247    3.178    3.995    4.157    4.890    4.259    4.238    3.554    1.797   -2.827   -8.195"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V27",
+      "model": "V27",
+      "span_token": "1",
+      "end": "left",
+      "support": "P750",
+      "previous_shared_Mk_tf_m": 7.944,
+      "own_side_Mk_tf_m": 7.944,
+      "signed_Mk_tf_m": -7.944,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 559,
+        "text": "M MN. VAO= 1    -7.944   -7.244   -1.550    1.194    2.817    3.837    4.149    3.953    3.341    2.413    1.212   -0.266   -2.342"
+      },
+      "capacity_C35_tf_m": 10.562495412057658,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V27",
+      "model": "V27",
+      "span_token": "1",
+      "end": "right",
+      "support": "P739",
+      "previous_shared_Mk_tf_m": 2.342,
+      "own_side_Mk_tf_m": 2.342,
+      "signed_Mk_tf_m": -2.342,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 559,
+        "text": "M MN. VAO= 1    -7.944   -7.244   -1.550    1.194    2.817    3.837    4.149    3.953    3.341    2.413    1.212   -0.266   -2.342"
+      },
+      "capacity_C35_tf_m": 5.499528301379337,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V30",
+      "model": "V30",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC2C",
+      "previous_shared_Mk_tf_m": 10.262,
+      "own_side_Mk_tf_m": 10.262,
+      "signed_Mk_tf_m": -10.262,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 608,
+        "text": "M MN. VAO= 1   -10.262   -4.850   -0.067    2.531    4.090    4.904    5.008    4.446    3.284    1.715   -0.448   -4.408   -9.577"
+      },
+      "capacity_C35_tf_m": 6.25795468752994,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V30",
+      "model": "V30",
+      "span_token": "1",
+      "end": "right",
+      "support": "P710",
+      "previous_shared_Mk_tf_m": 9.577,
+      "own_side_Mk_tf_m": 9.577,
+      "signed_Mk_tf_m": -9.577,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 608,
+        "text": "M MN. VAO= 1   -10.262   -4.850   -0.067    2.531    4.090    4.904    5.008    4.446    3.284    1.715   -0.448   -4.408   -9.577"
+      },
+      "capacity_C35_tf_m": 10.028236230937273,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V33",
+      "model": "V33",
+      "span_token": "1",
+      "end": "left",
+      "support": "P794",
+      "previous_shared_Mk_tf_m": 16.069,
+      "own_side_Mk_tf_m": 16.069,
+      "signed_Mk_tf_m": -16.069,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 657,
+        "text": "M MN. VAO= 1   -16.069  -15.823  -11.535   -8.494   -5.942   -3.795   -2.002   -0.482    0.894    1.593    1.983    1.892    0.067"
+      },
+      "capacity_C35_tf_m": 8.46795167280682,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V33",
+      "model": "V33",
+      "span_token": "1",
+      "end": "right",
+      "support": "V19",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 1.3889315895372207,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 657,
+        "text": "M MN. VAO= 1   -16.069  -15.823  -11.535   -8.494   -5.942   -3.795   -2.002   -0.482    0.894    1.593    1.983    1.892    0.067"
+      },
+      "capacity_C35_tf_m": 8.46795167280682,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V35",
+      "model": "V35",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC36C",
+      "previous_shared_Mk_tf_m": 10.145,
+      "own_side_Mk_tf_m": 10.145,
+      "signed_Mk_tf_m": -10.145,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 680,
+        "text": "M MN. VAO= 1   -10.145   -3.503    1.891    5.023    6.953    7.908    7.897    6.990    5.074    2.073   -2.576  -10.933  -21.953"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V35",
+      "model": "V35",
+      "span_token": "1",
+      "end": "right",
+      "support": "PC30C",
+      "previous_shared_Mk_tf_m": 22.808,
+      "own_side_Mk_tf_m": 21.953,
+      "signed_Mk_tf_m": -21.953,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 680,
+        "text": "M MN. VAO= 1   -10.145   -3.503    1.891    5.023    6.953    7.908    7.897    6.990    5.074    2.073   -2.576  -10.933  -21.953"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V35",
+      "model": "V35",
+      "span_token": "2",
+      "end": "left",
+      "support": "PC30C",
+      "previous_shared_Mk_tf_m": 22.808,
+      "own_side_Mk_tf_m": 22.808,
+      "signed_Mk_tf_m": -22.808,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 681,
+        "text": "M MN. VAO= 2   -22.808  -17.282  -12.855   -9.126   -6.141   -3.841   -2.473   -1.510   -0.862   -0.435   -0.198   -0.080    0.050"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V35",
+      "model": "V35",
+      "span_token": "2",
+      "end": "right",
+      "support": "V15",
+      "previous_shared_Mk_tf_m": 0.01720275703618611,
+      "own_side_Mk_tf_m": 0.01720275703618611,
+      "signed_Mk_tf_m": -0.01720275703618611,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 681,
+        "text": "M MN. VAO= 2   -22.808  -17.282  -12.855   -9.126   -6.141   -3.841   -2.473   -1.510   -0.862   -0.435   -0.198   -0.080    0.050"
+      },
+      "capacity_C35_tf_m": 3.3253958263071404,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V36",
+      "model": "V36",
+      "span_token": "1",
+      "end": "left",
+      "support": "V5",
+      "previous_shared_Mk_tf_m": 0.5587730061349694,
+      "own_side_Mk_tf_m": 0.5587730061349694,
+      "signed_Mk_tf_m": -0.5587730061349694,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 706,
+        "text": "M MN. VAO= 1    -0.072   -3.204   -0.458    2.054    4.146    5.598    6.278    6.096    4.943    2.602   -1.932  -10.941  -22.915"
+      },
+      "capacity_C35_tf_m": 2.230253341114988,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V36",
+      "model": "V36",
+      "span_token": "1",
+      "end": "right",
+      "support": "P735",
+      "previous_shared_Mk_tf_m": 22.915,
+      "own_side_Mk_tf_m": 22.915,
+      "signed_Mk_tf_m": -22.915,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 706,
+        "text": "M MN. VAO= 1    -0.072   -3.204   -0.458    2.054    4.146    5.598    6.278    6.096    4.943    2.602   -1.932  -10.941  -22.915"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V37",
+      "model": "V37",
+      "span_token": "1",
+      "end": "left",
+      "support": "P725",
+      "previous_shared_Mk_tf_m": 18.716,
+      "own_side_Mk_tf_m": 18.716,
+      "signed_Mk_tf_m": -18.716,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 734,
+        "text": "M MN. VAO= 1   -18.716  -11.314   -2.650    1.967    4.702    6.487    7.208    6.855    5.482    3.169   -0.306   -7.864  -17.045"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V37",
+      "model": "V37",
+      "span_token": "1",
+      "end": "right",
+      "support": "P712",
+      "previous_shared_Mk_tf_m": 17.045,
+      "own_side_Mk_tf_m": 17.045,
+      "signed_Mk_tf_m": -17.045,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 734,
+        "text": "M MN. VAO= 1   -18.716  -11.314   -2.650    1.967    4.702    6.487    7.208    6.855    5.482    3.169   -0.306   -7.864  -17.045"
+      },
+      "capacity_C35_tf_m": 16.15089701894303,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V38",
+      "model": "V38",
+      "span_token": "1",
+      "end": "left",
+      "support": "P752",
+      "previous_shared_Mk_tf_m": 10.388,
+      "own_side_Mk_tf_m": 10.388,
+      "signed_Mk_tf_m": -10.388,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 755,
+        "text": "M MN. VAO= 1   -10.388   -5.298   -1.479    1.057    2.689    3.749    4.268    4.191    3.568    2.565    1.443    0.072   -2.436"
+      },
+      "capacity_C35_tf_m": 10.562495412057658,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V38",
+      "model": "V38",
+      "span_token": "1",
+      "end": "right",
+      "support": "P742",
+      "previous_shared_Mk_tf_m": 2.436,
+      "own_side_Mk_tf_m": 2.436,
+      "signed_Mk_tf_m": -2.436,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 755,
+        "text": "M MN. VAO= 1   -10.388   -5.298   -1.479    1.057    2.689    3.749    4.268    4.191    3.568    2.565    1.443    0.072   -2.436"
+      },
+      "capacity_C35_tf_m": 3.2977228906111358,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V40",
+      "model": "V40",
+      "span_token": "1",
+      "end": "left",
+      "support": "P796",
+      "previous_shared_Mk_tf_m": 17.697,
+      "own_side_Mk_tf_m": 17.697,
+      "signed_Mk_tf_m": -17.697,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 776,
+        "text": "M MN. VAO= 1   -17.697  -14.603  -11.270   -8.183   -5.938   -3.911   -2.109   -0.631    0.674    1.504    1.907    1.798    0.069"
+      },
+      "capacity_C35_tf_m": 8.46795167280682,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V40",
+      "model": "V40",
+      "span_token": "1",
+      "end": "right",
+      "support": "V20",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 1.3193816793893114,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 776,
+        "text": "M MN. VAO= 1   -17.697  -14.603  -11.270   -8.183   -5.938   -3.911   -2.109   -0.631    0.674    1.504    1.907    1.798    0.069"
+      },
+      "capacity_C35_tf_m": 8.46795167280682,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V44",
+      "model": "V44",
+      "span_token": "1",
+      "end": "left",
+      "support": "P738",
+      "previous_shared_Mk_tf_m": 3.58,
+      "own_side_Mk_tf_m": 3.58,
+      "signed_Mk_tf_m": -3.58,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 797,
+        "text": "M MN. VAO= 1    -3.580    0.607    3.223    4.659    5.522    6.527    7.411    7.519    6.339    3.372   -2.368  -13.513  -30.792"
+      },
+      "capacity_C35_tf_m": 6.811793042613875,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V44",
+      "model": "V44",
+      "span_token": "1",
+      "end": "right",
+      "support": "P731",
+      "previous_shared_Mk_tf_m": 30.792,
+      "own_side_Mk_tf_m": 30.792,
+      "signed_Mk_tf_m": -30.792,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 797,
+        "text": "M MN. VAO= 1    -3.580    0.607    3.223    4.659    5.522    6.527    7.411    7.519    6.339    3.372   -2.368  -13.513  -30.792"
+      },
+      "capacity_C35_tf_m": 10.91174436461847,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V45",
+      "model": "V45",
+      "span_token": "1",
+      "end": "left",
+      "support": "P750",
+      "previous_shared_Mk_tf_m": 1.288,
+      "own_side_Mk_tf_m": 1.288,
+      "signed_Mk_tf_m": -1.288,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 818,
+        "text": "M MN. VAO= 1    -1.288   -0.891   -0.046    1.059    1.953    2.411    2.571    2.409    1.951    1.151   -0.172   -2.836   -2.415"
+      },
+      "capacity_C35_tf_m": 3.3104076872831336,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V45",
+      "model": "V45",
+      "span_token": "1",
+      "end": "right",
+      "support": "P753",
+      "previous_shared_Mk_tf_m": 2.634344537815126,
+      "own_side_Mk_tf_m": 2.634344537815126,
+      "signed_Mk_tf_m": -2.634344537815126,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 818,
+        "text": "M MN. VAO= 1    -1.288   -0.891   -0.046    1.059    1.953    2.411    2.571    2.409    1.951    1.151   -0.172   -2.836   -2.415"
+      },
+      "capacity_C35_tf_m": 3.435373022857635,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V46",
+      "model": "V46",
+      "span_token": "1",
+      "end": "left",
+      "support": "P747",
+      "previous_shared_Mk_tf_m": 9.334,
+      "own_side_Mk_tf_m": 9.334,
+      "signed_Mk_tf_m": -9.334,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 853,
+        "text": "M MN. VAO= 1    -9.334   -7.737   -1.999    2.322    5.106    7.186    8.186    8.125    6.871    4.344    1.037   -1.753   -1.211"
+      },
+      "capacity_C35_tf_m": 12.432919730052747,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V46",
+      "model": "V46",
+      "span_token": "1",
+      "end": "right",
+      "support": "P751",
+      "previous_shared_Mk_tf_m": 1.353832044975404,
+      "own_side_Mk_tf_m": 1.353832044975404,
+      "signed_Mk_tf_m": -1.353832044975404,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 853,
+        "text": "M MN. VAO= 1    -9.334   -7.737   -1.999    2.322    5.106    7.186    8.186    8.125    6.871    4.344    1.037   -1.753   -1.211"
+      },
+      "capacity_C35_tf_m": 4.40721552125573,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V47",
+      "model": "V47",
+      "span_token": "1",
+      "end": "left",
+      "support": "P751",
+      "previous_shared_Mk_tf_m": 14.817,
+      "own_side_Mk_tf_m": 14.817,
+      "signed_Mk_tf_m": -14.817,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 881,
+        "text": "M MN. VAO= 1   -14.817   -6.179   -1.580    1.601    3.798    5.247    5.983    5.958    5.204    3.866    2.056    0.009   -1.879"
+      },
+      "capacity_C35_tf_m": 12.382180543364756,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V47",
+      "model": "V47",
+      "span_token": "1",
+      "end": "right",
+      "support": "P741",
+      "previous_shared_Mk_tf_m": 1.879,
+      "own_side_Mk_tf_m": 1.879,
+      "signed_Mk_tf_m": -1.879,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 881,
+        "text": "M MN. VAO= 1   -14.817   -6.179   -1.580    1.601    3.798    5.247    5.983    5.958    5.204    3.866    2.056    0.009   -1.879"
+      },
+      "capacity_C35_tf_m": 3.3127110296351425,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V48",
+      "model": "V48",
+      "span_token": "1",
+      "end": "left",
+      "support": "P767",
+      "previous_shared_Mk_tf_m": 19.553,
+      "own_side_Mk_tf_m": 19.553,
+      "signed_Mk_tf_m": -19.553,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 902,
+        "text": "M MN. VAO= 1   -19.553   -8.764   -1.343    2.260    4.232    5.230    5.416    4.788    3.391    1.159   -2.665   -8.441  -13.384"
+      },
+      "capacity_C35_tf_m": 6.773167015611063,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V48",
+      "model": "V48",
+      "span_token": "1",
+      "end": "right",
+      "support": "P758",
+      "previous_shared_Mk_tf_m": 13.384,
+      "own_side_Mk_tf_m": 13.384,
+      "signed_Mk_tf_m": -13.384,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 902,
+        "text": "M MN. VAO= 1   -19.553   -8.764   -1.343    2.260    4.232    5.230    5.416    4.788    3.391    1.159   -2.665   -8.441  -13.384"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V23",
+      "model": "V23",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC54C",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.807,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1087,
+        "text": "M MN. VAO= 1     0.807    1.087    1.156    1.061    0.763    0.205   -0.767   -2.029   -3.538   -5.319   -6.621   -6.615   -5.089"
+      },
+      "capacity_C35_tf_m": 9.385195431904659,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V23",
+      "model": "V23",
+      "span_token": "1",
+      "end": "right",
+      "support": "P799",
+      "previous_shared_Mk_tf_m": 8.639239687145201,
+      "own_side_Mk_tf_m": 6.514983127839066,
+      "signed_Mk_tf_m": -6.514983127839066,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1087,
+        "text": "M MN. VAO= 1     0.807    1.087    1.156    1.061    0.763    0.205   -0.767   -2.029   -3.538   -5.319   -6.621   -6.615   -5.089"
+      },
+      "capacity_C35_tf_m": 13.946824790646682,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V23",
+      "model": "V23",
+      "span_token": "2",
+      "end": "left",
+      "support": "P799",
+      "previous_shared_Mk_tf_m": 8.639239687145201,
+      "own_side_Mk_tf_m": 8.639239687145201,
+      "signed_Mk_tf_m": -8.639239687145201,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1088,
+        "text": "M MN. VAO= 2    -8.499   -8.885   -3.325    1.153    3.803    5.704    6.970    6.353    4.192    1.359   -3.056   -9.099  -12.997"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V23",
+      "model": "V23",
+      "span_token": "2",
+      "end": "right",
+      "support": "P785",
+      "previous_shared_Mk_tf_m": 12.997,
+      "own_side_Mk_tf_m": 12.997,
+      "signed_Mk_tf_m": -12.997,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1088,
+        "text": "M MN. VAO= 2    -8.499   -8.885   -3.325    1.153    3.803    5.704    6.970    6.353    4.192    1.359   -3.056   -9.099  -12.997"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V24",
+      "model": "V23",
+      "span_token": "3",
+      "end": "left",
+      "support": "P785",
+      "previous_shared_Mk_tf_m": 12.997,
+      "own_side_Mk_tf_m": 11.64,
+      "signed_Mk_tf_m": -11.64,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1089,
+        "text": "M MN. VAO= 3   -11.640   -7.906   -0.701    3.993    7.224    9.256   10.062    9.639    8.021    5.274    1.484   -4.292   -8.565"
+      },
+      "capacity_C35_tf_m": 18.421141911248508,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V24",
+      "model": "V23",
+      "span_token": "3",
+      "end": "right",
+      "support": "P778",
+      "previous_shared_Mk_tf_m": 8.565,
+      "own_side_Mk_tf_m": 8.565,
+      "signed_Mk_tf_m": -8.565,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1089,
+        "text": "M MN. VAO= 3   -11.640   -7.906   -0.701    3.993    7.224    9.256   10.062    9.639    8.021    5.274    1.484   -4.292   -8.565"
+      },
+      "capacity_C35_tf_m": 18.421141911248508,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "1",
+      "end": "left",
+      "support": "P778",
+      "previous_shared_Mk_tf_m": 8.565,
+      "own_side_Mk_tf_m": 3.2893717728055076,
+      "signed_Mk_tf_m": -3.2893717728055076,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 521,
+        "text": "M MN. VAO= 1    -3.145   -3.611   -0.928    1.061    2.342    3.098    3.337    3.014    2.112    0.677   -1.604   -4.462   -7.560"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "1",
+      "end": "right",
+      "support": "P769",
+      "previous_shared_Mk_tf_m": 10.745,
+      "own_side_Mk_tf_m": 7.56,
+      "signed_Mk_tf_m": -7.56,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 521,
+        "text": "M MN. VAO= 1    -3.145   -3.611   -0.928    1.061    2.342    3.098    3.337    3.014    2.112    0.677   -1.604   -4.462   -7.560"
+      },
+      "capacity_C35_tf_m": 6.773167015611063,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "2",
+      "end": "left",
+      "support": "P769",
+      "previous_shared_Mk_tf_m": 10.745,
+      "own_side_Mk_tf_m": 10.745,
+      "signed_Mk_tf_m": -10.745,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 522,
+        "text": "M MN. VAO= 2   -10.745   -6.087   -1.987    0.929    2.641    3.686    4.052    3.742    2.706    1.012   -1.955   -5.881   -9.792"
+      },
+      "capacity_C35_tf_m": 6.773167015611063,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "2",
+      "end": "right",
+      "support": "P759",
+      "previous_shared_Mk_tf_m": 9.792,
+      "own_side_Mk_tf_m": 9.792,
+      "signed_Mk_tf_m": -9.792,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 522,
+        "text": "M MN. VAO= 2   -10.745   -6.087   -1.987    0.929    2.641    3.686    4.052    3.742    2.706    1.012   -1.955   -5.881   -9.792"
+      },
+      "capacity_C35_tf_m": 6.773167015611063,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "3",
+      "end": "left",
+      "support": "P759",
+      "previous_shared_Mk_tf_m": 9.792,
+      "own_side_Mk_tf_m": 1.161,
+      "signed_Mk_tf_m": -1.161,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 523,
+        "text": "M MN. VAO= 3    -1.161   -0.990   -0.757   -0.500   -0.136    0.180    0.391    0.435    0.452    0.271    0.010   -0.200   -0.777"
+      },
+      "capacity_C35_tf_m": 6.773167015611063,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V24",
+      "model": "V24",
+      "span_token": "3",
+      "end": "right",
+      "support": "PC25C",
+      "previous_shared_Mk_tf_m": 0.7769999999999999,
+      "own_side_Mk_tf_m": 0.7769999999999999,
+      "signed_Mk_tf_m": -0.7769999999999999,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 523,
+        "text": "M MN. VAO= 3    -1.161   -0.990   -0.757   -0.500   -0.136    0.180    0.391    0.435    0.452    0.271    0.010   -0.200   -0.777"
+      },
+      "capacity_C35_tf_m": 3.45163619454167,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "1",
+      "end": "left",
+      "support": "PC58C",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.631,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1352,
+        "text": "M MN. VAO= 1     0.631    2.074    3.276    4.135    4.615    4.705    4.409    3.708    2.605    1.128   -0.891   -3.237   -5.088"
+      },
+      "capacity_C35_tf_m": 3.722582361350018,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "1",
+      "end": "right",
+      "support": "P807C",
+      "previous_shared_Mk_tf_m": 5.088,
+      "own_side_Mk_tf_m": 5.088,
+      "signed_Mk_tf_m": -5.088,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1352,
+        "text": "M MN. VAO= 1     0.631    2.074    3.276    4.135    4.615    4.705    4.409    3.708    2.605    1.128   -0.891   -3.237   -5.088"
+      },
+      "capacity_C35_tf_m": 9.385195431904659,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "2",
+      "end": "left",
+      "support": "P807C",
+      "previous_shared_Mk_tf_m": 5.088,
+      "own_side_Mk_tf_m": 2.019,
+      "signed_Mk_tf_m": -2.019,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1353,
+        "text": "M MN. VAO= 2    -2.019   -1.486   -1.018   -0.453   -0.049    0.130    0.167    0.014   -0.375   -0.930   -1.628   -2.401   -3.343"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "2",
+      "end": "right",
+      "support": "P797",
+      "previous_shared_Mk_tf_m": 7.362,
+      "own_side_Mk_tf_m": 3.343,
+      "signed_Mk_tf_m": -3.343,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1353,
+        "text": "M MN. VAO= 2    -2.019   -1.486   -1.018   -0.453   -0.049    0.130    0.167    0.014   -0.375   -0.930   -1.628   -2.401   -3.343"
+      },
+      "capacity_C35_tf_m": 5.564833140102981,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "3",
+      "end": "left",
+      "support": "P797",
+      "previous_shared_Mk_tf_m": 7.362,
+      "own_side_Mk_tf_m": 7.362,
+      "signed_Mk_tf_m": -7.362,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1354,
+        "text": "M MN. VAO= 3    -7.362   -3.725   -0.564    1.366    2.586    3.232    3.377    2.866    1.884    0.218   -2.780   -6.272   -9.686"
+      },
+      "capacity_C35_tf_m": 9.385195431904659,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "3",
+      "end": "right",
+      "support": "P791",
+      "previous_shared_Mk_tf_m": 11.789,
+      "own_side_Mk_tf_m": 9.686,
+      "signed_Mk_tf_m": -9.686,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1354,
+        "text": "M MN. VAO= 3    -7.362   -3.725   -0.564    1.366    2.586    3.232    3.377    2.866    1.884    0.218   -2.780   -6.272   -9.686"
+      },
+      "capacity_C35_tf_m": 13.946824790646682,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "4",
+      "end": "left",
+      "support": "P791",
+      "previous_shared_Mk_tf_m": 11.789,
+      "own_side_Mk_tf_m": 11.789,
+      "signed_Mk_tf_m": -11.789,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1355,
+        "text": "M MN. VAO= 4   -11.789   -4.310    1.866    5.590    8.130    9.476    9.618    8.558    6.333    2.999   -1.767   -8.614  -14.964"
+      },
+      "capacity_C35_tf_m": 13.946824790646682,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "4",
+      "end": "right",
+      "support": "P784",
+      "previous_shared_Mk_tf_m": 14.964,
+      "own_side_Mk_tf_m": 14.964,
+      "signed_Mk_tf_m": -14.964,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1355,
+        "text": "M MN. VAO= 4   -11.789   -4.310    1.866    5.590    8.130    9.476    9.618    8.558    6.333    2.999   -1.767   -8.614  -14.964"
+      },
+      "capacity_C35_tf_m": 19.6773682283492,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "5",
+      "end": "left",
+      "support": "P784",
+      "previous_shared_Mk_tf_m": 14.964,
+      "own_side_Mk_tf_m": 9.958,
+      "signed_Mk_tf_m": -9.958,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1356,
+        "text": "M MN. VAO= 5    -9.958   -6.416   -2.820    0.131    1.957    3.103    3.518    3.335    2.467    1.027   -1.328   -4.481   -7.737"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "5",
+      "end": "right",
+      "support": "P764",
+      "previous_shared_Mk_tf_m": 10.3,
+      "own_side_Mk_tf_m": 7.737,
+      "signed_Mk_tf_m": -7.737,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1356,
+        "text": "M MN. VAO= 5    -9.958   -6.416   -2.820    0.131    1.957    3.103    3.518    3.335    2.467    1.027   -1.328   -4.481   -7.737"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "6",
+      "end": "left",
+      "support": "P764",
+      "previous_shared_Mk_tf_m": 10.3,
+      "own_side_Mk_tf_m": 10.3,
+      "signed_Mk_tf_m": -10.3,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1357,
+        "text": "M MN. VAO= 6   -10.300   -5.973   -1.937    0.892    2.571    3.592    3.956    3.656    2.665    1.041   -1.797   -5.742   -8.956"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "6",
+      "end": "right",
+      "support": "P762",
+      "previous_shared_Mk_tf_m": 8.956,
+      "own_side_Mk_tf_m": 8.956,
+      "signed_Mk_tf_m": -8.956,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1357,
+        "text": "M MN. VAO= 6   -10.300   -5.973   -1.937    0.892    2.571    3.592    3.956    3.656    2.665    1.041   -1.797   -5.742   -8.956"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "7",
+      "end": "left",
+      "support": "P762",
+      "previous_shared_Mk_tf_m": 8.956,
+      "own_side_Mk_tf_m": 1.2142291169451074,
+      "signed_Mk_tf_m": -1.2142291169451074,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1358,
+        "text": "M MN. VAO= 7    -1.118   -1.230   -1.201   -0.921   -0.639   -0.340   -0.119    0.117    0.197    0.290    0.264    0.228    0.165"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V42",
+      "model": "V42",
+      "span_token": "7",
+      "end": "right",
+      "support": "PC26C",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.19206443914081156,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1358,
+        "text": "M MN. VAO= 7    -1.118   -1.230   -1.201   -0.921   -0.639   -0.340   -0.119    0.117    0.197    0.290    0.264    0.228    0.165"
+      },
+      "capacity_C35_tf_m": 2.230253341114988,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V49",
+      "model": "V49",
+      "span_token": "1",
+      "end": "left",
+      "support": "V26",
+      "previous_shared_Mk_tf_m": 0.026,
+      "own_side_Mk_tf_m": 0.026,
+      "signed_Mk_tf_m": -0.026,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 923,
+        "text": "M MN. VAO= 1    -0.026    1.639    3.373    4.881    6.136    7.110    7.527    7.220    6.277    4.686    2.478    0.020   -1.079"
+      },
+      "capacity_C35_tf_m": 2.2235919459932076,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V49",
+      "model": "V49",
+      "span_token": "1",
+      "end": "right",
+      "support": "P749",
+      "previous_shared_Mk_tf_m": 1.079,
+      "own_side_Mk_tf_m": 1.079,
+      "signed_Mk_tf_m": -1.079,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 923,
+        "text": "M MN. VAO= 1    -0.026    1.639    3.373    4.881    6.136    7.110    7.527    7.220    6.277    4.686    2.478    0.020   -1.079"
+      },
+      "capacity_C35_tf_m": 6.311215405602225,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V50",
+      "model": "V50",
+      "span_token": "1",
+      "end": "left",
+      "support": "V34",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.228,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 944,
+        "text": "M MN. VAO= 1     0.228    3.417    5.303    6.548    7.381    7.851    7.988    7.652    6.716    4.698    1.378   -2.357   -4.332"
+      },
+      "capacity_C35_tf_m": 2.2235919459932076,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V50",
+      "model": "V50",
+      "span_token": "1",
+      "end": "right",
+      "support": "P751",
+      "previous_shared_Mk_tf_m": 4.332,
+      "own_side_Mk_tf_m": 4.332,
+      "signed_Mk_tf_m": -4.332,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 944,
+        "text": "M MN. VAO= 1     0.228    3.417    5.303    6.548    7.381    7.851    7.988    7.652    6.716    4.698    1.378   -2.357   -4.332"
+      },
+      "capacity_C35_tf_m": 6.311215405602225,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V3",
+      "model": "V3",
+      "span_token": "1",
+      "end": "left",
+      "support": "P740",
+      "previous_shared_Mk_tf_m": 1.194,
+      "own_side_Mk_tf_m": 1.194,
+      "signed_Mk_tf_m": -1.194,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 69,
+        "text": "M MN. VAO= 1    -1.194   -0.428    0.192    0.436    0.673    0.768    0.795    0.708    0.531    0.287    0.092   -0.153   -0.080"
+      },
+      "capacity_C35_tf_m": 7.935729992446156,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V3",
+      "model": "V3",
+      "span_token": "1",
+      "end": "right",
+      "support": "P746",
+      "previous_shared_Mk_tf_m": 0.153,
+      "own_side_Mk_tf_m": 0.153,
+      "signed_Mk_tf_m": -0.153,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 69,
+        "text": "M MN. VAO= 1    -1.194   -0.428    0.192    0.436    0.673    0.768    0.795    0.708    0.531    0.287    0.092   -0.153   -0.080"
+      },
+      "capacity_C35_tf_m": 7.935729992446156,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V6",
+      "model": "V6",
+      "span_token": "1",
+      "end": "left",
+      "support": "P743",
+      "previous_shared_Mk_tf_m": 0.677,
+      "own_side_Mk_tf_m": 0.677,
+      "signed_Mk_tf_m": -0.677,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 118,
+        "text": "M MN. VAO= 1    -0.677   -0.168    0.220    0.336    0.368    0.409    0.326    0.186   -0.081   -0.219   -0.447    0.028   -0.021"
+      },
+      "capacity_C35_tf_m": 7.935729992446156,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V6",
+      "model": "V6",
+      "span_token": "1",
+      "end": "right",
+      "support": "P744",
+      "previous_shared_Mk_tf_m": 0.021,
+      "own_side_Mk_tf_m": 0.021,
+      "signed_Mk_tf_m": -0.021,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 118,
+        "text": "M MN. VAO= 1    -0.677   -0.168    0.220    0.336    0.368    0.409    0.326    0.186   -0.081   -0.219   -0.447    0.028   -0.021"
+      },
+      "capacity_C35_tf_m": 7.935729992446156,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V7",
+      "model": "V7",
+      "span_token": "1",
+      "end": "left",
+      "support": "V29",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.029,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 146,
+        "text": "M MN. VAO= 1     0.029    1.218    2.165    2.846    3.312    3.555    3.571    3.340    2.904    2.271    1.474    0.592   -0.287"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V7",
+      "model": "V7",
+      "span_token": "1",
+      "end": "right",
+      "support": "V31",
+      "previous_shared_Mk_tf_m": 0.28700000000000003,
+      "own_side_Mk_tf_m": 0.28700000000000003,
+      "signed_Mk_tf_m": -0.28700000000000003,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 146,
+        "text": "M MN. VAO= 1     0.029    1.218    2.165    2.846    3.312    3.555    3.571    3.340    2.904    2.271    1.474    0.592   -0.287"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V8",
+      "model": "V8",
+      "span_token": "1",
+      "end": "left",
+      "support": "V39",
+      "previous_shared_Mk_tf_m": 0.061,
+      "own_side_Mk_tf_m": 0.061,
+      "signed_Mk_tf_m": -0.061,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 167,
+        "text": "M MN. VAO= 1    -0.061    0.950    1.829    2.521    3.010    3.246    3.259    3.050    2.635    1.993    1.201    0.339   -0.436"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V8",
+      "model": "V8",
+      "span_token": "1",
+      "end": "right",
+      "support": "V41",
+      "previous_shared_Mk_tf_m": 0.436,
+      "own_side_Mk_tf_m": 0.436,
+      "signed_Mk_tf_m": -0.436,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 167,
+        "text": "M MN. VAO= 1    -0.061    0.950    1.829    2.521    3.010    3.246    3.259    3.050    2.635    1.993    1.201    0.339   -0.436"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V9",
+      "model": "V9",
+      "span_token": "1",
+      "end": "left",
+      "support": "V29",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.127,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 188,
+        "text": "M MN. VAO= 1     0.127    1.240    2.147    2.812    3.257    3.488    3.503    3.273    2.844    2.228    1.456    0.522   -0.567"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V9",
+      "model": "V9",
+      "span_token": "1",
+      "end": "right",
+      "support": "V31",
+      "previous_shared_Mk_tf_m": 0.567,
+      "own_side_Mk_tf_m": 0.567,
+      "signed_Mk_tf_m": -0.567,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 188,
+        "text": "M MN. VAO= 1     0.127    1.240    2.147    2.812    3.257    3.488    3.503    3.273    2.844    2.228    1.456    0.522   -0.567"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V10",
+      "model": "V10",
+      "span_token": "1",
+      "end": "left",
+      "support": "V39",
+      "previous_shared_Mk_tf_m": 0.209,
+      "own_side_Mk_tf_m": 0.209,
+      "signed_Mk_tf_m": -0.209,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 209,
+        "text": "M MN. VAO= 1    -0.209    0.861    1.738    2.426    2.917    3.172    3.204    3.023    2.650    2.062    1.320    0.444   -0.677"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V10",
+      "model": "V10",
+      "span_token": "1",
+      "end": "right",
+      "support": "V41",
+      "previous_shared_Mk_tf_m": 0.677,
+      "own_side_Mk_tf_m": 0.677,
+      "signed_Mk_tf_m": -0.677,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 209,
+        "text": "M MN. VAO= 1    -0.209    0.861    1.738    2.426    2.917    3.172    3.204    3.023    2.650    2.062    1.320    0.444   -0.677"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V12",
+      "model": "V12",
+      "span_token": "1",
+      "end": "left",
+      "support": "P753",
+      "previous_shared_Mk_tf_m": 72.842,
+      "own_side_Mk_tf_m": 72.842,
+      "signed_Mk_tf_m": -72.842,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 258,
+        "text": "M MN. VAO= 1   -72.842  -66.729  -60.694  -54.735  -48.101  -41.155  -34.541  -28.202  -22.230  -16.436  -10.804   -5.038   -0.070"
+      },
+      "capacity_C35_tf_m": 20.14425041995243,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V12",
+      "model": "V12",
+      "span_token": "1",
+      "end": "right",
+      "support": "V31",
+      "previous_shared_Mk_tf_m": 2.7541327014218036,
+      "own_side_Mk_tf_m": 2.7541327014218036,
+      "signed_Mk_tf_m": -2.7541327014218036,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 258,
+        "text": "M MN. VAO= 1   -72.842  -66.729  -60.694  -54.735  -48.101  -41.155  -34.541  -28.202  -22.230  -16.436  -10.804   -5.038   -0.070"
+      },
+      "capacity_C35_tf_m": 20.14425041995243,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V13",
+      "model": "V13",
+      "span_token": "1",
+      "end": "left",
+      "support": "P754",
+      "previous_shared_Mk_tf_m": 78.26,
+      "own_side_Mk_tf_m": 78.26,
+      "signed_Mk_tf_m": -78.26,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 279,
+        "text": "M MN. VAO= 1   -78.260  -71.436  -64.688  -58.017  -51.423  -44.307  -37.166  -30.430  -23.881  -17.560  -11.227   -5.489   -0.089"
+      },
+      "capacity_C35_tf_m": 20.14425041995243,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V13",
+      "model": "V13",
+      "span_token": "1",
+      "end": "right",
+      "support": "V41",
+      "previous_shared_Mk_tf_m": 3.0065355450236995,
+      "own_side_Mk_tf_m": 3.0065355450236995,
+      "signed_Mk_tf_m": -3.0065355450236995,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 279,
+        "text": "M MN. VAO= 1   -78.260  -71.436  -64.688  -58.017  -51.423  -44.307  -37.166  -30.430  -23.881  -17.560  -11.227   -5.489   -0.089"
+      },
+      "capacity_C35_tf_m": 20.14425041995243,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V31",
+      "model": "V31",
+      "span_token": "2",
+      "end": "left",
+      "support": "P746",
+      "previous_shared_Mk_tf_m": 17.342,
+      "own_side_Mk_tf_m": 0.375,
+      "signed_Mk_tf_m": -0.375,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1163,
+        "text": "M MN. VAO= 2    -0.375   -0.344   -0.313   -0.281   -0.250   -0.219   -0.188   -0.156   -0.125   -0.094   -0.063   -0.031   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V31",
+      "model": "V31",
+      "span_token": "2",
+      "end": "right",
+      "support": "P746",
+      "previous_shared_Mk_tf_m": 17.342,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.0,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1163,
+        "text": "M MN. VAO= 2    -0.375   -0.344   -0.313   -0.281   -0.250   -0.219   -0.188   -0.156   -0.125   -0.094   -0.063   -0.031   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V41",
+      "model": "V41",
+      "span_token": "2",
+      "end": "left",
+      "support": "P744",
+      "previous_shared_Mk_tf_m": 4.061,
+      "own_side_Mk_tf_m": 0.184,
+      "signed_Mk_tf_m": -0.184,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1316,
+        "text": "M MN. VAO= 2    -0.184   -0.169   -0.153   -0.138   -0.123   -0.107   -0.092   -0.077   -0.061   -0.046   -0.031   -0.015   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V41",
+      "model": "V41",
+      "span_token": "2",
+      "end": "right",
+      "support": "P744",
+      "previous_shared_Mk_tf_m": 4.061,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.0,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1316,
+        "text": "M MN. VAO= 2    -0.184   -0.169   -0.153   -0.138   -0.123   -0.107   -0.092   -0.077   -0.061   -0.046   -0.031   -0.015   -0.000"
+      },
+      "capacity_C35_tf_m": 7.935421529979534,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "1B",
+      "end": "left",
+      "support": "EXTREMIDADE_LIVRE",
+      "previous_shared_Mk_tf_m": 0.014,
+      "own_side_Mk_tf_m": 0.014,
+      "signed_Mk_tf_m": -0.014,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1425,
+        "text": "M MN. VAO= 1B   -0.014   -0.032   -0.056   -0.083   -0.112   -0.144   -0.178   -0.219   -0.189   -0.161   -0.136   -0.113   -0.093"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V43",
+      "model": "V43",
+      "span_token": "1B",
+      "end": "right",
+      "support": "P748",
+      "previous_shared_Mk_tf_m": 8.222,
+      "own_side_Mk_tf_m": 0.14054545454545456,
+      "signed_Mk_tf_m": -0.14054545454545456,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1425,
+        "text": "M MN. VAO= 1B   -0.014   -0.032   -0.056   -0.083   -0.112   -0.144   -0.178   -0.219   -0.189   -0.161   -0.136   -0.113   -0.093"
+      },
+      "capacity_C35_tf_m": 8.216281352944165,
+      "before_passes_C35": false,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "1B",
+      "end": "left",
+      "support": "EXTREMIDADE_LIVRE",
+      "previous_shared_Mk_tf_m": 0,
+      "own_side_Mk_tf_m": 0,
+      "signed_Mk_tf_m": 0.242,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1053,
+        "text": "M MN. VAO= 1B    0.242    0.125    0.006   -0.115   -0.236   -0.360   -0.494   -0.641   -0.789   -0.802   -0.960   -1.118   -1.279"
+      },
+      "capacity_C35_tf_m": 3.45163619454167,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V22",
+      "model": "V22",
+      "span_token": "1B",
+      "end": "right",
+      "support": "PC62C",
+      "previous_shared_Mk_tf_m": 1.281,
+      "own_side_Mk_tf_m": 1.279,
+      "signed_Mk_tf_m": -1.279,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1053,
+        "text": "M MN. VAO= 1B    0.242    0.125    0.006   -0.115   -0.236   -0.360   -0.494   -0.641   -0.789   -0.802   -0.960   -1.118   -1.279"
+      },
+      "capacity_C35_tf_m": 3.45163619454167,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "1B",
+      "end": "left",
+      "support": "EXTREMIDADE_LIVRE",
+      "previous_shared_Mk_tf_m": 0.016,
+      "own_side_Mk_tf_m": 0.016,
+      "signed_Mk_tf_m": -0.016,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1508,
+        "text": "M MN. VAO= 1B   -0.016   -0.037   -0.061   -0.088   -0.116   -0.147   -0.181   -0.267   -0.313   -0.361   -0.411   -0.465   -0.520"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    },
+    {
+      "beam": "V25",
+      "model": "V25",
+      "span_token": "1B",
+      "end": "right",
+      "support": "P745",
+      "previous_shared_Mk_tf_m": 8.961,
+      "own_side_Mk_tf_m": 0.52,
+      "signed_Mk_tf_m": -0.52,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1508,
+        "text": "M MN. VAO= 1B   -0.016   -0.037   -0.061   -0.088   -0.116   -0.147   -0.181   -0.267   -0.313   -0.361   -0.411   -0.465   -0.520"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    }
+  ],
+  "no_new_resistance_execution": true,
+  "verification": {
+    "all190_original_demand_records_preserved": true,
+    "all_official_Concretopy_outputs_unchanged": true,
+    "positive_and_shear_results_unchanged": true,
+    "all190_adopted_demands_equal_their_own_side": true
+  }
+}

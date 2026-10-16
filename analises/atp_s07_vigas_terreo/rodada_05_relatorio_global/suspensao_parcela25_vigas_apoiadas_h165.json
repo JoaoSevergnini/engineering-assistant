@@ -1,0 +1,962 @@
+[
+  {
+    "reaction_Rk_tf": 10.609,
+    "steel25": {
+      "as_suspension_cm2": 0.8375119362924998,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V7",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 104.03874984999999,
+        "Vsd_kn": 145.65424978999997,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.08250065388427559,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 104.03874984999999,
+      "Vsd_kn": 145.65424978999997,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  },
+  {
+    "reaction_Rk_tf": 7.642,
+    "steel25": {
+      "as_suspension_cm2": 0.6032864753649999,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V7",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 104.03874984999999,
+        "Vsd_kn": 145.65424978999997,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.08250065388427559,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 104.03874984999999,
+      "Vsd_kn": 145.65424978999997,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  },
+  {
+    "reaction_Rk_tf": 9.672,
+    "steel25": {
+      "as_suspension_cm2": 0.76354184634,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V8",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 94.8499188,
+        "Vsd_kn": 132.78988632,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.07521409410582652,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 94.8499188,
+      "Vsd_kn": 132.78988632,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  },
+  {
+    "reaction_Rk_tf": 7.709,
+    "steel25": {
+      "as_suspension_cm2": 0.6085756920424998,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V8",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 94.8499188,
+        "Vsd_kn": 132.78988632,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.07521409410582652,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 94.8499188,
+      "Vsd_kn": 132.78988632,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  },
+  {
+    "reaction_Rk_tf": 9.741,
+    "steel25": {
+      "as_suspension_cm2": 0.7689889500824998,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V9",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 95.52657765,
+        "Vsd_kn": 133.73720870999998,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.07575067107990655,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 95.52657765,
+      "Vsd_kn": 133.73720870999998,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  },
+  {
+    "reaction_Rk_tf": 9.308,
+    "steel25": {
+      "as_suspension_cm2": 0.7348064005099999,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V9",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 95.52657765,
+        "Vsd_kn": 133.73720870999998,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.07575067107990655,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 95.52657765,
+      "Vsd_kn": 133.73720870999998,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  },
+  {
+    "reaction_Rk_tf": 9.535,
+    "steel25": {
+      "as_suspension_cm2": 0.7527265823874998,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V10",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 93.50640775,
+        "Vsd_kn": 130.90897084999997,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.07414871663555167,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 93.50640775,
+      "Vsd_kn": 130.90897084999997,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  },
+  {
+    "reaction_Rk_tf": 9.124,
+    "steel25": {
+      "as_suspension_cm2": 0.7202807905299999,
+      "gamma_f": 1.4,
+      "gamma_s": 1.15,
+      "factor": 0.25,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "steel_api": {
+        "interface": "concretopy.materiais.fyd",
+        "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+        "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+        "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+      }
+    },
+    "supported_beam_id": "V10",
+    "maximum_distribution_length_m": 0.825,
+    "documented_stirrup_subinterval_m": [
+      0.095,
+      0.825
+    ],
+    "actual_subinterval_length_m": 0.73,
+    "source": "Viga apoiada termina na receptora19cm; estribosN3/N6c20 a partir da face interna+9,5cm. Toda parcela dentro de h_apoiada/2=82,5cm desde eixo; taxa conservadora em73cm. NBR6118:2023 18.3.6.",
+    "shear_concretopy_bound": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 93.50640775,
+        "Vsd_kn": 130.90897084999997,
+        "VRd2_kn": 1765.492065,
+        "utilization": 0.07414871663555167,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 93.50640775,
+      "Vsd_kn": 130.90897084999997,
+      "VRd2_kn": 1765.492065,
+      "Vc_kn": 292.8766521840293,
+      "d_cm": 160.07,
+      "minimum_Asw_per_s_cm2_m": 2.439571455688381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 2.439571455688381,
+            "vc": 292.8766521840293,
+            "vrd2": 1765.492065,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 2.439571455688381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 160.07,
+          "selected": {
+            "origin": "inferior",
+            "configuration": {
+              "count": 3,
+              "phi": 16,
+              "layers": [
+                3
+              ]
+            },
+            "d_cm": 160.07,
+            "As_cm2": 6.031857894892403,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 19,
+          "h": 165,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 2.439571455688381,
+        "vc": 292.8766521840293,
+        "vrd2": 1765.492065,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 2.439571455688381
+      },
+      "required_Asw_per_s_cm2_m": 2.439571455688381,
+      "governing_Asw_per_s_cm2_m": 2.439571455688381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 30
+    },
+    "total_required_rate_cm2_m": 2.439571455688381,
+    "provided_rate_cm2_m": 3.1172453105244724,
+    "guaranteed_stirrup_count": 3,
+    "guaranteed_area_cm2": 1.8703471863146834,
+    "passes_numeric": true,
+    "overall_approval": null,
+    "remaining": "Eficacia/ancoragem conjunta das pecas50/138cm e controles da receptora permanecem separados."
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "criterion": "Cada lado individual; substitui unificacao anterior",
+  "sides": [
+    {
+      "beam": "V23",
+      "model": "V23",
+      "span_token": "2",
+      "end": "right",
+      "support": "P785",
+      "previous_shared_Mk_tf_m": 12.997,
+      "own_side_Mk_tf_m": 12.997,
+      "signed_Mk_tf_m": -12.997,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1088,
+        "text": "M MN. VAO= 2    -8.499   -8.885   -3.325    1.153    3.803    5.704    6.970    6.353    4.192    1.359   -3.056   -9.099  -12.997"
+      },
+      "capacity_C35_tf_m": 10.780417327645146,
+      "before_passes_C35": false,
+      "after_passes_C35": false
+    },
+    {
+      "beam": "V24",
+      "model": "V23",
+      "span_token": "3",
+      "end": "left",
+      "support": "P785",
+      "previous_shared_Mk_tf_m": 12.997,
+      "own_side_Mk_tf_m": 11.64,
+      "signed_Mk_tf_m": -11.64,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 1089,
+        "text": "M MN. VAO= 3   -11.640   -7.906   -0.701    3.993    7.224    9.256   10.062    9.639    8.021    5.274    1.484   -4.292   -8.565"
+      },
+      "capacity_C35_tf_m": 18.421141911248508,
+      "before_passes_C35": true,
+      "after_passes_C35": true
+    }
+  ]
+}

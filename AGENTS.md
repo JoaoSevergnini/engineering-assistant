@@ -145,6 +145,16 @@ Um resultado numericamente preciso não deve ser tratado como confiável se as h
 
 ---
 
+## 7.1. Convenção permanente de apresentação dos esforços
+
+Por solicitação expressa de João, apresentar esforços em **tf e tf·m**, na base **característica**, em todos os projetos e comunicações, salvo instrução específica posterior. Para resistências de cálculo, apresentar a resistência **equivalente para comparação Rd/γf**, identificada como tal, mantendo os coeficientes de segurança na verificação.
+
+Aplicar obrigatoriamente [Apresentação de esforços](profile/force-presentation.md): origem e natureza dos dados, conversões, coeficientes comprovados e casos sem conversão característica demonstrável. Esta preferência altera a apresentação; não autoriza modificar a segurança dos cálculos.
+
+Para capacidade resistente de vigas, o resultado oficial é o do **Concretopy**. Cálculos independentes devem ser separados e identificados com origem/método explícitos; não substituem o motor. Na flexão positiva, não considerar a contribuição das barras superiores, salvo orientação posterior de João. Aplicar os requisitos de rastreabilidade em [Apresentação de esforços](profile/force-presentation.md).
+
+---
+
 ## 8. Incerteza e falta de informação
 
 Não esconda incertezas.

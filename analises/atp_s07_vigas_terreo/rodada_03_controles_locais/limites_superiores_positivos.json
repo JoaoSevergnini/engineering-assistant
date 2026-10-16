@@ -1,0 +1,62 @@
+[
+  {
+    "beam_id": "V16",
+    "span_token": "1",
+    "source": "7401 N4 lower; N1 upper at peak; end N2/N3 do not reach peak",
+    "Msd_knm": 209.75639817999996,
+    "results": [
+      {
+        "fck_mpa": 35,
+        "upper_bound_knm": 95.68111099065261,
+        "optimal_signed_opposite_force_kn": 136.59098493868666,
+        "insufficient": true
+      },
+      {
+        "fck_mpa": 40,
+        "upper_bound_knm": 96.58192039830776,
+        "optimal_signed_opposite_force_kn": 136.59098493868666,
+        "insufficient": true
+      }
+    ]
+  },
+  {
+    "beam_id": "V37",
+    "span_token": "1",
+    "source": "7403 N4 continuous lower; extra N3 ends well before central peak; top N2/N6 end before peak; N5 construction upper",
+    "Msd_knm": 136.66155174,
+    "results": [
+      {
+        "fck_mpa": 35,
+        "upper_bound_knm": 116.76143655365502,
+        "optimal_signed_opposite_force_kn": 21.980530122626647,
+        "insufficient": true
+      },
+      {
+        "fck_mpa": 40,
+        "upper_bound_knm": 117.73758110722645,
+        "optimal_signed_opposite_force_kn": 64.1466015511981,
+        "insufficient": true
+      }
+    ]
+  },
+  {
+    "beam_id": "V25",
+    "span_token": "4",
+    "source": "7402 N11 1phi12.5+N12 2phi12.5 at peak; N13 construction upper; intermediate first-stage bars end at P727 before this central peak",
+    "Msd_knm": 102.98355430999997,
+    "results": [
+      {
+        "fck_mpa": 35,
+        "upper_bound_knm": 71.49447774805326,
+        "optimal_signed_opposite_force_kn": 68.29549246934333,
+        "insufficient": true
+      },
+      {
+        "fck_mpa": 40,
+        "upper_bound_knm": 72.00574915932846,
+        "optimal_signed_opposite_force_kn": 68.29549246934333,
+        "insufficient": true
+      }
+    ]
+  }
+]

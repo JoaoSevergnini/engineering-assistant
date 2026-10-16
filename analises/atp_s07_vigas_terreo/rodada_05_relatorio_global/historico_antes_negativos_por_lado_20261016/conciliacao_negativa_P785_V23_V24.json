@@ -1,0 +1,66 @@
+[
+  {
+    "beam_id": "V23",
+    "model_name": "V23",
+    "span_token": "2",
+    "end": "right",
+    "terminal_candidates": [
+      {
+        "magnitude": 12.997,
+        "signed_tf_m": -12.997,
+        "source": {
+          "file": "VGESFS.LST",
+          "line": 1088,
+          "text": "M MN. VAO= 2    -8.499   -8.885   -3.325    1.153    3.803    5.704    6.970    6.353    4.192    1.359   -3.056   -9.099  -12.997"
+        },
+        "sample": 13
+      },
+      {
+        "magnitude": 9.961,
+        "signed_tf_m": -9.961,
+        "source": {
+          "file": "VGESFS.LST",
+          "line": 1096,
+          "text": "M MX. VAO= 2    -6.944   -6.447   -2.379    1.538    5.154    7.725    9.467    8.614    5.664    1.840   -2.262   -6.729   -9.961"
+        },
+        "sample": 13
+      }
+    ],
+    "old_governing_Mk": 12.997,
+    "new_governing_Mk": 12.997,
+    "capacity_C35": 10.780417327645146,
+    "passes_C35": false
+  },
+  {
+    "beam_id": "V24",
+    "model_name": "V23",
+    "span_token": "3",
+    "end": "left",
+    "terminal_candidates": [
+      {
+        "magnitude": 11.64,
+        "signed_tf_m": -11.64,
+        "source": {
+          "file": "VGESFS.LST",
+          "line": 1089,
+          "text": "M MN. VAO= 3   -11.640   -7.906   -0.701    3.993    7.224    9.256   10.062    9.639    8.021    5.274    1.484   -4.292   -8.565"
+        },
+        "sample": 1
+      },
+      {
+        "magnitude": 9.024,
+        "signed_tf_m": -9.024,
+        "source": {
+          "file": "VGESFS.LST",
+          "line": 1097,
+          "text": "M MX. VAO= 3    -9.024   -5.727   -0.384    5.253    9.652   12.393   13.440   12.789   10.522    6.761    1.706   -3.141   -6.576"
+        },
+        "sample": 1
+      }
+    ],
+    "old_governing_Mk": 11.64,
+    "new_governing_Mk": 12.997,
+    "capacity_C35": 18.421141911248508,
+    "passes_C35": true
+  }
+]

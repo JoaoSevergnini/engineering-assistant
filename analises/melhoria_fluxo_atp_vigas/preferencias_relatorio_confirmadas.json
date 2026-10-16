@@ -1,0 +1,44 @@
+{
+  "schema": "atp-report-preferences-v1",
+  "scope": "DEMONSTRACAO_PARCIAL_S07_NAO_EMISSAO",
+  "sections": {
+    "geometria": true,
+    "positiva": true,
+    "negativa": true,
+    "cortante": true,
+    "suspensao": true,
+    "pendencias": true
+  },
+  "example_findings": [
+    {
+      "id": "S07-V42-ALTURA",
+      "category": "geometria",
+      "checked": true,
+      "included": true
+    },
+    {
+      "id": "S07-V43-P723-NEGATIVA",
+      "category": "negativa",
+      "checked": true,
+      "included": true
+    },
+    {
+      "id": "S07-V18-CORTANTE",
+      "category": "cortante",
+      "checked": true,
+      "included": true
+    },
+    {
+      "id": "S07-V31-V12-EMENDA",
+      "category": "suspensao",
+      "checked": true,
+      "included": true
+    }
+  ],
+  "notes": "",
+  "source": "Escolhas enviadas pela selecao interativa e encaminhadas pelo usuario nesta conversa",
+  "date": "2026-10-16",
+  "emission_authorized": false,
+  "complete_finding_selection_required": true,
+  "preserve_unselected_technical_results": true
+}

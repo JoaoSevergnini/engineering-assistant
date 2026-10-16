@@ -1,0 +1,377 @@
+{
+  "beam_id": "V21",
+  "model_name": "V21",
+  "detail": "7402 N21 188 phi8 c17, two full-height legs; drawn section30x50, d44.7cm for phi20",
+  "provided_cm2_m": 5.913586171463141,
+  "gamma_f": 1.4,
+  "status": "REQUIRES_SHEAR_REVIEW_MODEL_I",
+  "limitations": [
+    "Face widths from TQS, not complete documentary axis.",
+    "d/2 case is sensitivity, not unconditional permission for load/support reductions.",
+    "Concrete strength/stage local applicability and full regional inventory must be reconciled before final normative conclusion."
+  ],
+  "cases": [
+    {
+      "scope": "between_faces",
+      "interval_local_m": [
+        0.09,
+        7.9319999999999995
+      ],
+      "Vk_kn": 195.66097845928738,
+      "Vsd_kn": 273.92536984300233,
+      "peak_position_local_m": 7.9319999999999995,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 464,
+        "text": "Q MN. VAO= 1     7.452    6.172    5.120    3.168    1.218   -0.841   -3.160   -5.265   -7.336   -9.289  -11.713  -15.106  -20.754"
+      },
+      "results": [
+        {
+          "fck_mpa": 35,
+          "design": {
+            "status": "PASS",
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 195.66097845928738,
+              "Vsd_kn": 273.92536984300233,
+              "VRd2_kn": 778.4505,
+              "utilization": 0.351885405485644,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "diagnostics": [],
+            "units": {
+              "forces": "kN",
+              "Asw_per_s": "cm2/m",
+              "spacing": "cm",
+              "d": "cm"
+            },
+            "Vsk_abs_kn": 195.66097845928738,
+            "Vsd_kn": 273.92536984300233,
+            "VRd2_kn": 778.4505,
+            "Vc_kn": 129.1367890293994,
+            "d_cm": 44.7,
+            "minimum_Asw_per_s_cm2_m": 3.851954930034286,
+            "provenance": {
+              "api": {
+                "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+              },
+              "minimum_call": {
+                "Vk_kn": 0,
+                "result": {
+                  "asw_por_s": 3.851954930034286,
+                  "vc": 129.1367890293994,
+                  "vrd2": 778.4505,
+                  "asw_por_s_calculado": 0.0,
+                  "asw_por_s_minimo": 3.851954930034286
+                }
+              },
+              "effective_depth": {
+                "status": "PASS",
+                "selected": {
+                  "source": "drawn outer phi20 tension row"
+                },
+                "d_cm": 44.7
+              },
+              "physical_section": {
+                "bw": 30,
+                "h": 50,
+                "cobrimento": 3.5,
+                "diametro_estribo_mm": 8
+              },
+              "stirrup_diameter_mm": 8,
+              "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+              "maximum_spacing_api": {
+                "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+              },
+              "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+            },
+            "concretopy": {
+              "asw_por_s": 8.27774635523954,
+              "vc": 129.1367890293994,
+              "vrd2": 778.4505,
+              "asw_por_s_calculado": 8.27774635523954,
+              "asw_por_s_minimo": 3.851954930034286
+            },
+            "required_Asw_per_s_cm2_m": 8.27774635523954,
+            "governing_Asw_per_s_cm2_m": 8.27774635523954,
+            "required_by_shear_separately_cm2_m": null,
+            "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+            "requirement_governed_by": "SHEAR",
+            "maximum_spacing_code_cm": 26.82
+          },
+          "area_sufficient": false
+        },
+        {
+          "fck_mpa": 40,
+          "design": {
+            "status": "PASS",
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 195.66097845928738,
+              "Vsd_kn": 273.92536984300233,
+              "VRd2_kn": 868.9680000000003,
+              "utilization": 0.315230675747556,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "diagnostics": [],
+            "units": {
+              "forces": "kN",
+              "Asw_per_s": "cm2/m",
+              "spacing": "cm",
+              "d": "cm"
+            },
+            "Vsk_abs_kn": 195.66097845928738,
+            "Vsd_kn": 273.92536984300233,
+            "VRd2_kn": 868.9680000000003,
+            "Vc_kn": 141.1598803299643,
+            "d_cm": 44.7,
+            "minimum_Asw_per_s_cm2_m": 4.210585543026527,
+            "provenance": {
+              "api": {
+                "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+              },
+              "minimum_call": {
+                "Vk_kn": 0,
+                "result": {
+                  "asw_por_s": 4.210585543026527,
+                  "vc": 141.1598803299643,
+                  "vrd2": 868.9680000000003,
+                  "asw_por_s_calculado": 0.0,
+                  "asw_por_s_minimo": 4.210585543026527
+                }
+              },
+              "effective_depth": {
+                "status": "PASS",
+                "selected": {
+                  "source": "drawn outer phi20 tension row"
+                },
+                "d_cm": 44.7
+              },
+              "physical_section": {
+                "bw": 30,
+                "h": 50,
+                "cobrimento": 3.5,
+                "diametro_estribo_mm": 8
+              },
+              "stirrup_diameter_mm": 8,
+              "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+              "maximum_spacing_api": {
+                "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+              },
+              "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+            },
+            "concretopy": {
+              "asw_por_s": 7.590371013671077,
+              "vc": 141.1598803299643,
+              "vrd2": 868.9680000000003,
+              "asw_por_s_calculado": 7.590371013671077,
+              "asw_por_s_minimo": 4.210585543026527
+            },
+            "required_Asw_per_s_cm2_m": 7.590371013671077,
+            "governing_Asw_per_s_cm2_m": 7.590371013671077,
+            "required_by_shear_separately_cm2_m": null,
+            "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+            "requirement_governed_by": "SHEAR",
+            "maximum_spacing_code_cm": 26.82
+          },
+          "area_sufficient": false
+        }
+      ]
+    },
+    {
+      "scope": "d_over_2_sensitivity",
+      "interval_local_m": [
+        0.3135,
+        7.7085
+      ],
+      "Vk_kn": 177.15462408350572,
+      "Vsd_kn": 248.016473716908,
+      "peak_position_local_m": 7.7085,
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 464,
+        "text": "Q MN. VAO= 1     7.452    6.172    5.120    3.168    1.218   -0.841   -3.160   -5.265   -7.336   -9.289  -11.713  -15.106  -20.754"
+      },
+      "results": [
+        {
+          "fck_mpa": 35,
+          "design": {
+            "status": "PASS",
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 177.15462408350572,
+              "Vsd_kn": 248.016473716908,
+              "VRd2_kn": 778.4505,
+              "utilization": 0.3186027547248129,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "diagnostics": [],
+            "units": {
+              "forces": "kN",
+              "Asw_per_s": "cm2/m",
+              "spacing": "cm",
+              "d": "cm"
+            },
+            "Vsk_abs_kn": 177.15462408350572,
+            "Vsd_kn": 248.016473716908,
+            "VRd2_kn": 778.4505,
+            "Vc_kn": 129.1367890293994,
+            "d_cm": 44.7,
+            "minimum_Asw_per_s_cm2_m": 3.851954930034286,
+            "provenance": {
+              "api": {
+                "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+              },
+              "minimum_call": {
+                "Vk_kn": 0,
+                "result": {
+                  "asw_por_s": 3.851954930034286,
+                  "vc": 129.1367890293994,
+                  "vrd2": 778.4505,
+                  "asw_por_s_calculado": 0.0,
+                  "asw_por_s_minimo": 3.851954930034286
+                }
+              },
+              "effective_depth": {
+                "status": "PASS",
+                "selected": {
+                  "source": "drawn outer phi20 tension row"
+                },
+                "d_cm": 44.7
+              },
+              "physical_section": {
+                "bw": 30,
+                "h": 50,
+                "cobrimento": 3.5,
+                "diametro_estribo_mm": 8
+              },
+              "stirrup_diameter_mm": 8,
+              "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+              "maximum_spacing_api": {
+                "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+              },
+              "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+            },
+            "concretopy": {
+              "asw_por_s": 6.796501983128753,
+              "vc": 129.1367890293994,
+              "vrd2": 778.4505,
+              "asw_por_s_calculado": 6.796501983128753,
+              "asw_por_s_minimo": 3.851954930034286
+            },
+            "required_Asw_per_s_cm2_m": 6.796501983128753,
+            "governing_Asw_per_s_cm2_m": 6.796501983128753,
+            "required_by_shear_separately_cm2_m": null,
+            "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+            "requirement_governed_by": "SHEAR",
+            "maximum_spacing_code_cm": 26.82
+          },
+          "area_sufficient": false
+        },
+        {
+          "fck_mpa": 40,
+          "design": {
+            "status": "PASS",
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 177.15462408350572,
+              "Vsd_kn": 248.016473716908,
+              "VRd2_kn": 868.9680000000003,
+              "utilization": 0.28541496777431147,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "diagnostics": [],
+            "units": {
+              "forces": "kN",
+              "Asw_per_s": "cm2/m",
+              "spacing": "cm",
+              "d": "cm"
+            },
+            "Vsk_abs_kn": 177.15462408350572,
+            "Vsd_kn": 248.016473716908,
+            "VRd2_kn": 868.9680000000003,
+            "Vc_kn": 141.1598803299643,
+            "d_cm": 44.7,
+            "minimum_Asw_per_s_cm2_m": 4.210585543026527,
+            "provenance": {
+              "api": {
+                "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+              },
+              "minimum_call": {
+                "Vk_kn": 0,
+                "result": {
+                  "asw_por_s": 4.210585543026527,
+                  "vc": 141.1598803299643,
+                  "vrd2": 868.9680000000003,
+                  "asw_por_s_calculado": 0.0,
+                  "asw_por_s_minimo": 4.210585543026527
+                }
+              },
+              "effective_depth": {
+                "status": "PASS",
+                "selected": {
+                  "source": "drawn outer phi20 tension row"
+                },
+                "d_cm": 44.7
+              },
+              "physical_section": {
+                "bw": 30,
+                "h": 50,
+                "cobrimento": 3.5,
+                "diametro_estribo_mm": 8
+              },
+              "stirrup_diameter_mm": 8,
+              "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+              "maximum_spacing_api": {
+                "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+              },
+              "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+            },
+            "concretopy": {
+              "asw_por_s": 6.10912664156029,
+              "vc": 141.1598803299643,
+              "vrd2": 868.9680000000003,
+              "asw_por_s_calculado": 6.10912664156029,
+              "asw_por_s_minimo": 4.210585543026527
+            },
+            "required_Asw_per_s_cm2_m": 6.10912664156029,
+            "governing_Asw_per_s_cm2_m": 6.10912664156029,
+            "required_by_shear_separately_cm2_m": null,
+            "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+            "requirement_governed_by": "SHEAR",
+            "maximum_spacing_code_cm": 26.82
+          },
+          "area_sufficient": false
+        }
+      ]
+    }
+  ]
+}

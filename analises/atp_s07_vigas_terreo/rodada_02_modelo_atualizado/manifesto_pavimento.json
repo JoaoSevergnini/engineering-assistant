@@ -1,0 +1,3824 @@
+{
+  "floor": "S07 - TERREO",
+  "beam_inventory_complete": true,
+  "requested_controls": [
+    "positive_flexure",
+    "negative_flexure",
+    "shear",
+    "suspension"
+  ],
+  "unrequested_controls": [
+    "anchorage",
+    "scaling"
+  ],
+  "sources": {
+    "form": {
+      "path": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    },
+    "detailing": {
+      "path": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF"
+    },
+    "tqs": {
+      "path": "C:\\TQS\\25-208-ATP___24-1454-WERT-WPBGR RESIDENCE-PE-MU2-S07-ATP2___2aFASE-Calc01\\TÉRREO\\VIGAS\\VGESFS.LST"
+    }
+  },
+  "beams": [
+    {
+      "beam_id": "V1",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "1: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V2",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "2: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V3",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "3: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V4",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "4: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V5",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "5: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V6",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "6: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V7",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "7: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V8",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "8: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V9",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "9: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V10",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "10: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V11",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "11: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V12",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "12: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V13",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "13: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V14",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "14: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V15",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "15: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V16",
+      "model": {
+        "longitudinal_reinforcement": [
+          {
+            "mark": "N4"
+          },
+          {
+            "mark": "N2"
+          },
+          {
+            "mark": "N1"
+          },
+          {
+            "mark": "N3"
+          }
+        ],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "PC40C axis",
+            "positive_direction": "PC40C to PC41C",
+            "provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+              }
+            ]
+          },
+          "segments": [
+            {
+              "id": "V16-clear",
+              "geometry_type": "CONSTANT",
+              "x_start_m": {
+                "value": 0.35,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "x_end_m": {
+                "value": 7.65,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "geometry": {
+                "section_shape": {
+                  "value": "RECTANGULAR",
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                },
+                "width_cm": {
+                  "value": 40,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                },
+                "height_cm": {
+                  "value": 50,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                },
+                "top_level_cm": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": "cm",
+                  "provenance": [],
+                  "criterion": null
+                },
+                "bottom_level_cm": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": "cm",
+                  "provenance": [],
+                  "criterion": null
+                },
+                "lateral_offset_cm": {
+                  "value": null,
+                  "state": "MISSING",
+                  "unit": "cm",
+                  "provenance": [],
+                  "criterion": null
+                },
+                "cover_cm": {
+                  "value": 3.5,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "provenance": [
+                    {
+                      "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "region": "COBRIMENTOS: VIGAS 3.5cm"
+                    }
+                  ],
+                  "criterion": null
+                },
+                "stirrup_diameter_mm": {
+                  "value": 6.3,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "mm",
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                }
+              },
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ]
+            }
+          ],
+          "occurrences": [
+            {
+              "mark": "N4",
+              "occurrence_id": "V16-N4-positive",
+              "function": "positive",
+              "face": "lower",
+              "quantity": {
+                "value": 4,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "diameter_mm": {
+                "value": 12.5,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "mm",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "layers": {
+                "value": [
+                  4
+                ],
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "x_start_m": {
+                "value": -0.25,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "x_end_m": {
+                "value": 8.25,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "continuity": {
+                "value": null,
+                "state": "MISSING",
+                "unit": null,
+                "provenance": [],
+                "criterion": null
+              },
+              "laps": [],
+              "extensions": [],
+              "termination": {}
+            },
+            {
+              "mark": "N2",
+              "occurrence_id": "V16-N2-negative",
+              "function": "negative",
+              "face": "upper",
+              "quantity": {
+                "value": 4,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N2"
+                  }
+                ],
+                "criterion": null
+              },
+              "diameter_mm": {
+                "value": 16,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "mm",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N2"
+                  }
+                ],
+                "criterion": null
+              },
+              "layers": {
+                "value": [
+                  4
+                ],
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N2"
+                  }
+                ],
+                "criterion": null
+              },
+              "x_start_m": {
+                "value": -0.25,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N2"
+                  }
+                ],
+                "criterion": null
+              },
+              "x_end_m": {
+                "value": 2.75,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N2"
+                  }
+                ],
+                "criterion": null
+              },
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                  "mark": "N2"
+                }
+              ],
+              "continuity": {
+                "value": null,
+                "state": "MISSING",
+                "unit": null,
+                "provenance": [],
+                "criterion": null
+              },
+              "laps": [],
+              "extensions": [],
+              "termination": {}
+            },
+            {
+              "mark": "N1",
+              "occurrence_id": "V16-N1-negative",
+              "function": "negative",
+              "face": "upper",
+              "quantity": {
+                "value": 4,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N1"
+                  }
+                ],
+                "criterion": null
+              },
+              "diameter_mm": {
+                "value": 10,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "mm",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N1"
+                  }
+                ],
+                "criterion": null
+              },
+              "layers": {
+                "value": [
+                  4
+                ],
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N1"
+                  }
+                ],
+                "criterion": null
+              },
+              "x_start_m": {
+                "value": 2.55,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N1"
+                  }
+                ],
+                "criterion": null
+              },
+              "x_end_m": {
+                "value": 5.45,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N1"
+                  }
+                ],
+                "criterion": null
+              },
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                  "mark": "N1"
+                }
+              ],
+              "continuity": {
+                "value": null,
+                "state": "MISSING",
+                "unit": null,
+                "provenance": [],
+                "criterion": null
+              },
+              "laps": [],
+              "extensions": [],
+              "termination": {}
+            },
+            {
+              "mark": "N3",
+              "occurrence_id": "V16-N3-negative",
+              "function": "negative",
+              "face": "upper",
+              "quantity": {
+                "value": 4,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N3"
+                  }
+                ],
+                "criterion": null
+              },
+              "diameter_mm": {
+                "value": 16,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "mm",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N3"
+                  }
+                ],
+                "criterion": null
+              },
+              "layers": {
+                "value": [
+                  4
+                ],
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": null,
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N3"
+                  }
+                ],
+                "criterion": null
+              },
+              "x_start_m": {
+                "value": 5.25,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N3"
+                  }
+                ],
+                "criterion": null
+              },
+              "x_end_m": {
+                "value": 8.25,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                    "mark": "N3"
+                  }
+                ],
+                "criterion": null
+              },
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                  "mark": "N3"
+                }
+              ],
+              "continuity": {
+                "value": null,
+                "state": "MISSING",
+                "unit": null,
+                "provenance": [],
+                "criterion": null
+              },
+              "laps": [],
+              "extensions": [],
+              "termination": {}
+            }
+          ],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [
+            {
+              "mark": "N4",
+              "representations": [],
+              "comparisons": [],
+              "issues": [
+                {
+                  "code": "REPRESENTATION_NOT_EXTRACTED",
+                  "view": "ELEVATION",
+                  "physical_absence_proved": false
+                },
+                {
+                  "code": "REPRESENTATION_NOT_EXTRACTED",
+                  "view": "SECTION",
+                  "physical_absence_proved": false
+                },
+                {
+                  "code": "REPRESENTATION_NOT_EXTRACTED",
+                  "view": "STEEL_SCHEDULE",
+                  "physical_absence_proved": false
+                }
+              ],
+              "physical_absence_proved": false,
+              "state": "INCOMPLETE"
+            }
+          ],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0.35,
+        7.65
+      ],
+      "form": {
+        "coordinate_system": {
+          "unit": "m",
+          "origin": "PC40C axis",
+          "positive_direction": "PC40C to PC41C",
+          "provenance": [
+            {
+              "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+              "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+              "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+              "beam": "V16",
+              "model": "V13",
+              "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+            }
+          ]
+        },
+        "provenance": [
+          {
+            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+            "beam": "V16",
+            "model": "V13",
+            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+          }
+        ],
+        "segment_inventory_complete": {
+          "value": true,
+          "state": "DOCUMENTED_CONFIRMED",
+          "unit": null,
+          "provenance": [
+            {
+              "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+              "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+              "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+              "beam": "V16",
+              "model": "V13",
+              "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+            }
+          ],
+          "criterion": null
+        },
+        "segments": [
+          {
+            "id": "V16-clear",
+            "geometry_type": "CONSTANT",
+            "fields": {
+              "section_shape": {
+                "documentary_state": "PROVED",
+                "fact": {
+                  "value": "RECTANGULAR",
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": null,
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                }
+              },
+              "width_cm": {
+                "documentary_state": "PROVED",
+                "fact": {
+                  "value": 40,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                }
+              },
+              "height_cm": {
+                "documentary_state": "PROVED",
+                "fact": {
+                  "value": 50,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "cm",
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                }
+              },
+              "x_start_m": {
+                "documentary_state": "PROVED",
+                "fact": {
+                  "value": 0.35,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                }
+              },
+              "x_end_m": {
+                "documentary_state": "PROVED",
+                "fact": {
+                  "value": 7.65,
+                  "state": "DOCUMENTED_CONFIRMED",
+                  "unit": "m",
+                  "provenance": [
+                    {
+                      "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                      "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                      "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                      "beam": "V16",
+                      "model": "V13",
+                      "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                    }
+                  ],
+                  "criterion": null
+                }
+              }
+            },
+            "detail_geometry": {
+              "cover_cm": {
+                "value": 3.5,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "cm",
+                "provenance": [
+                  {
+                    "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "region": "COBRIMENTOS: VIGAS 3.5cm"
+                  }
+                ],
+                "criterion": null
+              },
+              "stirrup_diameter_mm": {
+                "value": 6.3,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "mm",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              }
+            }
+          }
+        ]
+      },
+      "layer_observations": {
+        "V16-N4-positive": {
+          "section": {
+            "value": [
+              4
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "V16-N2-negative": {
+          "near_bar_text": {
+            "value": [
+              4
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                "mark": "N2"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "V16-N1-negative": {
+          "near_bar_text": {
+            "value": [
+              4
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                "mark": "N1"
+              }
+            ],
+            "criterion": null
+          }
+        },
+        "V16-N3-negative": {
+          "near_bar_text": {
+            "value": [
+              4
+            ],
+            "state": "DOCUMENTED_CONFIRMED",
+            "unit": null,
+            "provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "N2/N3 straight C300 from 60cm outside support face; N1 straight C290 ending 220cm before right inner face. No coordinates inferred from drawing scale.",
+                "mark": "N3"
+              }
+            ],
+            "criterion": null
+          }
+        }
+      },
+      "positioned_tqs": {
+        "beam": {
+          "id": "V16",
+          "spans": [
+            {
+              "id": 1,
+              "internal_forces": [
+                {
+                  "quantity": "bending_moment",
+                  "envelope": "max",
+                  "unit": "kN.m",
+                  "stage": "model_input",
+                  "positions": [
+                    0.2,
+                    0.8333333333333333,
+                    1.4666666666666666,
+                    2.0999999999999996,
+                    2.7333333333333334,
+                    3.3666666666666667,
+                    3.9999999999999996,
+                    4.633333333333333,
+                    5.266666666666667,
+                    5.8999999999999995,
+                    6.533333333333333,
+                    7.166666666666666,
+                    7.799999999999999
+                  ],
+                  "values": [
+                    -55.103566349999994,
+                    -28.841357649999996,
+                    27.203647099999998,
+                    84.9648156,
+                    122.69099814999998,
+                    142.74559739999998,
+                    149.82599869999999,
+                    144.62847419999997,
+                    125.98603254999999,
+                    87.23015174999999,
+                    26.7329279,
+                    -35.911952299999996,
+                    -85.52379465
+                  ],
+                  "sources": [
+                    {
+                      "file": "VGESFS.LST",
+                      "line": 346,
+                      "text": "M MX. VAO= 1    -5.619   -2.941    2.774    8.664   12.511   14.556   15.278   14.748   12.847    8.895    2.726   -3.662   -8.721",
+                      "sha256": "e6faa302a961c18472bbcf9c5a0fa907b10c1e08b9505f70a6106f68f019f44b",
+                      "model_name": "V16",
+                      "internal_id": "16"
+                    }
+                  ]
+                },
+                {
+                  "quantity": "bending_moment",
+                  "envelope": "min",
+                  "unit": "kN.m",
+                  "stage": "model_input",
+                  "positions": [
+                    0.2,
+                    0.8333333333333333,
+                    1.4666666666666666,
+                    2.0999999999999996,
+                    2.7333333333333334,
+                    3.3666666666666667,
+                    3.9999999999999996,
+                    4.633333333333333,
+                    5.266666666666667,
+                    5.8999999999999995,
+                    6.533333333333333,
+                    7.166666666666666,
+                    7.799999999999999
+                  ],
+                  "values": [
+                    -92.16289669999999,
+                    -53.16184965,
+                    26.301435299999998,
+                    66.00856114999999,
+                    92.07463684999999,
+                    106.15698624999999,
+                    110.86417825,
+                    106.56886555,
+                    92.70226244999999,
+                    65.64571509999999,
+                    24.03609915,
+                    -61.39943565,
+                    -135.02776384999999
+                  ],
+                  "sources": [
+                    {
+                      "file": "VGESFS.LST",
+                      "line": 342,
+                      "text": "M MN. VAO= 1    -9.398   -5.421    2.682    6.731    9.389   10.825   11.305   10.867    9.453    6.694    2.451   -6.261  -13.769",
+                      "sha256": "e6faa302a961c18472bbcf9c5a0fa907b10c1e08b9505f70a6106f68f019f44b",
+                      "model_name": "V16",
+                      "internal_id": "16"
+                    }
+                  ]
+                },
+                {
+                  "quantity": "shear",
+                  "envelope": "max",
+                  "unit": "kN",
+                  "stage": "model_input",
+                  "positions": [
+                    0.2,
+                    0.8333333333333333,
+                    1.4666666666666666,
+                    2.0999999999999996,
+                    2.7333333333333334,
+                    3.3666666666666667,
+                    3.9999999999999996,
+                    4.633333333333333,
+                    5.266666666666667,
+                    5.8999999999999995,
+                    6.533333333333333,
+                    7.166666666666666,
+                    7.799999999999999
+                  ],
+                  "values": [
+                    0.5295591,
+                    133.94903235,
+                    111.9331031,
+                    79.77709775,
+                    40.854503900000005,
+                    17.838296349999997,
+                    4.01091985,
+                    -13.690083399999999,
+                    -32.656144499999996,
+                    -56.339204249999995,
+                    -86.89672565000001,
+                    -103.26402449999999,
+                    -29.1257505
+                  ],
+                  "sources": [
+                    {
+                      "file": "VGESFS.LST",
+                      "line": 344,
+                      "text": "Q MX. VAO= 1     0.054   13.659   11.414    8.135    4.166    1.819    0.409   -1.396   -3.330   -5.745   -8.861  -10.530   -2.970",
+                      "sha256": "e6faa302a961c18472bbcf9c5a0fa907b10c1e08b9505f70a6106f68f019f44b",
+                      "model_name": "V16",
+                      "internal_id": "16"
+                    }
+                  ]
+                },
+                {
+                  "quantity": "shear",
+                  "envelope": "min",
+                  "unit": "kN",
+                  "stage": "model_input",
+                  "positions": [
+                    0.2,
+                    0.8333333333333333,
+                    1.4666666666666666,
+                    2.0999999999999996,
+                    2.7333333333333334,
+                    3.3666666666666667,
+                    3.9999999999999996,
+                    4.633333333333333,
+                    5.266666666666667,
+                    5.8999999999999995,
+                    6.533333333333333,
+                    7.166666666666666,
+                    7.799999999999999
+                  ],
+                  "values": [
+                    -0.6080123,
+                    91.594111,
+                    76.7860695,
+                    54.446520799999995,
+                    28.93942415,
+                    12.6898051,
+                    1.85345685,
+                    -17.622550049999997,
+                    -45.7970555,
+                    -81.2775152,
+                    -128.4082751,
+                    -151.04202329999998,
+                    -44.76735725
+                  ],
+                  "sources": [
+                    {
+                      "file": "VGESFS.LST",
+                      "line": 340,
+                      "text": "Q MN. VAO= 1    -0.062    9.340    7.830    5.552    2.951    1.294    0.189   -1.797   -4.670   -8.288  -13.094  -15.402   -4.565",
+                      "sha256": "e6faa302a961c18472bbcf9c5a0fa907b10c1e08b9505f70a6106f68f019f44b",
+                      "model_name": "V16",
+                      "internal_id": "16"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "registrations": {
+        "1": {
+          "span_id": 1,
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "PC40C axis",
+            "positive_direction": "PC40C to PC41C",
+            "provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+              }
+            ]
+          },
+          "anchors": [
+            {
+              "local_m": {
+                "value": 0.2,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "common_m": {
+                "value": 0.2,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              }
+            },
+            {
+              "local_m": {
+                "value": 7.8,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              },
+              "common_m": {
+                "value": 7.8,
+                "state": "DOCUMENTED_CONFIRMED",
+                "unit": "m",
+                "provenance": [
+                  {
+                    "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                    "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                    "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                    "beam": "V16",
+                    "model": "V13",
+                    "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                  }
+                ],
+                "criterion": null
+              }
+            }
+          ]
+        }
+      },
+      "jobs": [
+        {
+          "id": "V16-positive-full-clear",
+          "control": "positive_flexure",
+          "span_id": 1,
+          "interval_m": [
+            0.35,
+            7.65
+          ],
+          "context": {
+            "section": {
+              "bw": 40,
+              "h": 50,
+              "cobrimento": 3.5,
+              "diametro_estribo_mm": 6.3
+            },
+            "fck_mpa": 35,
+            "fyk_mpa": 500,
+            "gamma_f": 1.4,
+            "gamma_c": 1.4,
+            "gamma_s": 1.15,
+            "layer_order_basis": "from_tension_face",
+            "layer_order_provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+              }
+            ],
+            "longitudinal_provenance": {
+              "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+              "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+              "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+              "beam": "V16",
+              "model": "V13",
+              "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+            },
+            "provenance": {
+              "concrete": "C35 second-stage area per form; C40 sensitivity independently retained",
+              "steel": "CA50 per steel schedule",
+              "coefficients": "gamma_f/gamma_c 1.4 per TQS materials; gamma_s1.15 normal ELU convention, safety-independent upper bound also checked"
+            }
+          },
+          "inputs": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "criterion": null
+            },
+            "layer_order": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "criterion": null
+            },
+            "physical_inventory_complete": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "criterion": null
+            }
+          }
+        },
+        {
+          "id": "V16-negative-left",
+          "control": "negative_flexure",
+          "span_id": 1,
+          "interval_m": [
+            0.35,
+            2.55
+          ],
+          "context": {
+            "section": {
+              "bw": 40,
+              "h": 50,
+              "cobrimento": 3.5,
+              "diametro_estribo_mm": 6.3
+            },
+            "fck_mpa": 35,
+            "fyk_mpa": 500,
+            "gamma_f": 1.4,
+            "gamma_c": 1.4,
+            "gamma_s": 1.15,
+            "layer_order_basis": "from_tension_face",
+            "layer_order_provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+              }
+            ],
+            "longitudinal_provenance": {
+              "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+              "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+              "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+              "beam": "V16",
+              "model": "V13",
+              "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+            },
+            "provenance": {
+              "concrete": "C35 second-stage area per form; C40 sensitivity independently retained",
+              "steel": "CA50 per steel schedule",
+              "coefficients": "gamma_f/gamma_c 1.4 per TQS materials; gamma_s1.15 normal ELU convention, safety-independent upper bound also checked"
+            }
+          },
+          "inputs": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "source": "documentary V16 all negative positions N1/N2/N3 reconciled; negative envelope is nonnegative throughout overlap/middle 2.55-5.45m"
+                }
+              ],
+              "criterion": null
+            },
+            "layer_order": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "source": "documentary V16 all negative positions N1/N2/N3 reconciled; negative envelope is nonnegative throughout overlap/middle 2.55-5.45m"
+                }
+              ],
+              "criterion": null
+            },
+            "physical_inventory_complete": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "source": "documentary V16 all negative positions N1/N2/N3 reconciled; negative envelope is nonnegative throughout overlap/middle 2.55-5.45m"
+                }
+              ],
+              "criterion": null
+            }
+          }
+        },
+        {
+          "id": "V16-negative-right",
+          "control": "negative_flexure",
+          "span_id": 1,
+          "interval_m": [
+            5.45,
+            7.65
+          ],
+          "context": {
+            "section": {
+              "bw": 40,
+              "h": 50,
+              "cobrimento": 3.5,
+              "diametro_estribo_mm": 6.3
+            },
+            "fck_mpa": 35,
+            "fyk_mpa": 500,
+            "gamma_f": 1.4,
+            "gamma_c": 1.4,
+            "gamma_s": 1.15,
+            "layer_order_basis": "from_tension_face",
+            "layer_order_provenance": [
+              {
+                "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                "beam": "V16",
+                "model": "V13",
+                "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+              }
+            ],
+            "longitudinal_provenance": {
+              "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+              "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+              "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+              "beam": "V16",
+              "model": "V13",
+              "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+            },
+            "provenance": {
+              "concrete": "C35 second-stage area per form; C40 sensitivity independently retained",
+              "steel": "CA50 per steel schedule",
+              "coefficients": "gamma_f/gamma_c 1.4 per TQS materials; gamma_s1.15 normal ELU convention, safety-independent upper bound also checked"
+            }
+          },
+          "inputs": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "source": "documentary V16 all negative positions N1/N2/N3 reconciled; negative envelope is nonnegative throughout overlap/middle 2.55-5.45m"
+                }
+              ],
+              "criterion": null
+            },
+            "layer_order": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "source": "documentary V16 all negative positions N1/N2/N3 reconciled; negative envelope is nonnegative throughout overlap/middle 2.55-5.45m"
+                }
+              ],
+              "criterion": null
+            },
+            "physical_inventory_complete": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "source": "documentary V16 all negative positions N1/N2/N3 reconciled; negative envelope is nonnegative throughout overlap/middle 2.55-5.45m"
+                }
+              ],
+              "criterion": null
+            }
+          }
+        },
+        {
+          "id": "V16-shear-drawn",
+          "control": "shear",
+          "span_id": 1,
+          "interval_m": [
+            0.35,
+            7.65
+          ],
+          "inputs": {
+            "materials": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "criterion": null
+            },
+            "shear_envelope": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "criterion": null
+            },
+            "stirrup_regions": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "criterion": null
+            },
+            "effective_depth": {
+              "value": true,
+              "state": "DOCUMENTED_CONFIRMED",
+              "unit": null,
+              "provenance": [
+                {
+                  "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                  "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                  "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                  "beam": "V16",
+                  "model": "V13",
+                  "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                }
+              ],
+              "criterion": null
+            }
+          },
+          "adapter": "s07_v16_shear"
+        },
+        {
+          "id": "V16-suspension-not-applicable",
+          "control": "suspension",
+          "interval_m": [
+            0.35,
+            7.65
+          ],
+          "inputs": {},
+          "applicability": {
+            "value": null,
+            "state": "NOT_APPLICABLE",
+            "unit": null,
+            "provenance": [
+              {
+                "source": "new VGESFS.LST, all 66 support chains + unchanged form V16 PC40C-PC41C",
+                "sha256": "e6faa302a961c18472bbcf9c5a0fa907b10c1e08b9505f70a6106f68f019f44b",
+                "interpretation": "No beam rests on V16 in new support chains; V16 itself bears on the two documented columns."
+              }
+            ],
+            "criterion": null
+          }
+        }
+      ],
+      "context": {
+        "section": {
+          "bw": 40,
+          "h": 50,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "fck_mpa": 35,
+        "fyk_mpa": 500,
+        "gamma_f": 1.4,
+        "gamma_c": 1.4,
+        "gamma_s": 1.15,
+        "layer_order_basis": "from_tension_face",
+        "layer_order_provenance": [
+          {
+            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+            "beam": "V16",
+            "model": "V16",
+            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+          }
+        ],
+        "longitudinal_provenance": {
+          "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+          "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+          "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+          "beam": "V16",
+          "model": "V16",
+          "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+        },
+        "provenance": {
+          "concrete": "C35 second-stage area per form; C40 sensitivity independently retained",
+          "steel": "CA50 per steel schedule",
+          "coefficients": "gamma_f/gamma_c 1.4 per TQS materials; gamma_s1.15 normal ELU convention, safety-independent upper bound also checked"
+        }
+      },
+      "negative_scope_proof": {
+        "checked_critical_regions_m": [
+          [
+            0.35,
+            2.55
+          ],
+          [
+            5.45,
+            7.65
+          ]
+        ],
+        "middle_m": [
+          2.55,
+          5.45
+        ],
+        "reason": "M MN. and M MX. remain >=0 in middle; linear interpolation only; two overlap regions do not carry negative demand."
+      }
+    },
+    {
+      "beam_id": "V17",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "17: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V18",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "18: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V19",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "19: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V20",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "20: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V21",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "21: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V22",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "22: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V23",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "23: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V24",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "24: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V25",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "25: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V26",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "26: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V27",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "27: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V28",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "28: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V29",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "29: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V30",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "30: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V31",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "31: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V32",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "32: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V33",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "33: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V34",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "34: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V35",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "35: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V36",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "36: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V37",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "37: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V38",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "38: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V39",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "39: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V40",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "40: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V41",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "41: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V42",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "42: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V43",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "43: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V44",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "44: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V45",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "45: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V46",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "46: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V47",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "47: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V48",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "48: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V49",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "49: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    },
+    {
+      "beam_id": "V50",
+      "model": {
+        "longitudinal_reinforcement": [],
+        "skin_reinforcement": [],
+        "schema_version": "1.1",
+        "physical_geometry": {
+          "schema_version": "1.0",
+          "coordinate_system": {
+            "unit": "m",
+            "origin": "50: documentary physical axis not yet fully registered",
+            "positive_direction": "as detail elevation",
+            "provenance": [
+              {
+                "source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+                "scope": "inventory; no physical coordinate invented"
+              }
+            ]
+          },
+          "segments": [],
+          "occurrences": [],
+          "spans": [],
+          "support_faces": []
+        },
+        "documentary_reconciliation": {
+          "schema_version": "1.0",
+          "positions": [],
+          "coverage": [],
+          "source_priority_applied": false
+        },
+        "input_validation": {
+          "required_before_calculation": true,
+          "global_beam_block": false,
+          "envelope_policy": "TQS_ENVELOPES",
+          "concomitant_combinations_required": false
+        }
+      },
+      "review_interval_m": [
+        0,
+        1
+      ],
+      "interval_role": "planning only, not a physical span or coordinate proof",
+      "jobs": []
+    }
+  ],
+  "policy": "Engineer authorized TQS forces with detail sections; discrepancy form/detail remains a documentary finding."
+}

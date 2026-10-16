@@ -1,0 +1,67 @@
+{
+  "beam_id": "V16",
+  "source_sha256": "e6faa302a961c18472bbcf9c5a0fa907b10c1e08b9505f70a6106f68f019f44b",
+  "positive": {
+    "Msd_knm": 209.75639817999996,
+    "As_N4_cm2": 4.908738521234052,
+    "d_cm": 45.245,
+    "calculations": [
+      {
+        "fck_mpa": 35,
+        "T_kn": 213.42341396669795,
+        "compression_block_a_cm": 2.510863693725858,
+        "lever_z_cm": 43.98956815313707,
+        "MRd_knm": 93.88403814163246
+      },
+      {
+        "fck_mpa": 40,
+        "T_kn": 213.42341396669795,
+        "compression_block_a_cm": 2.1970057320101257,
+        "lever_z_cm": 44.146497133994934,
+        "MRd_knm": 94.21896133008245
+      }
+    ]
+  },
+  "negative_right": {
+    "Msd_knm": 164.6252658289475,
+    "As_N3_cm2": 8.042477193189871,
+    "d_cm": 45.07,
+    "calculations": [
+      {
+        "fck_mpa": 35,
+        "T_kn": 349.6729214430379,
+        "compression_block_a_cm": 4.113799075800446,
+        "lever_z_cm": 43.01310046209978,
+        "MRd_knm": 150.40516498905313
+      },
+      {
+        "fck_mpa": 40,
+        "T_kn": 349.6729214430379,
+        "compression_block_a_cm": 3.59957419132539,
+        "lever_z_cm": 43.270212904337306,
+        "MRd_knm": 151.30421757721865
+      }
+    ]
+  },
+  "units": "cm,kN,kN.m",
+  "equations": [
+    "T=As*fyd",
+    "a=T/(0.85*fcd*b)",
+    "z=d-a/2",
+    "MRd=T*z/100"
+  ],
+  "positive_generous_upper_bound": {
+    "steel": "N4 4phi12.5 + ALL top N1 4phi10 at positive peak",
+    "As_cm2": 8.050331174823846,
+    "steel_stress_mpa": 500,
+    "lever_cm": 50,
+    "M_bound_knm": 201.25827937059614
+  },
+  "negative_tension_force_upper_bound": {
+    "steel": "Only tension N3 4phi16 at PC41C face; N1 ends at5.45m and face7.65m",
+    "fyD_mpa": 434.7826086956522,
+    "maximum_lever_cm": 45.07,
+    "M_bound_knm": 157.5975856943772,
+    "interpretation": "Compression reinforcement cannot exceed this tension-force lever bound; no tensile contribution omitted at this face."
+  }
+}

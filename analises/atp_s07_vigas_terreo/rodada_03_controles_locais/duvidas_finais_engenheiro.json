@@ -1,0 +1,115 @@
+[
+  {
+    "id": "Q01",
+    "beams": [
+      "V35",
+      "V49",
+      "V50"
+    ],
+    "control": "positive_flexure",
+    "required": "Altura física das barras intermediárias no pico: V35 N3/N7; V49/V50 N8. Manter a posição da primeira concretagem, sem deslocá-la à camada inferior.",
+    "why": "As barras inferiores isoladas não bastam, mas uma contribuição real intermediária pode alterar a conclusão."
+  },
+  {
+    "id": "Q02",
+    "beams": [
+      "V4",
+      "V5",
+      "V11",
+      "V14",
+      "V15",
+      "V25",
+      "V26",
+      "V28",
+      "V29",
+      "V30",
+      "V31",
+      "V32",
+      "V34",
+      "V35",
+      "V36",
+      "V38",
+      "V39",
+      "V41",
+      "V43",
+      "V44",
+      "V45",
+      "V46",
+      "V47",
+      "V48"
+    ],
+    "control": "negative_flexure_and_shear_only_where_bound_does_not_close",
+    "required": "Coordenadas verticais/camadas das barras intermediárias e de pele nas seções dependentes, incluindo N7/N4 emV29/V39 e N6/N2 emV31/V41.",
+    "why": "A altura útil não pode ser a da face externa quando a resultante inclui armadura intermediária; C35/C40 já estão considerados, sem hipótese uniforme arbitrária."
+  },
+  {
+    "id": "Q03",
+    "beams": [
+      "V23",
+      "V24",
+      "V42",
+      "V49",
+      "V50"
+    ],
+    "control": "transitions_and_negative_flexure",
+    "required": "Fechar incidência dos degraus e barras que atravessam cada face: V24 junto aP769; V42 junto aP791/P784; V49/V50 na mudança50/87. ParaV49 a forma já indica130cm no trecho alto.",
+    "why": "As seções constantes identificadas foram calculadas; a transição e as barras em outra altura não podem ser substituídas por seção média ou falsa camada externa."
+  },
+  {
+    "id": "Q04",
+    "beams": [
+      "V19",
+      "V20",
+      "V22",
+      "V26"
+    ],
+    "control": "documentary_reconciliation",
+    "required": "Definir representação vigente onde resumo da elevação diverge das posições/cortes ou os apoios divergem da forma. V40 já possui anotaçãoV20 na versão atual da7403; não pedir nova confirmação do mesmo rótulo.",
+    "why": "Foram preservados cálculos pelos dados legíveis e verificações independentes; falta documental não foi tratada como aço fisicamente ausente."
+  },
+  {
+    "id": "Q05",
+    "beams": [
+      "V17",
+      "V35",
+      "V36"
+    ],
+    "control": "uplift",
+    "required": "Caminho de carga/ligação para os sinais invertidos nos quatro encontros normais listados em situacao_todas_ligacoes.json.",
+    "why": "Não aplicar tirante de reação descendente a levantamento."
+  },
+  {
+    "id": "Q06",
+    "beams": [
+      "V14",
+      "V18",
+      "V21",
+      "V28",
+      "V32",
+      "V49",
+      "V50",
+      "V26"
+    ],
+    "control": "remaining_suspension_regions",
+    "required": "Resolver os oito encontros individualizados em situacao_todas_ligacoes.json, com domínio físico, geometria e altura útil onde a concretagem por etapas interfere.",
+    "why": "Evita usar trecho de outra viga, truncar região normativa ou somar estribos de duas etapas como se todos atravessassem a seção final."
+  },
+  {
+    "id": "Q07",
+    "beams": [
+      "all usual beams"
+    ],
+    "control": "minimum_stirrup_spacing",
+    "required": "Diâmetro/equipamento de vibração ou critério executivo documentado de passagem/adensamento.",
+    "why": "18.3.3.2 exige passagem do vibrador; não se aplicou mínimo interno fixo de8cm."
+  },
+  {
+    "id": "Q08",
+    "beams": [
+      "V21"
+    ],
+    "control": "negative_support_faces_and_shear_reductions",
+    "required": "Natureza e faces efetivas dos apoios PC54C–PC60C e hipóteses das reduções de cortante; registrar diferença entre faces físicas e larguras da discretizaçãoTQS.",
+    "why": "A capacidade ao esforço consultado foi calculada, mas as faces de19cm do modelo não constituem por si prova da geometria real."
+  }
+]

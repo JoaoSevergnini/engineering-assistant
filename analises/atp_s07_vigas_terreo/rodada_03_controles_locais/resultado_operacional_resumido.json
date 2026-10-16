@@ -1,0 +1,131 @@
+[
+  {
+    "beam_id": "V16",
+    "controls": [
+      {
+        "job_id": "V16-positive-full-clear",
+        "control": "positive_flexure",
+        "status": "FAIL",
+        "execution_state": "EXECUTED_COMPLETE"
+      },
+      {
+        "job_id": "V16-negative-left",
+        "control": "negative_flexure",
+        "status": "PASS",
+        "execution_state": "EXECUTED_COMPLETE"
+      },
+      {
+        "job_id": "V16-negative-right",
+        "control": "negative_flexure",
+        "status": "FAIL",
+        "execution_state": "EXECUTED_COMPLETE"
+      },
+      {
+        "job_id": "V16-shear-drawn",
+        "control": "shear",
+        "status": "INCONCLUSIVE",
+        "execution_state": "EXECUTED_INCONCLUSIVE"
+      },
+      {
+        "job_id": "V16-suspension-not-applicable",
+        "control": "suspension",
+        "status": "NOT_APPLICABLE",
+        "execution_state": "EXECUTED_COMPLETE"
+      },
+      {
+        "job_id": "V16-anchorage-unplanned",
+        "control": "anchorage",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      },
+      {
+        "job_id": "V16-scaling-unplanned",
+        "control": "scaling",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      }
+    ]
+  },
+  {
+    "beam_id": "V19",
+    "controls": [
+      {
+        "job_id": "V19-shear-full",
+        "control": "shear",
+        "status": "INCONCLUSIVE",
+        "execution_state": "EXECUTED_INCONCLUSIVE"
+      },
+      {
+        "job_id": "V19-suspension-local",
+        "control": "suspension",
+        "status": "FAIL",
+        "execution_state": "EXECUTED_COMPLETE"
+      },
+      {
+        "job_id": "V19-positive_flexure-1-R1",
+        "control": "positive_flexure",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      },
+      {
+        "job_id": "V19-negative_flexure-1-R1",
+        "control": "negative_flexure",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      },
+      {
+        "job_id": "V19-anchorage-unplanned",
+        "control": "anchorage",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      },
+      {
+        "job_id": "V19-scaling-unplanned",
+        "control": "scaling",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      }
+    ]
+  },
+  {
+    "beam_id": "V20",
+    "controls": [
+      {
+        "job_id": "V20-shear-full",
+        "control": "shear",
+        "status": "INCONCLUSIVE",
+        "execution_state": "EXECUTED_INCONCLUSIVE"
+      },
+      {
+        "job_id": "V20-suspension-local",
+        "control": "suspension",
+        "status": "FAIL",
+        "execution_state": "EXECUTED_COMPLETE"
+      },
+      {
+        "job_id": "V20-positive_flexure-1-R1",
+        "control": "positive_flexure",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      },
+      {
+        "job_id": "V20-negative_flexure-1-R1",
+        "control": "negative_flexure",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      },
+      {
+        "job_id": "V20-anchorage-unplanned",
+        "control": "anchorage",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      },
+      {
+        "job_id": "V20-scaling-unplanned",
+        "control": "scaling",
+        "status": "INCONCLUSIVE",
+        "execution_state": "NOT_EXECUTED"
+      }
+    ]
+  }
+]

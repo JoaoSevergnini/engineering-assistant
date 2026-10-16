@@ -64,3 +64,7 @@ Golden inicial: [V1001 negativa](../../../../analises/pranchas/V1001_negative_re
 ## Relações entre apoios consecutivos
 
 Antes de representar encontros de peças distintas como uma composição mista, consultar [relações negativas](negative-reinforcement-relations.md). A revisão separa continuidade física, encontro de detalhamento, transição resistente e peças independentes. Controles de encontro usam o grupo completo de menor bitola isolado; eventos SCALING verdadeiros preservam a regra anterior. A exceção de espaçamento é localizada, com identificação dos pares; não altera a primitiva geral.
+
+### Máximo no apoio — esclarecimento de 15/10/2026
+
+João confirmou usar o máximo negativo no apoio para capacidade resistente, sem interpolação redutora à face interna. A seleção terminal S1/S13 acima é o ponto de partida do formato TQS atual; se houver outros pontos fornecidos dentro do mesmo apoio, comparar os valores negativos e preservar o governante. Conferir os lados adjacentes somente com identidade física comprovada; registrar lados/composições separadamente enquanto não conciliados. Não usar máximo global de outro apoio nem extrapolar o diagrama. Esta orientação trata da solicitação, preservando Concretopy como fonte oficial da resistência.

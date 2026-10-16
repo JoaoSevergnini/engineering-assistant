@@ -1,0 +1,66 @@
+{
+  "beam_count": 42,
+  "model_intervals": 82,
+  "positive_capacity": {
+    "SUFFICIENT_OUTER_REINFORCEMENT_LOWER_BOUND": 74,
+    "INSUFFICIENT_FULL_SECTION_UPPER_BOUND": 4,
+    "NEEDS_REAL_HEIGHT_OR_OTHER_DRAWN_BARS": 4
+  },
+  "negative_faces_capacity": {
+    "SUFFICIENT_OUTER_REINFORCEMENT_LOWER_BOUND": 99,
+    "INSUFFICIENT_EVEN_WITH_COMPRESSION_STEEL_UPPER_BOUND": 13,
+    "DEPENDENT_ON_INTERMEDIATE_STEEL_HEIGHT": 24
+  },
+  "suspension_detailed_checks": [
+    "V33->V19",
+    "V40->V20"
+  ],
+  "source_stable": true,
+  "VGESFS_sha256": "e6faa302a961c18472bbcf9c5a0fa907b10c1e08b9505f70a6106f68f019f44b",
+  "plastic_upper_bounds_not_below_outer_only_capacity": true,
+  "global_approval": null,
+  "excluded_by_user": "Eight short h165 beams classified for deep-beam method and nine PAR; no wall-beam verification in this round",
+  "five_pdfs_byte_stable": true,
+  "7403_annotation_update": {
+    "sheet": "7403",
+    "old_pdf_sha256": "cd32a665593c024134ecaef04a4501a305ed38b5c4bd78f1bfc8b074fbc64ae4",
+    "current_pdf_sha256": "6d5cf3f9c22f72d04d6c07e86341af45ef2c9a62a7b015743d072c0934c38fef",
+    "modified": "2026-10-15T11:25:34.896021",
+    "base_drawing_crops_identical": true,
+    "crops_compared_pixelwise": 17,
+    "annotations": [
+      {
+        "subtype": "/Square",
+        "contents": null,
+        "rect": [
+          1617.18,
+          1845.6,
+          1660.98,
+          1872.0
+        ]
+      },
+      {
+        "subtype": "/Popup",
+        "contents": null,
+        "rect": [
+          3540.98,
+          1752.0,
+          3720.98,
+          1872.0
+        ]
+      },
+      {
+        "subtype": "/FreeText",
+        "contents": "V20",
+        "rect": [
+          1667.11,
+          1842.67,
+          1693.86,
+          1855.83
+        ]
+      }
+    ],
+    "interpretation": "The PDF was rewritten; previous original revision cannot be byte-recovered. All17beam-detail crops rendered without annotations match the preserved previous PNGs exactly. Current annotation V20 corrects V40 support label."
+  },
+  "all_17_7403_base_crops_unchanged": true
+}

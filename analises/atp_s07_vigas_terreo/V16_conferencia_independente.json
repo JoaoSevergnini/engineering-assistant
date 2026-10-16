@@ -1,0 +1,26 @@
+{
+  "beam": "V16",
+  "model": "V13",
+  "section_cm": [
+    40,
+    50
+  ],
+  "positive_N4": "4phi12.5 C850, confirmed elevation/section/steel schedule",
+  "top_at_positive_peak_N1": "4phi10 C290, also included in generous upper bound",
+  "As_positive_cm2": 4.908738521234052,
+  "As_top_cm2": 3.141592653589793,
+  "d_cm": 45.245,
+  "Msk_knm": 166.0658111,
+  "Msd_knm": 232.49213553999996,
+  "equilibrium_recheck": {
+    "compression_block_a_cm": 2.5108636937258577,
+    "MRd_knm": 93.88403814163244,
+    "formula": "As*fyd*(d-a/2), a=As*fyd/(alpha_c*fcd*bw); units cm,kN; alpha_c0.85, fcdC35/1.4, fydCA50/1.15"
+  },
+  "generous_all_steel_bound": {
+    "MR_upper_knm": 201.25827937059614,
+    "assumptions": "All steel crossing positive peak (4phi12.5 + 4phi10) fictitiously taken in tension at fyk500MPa without gamma_s and with lever arm equal to whole h50cm; bound does not credit a concrete flange beyond the documented total height.",
+    "still_insufficient": true
+  },
+  "passes": false
+}

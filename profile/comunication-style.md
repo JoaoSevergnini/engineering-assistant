@@ -322,6 +322,17 @@ Quando aplicável, organizar comunicações relevantes na seguinte sequência:
 6. decisão ou informação necessária;
 7. próximos passos.
 
+Ao comunicar o resultado de uma análise técnica:
+
+1. apresentar o resultado da análise;
+2. indicar os ajustes necessários, quando houver;
+3. explicitar qual retorno ou ação permite avançar para a próxima etapa.
+
+Manter um tom direto e cordial, sem formalidade excessiva. Diferenciar análise
+concluída de validação ainda condicionada a ajustes. Especificar se o retorno
+esperado é uma confirmação, uma informação ou o envio do projeto revisado,
+sem presumir uma entrega que não tenha sido definida.
+
 Não utilizar essa estrutura mecanicamente quando uma mensagem simples puder
 ser resolvida de maneira mais curta.
 
@@ -418,3 +429,6 @@ O auxiliar pode sugerir melhorias quando identificar:
 - comunicações que poderiam ser mais claras ou eficientes.
 
 Não alterar permanentemente o estilo de comunicação com base em um único caso.
+## Convenção de esforços nas comunicações técnicas
+
+Aplicar [Apresentação de esforços](force-presentation.md): tf e tf·m, solicitações características e resistências equivalentes para comparação, com natureza e coeficientes identificados. Preferência permanente solicitada por João em 15/10/2026.

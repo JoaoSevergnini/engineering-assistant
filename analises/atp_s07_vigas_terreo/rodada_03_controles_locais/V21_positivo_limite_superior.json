@@ -1,0 +1,187 @@
+{
+  "beam_id": "V21",
+  "detail": "7402 first span: N2 2phi20+N4 2phi20 at peak, upper N3 2phi10; adjacent negative bars end before reaching this peak",
+  "peak": {
+    "Msk_knm": 165.46760545,
+    "Msd_knm": 231.65464763,
+    "peak_model_local_m": 3.344583333333333,
+    "peak_fraction": 0.4166666666666667,
+    "composition": {
+      "count": 4,
+      "phi": 20,
+      "layers": [
+        4
+      ]
+    },
+    "source": {
+      "file": "VGESFS.LST",
+      "line": 485,
+      "text": "M MX. VAO= 1     0.082    6.679   11.931   14.801   16.657   16.873   15.488   11.729    7.444    1.885   -3.558   -9.841  -17.487"
+    },
+    "scenarios": [
+      {
+        "fck_mpa": 35,
+        "MRd_knm": 220.81185325356168,
+        "capacity_sufficient": false,
+        "As_cm2": 12.566370614359172,
+        "d_cm": 44.7,
+        "minimum_Md_knm": 41.729511742038106,
+        "minimum_absolute_cm2": 2.25,
+        "minimum_sufficient": true,
+        "hypotheses_valid": true,
+        "concretopy": {
+          "as_total_cm2": 12.566370614359172,
+          "as_por_camada_cm2": [
+            12.566370614359172
+          ],
+          "d_por_camada_cm": [
+            44.7
+          ],
+          "d_equivalente_cm": 44.7,
+          "linha_neutra_cm": 10.713018426563659,
+          "x_sobre_d": 0.23966484175757624,
+          "limite_x_sobre_d": 0.45,
+          "ductilidade_atendida": true,
+          "mrd_kncm": 22081.185325356168,
+          "mk_equivalente_kncm": null,
+          "hipoteses_validas": true,
+          "deformacoes_aco": [
+            0.01
+          ],
+          "camadas_escoadas": [
+            true
+          ],
+          "as_min_cm2": null,
+          "armadura_minima_atendida": null,
+          "parametros": {
+            "modelo": "bloco_retangular_camadas_escoadas_v1",
+            "unidade_momento": "kN.cm",
+            "unidade_tensao": "MPa",
+            "gamma_c": 1.4,
+            "gamma_s": 1.15,
+            "gamma_f": null,
+            "fck": 35,
+            "fyk": 500,
+            "es": 210000.0,
+            "fcd": 25.0,
+            "fyd": 434.7826086956522,
+            "alfa_c": 0.85,
+            "lambda": 0.8,
+            "ecu": 0.0035,
+            "eyu": 0.01,
+            "eyd": 0.002070393374741201,
+            "eps_c_adotada": 0.003152094693497811,
+            "bw_cm": 30,
+            "h_cm": 50,
+            "cobrimento_cm": 3.5,
+            "diametro_estribo_mm": 8
+          },
+          "avisos": []
+        }
+      },
+      {
+        "fck_mpa": 40,
+        "MRd_knm": 223.73845673066296,
+        "capacity_sufficient": false,
+        "As_cm2": 12.566370614359172,
+        "d_cm": 44.7,
+        "minimum_Md_knm": 45.614676716120705,
+        "minimum_absolute_cm2": 2.25,
+        "minimum_sufficient": true,
+        "hypotheses_valid": true,
+        "concretopy": {
+          "as_total_cm2": 12.566370614359172,
+          "as_por_camada_cm2": [
+            12.566370614359172
+          ],
+          "d_por_camada_cm": [
+            44.7
+          ],
+          "d_equivalente_cm": 44.7,
+          "linha_neutra_cm": 9.373891123243201,
+          "x_sobre_d": 0.2097067365378792,
+          "limite_x_sobre_d": 0.45,
+          "ductilidade_atendida": true,
+          "mrd_kncm": 22373.845673066295,
+          "mk_equivalente_kncm": null,
+          "hipoteses_validas": true,
+          "deformacoes_aco": [
+            0.01
+          ],
+          "camadas_escoadas": [
+            true
+          ],
+          "as_min_cm2": null,
+          "armadura_minima_atendida": null,
+          "parametros": {
+            "modelo": "bloco_retangular_camadas_escoadas_v1",
+            "unidade_momento": "kN.cm",
+            "unidade_tensao": "MPa",
+            "gamma_c": 1.4,
+            "gamma_s": 1.15,
+            "gamma_f": null,
+            "fck": 40,
+            "fyk": 500,
+            "es": 210000.0,
+            "fcd": 28.571428571428573,
+            "fyd": 434.7826086956522,
+            "alfa_c": 0.85,
+            "lambda": 0.8,
+            "ecu": 0.0035,
+            "eyu": 0.01,
+            "eyd": 0.002070393374741201,
+            "eps_c_adotada": 0.0026535306098801202,
+            "bw_cm": 30,
+            "h_cm": 50,
+            "cobrimento_cm": 3.5,
+            "diametro_estribo_mm": 8
+          },
+          "avisos": []
+        }
+      }
+    ],
+    "capacity_state": "INSUFFICIENT_FULL_SECTION_UPPER_BOUND",
+    "independent_full_section_upper_bound": [
+      {
+        "fck_mpa": 35,
+        "outer_only_MRd_knm": 220.8118532535617,
+        "compression_force_cap_kn": 68.29549246934333,
+        "optimal_compression_force_kn": 68.29549246934333,
+        "full_section_upper_bound_knm": 223.02105113459808,
+        "Msd_knm": 231.65464763,
+        "insufficient": true
+      },
+      {
+        "fck_mpa": 40,
+        "outer_only_MRd_knm": 223.73845673066296,
+        "compression_force_cap_kn": 68.29549246934333,
+        "optimal_compression_force_kn": 68.29549246934333,
+        "full_section_upper_bound_knm": 225.26173192175375,
+        "Msd_knm": 231.65464763,
+        "insufficient": true
+      }
+    ]
+  },
+  "method": "favorable algebraic upper bound; existing Concretopy outer-only capacity checked independently",
+  "equation": "M=T*d -(T-Cs)^2/(2*k) -Cs*dprime; k=0.85*fcd*b; maximize for 0<=Cs<=As_compressed*fyd",
+  "results": [
+    {
+      "fck_mpa": 35,
+      "outer_only_MRd_knm": 220.8118532535617,
+      "compression_force_cap_kn": 68.29549246934333,
+      "optimal_compression_force_kn": 68.29549246934333,
+      "full_section_upper_bound_knm": 223.02105113459808,
+      "Msd_knm": 231.65464763,
+      "insufficient": true
+    },
+    {
+      "fck_mpa": 40,
+      "outer_only_MRd_knm": 223.73845673066296,
+      "compression_force_cap_kn": 68.29549246934333,
+      "optimal_compression_force_kn": 68.29549246934333,
+      "full_section_upper_bound_knm": 225.26173192175375,
+      "Msd_knm": 231.65464763,
+      "insufficient": true
+    }
+  ]
+}

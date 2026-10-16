@@ -1,0 +1,41 @@
+{
+  "scope": "Identificacao de carregamentos e abrangencia da listagem disponivel; nao sao esforcos de barras extraidos",
+  "source_POR": {
+    "path": "C:\\TQS\\25-208-ATP___24-1454-WERT-WPBGR RESIDENCE-PE-MU2-S07-ATP2___2aFASE-Calc01\\ESPACIAL\\FOR0001.POR",
+    "sha256": "389c56d9e1dcae55caec8a1b420a38ca31d1d9dec5f7fb0deceb7094fc119a0f",
+    "case1_lines": [
+      "CASO               1               .0000     .0000     .0000         0   10.0000   10.0000    1.0000          ",
+      "    2   Todas permanentes e acidentais dos pavimentos                           "
+    ],
+    "combination12_lines": [
+      "COMBIN            12                                       0                 .00       .00         0          ",
+      "    3   ELU1/PERMACID/PP+PERM+ACID                                              ",
+      "    2         1.0000",
+      "    3         1.0000",
+      "    4         1.0000"
+    ],
+    "envelope_lines": [
+      "ENVOLT            12",
+      "   11",
+      "   12",
+      "   13",
+      "   14",
+      "   15",
+      "   16",
+      "   19",
+      "   20",
+      "   21",
+      "   22",
+      "   23",
+      "   24"
+    ]
+  },
+  "source_LST": {
+    "path": "C:\\TQS\\25-208-ATP___24-1454-WERT-WPBGR RESIDENCE-PE-MU2-S07-ATP2___2aFASE-Calc01\\ESPACIAL\\FOR0001.Lst",
+    "sha256": "8fe1c718df5c7fdae1d7844b385e9d761b1a267c6bc8c3409f490818b4c3c45d",
+    "finding": "Listagem disponivel contem reacoes de apoio das restricoes/fundacoes; nao foram encontrados esforcos nas extremidades das barras para as quatro interfaces."
+  },
+  "official_manual": "https://docs.tqs.com.br/Docs/Details?id=3150&language=pt-BR",
+  "manual_information": "Relatorios / Processamento de Esforcos; por padrao lista reacoes de apoio, listagem completa depende da configuracao de criterios gerais.",
+  "decision": "Joao analisara separadamente os quatro encontros; nao reprocessado ou alterado o modelo."
+}

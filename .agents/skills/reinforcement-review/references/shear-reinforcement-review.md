@@ -82,3 +82,9 @@ Antes de verificar uma peça, usar `shear_coverage.classify_piece`: armadura neg
 Particionar intervalos pelas faces e limites documentais: WITHIN_SUPPORT/NOT_APPLICABLE somente com prova de contenção física no pilar; REQUIRED_BEAM_COVERAGE para cobertura comprovada; UNCOVERED_REQUIRED_REGION/INCONCLUSIVE para trecho obrigatório descoberto; GEOMETRY_INCONCLUSIVE quando faltam fontes/faces/tipo. Ambiguidade da peça não fornece cobertura. Faixas não são prolongadas e o domínio físico não autoriza extrapolação dos esforços; controle necessário sem amostragem válida permanece inconclusivo.
 
 Correção anterior de smax no Concretopy expressamente autorizada pelo engenheiro: mantida com os oito testes. Autorização para editar e origem técnica do critério são proveniências distintas. Critério fornecido pelo engenheiro; texto integral normativo não consultado nesta rodada. Nenhuma alteração adicional no Concretopy.
+
+## Seção final por etapas e limite físico em blocos
+
+Identificar a função das barras antes de selecionar camadas para d. Exclusão expressa pelo engenheiro de barras do topo da primeira concretagem deve ser registrada no projeto e respeitada tanto na capacidade quanto no centroide; preservar a armadura externa final e suas camadas reais. Usar o centroide retornado pelo Concretopy, não a coordenada isolada da camada mais interna.
+
+Quando o apoio físico é um bloco, comparar a faixa até a face do bloco confirmada documentalmente, mesmo que a face do pilar seja distinta. A soma de faixas não fornece cotas do bloco. Consultar cada faixa no domínio físico compatibilizado; uma referência numérica de vão/faixa fraca não constitui reprovação da faixa real. A correção da referência não verifica por si a armadura do bloco ou do nó.

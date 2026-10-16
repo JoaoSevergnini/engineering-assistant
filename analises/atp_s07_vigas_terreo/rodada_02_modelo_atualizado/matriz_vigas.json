@@ -1,0 +1,3734 @@
+[
+  {
+    "beam_id": "V1",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V1.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        55
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "BLOCO P701",
+      "BLOCO P702"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V1",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P701",
+          "P702"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "1",
+    "model_supports": [
+      "P701",
+      "P702"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V1",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V1",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V2",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V2.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P704",
+      "P705",
+      "P706",
+      "P707"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V2",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P704",
+          "P705",
+          "P706",
+          "P707"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "2",
+    "model_supports": [
+      "P704",
+      "P705",
+      "P706",
+      "P707"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V2",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V2",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V2",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V2",
+        "span_token": "3"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V3",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V3.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P740",
+      "P746"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "documentary_finding": "Elevation summary says 2 phi20 bottom; N1 and section depict 4 phi16. Reconcile labels.",
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V3",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P740",
+          "P746"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "3",
+    "model_supports": [
+      "P740",
+      "P746"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V3",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V4",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V4.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P746",
+      "P747"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "intermediate_reinforcement": "Do not relocate first-stage top bars into outer tension layer; reconcile real vertical positions and steel strain compatibility.",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V4",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P746",
+          "P747"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "4",
+    "model_supports": [
+      "P746",
+      "P747"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V4",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V4",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V5",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V5.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P741",
+      "P742"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "5",
+    "model_supports": [
+      "P741",
+      "P742"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V5",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V5",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V6",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V6.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P743",
+      "P744"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "documentary_finding": "Elevation summary says 2 phi20 bottom; N1 and section depict 4 phi16. Reconcile labels.",
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V5",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P743",
+          "P744"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "6",
+    "model_supports": [
+      "P743",
+      "P744"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V6",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V7",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V7-10.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V22",
+      "V26"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V6",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "V23",
+          "V25"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "7",
+    "model_supports": [
+      "V29",
+      "V31"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V7",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V8",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V7-10.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V22",
+      "V26"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V7",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "V30",
+          "V32"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "8",
+    "model_supports": [
+      "V39",
+      "V41"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V8",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V9",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V7-10.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V22",
+      "V26"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V8",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "V23",
+          "V25"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "9",
+    "model_supports": [
+      "V29",
+      "V31"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V9",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V10",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V7-10.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V22",
+      "V26"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V9",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "V30",
+          "V32"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "10",
+    "model_supports": [
+      "V39",
+      "V41"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V10",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V11",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V11.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        80
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P752",
+      "P754"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "11",
+    "model_supports": [
+      "P752",
+      "P754"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V11",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V11",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V12",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V12-13.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "BLOCO P753",
+      "apoio direito do prototipo"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V10",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P753",
+          "V25"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "12",
+    "model_supports": [
+      "P753",
+      "V31"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V12",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V13",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V12-13.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "BLOCO P753",
+      "apoio direito do prototipo"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SPECIAL_METHOD_REQUIRED",
+      "negative_flexure": "SPECIAL_METHOD_REQUIRED",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SPECIAL_METHOD_REQUIRED",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SPECIAL_DEEP_BEAM_22.4.1",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V11",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P754",
+          "V32"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "13",
+    "model_supports": [
+      "P754",
+      "V41"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V13",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [],
+    "remaining_work": [
+      "Special deep-beam analysis, force path, nodes and reinforcement disposition required; ordinary flexure/shear engine not used as proof."
+    ]
+  },
+  {
+    "beam_id": "V14",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V14.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC26C",
+      "PC24C",
+      "PC20C"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V33",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC26C",
+          "PC24C",
+          "PC20C",
+          "V35"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "14",
+    "model_supports": [
+      "PC26C",
+      "PC24C",
+      "PC20C",
+      "V43"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V14",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V14",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V14",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V14",
+        "span_token": "3"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V15",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V15.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P757",
+      "P756",
+      "P760",
+      "P758",
+      "P761"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "mapping_limitation": "TQS V12 covers only P757/P756/P760; no linked forces for P760/P758/P761.",
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "intermediate_reinforcement": "Do not relocate first-stage top bars into outer tension layer; reconcile real vertical positions and steel strain compatibility.",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V12",
+        "span_tokens": [
+          "1",
+          "2"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P757",
+          "P756",
+          "P760"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "15",
+    "model_supports": [
+      "P757",
+      "P756",
+      "P760",
+      "P758",
+      "P761"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V15",
+        "span_tokens": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V15",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V15",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V15",
+        "span_token": "3"
+      },
+      {
+        "model_name": "V15",
+        "span_token": "4"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V16",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC40C",
+      "PC41C"
+    ],
+    "span_comparison": "CONFIRMED_PC40C_PC41C_CLEAR_730CM",
+    "structural_status": "FAIL_POSITIVE_AND_NEGATIVE_RIGHT",
+    "global_approval": false,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "FAIL",
+      "negative_flexure": "FAIL_RIGHT_PASS_LEFT",
+      "minimum_longitudinal": "PASS_CHECKED_V16_REGIONS",
+      "shear": "NUMERICAL_CHECKS_PASS_MINIMUM_SPACING_PENDING",
+      "suspension": "NOT_APPLICABLE"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V13",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC40C",
+          "PC41C"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "16",
+    "model_supports": [
+      "PC40C",
+      "PC41C"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V16",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V16",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V17",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V17.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V23",
+      "P786",
+      "P787",
+      "P788",
+      "P789",
+      "P790",
+      "V42"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V14",
+        "span_tokens": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "V17",
+          "V21",
+          "V24",
+          "V27",
+          "V29",
+          "V31",
+          "V34"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "17",
+    "model_supports": [
+      "V23",
+      "V901",
+      "V902",
+      "V903",
+      "V904",
+      "V905",
+      "V42"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V17",
+        "span_tokens": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V17",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V17",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V17",
+        "span_token": "3"
+      },
+      {
+        "model_name": "V17",
+        "span_token": "4"
+      },
+      {
+        "model_name": "V17",
+        "span_token": "5"
+      },
+      {
+        "model_name": "V17",
+        "span_token": "6"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V18",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V18.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V23",
+      "PC45C",
+      "PC46C"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "18",
+    "model_supports": [
+      "V23",
+      "PC45C",
+      "PC46C"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V18",
+        "span_tokens": [
+          "1",
+          "2"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V18",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V18",
+        "span_token": "2"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V19",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V19-20.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC47C",
+      "PC48C"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "19",
+    "model_supports": [
+      "PC47C",
+      "PC48C"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V19",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V19",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ],
+    "documentary_finding": "Elevation bottom summary 4phi12.5 versus positions N3 2phi16 + N4 1phi16; drawing must be reconciled, not a demonstrated lack of physical steel."
+  },
+  {
+    "beam_id": "V20",
+    "detailing_sheet": "7401",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V19-20.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "apoios conforme prototipo V19; membros distintos na forma"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "20",
+    "model_supports": [
+      "PC49C",
+      "PC50C"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V20",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V20",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ],
+    "documentary_finding": "Elevation bottom summary 4phi12.5 versus positions N3 2phi16 + N4 1phi16; drawing must be reconciled, not a demonstrated lack of physical steel."
+  },
+  {
+    "beam_id": "V21",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V21.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC54C",
+      "PC55C",
+      "PC56C",
+      "PC57C",
+      "PC59C",
+      "PC60C",
+      "V22"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V15",
+        "span_tokens": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC54C",
+          "PC55C",
+          "PC56C",
+          "PC57C",
+          "PC59C",
+          "PC60C",
+          "V16"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "21",
+    "model_supports": [
+      "PC54C",
+      "PC55C",
+      "PC56C",
+      "PC57C",
+      "PC59C",
+      "PC60C",
+      "V22"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V21",
+        "span_tokens": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V21",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V21",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V21",
+        "span_token": "3"
+      },
+      {
+        "model_name": "V21",
+        "span_token": "4"
+      },
+      {
+        "model_name": "V21",
+        "span_token": "5"
+      },
+      {
+        "model_name": "V21",
+        "span_token": "6"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V22",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V22.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC62C",
+      "PC61C",
+      "PC58C"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "documentary_finding": "Left upper elevation summary 2 phi16 versus N1 2 phi12.5; reconcile before negative verification.",
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V16",
+        "span_tokens": [
+          "2",
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC62C",
+          "PC61C",
+          "PC58C"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "22",
+    "model_supports": [
+      "PC62C",
+      "PC61C",
+      "PC58C"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V22",
+        "span_tokens": [
+          "1B",
+          "2",
+          "3"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V22",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V22",
+        "span_token": "3"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V23",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V23.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        80
+      ],
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC54C",
+      "P799",
+      "P785"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SECTION_OR_LEVEL_TRANSITION_REGISTRATION_REQUIRED",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V17",
+        "span_tokens": [
+          "1",
+          "2"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC54C",
+          "P799",
+          "P785",
+          "P778"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "23",
+    "model_supports": [
+      "PC54C",
+      "P799",
+      "P785",
+      "P778"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V23",
+        "span_tokens": [
+          "1",
+          "2"
+        ],
+        "status": "SUPPORT_CHAIN_PC54C_P799_P785"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V23",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V23",
+        "span_token": "2"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening.",
+      "Variable geometry and true depth/staged steel by physical region; h50 lower-bound screen cannot disprove taller-section capacity or check its actual minimum."
+    ]
+  },
+  {
+    "beam_id": "V24",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V24.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        80
+      ],
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P785",
+      "P778",
+      "P769",
+      "P759",
+      "PC25C"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SECTION_OR_LEVEL_TRANSITION_REGISTRATION_REQUIRED",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V17",
+        "span_tokens": [
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC54C",
+          "P799",
+          "P785",
+          "P778"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      },
+      {
+        "model_name": "V18",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P778",
+          "P769",
+          "P759",
+          "PC25C"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "24",
+    "model_supports": [
+      "P778",
+      "P769",
+      "P759",
+      "PC25C"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V23",
+        "span_tokens": [
+          "3"
+        ],
+        "status": "FIRST_DETAIL_SPAN_P785_P778"
+      },
+      {
+        "model_name": "V24",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "status": "OTHER_DETAIL_SPANS_P778_P769_P759_PC25C"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V23",
+        "span_token": "3"
+      },
+      {
+        "model_name": "V24",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V24",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V24",
+        "span_token": "3"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening.",
+      "Variable geometry and true depth/staged steel by physical region; h50 lower-bound screen cannot disprove taller-section capacity or check its actual minimum."
+    ]
+  },
+  {
+    "beam_id": "V25",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V25.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P745",
+      "P730",
+      "P727",
+      "P708",
+      "P701"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V19",
+        "span_tokens": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P745",
+          "P730",
+          "P727",
+          "P708",
+          "P701"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "25",
+    "model_supports": [
+      "P745",
+      "P730",
+      "P727",
+      "P708",
+      "P701"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V25",
+        "span_tokens": [
+          "1B",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V25",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V25",
+        "span_token": "3"
+      },
+      {
+        "model_name": "V25",
+        "span_token": "4"
+      },
+      {
+        "model_name": "V25",
+        "span_token": "5"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V26",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V26.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC26C",
+      "PC24C",
+      "PC20C"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "documentary_finding": "Support names copied as PC26C/PC24C/PC20C; form V26 follows PC19C/PC21C/PC25C.",
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V20",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC25C",
+          "PC21C",
+          "PC19C",
+          "V19"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "26",
+    "model_supports": [
+      "PC25C",
+      "PC21C",
+      "PC19C",
+      "V25"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V26",
+        "span_tokens": [
+          "1",
+          "2",
+          "3"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V26",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V26",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V26",
+        "span_token": "3"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V27",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V27.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P750",
+      "P739"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "27",
+    "model_supports": [
+      "P750",
+      "P739"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V27",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V27",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V28",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V28.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC34C",
+      "PC28C",
+      "V15"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "intermediate_reinforcement": "Do not relocate first-stage top bars into outer tension layer; reconcile real vertical positions and steel strain compatibility.",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V22",
+        "span_tokens": [
+          "2",
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC40C",
+          "PC34C",
+          "PC28C",
+          "V12"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "28",
+    "model_supports": [
+      "PC34C",
+      "PC28C",
+      "V15"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V28",
+        "span_tokens": [
+          "1",
+          "2"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V28",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V28",
+        "span_token": "2"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V29",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V29-39.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P753",
+      "P740"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V23",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P753",
+          "P740"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "29",
+    "model_supports": [
+      "P753",
+      "P740"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V29",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V29",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V30",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V30.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        60
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC2C",
+      "P710"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "30",
+    "model_supports": [
+      "PC2C",
+      "P710"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V30",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V30",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V31",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V31.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P746"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V25",
+        "span_tokens": [
+          "1B"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P746",
+          "P746"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "31",
+    "model_supports": [
+      "P746",
+      "P746"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V31",
+        "span_tokens": [
+          "1B",
+          "2"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V31",
+        "span_token": "1B"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V32",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V32.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC35C",
+      "PC29C",
+      "V15"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "intermediate_reinforcement": "Do not relocate first-stage top bars into outer tension layer; reconcile real vertical positions and steel strain compatibility.",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V26",
+        "span_tokens": [
+          "2",
+          "3"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC41C",
+          "PC35C",
+          "PC29C",
+          "V12"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "32",
+    "model_supports": [
+      "PC35C",
+      "PC29C",
+      "V15"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V32",
+        "span_tokens": [
+          "1",
+          "2"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V32",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V32",
+        "span_token": "2"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V33",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V33.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P794",
+      "V19"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "33",
+    "model_supports": [
+      "P794",
+      "V19"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V33",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V33",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V34",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V34.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P760",
+      "P747"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "intermediate_reinforcement": "Do not relocate first-stage top bars into outer tension layer; reconcile real vertical positions and steel strain compatibility.",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V28",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P760",
+          "P747"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "34",
+    "model_supports": [
+      "P760",
+      "P747"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V34",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V34",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V35",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V35.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "PC36C",
+      "PC30C",
+      "V15"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "35",
+    "model_supports": [
+      "PC36C",
+      "PC30C",
+      "V15"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V35",
+        "span_tokens": [
+          "1",
+          "2"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V35",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V35",
+        "span_token": "2"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V36",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V36.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V5",
+      "P735"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "36",
+    "model_supports": [
+      "V5",
+      "P735"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V36",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V36",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V37",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V37.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P725",
+      "P712"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "37",
+    "model_supports": [
+      "P725",
+      "P712"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V37",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V37",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V38",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V38.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P752",
+      "P742"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "38",
+    "model_supports": [
+      "P752",
+      "P742"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V38",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V38",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V39",
+    "detailing_sheet": "7402",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7402_V29-39.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7402-PLN-MU2-S07-TE-R00.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "apoios conforme prototipo V29; P754/P743 na forma"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V30",
+        "span_tokens": [
+          "1"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P754",
+          "P743"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "39",
+    "model_supports": [
+      "P754",
+      "P743"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V39",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V39",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V40",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V40.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P796",
+      "V19"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "40",
+    "model_supports": [
+      "P796",
+      "V20"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V40",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V40",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ],
+    "documentary_finding": "Detail 7403 end named V19, but form shows V40 meeting V20; model now also receives on V20. Form-detail support label divergence."
+  },
+  {
+    "beam_id": "V41",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V41.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        19,
+        165
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P744"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V32",
+        "span_tokens": [
+          "1B"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P744",
+          "P744"
+        ],
+        "confidence": "PARTIAL_OR_INDIRECT_MAPPING_REQUIRES_REVIEW"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "41",
+    "model_supports": [
+      "P744",
+      "P744"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V41",
+        "span_tokens": [
+          "1B",
+          "2"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V41",
+        "span_token": "1B"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V42",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V42.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        80
+      ],
+      [
+        30,
+        50
+      ],
+      [
+        30,
+        110
+      ]
+    ],
+    "nominal_section_comparison": "REVIEW_LOCAL_HEIGHT_110_VS_80",
+    "detail_support_labels": [
+      "PC58C",
+      "P807C",
+      "P797",
+      "P791",
+      "P784",
+      "P764",
+      "P762",
+      "PC26C"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SECTION_OR_LEVEL_TRANSITION_REGISTRATION_REQUIRED",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V34",
+        "span_tokens": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "PC58C",
+          "P807C",
+          "P797",
+          "P791",
+          "P784",
+          "P764",
+          "P762",
+          "PC26C"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "42",
+    "model_supports": [
+      "PC58C",
+      "P807C",
+      "P797",
+      "P791",
+      "P784",
+      "P764",
+      "P762",
+      "PC26C"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V42",
+        "span_tokens": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V42",
+        "span_token": "1"
+      },
+      {
+        "model_name": "V42",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V42",
+        "span_token": "3"
+      },
+      {
+        "model_name": "V42",
+        "span_token": "4"
+      },
+      {
+        "model_name": "V42",
+        "span_token": "5"
+      },
+      {
+        "model_name": "V42",
+        "span_token": "6"
+      },
+      {
+        "model_name": "V42",
+        "span_token": "7"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening.",
+      "Variable geometry and true depth/staged steel by physical region; h50 lower-bound screen cannot disprove taller-section capacity or check its actual minimum."
+    ]
+  },
+  {
+    "beam_id": "V43",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V43.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P748",
+      "P737",
+      "P723",
+      "P714",
+      "P707"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [
+      {
+        "model_name": "V35",
+        "span_tokens": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "method": "support-chain and physical position, not equal beam number",
+        "source_supports": [
+          "P748",
+          "P737",
+          "P723",
+          "P714",
+          "P707"
+        ],
+        "confidence": "CONFIRMED_END_SUPPORTS"
+      }
+    ],
+    "tqs_record_available": true,
+    "tqs_internal_id": "43",
+    "model_supports": [
+      "P748",
+      "P737",
+      "P723",
+      "P714",
+      "P707"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V43",
+        "span_tokens": [
+          "1B",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V43",
+        "span_token": "2"
+      },
+      {
+        "model_name": "V43",
+        "span_token": "3"
+      },
+      {
+        "model_name": "V43",
+        "span_token": "4"
+      },
+      {
+        "model_name": "V43",
+        "span_token": "5"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V44",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V44.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        40,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P738",
+      "P731"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "44",
+    "model_supports": [
+      "P738",
+      "P731"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V44",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V44",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V45",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V45.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P750",
+      "P753"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "45",
+    "model_supports": [
+      "P750",
+      "P753"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V45",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V45",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V46",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V46.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P747",
+      "P751"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "46",
+    "model_supports": [
+      "P747",
+      "P751"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V46",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V46",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V47",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V47.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P751",
+      "P741"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "47",
+    "model_supports": [
+      "P751",
+      "P741"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V47",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V47",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V48",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V48.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        30,
+        50
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "P767",
+      "P758"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "48",
+    "model_supports": [
+      "P767",
+      "P758"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V48",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V48",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening."
+    ]
+  },
+  {
+    "beam_id": "V49",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V49.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        50
+      ],
+      [
+        24,
+        87
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V26",
+      "P749"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SECTION_OR_LEVEL_TRANSITION_REGISTRATION_REQUIRED",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "49",
+    "model_supports": [
+      "V26",
+      "P749"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V49",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V49",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening.",
+      "Variable geometry and true depth/staged steel by physical region; h50 lower-bound screen cannot disprove taller-section capacity or check its actual minimum."
+    ]
+  },
+  {
+    "beam_id": "V50",
+    "detailing_sheet": "7403",
+    "detail_crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7403_V50.png",
+    "detail_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7403-PLN-MU2-S07-TE-R01.PDF",
+    "form_source": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF",
+    "exists_in_form": true,
+    "exists_in_detail": true,
+    "section_labels_detail_cm": [
+      [
+        24,
+        50
+      ],
+      [
+        24,
+        87
+      ]
+    ],
+    "nominal_section_comparison": "COINCIDENT_LABELS",
+    "detail_support_labels": [
+      "V34",
+      "P751"
+    ],
+    "span_comparison": "FULL_DIMENSIONAL_RECONCILIATION_PENDING",
+    "structural_status": "INCONCLUSIVE",
+    "global_approval": null,
+    "form_sources": [
+      "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7202-PLN-MU2-S07-TE-R03.PDF"
+    ],
+    "requested_control_status": {
+      "positive_flexure": "SECTION_SCREEN_ONLY",
+      "negative_flexure": "SECTION_SCREEN_ONLY",
+      "minimum_longitudinal": "SCREEN_ONLY_NOT_GLOBAL",
+      "shear": "SECTION_SCREEN_ONLY",
+      "suspension": "CONNECTIONS_INVENTORIED_NOT_CLOSED"
+    },
+    "method_scope": "SECTION_OR_LEVEL_TRANSITION_REGISTRATION_REQUIRED",
+    "round": "02 - updated model processed 15/10/2026",
+    "previous_tqs_links_historical": [],
+    "tqs_record_available": true,
+    "tqs_internal_id": "50",
+    "model_supports": [
+      "V34",
+      "P751"
+    ],
+    "tqs_links": [
+      {
+        "model_name": "V50",
+        "span_tokens": [
+          "1"
+        ],
+        "status": "RECORD_AVAILABLE; documentary physical spans individually bounded below"
+      }
+    ],
+    "screened_model_spans": [
+      {
+        "model_name": "V50",
+        "span_token": "1"
+      }
+    ],
+    "remaining_work": [
+      "Close all requested local controls; no global approval from a section screening.",
+      "Variable geometry and true depth/staged steel by physical region; h50 lower-bound screen cannot disprove taller-section capacity or check its actual minimum."
+    ]
+  }
+]

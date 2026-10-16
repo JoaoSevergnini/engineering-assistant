@@ -1,0 +1,710 @@
+{
+  "beam_id": "V16",
+  "model_name": "V13",
+  "controls": [
+    {
+      "job_id": "V16-positive-full-clear",
+      "control": "positive_flexure",
+      "status": "FAIL",
+      "execution_state": "EXECUTED_COMPLETE",
+      "regions": [
+        {
+          "MRd_knm": 93.88403814163244,
+          "Mk_equivalent_knm": 67.06002724402317,
+          "utilization": 2.4763755388244473,
+          "passes": false,
+          "not_applicable": null,
+          "Msk_max_knm": 166.0658111
+        }
+      ]
+    },
+    {
+      "job_id": "V16-negative-left",
+      "control": "negative_flexure",
+      "status": "PASS",
+      "execution_state": "EXECUTED_COMPLETE",
+      "regions": [
+        {
+          "MRd_knm": 150.40516498905313,
+          "Mk_equivalent_knm": 107.43226070646654,
+          "utilization": 0.5412528290212764,
+          "passes": true,
+          "not_applicable": null,
+          "Msk_max_knm": 58.14801503552631
+        }
+      ]
+    },
+    {
+      "job_id": "V16-negative-right",
+      "control": "negative_flexure",
+      "status": "PASS",
+      "execution_state": "EXECUTED_COMPLETE",
+      "regions": [
+        {
+          "MRd_knm": 150.40516498905313,
+          "Mk_equivalent_knm": 107.43226070646654,
+          "utilization": 0.8273359574723173,
+          "passes": true,
+          "not_applicable": null,
+          "Msk_max_knm": 88.8825722750001
+        }
+      ]
+    },
+    {
+      "job_id": "V16-shear-drawn",
+      "control": "shear",
+      "status": "INCONCLUSIVE",
+      "execution_state": "EXECUTED_INCONCLUSIVE",
+      "details": {
+        "status": "INCONCLUSIVE",
+        "overall_structural_result": null,
+        "passes": null,
+        "results": [
+          {
+            "fck_mpa": 35,
+            "design": {
+              "status": "PASS",
+              "diagonal_compression": {
+                "status": "PASS",
+                "passes": true,
+                "Vsk_abs_kn": 137.12638695,
+                "Vsd_kn": 191.97694173,
+                "VRd2_kn": 1046.5254,
+                "utilization": 0.1834422191090632,
+                "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+              },
+              "diagnostics": [],
+              "units": {
+                "forces": "kN",
+                "Asw_per_s": "cm2/m",
+                "spacing": "cm",
+                "d": "cm"
+              },
+              "Vsk_abs_kn": 137.12638695,
+              "Vsd_kn": 191.97694173,
+              "VRd2_kn": 1046.5254,
+              "Vc_kn": 173.60760869664523,
+              "d_cm": 45.07,
+              "minimum_Asw_per_s_cm2_m": 5.135939906712381,
+              "provenance": {
+                "api": {
+                  "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                  "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                  "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                  "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+                },
+                "minimum_call": {
+                  "Vk_kn": 0,
+                  "result": {
+                    "asw_por_s": 5.135939906712381,
+                    "vc": 173.60760869664523,
+                    "vrd2": 1046.5254,
+                    "asw_por_s_calculado": 0.0,
+                    "asw_por_s_minimo": 5.135939906712381
+                  }
+                },
+                "effective_depth": {
+                  "status": "PASS",
+                  "selected": {
+                    "source": "V16 negative4phi16 first layer is lower d=45.07 than positive4phi12.5 d45.245"
+                  },
+                  "d_cm": 45.07
+                },
+                "physical_section": {
+                  "bw": 40,
+                  "h": 50,
+                  "cobrimento": 3.5,
+                  "diametro_estribo_mm": 6.3
+                },
+                "stirrup_diameter_mm": 6.3,
+                "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+                "maximum_spacing_api": {
+                  "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                  "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                  "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                  "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+                },
+                "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+              },
+              "concretopy": {
+                "asw_por_s": 5.135939906712381,
+                "vc": 173.60760869664523,
+                "vrd2": 1046.5254,
+                "asw_por_s_calculado": 1.0415764607330809,
+                "asw_por_s_minimo": 5.135939906712381
+              },
+              "required_Asw_per_s_cm2_m": 5.135939906712381,
+              "governing_Asw_per_s_cm2_m": 5.135939906712381,
+              "required_by_shear_separately_cm2_m": null,
+              "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+              "requirement_governed_by": "MINIMUM",
+              "maximum_spacing_code_cm": 27.041999999999998
+            },
+            "provided_cm2_m": 6.234490621048945,
+            "area_sufficient": true,
+            "smax_long_cm": 27.041999999999998,
+            "long_spacing_sufficient": true,
+            "transverse_spacing_limit_cm": 45.07,
+            "transverse_spacing_sufficient": true,
+            "transverse_basis": "whole beam width40cm bounds every branch gap; no guessed branch coordinates",
+            "minimum_longitudinal_spacing_status": "INCONCLUSIVE",
+            "minimum_spacing_reason": "18.3.3.2 requires vibrator passage/adensamento; equipment not documented."
+          },
+          {
+            "fck_mpa": 40,
+            "design": {
+              "status": "PASS",
+              "diagonal_compression": {
+                "status": "PASS",
+                "passes": true,
+                "Vsk_abs_kn": 137.12638695,
+                "Vsd_kn": 191.97694173,
+                "VRd2_kn": 1168.2144000000003,
+                "utilization": 0.16433365461853572,
+                "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+              },
+              "diagnostics": [],
+              "units": {
+                "forces": "kN",
+                "Asw_per_s": "cm2/m",
+                "spacing": "cm",
+                "d": "cm"
+              },
+              "Vsk_abs_kn": 137.12638695,
+              "Vsd_kn": 191.97694173,
+              "VRd2_kn": 1168.2144000000003,
+              "Vc_kn": 189.77109042420557,
+              "d_cm": 45.07,
+              "minimum_Asw_per_s_cm2_m": 5.6141140573687025,
+              "provenance": {
+                "api": {
+                  "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                  "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                  "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                  "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+                },
+                "minimum_call": {
+                  "Vk_kn": 0,
+                  "result": {
+                    "asw_por_s": 5.6141140573687025,
+                    "vc": 189.77109042420557,
+                    "vrd2": 1168.2144000000003,
+                    "asw_por_s_calculado": 0.0,
+                    "asw_por_s_minimo": 5.6141140573687025
+                  }
+                },
+                "effective_depth": {
+                  "status": "PASS",
+                  "selected": {
+                    "source": "V16 negative4phi16 first layer is lower d=45.07 than positive4phi12.5 d45.245"
+                  },
+                  "d_cm": 45.07
+                },
+                "physical_section": {
+                  "bw": 40,
+                  "h": 50,
+                  "cobrimento": 3.5,
+                  "diametro_estribo_mm": 6.3
+                },
+                "stirrup_diameter_mm": 6.3,
+                "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+                "maximum_spacing_api": {
+                  "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                  "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                  "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                  "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+                },
+                "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+              },
+              "concretopy": {
+                "asw_por_s": 5.6141140573687025,
+                "vc": 189.77109042420557,
+                "vrd2": 1168.2144000000003,
+                "asw_por_s_calculado": 0.12507600530846283,
+                "asw_por_s_minimo": 5.6141140573687025
+              },
+              "required_Asw_per_s_cm2_m": 5.6141140573687025,
+              "governing_Asw_per_s_cm2_m": 5.6141140573687025,
+              "required_by_shear_separately_cm2_m": null,
+              "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+              "requirement_governed_by": "MINIMUM",
+              "maximum_spacing_code_cm": 27.041999999999998
+            },
+            "provided_cm2_m": 6.234490621048945,
+            "area_sufficient": true,
+            "smax_long_cm": 27.041999999999998,
+            "long_spacing_sufficient": true,
+            "transverse_spacing_limit_cm": 45.07,
+            "transverse_spacing_sufficient": true,
+            "transverse_basis": "whole beam width40cm bounds every branch gap; no guessed branch coordinates",
+            "minimum_longitudinal_spacing_status": "INCONCLUSIVE",
+            "minimum_spacing_reason": "18.3.3.2 requires vibrator passage/adensamento; equipment not documented."
+          }
+        ],
+        "demand": {
+          "status": "PASS",
+          "requested_interval_m": [
+            0.35,
+            7.65
+          ],
+          "series_coverage": [
+            {
+              "series_id": "max",
+              "sampled_domain_m": [
+                0.2,
+                7.799999999999999
+              ],
+              "check_interval_m": [
+                0.35,
+                7.65
+              ],
+              "uncovered_intervals_m": [],
+              "unresolved_queries": []
+            },
+            {
+              "series_id": "min",
+              "sampled_domain_m": [
+                0.2,
+                7.799999999999999
+              ],
+              "check_interval_m": [
+                0.35,
+                7.65
+              ],
+              "uncovered_intervals_m": [],
+              "unresolved_queries": []
+            }
+          ],
+          "governing": [
+            {
+              "series_id": "min",
+              "x_m": 7.166666666666666,
+              "section": 12,
+              "Vsk_original_kn": -137.12638695,
+              "Vsk_abs_kn": 137.12638695,
+              "sign": -1,
+              "source_type": "tqs_section",
+              "provenance": {
+                "x_m": 7.166666666666666,
+                "x_decimal": "7.166666666666666",
+                "value_knm": -137.12638695,
+                "value_decimal": "-137.12638695",
+                "provenance": {
+                  "quantity": "shear",
+                  "unit": "kN",
+                  "series_id": "min",
+                  "source": [
+                    {
+                      "file": "VGESFS.LST",
+                      "line": 270,
+                      "text": "Q MN. VAO= 1     1.624    9.035    6.874    4.982    2.987    1.330    0.185   -1.906   -4.570   -7.629  -11.475  -13.983   -7.385"
+                    }
+                  ],
+                  "discontinuities_m": []
+                },
+                "rule": {
+                  "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                  "author": "João Severgnini",
+                  "date": "2026-10-04",
+                  "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                  "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                  "decimal_precision": 50
+                },
+                "status": "resolved",
+                "source_type": "tqs_section",
+                "section": 12,
+                "base_points": [
+                  {
+                    "x_m": 7.166666666666666,
+                    "value_knm": -137.12638695,
+                    "section": 12,
+                    "provenance": {
+                      "sample_index": 11,
+                      "series": [
+                        {
+                          "file": "VGESFS.LST",
+                          "line": 270,
+                          "text": "Q MN. VAO= 1     1.624    9.035    6.874    4.982    2.987    1.330    0.185   -1.906   -4.570   -7.629  -11.475  -13.983   -7.385"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "segment_ids": [
+                  "SEG11",
+                  "SEG12"
+                ]
+              }
+            }
+          ],
+          "Vsk_abs_kn": 137.12638695,
+          "complete": true,
+          "rule": "engineer_confirmed_tqs_shear_domain_v1",
+          "provenance": {
+            "series": [
+              {
+                "quantity": "shear",
+                "envelope": "max",
+                "unit": "kN",
+                "stage": "model_input",
+                "positions": [
+                  0.2,
+                  0.8333333333333333,
+                  1.4666666666666666,
+                  2.0999999999999996,
+                  2.7333333333333334,
+                  3.3666666666666667,
+                  3.999999999999999,
+                  4.633333333333333,
+                  5.266666666666667,
+                  5.8999999999999995,
+                  6.533333333333333,
+                  7.166666666666666,
+                  7.799999999999999
+                ],
+                "values": [
+                  25.09521735,
+                  130.43825164999998,
+                  99.21387805,
+                  72.35346369999999,
+                  41.57038935,
+                  18.505148549999998,
+                  4.1089863499999995,
+                  -14.5530686,
+                  -31.9892923,
+                  -51.7006588,
+                  -75.3739119,
+                  -92.8885888,
+                  -46.04222175
+                ],
+                "sources": [
+                  {
+                    "file": "VGESFS.LST",
+                    "line": 274,
+                    "text": "Q MX. VAO= 1     2.559   13.301   10.117    7.378    4.239    1.887    0.419   -1.484   -3.262   -5.272   -7.686   -9.472   -4.695"
+                  }
+                ],
+                "local_positions": [
+                  0.2,
+                  0.8333333333333333,
+                  1.4666666666666666,
+                  2.0999999999999996,
+                  2.7333333333333334,
+                  3.3666666666666667,
+                  3.9999999999999996,
+                  4.633333333333333,
+                  5.266666666666667,
+                  5.8999999999999995,
+                  6.533333333333333,
+                  7.166666666666666,
+                  7.799999999999999
+                ],
+                "mapping_provenance": {
+                  "span_id": 1,
+                  "coordinate_system": {
+                    "unit": "m",
+                    "origin": "PC40C axis",
+                    "positive_direction": "PC40C to PC41C",
+                    "provenance": [
+                      {
+                        "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                        "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                        "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                        "beam": "V16",
+                        "model": "V13",
+                        "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                      }
+                    ]
+                  },
+                  "anchors": [
+                    {
+                      "local_m": {
+                        "value": 0.2,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      },
+                      "common_m": {
+                        "value": 0.2,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      }
+                    },
+                    {
+                      "local_m": {
+                        "value": 7.8,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      },
+                      "common_m": {
+                        "value": 7.8,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      }
+                    }
+                  ]
+                },
+                "sections": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "series_id": "max",
+                "provenance": [
+                  {
+                    "file": "VGESFS.LST",
+                    "line": 274,
+                    "text": "Q MX. VAO= 1     2.559   13.301   10.117    7.378    4.239    1.887    0.419   -1.484   -3.262   -5.272   -7.686   -9.472   -4.695"
+                  }
+                ]
+              },
+              {
+                "quantity": "shear",
+                "envelope": "min",
+                "unit": "kN",
+                "stage": "model_input",
+                "positions": [
+                  0.2,
+                  0.8333333333333333,
+                  1.4666666666666666,
+                  2.0999999999999996,
+                  2.7333333333333334,
+                  3.3666666666666667,
+                  3.999999999999999,
+                  4.633333333333333,
+                  5.266666666666667,
+                  5.8999999999999995,
+                  6.533333333333333,
+                  7.166666666666666,
+                  7.799999999999999
+                ],
+                "values": [
+                  15.9259996,
+                  88.60308275,
+                  67.41091209999999,
+                  48.8567303,
+                  29.29246355,
+                  13.0428445,
+                  1.8142302499999998,
+                  -18.6914749,
+                  -44.8163905,
+                  -74.81493284999999,
+                  -112.53130875,
+                  -137.12638695,
+                  -72.42211024999999
+                ],
+                "sources": [
+                  {
+                    "file": "VGESFS.LST",
+                    "line": 270,
+                    "text": "Q MN. VAO= 1     1.624    9.035    6.874    4.982    2.987    1.330    0.185   -1.906   -4.570   -7.629  -11.475  -13.983   -7.385"
+                  }
+                ],
+                "local_positions": [
+                  0.2,
+                  0.8333333333333333,
+                  1.4666666666666666,
+                  2.0999999999999996,
+                  2.7333333333333334,
+                  3.3666666666666667,
+                  3.9999999999999996,
+                  4.633333333333333,
+                  5.266666666666667,
+                  5.8999999999999995,
+                  6.533333333333333,
+                  7.166666666666666,
+                  7.799999999999999
+                ],
+                "mapping_provenance": {
+                  "span_id": 1,
+                  "coordinate_system": {
+                    "unit": "m",
+                    "origin": "PC40C axis",
+                    "positive_direction": "PC40C to PC41C",
+                    "provenance": [
+                      {
+                        "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                        "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                        "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                        "beam": "V16",
+                        "model": "V13",
+                        "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                      }
+                    ]
+                  },
+                  "anchors": [
+                    {
+                      "local_m": {
+                        "value": 0.2,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      },
+                      "common_m": {
+                        "value": 0.2,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      }
+                    },
+                    {
+                      "local_m": {
+                        "value": 7.8,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      },
+                      "common_m": {
+                        "value": 7.8,
+                        "state": "DOCUMENTED_CONFIRMED",
+                        "unit": "m",
+                        "provenance": [
+                          {
+                            "form": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\FORMAS\\WPBR-EST-EX-7214-PLN-MU2-S07-TE-R01.PDF",
+                            "detail": "S:\\PROJETOS EM EXECUÇÃO\\25-208-WERT-ATP TERRA ALL RESORT-PORTO BELO-SC\\PRANCHAS\\APOIO\\JOAO\\ATP S07\\ARQUIVOS RECEBIDOS\\TÉRREO\\WPBR-EST-EX-7401-PLN-MU2-S07-TE-R00.PDF",
+                            "crop": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\engineering-assistant\\analises\\atp_s07_vigas_terreo\\crops\\7401_V16.png",
+                            "beam": "V16",
+                            "model": "V13",
+                            "interpretation": "PC40C-PC41C, clear 730 cm; 70cm supports; model axes 760+20+20=800 cm; positive N4 4phi12.5 C850, 60+730+60cm."
+                          }
+                        ],
+                        "criterion": null
+                      }
+                    }
+                  ]
+                },
+                "sections": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "series_id": "min",
+                "provenance": [
+                  {
+                    "file": "VGESFS.LST",
+                    "line": 270,
+                    "text": "Q MN. VAO= 1     1.624    9.035    6.874    4.982    2.987    1.330    0.185   -1.906   -4.570   -7.629  -11.475  -13.983   -7.385"
+                  }
+                ]
+              }
+            ]
+          },
+          "partial_results_only": false,
+          "intersection_requested": false
+        },
+        "limitation": "minimum longitudinal spacing operational check still pending; numeric controls retained independently"
+      }
+    },
+    {
+      "job_id": "V16-suspension-not-applicable",
+      "control": "suspension",
+      "status": "NOT_APPLICABLE",
+      "execution_state": "EXECUTED_COMPLETE"
+    },
+    {
+      "job_id": "V16-anchorage-unplanned",
+      "control": "anchorage",
+      "status": "INCONCLUSIVE",
+      "execution_state": "NOT_EXECUTED"
+    },
+    {
+      "job_id": "V16-scaling-unplanned",
+      "control": "scaling",
+      "status": "INCONCLUSIVE",
+      "execution_state": "NOT_EXECUTED"
+    }
+  ]
+}

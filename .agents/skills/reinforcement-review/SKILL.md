@@ -42,6 +42,28 @@ O processo deve utilizar, quando disponíveis:
 5. critérios de detalhamento do escritório;
 6. requisitos normativos aplicáveis.
 
+## 1.1 Tipo de revisão e critérios
+
+Distinguir revisão interna de Avaliação Técnica de Projeto (ATP) de terceiros
+antes de aplicar os procedimentos. Na revisão interna, padrões do escritório
+e estudos de simplificação podem fazer parte do escopo. No ATP, separar
+requisitos normativos e requisitos documentados do projeto de preferências
+internas, critérios do software e recomendações de engenharia.
+
+Padrões internos e otimização não fundamentam reprovação normativa de um ATP.
+Executar somente as etapas solicitadas; manter resultados de critérios internos
+como observações identificadas, sem incorporá-los à conclusão de conformidade.
+Se um resultado misturar requisitos e preferências sem permitir separação,
+manter a conclusão dependente inconclusiva e indicar o critério a esclarecer.
+Preservar os resultados originais das ferramentas e a origem dos critérios.
+
+Para pilares em ATP, utilizar
+[Pilares em ATP](../atp-column-review/SKILL.md), com geometria, comparação
+longitudinal, esperas e controles transversais próprios. Os motores e as regras
+de vigas desta skill não verificam automaticamente flexocompressão, emendas
+ou confinamento de pilares. Para vigas em ATP, continuar utilizando os métodos
+compatíveis desta skill sob a distinção de critérios acima.
+
 ---
 
 ## 2. Princípio de revisão
@@ -203,6 +225,8 @@ no nó ainda exigem revisão. A limitação anterior ao extremo esquerdo foi sup
 ---
 
 ## 8. Armaduras negativas
+
+Na capacidade negativa sobre o apoio, usar o **máximo negativo TQS no apoio**, sem redução para a face interna, conforme orientação de João de 15/10/2026. Preservar pontos, sinal e origem e aplicar a regra de seleção em [Apresentação de esforços](../../../profile/force-presentation.md). Não confundir essa seleção com a posição física usada em ancoragem.
 
 Após a positiva, consultar [Revisão longitudinal negativa](references/negative-longitudinal-review.md).
 Identificar função das barras, camadas desde a face superior e regiões; verificar
@@ -384,6 +408,10 @@ O problema pode indicar necessidade de:
 
 ## 18. Resultado da revisão
 
+O resultado oficial da capacidade resistente deve vir do **Concretopy**, com função/modelo, entradas e arquivo de resultado identificados. Contas independentes devem aparecer separadas como conferências auxiliares, com origem e método explícitos; não substituem resultado oficial ausente. Aplicar a orientação de origem do resultado na referência acima. Na flexão positiva, considerar somente a armadura inferior tracionada, sem contribuição das barras superiores, salvo orientação específica posterior de João. Uma entrada divergente permanece identificada e requer nova execução do motor após sua compatibilização.
+
+Na apresentação dos esforços, aplicar obrigatoriamente a [convenção permanente de João](../../../profile/force-presentation.md): tf/tf·m, solicitações características e resistências equivalentes Rd/γf, com fator comprovado e natureza explícita. As referências a Vsd, MRd e VRd2 nas etapas de cálculo continuam sendo grandezas de cálculo; converter somente a apresentação e preservar os resultados brutos.
+
 Ao concluir a análise de uma viga, classificar os pontos encontrados
 preferencialmente como:
 
@@ -519,7 +547,7 @@ Para identificar apoios indiretos antes da suspensão, consultar [planta, direç
 
 Após as revisões independentes, seguir [diagnóstico consolidado](references/beam-diagnostic.md). Usar resultados existentes com identidade/pavimento/coordenadas comprovados; separar falhas, pendências e revisão de engenharia. Não recalcular nem selecionar correções. Módulo ausente é pendência, não inaplicabilidade comprovada.
 
-Na consolida��o, separar execu��o de resultado t�cnico conforme [beam-diagnostic](references/beam-diagnostic.md). Pontas sem cota exigem conven��o geom�trica rastre�vel; propostas e refer�ncias gr�ficas s�o contratos futuros, sem otimiza��o ou edi��o autom�tica.
+Na consolidação, separar execução de resultado técnico conforme [beam-diagnostic](references/beam-diagnostic.md). Pontas sem cota exigem convenção geométrica rastreável; propostas e referências gráficas são contratos futuros, sem otimização ou edição automática.
 
 ## Validação documental e geometria física — Etapa 1
 
@@ -528,3 +556,9 @@ Nas novas revisões, aplicar [documentary-physical-preflight](references/documen
 ## Integração operacional de pavimentos — Etapa 1.1
 
 Para pavimentos completos, aplicar obrigatoriamente [floor-operational-review](references/floor-operational-review.md): forma, detalhamento e TQS; eixo comum existente; camadas e cabimento; preflight por controle; verificadores e diagnóstico. Usar floor_review.py como entrada principal. Scripts históricos servem para regressão. Nesta etapa, não editar PDFs nem gerar propostas de correção.
+
+## Concretagens em etapas e apoios em blocos — interpretação documental
+
+Antes de construir composições e d, distinguir armaduras externas da seção final de barras de montagem/etapa. Quando o engenheiro excluir expressamente as barras do topo da primeira concretagem da resistência e de d, registrar o escopo no contexto do projeto e aplicar essa exclusão; não criar uma pendência para obter a altura de barras que não integrarão o cálculo. Não generalizar a exclusão a qualquer barra intermediária de outros projetos ou às camadas reais da armadura externa.
+
+Ao comparar cobertura de estribos com a forma, identificar o sólido de apoio que intercepta a viga: bloco, pilar, outra viga ou outro elemento. Usar a face física pertinente, confirmada na documentação/contexto. Diferença de comprimento até uma face de pilar não demonstra falta de estribos quando o detalhe termina na face do bloco. Não inferir geometria de bloco da soma das faixas nem aprovar todos os nós a partir de uma imagem. Reconsultar o máximo Vk de cada faixa no domínio físico correto antes da conclusão regional.

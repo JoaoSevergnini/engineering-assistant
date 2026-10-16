@@ -1,0 +1,1881 @@
+{
+  "source": {
+    "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+    "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+    "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+    "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+    "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+  },
+  "context": {
+    "section": {
+      "bw": 40,
+      "h": 50,
+      "cobrimento": 3.5,
+      "diametro_estribo_mm": 6.3
+    },
+    "fck_mpa": 35,
+    "fyk_mpa": 500,
+    "gamma_f": 1.4,
+    "gamma_c": 1.4,
+    "gamma_s": 1.15,
+    "effective_depth": {
+      "status": "PASS",
+      "d_cm": 44.87,
+      "selected": {
+        "origin": "right_superior",
+        "configuration": {
+          "count": 6,
+          "phi": 20,
+          "layers": [
+            6
+          ]
+        },
+        "d_cm": 44.87,
+        "As_cm2": 18.84955592153876,
+        "layers": 1
+      }
+    }
+  },
+  "span": {
+    "span_id": 1,
+    "series": [
+      {
+        "quantity": "shear",
+        "unit": "kN",
+        "envelope": "Q MN.",
+        "positions": [
+          0.35,
+          1.0420833333333333,
+          1.7341666666666664,
+          2.42625,
+          3.118333333333333,
+          3.810416666666667,
+          4.5024999999999995,
+          5.194583333333333,
+          5.886666666666666,
+          6.57875,
+          7.270833333333333,
+          7.962916666666666,
+          8.655
+        ],
+        "values": [
+          168.93915955,
+          164.6340402,
+          107.6181771,
+          80.9637024,
+          50.357147749999996,
+          28.2235387,
+          11.79739995,
+          -64.02761785,
+          -83.5722713,
+          -109.246081,
+          -137.96975885,
+          -165.1243727,
+          -69.06823595
+        ],
+        "sections": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "provenance": {
+          "file": "VGESFS.LST",
+          "line": 1560,
+          "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+        }
+      },
+      {
+        "quantity": "shear",
+        "unit": "kN",
+        "envelope": "Q MX.",
+        "positions": [
+          0.35,
+          1.0420833333333333,
+          1.7341666666666664,
+          2.42625,
+          3.118333333333333,
+          3.810416666666667,
+          4.5024999999999995,
+          5.194583333333333,
+          5.886666666666666,
+          6.57875,
+          7.270833333333333,
+          7.962916666666666,
+          8.655
+        ],
+        "values": [
+          173.24427889999998,
+          185.08090545,
+          123.8579895,
+          94.52629934999999,
+          58.8006734,
+          32.303105099999996,
+          12.709418399999999,
+          -57.143349549999996,
+          -73.3341287,
+          -95.4579311,
+          -120.99444769999998,
+          -147.71756895,
+          -56.388237499999995
+        ],
+        "sections": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "provenance": {
+          "file": "VGESFS.LST",
+          "line": 1564,
+          "text": "Q MX. VAO= 1    17.666   18.873   12.630    9.639    5.996    3.294    1.296   -5.827   -7.478   -9.734  -12.338  -15.063   -5.750"
+        }
+      }
+    ],
+    "reference_legs": 4,
+    "explicit_physical_beam_domain_m": [
+      4.64,
+      5.14
+    ],
+    "explicit_physical_domain_source": {
+      "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+      "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+      "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+      "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+      "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+    },
+    "drawn_regions": [
+      {
+        "id": "V34-N7-c20-local",
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 4,
+        "interval_m": [
+          4.64,
+          5.14
+        ],
+        "source": {
+          "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+          "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+          "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+          "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+          "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+        },
+        "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+        "holder_compatibility": {
+          "passes": true,
+          "provenance": {
+            "detail": "7403 R01 V34 CorteA:quatro barras superiores nos quatro cantos dos dois aneis22cm sobrepostos; quatro ramos efetivos",
+            "longitudinal_mark": "N5 4diam10 C403; inicio147cm apos face do blocoP760, intervalo comum2,82-6,85m; cobre4,64-5,14m",
+            "scope": "Disposicao geometrica do porta-estribo na regiao de suspensao; nao e aprovacao de ancoragem das barras nem criterio interno de bitola"
+          }
+        }
+      }
+    ]
+  },
+  "connection": {
+    "id": "V50-on-V34",
+    "type": "BEAM_ON_BEAM",
+    "receiving_beam_id": "V34",
+    "supported_beam_id": "V50",
+    "transfer_confirmed": true,
+    "transfer_source": {
+      "file": "VGESFS.LST",
+      "line": 953,
+      "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+    },
+    "suspension_applicable": true,
+    "applicability_source": {
+      "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+      "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+      "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+      "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+      "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa",
+      "norm": "NBR6118:2023 18.3.6; vigas nao penduradas com faces coincidentes"
+    },
+    "supported_geometry": {
+      "height_cm": 50,
+      "width_cm": 24,
+      "source": {
+        "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+        "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+        "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+        "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+        "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+      }
+    },
+    "placement": "INTERIOR",
+    "projected_axis_m": 4.89,
+    "axis_source": {
+      "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+      "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+      "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+      "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+      "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+    },
+    "reaction": {
+      "value": 123.19113729999998,
+      "unit": "kN",
+      "nature": "CHARACTERISTIC",
+      "is_total": true,
+      "total_source": {
+        "file": "VGESFS.LST",
+        "line": 953,
+        "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+      },
+      "combination": "VGESFS R.APOIO total terminalMAX/MIN V50",
+      "source": {
+        "file": "VGESFS.LST",
+        "line": 953,
+        "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+      },
+      "downward_sign": 1,
+      "supported_beam_id": "V50",
+      "receiving_beam_id": "V34"
+    }
+  },
+  "result": {
+    "verification": "SUSPENSION_REINFORCEMENT_CHECK",
+    "connection": {
+      "id": "V50-on-V34",
+      "type": "BEAM_ON_BEAM",
+      "receiving_beam_id": "V34",
+      "supported_beam_id": "V50",
+      "transfer_confirmed": true,
+      "transfer_source": {
+        "file": "VGESFS.LST",
+        "line": 953,
+        "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+      },
+      "suspension_applicable": true,
+      "applicability_source": {
+        "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+        "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+        "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+        "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+        "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa",
+        "norm": "NBR6118:2023 18.3.6; vigas nao penduradas com faces coincidentes"
+      },
+      "supported_geometry": {
+        "height_cm": 50,
+        "width_cm": 24,
+        "source": {
+          "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+          "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+          "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+          "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+          "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+        }
+      },
+      "placement": "INTERIOR",
+      "projected_axis_m": 4.89,
+      "axis_source": {
+        "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+        "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+        "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+        "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+        "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+      },
+      "reaction": {
+        "value": 123.19113729999998,
+        "unit": "kN",
+        "nature": "CHARACTERISTIC",
+        "is_total": true,
+        "total_source": {
+          "file": "VGESFS.LST",
+          "line": 953,
+          "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+        },
+        "combination": "VGESFS R.APOIO total terminalMAX/MIN V50",
+        "source": {
+          "file": "VGESFS.LST",
+          "line": 953,
+          "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+        },
+        "downward_sign": 1,
+        "supported_beam_id": "V50",
+        "receiving_beam_id": "V34"
+      }
+    },
+    "checks": {
+      "indirect_support_identification": {
+        "status": "PASS",
+        "passes": true,
+        "provenance": {
+          "id": "V50-on-V34",
+          "type": "BEAM_ON_BEAM",
+          "receiving_beam_id": "V34",
+          "supported_beam_id": "V50",
+          "transfer_confirmed": true,
+          "transfer_source": {
+            "file": "VGESFS.LST",
+            "line": 953,
+            "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+          },
+          "suspension_applicable": true,
+          "applicability_source": {
+            "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+            "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+            "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+            "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+            "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa",
+            "norm": "NBR6118:2023 18.3.6; vigas nao penduradas com faces coincidentes"
+          },
+          "supported_geometry": {
+            "height_cm": 50,
+            "width_cm": 24,
+            "source": {
+              "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+              "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+              "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+              "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+              "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+            }
+          },
+          "placement": "INTERIOR",
+          "projected_axis_m": 4.89,
+          "axis_source": {
+            "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+            "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+            "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+            "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+            "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+          },
+          "reaction": {
+            "value": 123.19113729999998,
+            "unit": "kN",
+            "nature": "CHARACTERISTIC",
+            "is_total": true,
+            "total_source": {
+              "file": "VGESFS.LST",
+              "line": 953,
+              "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+            },
+            "combination": "VGESFS R.APOIO total terminalMAX/MIN V50",
+            "source": {
+              "file": "VGESFS.LST",
+              "line": 953,
+              "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+            },
+            "downward_sign": 1,
+            "supported_beam_id": "V50",
+            "receiving_beam_id": "V34"
+          }
+        }
+      },
+      "total_support_reaction": {
+        "status": "PASS",
+        "passes": true,
+        "total_kn": 123.19113729999998,
+        "original_signed_kn": 123.19113729999998,
+        "downward_sign": 1,
+        "provenance": {
+          "value": 123.19113729999998,
+          "unit": "kN",
+          "nature": "CHARACTERISTIC",
+          "is_total": true,
+          "total_source": {
+            "file": "VGESFS.LST",
+            "line": 953,
+            "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+          },
+          "combination": "VGESFS R.APOIO total terminalMAX/MIN V50",
+          "source": {
+            "file": "VGESFS.LST",
+            "line": 953,
+            "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+          },
+          "downward_sign": 1,
+          "supported_beam_id": "V50",
+          "receiving_beam_id": "V34"
+        }
+      },
+      "reaction_nature": {
+        "status": "PASS",
+        "passes": true,
+        "nature": "CHARACTERISTIC"
+      },
+      "geometric_position": {
+        "status": "PASS",
+        "passes": true,
+        "provenance": {
+          "projected_axis_m": 4.89,
+          "source": {
+            "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+            "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+            "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+            "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+            "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+          }
+        }
+      },
+      "distribution_length": {
+        "status": "PASS",
+        "passes": true,
+        "length_cm": 50.0,
+        "rule": "engineer_confirmed_suspension_symmetric_distribution_v1"
+      },
+      "shear_diagram_coverage": {
+        "status": "PASS",
+        "passes": true,
+        "provenance": {
+          "status": "PASS",
+          "requested_interval_m": [
+            4.64,
+            5.14
+          ],
+          "series_coverage": [
+            {
+              "series_id": "Q MN.",
+              "sampled_domain_m": [
+                0.35,
+                8.655
+              ],
+              "check_interval_m": [
+                4.64,
+                5.14
+              ],
+              "uncovered_intervals_m": [],
+              "unresolved_queries": []
+            },
+            {
+              "series_id": "Q MX.",
+              "sampled_domain_m": [
+                0.35,
+                8.655
+              ],
+              "check_interval_m": [
+                4.64,
+                5.14
+              ],
+              "uncovered_intervals_m": [],
+              "unresolved_queries": []
+            }
+          ],
+          "governing": [
+            {
+              "series_id": "Q MN.",
+              "x_m": 5.14,
+              "section": null,
+              "Vsk_original_kn": -58.047438842293836,
+              "Vsk_abs_kn": 58.047438842293836,
+              "sign": -1,
+              "source_type": "linear_interpolation",
+              "provenance": {
+                "x_m": 5.14,
+                "x_decimal": "5.14",
+                "value_knm": -58.047438842293836,
+                "value_decimal": "-58.047438842293836876632054835921281966994621090600",
+                "provenance": {
+                  "quantity": "shear",
+                  "unit": "kN",
+                  "series_id": "Q MN.",
+                  "source": {
+                    "file": "VGESFS.LST",
+                    "line": 1560,
+                    "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                  },
+                  "discontinuities_m": []
+                },
+                "rule": {
+                  "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                  "author": "João Severgnini",
+                  "date": "2026-10-04",
+                  "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                  "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                  "decimal_precision": 50
+                },
+                "source_type": "linear_interpolation",
+                "segment_ids": [
+                  "SEG7"
+                ],
+                "base_points": [
+                  {
+                    "x_m": 4.5024999999999995,
+                    "value_knm": 11.79739995,
+                    "section": 7,
+                    "provenance": {
+                      "sample_index": 6,
+                      "series": {
+                        "file": "VGESFS.LST",
+                        "line": 1560,
+                        "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                      }
+                    }
+                  },
+                  {
+                    "x_m": 5.194583333333333,
+                    "value_knm": -64.02761785,
+                    "section": 8,
+                    "provenance": {
+                      "sample_index": 7,
+                      "series": {
+                        "file": "VGESFS.LST",
+                        "line": 1560,
+                        "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                      }
+                    }
+                  }
+                ],
+                "status": "resolved"
+              }
+            }
+          ],
+          "Vsk_abs_kn": 58.047438842293836,
+          "complete": true,
+          "rule": "engineer_confirmed_tqs_shear_domain_v1",
+          "provenance": {
+            "series": [
+              {
+                "quantity": "shear",
+                "unit": "kN",
+                "envelope": "Q MN.",
+                "positions": [
+                  0.35,
+                  1.0420833333333333,
+                  1.7341666666666664,
+                  2.42625,
+                  3.118333333333333,
+                  3.810416666666667,
+                  4.5024999999999995,
+                  5.194583333333333,
+                  5.886666666666666,
+                  6.57875,
+                  7.270833333333333,
+                  7.962916666666666,
+                  8.655
+                ],
+                "values": [
+                  168.93915955,
+                  164.6340402,
+                  107.6181771,
+                  80.9637024,
+                  50.357147749999996,
+                  28.2235387,
+                  11.79739995,
+                  -64.02761785,
+                  -83.5722713,
+                  -109.246081,
+                  -137.96975885,
+                  -165.1243727,
+                  -69.06823595
+                ],
+                "sections": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "provenance": {
+                  "file": "VGESFS.LST",
+                  "line": 1560,
+                  "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                }
+              },
+              {
+                "quantity": "shear",
+                "unit": "kN",
+                "envelope": "Q MX.",
+                "positions": [
+                  0.35,
+                  1.0420833333333333,
+                  1.7341666666666664,
+                  2.42625,
+                  3.118333333333333,
+                  3.810416666666667,
+                  4.5024999999999995,
+                  5.194583333333333,
+                  5.886666666666666,
+                  6.57875,
+                  7.270833333333333,
+                  7.962916666666666,
+                  8.655
+                ],
+                "values": [
+                  173.24427889999998,
+                  185.08090545,
+                  123.8579895,
+                  94.52629934999999,
+                  58.8006734,
+                  32.303105099999996,
+                  12.709418399999999,
+                  -57.143349549999996,
+                  -73.3341287,
+                  -95.4579311,
+                  -120.99444769999998,
+                  -147.71756895,
+                  -56.388237499999995
+                ],
+                "sections": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13
+                ],
+                "provenance": {
+                  "file": "VGESFS.LST",
+                  "line": 1564,
+                  "text": "Q MX. VAO= 1    17.666   18.873   12.630    9.639    5.996    3.294    1.296   -5.827   -7.478   -9.734  -12.338  -15.063   -5.750"
+                }
+              }
+            ]
+          },
+          "partial_results_only": false,
+          "intersection_requested": false
+        }
+      },
+      "suspension_component": {
+        "status": "PASS",
+        "passes": true,
+        "asw_per_s_cm2_m": 5.95013193159,
+        "rule": "engineer_confirmed_suspension_75_percent_reaction_v1",
+        "conversion": "cm2 / cm * 100 -> cm2/m"
+      },
+      "shear_calculated_component": {
+        "status": "PASS",
+        "passes": true
+      },
+      "minimum_component": {
+        "status": "PASS",
+        "passes": true
+      },
+      "total_required_rate": {
+        "status": "PASS",
+        "passes": true
+      },
+      "provided_stirrup_area": {
+        "status": "PASS",
+        "passes": true
+      },
+      "maximum_code_spacing": {
+        "status": "PASS",
+        "passes": true
+      },
+      "effective_legs": {
+        "status": "PASS",
+        "passes": true
+      },
+      "usual_practices": {
+        "status": "PASS",
+        "rule": "engineer_confirmed_suspension_usual_stirrup_practices_v1"
+      },
+      "drawing_coverage": {
+        "status": "PASS",
+        "passes": true
+      },
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 58.047438842293836,
+        "Vsd_kn": 81.26641437921137,
+        "VRd2_kn": 1041.8814,
+        "utilization": 0.0779996786382897,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      }
+    },
+    "subintervals": [
+      {
+        "interval_m": [
+          4.64,
+          5.14
+        ],
+        "checks": {
+          "drawing_coverage": {
+            "status": "PASS",
+            "passes": true
+          },
+          "independent_shear_reinforcement": {
+            "status": "PASS",
+            "passes": true,
+            "required_cm2_m": 5.135939906712381,
+            "provided_cm2_m": 6.234490621048945
+          },
+          "diagonal_compression": {
+            "status": "PASS",
+            "passes": true,
+            "Vsk_abs_kn": 58.047438842293836,
+            "Vsd_kn": 81.26641437921137,
+            "VRd2_kn": 1041.8814,
+            "utilization": 0.0779996786382897,
+            "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+          },
+          "maximum_code_spacing": {
+            "status": "PASS",
+            "passes": true,
+            "limit_cm": 26.921999999999997,
+            "drawn_cm": 20
+          },
+          "number_of_legs": {
+            "status": "PASS",
+            "reason": "WIDE_BEAM_OUTSIDE_USUAL_FOUR_LEGS",
+            "drawn_legs": 4,
+            "expected_usual_legs": null,
+            "rule": "engineer_confirmed_four_leg_stirrups_for_wide_beams_v1"
+          },
+          "stirrup_holder": {
+            "status": "PASS",
+            "passes": true,
+            "provenance": {
+              "passes": true,
+              "provenance": {
+                "detail": "7403 R01 V34 CorteA:quatro barras superiores nos quatro cantos dos dois aneis22cm sobrepostos; quatro ramos efetivos",
+                "longitudinal_mark": "N5 4diam10 C403; inicio147cm apos face do blocoP760, intervalo comum2,82-6,85m; cobre4,64-5,14m",
+                "scope": "Disposicao geometrica do porta-estribo na regiao de suspensao; nao e aprovacao de ancoragem das barras nem criterio interno de bitola"
+              }
+            }
+          },
+          "shear_calculated_component": {
+            "status": "PASS",
+            "passes": true
+          },
+          "minimum_component": {
+            "status": "PASS",
+            "passes": true
+          },
+          "total_required_rate": {
+            "status": "PASS",
+            "passes": true
+          },
+          "provided_stirrup_area": {
+            "status": "PASS",
+            "passes": true,
+            "provided_cm2_m": 6.234490621048945,
+            "required_cm2_m": 5.95013193159,
+            "margin_cm2_m": 0.28435868945894516
+          }
+        },
+        "overall_result": "PASS",
+        "piece": {
+          "id": "V34-N7-c20-local",
+          "diameter_mm": 6.3,
+          "spacing_cm": 20,
+          "legs": 4,
+          "interval_m": [
+            4.64,
+            5.14
+          ],
+          "source": {
+            "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+            "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+            "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+            "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+            "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+          },
+          "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+          "holder_compatibility": {
+            "passes": true,
+            "provenance": {
+              "detail": "7403 R01 V34 CorteA:quatro barras superiores nos quatro cantos dos dois aneis22cm sobrepostos; quatro ramos efetivos",
+              "longitudinal_mark": "N5 4diam10 C403; inicio147cm apos face do blocoP760, intervalo comum2,82-6,85m; cobre4,64-5,14m",
+              "scope": "Disposicao geometrica do porta-estribo na regiao de suspensao; nao e aprovacao de ancoragem das barras nem criterio interno de bitola"
+            }
+          }
+        },
+        "classification": {
+          "status": "PASS",
+          "classification": "CONVENTIONAL_SHEAR_STIRRUP",
+          "contributes_to_beam_shear": true,
+          "provenance": {
+            "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+            "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+            "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+            "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+            "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+          }
+        },
+        "independent_shear_check": {
+          "verification": "SHEAR_DRAWN_REGION_CHECK",
+          "region": {
+            "id": "V34-N7-c20-local",
+            "diameter_mm": 6.3,
+            "spacing_cm": 20,
+            "legs": 4,
+            "interval_m": [
+              4.64,
+              5.14
+            ],
+            "source": {
+              "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+              "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+              "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+              "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+              "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+            },
+            "physical_function": "CONVENTIONAL_SHEAR_STIRRUP",
+            "holder_compatibility": {
+              "passes": true,
+              "provenance": {
+                "detail": "7403 R01 V34 CorteA:quatro barras superiores nos quatro cantos dos dois aneis22cm sobrepostos; quatro ramos efetivos",
+                "longitudinal_mark": "N5 4diam10 C403; inicio147cm apos face do blocoP760, intervalo comum2,82-6,85m; cobre4,64-5,14m",
+                "scope": "Disposicao geometrica do porta-estribo na regiao de suspensao; nao e aprovacao de ancoragem das barras nem criterio interno de bitola"
+              }
+            }
+          },
+          "checks": {
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 58.047438842293836,
+              "Vsd_kn": 81.26641437921137,
+              "VRd2_kn": 1041.8814,
+              "utilization": 0.0779996786382897,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "shear_reinforcement": {
+              "status": "PASS",
+              "passes": true,
+              "required_cm2_m": 5.135939906712381,
+              "provided_cm2_m": 6.234490621048945
+            },
+            "maximum_code_spacing": {
+              "status": "PASS",
+              "passes": true,
+              "limit_cm": 26.921999999999997,
+              "drawn_cm": 20,
+              "provenance": {
+                "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+              }
+            },
+            "usual_minimum_spacing": {
+              "status": "PASS",
+              "reason": "STIRRUP_SPACING_BELOW_USUAL_LIMIT",
+              "limit_cm": 8,
+              "drawn_cm": 20,
+              "rule": "engineer_confirmed_usual_minimum_stirrup_spacing_v1"
+            },
+            "usual_diameter": {
+              "status": "PASS",
+              "reason": "LARGER_STIRRUP_DIAMETER_OUTSIDE_USUAL_SET",
+              "rule": "engineer_confirmed_usual_stirrup_diameters_v1"
+            },
+            "number_of_legs": {
+              "status": "PASS",
+              "reason": "WIDE_BEAM_OUTSIDE_USUAL_FOUR_LEGS",
+              "drawn_legs": 4,
+              "expected_usual_legs": null,
+              "rule": "engineer_confirmed_four_leg_stirrups_for_wide_beams_v1"
+            },
+            "stirrup_holder": {
+              "status": "PASS",
+              "passes": true,
+              "provenance": {
+                "passes": true,
+                "provenance": {
+                  "detail": "7403 R01 V34 CorteA:quatro barras superiores nos quatro cantos dos dois aneis22cm sobrepostos; quatro ramos efetivos",
+                  "longitudinal_mark": "N5 4diam10 C403; inicio147cm apos face do blocoP760, intervalo comum2,82-6,85m; cobre4,64-5,14m",
+                  "scope": "Disposicao geometrica do porta-estribo na regiao de suspensao; nao e aprovacao de ancoragem das barras nem criterio interno de bitola"
+                }
+              }
+            }
+          },
+          "overall_structural_result": "PASS",
+          "engineering_review_required": false,
+          "limitations": [],
+          "suspension_check_required": false,
+          "suspension_result": "NOT_EVALUATED",
+          "selected_solution": null,
+          "detailing_optimization": null,
+          "rule": "engineer_confirmed_refined_drawn_shear_region_check_v1",
+          "demand": {
+            "status": "PASS",
+            "requested_interval_m": [
+              4.64,
+              5.14
+            ],
+            "series_coverage": [
+              {
+                "series_id": "Q MN.",
+                "sampled_domain_m": [
+                  0.35,
+                  8.655
+                ],
+                "check_interval_m": [
+                  4.64,
+                  5.14
+                ],
+                "uncovered_intervals_m": [],
+                "unresolved_queries": []
+              },
+              {
+                "series_id": "Q MX.",
+                "sampled_domain_m": [
+                  0.35,
+                  8.655
+                ],
+                "check_interval_m": [
+                  4.64,
+                  5.14
+                ],
+                "uncovered_intervals_m": [],
+                "unresolved_queries": []
+              }
+            ],
+            "governing": [
+              {
+                "series_id": "Q MN.",
+                "x_m": 5.14,
+                "section": null,
+                "Vsk_original_kn": -58.047438842293836,
+                "Vsk_abs_kn": 58.047438842293836,
+                "sign": -1,
+                "source_type": "linear_interpolation",
+                "provenance": {
+                  "x_m": 5.14,
+                  "x_decimal": "5.14",
+                  "value_knm": -58.047438842293836,
+                  "value_decimal": "-58.047438842293836876632054835921281966994621090600",
+                  "provenance": {
+                    "quantity": "shear",
+                    "unit": "kN",
+                    "series_id": "Q MN.",
+                    "source": {
+                      "file": "VGESFS.LST",
+                      "line": 1560,
+                      "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                    },
+                    "discontinuities_m": []
+                  },
+                  "rule": {
+                    "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+                    "author": "João Severgnini",
+                    "date": "2026-10-04",
+                    "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+                    "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+                    "decimal_precision": 50
+                  },
+                  "source_type": "linear_interpolation",
+                  "segment_ids": [
+                    "SEG7"
+                  ],
+                  "base_points": [
+                    {
+                      "x_m": 4.5024999999999995,
+                      "value_knm": 11.79739995,
+                      "section": 7,
+                      "provenance": {
+                        "sample_index": 6,
+                        "series": {
+                          "file": "VGESFS.LST",
+                          "line": 1560,
+                          "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                        }
+                      }
+                    },
+                    {
+                      "x_m": 5.194583333333333,
+                      "value_knm": -64.02761785,
+                      "section": 8,
+                      "provenance": {
+                        "sample_index": 7,
+                        "series": {
+                          "file": "VGESFS.LST",
+                          "line": 1560,
+                          "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                        }
+                      }
+                    }
+                  ],
+                  "status": "resolved"
+                }
+              }
+            ],
+            "Vsk_abs_kn": 58.047438842293836,
+            "complete": true,
+            "rule": "engineer_confirmed_tqs_shear_domain_v1",
+            "provenance": {
+              "series": [
+                {
+                  "quantity": "shear",
+                  "unit": "kN",
+                  "envelope": "Q MN.",
+                  "positions": [
+                    0.35,
+                    1.0420833333333333,
+                    1.7341666666666664,
+                    2.42625,
+                    3.118333333333333,
+                    3.810416666666667,
+                    4.5024999999999995,
+                    5.194583333333333,
+                    5.886666666666666,
+                    6.57875,
+                    7.270833333333333,
+                    7.962916666666666,
+                    8.655
+                  ],
+                  "values": [
+                    168.93915955,
+                    164.6340402,
+                    107.6181771,
+                    80.9637024,
+                    50.357147749999996,
+                    28.2235387,
+                    11.79739995,
+                    -64.02761785,
+                    -83.5722713,
+                    -109.246081,
+                    -137.96975885,
+                    -165.1243727,
+                    -69.06823595
+                  ],
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "provenance": {
+                    "file": "VGESFS.LST",
+                    "line": 1560,
+                    "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                  }
+                },
+                {
+                  "quantity": "shear",
+                  "unit": "kN",
+                  "envelope": "Q MX.",
+                  "positions": [
+                    0.35,
+                    1.0420833333333333,
+                    1.7341666666666664,
+                    2.42625,
+                    3.118333333333333,
+                    3.810416666666667,
+                    4.5024999999999995,
+                    5.194583333333333,
+                    5.886666666666666,
+                    6.57875,
+                    7.270833333333333,
+                    7.962916666666666,
+                    8.655
+                  ],
+                  "values": [
+                    173.24427889999998,
+                    185.08090545,
+                    123.8579895,
+                    94.52629934999999,
+                    58.8006734,
+                    32.303105099999996,
+                    12.709418399999999,
+                    -57.143349549999996,
+                    -73.3341287,
+                    -95.4579311,
+                    -120.99444769999998,
+                    -147.71756895,
+                    -56.388237499999995
+                  ],
+                  "sections": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "provenance": {
+                    "file": "VGESFS.LST",
+                    "line": 1564,
+                    "text": "Q MX. VAO= 1    17.666   18.873   12.630    9.639    5.996    3.294    1.296   -5.827   -7.478   -9.734  -12.338  -15.063   -5.750"
+                  }
+                }
+              ]
+            },
+            "partial_results_only": false,
+            "intersection_requested": true
+          },
+          "physical_reinforcement_interval_m": [
+            4.64,
+            5.14
+          ],
+          "shear_search_interval_m": [
+            4.64,
+            5.14
+          ],
+          "provided": {
+            "Asw_cm2": 1.246898124209789,
+            "Asw_per_s_cm2_m": 6.234490621048945,
+            "diameter_mm": 6.3,
+            "spacing_cm": 20,
+            "legs": 4,
+            "area_unit_cm2": 0.31172453105244724,
+            "provenance": {
+              "bar": "Concretopy.Barra.area_cm2",
+              "geometry": {
+                "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+                "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+                "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+                "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+                "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+              }
+            }
+          },
+          "design": {
+            "status": "PASS",
+            "diagonal_compression": {
+              "status": "PASS",
+              "passes": true,
+              "Vsk_abs_kn": 58.047438842293836,
+              "Vsd_kn": 81.26641437921137,
+              "VRd2_kn": 1041.8814,
+              "utilization": 0.0779996786382897,
+              "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+            },
+            "diagnostics": [],
+            "units": {
+              "forces": "kN",
+              "Asw_per_s": "cm2/m",
+              "spacing": "cm",
+              "d": "cm"
+            },
+            "Vsk_abs_kn": 58.047438842293836,
+            "Vsd_kn": 81.26641437921137,
+            "VRd2_kn": 1041.8814,
+            "Vc_kn": 172.83721771063836,
+            "d_cm": 44.87,
+            "minimum_Asw_per_s_cm2_m": 5.135939906712381,
+            "provenance": {
+              "api": {
+                "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+                "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+                "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+              },
+              "minimum_call": {
+                "Vk_kn": 0,
+                "result": {
+                  "asw_por_s": 5.135939906712381,
+                  "vc": 172.83721771063836,
+                  "vrd2": 1041.8814,
+                  "asw_por_s_calculado": 0.0,
+                  "asw_por_s_minimo": 5.135939906712381
+                }
+              },
+              "effective_depth": {
+                "status": "PASS",
+                "d_cm": 44.87,
+                "selected": {
+                  "origin": "right_superior",
+                  "configuration": {
+                    "count": 6,
+                    "phi": 20,
+                    "layers": [
+                      6
+                    ]
+                  },
+                  "d_cm": 44.87,
+                  "As_cm2": 18.84955592153876,
+                  "layers": 1
+                }
+              },
+              "physical_section": {
+                "bw": 40,
+                "h": 50,
+                "cobrimento": 3.5,
+                "diametro_estribo_mm": 6.3
+              },
+              "stirrup_diameter_mm": 6.3,
+              "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+              "maximum_spacing_api": {
+                "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+                "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+                "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+                "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+              },
+              "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+            },
+            "concretopy": {
+              "asw_por_s": 5.135939906712381,
+              "vc": 172.83721771063836,
+              "vrd2": 1041.8814,
+              "asw_por_s_calculado": 0.0,
+              "asw_por_s_minimo": 5.135939906712381
+            },
+            "required_Asw_per_s_cm2_m": 5.135939906712381,
+            "governing_Asw_per_s_cm2_m": 5.135939906712381,
+            "required_by_shear_separately_cm2_m": null,
+            "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+            "requirement_governed_by": "MINIMUM",
+            "maximum_spacing_code_cm": 26.921999999999997
+          }
+        },
+        "provided": {
+          "Asw_cm2": 1.246898124209789,
+          "Asw_per_s_cm2_m": 6.234490621048945,
+          "diameter_mm": 6.3,
+          "spacing_cm": 20,
+          "legs": 4,
+          "area_unit_cm2": 0.31172453105244724,
+          "provenance": {
+            "bar": "Concretopy.Barra.area_cm2",
+            "geometry": {
+              "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+              "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+              "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+              "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+              "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+            }
+          }
+        },
+        "usual_checks": {
+          "usual_diameter": {
+            "status": "PASS",
+            "reason": "LARGER_STIRRUP_DIAMETER_OUTSIDE_USUAL_SET",
+            "rule": "engineer_confirmed_usual_stirrup_diameters_v1"
+          },
+          "usual_minimum_spacing": {
+            "status": "PASS",
+            "reason": "STIRRUP_SPACING_BELOW_USUAL_LIMIT",
+            "limit_cm": 8,
+            "drawn_cm": 20,
+            "rule": "engineer_confirmed_usual_minimum_stirrup_spacing_v1"
+          }
+        },
+        "regional_shear_design": {
+          "status": "PASS",
+          "diagonal_compression": {
+            "status": "PASS",
+            "passes": true,
+            "Vsk_abs_kn": 58.047438842293836,
+            "Vsd_kn": 81.26641437921137,
+            "VRd2_kn": 1041.8814,
+            "utilization": 0.0779996786382897,
+            "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+          },
+          "diagnostics": [],
+          "units": {
+            "forces": "kN",
+            "Asw_per_s": "cm2/m",
+            "spacing": "cm",
+            "d": "cm"
+          },
+          "Vsk_abs_kn": 58.047438842293836,
+          "Vsd_kn": 81.26641437921137,
+          "VRd2_kn": 1041.8814,
+          "Vc_kn": 172.83721771063836,
+          "d_cm": 44.87,
+          "minimum_Asw_per_s_cm2_m": 5.135939906712381,
+          "provenance": {
+            "api": {
+              "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+              "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+              "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+              "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+            },
+            "minimum_call": {
+              "Vk_kn": 0,
+              "result": {
+                "asw_por_s": 5.135939906712381,
+                "vc": 172.83721771063836,
+                "vrd2": 1041.8814,
+                "asw_por_s_calculado": 0.0,
+                "asw_por_s_minimo": 5.135939906712381
+              }
+            },
+            "effective_depth": {
+              "status": "PASS",
+              "d_cm": 44.87,
+              "selected": {
+                "origin": "right_superior",
+                "configuration": {
+                  "count": 6,
+                  "phi": 20,
+                  "layers": [
+                    6
+                  ]
+                },
+                "d_cm": 44.87,
+                "As_cm2": 18.84955592153876,
+                "layers": 1
+              }
+            },
+            "physical_section": {
+              "bw": 40,
+              "h": 50,
+              "cobrimento": 3.5,
+              "diametro_estribo_mm": 6.3
+            },
+            "stirrup_diameter_mm": 6.3,
+            "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+            "maximum_spacing_api": {
+              "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+              "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+              "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+              "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+            },
+            "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+          },
+          "concretopy": {
+            "asw_por_s": 5.135939906712381,
+            "vc": 172.83721771063836,
+            "vrd2": 1041.8814,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 5.135939906712381
+          },
+          "required_Asw_per_s_cm2_m": 5.135939906712381,
+          "governing_Asw_per_s_cm2_m": 5.135939906712381,
+          "required_by_shear_separately_cm2_m": null,
+          "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+          "requirement_governed_by": "MINIMUM",
+          "maximum_spacing_code_cm": 26.921999999999997
+        },
+        "asw_per_s_suspension": 5.95013193159,
+        "asw_per_s_shear_calculated": 0.0,
+        "asw_per_s_shear_minimum": 5.135939906712381,
+        "asw_per_s_total_required": 5.95013193159,
+        "combination_provenance": {
+          "rule": "engineer_confirmed_suspension_total_minimum_governance_v1",
+          "expression": "max(suspension + shear_calculated, shear_minimum)"
+        }
+      }
+    ],
+    "excluded_reinforcement": [],
+    "diagnostics": [],
+    "overall_result": "PASS",
+    "suspension_passes": true,
+    "selected_solution": null,
+    "detailing_optimization": null,
+    "provenance": {
+      "rules": {
+        "reaction": "engineer_confirmed_suspension_75_percent_reaction_v1",
+        "distribution": "engineer_confirmed_suspension_symmetric_distribution_v1",
+        "shear": "engineer_confirmed_suspension_shear_without_minimum_v1",
+        "minimum": "engineer_confirmed_suspension_total_minimum_governance_v1",
+        "usual": "engineer_confirmed_suspension_usual_stirrup_practices_v1"
+      },
+      "context": {
+        "section": {
+          "bw": 40,
+          "h": 50,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "fck_mpa": 35,
+        "fyk_mpa": 500,
+        "gamma_f": 1.4,
+        "gamma_c": 1.4,
+        "gamma_s": 1.15,
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 44.87,
+          "selected": {
+            "origin": "right_superior",
+            "configuration": {
+              "count": 6,
+              "phi": 20,
+              "layers": [
+                6
+              ]
+            },
+            "d_cm": 44.87,
+            "As_cm2": 18.84955592153876,
+            "layers": 1
+          }
+        }
+      }
+    },
+    "suspension": {
+      "reaction": {
+        "value": 123.19113729999998,
+        "unit": "kN",
+        "nature": "CHARACTERISTIC",
+        "is_total": true,
+        "total_source": {
+          "file": "VGESFS.LST",
+          "line": 953,
+          "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+        },
+        "combination": "VGESFS R.APOIO total terminalMAX/MIN V50",
+        "source": {
+          "file": "VGESFS.LST",
+          "line": 953,
+          "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+        },
+        "downward_sign": 1,
+        "supported_beam_id": "V50",
+        "receiving_beam_id": "V34"
+      },
+      "total_support_reaction": {
+        "status": "PASS",
+        "passes": true,
+        "total_kn": 123.19113729999998,
+        "original_signed_kn": 123.19113729999998,
+        "downward_sign": 1,
+        "provenance": {
+          "value": 123.19113729999998,
+          "unit": "kN",
+          "nature": "CHARACTERISTIC",
+          "is_total": true,
+          "total_source": {
+            "file": "VGESFS.LST",
+            "line": 953,
+            "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+          },
+          "combination": "VGESFS R.APOIO total terminalMAX/MIN V50",
+          "source": {
+            "file": "VGESFS.LST",
+            "line": 953,
+            "text": "         1   12.562  11.439    0.40    0.05    2. V34        0.00   0.00   0.00   0.00   0.00     0   0.   0.   0.   0.   0.   0. "
+          },
+          "downward_sign": 1,
+          "supported_beam_id": "V50",
+          "receiving_beam_id": "V34"
+        }
+      },
+      "reaction_nature": {
+        "status": "PASS",
+        "passes": true,
+        "nature": "CHARACTERISTIC"
+      },
+      "suspension_component": {
+        "status": "PASS",
+        "passes": true,
+        "area_cm2": 2.975065965795,
+        "rule": "engineer_confirmed_suspension_75_percent_reaction_v1"
+      },
+      "as_suspension_cm2": 2.975065965795,
+      "total_characteristic_kn": 123.19113729999998,
+      "total_design_kn": 172.46759221999997,
+      "considered_design_kn": 129.350694165,
+      "gamma_f_applied": 1.4,
+      "fyd_mpa": 434.7826086956522,
+      "fyd_kn_cm2": 43.47826086956522,
+      "provenance": {
+        "rule": "engineer_confirmed_suspension_75_percent_reaction_v1",
+        "steel_api": {
+          "interface": "concretopy.materiais.fyd",
+          "signature": "(self, gamma_s: 'float' = 1.15) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\materiais.py",
+          "sha256": "f259b71928f85c61792a32b3303b902f2ff66136470981839d3ee0c528f4100f"
+        },
+        "conversion": "1 MPa = 0.1 kN/cm2; area = considered_design_kn / fyd_kn_cm2"
+      }
+    },
+    "distribution": {
+      "geometric_position": {
+        "status": "PASS",
+        "passes": true,
+        "provenance": {
+          "projected_axis_m": 4.89,
+          "source": {
+            "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+            "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+            "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+            "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+            "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+          }
+        }
+      },
+      "distribution_length": {
+        "status": "PASS",
+        "passes": true,
+        "length_cm": 50.0,
+        "rule": "engineer_confirmed_suspension_symmetric_distribution_v1"
+      },
+      "interval_m": [
+        4.64,
+        5.14
+      ],
+      "length_cm": 50.0,
+      "placement": "INTERIOR",
+      "rule": "engineer_confirmed_suspension_symmetric_distribution_v1",
+      "height_of_receiving_beam_cm": 50.0,
+      "provenance": {
+        "projected_axis_m": 4.89,
+        "source": {
+          "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+          "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+          "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+          "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+          "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+        }
+      }
+    },
+    "physical_geometry": {
+      "status": "PASS",
+      "passes": true,
+      "physical_domain_m": [
+        4.64,
+        5.14
+      ],
+      "span_id": 1,
+      "provenance": {
+        "form": "7202 R03; cota427cm entre face inferiorV50 e face superiorV15; face superiorV15 coincide extremoN doP760(40x100); +12cm meia larguraV50 +50cm ate eixoP760 =>489cm",
+        "direction": "Eixo daV34 desdeP760 paraP747; projecao do eixoV50=4,89m",
+        "detail": "7403 V34 N7 quatro ramos6,3c20 nesta regiao; faixa iniciada aposN7c10 de115cm desdefacebloco1,35m:2,50-5,84m",
+        "levels": "V50 junto aV34 h50 e V34h50; tops9,18m/fundos8,68m coincidentes; alto87 daV50 e no outro extremo",
+        "scope": "Subtrecho fisico local4,64-5,14m; fora dos apoios e das mudancas de faixa"
+      }
+    },
+    "shear_demand": {
+      "status": "PASS",
+      "requested_interval_m": [
+        4.64,
+        5.14
+      ],
+      "series_coverage": [
+        {
+          "series_id": "Q MN.",
+          "sampled_domain_m": [
+            0.35,
+            8.655
+          ],
+          "check_interval_m": [
+            4.64,
+            5.14
+          ],
+          "uncovered_intervals_m": [],
+          "unresolved_queries": []
+        },
+        {
+          "series_id": "Q MX.",
+          "sampled_domain_m": [
+            0.35,
+            8.655
+          ],
+          "check_interval_m": [
+            4.64,
+            5.14
+          ],
+          "uncovered_intervals_m": [],
+          "unresolved_queries": []
+        }
+      ],
+      "governing": [
+        {
+          "series_id": "Q MN.",
+          "x_m": 5.14,
+          "section": null,
+          "Vsk_original_kn": -58.047438842293836,
+          "Vsk_abs_kn": 58.047438842293836,
+          "sign": -1,
+          "source_type": "linear_interpolation",
+          "provenance": {
+            "x_m": 5.14,
+            "x_decimal": "5.14",
+            "value_knm": -58.047438842293836,
+            "value_decimal": "-58.047438842293836876632054835921281966994621090600",
+            "provenance": {
+              "quantity": "shear",
+              "unit": "kN",
+              "series_id": "Q MN.",
+              "source": {
+                "file": "VGESFS.LST",
+                "line": 1560,
+                "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+              },
+              "discontinuities_m": []
+            },
+            "rule": {
+              "id": "engineer_confirmed_tqs_linear_interpolation_v1",
+              "author": "João Severgnini",
+              "date": "2026-10-04",
+              "source": "Decisão explícita do engenheiro na conversa: interpolação linear entre pontos consecutivos; sem extrapolação.",
+              "reference": ".agents/skills/reinforcement-review/references/tqs-beam-data.md",
+              "decimal_precision": 50
+            },
+            "source_type": "linear_interpolation",
+            "segment_ids": [
+              "SEG7"
+            ],
+            "base_points": [
+              {
+                "x_m": 4.5024999999999995,
+                "value_knm": 11.79739995,
+                "section": 7,
+                "provenance": {
+                  "sample_index": 6,
+                  "series": {
+                    "file": "VGESFS.LST",
+                    "line": 1560,
+                    "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                  }
+                }
+              },
+              {
+                "x_m": 5.194583333333333,
+                "value_knm": -64.02761785,
+                "section": 8,
+                "provenance": {
+                  "sample_index": 7,
+                  "series": {
+                    "file": "VGESFS.LST",
+                    "line": 1560,
+                    "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+                  }
+                }
+              }
+            ],
+            "status": "resolved"
+          }
+        }
+      ],
+      "Vsk_abs_kn": 58.047438842293836,
+      "complete": true,
+      "rule": "engineer_confirmed_tqs_shear_domain_v1",
+      "provenance": {
+        "series": [
+          {
+            "quantity": "shear",
+            "unit": "kN",
+            "envelope": "Q MN.",
+            "positions": [
+              0.35,
+              1.0420833333333333,
+              1.7341666666666664,
+              2.42625,
+              3.118333333333333,
+              3.810416666666667,
+              4.5024999999999995,
+              5.194583333333333,
+              5.886666666666666,
+              6.57875,
+              7.270833333333333,
+              7.962916666666666,
+              8.655
+            ],
+            "values": [
+              168.93915955,
+              164.6340402,
+              107.6181771,
+              80.9637024,
+              50.357147749999996,
+              28.2235387,
+              11.79739995,
+              -64.02761785,
+              -83.5722713,
+              -109.246081,
+              -137.96975885,
+              -165.1243727,
+              -69.06823595
+            ],
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "provenance": {
+              "file": "VGESFS.LST",
+              "line": 1560,
+              "text": "Q MN. VAO= 1    17.227   16.788   10.974    8.256    5.135    2.878    1.203   -6.529   -8.522  -11.140  -14.069  -16.838   -7.043"
+            }
+          },
+          {
+            "quantity": "shear",
+            "unit": "kN",
+            "envelope": "Q MX.",
+            "positions": [
+              0.35,
+              1.0420833333333333,
+              1.7341666666666664,
+              2.42625,
+              3.118333333333333,
+              3.810416666666667,
+              4.5024999999999995,
+              5.194583333333333,
+              5.886666666666666,
+              6.57875,
+              7.270833333333333,
+              7.962916666666666,
+              8.655
+            ],
+            "values": [
+              173.24427889999998,
+              185.08090545,
+              123.8579895,
+              94.52629934999999,
+              58.8006734,
+              32.303105099999996,
+              12.709418399999999,
+              -57.143349549999996,
+              -73.3341287,
+              -95.4579311,
+              -120.99444769999998,
+              -147.71756895,
+              -56.388237499999995
+            ],
+            "sections": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "provenance": {
+              "file": "VGESFS.LST",
+              "line": 1564,
+              "text": "Q MX. VAO= 1    17.666   18.873   12.630    9.639    5.996    3.294    1.296   -5.827   -7.478   -9.734  -12.338  -15.063   -5.750"
+            }
+          }
+        ]
+      },
+      "partial_results_only": false,
+      "intersection_requested": false
+    },
+    "asw_per_s_suspension": 5.95013193159,
+    "regional_shear_design": {
+      "status": "PASS",
+      "diagonal_compression": {
+        "status": "PASS",
+        "passes": true,
+        "Vsk_abs_kn": 58.047438842293836,
+        "Vsd_kn": 81.26641437921137,
+        "VRd2_kn": 1041.8814,
+        "utilization": 0.0779996786382897,
+        "criterion": "strict VRd2 > Vsd; Concretopy throws at equality"
+      },
+      "diagnostics": [],
+      "units": {
+        "forces": "kN",
+        "Asw_per_s": "cm2/m",
+        "spacing": "cm",
+        "d": "cm"
+      },
+      "Vsk_abs_kn": 58.047438842293836,
+      "Vsd_kn": 81.26641437921137,
+      "VRd2_kn": 1041.8814,
+      "Vc_kn": 172.83721771063836,
+      "d_cm": 44.87,
+      "minimum_Asw_per_s_cm2_m": 5.135939906712381,
+      "provenance": {
+        "api": {
+          "interface": "concretopy.verificacoes.cortante.dimensionar_cortante_viga",
+          "signature": "(secao: 'SecaoRetangular', concreto: 'Concreto', aco: 'Aco', vk: 'float', alfa_graus: 'float' = 90.0, nk: 'float' = 0, mk: 'float' = 0, gamma_f: 'float' = 1.4, gamma_c: 'float' = 1.4, gamma_s: 'float' = 1.15, diametro_barra_mm: 'float' = 12.5) -> 'ResultadoCortante'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\verificacoes\\cortante.py",
+          "sha256": "eac27b95b12ba48c72c5d501d2ee8e40a2ede92ec57b1512ddc5513b866b8853"
+        },
+        "minimum_call": {
+          "Vk_kn": 0,
+          "result": {
+            "asw_por_s": 5.135939906712381,
+            "vc": 172.83721771063836,
+            "vrd2": 1041.8814,
+            "asw_por_s_calculado": 0.0,
+            "asw_por_s_minimo": 5.135939906712381
+          }
+        },
+        "effective_depth": {
+          "status": "PASS",
+          "d_cm": 44.87,
+          "selected": {
+            "origin": "right_superior",
+            "configuration": {
+              "count": 6,
+              "phi": 20,
+              "layers": [
+                6
+              ]
+            },
+            "d_cm": 44.87,
+            "As_cm2": 18.84955592153876,
+            "layers": 1
+          }
+        },
+        "physical_section": {
+          "bw": 40,
+          "h": 50,
+          "cobrimento": 3.5,
+          "diametro_estribo_mm": 6.3
+        },
+        "stirrup_diameter_mm": 6.3,
+        "explicit_depth_adapter": "SecaoRetangular subtype; original bw/h/cover retained; nk=mk=0; no equivalent diameter",
+        "maximum_spacing_api": {
+          "interface": "concretopy.normas.nbr6118.espacamento_max_estribo_vigas_cm",
+          "signature": "(viga: 'VigaRetangular', vd_kn: 'float', diametro_barra_long_mm: 'float' = 12.5) -> 'float'",
+          "file": "\\\\srvmaster\\PUBLICO\\Joao Severgnini\\Simon\\concretopy\\concretopy\\normas\\nbr6118.py",
+          "sha256": "35450d7d454e04f0910a34a109f276190d729aad36cb34494739ccfb3ef704c8"
+        },
+        "maximum_spacing_capacity_basis": "same VRd2 and effective d as current shear call, not VigaRetangular default depth/gamma_c"
+      },
+      "concretopy": {
+        "asw_por_s": 5.135939906712381,
+        "vc": 172.83721771063836,
+        "vrd2": 1041.8814,
+        "asw_por_s_calculado": 0.0,
+        "asw_por_s_minimo": 5.135939906712381
+      },
+      "required_Asw_per_s_cm2_m": 5.135939906712381,
+      "governing_Asw_per_s_cm2_m": 5.135939906712381,
+      "required_by_shear_separately_cm2_m": null,
+      "required_components_note": "API returns governing value only; minimum obtained by independent zero-Vk call",
+      "requirement_governed_by": "MINIMUM",
+      "maximum_spacing_code_cm": 26.921999999999997
+    },
+    "asw_per_s_shear_calculated": 0.0,
+    "asw_per_s_shear_minimum": 5.135939906712381,
+    "asw_per_s_total_required": 5.95013193159,
+    "engineering_review_required": false
+  }
+}

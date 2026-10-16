@@ -1,0 +1,1348 @@
+{
+  "scope": "audit of existing official engine results, no recalculation",
+  "rows": [
+    {
+      "beam_id": "V1",
+      "model_name": "V1",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 9.492755395683451,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V1/spans/model_name=V1/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V2",
+      "model_name": "V2",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 8.985,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V2/spans/model_name=V2/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V2",
+      "model_name": "V2",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 8.366,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V2/spans/model_name=V2/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V2",
+      "model_name": "V2",
+      "span_token": "3",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 10.619111183780245,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V2/spans/model_name=V2/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V4",
+      "model_name": "V4",
+      "span_token": "1",
+      "provided_cm2_m": 6.234490621048945,
+      "required_C35_C40_cm2_m": [
+        7.212267556845207,
+        6.295767101420589
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Configuração transversal variável: localizar a faixa real do pico"
+      ],
+      "Vk_tf": 21.81238220757819,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 4,
+        "provided_cm2_m": 6.234490621048945
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V4/spans/model_name=V4/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V15",
+      "model_name": "V15",
+      "span_token": "2",
+      "provided_cm2_m": 6.234490621048945,
+      "required_C35_C40_cm2_m": [
+        8.314975581317764,
+        7.398475125893146
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Configuração transversal variável: localizar a faixa real do pico"
+      ],
+      "Vk_tf": 23.22258823529412,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 4,
+        "provided_cm2_m": 6.234490621048945
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V15/spans/model_name=V15/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V15",
+      "model_name": "V15",
+      "span_token": "3",
+      "provided_cm2_m": 6.234490621048945,
+      "required_C35_C40_cm2_m": [
+        7.891990177493848,
+        6.975489722069231
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Configuração transversal variável: localizar a faixa real do pico"
+      ],
+      "Vk_tf": 20.659662337662336,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 4,
+        "provided_cm2_m": 6.234490621048945
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V15/spans/model_name=V15/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V15",
+      "model_name": "V15",
+      "span_token": "4",
+      "provided_cm2_m": 6.234490621048945,
+      "required_C35_C40_cm2_m": [
+        7.473699337698786,
+        6.557198882274168
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Configuração transversal variável: localizar a faixa real do pico"
+      ],
+      "Vk_tf": 20.172415584415585,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 4,
+        "provided_cm2_m": 6.234490621048945
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V15/spans/model_name=V15/span_token=4/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V21",
+      "model_name": "V21",
+      "span_token": "1",
+      "provided_cm2_m": 5.913586171463141,
+      "required_C35_C40_cm2_m": [
+        8.27774635523954,
+        7.590371013671077
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Compatibilizar bitola e condições de apoio/carga e redução do cortante"
+      ],
+      "Vk_tf": 19.951867198206052,
+      "stirrup": {
+        "diameter_mm": 8,
+        "spacing_cm": 17,
+        "legs": 2,
+        "provided_cm2_m": 5.913586171463141
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V21/spans/model_name=V21/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V21",
+      "model_name": "V21",
+      "span_token": "5",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Compatibilizar bitola e condições de apoio/carga e redução do cortante",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 9.470681481481481,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V21/spans/model_name=V21/span_token=5/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V21",
+      "model_name": "V21",
+      "span_token": "6",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Compatibilizar bitola e condições de apoio/carga e redução do cortante",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 10.41549940546968,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V21/spans/model_name=V21/span_token=6/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V22",
+      "model_name": "V22",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 11.021637704540217,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V22/spans/model_name=V22/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V22",
+      "model_name": "V22",
+      "span_token": "3",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 13.95572077922078,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V22/spans/model_name=V22/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V25",
+      "model_name": "V25",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 10.555262816353016,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V25/spans/model_name=V25/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V25",
+      "model_name": "V25",
+      "span_token": "3",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 5.765,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V25/spans/model_name=V25/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V25",
+      "model_name": "V25",
+      "span_token": "4",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 8.766,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V25/spans/model_name=V25/span_token=4/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V25",
+      "model_name": "V25",
+      "span_token": "5",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 3.6439999999999997,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V25/spans/model_name=V25/span_token=5/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V43",
+      "model_name": "V43",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 10.099,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V43/spans/model_name=V43/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V43",
+      "model_name": "V43",
+      "span_token": "3",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 6.778,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V43/spans/model_name=V43/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V43",
+      "model_name": "V43",
+      "span_token": "4",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 8.614,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V43/spans/model_name=V43/span_token=4/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V43",
+      "model_name": "V43",
+      "span_token": "5",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 4.345,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V43/spans/model_name=V43/span_token=5/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V5",
+      "model_name": "V5",
+      "span_token": "1",
+      "provided_cm2_m": 13.089969389957473,
+      "required_C35_C40_cm2_m": [
+        13.671974461014264,
+        13.236636744687571
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta"
+      ],
+      "Vk_tf": 21.178999999999984,
+      "stirrup": {
+        "diameter_mm": 10,
+        "spacing_cm": 12,
+        "legs": 2,
+        "provided_cm2_m": 13.089969389957473
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V5/spans/model_name=V5/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V18",
+      "model_name": "V18",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        9.069275907415216,
+        8.381900565846754
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [],
+      "Vk_tf": 21.04,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V18/spans/model_name=V18/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V18",
+      "model_name": "V18",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        9.420370636311043,
+        8.73299529474258
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [],
+      "Vk_tf": 21.489,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V18/spans/model_name=V18/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V19",
+      "model_name": "V19",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 12.492,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V19/spans/model_name=V19/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V20",
+      "model_name": "V20",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 12.614,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V20/spans/model_name=V20/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V33",
+      "model_name": "V33",
+      "span_token": "1",
+      "provided_cm2_m": 6.702064327658226,
+      "required_C35_C40_cm2_m": [
+        10.40341943356652,
+        9.716044091998059
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Cobertura física dos estribos divergente entre forma e detalhe"
+      ],
+      "Vk_tf": 22.66,
+      "stirrup": {
+        "diameter_mm": 8,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 6.702064327658226
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V33/spans/model_name=V33/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V35",
+      "model_name": "V35",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        8.69576741992221,
+        8.008392078353747
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta"
+      ],
+      "Vk_tf": 20.56233600483896,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V35/spans/model_name=V35/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V35",
+      "model_name": "V35",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        7.226413771344384,
+        6.539038429775921
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta"
+      ],
+      "Vk_tf": 18.766519816197587,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V35/spans/model_name=V35/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V36",
+      "model_name": "V36",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        10.191232736071958,
+        9.503857394503497
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta"
+      ],
+      "Vk_tf": 22.575,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V36/spans/model_name=V36/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V37",
+      "model_name": "V37",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        7.128480546347442,
+        6.441105204778978
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Configuração transversal variável: localizar a faixa real do pico"
+      ],
+      "Vk_tf": 18.558,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V37/spans/model_name=V37/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V45",
+      "model_name": "V45",
+      "span_token": "1",
+      "provided_cm2_m": 3.1172453105244724,
+      "required_C35_C40_cm2_m": [
+        3.0815639440274287,
+        3.3684684344212212
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 5.695,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 2,
+        "provided_cm2_m": 3.1172453105244724
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V45/spans/model_name=V45/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V46",
+      "model_name": "V46",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 12.017,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V46/spans/model_name=V46/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V47",
+      "model_name": "V47",
+      "span_token": "1",
+      "provided_cm2_m": 10.05309649148734,
+      "required_C35_C40_cm2_m": [
+        15.248859708276925,
+        14.561484366708461
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta"
+      ],
+      "Vk_tf": 28.83314858096828,
+      "stirrup": {
+        "diameter_mm": 8,
+        "spacing_cm": 10,
+        "legs": 2,
+        "provided_cm2_m": 10.05309649148734
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V47/spans/model_name=V47/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V48",
+      "model_name": "V48",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        9.076935231068644,
+        8.389559889500182
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "SHEAR"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta"
+      ],
+      "Vk_tf": 21.049795180722892,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V48/spans/model_name=V48/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V23",
+      "model_name": "V23",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 6.082,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V23/spans/model_name=V23/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V23",
+      "model_name": "V23",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 8.788,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V23/spans/model_name=V23/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V24",
+      "model_name": "V23",
+      "span_token": "3",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 10.904,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V24/spans/model_name=V23/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V24",
+      "model_name": "V24",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 6.402302925989673,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V24/spans/model_name=V24/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V24",
+      "model_name": "V24",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 8.557409861325114,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V24/spans/model_name=V24/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V24",
+      "model_name": "V24",
+      "span_token": "3",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 1.856131147540984,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V24/spans/model_name=V24/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V42",
+      "model_name": "V42",
+      "span_token": "1",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 6.477,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V42/spans/model_name=V42/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V42",
+      "model_name": "V42",
+      "span_token": "2",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 3.2043564204719583,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V42/spans/model_name=V42/span_token=2/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V42",
+      "model_name": "V42",
+      "span_token": "3",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 7.253110210696921,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V42/spans/model_name=V42/span_token=3/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V42",
+      "model_name": "V42",
+      "span_token": "4",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 11.07601317233809,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V42/spans/model_name=V42/span_token=4/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V42",
+      "model_name": "V42",
+      "span_token": "5",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 7.0009999999999994,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V42/spans/model_name=V42/span_token=5/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V42",
+      "model_name": "V42",
+      "span_token": "6",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 7.929,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V42/spans/model_name=V42/span_token=6/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V42",
+      "model_name": "V42",
+      "span_token": "7",
+      "provided_cm2_m": 4.156327080699296,
+      "required_C35_C40_cm2_m": [
+        3.851954930034286,
+        4.210585543026527
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 1.789,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 15,
+        "legs": 2,
+        "provided_cm2_m": 4.156327080699296
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V42/spans/model_name=V42/span_token=7/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V49",
+      "model_name": "V49",
+      "span_token": "1",
+      "provided_cm2_m": 3.1172453105244724,
+      "required_C35_C40_cm2_m": [
+        3.2317748474362014,
+        3.3684684344212212
+      ],
+      "cause_C35_C40": [
+        "SHEAR",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Configuração transversal variável: localizar a faixa real do pico",
+        "Geometria/transição local pendente"
+      ],
+      "Vk_tf": 11.783999999999988,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 2,
+        "provided_cm2_m": 3.1172453105244724
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V49/spans/model_name=V49/span_token=1/shear/queries/scope=between_model_faces"
+    },
+    {
+      "beam_id": "V50",
+      "model_name": "V50",
+      "span_token": "1",
+      "provided_cm2_m": 3.1172453105244724,
+      "required_C35_C40_cm2_m": [
+        3.0815639440274287,
+        3.3684684344212212
+      ],
+      "cause_C35_C40": [
+        "ATENDE",
+        "MINIMUM"
+      ],
+      "dependencies": [
+        "Altura útil composta pendente; resultado com d externo não é conclusão da seção composta",
+        "Configuração transversal variável: localizar a faixa real do pico",
+        "Geometria/transição local pendente",
+        "Alerta exclusivo do mínimo em C40; confirmar concreto aplicável, sem reprovar C35 por este cenário"
+      ],
+      "Vk_tf": 11.25,
+      "stirrup": {
+        "diameter_mm": 6.3,
+        "spacing_cm": 20,
+        "legs": 2,
+        "provided_cm2_m": 3.1172453105244724
+      },
+      "origin": "Concretopy archived dimensionar_cortante_viga results; query between_model_faces; no recalculation",
+      "raw_path": "beam_id=V50/spans/model_name=V50/span_token=1/shear/queries/scope=between_model_faces"
+    }
+  ]
+}
