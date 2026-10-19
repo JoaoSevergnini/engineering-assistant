@@ -1,0 +1,19 @@
+{
+  "source_pdf_sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+  "reviewer": "Codex",
+  "independent_engineer_validation": false,
+  "method": "Abertura e comparação das 15 ampliações original/sobreposição, mapa de aberturas e detalhe construtivo da prancha.",
+  "inspected_images": ["O003_N6.png", "O004_N6.png", "O005_N19.png", "O017_N8.png", "O022_N16.png", "O023_N8.png", "O024_N16.png", "O025_N20.png", "O038_N22.png", "O039_N21.png", "O040_N21.png", "O045_N5.png", "O046_N5.png", "O054_N37.png", "O059_N38.png"],
+  "observations": [
+    {"representations": ["O003", "O004", "O005"], "finding": "Pares verticais em lados opostos dos contornos H06/H07/H09 são coerentes com os grupos reconstruídos e com o destino dos líderes. Quantidade/camadas de cada grupo dependem da convenção confirmada, não da contagem dos traços."},
+    {"representations": ["O017", "O022", "O024", "O025", "O038"], "finding": "Os grupos singulares estão junto às bordas indicadas e preservam as quantidades explícitas das chamadas sem multiplicidade. Não foram acrescentados grupos no lado oposto para estas chamadas."},
+    {"representations": ["O039", "O040", "O045", "O046"], "finding": "Dois grupos horizontais, superior e inferior em planta, estão representados por pares de traços ao redor de cada abertura. TOP/BOTTOM em planta não significa camada superior/inferior na espessura da laje."},
+    {"representations": ["O023"], "finding": "Apenas o grupo inferior em planta G09 de H06 foi localizado. Não foi visto nesta ampliação o grupo oposto necessário para completar a chamada 2x3. Mantida pendência de localização, sem concluir ausência física."},
+    {"representations": ["O054"], "finding": "G22 e G23 são dois grupos contínuos, respectivamente acima e abaixo de H16 e H17 em planta. Os mesmos traços atendem ambas as aberturas e não foram duplicados por abertura."},
+    {"representations": ["O059"], "finding": "O líder aponta para o par vertical G21 junto à borda direita de H16. Outros pares são visíveis na região, mas a atribuição deles à N38 e o significado de 6x3 não foram comprovados. Quantidade por grupo e camadas permanecem desconhecidas."},
+    {"openings": ["H01", "H02", "H03", "H04", "H05"], "finding": "No mapa, os retângulos com X da região superior permanecem candidatas não confirmadas; não foram convertidos em furos por sua forma isolada."},
+    {"openings": ["H11"], "finding": "Contorno alongado com X e pares de reforços adjacentes visível no mapa. Reconhecido geometricamente como possível abertura, sem atribuir grupos de uma chamada fora das 15 LOCALIZED aceitas da etapa 3."}
+  ],
+  "layer_evidence": "2 inferiores + 1 superior foi confirmado explicitamente por João na solicitação da Etapa 4. O detalhe da prancha foi consultado visualmente; a distribuição numérica não é leitura geométrica da planta.",
+  "result": "Geometria visualmente coerente para os grupos destacados, com as pendências O023/O059 preservadas. Todos os grupos e contornos ainda exigem revisão independente do engenheiro."
+}

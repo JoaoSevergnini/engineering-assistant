@@ -1,0 +1,34 @@
+[
+  {
+    "position": "N38",
+    "original_calls": [
+      {
+        "text": "N38 6x3 Ø 12.5 C=182",
+        "call": {
+          "mark": "N38",
+          "quantity": 18,
+          "quantity_expression": "6x3",
+          "quantity_factors": [
+            6,
+            3
+          ],
+          "diameter_mm": 12.5,
+          "spacing_cm": null,
+          "nominal_length_cm": 182.0,
+          "parse_complete": true,
+          "diameter_symbol_decoded": true,
+          "missing_fields": []
+        }
+      }
+    ],
+    "engineer_confirmation": {
+      "groups": 4,
+      "bars_per_group": 3,
+      "total_bars": 12,
+      "source": "João, solicitação Etapa 5, seção 10"
+    },
+    "state": "DOCUMENTARY_MULTIPLICITY_CONFLICT",
+    "physical_groups_created": false,
+    "original_data_corrected": false
+  }
+]

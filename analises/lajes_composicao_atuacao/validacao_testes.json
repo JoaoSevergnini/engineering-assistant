@@ -1,0 +1,37 @@
+{
+  "command": "python -m unittest discover -s tools/slab_geometry_poc -p 'test_*.py'",
+  "result": "OK",
+  "tests": 231,
+  "new_stage10_tests": 26,
+  "elapsed_seconds": 80.948,
+  "structural_validation": false,
+  "source_code_sha256": {
+    "acting_compositions.py": "1689f78f8af70f5a9f9ab7b34bc9a2df0e1f97eb4f8b633738e1caa4074e1053",
+    "run_acting_compositions.py": "d5b16344061fbb880160b2822d613b9c6c3674e0b69b7579d0c5d3dc9ee84d03",
+    "test_acting_compositions.py": "84c8a17eb40829b50c8488da0f943697cfea827fca91201e26c54ab80d02e0e2"
+  },
+  "cli_query": {
+    "point_pdf_pt": [
+      1380,
+      800
+    ],
+    "cell": "C088",
+    "positions": [
+      "N13",
+      "N14"
+    ],
+    "result": "OK"
+  },
+  "html_logic_smoke": {
+    "runtime": "Node VM with minimal DOM stubs; not a real browser",
+    "cell_click_C088": "OK",
+    "search_C088": "OK",
+    "separate_N14_occurrences": 2,
+    "pending_list_count": 9,
+    "zoom_handler": "OK",
+    "polygons": 119
+  },
+  "browser_visual_verification": false,
+  "browser_unavailable_reason": "No integrated browser backend available in session",
+  "render_command_completed": true
+}

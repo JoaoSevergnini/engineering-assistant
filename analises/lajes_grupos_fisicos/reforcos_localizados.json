@@ -1,0 +1,2230 @@
+[
+  {
+    "occurrence_id": "P1-T59:0",
+    "display_id": "O003",
+    "mark": "N6",
+    "text": "N6 2x3 Ø 12.5 C=142",
+    "call": {
+      "mark": "N6",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 142.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1346:0",
+          "path_id": "D1346",
+          "a": [
+            409.3199768066406,
+            416.56005859375
+          ],
+          "b": [
+            409.3199768066406,
+            343.840087890625
+          ],
+          "length_pt": 72.719970703125,
+          "angle_deg": -90.0
+        },
+        {
+          "id": "D1347:0",
+          "path_id": "D1347",
+          "a": [
+            427.0799865722656,
+            440.9200439453125
+          ],
+          "b": [
+            409.3199768066406,
+            416.56005859375
+          ],
+          "length_pt": 30.146754936533963,
+          "angle_deg": -126.0944761953795
+        }
+      ],
+      "segment_ids": [
+        "D1346:0",
+        "D1347:0"
+      ],
+      "shoulder_id": "D1346:0",
+      "text_alignment": [
+        {
+          "text_id": "T59:0",
+          "baseline_gap_pt": 0.636749267578125,
+          "overlap_pt": 67.30551147460938
+        }
+      ],
+      "tip": [
+        427.0799865722656,
+        440.9200439453125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1348:0",
+        "D1349:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1347:0",
+          "other_segment_id": "D951:0",
+          "point": [
+            422.96804997670057,
+            435.280029296875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1347:0",
+          "other_segment_id": "D956:0",
+          "point": [
+            422.96804997670057,
+            435.280029296875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1347:0",
+          "other_segment_id": "D1129:0",
+          "point": [
+            410.63224019000546,
+            418.3599853515625
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1347:0",
+          "other_segment_id": "D1131:0",
+          "point": [
+            422.96804997670057,
+            435.280029296875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1347:0",
+          "other_segment_id": "D1671:0",
+          "point": [
+            414.1317872066669,
+            423.1600341796875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 102.86672563965897
+    },
+    "direct_trace_ids": [
+      "D1638:0",
+      "D1639:0"
+    ],
+    "group_ids": [
+      "G-45f59c5506",
+      "G-f9698bd643"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-6e2cfd1876",
+        "line_ids": [
+          "D1636:0",
+          "D1637:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H06",
+            "side": "RIGHT",
+            "normal_gap_pt": 4.2599945068359375,
+            "border_coordinate_pt": 439.55999755859375,
+            "overhang_pt": [
+              9.0,
+              34.0799560546875
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H06",
+        "side": "LEFT",
+        "normal_gap_pt": 4.32000732421875,
+        "border_coordinate_pt": 432.8399963378906,
+        "overhang_pt": [
+          9.0,
+          34.0799560546875
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T86:0",
+    "display_id": "O004",
+    "mark": "N6",
+    "text": "N6 2x3 Ø 12.5 C=142",
+    "call": {
+      "mark": "N6",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 142.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1414:0",
+          "path_id": "D1414",
+          "a": [
+            1583.52001953125,
+            415.719970703125
+          ],
+          "b": [
+            1583.52001953125,
+            351.1600341796875
+          ],
+          "length_pt": 64.5599365234375,
+          "angle_deg": -90.0
+        },
+        {
+          "id": "D1415:0",
+          "path_id": "D1415",
+          "a": [
+            1550.2799072265625,
+            442.9600830078125
+          ],
+          "b": [
+            1583.52001953125,
+            415.719970703125
+          ],
+          "length_pt": 42.97590934931133,
+          "angle_deg": -39.33445390979287
+        }
+      ],
+      "segment_ids": [
+        "D1414:0",
+        "D1415:0"
+      ],
+      "shoulder_id": "D1414:0",
+      "text_alignment": [
+        {
+          "text_id": "T86:0",
+          "baseline_gap_pt": 1.873046875,
+          "overlap_pt": 63.5439453125
+        }
+      ],
+      "tip": [
+        1550.2799072265625,
+        442.9600830078125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1416:0",
+        "D1417:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1415:0",
+          "other_segment_id": "D1015:0",
+          "point": [
+            1559.651595749802,
+            435.280029296875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1415:0",
+          "other_segment_id": "D1019:0",
+          "point": [
+            1559.651595749802,
+            435.280029296875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1415:0",
+          "other_segment_id": "D1070:0",
+          "point": [
+            1559.651595749802,
+            435.280029296875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1415:0",
+          "other_segment_id": "D1074:0",
+          "point": [
+            1580.2985062563218,
+            418.3599853515625
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1415:0",
+          "other_segment_id": "D1701:0",
+          "point": [
+            1568.5838583627885,
+            427.9600830078125
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1415:0",
+          "other_segment_id": "D1732:0",
+          "point": [
+            1550.6400146484375,
+            442.6649767060133
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 107.53584587274884
+    },
+    "direct_trace_ids": [
+      "D1732:0",
+      "D1733:0"
+    ],
+    "group_ids": [
+      "G-0ad372c3c2",
+      "G-23dd18946e"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-2dfb9343cc",
+        "line_ids": [
+          "D1734:0",
+          "D1735:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H07",
+            "side": "LEFT",
+            "normal_gap_pt": 4.25994873046875,
+            "border_coordinate_pt": 1538.159912109375,
+            "overhang_pt": [
+              9.0,
+              32.8800048828125
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H07",
+        "side": "RIGHT",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 1545.0,
+        "overhang_pt": [
+          9.0,
+          32.8800048828125
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T57:0",
+    "display_id": "O005",
+    "mark": "N19",
+    "text": "N19 2x3 Ø 12.5 C=236",
+    "call": {
+      "mark": "N19",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 236.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1342:0",
+          "path_id": "D1342",
+          "a": [
+            745.2000122070312,
+            460.3599853515625
+          ],
+          "b": [
+            745.2000122070312,
+            383.6800537109375
+          ],
+          "length_pt": 76.679931640625,
+          "angle_deg": -90.0
+        },
+        {
+          "id": "D1343:0",
+          "path_id": "D1343",
+          "a": [
+            718.2000122070312,
+            480.52001953125
+          ],
+          "b": [
+            745.2000122070312,
+            460.3599853515625
+          ],
+          "length_pt": 33.69609737233925,
+          "angle_deg": -36.74751752171665
+        }
+      ],
+      "segment_ids": [
+        "D1342:0",
+        "D1343:0"
+      ],
+      "shoulder_id": "D1342:0",
+      "text_alignment": [
+        {
+          "text_id": "T57:0",
+          "baseline_gap_pt": 0.89898681640625,
+          "overlap_pt": 72.48275756835938
+        }
+      ],
+      "tip": [
+        718.2000122070312,
+        480.52001953125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1344:0",
+        "D1345:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1342:0",
+          "other_segment_id": "D916:0",
+          "point": [
+            745.2000122070312,
+            454.0
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1342:0",
+          "other_segment_id": "D918:0",
+          "point": [
+            745.2000122070312,
+            454.0
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1342:0",
+          "other_segment_id": "D1250:0",
+          "point": [
+            745.2000122070312,
+            434.9752996147757
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        },
+        {
+          "leader_segment_id": "D1343:0",
+          "other_segment_id": "D917:0",
+          "point": [
+            739.2535087041763,
+            464.800048828125
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 110.37602901296425
+    },
+    "direct_trace_ids": [
+      "D1632:0",
+      "D1633:0"
+    ],
+    "group_ids": [
+      "G-918beab792",
+      "G-3dbc9be608"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-1496ed9588",
+        "line_ids": [
+          "D1634:0",
+          "D1635:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H09",
+            "side": "LEFT",
+            "normal_gap_pt": 4.32000732421875,
+            "border_coordinate_pt": 692.760009765625,
+            "overhang_pt": [
+              9.1199951171875,
+              33.9599609375
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H09",
+        "side": "RIGHT",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 712.5599975585938,
+        "overhang_pt": [
+          9.1199951171875,
+          33.9599609375
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T76:0",
+    "display_id": "O017",
+    "mark": "N8",
+    "text": "N8 3 Ø 12.5 C=129",
+    "call": {
+      "mark": "N8",
+      "quantity": 3,
+      "quantity_expression": "3",
+      "quantity_factors": [
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 129.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1394:0",
+          "path_id": "D1394",
+          "a": [
+            1510.199951171875,
+            478.5999755859375
+          ],
+          "b": [
+            1445.4000244140625,
+            478.5999755859375
+          ],
+          "length_pt": 64.7999267578125,
+          "angle_deg": 180.0
+        },
+        {
+          "id": "D1395:0",
+          "path_id": "D1395",
+          "a": [
+            1518.47998046875,
+            486.8800048828125
+          ],
+          "b": [
+            1510.199951171875,
+            478.5999755859375
+          ],
+          "length_pt": 11.709729728487186,
+          "angle_deg": -135.0
+        }
+      ],
+      "segment_ids": [
+        "D1394:0",
+        "D1395:0"
+      ],
+      "shoulder_id": "D1394:0",
+      "text_alignment": [
+        {
+          "text_id": "T76:0",
+          "baseline_gap_pt": -0.06268310546875,
+          "overlap_pt": 60.6705322265625
+        }
+      ],
+      "tip": [
+        1518.47998046875,
+        486.8800048828125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1396:0",
+        "D1397:0"
+      ],
+      "crossings": [],
+      "length_pt": 76.50965648629969
+    },
+    "direct_trace_ids": [
+      "D1712:0",
+      "D1713:0"
+    ],
+    "group_ids": [
+      "G-495acc1345"
+    ],
+    "candidate_opposite_pairs": [],
+    "opening_alternatives": [
+      {
+        "opening_id": "H07",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.260009765625,
+        "border_coordinate_pt": 484.5999755859375,
+        "overhang_pt": [
+          32.2799072265625,
+          33.9599609375
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        3
+      ],
+      "printed_total": 3,
+      "groups_geometrically_located": 1,
+      "bars_per_group": 3,
+      "indicated_group_count": 1,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SINGLE_GROUP_EXPLICIT",
+      "conditional_missing_if_first_factor_means_groups": null
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T82:0",
+    "display_id": "O022",
+    "mark": "N16",
+    "text": "N16 3 Ø 12.5 C=91",
+    "call": {
+      "mark": "N16",
+      "quantity": 3,
+      "quantity_expression": "3",
+      "quantity_factors": [
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 91.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1406:0",
+          "path_id": "D1406",
+          "a": [
+            1339.7999267578125,
+            500.56005859375
+          ],
+          "b": [
+            1339.7999267578125,
+            568.239990234375
+          ],
+          "length_pt": 67.679931640625,
+          "angle_deg": 90.0
+        },
+        {
+          "id": "D1407:0",
+          "path_id": "D1407",
+          "a": [
+            1355.8800048828125,
+            496.8399658203125
+          ],
+          "b": [
+            1339.7999267578125,
+            500.56005859375
+          ],
+          "length_pt": 16.504787267610734,
+          "angle_deg": 166.9739067082627
+        }
+      ],
+      "segment_ids": [
+        "D1406:0",
+        "D1407:0"
+      ],
+      "shoulder_id": "D1406:0",
+      "text_alignment": [
+        {
+          "text_id": "T82:0",
+          "baseline_gap_pt": 0.95751953125,
+          "overlap_pt": 62.128143310546875
+        }
+      ],
+      "tip": [
+        1355.8800048828125,
+        496.8399658203125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1408:0",
+        "D1409:0"
+      ],
+      "crossings": [],
+      "length_pt": 84.18471890823574
+    },
+    "direct_trace_ids": [
+      "D1728:0",
+      "D1729:0"
+    ],
+    "group_ids": [
+      "G-65a40d8d01"
+    ],
+    "candidate_opposite_pairs": [],
+    "opening_alternatives": [
+      {
+        "opening_id": "H10",
+        "side": "LEFT",
+        "normal_gap_pt": 3.35992431640625,
+        "border_coordinate_pt": 1360.919921875,
+        "overhang_pt": [
+          9.1199951171875,
+          33.9599609375
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        3
+      ],
+      "printed_total": 3,
+      "groups_geometrically_located": 1,
+      "bars_per_group": 3,
+      "indicated_group_count": 1,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SINGLE_GROUP_EXPLICIT",
+      "conditional_missing_if_first_factor_means_groups": null
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T61:0",
+    "display_id": "O023",
+    "mark": "N8",
+    "text": "N8 2x3 Ø 12.5 C=129",
+    "call": {
+      "mark": "N8",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 129.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1350:0",
+          "path_id": "D1350",
+          "a": [
+            421.1999816894531,
+            519.760009765625
+          ],
+          "b": [
+            379.1999816894531,
+            519.760009765625
+          ],
+          "length_pt": 42.0,
+          "angle_deg": 180.0
+        },
+        {
+          "id": "D1351:0",
+          "path_id": "D1351",
+          "a": [
+            425.03997802734375,
+            486.280029296875
+          ],
+          "b": [
+            421.1999816894531,
+            519.760009765625
+          ],
+          "length_pt": 33.699475723858,
+          "angle_deg": 96.54296553855629
+        }
+      ],
+      "segment_ids": [
+        "D1350:0",
+        "D1351:0"
+      ],
+      "shoulder_id": "D1350:0",
+      "text_alignment": [
+        {
+          "text_id": "T61:0",
+          "baseline_gap_pt": -0.42144775390625,
+          "overlap_pt": 30.970611572265625
+        }
+      ],
+      "tip": [
+        425.03997802734375,
+        486.280029296875
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1352:0",
+        "D1353:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1351:0",
+          "other_segment_id": "D1651:0",
+          "point": [
+            423.6361086995319,
+            498.52001953125
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 75.699475723858
+    },
+    "direct_trace_ids": [
+      "D1640:0",
+      "D1641:0"
+    ],
+    "group_ids": [
+      "G-bf69701e91"
+    ],
+    "candidate_opposite_pairs": [],
+    "opening_alternatives": [
+      {
+        "opening_id": "H06",
+        "side": "BOTTOM",
+        "normal_gap_pt": 1.44000244140625,
+        "border_coordinate_pt": 483.4000244140625,
+        "overhang_pt": [
+          32.279998779296875,
+          33.959991455078125
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [
+      "OPPOSITE_GROUP_NOT_UNIQUELY_PROVED_OR_CONVENTION_UNCONFIRMED"
+    ],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 1,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 1,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 1
+    },
+    "reconstruction_state": "PARTIAL"
+  },
+  {
+    "occurrence_id": "P1-T80:0",
+    "display_id": "O024",
+    "mark": "N16",
+    "text": "N16 3 Ø 12.5 C=91",
+    "call": {
+      "mark": "N16",
+      "quantity": 3,
+      "quantity_expression": "3",
+      "quantity_factors": [
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 91.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1402:0",
+          "path_id": "D1402",
+          "a": [
+            638.6400146484375,
+            508.9600830078125
+          ],
+          "b": [
+            638.6400146484375,
+            577.1199951171875
+          ],
+          "length_pt": 68.159912109375,
+          "angle_deg": 90.0
+        },
+        {
+          "id": "D1403:0",
+          "path_id": "D1403",
+          "a": [
+            621.47998046875,
+            500.080078125
+          ],
+          "b": [
+            638.6400146484375,
+            508.9600830078125
+          ],
+          "length_pt": 19.321523225843688,
+          "angle_deg": 27.360741007050105
+        }
+      ],
+      "segment_ids": [
+        "D1402:0",
+        "D1403:0"
+      ],
+      "shoulder_id": "D1402:0",
+      "text_alignment": [
+        {
+          "text_id": "T80:0",
+          "baseline_gap_pt": 1.39056396484375,
+          "overlap_pt": 62.128173828125
+        }
+      ],
+      "tip": [
+        621.47998046875,
+        500.080078125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1404:0",
+        "D1405:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1403:0",
+          "other_segment_id": "D1726:0",
+          "point": [
+            621.719970703125,
+            500.20426869657825
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 87.48143533521869
+    },
+    "direct_trace_ids": [
+      "D1726:0",
+      "D1727:0"
+    ],
+    "group_ids": [
+      "G-7c0295e44a"
+    ],
+    "candidate_opposite_pairs": [],
+    "opening_alternatives": [
+      {
+        "opening_id": "H08",
+        "side": "RIGHT",
+        "normal_gap_pt": 3.41998291015625,
+        "border_coordinate_pt": 616.9199829101562,
+        "overhang_pt": [
+          9.1199951171875,
+          33.9599609375
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        3
+      ],
+      "printed_total": 3,
+      "groups_geometrically_located": 1,
+      "bars_per_group": 3,
+      "indicated_group_count": 1,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SINGLE_GROUP_EXPLICIT",
+      "conditional_missing_if_first_factor_means_groups": null
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T103:0",
+    "display_id": "O025",
+    "mark": "N20",
+    "text": "N20 3 Ø 12.5 C=155",
+    "call": {
+      "mark": "N20",
+      "quantity": 3,
+      "quantity_expression": "3",
+      "quantity_factors": [
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 155.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1426:0",
+          "path_id": "D1426",
+          "a": [
+            732.3599853515625,
+            542.2000732421875
+          ],
+          "b": [
+            822.3599853515625,
+            542.2000732421875
+          ],
+          "length_pt": 90.0,
+          "angle_deg": 0.0
+        },
+        {
+          "id": "D1427:0",
+          "path_id": "D1427",
+          "a": [
+            727.3200073242188,
+            557.4400634765625
+          ],
+          "b": [
+            732.3599853515625,
+            542.2000732421875
+          ],
+          "length_pt": 16.051750087138572,
+          "angle_deg": -71.7005654590924
+        }
+      ],
+      "segment_ids": [
+        "D1426:0",
+        "D1427:0"
+      ],
+      "shoulder_id": "D1426:0",
+      "text_alignment": [
+        {
+          "text_id": "T103:0",
+          "baseline_gap_pt": 1.49725341796875,
+          "overlap_pt": 90.0
+        }
+      ],
+      "tip": [
+        727.3200073242188,
+        557.4400634765625
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1428:0",
+        "D1429:0"
+      ],
+      "crossings": [],
+      "length_pt": 106.05175008713857
+    },
+    "direct_trace_ids": [
+      "D1808:0",
+      "D1809:0"
+    ],
+    "group_ids": [
+      "G-ba5bfd99fb"
+    ],
+    "candidate_opposite_pairs": [],
+    "opening_alternatives": [
+      {
+        "opening_id": "H09",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 555.4000244140625,
+        "overhang_pt": [
+          34.08001708984375,
+          33.9599609375
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        3
+      ],
+      "printed_total": 3,
+      "groups_geometrically_located": 1,
+      "bars_per_group": 3,
+      "indicated_group_count": 1,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SINGLE_GROUP_EXPLICIT",
+      "conditional_missing_if_first_factor_means_groups": null
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T51:0",
+    "display_id": "O038",
+    "mark": "N22",
+    "text": "N22 3 Ø 12.5 C=141",
+    "call": {
+      "mark": "N22",
+      "quantity": 3,
+      "quantity_expression": "3",
+      "quantity_factors": [
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 141.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1326:0",
+          "path_id": "D1326",
+          "a": [
+            1095.0,
+            880.0
+          ],
+          "b": [
+            1095.0,
+            822.1600341796875
+          ],
+          "length_pt": 57.8399658203125,
+          "angle_deg": -90.0
+        },
+        {
+          "id": "D1327:0",
+          "path_id": "D1327",
+          "a": [
+            1104.1199951171875,
+            891.0400390625
+          ],
+          "b": [
+            1095.0,
+            880.0
+          ],
+          "length_pt": 14.319803540518624,
+          "angle_deg": -129.55955336528748
+        }
+      ],
+      "segment_ids": [
+        "D1326:0",
+        "D1327:0"
+      ],
+      "shoulder_id": "D1326:0",
+      "text_alignment": [
+        {
+          "text_id": "T51:0",
+          "baseline_gap_pt": 0.6055908203125,
+          "overlap_pt": 51.016357421875
+        }
+      ],
+      "tip": [
+        1104.1199951171875,
+        891.0400390625
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1328:0",
+        "D1329:0"
+      ],
+      "crossings": [],
+      "length_pt": 72.15976936083112
+    },
+    "direct_trace_ids": [
+      "D1618:0",
+      "D1619:0"
+    ],
+    "group_ids": [
+      "G-ee93c71cc8"
+    ],
+    "candidate_opposite_pairs": [],
+    "opening_alternatives": [
+      {
+        "opening_id": "H13",
+        "side": "LEFT",
+        "normal_gap_pt": 4.260009765625,
+        "border_coordinate_pt": 1110.3599853515625,
+        "overhang_pt": [
+          33.9599609375,
+          9.0
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        3
+      ],
+      "printed_total": 3,
+      "groups_geometrically_located": 1,
+      "bars_per_group": 3,
+      "indicated_group_count": 1,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SINGLE_GROUP_EXPLICIT",
+      "conditional_missing_if_first_factor_means_groups": null
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T48:0",
+    "display_id": "O039",
+    "mark": "N21",
+    "text": "N21 2x3 Ø 12.5 C=96",
+    "call": {
+      "mark": "N21",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 96.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1330:0",
+          "path_id": "D1330",
+          "a": [
+            1132.919921875,
+            894.52001953125
+          ],
+          "b": [
+            1205.52001953125,
+            894.52001953125
+          ],
+          "length_pt": 72.60009765625,
+          "angle_deg": 0.0
+        },
+        {
+          "id": "D1331:0",
+          "path_id": "D1331",
+          "a": [
+            1125.5999755859375,
+            905.0800170898438
+          ],
+          "b": [
+            1132.919921875,
+            894.52001953125
+          ],
+          "length_pt": 12.848936224927954,
+          "angle_deg": -55.27119435860212
+        }
+      ],
+      "segment_ids": [
+        "D1330:0",
+        "D1331:0"
+      ],
+      "shoulder_id": "D1330:0",
+      "text_alignment": [
+        {
+          "text_id": "T48:0",
+          "baseline_gap_pt": 0.8887939453125,
+          "overlap_pt": 72.4827880859375
+        }
+      ],
+      "tip": [
+        1125.5999755859375,
+        905.0800170898438
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1332:0",
+        "D1333:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1331:0",
+          "other_segment_id": "D1128:0",
+          "point": [
+            1132.43994140625,
+            895.212455292117
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 85.44903388117795
+    },
+    "direct_trace_ids": [
+      "D1612:0",
+      "D1613:0"
+    ],
+    "group_ids": [
+      "G-734bcdde34",
+      "G-c3bfef6b4f"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-4c562bfba8",
+        "line_ids": [
+          "D1610:0",
+          "D1611:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H13",
+            "side": "BOTTOM",
+            "normal_gap_pt": 4.20001220703125,
+            "border_coordinate_pt": 948.4000244140625,
+            "overhang_pt": [
+              33.9599609375,
+              15.3599853515625
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H13",
+        "side": "TOP",
+        "normal_gap_pt": 5.03997802734375,
+        "border_coordinate_pt": 911.5599975585938,
+        "overhang_pt": [
+          33.9599609375,
+          15.3599853515625
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T49:1",
+    "display_id": "O040",
+    "mark": "N21",
+    "text": "N21 2x3 Ø 12.5 C=96",
+    "call": {
+      "mark": "N21",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 96.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1334:0",
+          "path_id": "D1334",
+          "a": [
+            852.8399658203125,
+            899.7999877929688
+          ],
+          "b": [
+            773.5199584960938,
+            899.7999877929688
+          ],
+          "length_pt": 79.32000732421875,
+          "angle_deg": 180.0
+        },
+        {
+          "id": "D1335:0",
+          "path_id": "D1335",
+          "a": [
+            859.5599975585938,
+            905.9200439453125
+          ],
+          "b": [
+            852.8399658203125,
+            899.7999877929688
+          ],
+          "length_pt": 9.089219651397357,
+          "angle_deg": -137.67529966481425
+        }
+      ],
+      "segment_ids": [
+        "D1334:0",
+        "D1335:0"
+      ],
+      "shoulder_id": "D1334:0",
+      "text_alignment": [
+        {
+          "text_id": "T49:1",
+          "baseline_gap_pt": -2.5318603515625,
+          "overlap_pt": 72.4827880859375
+        }
+      ],
+      "tip": [
+        859.5599975585938,
+        905.9200439453125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1336:0",
+        "D1337:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1334:0",
+          "other_segment_id": "D1124:0",
+          "point": [
+            845.2799682617188,
+            899.7999877929688
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 88.40922697561611
+    },
+    "direct_trace_ids": [
+      "D1616:0",
+      "D1617:0"
+    ],
+    "group_ids": [
+      "G-0d8ad7484c",
+      "G-27585c0a67"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-0c369a7ef4",
+        "line_ids": [
+          "D1614:0",
+          "D1615:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H12",
+            "side": "BOTTOM",
+            "normal_gap_pt": 5.03997802734375,
+            "border_coordinate_pt": 948.4000244140625,
+            "overhang_pt": [
+              15.24005126953125,
+              34.08001708984375
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H12",
+        "side": "TOP",
+        "normal_gap_pt": 4.259979248046875,
+        "border_coordinate_pt": 911.5599975585938,
+        "overhang_pt": [
+          15.24005126953125,
+          34.08001708984375
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T40:0",
+    "display_id": "O045",
+    "mark": "N5",
+    "text": "N5 2x3 Ø 12.5 C=145",
+    "call": {
+      "mark": "N5",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 145.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1322:0",
+          "path_id": "D1322",
+          "a": [
+            1629.1199951171875,
+            949.4800415039062
+          ],
+          "b": [
+            1694.760009765625,
+            949.4800415039062
+          ],
+          "length_pt": 65.6400146484375,
+          "angle_deg": 0.0
+        },
+        {
+          "id": "D1323:0",
+          "path_id": "D1323",
+          "a": [
+            1608.47998046875,
+            940.7200317382812
+          ],
+          "b": [
+            1629.1199951171875,
+            949.4800415039062
+          ],
+          "length_pt": 22.422042185794762,
+          "angle_deg": 22.99727931144878
+        }
+      ],
+      "segment_ids": [
+        "D1322:0",
+        "D1323:0"
+      ],
+      "shoulder_id": "D1322:0",
+      "text_alignment": [
+        {
+          "text_id": "T40:0",
+          "baseline_gap_pt": -0.20123291015625,
+          "overlap_pt": 65.58056640625
+        }
+      ],
+      "tip": [
+        1608.47998046875,
+        940.7200317382812
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1324:0",
+        "D1325:0"
+      ],
+      "crossings": [],
+      "length_pt": 88.06205683423227
+    },
+    "direct_trace_ids": [
+      "D1584:0",
+      "D1585:0"
+    ],
+    "group_ids": [
+      "G-841c0e40b0",
+      "G-aaf414a890"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-889df93284",
+        "line_ids": [
+          "D1582:0",
+          "D1583:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H15",
+            "side": "BOTTOM",
+            "normal_gap_pt": 4.20001220703125,
+            "border_coordinate_pt": 967.1199951171875,
+            "overhang_pt": [
+              33.9600830078125,
+              33.9600830078125
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H15",
+        "side": "TOP",
+        "normal_gap_pt": 5.0999755859375,
+        "border_coordinate_pt": 944.4400024414062,
+        "overhang_pt": [
+          33.9600830078125,
+          33.9600830078125
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T37:0",
+    "display_id": "O046",
+    "mark": "N5",
+    "text": "N5 2x3 Ø 12.5 C=145",
+    "call": {
+      "mark": "N5",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 145.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1310:0",
+          "path_id": "D1310",
+          "a": [
+            362.3999938964844,
+            967.9600219726562
+          ],
+          "b": [
+            242.27999877929688,
+            967.9600219726562
+          ],
+          "length_pt": 120.1199951171875,
+          "angle_deg": 180.0
+        },
+        {
+          "id": "D1311:0",
+          "path_id": "D1311",
+          "a": [
+            369.8399963378906,
+            972.760009765625
+          ],
+          "b": [
+            362.3999938964844,
+            967.9600219726562
+          ],
+          "length_pt": 8.854011471687846,
+          "angle_deg": -147.17153315167656
+        }
+      ],
+      "segment_ids": [
+        "D1310:0",
+        "D1311:0"
+      ],
+      "shoulder_id": "D1310:0",
+      "text_alignment": [
+        {
+          "text_id": "T37:0",
+          "baseline_gap_pt": 1.91571044921875,
+          "overlap_pt": 98.36953735351562
+        }
+      ],
+      "tip": [
+        369.8399963378906,
+        972.760009765625
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1312:0",
+        "D1313:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1311:0",
+          "other_segment_id": "D1575:0",
+          "point": [
+            365.3759759520941,
+            969.8800048828125
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 128.97400658887534
+    },
+    "direct_trace_ids": [
+      "D1574:0",
+      "D1575:0"
+    ],
+    "group_ids": [
+      "G-3f74a8186f",
+      "G-b2ada0ed08"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-1f8791b5e0",
+        "line_ids": [
+          "D1576:0",
+          "D1577:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H14",
+            "side": "TOP",
+            "normal_gap_pt": 5.0999755859375,
+            "border_coordinate_pt": 944.4400024414062,
+            "overhang_pt": [
+              33.959991455078125,
+              34.079986572265625
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H14",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 967.1199951171875,
+        "overhang_pt": [
+          33.959991455078125,
+          34.079986572265625
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T100:0",
+    "display_id": "O054",
+    "mark": "N37",
+    "text": "N37 2x3 Ø 12.5 C=272",
+    "call": {
+      "mark": "N37",
+      "quantity": 6,
+      "quantity_expression": "2x3",
+      "quantity_factors": [
+        2,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 272.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1418:0",
+          "path_id": "D1418",
+          "a": [
+            910.7999877929688,
+            1051.0
+          ],
+          "b": [
+            810.47998046875,
+            1051.0
+          ],
+          "length_pt": 100.32000732421875,
+          "angle_deg": 180.0
+        },
+        {
+          "id": "D1419:0",
+          "path_id": "D1419",
+          "a": [
+            919.7999877929688,
+            1057.719970703125
+          ],
+          "b": [
+            910.7999877929688,
+            1051.0
+          ],
+          "length_pt": 11.232008113016047,
+          "angle_deg": -143.2526487958741
+        }
+      ],
+      "segment_ids": [
+        "D1418:0",
+        "D1419:0"
+      ],
+      "shoulder_id": "D1418:0",
+      "text_alignment": [
+        {
+          "text_id": "T100:0",
+          "baseline_gap_pt": -0.1016845703125,
+          "overlap_pt": 99.936279296875
+        }
+      ],
+      "tip": [
+        919.7999877929688,
+        1057.719970703125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1420:0",
+        "D1421:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1419:0",
+          "other_segment_id": "D1798:0",
+          "point": [
+            919.4785708992358,
+            1057.47998046875
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 111.5520154372348
+    },
+    "direct_trace_ids": [
+      "D1798:0",
+      "D1799:0"
+    ],
+    "group_ids": [
+      "G-0c0b263433",
+      "G-7ad419aba4"
+    ],
+    "candidate_opposite_pairs": [
+      {
+        "pair_id": "P-806f74c821",
+        "line_ids": [
+          "D1796:0",
+          "D1797:0"
+        ],
+        "relations": [
+          {
+            "opening_id": "H16",
+            "side": "BOTTOM",
+            "normal_gap_pt": 4.2601318359375,
+            "border_coordinate_pt": 1106.919921875,
+            "overhang_pt": [
+              33.5999755859375,
+              86.39996337890625
+            ]
+          },
+          {
+            "opening_id": "H17",
+            "side": "BOTTOM",
+            "normal_gap_pt": 4.2601318359375,
+            "border_coordinate_pt": 1106.919921875,
+            "overhang_pt": [
+              85.67999267578125,
+              34.3199462890625
+            ]
+          }
+        ],
+        "conflicting_marks": []
+      }
+    ],
+    "opening_alternatives": [
+      {
+        "opening_id": "H16",
+        "side": "TOP",
+        "normal_gap_pt": 4.9801025390625,
+        "border_coordinate_pt": 1063.840087890625,
+        "overhang_pt": [
+          33.9599609375,
+          86.03997802734375
+        ]
+      },
+      {
+        "opening_id": "H17",
+        "side": "TOP",
+        "normal_gap_pt": 4.9801025390625,
+        "border_coordinate_pt": 1063.840087890625,
+        "overhang_pt": [
+          86.03997802734375,
+          33.9599609375
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "SHARED_EDGE_RUN",
+    "convention_applied": true,
+    "multiplicity": {
+      "original_factors": [
+        2,
+        3
+      ],
+      "printed_total": 6,
+      "groups_geometrically_located": 2,
+      "bars_per_group": 3,
+      "indicated_group_count": 2,
+      "unlocated_group_count": 0,
+      "factor_semantics": "SIM_2_GROUPS_OF_3",
+      "conditional_missing_if_first_factor_means_groups": 0
+    },
+    "reconstruction_state": "SUPPORTED_PENDING_ENGINEER_REVIEW"
+  },
+  {
+    "occurrence_id": "P1-T101:0",
+    "display_id": "O059",
+    "mark": "N38",
+    "text": "N38 6x3 Ø 12.5 C=182",
+    "call": {
+      "mark": "N38",
+      "quantity": 18,
+      "quantity_expression": "6x3",
+      "quantity_factors": [
+        6,
+        3
+      ],
+      "diameter_mm": 12.5,
+      "spacing_cm": null,
+      "nominal_length_cm": 182.0,
+      "parse_complete": true,
+      "diameter_symbol_decoded": true,
+      "missing_fields": []
+    },
+    "leader": {
+      "segments": [
+        {
+          "id": "D1422:0",
+          "path_id": "D1422",
+          "a": [
+            992.3999633789062,
+            1140.760009765625
+          ],
+          "b": [
+            992.3999633789062,
+            1207.0
+          ],
+          "length_pt": 66.239990234375,
+          "angle_deg": 90.0
+        },
+        {
+          "id": "D1423:0",
+          "path_id": "D1423",
+          "a": [
+            985.7999877929688,
+            1130.800048828125
+          ],
+          "b": [
+            992.3999633789062,
+            1140.760009765625
+          ],
+          "length_pt": 11.948242532334909,
+          "angle_deg": 56.46952445385686
+        }
+      ],
+      "segment_ids": [
+        "D1422:0",
+        "D1423:0"
+      ],
+      "shoulder_id": "D1422:0",
+      "text_alignment": [
+        {
+          "text_id": "T101:0",
+          "baseline_gap_pt": 4.7080078125,
+          "overlap_pt": 66.239990234375
+        }
+      ],
+      "tip": [
+        985.7999877929688,
+        1130.800048828125
+      ],
+      "terminal_kind": "TWO_WING_ARROW",
+      "terminal_entity_ids": [
+        "D1424:0",
+        "D1425:0"
+      ],
+      "crossings": [
+        {
+          "leader_segment_id": "D1423:0",
+          "other_segment_id": "D1066:0",
+          "point": [
+            988.3445440240556,
+            1134.6400146484375
+          ],
+          "behavior": "CROSSED_WITHOUT_SWITCHING"
+        }
+      ],
+      "length_pt": 78.18823276670992
+    },
+    "direct_trace_ids": [
+      "D1804:0",
+      "D1805:0"
+    ],
+    "group_ids": [
+      "G-a857f99ea9"
+    ],
+    "candidate_opposite_pairs": [],
+    "opening_alternatives": [
+      {
+        "opening_id": "H16",
+        "side": "RIGHT",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 979.9199829101562,
+        "overhang_pt": [
+          33.9600830078125,
+          26.0400390625
+        ]
+      }
+    ],
+    "convention": {
+      "confirmed": true,
+      "reason": "EXPLICIT_ENGINEER_CONFIRMATION_AND_DOCUMENT_SCOPE",
+      "profile_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "issues": [
+      "MULTIPLICITY_OUTSIDE_CONFIRMED_SIM_RULE"
+    ],
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "opening_association_state": "ASSOCIATED",
+    "convention_applied": false,
+    "multiplicity": {
+      "original_factors": [
+        6,
+        3
+      ],
+      "printed_total": 18,
+      "groups_geometrically_located": 1,
+      "bars_per_group": null,
+      "indicated_group_count": null,
+      "unlocated_group_count": null,
+      "factor_semantics": "UNCONFIRMED",
+      "conditional_missing_if_first_factor_means_groups": 5
+    },
+    "reconstruction_state": "PARTIAL"
+  }
+]

@@ -1,0 +1,9490 @@
+[
+  {
+    "id": "C001",
+    "region_ids": [
+      "R001"
+    ],
+    "bbox": [
+      926.2799682617188,
+      175.1199951171875,
+      1102.679931640625,
+      328.239990234375
+    ],
+    "polygon_pdf_pt": [
+      [
+        926.2799682617188,
+        175.1199951171875
+      ],
+      [
+        1102.679931640625,
+        175.1199951171875
+      ],
+      [
+        1102.679931640625,
+        328.239990234375
+      ],
+      [
+        926.2799682617188,
+        328.239990234375
+      ]
+    ],
+    "area_pt2": 27010.36153125018,
+    "positions": [
+      "N27"
+    ],
+    "occurrences": [
+      "O001"
+    ],
+    "identity_groups": [
+      "I001"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R001"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R001",
+        "position": "N27",
+        "occurrence_id": "P1-T22:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 20.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T22:0"
+          ],
+          "text": "N27 14 Ø 6.3 C/20 C=322"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C002",
+    "region_ids": [
+      "R001",
+      "R002"
+    ],
+    "bbox": [
+      1102.679931640625,
+      175.1199951171875,
+      1108.3199462890625,
+      328.239990234375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1102.679931640625,
+        175.1199951171875
+      ],
+      [
+        1108.3199462890625,
+        175.1199951171875
+      ],
+      [
+        1108.3199462890625,
+        328.239990234375
+      ],
+      [
+        1102.679931640625,
+        328.239990234375
+      ]
+    ],
+    "area_pt2": 863.599015429616,
+    "positions": [
+      "N27",
+      "N28"
+    ],
+    "occurrences": [
+      "O001",
+      "O002"
+    ],
+    "identity_groups": [
+      "I001",
+      "I002"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R001",
+          "R002"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R001",
+        "position": "N27",
+        "occurrence_id": "P1-T22:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 20.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T22:0"
+          ],
+          "text": "N27 14 Ø 6.3 C/20 C=322"
+        }
+      },
+      {
+        "id": "R002",
+        "position": "N28",
+        "occurrence_id": "P1-T24:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T24:0"
+          ],
+          "text": "N28 36 Ø 6.3 C/14 C=156"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C003",
+    "region_ids": [
+      "R002"
+    ],
+    "bbox": [
+      1108.3199462890625,
+      175.1199951171875,
+      1191.0,
+      328.239990234375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1108.3199462890625,
+        175.1199951171875
+      ],
+      [
+        1191.0,
+        175.1199951171875
+      ],
+      [
+        1191.0,
+        328.239990234375
+      ],
+      [
+        1108.3199462890625,
+        328.239990234375
+      ]
+    ],
+    "area_pt2": 12659.96942050755,
+    "positions": [
+      "N28"
+    ],
+    "occurrences": [
+      "O002"
+    ],
+    "identity_groups": [
+      "I002"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R002"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R002",
+        "position": "N28",
+        "occurrence_id": "P1-T24:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T24:0"
+          ],
+          "text": "N28 36 Ø 6.3 C/14 C=156"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C004",
+    "region_ids": [
+      "R002"
+    ],
+    "bbox": [
+      1102.679931640625,
+      328.239990234375,
+      1191.0,
+      454.0
+    ],
+    "polygon_pdf_pt": [
+      [
+        1102.679931640625,
+        328.239990234375
+      ],
+      [
+        1191.0,
+        328.239990234375
+      ],
+      [
+        1191.0,
+        454.0
+      ],
+      [
+        1102.679931640625,
+        454.0
+      ]
+    ],
+    "area_pt2": 11107.132659375668,
+    "positions": [
+      "N28"
+    ],
+    "occurrences": [
+      "O002"
+    ],
+    "identity_groups": [
+      "I002"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R002"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R002",
+        "position": "N28",
+        "occurrence_id": "P1-T24:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T24:0"
+          ],
+          "text": "N28 36 Ø 6.3 C/14 C=156"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C005",
+    "region_ids": [
+      "R006"
+    ],
+    "bbox": [
+      332.5199890136719,
+      418.239990234375,
+      618.719970703125,
+      435.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        332.5199890136719,
+        418.239990234375
+      ],
+      [
+        618.719970703125,
+        418.239990234375
+      ],
+      [
+        618.719970703125,
+        435.280029296875
+      ],
+      [
+        332.5199890136719,
+        435.280029296875
+      ]
+    ],
+    "area_pt2": 4876.858867675066,
+    "positions": [
+      "N9"
+    ],
+    "occurrences": [
+      "O006"
+    ],
+    "identity_groups": [
+      "I003"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R006"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R006",
+        "position": "N9",
+        "occurrence_id": "P1-T67:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T67:0"
+          ],
+          "text": "N9 3 Ø 6.3 C/14 C=505"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C006",
+    "region_ids": [
+      "R007"
+    ],
+    "bbox": [
+      1353.8399658203125,
+      418.239990234375,
+      1646.8800048828125,
+      435.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1353.8399658203125,
+        418.239990234375
+      ],
+      [
+        1646.8800048828125,
+        418.239990234375
+      ],
+      [
+        1646.8800048828125,
+        435.280029296875
+      ],
+      [
+        1353.8399658203125,
+        435.280029296875
+      ]
+    ],
+    "area_pt2": 4993.413712501526,
+    "positions": [
+      "N32"
+    ],
+    "occurrences": [
+      "O007"
+    ],
+    "identity_groups": [
+      "I004"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R007"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R007",
+        "position": "N32",
+        "occurrence_id": "P1-T73:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T73:0"
+          ],
+          "text": "N32 3 Ø 6.3 C/14 C=518"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C007",
+    "region_ids": [
+      "R015"
+    ],
+    "bbox": [
+      330.8399963378906,
+      435.280029296875,
+      358.55999755859375,
+      444.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        330.8399963378906,
+        435.280029296875
+      ],
+      [
+        358.55999755859375,
+        435.280029296875
+      ],
+      [
+        358.55999755859375,
+        444.1600341796875
+      ],
+      [
+        330.8399963378906,
+        444.1600341796875
+      ]
+    ],
+    "area_pt2": 246.1537461914122,
+    "positions": [
+      "N4"
+    ],
+    "occurrences": [
+      "O015"
+    ],
+    "identity_groups": [
+      "I009"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R015"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R015",
+        "position": "N4",
+        "occurrence_id": "P1-T108:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T108:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C008",
+    "region_ids": [
+      "R010"
+    ],
+    "bbox": [
+      1353.8399658203125,
+      435.280029296875,
+      1378.43994140625,
+      446.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1353.8399658203125,
+        435.280029296875
+      ],
+      [
+        1378.43994140625,
+        435.280029296875
+      ],
+      [
+        1378.43994140625,
+        446.080078125
+      ],
+      [
+        1353.8399658203125,
+        446.080078125
+      ]
+    ],
+    "area_pt2": 265.6809374988079,
+    "positions": [
+      "N29"
+    ],
+    "occurrences": [
+      "O010"
+    ],
+    "identity_groups": [
+      "I006"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R010"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R010",
+        "position": "N29",
+        "occurrence_id": "P1-T112:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T112:0",
+            "T112:1"
+          ],
+          "text": "N29 3 Ø 8 C/14 C=44"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C009",
+    "region_ids": [
+      "R018"
+    ],
+    "bbox": [
+      1619.159912109375,
+      435.280029296875,
+      1646.8800048828125,
+      484.5999755859375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1619.159912109375,
+        435.280029296875
+      ],
+      [
+        1646.8800048828125,
+        435.280029296875
+      ],
+      [
+        1646.8800048828125,
+        484.5999755859375
+      ],
+      [
+        1619.159912109375,
+        484.5999755859375
+      ]
+    ],
+    "area_pt2": 1367.153486713767,
+    "positions": [
+      "N4"
+    ],
+    "occurrences": [
+      "O018"
+    ],
+    "identity_groups": [
+      "I010"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R018"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R018",
+        "position": "N4",
+        "occurrence_id": "P1-T114:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T114:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C010",
+    "region_ids": [
+      "R015"
+    ],
+    "bbox": [
+      330.8399963378906,
+      444.1600341796875,
+      347.8800048828125,
+      483.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        330.8399963378906,
+        444.1600341796875
+      ],
+      [
+        347.8800048828125,
+        444.1600341796875
+      ],
+      [
+        347.8800048828125,
+        483.4000244140625
+      ],
+      [
+        330.8399963378906,
+        483.4000244140625
+      ]
+    ],
+    "area_pt2": 668.6497688964009,
+    "positions": [
+      "N4"
+    ],
+    "occurrences": [
+      "O015"
+    ],
+    "identity_groups": [
+      "I009"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R015"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R015",
+        "position": "N4",
+        "occurrence_id": "P1-T108:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T108:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C011",
+    "region_ids": [
+      "R008",
+      "R015"
+    ],
+    "bbox": [
+      347.8800048828125,
+      444.1600341796875,
+      358.55999755859375,
+      483.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        347.8800048828125,
+        444.1600341796875
+      ],
+      [
+        358.55999755859375,
+        444.1600341796875
+      ],
+      [
+        358.55999755859375,
+        483.4000244140625
+      ],
+      [
+        347.8800048828125,
+        483.4000244140625
+      ]
+    ],
+    "area_pt2": 419.0828083008528,
+    "positions": [
+      "N2",
+      "N4"
+    ],
+    "occurrences": [
+      "O008",
+      "O015"
+    ],
+    "identity_groups": [
+      "I005",
+      "I009"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R008",
+          "R015"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R008",
+        "position": "N2",
+        "occurrence_id": "P1-T65:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T65:0"
+          ],
+          "text": "N2 5 Ø 8 C/14 C=150"
+        }
+      },
+      {
+        "id": "R015",
+        "position": "N4",
+        "occurrence_id": "P1-T108:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T108:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C012",
+    "region_ids": [
+      "R008"
+    ],
+    "bbox": [
+      358.55999755859375,
+      444.1600341796875,
+      432.8399963378906,
+      483.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        358.55999755859375,
+        444.1600341796875
+      ],
+      [
+        432.8399963378906,
+        444.1600341796875
+      ],
+      [
+        432.8399963378906,
+        483.4000244140625
+      ],
+      [
+        358.55999755859375,
+        483.4000244140625
+      ]
+    ],
+    "area_pt2": 2914.7464267089963,
+    "positions": [
+      "N2"
+    ],
+    "occurrences": [
+      "O008"
+    ],
+    "identity_groups": [
+      "I005"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R008"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R008",
+        "position": "N2",
+        "occurrence_id": "P1-T65:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T65:0"
+          ],
+          "text": "N2 5 Ø 8 C/14 C=150"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C013",
+    "region_ids": [
+      "R013"
+    ],
+    "bbox": [
+      444.1199951171875,
+      446.080078125,
+      607.2000122070312,
+      483.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        444.1199951171875,
+        446.080078125
+      ],
+      [
+        607.2000122070312,
+        446.080078125
+      ],
+      [
+        607.2000122070312,
+        483.4000244140625
+      ],
+      [
+        444.1199951171875,
+        483.4000244140625
+      ]
+    ],
+    "area_pt2": 6086.137478612363,
+    "positions": [
+      "N11"
+    ],
+    "occurrences": [
+      "O013"
+    ],
+    "identity_groups": [
+      "I008"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R013"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R013",
+        "position": "N11",
+        "occurrence_id": "P1-T69:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T69:0"
+          ],
+          "text": "N11 5 Ø 8 C/14 C=288"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C014",
+    "region_ids": [
+      "R010"
+    ],
+    "bbox": [
+      1353.8399658203125,
+      446.080078125,
+      1370.52001953125,
+      454.0
+    ],
+    "polygon_pdf_pt": [
+      [
+        1353.8399658203125,
+        446.080078125
+      ],
+      [
+        1370.52001953125,
+        446.080078125
+      ],
+      [
+        1370.52001953125,
+        454.0
+      ],
+      [
+        1353.8399658203125,
+        454.0
+      ]
+    ],
+    "area_pt2": 132.10472226142883,
+    "positions": [
+      "N29"
+    ],
+    "occurrences": [
+      "O010"
+    ],
+    "identity_groups": [
+      "I006"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R010"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R010",
+        "position": "N29",
+        "occurrence_id": "P1-T112:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T112:0",
+            "T112:1"
+          ],
+          "text": "N29 3 Ø 8 C/14 C=44"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C015",
+    "region_ids": [
+      "R010",
+      "R011"
+    ],
+    "bbox": [
+      1370.52001953125,
+      446.080078125,
+      1378.43994140625,
+      454.0
+    ],
+    "polygon_pdf_pt": [
+      [
+        1370.52001953125,
+        446.080078125
+      ],
+      [
+        1378.43994140625,
+        446.080078125
+      ],
+      [
+        1378.43994140625,
+        454.0
+      ],
+      [
+        1370.52001953125,
+        454.0
+      ]
+    ],
+    "area_pt2": 62.725162506103516,
+    "positions": [
+      "N29",
+      "N30"
+    ],
+    "occurrences": [
+      "O010",
+      "O011"
+    ],
+    "identity_groups": [
+      "I006",
+      "I007"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R010",
+          "R011"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R010",
+        "position": "N29",
+        "occurrence_id": "P1-T112:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T112:0",
+            "T112:1"
+          ],
+          "text": "N29 3 Ø 8 C/14 C=44"
+        }
+      },
+      {
+        "id": "R011",
+        "position": "N30",
+        "occurrence_id": "P1-T78:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T78:0"
+          ],
+          "text": "N30 5 Ø 8 C/14 C=293"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C016",
+    "region_ids": [
+      "R011"
+    ],
+    "bbox": [
+      1378.43994140625,
+      446.080078125,
+      1536.47998046875,
+      454.0
+    ],
+    "polygon_pdf_pt": [
+      [
+        1378.43994140625,
+        446.080078125
+      ],
+      [
+        1536.47998046875,
+        446.080078125
+      ],
+      [
+        1536.47998046875,
+        454.0
+      ],
+      [
+        1378.43994140625,
+        454.0
+      ]
+    ],
+    "area_pt2": 1251.6647624969482,
+    "positions": [
+      "N30"
+    ],
+    "occurrences": [
+      "O011"
+    ],
+    "identity_groups": [
+      "I007"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R011"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R011",
+        "position": "N30",
+        "occurrence_id": "P1-T78:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T78:0"
+          ],
+          "text": "N30 5 Ø 8 C/14 C=293"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C017",
+    "region_ids": [
+      "R011"
+    ],
+    "bbox": [
+      1370.52001953125,
+      454.0,
+      1536.47998046875,
+      464.800048828125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1370.52001953125,
+        454.0
+      ],
+      [
+        1536.47998046875,
+        454.0
+      ],
+      [
+        1536.47998046875,
+        464.800048828125
+      ],
+      [
+        1370.52001953125,
+        464.800048828125
+      ]
+    ],
+    "area_pt2": 1792.3756816387177,
+    "positions": [
+      "N30"
+    ],
+    "occurrences": [
+      "O011"
+    ],
+    "identity_groups": [
+      "I007"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R011"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R011",
+        "position": "N30",
+        "occurrence_id": "P1-T78:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T78:0"
+          ],
+          "text": "N30 5 Ø 8 C/14 C=293"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C018",
+    "region_ids": [
+      "R019"
+    ],
+    "bbox": [
+      713.6399536132812,
+      464.800048828125,
+      1370.52001953125,
+      484.5999755859375
+    ],
+    "polygon_pdf_pt": [
+      [
+        713.6399536132812,
+        464.800048828125
+      ],
+      [
+        1370.52001953125,
+        464.800048828125
+      ],
+      [
+        1370.52001953125,
+        484.5999755859375
+      ],
+      [
+        713.6399536132812,
+        484.5999755859375
+      ]
+    ],
+    "area_pt2": 13006.177193842828,
+    "positions": [
+      "N25"
+    ],
+    "occurrences": [
+      "O019"
+    ],
+    "identity_groups": [
+      "I011"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R019"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R019",
+        "position": "N25",
+        "occurrence_id": "P1-T12:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T12:0"
+          ],
+          "text": "N25 13 Ø 8 C/14 C=1200"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C019",
+    "region_ids": [
+      "R011",
+      "R019"
+    ],
+    "bbox": [
+      1370.52001953125,
+      464.800048828125,
+      1393.199951171875,
+      484.5999755859375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1370.52001953125,
+        464.800048828125
+      ],
+      [
+        1393.199951171875,
+        464.800048828125
+      ],
+      [
+        1393.199951171875,
+        484.5999755859375
+      ],
+      [
+        1370.52001953125,
+        484.5999755859375
+      ]
+    ],
+    "area_pt2": 449.0609853565693,
+    "positions": [
+      "N25",
+      "N30"
+    ],
+    "occurrences": [
+      "O011",
+      "O019"
+    ],
+    "identity_groups": [
+      "I007",
+      "I011"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R011",
+          "R019"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R011",
+        "position": "N30",
+        "occurrence_id": "P1-T78:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T78:0"
+          ],
+          "text": "N30 5 Ø 8 C/14 C=293"
+        }
+      },
+      {
+        "id": "R019",
+        "position": "N25",
+        "occurrence_id": "P1-T12:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T12:0"
+          ],
+          "text": "N25 13 Ø 8 C/14 C=1200"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C020",
+    "region_ids": [
+      "R011"
+    ],
+    "bbox": [
+      1393.199951171875,
+      464.800048828125,
+      1536.47998046875,
+      484.5999755859375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1393.199951171875,
+        464.800048828125
+      ],
+      [
+        1536.47998046875,
+        464.800048828125
+      ],
+      [
+        1536.47998046875,
+        484.5999755859375
+      ],
+      [
+        1393.199951171875,
+        484.5999755859375
+      ]
+    ],
+    "area_pt2": 2836.9340859353542,
+    "positions": [
+      "N30"
+    ],
+    "occurrences": [
+      "O011"
+    ],
+    "identity_groups": [
+      "I007"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R011"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R011",
+        "position": "N30",
+        "occurrence_id": "P1-T78:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T78:0"
+          ],
+          "text": "N30 5 Ø 8 C/14 C=293"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C021",
+    "region_ids": [
+      "R015"
+    ],
+    "bbox": [
+      330.8399963378906,
+      483.4000244140625,
+      347.2799987792969,
+      502.719970703125
+    ],
+    "polygon_pdf_pt": [
+      [
+        330.8399963378906,
+        483.4000244140625
+      ],
+      [
+        347.2799987792969,
+        483.4000244140625
+      ],
+      [
+        347.2799987792969,
+        502.719970703125
+      ],
+      [
+        330.8399963378906,
+        502.719970703125
+      ]
+    ],
+    "area_pt2": 317.6199641600251,
+    "positions": [
+      "N4"
+    ],
+    "occurrences": [
+      "O015"
+    ],
+    "identity_groups": [
+      "I009"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R015"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R015",
+        "position": "N4",
+        "occurrence_id": "P1-T108:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T108:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C022",
+    "region_ids": [
+      "R015",
+      "R020"
+    ],
+    "bbox": [
+      347.2799987792969,
+      483.4000244140625,
+      358.55999755859375,
+      502.719970703125
+    ],
+    "polygon_pdf_pt": [
+      [
+        347.2799987792969,
+        483.4000244140625
+      ],
+      [
+        358.55999755859375,
+        483.4000244140625
+      ],
+      [
+        358.55999755859375,
+        502.719970703125
+      ],
+      [
+        347.2799987792969,
+        502.719970703125
+      ]
+    ],
+    "area_pt2": 217.9289705567062,
+    "positions": [
+      "N12",
+      "N4"
+    ],
+    "occurrences": [
+      "O015",
+      "O020"
+    ],
+    "identity_groups": [
+      "I009",
+      "I012"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R015",
+          "R020"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R015",
+        "position": "N4",
+        "occurrence_id": "P1-T108:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T108:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      },
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C023",
+    "region_ids": [
+      "R020"
+    ],
+    "bbox": [
+      358.55999755859375,
+      483.4000244140625,
+      691.5599975585938,
+      502.719970703125
+    ],
+    "polygon_pdf_pt": [
+      [
+        358.55999755859375,
+        483.4000244140625
+      ],
+      [
+        691.5599975585938,
+        483.4000244140625
+      ],
+      [
+        691.5599975585938,
+        502.719970703125
+      ],
+      [
+        358.55999755859375,
+        502.719970703125
+      ]
+    ],
+    "area_pt2": 6433.5421142578125,
+    "positions": [
+      "N12"
+    ],
+    "occurrences": [
+      "O020"
+    ],
+    "identity_groups": [
+      "I012"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R020"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C024",
+    "region_ids": [
+      "R019"
+    ],
+    "bbox": [
+      713.6399536132812,
+      484.5999755859375,
+      1353.5999755859375,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        713.6399536132812,
+        484.5999755859375
+      ],
+      [
+        1353.5999755859375,
+        484.5999755859375
+      ],
+      [
+        1353.5999755859375,
+        555.4000244140625
+      ],
+      [
+        713.6399536132812,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 45309.20080371201,
+    "positions": [
+      "N25"
+    ],
+    "occurrences": [
+      "O019"
+    ],
+    "identity_groups": [
+      "I011"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R019"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R019",
+        "position": "N25",
+        "occurrence_id": "P1-T12:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T12:0"
+          ],
+          "text": "N25 13 Ø 8 C/14 C=1200"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C025",
+    "region_ids": [
+      "R019",
+      "R021"
+    ],
+    "bbox": [
+      1353.5999755859375,
+      484.5999755859375,
+      1393.199951171875,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1353.5999755859375,
+        484.5999755859375
+      ],
+      [
+        1393.199951171875,
+        484.5999755859375
+      ],
+      [
+        1393.199951171875,
+        555.4000244140625
+      ],
+      [
+        1353.5999755859375,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 2803.680205076933,
+    "positions": [
+      "N25",
+      "N31"
+    ],
+    "occurrences": [
+      "O019",
+      "O021"
+    ],
+    "identity_groups": [
+      "I011",
+      "I013"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R019",
+          "R021"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R019",
+        "position": "N25",
+        "occurrence_id": "P1-T12:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T12:0"
+          ],
+          "text": "N25 13 Ø 8 C/14 C=1200"
+        }
+      },
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C026",
+    "region_ids": [
+      "R021"
+    ],
+    "bbox": [
+      1393.199951171875,
+      484.5999755859375,
+      1619.159912109375,
+      502.719970703125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1393.199951171875,
+        484.5999755859375
+      ],
+      [
+        1619.159912109375,
+        484.5999755859375
+      ],
+      [
+        1619.159912109375,
+        502.719970703125
+      ],
+      [
+        1393.199951171875,
+        502.719970703125
+      ]
+    ],
+    "area_pt2": 4094.3933888673782,
+    "positions": [
+      "N31"
+    ],
+    "occurrences": [
+      "O021"
+    ],
+    "identity_groups": [
+      "I013"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R021"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C027",
+    "region_ids": [
+      "R018",
+      "R021"
+    ],
+    "bbox": [
+      1619.159912109375,
+      484.5999755859375,
+      1630.43994140625,
+      502.719970703125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1619.159912109375,
+        484.5999755859375
+      ],
+      [
+        1630.43994140625,
+        484.5999755859375
+      ],
+      [
+        1630.43994140625,
+        502.719970703125
+      ],
+      [
+        1619.159912109375,
+        502.719970703125
+      ]
+    ],
+    "area_pt2": 204.39407578110695,
+    "positions": [
+      "N31",
+      "N4"
+    ],
+    "occurrences": [
+      "O018",
+      "O021"
+    ],
+    "identity_groups": [
+      "I010",
+      "I013"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R018",
+          "R021"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R018",
+        "position": "N4",
+        "occurrence_id": "P1-T114:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T114:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      },
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C028",
+    "region_ids": [
+      "R018"
+    ],
+    "bbox": [
+      1630.43994140625,
+      484.5999755859375,
+      1646.8800048828125,
+      502.719970703125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1630.43994140625,
+        484.5999755859375
+      ],
+      [
+        1646.8800048828125,
+        484.5999755859375
+      ],
+      [
+        1646.8800048828125,
+        502.719970703125
+      ],
+      [
+        1630.43994140625,
+        502.719970703125
+      ]
+    ],
+    "area_pt2": 297.89386992156506,
+    "positions": [
+      "N4"
+    ],
+    "occurrences": [
+      "O018"
+    ],
+    "identity_groups": [
+      "I010"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R018"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R018",
+        "position": "N4",
+        "occurrence_id": "P1-T114:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T114:0"
+          ],
+          "text": "N4 9 Ø 8 C/14 C=49"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C029",
+    "region_ids": [
+      "R020"
+    ],
+    "bbox": [
+      347.2799987792969,
+      502.719970703125,
+      691.5599975585938,
+      506.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        347.2799987792969,
+        502.719970703125
+      ],
+      [
+        691.5599975585938,
+        502.719970703125
+      ],
+      [
+        691.5599975585938,
+        506.080078125
+      ],
+      [
+        347.2799987792969,
+        506.080078125
+      ]
+    ],
+    "area_pt2": 1156.8177791014314,
+    "positions": [
+      "N12"
+    ],
+    "occurrences": [
+      "O020"
+    ],
+    "identity_groups": [
+      "I012"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R020"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C030",
+    "region_ids": [
+      "R021"
+    ],
+    "bbox": [
+      1393.199951171875,
+      502.719970703125,
+      1630.43994140625,
+      506.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1393.199951171875,
+        502.719970703125
+      ],
+      [
+        1630.43994140625,
+        502.719970703125
+      ],
+      [
+        1630.43994140625,
+        506.080078125
+      ],
+      [
+        1393.199951171875,
+        506.080078125
+      ]
+    ],
+    "area_pt2": 797.151851952076,
+    "positions": [
+      "N31"
+    ],
+    "occurrences": [
+      "O021"
+    ],
+    "identity_groups": [
+      "I013"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R021"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C031",
+    "region_ids": [
+      "R020"
+    ],
+    "bbox": [
+      347.2799987792969,
+      506.080078125,
+      436.67999267578125,
+      513.52001953125
+    ],
+    "polygon_pdf_pt": [
+      [
+        347.2799987792969,
+        506.080078125
+      ],
+      [
+        436.67999267578125,
+        506.080078125
+      ],
+      [
+        436.67999267578125,
+        513.52001953125
+      ],
+      [
+        347.2799987792969,
+        513.52001953125
+      ]
+    ],
+    "area_pt2": 665.1307163089514,
+    "positions": [
+      "N12"
+    ],
+    "occurrences": [
+      "O020"
+    ],
+    "identity_groups": [
+      "I012"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R020"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C032",
+    "region_ids": [
+      "R020",
+      "R027"
+    ],
+    "bbox": [
+      436.67999267578125,
+      506.080078125,
+      538.6799926757812,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        436.67999267578125,
+        506.080078125
+      ],
+      [
+        538.6799926757812,
+        506.080078125
+      ],
+      [
+        538.6799926757812,
+        555.4000244140625
+      ],
+      [
+        436.67999267578125,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 5030.634521484375,
+    "positions": [
+      "N10",
+      "N12"
+    ],
+    "occurrences": [
+      "O020",
+      "O027"
+    ],
+    "identity_groups": [
+      "I012",
+      "I015"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R020",
+          "R027"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      },
+      {
+        "id": "R027",
+        "position": "N10",
+        "occurrence_id": "P1-T71:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T71:0"
+          ],
+          "text": "N10 8 Ø 5 C/14 C=180"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C033",
+    "region_ids": [
+      "R020"
+    ],
+    "bbox": [
+      538.6799926757812,
+      506.080078125,
+      691.5599975585938,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        538.6799926757812,
+        506.080078125
+      ],
+      [
+        691.5599975585938,
+        506.080078125
+      ],
+      [
+        691.5599975585938,
+        555.4000244140625
+      ],
+      [
+        538.6799926757812,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 7540.033629491925,
+    "positions": [
+      "N12"
+    ],
+    "occurrences": [
+      "O020"
+    ],
+    "identity_groups": [
+      "I012"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R020"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C034",
+    "region_ids": [
+      "R021"
+    ],
+    "bbox": [
+      1393.199951171875,
+      506.080078125,
+      1439.0399169921875,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1393.199951171875,
+        506.080078125
+      ],
+      [
+        1439.0399169921875,
+        506.080078125
+      ],
+      [
+        1439.0399169921875,
+        555.4000244140625
+      ],
+      [
+        1393.199951171875,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 2260.8246521502733,
+    "positions": [
+      "N31"
+    ],
+    "occurrences": [
+      "O021"
+    ],
+    "identity_groups": [
+      "I013"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R021"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C035",
+    "region_ids": [
+      "R021",
+      "R026"
+    ],
+    "bbox": [
+      1439.0399169921875,
+      506.080078125,
+      1541.0399169921875,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1439.0399169921875,
+        506.080078125
+      ],
+      [
+        1541.0399169921875,
+        506.080078125
+      ],
+      [
+        1541.0399169921875,
+        555.4000244140625
+      ],
+      [
+        1439.0399169921875,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 5030.634521484375,
+    "positions": [
+      "N10",
+      "N31"
+    ],
+    "occurrences": [
+      "O021",
+      "O026"
+    ],
+    "identity_groups": [
+      "I013",
+      "I014"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R021",
+          "R026"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      },
+      {
+        "id": "R026",
+        "position": "N10",
+        "occurrence_id": "P1-T75:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T75:0"
+          ],
+          "text": "N10 8 Ø 5 C/14 C=180"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C036",
+    "region_ids": [
+      "R021"
+    ],
+    "bbox": [
+      1541.0399169921875,
+      506.080078125,
+      1630.43994140625,
+      513.52001953125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1541.0399169921875,
+        506.080078125
+      ],
+      [
+        1630.43994140625,
+        506.080078125
+      ],
+      [
+        1630.43994140625,
+        513.52001953125
+      ],
+      [
+        1541.0399169921875,
+        513.52001953125
+      ]
+    ],
+    "area_pt2": 665.1309433579445,
+    "positions": [
+      "N31"
+    ],
+    "occurrences": [
+      "O021"
+    ],
+    "identity_groups": [
+      "I013"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R021"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C037",
+    "region_ids": [
+      "R029"
+    ],
+    "bbox": [
+      178.55999755859375,
+      513.52001953125,
+      347.2799987792969,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        178.55999755859375,
+        513.52001953125
+      ],
+      [
+        347.2799987792969,
+        513.52001953125
+      ],
+      [
+        347.2799987792969,
+        729.1600341796875
+      ],
+      [
+        178.55999755859375,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 36382.783534716815,
+    "positions": [
+      "N3"
+    ],
+    "occurrences": [
+      "O029"
+    ],
+    "identity_groups": [
+      "I016"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R029"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R029",
+        "position": "N3",
+        "occurrence_id": "P1-T10:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T10:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C038",
+    "region_ids": [
+      "R020",
+      "R029"
+    ],
+    "bbox": [
+      347.2799987792969,
+      513.52001953125,
+      359.1600036621094,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        347.2799987792969,
+        513.52001953125
+      ],
+      [
+        359.1600036621094,
+        513.52001953125
+      ],
+      [
+        359.1600036621094,
+        555.4000244140625
+      ],
+      [
+        347.2799987792969,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 497.53466250002384,
+    "positions": [
+      "N12",
+      "N3"
+    ],
+    "occurrences": [
+      "O020",
+      "O029"
+    ],
+    "identity_groups": [
+      "I012",
+      "I016"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R020",
+          "R029"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      },
+      {
+        "id": "R029",
+        "position": "N3",
+        "occurrence_id": "P1-T10:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T10:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C039",
+    "region_ids": [
+      "R020"
+    ],
+    "bbox": [
+      359.1600036621094,
+      513.52001953125,
+      436.67999267578125,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        359.1600036621094,
+        513.52001953125
+      ],
+      [
+        436.67999267578125,
+        513.52001953125
+      ],
+      [
+        436.67999267578125,
+        555.4000244140625
+      ],
+      [
+        359.1600036621094,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 3246.5375184081495,
+    "positions": [
+      "N12"
+    ],
+    "occurrences": [
+      "O020"
+    ],
+    "identity_groups": [
+      "I012"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R020"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R020",
+        "position": "N12",
+        "occurrence_id": "P1-T63:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T63:0"
+          ],
+          "text": "N12 11 Ø 8 C/14 C=608"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C040",
+    "region_ids": [
+      "R021"
+    ],
+    "bbox": [
+      1541.0399169921875,
+      513.52001953125,
+      1618.5599365234375,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1541.0399169921875,
+        513.52001953125
+      ],
+      [
+        1618.5599365234375,
+        513.52001953125
+      ],
+      [
+        1618.5599365234375,
+        555.4000244140625
+      ],
+      [
+        1541.0399169921875,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 3246.5387964844704,
+    "positions": [
+      "N31"
+    ],
+    "occurrences": [
+      "O021"
+    ],
+    "identity_groups": [
+      "I013"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R021"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C041",
+    "region_ids": [
+      "R021",
+      "R030"
+    ],
+    "bbox": [
+      1618.5599365234375,
+      513.52001953125,
+      1630.43994140625,
+      555.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1618.5599365234375,
+        513.52001953125
+      ],
+      [
+        1630.43994140625,
+        513.52001953125
+      ],
+      [
+        1630.43994140625,
+        555.4000244140625
+      ],
+      [
+        1618.5599365234375,
+        555.4000244140625
+      ]
+    ],
+    "area_pt2": 497.53466250002384,
+    "positions": [
+      "N3",
+      "N31"
+    ],
+    "occurrences": [
+      "O021",
+      "O030"
+    ],
+    "identity_groups": [
+      "I013",
+      "I017"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R021",
+          "R030"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R021",
+        "position": "N31",
+        "occurrence_id": "P1-T91:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T91:0"
+          ],
+          "text": "N31 10 Ø 8 C/14 C=489"
+        }
+      },
+      {
+        "id": "R030",
+        "position": "N3",
+        "occurrence_id": "P1-T26:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T26:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C042",
+    "region_ids": [
+      "R030"
+    ],
+    "bbox": [
+      1630.43994140625,
+      513.52001953125,
+      1799.2799072265625,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1630.43994140625,
+        513.52001953125
+      ],
+      [
+        1799.2799072265625,
+        513.52001953125
+      ],
+      [
+        1799.2799072265625,
+        729.1600341796875
+      ],
+      [
+        1630.43994140625,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 36408.652702733874,
+    "positions": [
+      "N3"
+    ],
+    "occurrences": [
+      "O030"
+    ],
+    "identity_groups": [
+      "I017"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R030"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R030",
+        "position": "N3",
+        "occurrence_id": "P1-T26:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T26:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C043",
+    "region_ids": [
+      "R029",
+      "R032"
+    ],
+    "bbox": [
+      347.2799987792969,
+      555.4000244140625,
+      359.1600036621094,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        347.2799987792969,
+        555.4000244140625
+      ],
+      [
+        359.1600036621094,
+        555.4000244140625
+      ],
+      [
+        359.1600036621094,
+        729.1600341796875
+      ],
+      [
+        347.2799987792969,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 2064.2697644531727,
+    "positions": [
+      "N15",
+      "N3"
+    ],
+    "occurrences": [
+      "O029",
+      "O032"
+    ],
+    "identity_groups": [
+      "I016",
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R029",
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R029",
+        "position": "N3",
+        "occurrence_id": "P1-T10:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T10:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C044",
+    "region_ids": [
+      "R032"
+    ],
+    "bbox": [
+      359.1600036621094,
+      555.4000244140625,
+      436.67999267578125,
+      566.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        359.1600036621094,
+        555.4000244140625
+      ],
+      [
+        436.67999267578125,
+        555.4000244140625
+      ],
+      [
+        436.67999267578125,
+        566.080078125
+      ],
+      [
+        359.1600036621094,
+        566.080078125
+      ]
+    ],
+    "area_pt2": 827.9176463373005,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O032"
+    ],
+    "identity_groups": [
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C045",
+    "region_ids": [
+      "R027",
+      "R032"
+    ],
+    "bbox": [
+      436.67999267578125,
+      555.4000244140625,
+      538.6799926757812,
+      566.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        436.67999267578125,
+        555.4000244140625
+      ],
+      [
+        538.6799926757812,
+        555.4000244140625
+      ],
+      [
+        538.6799926757812,
+        566.080078125
+      ],
+      [
+        436.67999267578125,
+        566.080078125
+      ]
+    ],
+    "area_pt2": 1089.365478515625,
+    "positions": [
+      "N10",
+      "N15"
+    ],
+    "occurrences": [
+      "O027",
+      "O032"
+    ],
+    "identity_groups": [
+      "I015",
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R027",
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R027",
+        "position": "N10",
+        "occurrence_id": "P1-T71:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T71:0"
+          ],
+          "text": "N10 8 Ø 5 C/14 C=180"
+        }
+      },
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C046",
+    "region_ids": [
+      "R032"
+    ],
+    "bbox": [
+      538.6799926757812,
+      555.4000244140625,
+      861.239990234375,
+      566.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        538.6799926757812,
+        555.4000244140625
+      ],
+      [
+        861.239990234375,
+        555.4000244140625
+      ],
+      [
+        861.239990234375,
+        566.080078125
+      ],
+      [
+        538.6799926757812,
+        566.080078125
+      ]
+    ],
+    "area_pt2": 3444.95809892565,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O032"
+    ],
+    "identity_groups": [
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C047",
+    "region_ids": [
+      "R031"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      555.4000244140625,
+      1439.0399169921875,
+      566.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        555.4000244140625
+      ],
+      [
+        1439.0399169921875,
+        555.4000244140625
+      ],
+      [
+        1439.0399169921875,
+        566.080078125
+      ],
+      [
+        1116.5999755859375,
+        566.080078125
+      ]
+    ],
+    "area_pt2": 3443.6758927702904,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O031"
+    ],
+    "identity_groups": [
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C048",
+    "region_ids": [
+      "R026",
+      "R031"
+    ],
+    "bbox": [
+      1439.0399169921875,
+      555.4000244140625,
+      1541.0399169921875,
+      566.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1439.0399169921875,
+        555.4000244140625
+      ],
+      [
+        1541.0399169921875,
+        555.4000244140625
+      ],
+      [
+        1541.0399169921875,
+        566.080078125
+      ],
+      [
+        1439.0399169921875,
+        566.080078125
+      ]
+    ],
+    "area_pt2": 1089.365478515625,
+    "positions": [
+      "N10",
+      "N15"
+    ],
+    "occurrences": [
+      "O026",
+      "O031"
+    ],
+    "identity_groups": [
+      "I014",
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R026",
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R026",
+        "position": "N10",
+        "occurrence_id": "P1-T75:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T75:0"
+          ],
+          "text": "N10 8 Ø 5 C/14 C=180"
+        }
+      },
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C049",
+    "region_ids": [
+      "R031"
+    ],
+    "bbox": [
+      1541.0399169921875,
+      555.4000244140625,
+      1618.5599365234375,
+      566.080078125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1541.0399169921875,
+        555.4000244140625
+      ],
+      [
+        1618.5599365234375,
+        555.4000244140625
+      ],
+      [
+        1618.5599365234375,
+        566.080078125
+      ],
+      [
+        1541.0399169921875,
+        566.080078125
+      ]
+    ],
+    "area_pt2": 827.917972266674,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O031"
+    ],
+    "identity_groups": [
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C050",
+    "region_ids": [
+      "R030",
+      "R031"
+    ],
+    "bbox": [
+      1618.5599365234375,
+      555.4000244140625,
+      1630.43994140625,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1618.5599365234375,
+        555.4000244140625
+      ],
+      [
+        1630.43994140625,
+        555.4000244140625
+      ],
+      [
+        1630.43994140625,
+        729.1600341796875
+      ],
+      [
+        1618.5599365234375,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 2064.2697644531727,
+    "positions": [
+      "N15",
+      "N3"
+    ],
+    "occurrences": [
+      "O030",
+      "O031"
+    ],
+    "identity_groups": [
+      "I017",
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R030",
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R030",
+        "position": "N3",
+        "occurrence_id": "P1-T26:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T26:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C051",
+    "region_ids": [
+      "R032"
+    ],
+    "bbox": [
+      359.1600036621094,
+      566.080078125,
+      861.239990234375,
+      569.56005859375
+    ],
+    "polygon_pdf_pt": [
+      [
+        359.1600036621094,
+        566.080078125
+      ],
+      [
+        861.239990234375,
+        566.080078125
+      ],
+      [
+        861.239990234375,
+        569.56005859375
+      ],
+      [
+        359.1600036621094,
+        569.56005859375
+      ]
+    ],
+    "area_pt2": 1747.2285470217466,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O032"
+    ],
+    "identity_groups": [
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C052",
+    "region_ids": [
+      "R031"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      566.080078125,
+      1618.5599365234375,
+      569.56005859375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        566.080078125
+      ],
+      [
+        1618.5599365234375,
+        566.080078125
+      ],
+      [
+        1618.5599365234375,
+        569.56005859375
+      ],
+      [
+        1116.5999755859375,
+        569.56005859375
+      ]
+    ],
+    "area_pt2": 1746.810860157013,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O031"
+    ],
+    "identity_groups": [
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C053",
+    "region_ids": [
+      "R032"
+    ],
+    "bbox": [
+      359.1600036621094,
+      569.56005859375,
+      846.47998046875,
+      645.760009765625
+    ],
+    "polygon_pdf_pt": [
+      [
+        359.1600036621094,
+        569.56005859375
+      ],
+      [
+        846.47998046875,
+        569.56005859375
+      ],
+      [
+        846.47998046875,
+        645.760009765625
+      ],
+      [
+        359.1600036621094,
+        645.760009765625
+      ]
+    ],
+    "area_pt2": 37133.75843774527,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O032"
+    ],
+    "identity_groups": [
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C054",
+    "region_ids": [
+      "R032",
+      "R033"
+    ],
+    "bbox": [
+      846.47998046875,
+      569.56005859375,
+      861.239990234375,
+      714.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        846.47998046875,
+        569.56005859375
+      ],
+      [
+        861.239990234375,
+        569.56005859375
+      ],
+      [
+        861.239990234375,
+        714.4000244140625
+      ],
+      [
+        846.47998046875,
+        714.4000244140625
+      ]
+    ],
+    "area_pt2": 2137.8393099606037,
+    "positions": [
+      "N15",
+      "N24"
+    ],
+    "occurrences": [
+      "O032",
+      "O033"
+    ],
+    "identity_groups": [
+      "I019",
+      "I020"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032",
+          "R033"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R033",
+        "position": "N24",
+        "occurrence_id": "P1-T20:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T20:0"
+          ],
+          "text": "N24 20 Ø 8 C/14 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C055",
+    "region_ids": [
+      "R033"
+    ],
+    "bbox": [
+      861.239990234375,
+      569.56005859375,
+      1116.5999755859375,
+      714.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        861.239990234375,
+        569.56005859375
+      ],
+      [
+        1116.5999755859375,
+        569.56005859375
+      ],
+      [
+        1116.5999755859375,
+        714.4000244140625
+      ],
+      [
+        861.239990234375,
+        714.4000244140625
+      ]
+    ],
+    "area_pt2": 36986.33155019581,
+    "positions": [
+      "N24"
+    ],
+    "occurrences": [
+      "O033"
+    ],
+    "identity_groups": [
+      "I020"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R033"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R033",
+        "position": "N24",
+        "occurrence_id": "P1-T20:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T20:0"
+          ],
+          "text": "N24 20 Ø 8 C/14 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C056",
+    "region_ids": [
+      "R031",
+      "R033"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      569.56005859375,
+      1131.3599853515625,
+      714.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        569.56005859375
+      ],
+      [
+        1131.3599853515625,
+        569.56005859375
+      ],
+      [
+        1131.3599853515625,
+        714.4000244140625
+      ],
+      [
+        1116.5999755859375,
+        714.4000244140625
+      ]
+    ],
+    "area_pt2": 2137.8393099606037,
+    "positions": [
+      "N15",
+      "N24"
+    ],
+    "occurrences": [
+      "O031",
+      "O033"
+    ],
+    "identity_groups": [
+      "I018",
+      "I020"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031",
+          "R033"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R033",
+        "position": "N24",
+        "occurrence_id": "P1-T20:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T20:0"
+          ],
+          "text": "N24 20 Ø 8 C/14 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C057",
+    "region_ids": [
+      "R031"
+    ],
+    "bbox": [
+      1131.3599853515625,
+      569.56005859375,
+      1618.5599365234375,
+      645.760009765625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1131.3599853515625,
+        569.56005859375
+      ],
+      [
+        1618.5599365234375,
+        569.56005859375
+      ],
+      [
+        1618.5599365234375,
+        645.760009765625
+      ],
+      [
+        1131.3599853515625,
+        645.760009765625
+      ]
+    ],
+    "area_pt2": 37124.61249023676,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O031"
+    ],
+    "identity_groups": [
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C058",
+    "region_ids": [
+      "R032"
+    ],
+    "bbox": [
+      359.1600036621094,
+      645.760009765625,
+      476.1600036621094,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        359.1600036621094,
+        645.760009765625
+      ],
+      [
+        476.1600036621094,
+        645.760009765625
+      ],
+      [
+        476.1600036621094,
+        729.1600341796875
+      ],
+      [
+        359.1600036621094,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 9757.802856445312,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O032"
+    ],
+    "identity_groups": [
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C059",
+    "region_ids": [
+      "R032",
+      "R034"
+    ],
+    "bbox": [
+      476.1600036621094,
+      645.760009765625,
+      705.47998046875,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        476.1600036621094,
+        645.760009765625
+      ],
+      [
+        705.47998046875,
+        645.760009765625
+      ],
+      [
+        705.47998046875,
+        729.1600341796875
+      ],
+      [
+        476.1600036621094,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 19125.291664306074,
+    "positions": [
+      "N14",
+      "N15"
+    ],
+    "occurrences": [
+      "O032",
+      "O034"
+    ],
+    "identity_groups": [
+      "I019",
+      "I021"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032",
+          "R034"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R034",
+        "position": "N14",
+        "occurrence_id": "P1-T32:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T32:0"
+          ],
+          "text": "N14 33 Ø 5 C/14 C=405"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C060",
+    "region_ids": [
+      "R032"
+    ],
+    "bbox": [
+      705.47998046875,
+      645.760009765625,
+      846.47998046875,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        705.47998046875,
+        645.760009765625
+      ],
+      [
+        846.47998046875,
+        645.760009765625
+      ],
+      [
+        846.47998046875,
+        729.1600341796875
+      ],
+      [
+        705.47998046875,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 11759.403442382812,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O032"
+    ],
+    "identity_groups": [
+      "I019"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C061",
+    "region_ids": [
+      "R031"
+    ],
+    "bbox": [
+      1131.3599853515625,
+      645.760009765625,
+      1272.239990234375,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1131.3599853515625,
+        645.760009765625
+      ],
+      [
+        1272.239990234375,
+        645.760009765625
+      ],
+      [
+        1272.239990234375,
+        729.1600341796875
+      ],
+      [
+        1131.3599853515625,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 11749.395846679807,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O031"
+    ],
+    "identity_groups": [
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C062",
+    "region_ids": [
+      "R031",
+      "R035"
+    ],
+    "bbox": [
+      1272.239990234375,
+      645.760009765625,
+      1501.679931640625,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1272.239990234375,
+        645.760009765625
+      ],
+      [
+        1501.679931640625,
+        645.760009765625
+      ],
+      [
+        1501.679931640625,
+        729.1600341796875
+      ],
+      [
+        1272.239990234375,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 19135.29671484232,
+    "positions": [
+      "N14",
+      "N15"
+    ],
+    "occurrences": [
+      "O031",
+      "O035"
+    ],
+    "identity_groups": [
+      "I018",
+      "I022"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031",
+          "R035"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R035",
+        "position": "N14",
+        "occurrence_id": "P1-T34:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T34:0"
+          ],
+          "text": "N14 33 Ø 5 C/14 C=405"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C063",
+    "region_ids": [
+      "R031"
+    ],
+    "bbox": [
+      1501.679931640625,
+      645.760009765625,
+      1618.5599365234375,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1501.679931640625,
+        645.760009765625
+      ],
+      [
+        1618.5599365234375,
+        645.760009765625
+      ],
+      [
+        1618.5599365234375,
+        729.1600341796875
+      ],
+      [
+        1501.679931640625,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 9747.795260742307,
+    "positions": [
+      "N15"
+    ],
+    "occurrences": [
+      "O031"
+    ],
+    "identity_groups": [
+      "I018"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C064",
+    "region_ids": [
+      "R032",
+      "R036"
+    ],
+    "bbox": [
+      846.47998046875,
+      714.4000244140625,
+      861.239990234375,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        846.47998046875,
+        714.4000244140625
+      ],
+      [
+        861.239990234375,
+        714.4000244140625
+      ],
+      [
+        861.239990234375,
+        729.1600341796875
+      ],
+      [
+        846.47998046875,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 217.85788828134537,
+    "positions": [
+      "N15",
+      "N26"
+    ],
+    "occurrences": [
+      "O032",
+      "O036"
+    ],
+    "identity_groups": [
+      "I019",
+      "I023"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032",
+          "R036"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R036",
+        "position": "N26",
+        "occurrence_id": "P1-T47:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T47:0"
+          ],
+          "text": "N26 35 Ø 6.3 C/12 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C065",
+    "region_ids": [
+      "R036"
+    ],
+    "bbox": [
+      861.239990234375,
+      714.4000244140625,
+      1116.5999755859375,
+      948.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        861.239990234375,
+        714.4000244140625
+      ],
+      [
+        1116.5999755859375,
+        714.4000244140625
+      ],
+      [
+        1116.5999755859375,
+        948.4000244140625
+      ],
+      [
+        861.239990234375,
+        948.4000244140625
+      ]
+    ],
+    "area_pt2": 59754.236572265625,
+    "positions": [
+      "N26"
+    ],
+    "occurrences": [
+      "O036"
+    ],
+    "identity_groups": [
+      "I023"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R036"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R036",
+        "position": "N26",
+        "occurrence_id": "P1-T47:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T47:0"
+          ],
+          "text": "N26 35 Ø 6.3 C/12 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C066",
+    "region_ids": [
+      "R031",
+      "R036"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      714.4000244140625,
+      1131.3599853515625,
+      729.1600341796875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        714.4000244140625
+      ],
+      [
+        1131.3599853515625,
+        714.4000244140625
+      ],
+      [
+        1131.3599853515625,
+        729.1600341796875
+      ],
+      [
+        1116.5999755859375,
+        729.1600341796875
+      ]
+    ],
+    "area_pt2": 217.85788828134537,
+    "positions": [
+      "N15",
+      "N26"
+    ],
+    "occurrences": [
+      "O031",
+      "O036"
+    ],
+    "identity_groups": [
+      "I018",
+      "I023"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031",
+          "R036"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R036",
+        "position": "N26",
+        "occurrence_id": "P1-T47:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T47:0"
+          ],
+          "text": "N26 35 Ø 6.3 C/12 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C067",
+    "region_ids": [
+      "R029"
+    ],
+    "bbox": [
+      178.55999755859375,
+      729.1600341796875,
+      300.6000061035156,
+      737.2000122070312
+    ],
+    "polygon_pdf_pt": [
+      [
+        178.55999755859375,
+        729.1600341796875
+      ],
+      [
+        300.6000061035156,
+        729.1600341796875
+      ],
+      [
+        300.6000061035156,
+        737.2000122070312
+      ],
+      [
+        178.55999755859375,
+        737.2000122070312
+      ]
+    ],
+    "area_pt2": 981.1989871580154,
+    "positions": [
+      "N3"
+    ],
+    "occurrences": [
+      "O029"
+    ],
+    "identity_groups": [
+      "I016"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R029"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R029",
+        "position": "N3",
+        "occurrence_id": "P1-T10:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T10:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C068",
+    "region_ids": [
+      "R029",
+      "R043"
+    ],
+    "bbox": [
+      300.6000061035156,
+      729.1600341796875,
+      347.2799987792969,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        300.6000061035156,
+        729.1600341796875
+      ],
+      [
+        347.2799987792969,
+        729.1600341796875
+      ],
+      [
+        347.2799987792969,
+        732.280029296875
+      ],
+      [
+        300.6000061035156,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 145.64134921878576,
+    "positions": [
+      "N13",
+      "N3"
+    ],
+    "occurrences": [
+      "O029",
+      "O043"
+    ],
+    "identity_groups": [
+      "I016",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R029",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R029",
+        "position": "N3",
+        "occurrence_id": "P1-T10:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T10:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C069",
+    "region_ids": [
+      "R029",
+      "R032",
+      "R043"
+    ],
+    "bbox": [
+      347.2799987792969,
+      729.1600341796875,
+      359.1600036621094,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        347.2799987792969,
+        729.1600341796875
+      ],
+      [
+        359.1600036621094,
+        729.1600341796875
+      ],
+      [
+        359.1600036621094,
+        732.280029296875
+      ],
+      [
+        347.2799987792969,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 37.06555722653866,
+    "positions": [
+      "N13",
+      "N15",
+      "N3"
+    ],
+    "occurrences": [
+      "O029",
+      "O032",
+      "O043"
+    ],
+    "identity_groups": [
+      "I016",
+      "I019",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R029",
+          "R032",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R029",
+        "position": "N3",
+        "occurrence_id": "P1-T10:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T10:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C070",
+    "region_ids": [
+      "R032",
+      "R043"
+    ],
+    "bbox": [
+      359.1600036621094,
+      729.1600341796875,
+      476.1600036621094,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        359.1600036621094,
+        729.1600341796875
+      ],
+      [
+        476.1600036621094,
+        729.1600341796875
+      ],
+      [
+        476.1600036621094,
+        732.280029296875
+      ],
+      [
+        359.1600036621094,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 365.0394287109375,
+    "positions": [
+      "N13",
+      "N15"
+    ],
+    "occurrences": [
+      "O032",
+      "O043"
+    ],
+    "identity_groups": [
+      "I019",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C071",
+    "region_ids": [
+      "R032",
+      "R034",
+      "R043"
+    ],
+    "bbox": [
+      476.1600036621094,
+      729.1600341796875,
+      705.47998046875,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        476.1600036621094,
+        729.1600341796875
+      ],
+      [
+        705.47998046875,
+        729.1600341796875
+      ],
+      [
+        705.47998046875,
+        732.280029296875
+      ],
+      [
+        476.1600036621094,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 715.4772079102695,
+    "positions": [
+      "N13",
+      "N14",
+      "N15"
+    ],
+    "occurrences": [
+      "O032",
+      "O034",
+      "O043"
+    ],
+    "identity_groups": [
+      "I019",
+      "I021",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032",
+          "R034",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R034",
+        "position": "N14",
+        "occurrence_id": "P1-T32:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T32:0"
+          ],
+          "text": "N14 33 Ø 5 C/14 C=405"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C072",
+    "region_ids": [
+      "R032",
+      "R043"
+    ],
+    "bbox": [
+      705.47998046875,
+      729.1600341796875,
+      846.47998046875,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        705.47998046875,
+        729.1600341796875
+      ],
+      [
+        846.47998046875,
+        729.1600341796875
+      ],
+      [
+        846.47998046875,
+        732.280029296875
+      ],
+      [
+        705.47998046875,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 439.9193115234375,
+    "positions": [
+      "N13",
+      "N15"
+    ],
+    "occurrences": [
+      "O032",
+      "O043"
+    ],
+    "identity_groups": [
+      "I019",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C073",
+    "region_ids": [
+      "R032",
+      "R036",
+      "R043"
+    ],
+    "bbox": [
+      846.47998046875,
+      729.1600341796875,
+      861.239990234375,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        846.47998046875,
+        729.1600341796875
+      ],
+      [
+        861.239990234375,
+        729.1600341796875
+      ],
+      [
+        861.239990234375,
+        732.280029296875
+      ],
+      [
+        846.47998046875,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 46.051158398389816,
+    "positions": [
+      "N13",
+      "N15",
+      "N26"
+    ],
+    "occurrences": [
+      "O032",
+      "O036",
+      "O043"
+    ],
+    "identity_groups": [
+      "I019",
+      "I023",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R032",
+          "R036",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R032",
+        "position": "N15",
+        "occurrence_id": "P1-T56:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T56:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R036",
+        "position": "N26",
+        "occurrence_id": "P1-T47:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T47:0"
+          ],
+          "text": "N26 35 Ø 6.3 C/12 C=503"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C074",
+    "region_ids": [
+      "R031",
+      "R036",
+      "R044"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      729.1600341796875,
+      1131.3599853515625,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        729.1600341796875
+      ],
+      [
+        1131.3599853515625,
+        729.1600341796875
+      ],
+      [
+        1131.3599853515625,
+        732.280029296875
+      ],
+      [
+        1116.5999755859375,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 46.051158398389816,
+    "positions": [
+      "N13",
+      "N15",
+      "N26"
+    ],
+    "occurrences": [
+      "O031",
+      "O036",
+      "O044"
+    ],
+    "identity_groups": [
+      "I018",
+      "I023",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031",
+          "R036",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R036",
+        "position": "N26",
+        "occurrence_id": "P1-T47:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T47:0"
+          ],
+          "text": "N26 35 Ø 6.3 C/12 C=503"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C075",
+    "region_ids": [
+      "R031",
+      "R044"
+    ],
+    "bbox": [
+      1131.3599853515625,
+      729.1600341796875,
+      1272.239990234375,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1131.3599853515625,
+        729.1600341796875
+      ],
+      [
+        1272.239990234375,
+        729.1600341796875
+      ],
+      [
+        1272.239990234375,
+        732.280029296875
+      ],
+      [
+        1131.3599853515625,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 439.54492734372616,
+    "positions": [
+      "N13",
+      "N15"
+    ],
+    "occurrences": [
+      "O031",
+      "O044"
+    ],
+    "identity_groups": [
+      "I018",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C076",
+    "region_ids": [
+      "R031",
+      "R035",
+      "R044"
+    ],
+    "bbox": [
+      1272.239990234375,
+      729.1600341796875,
+      1501.679931640625,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1272.239990234375,
+        729.1600341796875
+      ],
+      [
+        1501.679931640625,
+        729.1600341796875
+      ],
+      [
+        1501.679931640625,
+        732.280029296875
+      ],
+      [
+        1272.239990234375,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 715.8514968752861,
+    "positions": [
+      "N13",
+      "N14",
+      "N15"
+    ],
+    "occurrences": [
+      "O031",
+      "O035",
+      "O044"
+    ],
+    "identity_groups": [
+      "I018",
+      "I022",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031",
+          "R035",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R035",
+        "position": "N14",
+        "occurrence_id": "P1-T34:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T34:0"
+          ],
+          "text": "N14 33 Ø 5 C/14 C=405"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C077",
+    "region_ids": [
+      "R031",
+      "R044"
+    ],
+    "bbox": [
+      1501.679931640625,
+      729.1600341796875,
+      1618.5599365234375,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1501.679931640625,
+        729.1600341796875
+      ],
+      [
+        1618.5599365234375,
+        729.1600341796875
+      ],
+      [
+        1618.5599365234375,
+        732.280029296875
+      ],
+      [
+        1501.679931640625,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 364.66504453122616,
+    "positions": [
+      "N13",
+      "N15"
+    ],
+    "occurrences": [
+      "O031",
+      "O044"
+    ],
+    "identity_groups": [
+      "I018",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R031",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C078",
+    "region_ids": [
+      "R030",
+      "R031",
+      "R044"
+    ],
+    "bbox": [
+      1618.5599365234375,
+      729.1600341796875,
+      1630.43994140625,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1618.5599365234375,
+        729.1600341796875
+      ],
+      [
+        1630.43994140625,
+        729.1600341796875
+      ],
+      [
+        1630.43994140625,
+        732.280029296875
+      ],
+      [
+        1618.5599365234375,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 37.06555722653866,
+    "positions": [
+      "N13",
+      "N15",
+      "N3"
+    ],
+    "occurrences": [
+      "O030",
+      "O031",
+      "O044"
+    ],
+    "identity_groups": [
+      "I017",
+      "I018",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R030",
+          "R031",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R030",
+        "position": "N3",
+        "occurrence_id": "P1-T26:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T26:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R031",
+        "position": "N15",
+        "occurrence_id": "P1-T89:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T89:0"
+          ],
+          "text": "N15 23 Ø 8 C/14 C=908"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C079",
+    "region_ids": [
+      "R030",
+      "R044"
+    ],
+    "bbox": [
+      1630.43994140625,
+      729.1600341796875,
+      1677.239990234375,
+      732.280029296875
+    ],
+    "polygon_pdf_pt": [
+      [
+        1630.43994140625,
+        729.1600341796875
+      ],
+      [
+        1677.239990234375,
+        729.1600341796875
+      ],
+      [
+        1677.239990234375,
+        732.280029296875
+      ],
+      [
+        1630.43994140625,
+        732.280029296875
+      ]
+    ],
+    "area_pt2": 146.01592382788658,
+    "positions": [
+      "N13",
+      "N3"
+    ],
+    "occurrences": [
+      "O030",
+      "O044"
+    ],
+    "identity_groups": [
+      "I017",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R030",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R030",
+        "position": "N3",
+        "occurrence_id": "P1-T26:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T26:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C080",
+    "region_ids": [
+      "R030"
+    ],
+    "bbox": [
+      1677.239990234375,
+      729.1600341796875,
+      1799.2799072265625,
+      737.2000122070312
+    ],
+    "polygon_pdf_pt": [
+      [
+        1677.239990234375,
+        729.1600341796875
+      ],
+      [
+        1799.2799072265625,
+        729.1600341796875
+      ],
+      [
+        1799.2799072265625,
+        737.2000122070312
+      ],
+      [
+        1677.239990234375,
+        737.2000122070312
+      ]
+    ],
+    "area_pt2": 981.1982510760427,
+    "positions": [
+      "N3"
+    ],
+    "occurrences": [
+      "O030"
+    ],
+    "identity_groups": [
+      "I017"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R030"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R030",
+        "position": "N3",
+        "occurrence_id": "P1-T26:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T26:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C081",
+    "region_ids": [
+      "R029",
+      "R043"
+    ],
+    "bbox": [
+      300.6000061035156,
+      732.280029296875,
+      359.1600036621094,
+      737.2000122070312
+    ],
+    "polygon_pdf_pt": [
+      [
+        300.6000061035156,
+        732.280029296875
+      ],
+      [
+        359.1600036621094,
+        732.280029296875
+      ],
+      [
+        359.1600036621094,
+        737.2000122070312
+      ],
+      [
+        300.6000061035156,
+        737.2000122070312
+      ]
+    ],
+    "area_pt2": 288.114187207073,
+    "positions": [
+      "N13",
+      "N3"
+    ],
+    "occurrences": [
+      "O029",
+      "O043"
+    ],
+    "identity_groups": [
+      "I016",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R029",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R029",
+        "position": "N3",
+        "occurrence_id": "P1-T10:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T10:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C082",
+    "region_ids": [
+      "R043"
+    ],
+    "bbox": [
+      359.1600036621094,
+      732.280029296875,
+      476.1600036621094,
+      737.2000122070312
+    ],
+    "polygon_pdf_pt": [
+      [
+        359.1600036621094,
+        732.280029296875
+      ],
+      [
+        476.1600036621094,
+        732.280029296875
+      ],
+      [
+        476.1600036621094,
+        737.2000122070312
+      ],
+      [
+        359.1600036621094,
+        737.2000122070312
+      ]
+    ],
+    "area_pt2": 575.6380004882812,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O043"
+    ],
+    "identity_groups": [
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C083",
+    "region_ids": [
+      "R034",
+      "R043"
+    ],
+    "bbox": [
+      476.1600036621094,
+      732.280029296875,
+      705.47998046875,
+      903.0400390625
+    ],
+    "polygon_pdf_pt": [
+      [
+        476.1600036621094,
+        732.280029296875
+      ],
+      [
+        705.47998046875,
+        732.280029296875
+      ],
+      [
+        705.47998046875,
+        903.0400390625
+      ],
+      [
+        476.1600036621094,
+        903.0400390625
+      ]
+    ],
+    "area_pt2": 39158.68147895485,
+    "positions": [
+      "N13",
+      "N14"
+    ],
+    "occurrences": [
+      "O034",
+      "O043"
+    ],
+    "identity_groups": [
+      "I021",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R034",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R034",
+        "position": "N14",
+        "occurrence_id": "P1-T32:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T32:0"
+          ],
+          "text": "N14 33 Ø 5 C/14 C=405"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C084",
+    "region_ids": [
+      "R043"
+    ],
+    "bbox": [
+      705.47998046875,
+      732.280029296875,
+      846.47998046875,
+      903.0400390625
+    ],
+    "polygon_pdf_pt": [
+      [
+        705.47998046875,
+        732.280029296875
+      ],
+      [
+        846.47998046875,
+        732.280029296875
+      ],
+      [
+        846.47998046875,
+        903.0400390625
+      ],
+      [
+        705.47998046875,
+        903.0400390625
+      ]
+    ],
+    "area_pt2": 24077.161376953125,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O043"
+    ],
+    "identity_groups": [
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C085",
+    "region_ids": [
+      "R036",
+      "R043"
+    ],
+    "bbox": [
+      846.47998046875,
+      732.280029296875,
+      861.239990234375,
+      948.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        846.47998046875,
+        732.280029296875
+      ],
+      [
+        861.239990234375,
+        732.280029296875
+      ],
+      [
+        861.239990234375,
+        948.4000244140625
+      ],
+      [
+        846.47998046875,
+        948.4000244140625
+      ]
+    ],
+    "area_pt2": 3189.933238476515,
+    "positions": [
+      "N13",
+      "N26"
+    ],
+    "occurrences": [
+      "O036",
+      "O043"
+    ],
+    "identity_groups": [
+      "I023",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R036",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R036",
+        "position": "N26",
+        "occurrence_id": "P1-T47:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T47:0"
+          ],
+          "text": "N26 35 Ø 6.3 C/12 C=503"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C086",
+    "region_ids": [
+      "R036",
+      "R044"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      732.280029296875,
+      1131.3599853515625,
+      948.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        732.280029296875
+      ],
+      [
+        1131.3599853515625,
+        732.280029296875
+      ],
+      [
+        1131.3599853515625,
+        948.4000244140625
+      ],
+      [
+        1116.5999755859375,
+        948.4000244140625
+      ]
+    ],
+    "area_pt2": 3189.933238476515,
+    "positions": [
+      "N13",
+      "N26"
+    ],
+    "occurrences": [
+      "O036",
+      "O044"
+    ],
+    "identity_groups": [
+      "I023",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R036",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R036",
+        "position": "N26",
+        "occurrence_id": "P1-T47:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T47:0"
+          ],
+          "text": "N26 35 Ø 6.3 C/12 C=503"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C087",
+    "region_ids": [
+      "R044"
+    ],
+    "bbox": [
+      1131.3599853515625,
+      732.280029296875,
+      1272.239990234375,
+      903.0400390625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1131.3599853515625,
+        732.280029296875
+      ],
+      [
+        1272.239990234375,
+        732.280029296875
+      ],
+      [
+        1272.239990234375,
+        903.0400390625
+      ],
+      [
+        1131.3599853515625,
+        903.0400390625
+      ]
+    ],
+    "area_pt2": 24056.67100957036,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O044"
+    ],
+    "identity_groups": [
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C088",
+    "region_ids": [
+      "R035",
+      "R044"
+    ],
+    "bbox": [
+      1272.239990234375,
+      732.280029296875,
+      1501.679931640625,
+      903.0400390625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1272.239990234375,
+        732.280029296875
+      ],
+      [
+        1501.679931640625,
+        732.280029296875
+      ],
+      [
+        1501.679931640625,
+        903.0400390625
+      ],
+      [
+        1272.239990234375,
+        903.0400390625
+      ]
+    ],
+    "area_pt2": 39179.16663515568,
+    "positions": [
+      "N13",
+      "N14"
+    ],
+    "occurrences": [
+      "O035",
+      "O044"
+    ],
+    "identity_groups": [
+      "I022",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R035",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R035",
+        "position": "N14",
+        "occurrence_id": "P1-T34:0",
+        "orientation": 0,
+        "diameter_mm": 5.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T34:0"
+          ],
+          "text": "N14 33 Ø 5 C/14 C=405"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C089",
+    "region_ids": [
+      "R044"
+    ],
+    "bbox": [
+      1501.679931640625,
+      732.280029296875,
+      1618.5599365234375,
+      737.2000122070312
+    ],
+    "polygon_pdf_pt": [
+      [
+        1501.679931640625,
+        732.280029296875
+      ],
+      [
+        1618.5599365234375,
+        732.280029296875
+      ],
+      [
+        1618.5599365234375,
+        737.2000122070312
+      ],
+      [
+        1501.679931640625,
+        737.2000122070312
+      ]
+    ],
+    "area_pt2": 575.0476265624166,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O044"
+    ],
+    "identity_groups": [
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C090",
+    "region_ids": [
+      "R030",
+      "R044"
+    ],
+    "bbox": [
+      1618.5599365234375,
+      732.280029296875,
+      1677.239990234375,
+      737.2000122070312
+    ],
+    "polygon_pdf_pt": [
+      [
+        1618.5599365234375,
+        732.280029296875
+      ],
+      [
+        1677.239990234375,
+        732.280029296875
+      ],
+      [
+        1677.239990234375,
+        737.2000122070312
+      ],
+      [
+        1618.5599365234375,
+        737.2000122070312
+      ]
+    ],
+    "area_pt2": 288.70486142486334,
+    "positions": [
+      "N13",
+      "N3"
+    ],
+    "occurrences": [
+      "O030",
+      "O044"
+    ],
+    "identity_groups": [
+      "I017",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R030",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R030",
+        "position": "N3",
+        "occurrence_id": "P1-T26:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T26:0"
+          ],
+          "text": "N3 33 Ø 6.3 C/12 C=319"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C091",
+    "region_ids": [
+      "R041"
+    ],
+    "bbox": [
+      91.31999969482422,
+      737.2000122070312,
+      300.6000061035156,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        91.31999969482422,
+        737.2000122070312
+      ],
+      [
+        300.6000061035156,
+        737.2000122070312
+      ],
+      [
+        300.6000061035156,
+        995.9200439453125
+      ],
+      [
+        91.31999969482422,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 54144.929900244344,
+    "positions": [
+      "N1"
+    ],
+    "occurrences": [
+      "O041"
+    ],
+    "identity_groups": [
+      "I024"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R041"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R041",
+        "position": "N1",
+        "occurrence_id": "P1-T16:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 143.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T16:0"
+          ],
+          "text": "N1 4 Ø 8 C/143 C=430"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C092",
+    "region_ids": [
+      "R041",
+      "R043"
+    ],
+    "bbox": [
+      300.6000061035156,
+      737.2000122070312,
+      334.55999755859375,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        300.6000061035156,
+        737.2000122070312
+      ],
+      [
+        334.55999755859375,
+        737.2000122070312
+      ],
+      [
+        334.55999755859375,
+        995.9200439453125
+      ],
+      [
+        300.6000061035156,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 8786.130067089573,
+    "positions": [
+      "N1",
+      "N13"
+    ],
+    "occurrences": [
+      "O041",
+      "O043"
+    ],
+    "identity_groups": [
+      "I024",
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R041",
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R041",
+        "position": "N1",
+        "occurrence_id": "P1-T16:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 143.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T16:0"
+          ],
+          "text": "N1 4 Ø 8 C/143 C=430"
+        }
+      },
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C093",
+    "region_ids": [
+      "R043"
+    ],
+    "bbox": [
+      334.55999755859375,
+      737.2000122070312,
+      476.1600036621094,
+      903.0400390625
+    ],
+    "polygon_pdf_pt": [
+      [
+        334.55999755859375,
+        737.2000122070312
+      ],
+      [
+        476.1600036621094,
+        737.2000122070312
+      ],
+      [
+        476.1600036621094,
+        903.0400390625
+      ],
+      [
+        334.55999755859375,
+        903.0400390625
+      ]
+    ],
+    "area_pt2": 23482.94881494157,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O043"
+    ],
+    "identity_groups": [
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C094",
+    "region_ids": [
+      "R044"
+    ],
+    "bbox": [
+      1501.679931640625,
+      737.2000122070312,
+      1643.159912109375,
+      903.0400390625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1501.679931640625,
+        737.2000122070312
+      ],
+      [
+        1643.159912109375,
+        737.2000122070312
+      ],
+      [
+        1643.159912109375,
+        903.0400390625
+      ],
+      [
+        1501.679931640625,
+        903.0400390625
+      ]
+    ],
+    "area_pt2": 23463.043760448694,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O044"
+    ],
+    "identity_groups": [
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C095",
+    "region_ids": [
+      "R042",
+      "R044"
+    ],
+    "bbox": [
+      1643.159912109375,
+      737.2000122070312,
+      1677.239990234375,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1643.159912109375,
+        737.2000122070312
+      ],
+      [
+        1677.239990234375,
+        737.2000122070312
+      ],
+      [
+        1677.239990234375,
+        995.9200439453125
+      ],
+      [
+        1643.159912109375,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 8817.198894143105,
+    "positions": [
+      "N1",
+      "N13"
+    ],
+    "occurrences": [
+      "O042",
+      "O044"
+    ],
+    "identity_groups": [
+      "I025",
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R042",
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R042",
+        "position": "N1",
+        "occurrence_id": "P1-T30:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 143.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T30:0"
+          ],
+          "text": "N1 4 Ø 8 C/143 C=430"
+        }
+      },
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C096",
+    "region_ids": [
+      "R042"
+    ],
+    "bbox": [
+      1677.239990234375,
+      737.2000122070312,
+      1886.39990234375,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1677.239990234375,
+        737.2000122070312
+      ],
+      [
+        1886.39990234375,
+        737.2000122070312
+      ],
+      [
+        1886.39990234375,
+        995.9200439453125
+      ],
+      [
+        1677.239990234375,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 54113.85909931362,
+    "positions": [
+      "N1"
+    ],
+    "occurrences": [
+      "O042"
+    ],
+    "identity_groups": [
+      "I025"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R042"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R042",
+        "position": "N1",
+        "occurrence_id": "P1-T30:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 143.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T30:0"
+          ],
+          "text": "N1 4 Ø 8 C/143 C=430"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C097",
+    "region_ids": [
+      "R043"
+    ],
+    "bbox": [
+      334.55999755859375,
+      903.0400390625,
+      846.47998046875,
+      948.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        334.55999755859375,
+        903.0400390625
+      ],
+      [
+        846.47998046875,
+        903.0400390625
+      ],
+      [
+        846.47998046875,
+        948.4000244140625
+      ],
+      [
+        334.55999755859375,
+        948.4000244140625
+      ]
+    ],
+    "area_pt2": 23220.682925976813,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O043"
+    ],
+    "identity_groups": [
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C098",
+    "region_ids": [
+      "R044"
+    ],
+    "bbox": [
+      1131.3599853515625,
+      903.0400390625,
+      1643.159912109375,
+      948.4000244140625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1131.3599853515625,
+        903.0400390625
+      ],
+      [
+        1643.159912109375,
+        903.0400390625
+      ],
+      [
+        1643.159912109375,
+        948.4000244140625
+      ],
+      [
+        1131.3599853515625,
+        948.4000244140625
+      ]
+    ],
+    "area_pt2": 23215.237180665135,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O044"
+    ],
+    "identity_groups": [
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C099",
+    "region_ids": [
+      "R043"
+    ],
+    "bbox": [
+      334.55999755859375,
+      948.4000244140625,
+      861.239990234375,
+      959.0800170898438
+    ],
+    "polygon_pdf_pt": [
+      [
+        334.55999755859375,
+        948.4000244140625
+      ],
+      [
+        861.239990234375,
+        948.4000244140625
+      ],
+      [
+        861.239990234375,
+        959.0800170898438
+      ],
+      [
+        334.55999755859375,
+        959.0800170898438
+      ]
+    ],
+    "area_pt2": 5624.938464257866,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O043"
+    ],
+    "identity_groups": [
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C100",
+    "region_ids": [
+      "R044"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      948.4000244140625,
+      1643.159912109375,
+      959.0800170898438
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        948.4000244140625
+      ],
+      [
+        1643.159912109375,
+        948.4000244140625
+      ],
+      [
+        1643.159912109375,
+        959.0800170898438
+      ],
+      [
+        1116.5999755859375,
+        959.0800170898438
+      ]
+    ],
+    "area_pt2": 5623.656265430152,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O044"
+    ],
+    "identity_groups": [
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C101",
+    "region_ids": [
+      "R043"
+    ],
+    "bbox": [
+      334.55999755859375,
+      959.0800170898438,
+      846.47998046875,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        334.55999755859375,
+        959.0800170898438
+      ],
+      [
+        846.47998046875,
+        959.0800170898438
+      ],
+      [
+        846.47998046875,
+        995.9200439453125
+      ],
+      [
+        334.55999755859375,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 18859.14591826126,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O043"
+    ],
+    "identity_groups": [
+      "I026"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R043"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C102",
+    "region_ids": [
+      "R043",
+      "R047"
+    ],
+    "bbox": [
+      846.47998046875,
+      959.0800170898438,
+      861.239990234375,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        846.47998046875,
+        959.0800170898438
+      ],
+      [
+        861.239990234375,
+        959.0800170898438
+      ],
+      [
+        861.239990234375,
+        995.9200439453125
+      ],
+      [
+        846.47998046875,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 543.759156152606,
+    "positions": [
+      "N13",
+      "N24"
+    ],
+    "occurrences": [
+      "O043",
+      "O047"
+    ],
+    "identity_groups": [
+      "I026",
+      "I028"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R043",
+          "R047"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R043",
+        "position": "N13",
+        "occurrence_id": "P1-T36:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T36:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      },
+      {
+        "id": "R047",
+        "position": "N24",
+        "occurrence_id": "P1-T106:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 16.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T106:0"
+          ],
+          "text": "N24 7 Ø 8 C/16 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C103",
+    "region_ids": [
+      "R047"
+    ],
+    "bbox": [
+      861.239990234375,
+      959.0800170898438,
+      1116.5999755859375,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        861.239990234375,
+        959.0800170898438
+      ],
+      [
+        1116.5999755859375,
+        959.0800170898438
+      ],
+      [
+        1116.5999755859375,
+        995.9200439453125
+      ],
+      [
+        861.239990234375,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 9407.46871816367,
+    "positions": [
+      "N24"
+    ],
+    "occurrences": [
+      "O047"
+    ],
+    "identity_groups": [
+      "I028"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R047"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R047",
+        "position": "N24",
+        "occurrence_id": "P1-T106:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 16.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T106:0"
+          ],
+          "text": "N24 7 Ø 8 C/16 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C104",
+    "region_ids": [
+      "R044",
+      "R047"
+    ],
+    "bbox": [
+      1116.5999755859375,
+      959.0800170898438,
+      1131.3599853515625,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1116.5999755859375,
+        959.0800170898438
+      ],
+      [
+        1131.3599853515625,
+        959.0800170898438
+      ],
+      [
+        1131.3599853515625,
+        995.9200439453125
+      ],
+      [
+        1116.5999755859375,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 543.759156152606,
+    "positions": [
+      "N13",
+      "N24"
+    ],
+    "occurrences": [
+      "O044",
+      "O047"
+    ],
+    "identity_groups": [
+      "I027",
+      "I028"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R044",
+          "R047"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      },
+      {
+        "id": "R047",
+        "position": "N24",
+        "occurrence_id": "P1-T106:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 16.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T106:0"
+          ],
+          "text": "N24 7 Ø 8 C/16 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C105",
+    "region_ids": [
+      "R044"
+    ],
+    "bbox": [
+      1131.3599853515625,
+      959.0800170898438,
+      1643.159912109375,
+      995.9200439453125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1131.3599853515625,
+        959.0800170898438
+      ],
+      [
+        1643.159912109375,
+        959.0800170898438
+      ],
+      [
+        1643.159912109375,
+        995.9200439453125
+      ],
+      [
+        1131.3599853515625,
+        995.9200439453125
+      ]
+    ],
+    "area_pt2": 18854.72304638475,
+    "positions": [
+      "N13"
+    ],
+    "occurrences": [
+      "O044"
+    ],
+    "identity_groups": [
+      "I027"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R044"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R044",
+        "position": "N13",
+        "occurrence_id": "P1-T45:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 14.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T45:0"
+          ],
+          "text": "N13 34 Ø 8 C/14 C=990"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C106",
+    "region_ids": [
+      "R047"
+    ],
+    "bbox": [
+      846.47998046875,
+      995.9200439453125,
+      1131.3599853515625,
+      1006.7200317382812
+    ],
+    "polygon_pdf_pt": [
+      [
+        846.47998046875,
+        995.9200439453125
+      ],
+      [
+        1131.3599853515625,
+        995.9200439453125
+      ],
+      [
+        1131.3599853515625,
+        1006.7200317382812
+      ],
+      [
+        846.47998046875,
+        1006.7200317382812
+      ]
+    ],
+    "area_pt2": 3076.700575195253,
+    "positions": [
+      "N24"
+    ],
+    "occurrences": [
+      "O047"
+    ],
+    "identity_groups": [
+      "I028"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R047"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R047",
+        "position": "N24",
+        "occurrence_id": "P1-T106:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 16.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T106:0"
+          ],
+          "text": "N24 7 Ø 8 C/16 C=503"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C107",
+    "region_ids": [
+      "R051"
+    ],
+    "bbox": [
+      116.75999450683594,
+      1006.7200317382812,
+      266.2799987792969,
+      1063.3599853515625
+    ],
+    "polygon_pdf_pt": [
+      [
+        116.75999450683594,
+        1006.7200317382812
+      ],
+      [
+        266.2799987792969,
+        1006.7200317382812
+      ],
+      [
+        266.2799987792969,
+        1063.3599853515625
+      ],
+      [
+        116.75999450683594,
+        1063.3599853515625
+      ]
+    ],
+    "area_pt2": 8468.806106249802,
+    "positions": [
+      "N34"
+    ],
+    "occurrences": [
+      "O051"
+    ],
+    "identity_groups": [
+      "I030"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R051"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R051",
+        "position": "N34",
+        "occurrence_id": "P1-T14:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T14:0"
+          ],
+          "text": "N34 9 Ø 6.3 C/12 C=264"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C108",
+    "region_ids": [
+      "R050"
+    ],
+    "bbox": [
+      627.5999755859375,
+      1006.7200317382812,
+      1267.43994140625,
+      1061.320068359375
+    ],
+    "polygon_pdf_pt": [
+      [
+        627.5999755859375,
+        1006.7200317382812
+      ],
+      [
+        1267.43994140625,
+        1006.7200317382812
+      ],
+      [
+        1267.43994140625,
+        1061.320068359375
+      ],
+      [
+        627.5999755859375,
+        1061.320068359375
+      ]
+    ],
+    "area_pt2": 34935.285565428436,
+    "positions": [
+      "N25"
+    ],
+    "occurrences": [
+      "O050"
+    ],
+    "identity_groups": [
+      "I029"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R050"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R050",
+        "position": "N25",
+        "occurrence_id": "P1-T95:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T95:0"
+          ],
+          "text": "N25 10 Ø 8 C/11 C=1200"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C109",
+    "region_ids": [
+      "R050",
+      "R053"
+    ],
+    "bbox": [
+      1267.43994140625,
+      1006.7200317382812,
+      1307.159912109375,
+      1061.320068359375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1267.43994140625,
+        1006.7200317382812
+      ],
+      [
+        1307.159912109375,
+        1006.7200317382812
+      ],
+      [
+        1307.159912109375,
+        1061.320068359375
+      ],
+      [
+        1267.43994140625,
+        1061.320068359375
+      ]
+    ],
+    "area_pt2": 2168.711854979396,
+    "positions": [
+      "N25",
+      "N40"
+    ],
+    "occurrences": [
+      "O050",
+      "O053"
+    ],
+    "identity_groups": [
+      "I029",
+      "I032"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R050",
+          "R053"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R050",
+        "position": "N25",
+        "occurrence_id": "P1-T95:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T95:0"
+          ],
+          "text": "N25 10 Ø 8 C/11 C=1200"
+        }
+      },
+      {
+        "id": "R053",
+        "position": "N40",
+        "occurrence_id": "P1-T99:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T99:0"
+          ],
+          "text": "N40 10 Ø 8 C/11 C=146"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C110",
+    "region_ids": [
+      "R053"
+    ],
+    "bbox": [
+      1307.159912109375,
+      1006.7200317382812,
+      1350.1199951171875,
+      1061.320068359375
+    ],
+    "polygon_pdf_pt": [
+      [
+        1307.159912109375,
+        1006.7200317382812
+      ],
+      [
+        1350.1199951171875,
+        1006.7200317382812
+      ],
+      [
+        1350.1199951171875,
+        1061.320068359375
+      ],
+      [
+        1307.159912109375,
+        1061.320068359375
+      ]
+    ],
+    "area_pt2": 2345.62210547179,
+    "positions": [
+      "N40"
+    ],
+    "occurrences": [
+      "O053"
+    ],
+    "identity_groups": [
+      "I032"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R053"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R053",
+        "position": "N40",
+        "occurrence_id": "P1-T99:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T99:0"
+          ],
+          "text": "N40 10 Ø 8 C/11 C=146"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C111",
+    "region_ids": [
+      "R052"
+    ],
+    "bbox": [
+      1711.43994140625,
+      1006.7200317382812,
+      1860.9599609375,
+      1063.3599853515625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1711.43994140625,
+        1006.7200317382812
+      ],
+      [
+        1860.9599609375,
+        1006.7200317382812
+      ],
+      [
+        1860.9599609375,
+        1063.3599853515625
+      ],
+      [
+        1711.43994140625,
+        1063.3599853515625
+      ]
+    ],
+    "area_pt2": 8468.806970506907,
+    "positions": [
+      "N34"
+    ],
+    "occurrences": [
+      "O052"
+    ],
+    "identity_groups": [
+      "I031"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R052"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R052",
+        "position": "N34",
+        "occurrence_id": "P1-T28:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 12.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T28:0"
+          ],
+          "text": "N34 9 Ø 6.3 C/12 C=264"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C112",
+    "region_ids": [
+      "R050",
+      "R055"
+    ],
+    "bbox": [
+      627.5999755859375,
+      1061.320068359375,
+      944.2799682617188,
+      1063.840087890625
+    ],
+    "polygon_pdf_pt": [
+      [
+        627.5999755859375,
+        1061.320068359375
+      ],
+      [
+        944.2799682617188,
+        1061.320068359375
+      ],
+      [
+        944.2799682617188,
+        1063.840087890625
+      ],
+      [
+        627.5999755859375,
+        1063.840087890625
+      ]
+    ],
+    "area_pt2": 798.0397666990757,
+    "positions": [
+      "N25",
+      "N35"
+    ],
+    "occurrences": [
+      "O050",
+      "O055"
+    ],
+    "identity_groups": [
+      "I029",
+      "I033"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R050",
+          "R055"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R050",
+        "position": "N25",
+        "occurrence_id": "P1-T95:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T95:0"
+          ],
+          "text": "N25 10 Ø 8 C/11 C=1200"
+        }
+      },
+      {
+        "id": "R055",
+        "position": "N35",
+        "occurrence_id": "P1-T18:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 15.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T18:0"
+          ],
+          "text": "N35 6 Ø 6.3 C/15 C=559"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C113",
+    "region_ids": [
+      "R050"
+    ],
+    "bbox": [
+      944.2799682617188,
+      1061.320068359375,
+      1034.1600341796875,
+      1063.840087890625
+    ],
+    "polygon_pdf_pt": [
+      [
+        944.2799682617188,
+        1061.320068359375
+      ],
+      [
+        1034.1600341796875,
+        1061.320068359375
+      ],
+      [
+        1034.1600341796875,
+        1063.840087890625
+      ],
+      [
+        944.2799682617188,
+        1063.840087890625
+      ]
+    ],
+    "area_pt2": 226.4995215833187,
+    "positions": [
+      "N25"
+    ],
+    "occurrences": [
+      "O050"
+    ],
+    "identity_groups": [
+      "I029"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R050"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R050",
+        "position": "N25",
+        "occurrence_id": "P1-T95:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T95:0"
+          ],
+          "text": "N25 10 Ø 8 C/11 C=1200"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C114",
+    "region_ids": [
+      "R050",
+      "R056"
+    ],
+    "bbox": [
+      1034.1600341796875,
+      1061.320068359375,
+      1267.43994140625,
+      1063.840087890625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1034.1600341796875,
+        1061.320068359375
+      ],
+      [
+        1267.43994140625,
+        1061.320068359375
+      ],
+      [
+        1267.43994140625,
+        1063.840087890625
+      ],
+      [
+        1034.1600341796875,
+        1063.840087890625
+      ]
+    ],
+    "area_pt2": 587.8699224591255,
+    "positions": [
+      "N25",
+      "N39"
+    ],
+    "occurrences": [
+      "O050",
+      "O056"
+    ],
+    "identity_groups": [
+      "I029",
+      "I034"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R050",
+          "R056"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R050",
+        "position": "N25",
+        "occurrence_id": "P1-T95:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T95:0"
+          ],
+          "text": "N25 10 Ø 8 C/11 C=1200"
+        }
+      },
+      {
+        "id": "R056",
+        "position": "N39",
+        "occurrence_id": "P1-T97:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 15.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T97:0"
+          ],
+          "text": "N39 6 Ø 6.3 C/15 C=558"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C115",
+    "region_ids": [
+      "R050",
+      "R053",
+      "R056"
+    ],
+    "bbox": [
+      1267.43994140625,
+      1061.320068359375,
+      1307.159912109375,
+      1063.840087890625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1267.43994140625,
+        1061.320068359375
+      ],
+      [
+        1307.159912109375,
+        1061.320068359375
+      ],
+      [
+        1307.159912109375,
+        1063.840087890625
+      ],
+      [
+        1267.43994140625,
+        1063.840087890625
+      ]
+    ],
+    "area_pt2": 100.0951019525528,
+    "positions": [
+      "N25",
+      "N39",
+      "N40"
+    ],
+    "occurrences": [
+      "O050",
+      "O053",
+      "O056"
+    ],
+    "identity_groups": [
+      "I029",
+      "I032",
+      "I034"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R050",
+          "R053",
+          "R056"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R050",
+        "position": "N25",
+        "occurrence_id": "P1-T95:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T95:0"
+          ],
+          "text": "N25 10 Ø 8 C/11 C=1200"
+        }
+      },
+      {
+        "id": "R053",
+        "position": "N40",
+        "occurrence_id": "P1-T99:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T99:0"
+          ],
+          "text": "N40 10 Ø 8 C/11 C=146"
+        }
+      },
+      {
+        "id": "R056",
+        "position": "N39",
+        "occurrence_id": "P1-T97:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 15.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T97:0"
+          ],
+          "text": "N39 6 Ø 6.3 C/15 C=558"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C116",
+    "region_ids": [
+      "R053",
+      "R056"
+    ],
+    "bbox": [
+      1307.159912109375,
+      1061.320068359375,
+      1350.1199951171875,
+      1063.840087890625
+    ],
+    "polygon_pdf_pt": [
+      [
+        1307.159912109375,
+        1061.320068359375
+      ],
+      [
+        1350.1199951171875,
+        1061.320068359375
+      ],
+      [
+        1350.1199951171875,
+        1063.840087890625
+      ],
+      [
+        1307.159912109375,
+        1063.840087890625
+      ]
+    ],
+    "area_pt2": 108.26024824380875,
+    "positions": [
+      "N39",
+      "N40"
+    ],
+    "occurrences": [
+      "O053",
+      "O056"
+    ],
+    "identity_groups": [
+      "I032",
+      "I034"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R053",
+          "R056"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R053",
+        "position": "N40",
+        "occurrence_id": "P1-T99:0",
+        "orientation": 0,
+        "diameter_mm": 8.0,
+        "spacing_cm": 11.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T99:0"
+          ],
+          "text": "N40 10 Ø 8 C/11 C=146"
+        }
+      },
+      {
+        "id": "R056",
+        "position": "N39",
+        "occurrence_id": "P1-T97:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 15.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T97:0"
+          ],
+          "text": "N39 6 Ø 6.3 C/15 C=558"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C117",
+    "region_ids": [
+      "R055"
+    ],
+    "bbox": [
+      627.5999755859375,
+      1063.840087890625,
+      944.2799682617188,
+      1106.919921875
+    ],
+    "polygon_pdf_pt": [
+      [
+        627.5999755859375,
+        1063.840087890625
+      ],
+      [
+        944.2799682617188,
+        1063.840087890625
+      ],
+      [
+        944.2799682617188,
+        1106.919921875
+      ],
+      [
+        627.5999755859375,
+        1106.919921875
+      ]
+    ],
+    "area_pt2": 13642.521510645747,
+    "positions": [
+      "N35"
+    ],
+    "occurrences": [
+      "O055"
+    ],
+    "identity_groups": [
+      "I033"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R055"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R055",
+        "position": "N35",
+        "occurrence_id": "P1-T18:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 15.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T18:0"
+          ],
+          "text": "N35 6 Ø 6.3 C/15 C=559"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C118",
+    "region_ids": [
+      "R056"
+    ],
+    "bbox": [
+      1034.1600341796875,
+      1063.840087890625,
+      1350.1199951171875,
+      1109.800048828125
+    ],
+    "polygon_pdf_pt": [
+      [
+        1034.1600341796875,
+        1063.840087890625
+      ],
+      [
+        1350.1199951171875,
+        1063.840087890625
+      ],
+      [
+        1350.1199951171875,
+        1109.800048828125
+      ],
+      [
+        1034.1600341796875,
+        1109.800048828125
+      ]
+    ],
+    "area_pt2": 14521.507462501526,
+    "positions": [
+      "N39"
+    ],
+    "occurrences": [
+      "O056"
+    ],
+    "identity_groups": [
+      "I034"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R056"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R056",
+        "position": "N39",
+        "occurrence_id": "P1-T97:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 15.0,
+        "layer": null,
+        "source": {
+          "branch": "associations[0]",
+          "text_ids": [
+            "T97:0"
+          ],
+          "text": "N39 6 Ø 6.3 C/15 C=558"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  },
+  {
+    "id": "C119",
+    "region_ids": [
+      "R058"
+    ],
+    "bbox": [
+      627.5999755859375,
+      1117.719970703125,
+      1307.159912109375,
+      1134.6400146484375
+    ],
+    "polygon_pdf_pt": [
+      [
+        627.5999755859375,
+        1117.719970703125
+      ],
+      [
+        1307.159912109375,
+        1117.719970703125
+      ],
+      [
+        1307.159912109375,
+        1134.6400146484375
+      ],
+      [
+        627.5999755859375,
+        1134.6400146484375
+      ]
+    ],
+    "area_pt2": 11498.183989450336,
+    "positions": [
+      "N36"
+    ],
+    "occurrences": [
+      "O058"
+    ],
+    "identity_groups": [
+      "I035"
+    ],
+    "direction_layer_sets": [
+      {
+        "orientation": 0,
+        "layer": null,
+        "region_ids": [
+          "R058"
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "id": "R058",
+        "position": "N36",
+        "occurrence_id": "P1-T118:0",
+        "orientation": 0,
+        "diameter_mm": 6.3,
+        "spacing_cm": 20.0,
+        "layer": null,
+        "source": {
+          "branch": "leader_association",
+          "text_ids": [
+            "T118:0"
+          ],
+          "text": "N36 2 Ø 6.3 C/20 C=1200"
+        }
+      }
+    ],
+    "physical_addition_authorized": false,
+    "confidence": "GEOMETRIC_PARTITION_OF_EXPERIMENTAL_ENVELOPES",
+    "possible_duplicate_pairs": []
+  }
+]

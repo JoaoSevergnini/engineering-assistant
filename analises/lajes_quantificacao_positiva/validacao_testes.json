@@ -1,0 +1,24 @@
+{
+  "command": "python -B -m unittest discover -s tools/slab_geometry_poc -p 'test_*.py'",
+  "result": "OK",
+  "tests": 259,
+  "new_stage11_tests": 28,
+  "elapsed_seconds": 85.342,
+  "all_previous_inventory_layers_equal": true,
+  "concretopy_capacity_executed": false,
+  "effective_depth_calculated": false,
+  "structural_validation": false,
+  "source_code_sha256": {
+    "steel_quantification.py": "b072a4606ae15f35f72723416b50d6542763069c6a41ab9acabe16f6a1a55fb6",
+    "run_steel_quantification.py": "4a0c8b657cda6a27524a43c4b926c51ea4fd491aea536b9ca4384e7deb58814e",
+    "test_steel_quantification.py": "93bd0349feadc4e2e20d24efaddb21079f7373f5f78a666f8cf7608c9248d0a7"
+  },
+  "render_command_completed": true,
+  "visually_inspected": [
+    "mapa_quantificacao.png",
+    "L603_esquerda_As.png",
+    "L603_direita_As.png",
+    "detalhe_cobrimento_original.png",
+    "nota_unidades_original.png"
+  ]
+}

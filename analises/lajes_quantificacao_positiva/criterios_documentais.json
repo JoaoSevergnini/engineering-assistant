@@ -1,0 +1,89 @@
+{
+  "source_pdf_sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+  "same_layer_rule": {
+    "id": "POSITIVE_INTERLEAVED_LAYER_CURRENT_PDF",
+    "source": "USER_EXPLICIT_STAGE11_SECTION2",
+    "validation": "USER_EXPLICIT_CONFIRMATION",
+    "scope": "CURRENT_POSITIVE_HORIZONTAL_DISTRIBUTED_FLOW_ONLY",
+    "sheet_context": "POSITIVE_HORIZONTAL_SHEET_CONTEXT",
+    "orientation": 0,
+    "base_reinforcement_interleaved": true,
+    "extra_stacked_layers_for_reinforcement": 0,
+    "same_layer_does_not_imply_equal_centers": true
+  },
+  "cover_evidence": {
+    "value_cm": 2.0,
+    "heading_text_id": "T152:0",
+    "value_text_id": "T166:0",
+    "positive_label_text_id": "T156:0",
+    "units_text_id": "T265:0",
+    "texts": [
+      {
+        "id": "T152:0",
+        "text": "COBRIMENTO ARMADURA LAJES MACIÇAS:",
+        "bbox": [
+          136.52146911621094,
+          1264.8834228515625,
+          400.5660095214844,
+          1283.510498046875
+        ],
+        "direction": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "id": "T156:0",
+        "text": "ARM. POSITIVA",
+        "bbox": [
+          341.2562255859375,
+          1348.5230712890625,
+          408.56170654296875,
+          1360.9410400390625
+        ],
+        "direction": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "id": "T166:0",
+        "text": "2.0",
+        "bbox": [
+          200.95672607421875,
+          1365.75390625,
+          212.4434051513672,
+          1380.12109375
+        ],
+        "direction": [
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "id": "T265:0",
+        "text": "MEDIDAS EM CENTÍMETROS E NÍVEIS EM METROS",
+        "bbox": [
+          1874.4903564453125,
+          1250.36328125,
+          2299.03271484375,
+          1275.1993408203125
+        ],
+        "direction": [
+          1.0,
+          0.0
+        ]
+      }
+    ],
+    "scope": "GENERAL_POSITIVE_SOLID_SLAB_DETAIL; NOT_DIAMETER_SPECIFIC_CENTER_POSITION",
+    "interpretation_origin": "PDF_TEXT_AND_GRAPHIC_DETAIL_VISUALLY_READ_BY_ASSISTANT; NOT_HUMAN_CONFIRMATION",
+    "detail_bbox_pdf_pt": [
+      120,
+      1250,
+      430,
+      1460
+    ],
+    "image_reference": "detalhe_cobrimento_original.png",
+    "units_image_reference": "nota_unidades_original.png"
+  }
+}

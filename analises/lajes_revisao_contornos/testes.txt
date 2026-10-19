@@ -1,0 +1,6 @@
+Comando: python -B -m unittest discover -s tools/slab_geometry_poc -p 'test_*.py'
+Resultado: Ran 134 tests in 56.074s ? OK (exit 0).
+129 testes anteriores + 5 novos da revis?o.
+Sint?ticos: conex?o ao bloco nome+espessura e orienta??o do segmento.
+Regress?es reais: oito candidatos/L603 pendente, ocorr?ncias espec?ficas e preserva??o/invari?ncia de cor.
+Testes geom?tricos n?o constituem valida??o estrutural independente.

@@ -1,0 +1,2853 @@
+[
+  {
+    "id": "G-45f59c5506",
+    "mark": "N6",
+    "representation_ids": [
+      "P1-T59:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H06",
+        "side": "LEFT",
+        "normal_gap_pt": 4.32000732421875,
+        "border_coordinate_pt": 432.8399963378906,
+        "overhang_pt": [
+          9.0,
+          34.0799560546875
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1638:0",
+        "source_ids": [
+          "D1638:0"
+        ],
+        "a": [
+          427.0799865722656,
+          437.080078125
+        ],
+        "b": [
+          427.0799865722656,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1639:0",
+        "source_ids": [
+          "D1639:0"
+        ],
+        "a": [
+          429.9599914550781,
+          437.080078125
+        ],
+        "b": [
+          429.9599914550781,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-d7687066ab",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 142.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1638:0",
+      "D1639:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        427.0799865722656,
+        437.080078125,
+        429.9599914550781,
+        517.47998046875
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T59:0",
+      "text_ids": [
+        "T59:0",
+        "T60:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G01"
+  },
+  {
+    "id": "G-f9698bd643",
+    "mark": "N6",
+    "representation_ids": [
+      "P1-T59:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H06",
+        "side": "RIGHT",
+        "normal_gap_pt": 4.2599945068359375,
+        "border_coordinate_pt": 439.55999755859375,
+        "overhang_pt": [
+          9.0,
+          34.0799560546875
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1636:0",
+        "source_ids": [
+          "D1636:0"
+        ],
+        "a": [
+          445.1999816894531,
+          437.080078125
+        ],
+        "b": [
+          445.1999816894531,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1637:0",
+        "source_ids": [
+          "D1637:0"
+        ],
+        "a": [
+          442.44000244140625,
+          437.080078125
+        ],
+        "b": [
+          442.44000244140625,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-6e2cfd1876",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 142.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1636:0",
+      "D1637:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        442.44000244140625,
+        437.080078125,
+        445.1999816894531,
+        517.47998046875
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T59:0",
+      "text_ids": [
+        "T59:0",
+        "T60:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G02"
+  },
+  {
+    "id": "G-23dd18946e",
+    "mark": "N6",
+    "representation_ids": [
+      "P1-T86:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H07",
+        "side": "LEFT",
+        "normal_gap_pt": 4.25994873046875,
+        "border_coordinate_pt": 1538.159912109375,
+        "overhang_pt": [
+          9.0,
+          32.8800048828125
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1734:0",
+        "source_ids": [
+          "D1734:0"
+        ],
+        "a": [
+          1532.52001953125,
+          437.080078125
+        ],
+        "b": [
+          1532.52001953125,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1735:0",
+        "source_ids": [
+          "D1735:0"
+        ],
+        "a": [
+          1535.2799072265625,
+          437.080078125
+        ],
+        "b": [
+          1535.2799072265625,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-2dfb9343cc",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 142.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1734:0",
+      "D1735:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1532.52001953125,
+        437.080078125,
+        1535.2799072265625,
+        517.47998046875
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T86:0",
+      "text_ids": [
+        "T86:0",
+        "T87:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G03"
+  },
+  {
+    "id": "G-0ad372c3c2",
+    "mark": "N6",
+    "representation_ids": [
+      "P1-T86:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H07",
+        "side": "RIGHT",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 1545.0,
+        "overhang_pt": [
+          9.0,
+          32.8800048828125
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1732:0",
+        "source_ids": [
+          "D1732:0"
+        ],
+        "a": [
+          1550.6400146484375,
+          437.080078125
+        ],
+        "b": [
+          1550.6400146484375,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1733:0",
+        "source_ids": [
+          "D1733:0"
+        ],
+        "a": [
+          1547.760009765625,
+          437.080078125
+        ],
+        "b": [
+          1547.760009765625,
+          517.47998046875
+        ],
+        "length_pt": 80.39990234375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-de862aebd1",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 142.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1732:0",
+      "D1733:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1547.760009765625,
+        437.080078125,
+        1550.6400146484375,
+        517.47998046875
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T86:0",
+      "text_ids": [
+        "T86:0",
+        "T87:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G04"
+  },
+  {
+    "id": "G-7c0295e44a",
+    "mark": "N16",
+    "representation_ids": [
+      "P1-T80:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H08",
+        "side": "RIGHT",
+        "normal_gap_pt": 3.41998291015625,
+        "border_coordinate_pt": 616.9199829101562,
+        "overhang_pt": [
+          9.1199951171875,
+          33.9599609375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1726:0",
+        "source_ids": [
+          "D1726:0"
+        ],
+        "a": [
+          621.719970703125,
+          455.6800537109375
+        ],
+        "b": [
+          621.719970703125,
+          507.280029296875
+        ],
+        "length_pt": 51.5999755859375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1727:0",
+        "source_ids": [
+          "D1727:0"
+        ],
+        "a": [
+          618.9599609375,
+          455.6800537109375
+        ],
+        "b": [
+          618.9599609375,
+          507.280029296875
+        ],
+        "length_pt": 51.5999755859375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-1d8ae742e7",
+    "quantity_bars": 3,
+    "quantity_origin": "EXPLICIT_SINGLE_GROUP_CALL",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 91.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1726:0",
+      "D1727:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        618.9599609375,
+        455.6800537109375,
+        621.719970703125,
+        507.280029296875
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T80:0",
+      "text_ids": [
+        "T80:0",
+        "T81:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G05"
+  },
+  {
+    "id": "G-3dbc9be608",
+    "mark": "N19",
+    "representation_ids": [
+      "P1-T57:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H09",
+        "side": "LEFT",
+        "normal_gap_pt": 4.32000732421875,
+        "border_coordinate_pt": 692.760009765625,
+        "overhang_pt": [
+          9.1199951171875,
+          33.9599609375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1634:0",
+        "source_ids": [
+          "D1634:0"
+        ],
+        "a": [
+          689.8800048828125,
+          455.6800537109375
+        ],
+        "b": [
+          689.8800048828125,
+          589.3599853515625
+        ],
+        "length_pt": 133.679931640625,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1635:0",
+        "source_ids": [
+          "D1635:0"
+        ],
+        "a": [
+          687.0,
+          455.6800537109375
+        ],
+        "b": [
+          687.0,
+          589.3599853515625
+        ],
+        "length_pt": 133.679931640625,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-1496ed9588",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 236.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1634:0",
+      "D1635:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        687.0,
+        455.6800537109375,
+        689.8800048828125,
+        589.3599853515625
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T57:0",
+      "text_ids": [
+        "T57:0",
+        "T58:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G06"
+  },
+  {
+    "id": "G-918beab792",
+    "mark": "N19",
+    "representation_ids": [
+      "P1-T57:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H09",
+        "side": "RIGHT",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 712.5599975585938,
+        "overhang_pt": [
+          9.1199951171875,
+          33.9599609375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1632:0",
+        "source_ids": [
+          "D1632:0"
+        ],
+        "a": [
+          718.2000122070312,
+          455.6800537109375
+        ],
+        "b": [
+          718.2000122070312,
+          589.3599853515625
+        ],
+        "length_pt": 133.679931640625,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1633:0",
+        "source_ids": [
+          "D1633:0"
+        ],
+        "a": [
+          715.3200073242188,
+          455.6800537109375
+        ],
+        "b": [
+          715.3200073242188,
+          589.3599853515625
+        ],
+        "length_pt": 133.679931640625,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-e6b7bb1cc8",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 236.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1632:0",
+      "D1633:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        715.3200073242188,
+        455.6800537109375,
+        718.2000122070312,
+        589.3599853515625
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T57:0",
+      "text_ids": [
+        "T57:0",
+        "T58:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G07"
+  },
+  {
+    "id": "G-65a40d8d01",
+    "mark": "N16",
+    "representation_ids": [
+      "P1-T82:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H10",
+        "side": "LEFT",
+        "normal_gap_pt": 3.35992431640625,
+        "border_coordinate_pt": 1360.919921875,
+        "overhang_pt": [
+          9.1199951171875,
+          33.9599609375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1728:0",
+        "source_ids": [
+          "D1728:0"
+        ],
+        "a": [
+          1356.1199951171875,
+          455.6800537109375
+        ],
+        "b": [
+          1356.1199951171875,
+          507.280029296875
+        ],
+        "length_pt": 51.5999755859375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1729:0",
+        "source_ids": [
+          "D1729:0"
+        ],
+        "a": [
+          1359.0,
+          455.6800537109375
+        ],
+        "b": [
+          1359.0,
+          507.280029296875
+        ],
+        "length_pt": 51.5999755859375,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-4056f99796",
+    "quantity_bars": 3,
+    "quantity_origin": "EXPLICIT_SINGLE_GROUP_CALL",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 91.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1728:0",
+      "D1729:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1356.1199951171875,
+        455.6800537109375,
+        1359.0,
+        507.280029296875
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T82:0",
+      "text_ids": [
+        "T82:0",
+        "T83:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G08"
+  },
+  {
+    "id": "G-bf69701e91",
+    "mark": "N8",
+    "representation_ids": [
+      "P1-T61:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H06",
+        "side": "BOTTOM",
+        "normal_gap_pt": 1.44000244140625,
+        "border_coordinate_pt": 483.4000244140625,
+        "overhang_pt": [
+          32.279998779296875,
+          33.959991455078125
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1640:0",
+        "source_ids": [
+          "D1640:0"
+        ],
+        "a": [
+          473.5199890136719,
+          486.280029296875
+        ],
+        "b": [
+          400.55999755859375,
+          486.280029296875
+        ],
+        "length_pt": 72.95999145507812,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1641:0",
+        "source_ids": [
+          "D1641:0"
+        ],
+        "a": [
+          473.5199890136719,
+          483.4000244140625
+        ],
+        "b": [
+          400.55999755859375,
+          483.4000244140625
+        ],
+        "length_pt": 72.95999145507812,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-04c1937e1e",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 129.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1640:0",
+      "D1641:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        400.55999755859375,
+        483.4000244140625,
+        473.5199890136719,
+        486.280029296875
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T61:0",
+      "text_ids": [
+        "T61:0",
+        "T61:1"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G09"
+  },
+  {
+    "id": "G-495acc1345",
+    "mark": "N8",
+    "representation_ids": [
+      "P1-T76:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H07",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.260009765625,
+        "border_coordinate_pt": 484.5999755859375,
+        "overhang_pt": [
+          32.2799072265625,
+          33.9599609375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1712:0",
+        "source_ids": [
+          "D1712:0"
+        ],
+        "a": [
+          1578.9599609375,
+          487.47998046875
+        ],
+        "b": [
+          1505.8800048828125,
+          487.47998046875
+        ],
+        "length_pt": 73.0799560546875,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1713:0",
+        "source_ids": [
+          "D1713:0"
+        ],
+        "a": [
+          1578.9599609375,
+          490.239990234375
+        ],
+        "b": [
+          1505.8800048828125,
+          490.239990234375
+        ],
+        "length_pt": 73.0799560546875,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-d634af5f07",
+    "quantity_bars": 3,
+    "quantity_origin": "EXPLICIT_SINGLE_GROUP_CALL",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 129.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1712:0",
+      "D1713:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1505.8800048828125,
+        487.47998046875,
+        1578.9599609375,
+        490.239990234375
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T76:0",
+      "text_ids": [
+        "T76:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G10"
+  },
+  {
+    "id": "G-ba5bfd99fb",
+    "mark": "N20",
+    "representation_ids": [
+      "P1-T103:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H09",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 555.4000244140625,
+        "overhang_pt": [
+          34.08001708984375,
+          33.9599609375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1808:0",
+        "source_ids": [
+          "D1808:0"
+        ],
+        "a": [
+          746.5199584960938,
+          561.0400390625
+        ],
+        "b": [
+          658.6799926757812,
+          561.0400390625
+        ],
+        "length_pt": 87.8399658203125,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1809:0",
+        "source_ids": [
+          "D1809:0"
+        ],
+        "a": [
+          746.5199584960938,
+          558.1600341796875
+        ],
+        "b": [
+          658.6799926757812,
+          558.1600341796875
+        ],
+        "length_pt": 87.8399658203125,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-9581b2aadc",
+    "quantity_bars": 3,
+    "quantity_origin": "EXPLICIT_SINGLE_GROUP_CALL",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 155.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1808:0",
+      "D1809:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        658.6799926757812,
+        558.1600341796875,
+        746.5199584960938,
+        561.0400390625
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T103:0",
+      "text_ids": [
+        "T103:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G11"
+  },
+  {
+    "id": "G-ee93c71cc8",
+    "mark": "N22",
+    "representation_ids": [
+      "P1-T51:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H13",
+        "side": "LEFT",
+        "normal_gap_pt": 4.260009765625,
+        "border_coordinate_pt": 1110.3599853515625,
+        "overhang_pt": [
+          33.9599609375,
+          9.0
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1618:0",
+        "source_ids": [
+          "D1618:0"
+        ],
+        "a": [
+          1104.719970703125,
+          877.6000366210938
+        ],
+        "b": [
+          1104.719970703125,
+          957.4000244140625
+        ],
+        "length_pt": 79.79998779296875,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1619:0",
+        "source_ids": [
+          "D1619:0"
+        ],
+        "a": [
+          1107.47998046875,
+          877.6000366210938
+        ],
+        "b": [
+          1107.47998046875,
+          957.4000244140625
+        ],
+        "length_pt": 79.79998779296875,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-646ac97349",
+    "quantity_bars": 3,
+    "quantity_origin": "EXPLICIT_SINGLE_GROUP_CALL",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 141.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1618:0",
+      "D1619:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1104.719970703125,
+        877.6000366210938,
+        1107.47998046875,
+        957.4000244140625
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T51:0",
+      "text_ids": [
+        "T51:0",
+        "T52:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G12"
+  },
+  {
+    "id": "G-734bcdde34",
+    "mark": "N21",
+    "representation_ids": [
+      "P1-T48:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H13",
+        "side": "TOP",
+        "normal_gap_pt": 5.03997802734375,
+        "border_coordinate_pt": 911.5599975585938,
+        "overhang_pt": [
+          33.9599609375,
+          15.3599853515625
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1612:0",
+        "source_ids": [
+          "D1612:0"
+        ],
+        "a": [
+          1130.760009765625,
+          905.0800170898438
+        ],
+        "b": [
+          1076.4000244140625,
+          905.0800170898438
+        ],
+        "length_pt": 54.3599853515625,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1613:0",
+        "source_ids": [
+          "D1613:0"
+        ],
+        "a": [
+          1130.760009765625,
+          907.9600219726562
+        ],
+        "b": [
+          1076.4000244140625,
+          907.9600219726562
+        ],
+        "length_pt": 54.3599853515625,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-4bb2834b52",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 96.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1612:0",
+      "D1613:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1076.4000244140625,
+        905.0800170898438,
+        1130.760009765625,
+        907.9600219726562
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T48:0",
+      "text_ids": [
+        "T48:0",
+        "T49:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G13"
+  },
+  {
+    "id": "G-0d8ad7484c",
+    "mark": "N21",
+    "representation_ids": [
+      "P1-T49:1"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H12",
+        "side": "TOP",
+        "normal_gap_pt": 4.259979248046875,
+        "border_coordinate_pt": 911.5599975585938,
+        "overhang_pt": [
+          15.24005126953125,
+          34.08001708984375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1616:0",
+        "source_ids": [
+          "D1616:0"
+        ],
+        "a": [
+          901.4400024414062,
+          905.9200439453125
+        ],
+        "b": [
+          847.0799560546875,
+          905.9200439453125
+        ],
+        "length_pt": 54.36004638671875,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1617:0",
+        "source_ids": [
+          "D1617:0"
+        ],
+        "a": [
+          901.4400024414062,
+          908.6799926757812
+        ],
+        "b": [
+          847.0799560546875,
+          908.6799926757812
+        ],
+        "length_pt": 54.36004638671875,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-acf1916e9e",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 96.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1616:0",
+      "D1617:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        847.0799560546875,
+        905.9200439453125,
+        901.4400024414062,
+        908.6799926757812
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T49:1",
+      "text_ids": [
+        "T49:1",
+        "T50:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G14"
+  },
+  {
+    "id": "G-b2ada0ed08",
+    "mark": "N5",
+    "representation_ids": [
+      "P1-T37:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H14",
+        "side": "TOP",
+        "normal_gap_pt": 5.0999755859375,
+        "border_coordinate_pt": 944.4400024414062,
+        "overhang_pt": [
+          33.959991455078125,
+          34.079986572265625
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1576:0",
+        "source_ids": [
+          "D1576:0"
+        ],
+        "a": [
+          443.03997802734375,
+          937.9600219726562
+        ],
+        "b": [
+          360.8399963378906,
+          937.9600219726562
+        ],
+        "length_pt": 82.19998168945312,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1577:0",
+        "source_ids": [
+          "D1577:0"
+        ],
+        "a": [
+          443.03997802734375,
+          940.7200317382812
+        ],
+        "b": [
+          360.8399963378906,
+          940.7200317382812
+        ],
+        "length_pt": 82.19998168945312,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-1f8791b5e0",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 145.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1576:0",
+      "D1577:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        360.8399963378906,
+        937.9600219726562,
+        443.03997802734375,
+        940.7200317382812
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T37:0",
+      "text_ids": [
+        "T37:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G15"
+  },
+  {
+    "id": "G-841c0e40b0",
+    "mark": "N5",
+    "representation_ids": [
+      "P1-T40:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H15",
+        "side": "TOP",
+        "normal_gap_pt": 5.0999755859375,
+        "border_coordinate_pt": 944.4400024414062,
+        "overhang_pt": [
+          33.9600830078125,
+          33.9600830078125
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1584:0",
+        "source_ids": [
+          "D1584:0"
+        ],
+        "a": [
+          1616.8800048828125,
+          937.9600219726562
+        ],
+        "b": [
+          1534.7999267578125,
+          937.9600219726562
+        ],
+        "length_pt": 82.080078125,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1585:0",
+        "source_ids": [
+          "D1585:0"
+        ],
+        "a": [
+          1616.8800048828125,
+          940.7200317382812
+        ],
+        "b": [
+          1534.7999267578125,
+          940.7200317382812
+        ],
+        "length_pt": 82.080078125,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-b894ab898d",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 145.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1584:0",
+      "D1585:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1534.7999267578125,
+        937.9600219726562,
+        1616.8800048828125,
+        940.7200317382812
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T40:0",
+      "text_ids": [
+        "T40:0",
+        "T41:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G16"
+  },
+  {
+    "id": "G-c3bfef6b4f",
+    "mark": "N21",
+    "representation_ids": [
+      "P1-T48:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H13",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 948.4000244140625,
+        "overhang_pt": [
+          33.9599609375,
+          15.3599853515625
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1610:0",
+        "source_ids": [
+          "D1610:0"
+        ],
+        "a": [
+          1130.760009765625,
+          954.0400390625
+        ],
+        "b": [
+          1076.4000244140625,
+          954.0400390625
+        ],
+        "length_pt": 54.3599853515625,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1611:0",
+        "source_ids": [
+          "D1611:0"
+        ],
+        "a": [
+          1130.760009765625,
+          951.1600341796875
+        ],
+        "b": [
+          1076.4000244140625,
+          951.1600341796875
+        ],
+        "length_pt": 54.3599853515625,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-4c562bfba8",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 96.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1610:0",
+      "D1611:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1076.4000244140625,
+        951.1600341796875,
+        1130.760009765625,
+        954.0400390625
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T48:0",
+      "text_ids": [
+        "T48:0",
+        "T49:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G17"
+  },
+  {
+    "id": "G-27585c0a67",
+    "mark": "N21",
+    "representation_ids": [
+      "P1-T49:1"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H12",
+        "side": "BOTTOM",
+        "normal_gap_pt": 5.03997802734375,
+        "border_coordinate_pt": 948.4000244140625,
+        "overhang_pt": [
+          15.24005126953125,
+          34.08001708984375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1614:0",
+        "source_ids": [
+          "D1614:0"
+        ],
+        "a": [
+          901.4400024414062,
+          954.8800048828125
+        ],
+        "b": [
+          847.0799560546875,
+          954.8800048828125
+        ],
+        "length_pt": 54.36004638671875,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1615:0",
+        "source_ids": [
+          "D1615:0"
+        ],
+        "a": [
+          901.4400024414062,
+          952.0
+        ],
+        "b": [
+          847.0799560546875,
+          952.0
+        ],
+        "length_pt": 54.36004638671875,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-0c369a7ef4",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 96.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1614:0",
+      "D1615:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        847.0799560546875,
+        952.0,
+        901.4400024414062,
+        954.8800048828125
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T49:1",
+      "text_ids": [
+        "T49:1",
+        "T50:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G18"
+  },
+  {
+    "id": "G-3f74a8186f",
+    "mark": "N5",
+    "representation_ids": [
+      "P1-T37:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H14",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 967.1199951171875,
+        "overhang_pt": [
+          33.959991455078125,
+          34.079986572265625
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1574:0",
+        "source_ids": [
+          "D1574:0"
+        ],
+        "a": [
+          443.03997802734375,
+          972.760009765625
+        ],
+        "b": [
+          360.8399963378906,
+          972.760009765625
+        ],
+        "length_pt": 82.19998168945312,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1575:0",
+        "source_ids": [
+          "D1575:0"
+        ],
+        "a": [
+          443.03997802734375,
+          969.8800048828125
+        ],
+        "b": [
+          360.8399963378906,
+          969.8800048828125
+        ],
+        "length_pt": 82.19998168945312,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-4db9e903b8",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 145.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1574:0",
+      "D1575:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        360.8399963378906,
+        969.8800048828125,
+        443.03997802734375,
+        972.760009765625
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T37:0",
+      "text_ids": [
+        "T37:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G19"
+  },
+  {
+    "id": "G-aaf414a890",
+    "mark": "N5",
+    "representation_ids": [
+      "P1-T40:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H15",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 967.1199951171875,
+        "overhang_pt": [
+          33.9600830078125,
+          33.9600830078125
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1582:0",
+        "source_ids": [
+          "D1582:0"
+        ],
+        "a": [
+          1616.8800048828125,
+          972.760009765625
+        ],
+        "b": [
+          1534.7999267578125,
+          972.760009765625
+        ],
+        "length_pt": 82.080078125,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1583:0",
+        "source_ids": [
+          "D1583:0"
+        ],
+        "a": [
+          1616.8800048828125,
+          969.8800048828125
+        ],
+        "b": [
+          1534.7999267578125,
+          969.8800048828125
+        ],
+        "length_pt": 82.080078125,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-889df93284",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 145.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1582:0",
+      "D1583:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        1534.7999267578125,
+        969.8800048828125,
+        1616.8800048828125,
+        972.760009765625
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T40:0",
+      "text_ids": [
+        "T40:0",
+        "T41:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G20"
+  },
+  {
+    "id": "G-a857f99ea9",
+    "mark": "N38",
+    "representation_ids": [
+      "P1-T101:0"
+    ],
+    "opening_association_state": "ASSOCIATED",
+    "opening_relations": [
+      {
+        "opening_id": "H16",
+        "side": "RIGHT",
+        "normal_gap_pt": 4.20001220703125,
+        "border_coordinate_pt": 979.9199829101562,
+        "overhang_pt": [
+          33.9600830078125,
+          26.0400390625
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "VERTICAL",
+    "lines": [
+      {
+        "id": "D1804:0",
+        "source_ids": [
+          "D1804:0"
+        ],
+        "a": [
+          985.5599975585938,
+          1029.8800048828125
+        ],
+        "b": [
+          985.5599975585938,
+          1132.9599609375
+        ],
+        "length_pt": 103.0799560546875,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1805:0",
+        "source_ids": [
+          "D1805:0"
+        ],
+        "a": [
+          982.6799926757812,
+          1029.8800048828125
+        ],
+        "b": [
+          982.6799926757812,
+          1132.9599609375
+        ],
+        "length_pt": 103.0799560546875,
+        "orientation": 1,
+        "angle_deg": 90.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-4b5d12f7d9",
+    "quantity_bars": null,
+    "quantity_origin": "UNKNOWN",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 182.0,
+    "layer_distribution": {
+      "lower": null,
+      "upper": null,
+      "origin": "UNKNOWN",
+      "convention_id": null
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1804:0",
+      "D1805:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        982.6799926757812,
+        1029.8800048828125,
+        985.5599975585938,
+        1132.9599609375
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T101:0",
+      "text_ids": [
+        "T101:0",
+        "T102:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "PDF_CALL_AND_LEADER",
+        "text_ids": [
+          "T101:0",
+          "T102:0"
+        ]
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G21"
+  },
+  {
+    "id": "G-0c0b263433",
+    "mark": "N37",
+    "representation_ids": [
+      "P1-T100:0"
+    ],
+    "opening_association_state": "SHARED_EDGE_RUN",
+    "opening_relations": [
+      {
+        "opening_id": "H16",
+        "side": "TOP",
+        "normal_gap_pt": 4.9801025390625,
+        "border_coordinate_pt": 1063.840087890625,
+        "overhang_pt": [
+          33.9599609375,
+          86.03997802734375
+        ]
+      },
+      {
+        "opening_id": "H17",
+        "side": "TOP",
+        "normal_gap_pt": 4.9801025390625,
+        "border_coordinate_pt": 1063.840087890625,
+        "overhang_pt": [
+          86.03997802734375,
+          33.9599609375
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1798:0",
+        "source_ids": [
+          "D1798:0"
+        ],
+        "a": [
+          1065.9599609375,
+          1057.47998046875
+        ],
+        "b": [
+          912.0,
+          1057.47998046875
+        ],
+        "length_pt": 153.9599609375,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1799:0",
+        "source_ids": [
+          "D1799:0"
+        ],
+        "a": [
+          1065.9599609375,
+          1060.239990234375
+        ],
+        "b": [
+          912.0,
+          1060.239990234375
+        ],
+        "length_pt": 153.9599609375,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-327cd81543",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 272.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "DIRECT_LEADER_TARGET",
+    "source_trace_ids": [
+      "D1798:0",
+      "D1799:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        912.0,
+        1057.47998046875,
+        1065.9599609375,
+        1060.239990234375
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T100:0",
+      "text_ids": [
+        "T100:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G22"
+  },
+  {
+    "id": "G-7ad419aba4",
+    "mark": "N37",
+    "representation_ids": [
+      "P1-T100:0"
+    ],
+    "opening_association_state": "SHARED_EDGE_RUN",
+    "opening_relations": [
+      {
+        "opening_id": "H16",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.2601318359375,
+        "border_coordinate_pt": 1106.919921875,
+        "overhang_pt": [
+          33.5999755859375,
+          86.39996337890625
+        ]
+      },
+      {
+        "opening_id": "H17",
+        "side": "BOTTOM",
+        "normal_gap_pt": 4.2601318359375,
+        "border_coordinate_pt": 1106.919921875,
+        "overhang_pt": [
+          85.67999267578125,
+          34.3199462890625
+        ]
+      }
+    ],
+    "opening_alternatives": [],
+    "orientation": "HORIZONTAL",
+    "lines": [
+      {
+        "id": "D1796:0",
+        "source_ids": [
+          "D1796:0"
+        ],
+        "a": [
+          1066.3199462890625,
+          1112.56005859375
+        ],
+        "b": [
+          912.3599853515625,
+          1112.56005859375
+        ],
+        "length_pt": 153.9599609375,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      },
+      {
+        "id": "D1797:0",
+        "source_ids": [
+          "D1797:0"
+        ],
+        "a": [
+          1066.3199462890625,
+          1109.800048828125
+        ],
+        "b": [
+          912.3599853515625,
+          1109.800048828125
+        ],
+        "length_pt": 153.9599609375,
+        "orientation": 0,
+        "angle_deg": 180.0,
+        "fragment_count": 1
+      }
+    ],
+    "graphic_pair_id": "P-806f74c821",
+    "quantity_bars": 3,
+    "quantity_origin": "SIM_CONVENTION_AND_PROVED_OPENING_EDGE_GROUP",
+    "diameter_mm": 12.5,
+    "nominal_length_cm": 272.0,
+    "layer_distribution": {
+      "lower": 2,
+      "upper": 1,
+      "origin": "OFFICE_CONVENTION_NOT_PLAN_GEOMETRY",
+      "convention_id": "SIM_OPENING_EDGE_JOAO_20261017_V1"
+    },
+    "geometry_origin": "GEOMETRY_OPPOSITE_EDGE_AND_SIM_CONVENTION",
+    "source_trace_ids": [
+      "D1796:0",
+      "D1797:0"
+    ],
+    "location_pdf_pt": {
+      "bbox": [
+        912.3599853515625,
+        1109.800048828125,
+        1066.3199462890625,
+        1112.56005859375
+      ]
+    },
+    "documentary_sources": {
+      "representation_id": "P1-T100:0",
+      "text_ids": [
+        "T100:0"
+      ],
+      "diameter": "PDF_CALL",
+      "length": "PDF_CALL_NOMINAL_NOT_GRAPHIC_PROJECTION"
+    },
+    "interpretation_sources": [
+      {
+        "type": "USER_EXPLICIT_CONFIRMATION",
+        "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa",
+        "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."
+      },
+      {
+        "type": "PDF_CONSTRUCTION_DETAIL",
+        "page": 1,
+        "bbox_pdf_pt": [
+          1440,
+          1250,
+          1720,
+          1620
+        ],
+        "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A",
+        "text_ids": [
+          "T187:0",
+          "T188:0",
+          "T192:0"
+        ],
+        "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."
+      }
+    ],
+    "evidence_state": "GEOMETRICALLY_SUPPORTED_PENDING_ENGINEER_REVIEW",
+    "validation": {
+      "status": "PENDING_ENGINEER_REVIEW",
+      "reviewer": null
+    },
+    "issues": [],
+    "display_id": "G23"
+  }
+]

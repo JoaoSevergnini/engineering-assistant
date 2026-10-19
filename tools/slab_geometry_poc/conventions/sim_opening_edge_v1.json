@@ -1,0 +1,14 @@
+{
+  "id": "SIM_OPENING_EDGE_JOAO_20261017_V1",
+  "office": "SIM Projetos",
+  "source_pdf_sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+  "confirmed_by_engineer": true,
+  "sources": [
+    {"type": "USER_EXPLICIT_CONFIRMATION", "reference": "João, solicitação Etapa 4, seções 3 e 7, nesta conversa", "content": "2x3: dois grupos, um por lado do furo, três barras por grupo; duas inferiores e uma superior."},
+    {"type": "PDF_CONSTRUCTION_DETAIL", "page": 1, "bbox_pdf_pt": [1440, 1250, 1720, 1620], "heading": "DETALHE GERAL - ARMADURA NOS FUROS DAS LAJES / CORTE A-A", "text_ids": ["T187:0", "T188:0", "T192:0"], "scope": "Símbolo da abertura e disposição gráfica de reforços consultados visualmente. Os números 2 inferiores + 1 superior provêm da confirmação de João, não de texto numérico extraído."}
+  ],
+  "rule": {"per_group_bars": 3, "lower": 2, "upper": 1, "allowed_factors": [[2, 3], [3]], "requires": "Reforço comprovadamente associado a borda de abertura; para 2x3, dois grupos geométricos em lados opostos."},
+  "excluded_factors": [[6, 3]],
+  "specific_overrides": {},
+  "limitations": "Restrita a este PDF e ao detalhe confirmado da SIM. Não é norma, nem regra para outros escritórios. Distribuição vertical não é inferida da planta."
+}

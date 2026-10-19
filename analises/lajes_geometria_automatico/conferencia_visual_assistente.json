@@ -1,0 +1,86 @@
+{
+  "source_sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+  "reviewer": "Codex, inspeção visual das renderizações originais e sobreposições",
+  "independent_engineer_validation": false,
+  "reference_inventory": null,
+  "scope": "Amostra dirigida de seis associações completas e cinco casos problemáticos. Não é ground truth independente, nem inventário de referência completo.",
+  "reviews": {
+    "P1-T22:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Comparação visual original/sobreposição em O001_N27_ASSOCIATED.png",
+      "selected_pair": {"bar_id": "D1503:0", "axis_id": "D1494:0"},
+      "notes": "Chamada N27 alinhada à barra; eixo com setas e ponto de cruzamento conferidos. Envoltória gráfica plausível; eixos individuais não comprovados."
+    },
+    "P1-T63:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Comparação visual original/sobreposição em O020_N12_ASSOCIATED.png",
+      "selected_pair": {"bar_id": "D1651:0", "axis_id": "D1642:0"},
+      "notes": "Chamada N12 11 Ø8 C/14 C608 e linha cruzada pelo eixo à esquerda. Confirmado limite inferior da faixa antes da faixa N15; não unir os eixos vizinhos."
+    },
+    "P1-T91:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Comparação visual original/sobreposição em O021_N31_ASSOCIATED.png",
+      "selected_pair": {"bar_id": "D1755:0", "axis_id": "D1746:0"},
+      "notes": "N31 10 Ø8 C/14 C489 associada à linha horizontal e eixo à direita. Diferenciada das barras e eixos próximos de N30, N33 e N10."
+    },
+    "P1-T10:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Comparação visual original/sobreposição em O029_N3_ASSOCIATED.png",
+      "selected_pair": {"bar_id": "D1443:0", "axis_id": "D1434:0"},
+      "notes": "Ocorrência esquerda de N3; barra, ponto e duas pontas da faixa conferidos. A ponta inferior encosta na faixa vizinha N1, mas não foi incorporada a esta região."
+    },
+    "P1-T47:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Comparação visual original/sobreposição em O036_N26_ASSOCIATED.png e regressão da PoC",
+      "selected_pair": {"bar_id": "D1609:0", "axis_id": "D1600:0"},
+      "notes": "Mesma geometria da N26 original. Faixa superior vizinha N24 não foi incorporada. Eixos extremos das barras continuam não comprovados."
+    },
+    "P1-T106:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Comparação visual original/sobreposição em O047_N24_ASSOCIATED.png",
+      "selected_pair": {"bar_id": "D1823:0", "axis_id": "D1814:0"},
+      "notes": "Ocorrência inferior N24 com 7 barras C/16, distinta da N24 com 20 barras C/14. Barra e faixa curta inferior coerentes com original."
+    },
+    "P1-T59:0": {
+      "status": "INCONCLUSIVE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção de O003_N6_UNRESOLVED.png",
+      "selected_pair": null,
+      "notes": "Chamada vertical N6 2x3 Ø12,5 C142 foi lida. Há líder inclinado até barras junto a abertura. O algoritmo não segue líderes; ausência de associação é limitação de leitura, não ausência física."
+    },
+    "P1-T65:0": {
+      "status": "FALSE_WEAK_CANDIDATE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção de O008_N2_PARTIAL.png",
+      "selected_pair": null,
+      "notes": "A candidata sob o texto é trecho horizontal de líder, não a barra N2. Não houve associação completa nem região. A própria seta do líder mostra que a barra fica mais abaixo e à direita; requer rastreamento do líder."
+    },
+    "P1-T49:1": {
+      "status": "REJECTED_CANDIDATE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção de O040_N21_AMBIGUOUS.png",
+      "selected_pair": null,
+      "notes": "O vínculo candidato com a barra longa N13 é incorreto para N21 C96. A classificação ambígua por contradição de comprimento impediu a aceitação; o líder da N21 aponta para barras curtas junto ao apoio."
+    },
+    "P1-T116:0": {
+      "status": "INCONCLUSIVE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção de O057_N41_AMBIGUOUS.png",
+      "selected_pair": null,
+      "notes": "Concorrem linha curta próxima à chamada N41 e linha longa associável à N36. A linha longa contradiz C108. Não promover automaticamente a linha curta: permanece pendente conferência completa das pontas/faixas."
+    },
+    "P1-T118:0": {
+      "status": "FALSE_WEAK_CANDIDATE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção de O058_N36_PARTIAL.png",
+      "selected_pair": null,
+      "notes": "O algoritmo tomou o trecho horizontal do líder sob a chamada como candidata. A barra longa está acima e o líder é inclinado. Não foi aceita associação nem gerada região."
+    }
+  }
+}

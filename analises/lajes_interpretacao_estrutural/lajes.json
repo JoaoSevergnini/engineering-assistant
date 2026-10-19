@@ -1,0 +1,850 @@
+[
+  {
+    "id": "T124:0",
+    "name": "L601",
+    "label": {
+      "id": "T124:0",
+      "text": "L601",
+      "bbox": [
+        978.2376708984375,
+        219.5694580078125,
+        1024.8338623046875,
+        247.51004028320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 12.0,
+    "thickness_sources": [
+      "T125:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "AMBIGUOUS_CONTOURS",
+    "contour": null,
+    "contour_alternatives": [
+      {
+        "bbox": [
+          935.0399780273438,
+          175.1199951171875,
+          1101.5999755859375,
+          326.56005859375
+        ],
+        "polygon_pdf_pt": [
+          [
+            935.0399780273438,
+            175.1199951171875
+          ],
+          [
+            1101.5999755859375,
+            175.1199951171875
+          ],
+          [
+            1101.5999755859375,
+            326.56005859375
+          ],
+          [
+            935.0399780273438,
+            326.56005859375
+          ]
+        ],
+        "edge_evidence": [
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1028:0",
+              "D905:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1029:0",
+              "D935:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1144:0",
+              "D926:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1030:0",
+              "D947:0"
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          924.3599853515625,
+          175.1199951171875,
+          1101.5999755859375,
+          326.56005859375
+        ],
+        "polygon_pdf_pt": [
+          [
+            924.3599853515625,
+            175.1199951171875
+          ],
+          [
+            1101.5999755859375,
+            175.1199951171875
+          ],
+          [
+            1101.5999755859375,
+            326.56005859375
+          ],
+          [
+            924.3599853515625,
+            326.56005859375
+          ]
+        ],
+        "edge_evidence": [
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1028:0",
+              "D905:0",
+              "D946:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1029:0",
+              "D935:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1144:0",
+              "D926:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D945:0",
+              "D948:0"
+            ]
+          }
+        ]
+      }
+    ],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  },
+  {
+    "id": "T125:1",
+    "name": "L602",
+    "label": {
+      "id": "T125:1",
+      "text": "L602",
+      "bbox": [
+        1130.039306640625,
+        244.350830078125,
+        1176.6353759765625,
+        272.2914123535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 12.0,
+    "thickness_sources": [
+      "T126:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "PRELIMINARY_FOUR_SIDED_GRAPHIC_CONTOUR",
+    "contour": {
+      "bbox": [
+        1109.52001953125,
+        175.1199951171875,
+        1184.280029296875,
+        454.0
+      ],
+      "polygon_pdf_pt": [
+        [
+          1109.52001953125,
+          175.1199951171875
+        ],
+        [
+          1184.280029296875,
+          175.1199951171875
+        ],
+        [
+          1184.280029296875,
+          454.0
+        ],
+        [
+          1109.52001953125,
+          454.0
+        ]
+      ],
+      "edge_evidence": [
+        {
+          "complete": true,
+          "segment_ids": [
+            "D1031:0",
+            "D905:0"
+          ]
+        },
+        {
+          "complete": true,
+          "segment_ids": [
+            "D1150:0",
+            "D1154:0",
+            "D939:0"
+          ]
+        },
+        {
+          "complete": true,
+          "segment_ids": [
+            "D1032:0",
+            "D913:0"
+          ]
+        },
+        {
+          "complete": true,
+          "segment_ids": [
+            "D1033:0",
+            "D934:0"
+          ]
+        }
+      ]
+    },
+    "contour_alternatives": [
+      {
+        "bbox": [
+          1109.52001953125,
+          175.1199951171875,
+          1184.280029296875,
+          454.0
+        ],
+        "polygon_pdf_pt": [
+          [
+            1109.52001953125,
+            175.1199951171875
+          ],
+          [
+            1184.280029296875,
+            175.1199951171875
+          ],
+          [
+            1184.280029296875,
+            454.0
+          ],
+          [
+            1109.52001953125,
+            454.0
+          ]
+        ],
+        "edge_evidence": [
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1031:0",
+              "D905:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1150:0",
+              "D1154:0",
+              "D939:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1032:0",
+              "D913:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1033:0",
+              "D934:0"
+            ]
+          }
+        ]
+      }
+    ],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [
+      {
+        "region_id": "R002",
+        "intersection_pdf_pt": [
+          [
+            1109.52001953125,
+            175.1199951171875
+          ],
+          [
+            1184.280029296875,
+            175.1199951171875
+          ],
+          [
+            1184.280029296875,
+            454.0
+          ],
+          [
+            1109.52001953125,
+            454.0
+          ]
+        ],
+        "area_pt2": 20849.07188847661,
+        "fraction_of_region": 0.8464668467128669,
+        "state": "PRELIMINARY_GEOMETRIC_INTERSECTION"
+      }
+    ],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [
+        "C003",
+        "C004"
+      ],
+      "UNDETERMINED": []
+    },
+    "association_state": "PRELIMINARY_CONTOUR_INTERSECTIONS_ONLY"
+  },
+  {
+    "id": "T120:0",
+    "name": "L603",
+    "label": {
+      "id": "T120:0",
+      "text": "L603",
+      "bbox": [
+        575.1126708984375,
+        724.9006958007812,
+        621.708740234375,
+        752.8412475585938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 20.0,
+    "thickness_sources": [
+      "T121:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "CONTOUR_PENDING",
+    "contour": null,
+    "contour_alternatives": [],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  },
+  {
+    "id": "T133:0",
+    "name": "L604",
+    "label": {
+      "id": "T133:0",
+      "text": "L604",
+      "bbox": [
+        178.814453125,
+        1070.1390380859375,
+        225.41055297851562,
+        1098.07958984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 12.0,
+    "thickness_sources": [
+      "T134:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "CONTOUR_PENDING",
+    "contour": null,
+    "contour_alternatives": [],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  },
+  {
+    "id": "T132:0",
+    "name": "L605",
+    "label": {
+      "id": "T132:0",
+      "text": "L605",
+      "bbox": [
+        1120.267578125,
+        1144.4393310546875,
+        1166.86376953125,
+        1172.3798828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 18.0,
+    "thickness_sources": [
+      "T151:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "CONTOUR_PENDING",
+    "contour": null,
+    "contour_alternatives": [],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  },
+  {
+    "id": "T130:0",
+    "name": "L606",
+    "label": {
+      "id": "T130:0",
+      "text": "L606",
+      "bbox": [
+        1762.976806640625,
+        1074.251708984375,
+        1809.5728759765625,
+        1102.1922607421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 12.0,
+    "thickness_sources": [
+      "T131:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "CONTOUR_PENDING",
+    "contour": null,
+    "contour_alternatives": [],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  },
+  {
+    "id": "T129:0",
+    "name": "L607",
+    "label": {
+      "id": "T129:0",
+      "text": "L607",
+      "bbox": [
+        949.4051513671875,
+        724.9006958007812,
+        996.0012817382812,
+        752.8412475585938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 20.0,
+    "thickness_sources": [
+      "T121:1"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "AMBIGUOUS_CONTOURS",
+    "contour": null,
+    "contour_alternatives": [
+      {
+        "bbox": [
+          862.3200073242188,
+          575.2000732421875,
+          1132.43994140625,
+          948.4000244140625
+        ],
+        "polygon_pdf_pt": [
+          [
+            862.3200073242188,
+            575.2000732421875
+          ],
+          [
+            1132.43994140625,
+            575.2000732421875
+          ],
+          [
+            1132.43994140625,
+            948.4000244140625
+          ],
+          [
+            862.3200073242188,
+            948.4000244140625
+          ]
+        ],
+        "edge_evidence": [
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1810:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1128:0",
+              "D1181:0",
+              "D1295:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1022:0",
+              "D1037:0",
+              "D1189:0",
+              "D1194:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1123:0",
+              "D1125:0",
+              "D1183:0",
+              "D1183:1",
+              "D1183:2"
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          862.3200073242188,
+          572.320068359375,
+          1132.43994140625,
+          948.4000244140625
+        ],
+        "polygon_pdf_pt": [
+          [
+            862.3200073242188,
+            572.320068359375
+          ],
+          [
+            1132.43994140625,
+            572.320068359375
+          ],
+          [
+            1132.43994140625,
+            948.4000244140625
+          ],
+          [
+            862.3200073242188,
+            948.4000244140625
+          ]
+        ],
+        "edge_evidence": [
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1811:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1128:0",
+              "D1181:0",
+              "D1295:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1022:0",
+              "D1037:0",
+              "D1189:0",
+              "D1194:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1123:0",
+              "D1125:0",
+              "D1183:0",
+              "D1183:1",
+              "D1183:2"
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          845.2799682617188,
+          575.2000732421875,
+          1132.43994140625,
+          948.4000244140625
+        ],
+        "polygon_pdf_pt": [
+          [
+            845.2799682617188,
+            575.2000732421875
+          ],
+          [
+            1132.43994140625,
+            575.2000732421875
+          ],
+          [
+            1132.43994140625,
+            948.4000244140625
+          ],
+          [
+            845.2799682617188,
+            948.4000244140625
+          ]
+        ],
+        "edge_evidence": [
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1810:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1128:0",
+              "D1181:0",
+              "D1295:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1022:0",
+              "D1037:0",
+              "D1189:0",
+              "D1194:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1124:0",
+              "D1185:0",
+              "D1258:0"
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          845.2799682617188,
+          572.320068359375,
+          1132.43994140625,
+          948.4000244140625
+        ],
+        "polygon_pdf_pt": [
+          [
+            845.2799682617188,
+            572.320068359375
+          ],
+          [
+            1132.43994140625,
+            572.320068359375
+          ],
+          [
+            1132.43994140625,
+            948.4000244140625
+          ],
+          [
+            845.2799682617188,
+            948.4000244140625
+          ]
+        ],
+        "edge_evidence": [
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1811:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1128:0",
+              "D1181:0",
+              "D1295:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1022:0",
+              "D1037:0",
+              "D1189:0",
+              "D1194:0"
+            ]
+          },
+          {
+            "complete": true,
+            "segment_ids": [
+              "D1124:0",
+              "D1185:0",
+              "D1258:0"
+            ]
+          }
+        ]
+      }
+    ],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  },
+  {
+    "id": "T127:0",
+    "name": "L611",
+    "label": {
+      "id": "T127:0",
+      "text": "L611",
+      "bbox": [
+        1342.0726318359375,
+        360.0877685546875,
+        1388.668701171875,
+        388.0283508300781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 12.0,
+    "thickness_sources": [
+      "T128:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "CONTOUR_PENDING",
+    "contour": null,
+    "contour_alternatives": [],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  },
+  {
+    "id": "T122:0",
+    "name": "L612",
+    "label": {
+      "id": "T122:0",
+      "text": "L612",
+      "bbox": [
+        554.3526611328125,
+        360.7774658203125,
+        600.9487915039062,
+        388.7180480957031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    "thickness_cm": 12.0,
+    "thickness_sources": [
+      "T123:0"
+    ],
+    "documentary_state": "NAME_AND_THICKNESS_EXTRACTED",
+    "contour_state": "CONTOUR_PENDING",
+    "contour": null,
+    "contour_alternatives": [],
+    "engineer_validated": false,
+    "formwork_substitute": false,
+    "region_relations": [],
+    "base_region_candidates": [],
+    "reinforcement_region_candidates": [],
+    "compositions_by_classification": {
+      "BASE_PLUS_REINFORCEMENT": [],
+      "GRAPHICAL_RESIDUAL": [],
+      "LAP_SPLICE": [],
+      "SINGLE_DISTRIBUTED": [],
+      "UNDETERMINED": []
+    },
+    "association_state": "PENDING_CONTOUR_NO_REGION_ASSIGNMENT"
+  }
+]

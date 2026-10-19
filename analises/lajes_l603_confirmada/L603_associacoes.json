@@ -1,0 +1,1713 @@
+{
+  "slab": "L603",
+  "thickness_cm": 20,
+  "human_confirmation": {
+    "slab": "L603",
+    "thickness_cm": 20,
+    "source": "Jo?o Severgnini, imagem com contorno vermelho fornecida nesta conversa",
+    "confirmation_scope": "PERIMETER_TOPOLOGY_AND_SLAB_IDENTIFICATION",
+    "pdf_sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+    "screenshot_dimensions_px": [
+      1199,
+      607
+    ],
+    "digitization_method": "MANUAL_VISUAL_DIGITIZATION_OF_RED_STROKE; NOT_AUTOMATIC_EXTRACTION",
+    "metric_validation": "APPROXIMATE_PDF_REGISTRATION_PENDING_ENGINEER_REVIEW",
+    "boundary_uncertainty_pdf_pt": 8.0,
+    "boundary_uncertainty_basis": "Exploratory margin for red stroke width, manual picking and registration; not a statistical confidence interval or structural tolerance",
+    "vertices_image_px": [
+      [
+        42,
+        493
+      ],
+      [
+        42,
+        340
+      ],
+      [
+        97,
+        340
+      ],
+      [
+        97,
+        193
+      ],
+      [
+        192,
+        193
+      ],
+      [
+        192,
+        360
+      ],
+      [
+        207,
+        360
+      ],
+      [
+        207,
+        147
+      ],
+      [
+        250,
+        147
+      ],
+      [
+        250,
+        175
+      ],
+      [
+        257,
+        175
+      ],
+      [
+        257,
+        147
+      ],
+      [
+        353,
+        147
+      ],
+      [
+        353,
+        193
+      ],
+      [
+        368,
+        193
+      ],
+      [
+        368,
+        158
+      ],
+      [
+        414,
+        158
+      ],
+      [
+        414,
+        221
+      ],
+      [
+        433,
+        221
+      ],
+      [
+        433,
+        160
+      ],
+      [
+        844,
+        160
+      ],
+      [
+        844,
+        192
+      ],
+      [
+        854,
+        192
+      ],
+      [
+        854,
+        146
+      ],
+      [
+        1001,
+        146
+      ],
+      [
+        1001,
+        360
+      ],
+      [
+        1012,
+        362
+      ],
+      [
+        1012,
+        193
+      ],
+      [
+        1110,
+        193
+      ],
+      [
+        1110,
+        345
+      ],
+      [
+        1169,
+        345
+      ],
+      [
+        1167,
+        495
+      ],
+      [
+        695,
+        495
+      ],
+      [
+        695,
+        216
+      ],
+      [
+        511,
+        216
+      ],
+      [
+        511,
+        493
+      ]
+    ],
+    "registration_anchors": {
+      "x": [
+        [
+          100.91999816894531,
+          42
+        ],
+        [
+          188.1599884033203,
+          97
+        ],
+        [
+          845.2799682617188,
+          511
+        ],
+        [
+          1132.43994140625,
+          695
+        ],
+        [
+          1876.7999267578125,
+          1167
+        ]
+      ],
+      "y": [
+        [
+          513.52001953125,
+          193
+        ],
+        [
+          750.760009765625,
+          340
+        ],
+        [
+          995.9200439453125,
+          494
+        ],
+        [
+          555.4000244140625,
+          216
+        ],
+        [
+          464.800048828125,
+          160
+        ]
+      ]
+    },
+    "anchors_source": "Manual matching of distinctive perimeter steps and L607 bay against extracted PDF vector coordinates; red stroke picks are approximate",
+    "all_openings_confirmed": false,
+    "registration_anchor_evidence": {
+      "x": [
+        "D960:0 / D1097:0",
+        "D1026:0",
+        "D1124:0",
+        "D1128:0",
+        "D1000:0 endpoint"
+      ],
+      "y": [
+        "D1098:0",
+        "D960:0",
+        "D1096:0",
+        "D1094:0",
+        "D912:0"
+      ]
+    }
+  },
+  "geometry_pdf_pt": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          101.94525843158273,
+          750.7114382094462
+        ],
+        [
+          101.94525843158273,
+          994.4590066206146
+        ],
+        [
+          842.2956867391512,
+          994.4590066206146
+        ],
+        [
+          842.2956867391512,
+          553.1643893010482
+        ],
+        [
+          1132.7529976316725,
+          553.1643893010482
+        ],
+        [
+          1132.7529976316725,
+          997.6452493449435
+        ],
+        [
+          1877.8391429646626,
+          997.6452493449435
+        ],
+        [
+          1880.9962876482768,
+          758.6770450202687
+        ],
+        [
+          1787.8605194816532,
+          758.6770450202687
+        ],
+        [
+          1787.8605194816532,
+          516.5225979712648
+        ],
+        [
+          1633.1604299845494,
+          516.5225979712648
+        ],
+        [
+          1633.1604299845494,
+          785.7601081770651
+        ],
+        [
+          1615.7961342246704,
+          782.5738654527362
+        ],
+        [
+          1615.7961342246704,
+          441.6458939495333
+        ],
+        [
+          1383.7459999790146,
+          441.6458939495333
+        ],
+        [
+          1383.7459999790146,
+          514.9294766091002
+        ],
+        [
+          1367.9602765609427,
+          514.9294766091002
+        ],
+        [
+          1367.9602765609427,
+          463.9495930198363
+        ],
+        [
+          719.1670440781909,
+          463.9495930198363
+        ],
+        [
+          719.1670440781909,
+          561.1299961118707
+        ],
+        [
+          689.1741695838545,
+          561.1299961118707
+        ],
+        [
+          689.1741695838545,
+          460.7633502955073
+        ],
+        [
+          616.5598418607241,
+          460.7633502955073
+        ],
+        [
+          616.5598418607241,
+          516.5225979712648
+        ],
+        [
+          592.8812567336164,
+          516.5225979712648
+        ],
+        [
+          592.8812567336164,
+          443.2390153116978
+        ],
+        [
+          441.3383119201269,
+          443.2390153116978
+        ],
+        [
+          441.3383119201269,
+          487.84641345230375
+        ],
+        [
+          430.2883055274766,
+          487.84641345230375
+        ],
+        [
+          430.2883055274766,
+          443.2390153116978
+        ],
+        [
+          362.4096948297678,
+          443.2390153116978
+        ],
+        [
+          362.4096948297678,
+          782.5738654527362
+        ],
+        [
+          338.73110970266004,
+          782.5738654527362
+        ],
+        [
+          338.73110970266004,
+          516.5225979712648
+        ],
+        [
+          188.76673723097775,
+          516.5225979712648
+        ],
+        [
+          188.76673723097775,
+          750.7114382094462
+        ],
+        [
+          101.94525843158273,
+          750.7114382094462
+        ]
+      ]
+    ]
+  },
+  "registration": {
+    "axes": {
+      "x": {
+        "pdf_to_image_scale": 0.6334837964126366,
+        "offset_px": -22.58066933750638,
+        "rms_residual_px": 0.9608599645545033
+      },
+      "y": {
+        "pdf_to_image_scale": 0.6276985694557173,
+        "offset_px": -131.2204958381135,
+        "rms_residual_px": 1.078349682500631
+      }
+    },
+    "rotation_or_shear_fitted": false,
+    "source_vertices_image_px": [
+      [
+        42,
+        493
+      ],
+      [
+        42,
+        340
+      ],
+      [
+        97,
+        340
+      ],
+      [
+        97,
+        193
+      ],
+      [
+        192,
+        193
+      ],
+      [
+        192,
+        360
+      ],
+      [
+        207,
+        360
+      ],
+      [
+        207,
+        147
+      ],
+      [
+        250,
+        147
+      ],
+      [
+        250,
+        175
+      ],
+      [
+        257,
+        175
+      ],
+      [
+        257,
+        147
+      ],
+      [
+        353,
+        147
+      ],
+      [
+        353,
+        193
+      ],
+      [
+        368,
+        193
+      ],
+      [
+        368,
+        158
+      ],
+      [
+        414,
+        158
+      ],
+      [
+        414,
+        221
+      ],
+      [
+        433,
+        221
+      ],
+      [
+        433,
+        160
+      ],
+      [
+        844,
+        160
+      ],
+      [
+        844,
+        192
+      ],
+      [
+        854,
+        192
+      ],
+      [
+        854,
+        146
+      ],
+      [
+        1001,
+        146
+      ],
+      [
+        1001,
+        360
+      ],
+      [
+        1012,
+        362
+      ],
+      [
+        1012,
+        193
+      ],
+      [
+        1110,
+        193
+      ],
+      [
+        1110,
+        345
+      ],
+      [
+        1169,
+        345
+      ],
+      [
+        1167,
+        495
+      ],
+      [
+        695,
+        495
+      ],
+      [
+        695,
+        216
+      ],
+      [
+        511,
+        216
+      ],
+      [
+        511,
+        493
+      ]
+    ],
+    "metric_validation": "APPROXIMATE_PDF_REGISTRATION_PENDING_ENGINEER_REVIEW",
+    "source_confirmation_scope": "PERIMETER_TOPOLOGY_AND_SLAB_IDENTIFICATION"
+  },
+  "geometry_state": "HUMAN_CONFIRMED_TOPOLOGY_APPROXIMATE_METRIC_DIGITIZATION",
+  "coordinate_units": "PDF_PT",
+  "area_units": "PT2_NOT_STEEL_AREA",
+  "graphic_area_pt2": 740887.025740739,
+  "distributed_intersections": [
+    {
+      "region_id": "R006",
+      "occurrence_id": "P1-T67:0",
+      "display_id": "O006",
+      "position": "N9",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 9.067665141604401,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R007",
+      "occurrence_id": "P1-T73:0",
+      "display_id": "O007",
+      "position": "N32",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 389.9273011666079,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R008",
+      "occurrence_id": "P1-T65:0",
+      "display_id": "O008",
+      "position": "N2",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              362.4096948297678,
+              444.1600341796875
+            ],
+            [
+              362.4096948297678,
+              483.4000244140625
+            ],
+            [
+              430.2883055274766,
+              483.4000244140625
+            ],
+            [
+              430.2883055274766,
+              444.1600341796875
+            ],
+            [
+              362.4096948297678,
+              444.1600341796875
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 2663.5560209010373,
+      "fraction_of_graphic_region": 0.7989479463824932,
+      "minimum_intersection_area_pt2_under_margin": 1668.468470867048,
+      "maximum_intersection_area_pt2_under_margin": 3077.6042652578276,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R010",
+      "occurrence_id": "P1-T112:0",
+      "display_id": "O010",
+      "position": "N29",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 44.41379248155941,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R011",
+      "occurrence_id": "P1-T78:0",
+      "display_id": "O011",
+      "position": "N30",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1383.7459999790146,
+              446.080078125
+            ],
+            [
+              1383.7459999790146,
+              484.5999755859375
+            ],
+            [
+              1536.47998046875,
+              484.5999755859375
+            ],
+            [
+              1536.47998046875,
+              446.080078125
+            ],
+            [
+              1383.7459999790146,
+              446.080078125
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 5883.297267265435,
+      "fraction_of_graphic_region": 0.9203061969100759,
+      "minimum_intersection_area_pt2_under_margin": 5059.043369599946,
+      "maximum_intersection_area_pt2_under_margin": 6329.201116448542,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R013",
+      "occurrence_id": "P1-T69:0",
+      "display_id": "O013",
+      "position": "N11",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              444.1199951171875,
+              446.080078125
+            ],
+            [
+              444.1199951171875,
+              483.4000244140625
+            ],
+            [
+              592.8812567336164,
+              483.4000244140625
+            ],
+            [
+              592.8812567336164,
+              446.080078125
+            ],
+            [
+              444.1199951171875,
+              446.080078125
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 5551.762293418301,
+      "fraction_of_graphic_region": 0.9121979766194996,
+      "minimum_intersection_area_pt2_under_margin": 4359.19788190795,
+      "maximum_intersection_area_pt2_under_margin": 5850.321863730801,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R015",
+      "occurrence_id": "P1-T108:0",
+      "display_id": "O015",
+      "position": "N4",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 267.51032744435634,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R018",
+      "occurrence_id": "P1-T114:0",
+      "display_id": "O018",
+      "position": "N4",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 306.56141920915445,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R019",
+      "occurrence_id": "P1-T12:0",
+      "display_id": "O019",
+      "position": "N25",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              719.1670440781909,
+              464.800048828125
+            ],
+            [
+              719.1670440781909,
+              555.4000244140625
+            ],
+            [
+              842.2956867391512,
+              555.4000244140625
+            ],
+            [
+              842.2956867391512,
+              553.1643893010482
+            ],
+            [
+              1132.7529976316725,
+              553.1643893010482
+            ],
+            [
+              1132.7529976316725,
+              555.4000244140625
+            ],
+            [
+              1393.199951171875,
+              555.4000244140625
+            ],
+            [
+              1393.199951171875,
+              464.800048828125
+            ],
+            [
+              1383.7459999790146,
+              464.800048828125
+            ],
+            [
+              1383.7459999790146,
+              514.9294766091002
+            ],
+            [
+              1367.9602765609427,
+              514.9294766091002
+            ],
+            [
+              1367.9602765609427,
+              464.800048828125
+            ],
+            [
+              719.1670440781909,
+              464.800048828125
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 59626.679081686554,
+      "fraction_of_graphic_region": 0.968466795284522,
+      "minimum_intersection_area_pt2_under_margin": 50889.171712964264,
+      "maximum_intersection_area_pt2_under_margin": 61568.11918798834,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R020",
+      "occurrence_id": "P1-T63:0",
+      "display_id": "O020",
+      "position": "N12",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              362.4096948297678,
+              483.4000244140625
+            ],
+            [
+              362.4096948297678,
+              555.4000244140625
+            ],
+            [
+              689.1741695838545,
+              555.4000244140625
+            ],
+            [
+              689.1741695838545,
+              483.4000244140625
+            ],
+            [
+              616.5598418607241,
+              483.4000244140625
+            ],
+            [
+              616.5598418607241,
+              516.5225979712648
+            ],
+            [
+              592.8812567336164,
+              516.5225979712648
+            ],
+            [
+              592.8812567336164,
+              483.4000244140625
+            ],
+            [
+              441.3383119201269,
+              483.4000244140625
+            ],
+            [
+              441.3383119201269,
+              487.84641345230375
+            ],
+            [
+              430.2883055274766,
+              487.84641345230375
+            ],
+            [
+              430.2883055274766,
+              483.4000244140625
+            ],
+            [
+              362.4096948297678,
+              483.4000244140625
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 22693.61387739436,
+      "fraction_of_graphic_region": 0.915502157395241,
+      "minimum_intersection_area_pt2_under_margin": 20461.94264031426,
+      "maximum_intersection_area_pt2_under_margin": 24081.915976804466,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R021",
+      "occurrence_id": "P1-T91:0",
+      "display_id": "O021",
+      "position": "N31",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1353.5999755859375,
+              484.5999755859375
+            ],
+            [
+              1353.5999755859375,
+              555.4000244140625
+            ],
+            [
+              1615.7961342246704,
+              555.4000244140625
+            ],
+            [
+              1615.7961342246704,
+              484.5999755859375
+            ],
+            [
+              1383.7459999790146,
+              484.5999755859375
+            ],
+            [
+              1383.7459999790146,
+              514.9294766091002
+            ],
+            [
+              1367.9602765609427,
+              514.9294766091002
+            ],
+            [
+              1367.9602765609427,
+              484.5999755859375
+            ],
+            [
+              1353.5999755859375,
+              484.5999755859375
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 18084.727719609324,
+      "fraction_of_graphic_region": 0.9226768628547711,
+      "minimum_intersection_area_pt2_under_margin": 16806.39997357167,
+      "maximum_intersection_area_pt2_under_margin": 19364.020902830143,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R026",
+      "occurrence_id": "P1-T75:0",
+      "display_id": "O026",
+      "position": "N10",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1439.0399169921875,
+              506.080078125
+            ],
+            [
+              1439.0399169921875,
+              566.080078125
+            ],
+            [
+              1541.0399169921875,
+              566.080078125
+            ],
+            [
+              1541.0399169921875,
+              506.080078125
+            ],
+            [
+              1439.0399169921875,
+              506.080078125
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 6120.0,
+      "fraction_of_graphic_region": 1.0,
+      "minimum_intersection_area_pt2_under_margin": 6120.0,
+      "maximum_intersection_area_pt2_under_margin": 6120.0,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R027",
+      "occurrence_id": "P1-T71:0",
+      "display_id": "O027",
+      "position": "N10",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              436.67999267578125,
+              506.080078125
+            ],
+            [
+              436.67999267578125,
+              566.080078125
+            ],
+            [
+              538.6799926757812,
+              566.080078125
+            ],
+            [
+              538.6799926757812,
+              506.080078125
+            ],
+            [
+              436.67999267578125,
+              506.080078125
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 6120.0,
+      "fraction_of_graphic_region": 1.0,
+      "minimum_intersection_area_pt2_under_margin": 6120.0,
+      "maximum_intersection_area_pt2_under_margin": 6120.0,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R029",
+      "occurrence_id": "P1-T10:0",
+      "display_id": "O029",
+      "position": "N3",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              188.76673723097775,
+              516.5225979712648
+            ],
+            [
+              188.76673723097775,
+              737.2000122070312
+            ],
+            [
+              338.73110970266004,
+              737.2000122070312
+            ],
+            [
+              338.73110970266004,
+              516.5225979712648
+            ],
+            [
+              188.76673723097775,
+              516.5225979712648
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 33093.749944540206,
+      "fraction_of_graphic_region": 0.8192210076088405,
+      "minimum_intersection_area_pt2_under_margin": 28491.196336994486,
+      "maximum_intersection_area_pt2_under_margin": 38184.26547102601,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R030",
+      "occurrence_id": "P1-T26:0",
+      "display_id": "O030",
+      "position": "N3",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1633.1604299845494,
+              516.5225979712648
+            ],
+            [
+              1633.1604299845494,
+              737.2000122070312
+            ],
+            [
+              1787.8605194816532,
+              737.2000122070312
+            ],
+            [
+              1787.8605194816532,
+              516.5225979712648
+            ],
+            [
+              1633.1604299845494,
+              516.5225979712648
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 34138.81573226253,
+      "fraction_of_graphic_region": 0.8445301606427446,
+      "minimum_intersection_area_pt2_under_margin": 29498.376388513432,
+      "maximum_intersection_area_pt2_under_margin": 39352.234239221696,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R031",
+      "occurrence_id": "P1-T89:0",
+      "display_id": "O031",
+      "position": "N15",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1132.7529976316725,
+              555.4000244140625
+            ],
+            [
+              1132.7529976316725,
+              732.280029296875
+            ],
+            [
+              1615.7961342246704,
+              732.280029296875
+            ],
+            [
+              1615.7961342246704,
+              555.4000244140625
+            ],
+            [
+              1132.7529976316725,
+              555.4000244140625
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 85440.67235917853,
+      "fraction_of_graphic_region": 0.9400653291377414,
+      "minimum_intersection_area_pt2_under_margin": 82610.59228105353,
+      "maximum_intersection_area_pt2_under_margin": 89251.58943735604,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R032",
+      "occurrence_id": "P1-T56:0",
+      "display_id": "O032",
+      "position": "N15",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              362.4096948297678,
+              555.4000244140625
+            ],
+            [
+              362.4096948297678,
+              732.280029296875
+            ],
+            [
+              842.2956867391512,
+              732.280029296875
+            ],
+            [
+              842.2956867391512,
+              555.4000244140625
+            ],
+            [
+              719.1670440781909,
+              555.4000244140625
+            ],
+            [
+              719.1670440781909,
+              561.1299961118707
+            ],
+            [
+              689.1741695838545,
+              561.1299961118707
+            ],
+            [
+              689.1741695838545,
+              555.4000244140625
+            ],
+            [
+              362.4096948297678,
+              555.4000244140625
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 84710.3782701366,
+      "fraction_of_graphic_region": 0.931812573368259,
+      "minimum_intersection_area_pt2_under_margin": 81448.30609719448,
+      "maximum_intersection_area_pt2_under_margin": 87775.40362903045,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R033",
+      "occurrence_id": "P1-T20:0",
+      "display_id": "O033",
+      "position": "N24",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 1509.6226413093427,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R034",
+      "occurrence_id": "P1-T32:0",
+      "display_id": "O034",
+      "position": "N14",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              476.1600036621094,
+              645.760009765625
+            ],
+            [
+              476.1600036621094,
+              903.0400390625
+            ],
+            [
+              705.47998046875,
+              903.0400390625
+            ],
+            [
+              705.47998046875,
+              645.760009765625
+            ],
+            [
+              476.1600036621094,
+              645.760009765625
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 58999.450351171196,
+      "fraction_of_graphic_region": 1.0,
+      "minimum_intersection_area_pt2_under_margin": 58999.450351171196,
+      "maximum_intersection_area_pt2_under_margin": 58999.450351171196,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R035",
+      "occurrence_id": "P1-T34:0",
+      "display_id": "O035",
+      "position": "N14",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1272.239990234375,
+              645.760009765625
+            ],
+            [
+              1272.239990234375,
+              903.0400390625
+            ],
+            [
+              1501.679931640625,
+              903.0400390625
+            ],
+            [
+              1501.679931640625,
+              645.760009765625
+            ],
+            [
+              1272.239990234375,
+              645.760009765625
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 59030.31484687328,
+      "fraction_of_graphic_region": 1.0,
+      "minimum_intersection_area_pt2_under_margin": 59030.31484687328,
+      "maximum_intersection_area_pt2_under_margin": 59030.31484687328,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R036",
+      "occurrence_id": "P1-T47:0",
+      "display_id": "O036",
+      "position": "N26",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 2438.9103937281225,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R041",
+      "occurrence_id": "P1-T16:0",
+      "display_id": "O041",
+      "position": "N1",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              101.94525843158273,
+              750.7114382094462
+            ],
+            [
+              101.94525843158273,
+              994.4590066206146
+            ],
+            [
+              334.55999755859375,
+              994.4590066206146
+            ],
+            [
+              334.55999755859375,
+              737.2000122070312
+            ],
+            [
+              188.76673723097775,
+              737.2000122070312
+            ],
+            [
+              188.76673723097775,
+              750.7114382094462
+            ],
+            [
+              101.94525843158273,
+              750.7114382094462
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 58669.15188737461,
+      "fraction_of_graphic_region": 0.9322765565656836,
+      "minimum_intersection_area_pt2_under_margin": 53941.249274559275,
+      "maximum_intersection_area_pt2_under_margin": 61759.45240132889,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R042",
+      "occurrence_id": "P1-T30:0",
+      "display_id": "O042",
+      "position": "N1",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1643.159912109375,
+              737.2000122070312
+            ],
+            [
+              1643.159912109375,
+              995.9200439453125
+            ],
+            [
+              1877.8619356331308,
+              995.9200439453125
+            ],
+            [
+              1880.9962876482768,
+              758.6770450202687
+            ],
+            [
+              1787.8605194816532,
+              758.6770450202687
+            ],
+            [
+              1787.8605194816532,
+              737.2000122070312
+            ],
+            [
+              1643.159912109375,
+              737.2000122070312
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 59160.953143061815,
+      "fraction_of_graphic_region": 0.94009150695056,
+      "minimum_intersection_area_pt2_under_margin": 54937.420349584085,
+      "maximum_intersection_area_pt2_under_margin": 61696.33271796732,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R043",
+      "occurrence_id": "P1-T36:0",
+      "display_id": "O043",
+      "position": "N13",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              300.6000061035156,
+              729.1600341796875
+            ],
+            [
+              300.6000061035156,
+              994.4590066206146
+            ],
+            [
+              842.2956867391512,
+              994.4590066206146
+            ],
+            [
+              842.2956867391512,
+              729.1600341796875
+            ],
+            [
+              362.4096948297678,
+              729.1600341796875
+            ],
+            [
+              362.4096948297678,
+              782.5738654527362
+            ],
+            [
+              338.73110970266004,
+              782.5738654527362
+            ],
+            [
+              338.73110970266004,
+              729.1600341796875
+            ],
+            [
+              300.6000061035156,
+              729.1600341796875
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 142446.54349755886,
+      "fraction_of_graphic_region": 0.9524608269252235,
+      "minimum_intersection_area_pt2_under_margin": 134910.16673986329,
+      "maximum_intersection_area_pt2_under_margin": 146288.03600277047,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R044",
+      "occurrence_id": "P1-T45:0",
+      "display_id": "O044",
+      "position": "N13",
+      "intersection_pdf_pt": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1132.7529976316725,
+              729.1600341796875
+            ],
+            [
+              1132.7529976316725,
+              995.9200439453125
+            ],
+            [
+              1677.239990234375,
+              995.9200439453125
+            ],
+            [
+              1677.239990234375,
+              729.1600341796875
+            ],
+            [
+              1633.1604299845494,
+              729.1600341796875
+            ],
+            [
+              1633.1604299845494,
+              785.7601081770651
+            ],
+            [
+              1615.7961342246704,
+              782.5738654527362
+            ],
+            [
+              1615.7961342246704,
+              729.1600341796875
+            ],
+            [
+              1132.7529976316725,
+              729.1600341796875
+            ]
+          ]
+        ]
+      },
+      "intersection_area_pt2": 144292.1984695452,
+      "fraction_of_graphic_region": 0.9648016429024869,
+      "minimum_intersection_area_pt2_under_margin": 137670.05832732882,
+      "maximum_intersection_area_pt2_under_margin": 147317.48637821194,
+      "state": "INTERIOR_INTERSECTION_SUPPORTED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    },
+    {
+      "region_id": "R047",
+      "occurrence_id": "P1-T106:0",
+      "display_id": "O047",
+      "position": "N24",
+      "intersection_pdf_pt": {
+        "type": "GeometryCollection",
+        "geometries": []
+      },
+      "intersection_area_pt2": 0.0,
+      "fraction_of_graphic_region": 0.0,
+      "minimum_intersection_area_pt2_under_margin": 0.0,
+      "maximum_intersection_area_pt2_under_margin": 447.23753398098086,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "physical_assignment_of_entire_bar_confirmed": false
+    }
+  ],
+  "localized_trace_intersections": [
+    {
+      "group_id": "G-45f59c5506",
+      "position": "N6",
+      "intersection_length_pt": 148.48193031410437,
+      "minimum_length_under_margin_pt": 43.961682393946376,
+      "maximum_length_under_margin_pt": 160.7998046875,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-f9698bd643",
+      "position": "N6",
+      "intersection_length_pt": 148.48193031410437,
+      "minimum_length_under_margin_pt": 44.35163184161138,
+      "maximum_length_under_margin_pt": 160.7998046875,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-23dd18946e",
+      "position": "N6",
+      "intersection_length_pt": 151.66817303843345,
+      "minimum_length_under_margin_pt": 135.66817303843345,
+      "maximum_length_under_margin_pt": 160.7998046875,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-0ad372c3c2",
+      "position": "N6",
+      "intersection_length_pt": 151.66817303843345,
+      "minimum_length_under_margin_pt": 135.66817303843345,
+      "maximum_length_under_margin_pt": 160.7998046875,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-7c0295e44a",
+      "position": "N16",
+      "intersection_length_pt": 93.03335800273544,
+      "minimum_length_under_margin_pt": 0.0,
+      "maximum_length_under_margin_pt": 103.199951171875,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-3dbc9be608",
+      "position": "N19",
+      "intersection_length_pt": 156.82662429574702,
+      "minimum_length_under_margin_pt": 40.767356712361334,
+      "maximum_length_under_margin_pt": 267.35986328125,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-918beab792",
+      "position": "N19",
+      "intersection_length_pt": 56.45997847938361,
+      "minimum_length_under_margin_pt": 40.45997847938361,
+      "maximum_length_under_margin_pt": 265.76503227045305,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-65a40d8d01",
+      "position": "N16",
+      "intersection_length_pt": 86.6608725540774,
+      "minimum_length_under_margin_pt": 70.6608725540774,
+      "maximum_length_under_margin_pt": 102.6608725540774,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-bf69701e91",
+      "position": "N8",
+      "intersection_length_pt": 123.81997012485567,
+      "minimum_length_under_margin_pt": 91.81997012485567,
+      "maximum_length_under_margin_pt": 145.91998291015625,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-495acc1345",
+      "position": "N8",
+      "intersection_length_pt": 146.159912109375,
+      "minimum_length_under_margin_pt": 146.159912109375,
+      "maximum_length_under_margin_pt": 146.159912109375,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-ba5bfd99fb",
+      "position": "N20",
+      "intersection_length_pt": 115.69418265195213,
+      "minimum_length_under_margin_pt": 83.69418265195213,
+      "maximum_length_under_margin_pt": 175.679931640625,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-734bcdde34",
+      "position": "N21",
+      "intersection_length_pt": 0.0,
+      "minimum_length_under_margin_pt": 0.0,
+      "maximum_length_under_margin_pt": 12.014024267904915,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-0d8ad7484c",
+      "position": "N21",
+      "intersection_length_pt": 0.0,
+      "minimum_length_under_margin_pt": 0.0,
+      "maximum_length_under_margin_pt": 6.43146136892733,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-b2ada0ed08",
+      "position": "N5",
+      "intersection_length_pt": 164.39996337890625,
+      "minimum_length_under_margin_pt": 164.39996337890625,
+      "maximum_length_under_margin_pt": 164.39996337890625,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-841c0e40b0",
+      "position": "N5",
+      "intersection_length_pt": 164.16015625,
+      "minimum_length_under_margin_pt": 164.16015625,
+      "maximum_length_under_margin_pt": 164.16015625,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-c3bfef6b4f",
+      "position": "N21",
+      "intersection_length_pt": 0.0,
+      "minimum_length_under_margin_pt": 0.0,
+      "maximum_length_under_margin_pt": 12.014024267904915,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-27585c0a67",
+      "position": "N21",
+      "intersection_length_pt": 0.0,
+      "minimum_length_under_margin_pt": 0.0,
+      "maximum_length_under_margin_pt": 6.43146136892733,
+      "state": "BOUNDARY_SENSITIVE_REVIEW_REQUIRED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-3f74a8186f",
+      "position": "N5",
+      "intersection_length_pt": 164.39996337890625,
+      "minimum_length_under_margin_pt": 164.39996337890625,
+      "maximum_length_under_margin_pt": 164.39996337890625,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    },
+    {
+      "group_id": "G-aaf414a890",
+      "position": "N5",
+      "intersection_length_pt": 164.16015625,
+      "minimum_length_under_margin_pt": 164.16015625,
+      "maximum_length_under_margin_pt": 164.16015625,
+      "state": "TRACE_INTERIOR_INTERSECTION_SUPPORTED",
+      "whole_group_assignment_confirmed": false
+    }
+  ],
+  "original_geometry_modified": false,
+  "structural_calculations_performed": false,
+  "all_openings_confirmed": false,
+  "metrics": {
+    "distributed_nominal_intersections": 18,
+    "distributed_interior_supported": 18,
+    "distributed_boundary_sensitive": 8
+  },
+  "provenance": {
+    "pdf_sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+    "input_inventory_sha256": "c1d221c218e481f7da4a105b127d85332ed4fce9a551321aa77dfa41c99042e7",
+    "confirmation_sha256": "9217e2db2a288d4b330b12fbcf55c8b43d5b1d3a891a9964c40e9a20356498e6"
+  }
+}

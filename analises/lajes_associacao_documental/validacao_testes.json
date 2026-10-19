@@ -1,0 +1,21 @@
+{
+  "command": "python -m unittest discover -s tools/slab_geometry_poc -p 'test_*.py'",
+  "result": "OK",
+  "tests": 205,
+  "new_stage92_tests": 22,
+  "elapsed_seconds": 87.33,
+  "validation_scope": "Synthetic tests and real-sheet regressions; not independent engineer approval",
+  "source_code_sha256": {
+    "documentary_slab_context.py": "d0add2777e2d5401e85c08ff37f27ea73f0156755ab4f3563a008df102983903",
+    "documentary_slab_assignment.py": "c8e1e549aae2a7f998f018c1225dd12ba6f27117761ec3b7f5f7cc8b4bc06efa",
+    "run_documentary_assignment.py": "8f11d7f960da1a2835ed66c74f66878faf7dc7fad506f2286459006c7b361ffd",
+    "test_documentary_assignment.py": "14daa7f5c3516829e86a5f6e76fa225abdbc5f723e1225f330ee2fd0e450aa41"
+  },
+  "render_cli_completed": true,
+  "visual_review": [
+    "mapa_associacoes.png",
+    "mapa_pendencias.png",
+    "L605_contexto.png",
+    "L607_apoios.png"
+  ]
+}

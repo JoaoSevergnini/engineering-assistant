@@ -1,0 +1,231 @@
+{
+  "call": {
+    "mark": "N26",
+    "quantity": 35,
+    "diameter_mm": 6.3,
+    "spacing_cm": 12.0,
+    "nominal_length_cm": 503.0,
+    "diameter_symbol_decoded": true
+  },
+  "label": {
+    "id": "T47:0",
+    "text": "N26 35 Ø 6.3 C/12 C=503",
+    "bbox": [
+      923.8195190429688,
+      778.5191040039062,
+      1042.8984375,
+      790.9371337890625
+    ],
+    "direction": [
+      1.0,
+      0.0
+    ]
+  },
+  "candidates": [
+    {
+      "bar_id": "D1609:0",
+      "text_gap_pt": 0.14288330078125,
+      "projected_length_cm": 502.4966752794054,
+      "nominal_length_relative_error": 0.0010006455677825158,
+      "distribution_candidates": [
+        {
+          "axis_id": "D1600:0",
+          "arrow_wing_ids": [
+            [
+              "D1603:0",
+              "D1604:0"
+            ],
+            [
+              "D1601:0",
+              "D1602:0"
+            ]
+          ],
+          "junction_path_ids": [
+            "D1607",
+            "D1608"
+          ]
+        }
+      ]
+    }
+  ],
+  "accepted_pairs": [
+    {
+      "bar": {
+        "id": "D1609:0",
+        "path_id": "D1609",
+        "a": [
+          1131.3599853515625,
+          791.0800170898438
+        ],
+        "b": [
+          846.47998046875,
+          791.0800170898438
+        ],
+        "length_pt": 284.8800048828125,
+        "angle_deg": 180.0
+      },
+      "axis": {
+        "id": "D1600:0",
+        "path_id": "D1600",
+        "a": [
+          903.47998046875,
+          714.4000244140625
+        ],
+        "b": [
+          903.47998046875,
+          948.4000244140625
+        ],
+        "length_pt": 234.0,
+        "angle_deg": 90.0
+      },
+      "evidence": {
+        "axis_id": "D1600:0",
+        "arrow_wing_ids": [
+          [
+            "D1603:0",
+            "D1604:0"
+          ],
+          [
+            "D1601:0",
+            "D1602:0"
+          ]
+        ],
+        "junction_path_ids": [
+          "D1607",
+          "D1608"
+        ]
+      },
+      "region_pdf_pt": [
+        [
+          846.47998046875,
+          714.4000244140625
+        ],
+        [
+          1131.3599853515625,
+          714.4000244140625
+        ],
+        [
+          1131.3599853515625,
+          948.4000244140625
+        ],
+        [
+          846.47998046875,
+          948.4000244140625
+        ]
+      ]
+    }
+  ],
+  "status": "UNIQUE_GRAPHICAL_INTERPRETATION_REQUIRES_ENGINEER_REVIEW",
+  "thresholds": {
+    "axis_pt": 0.15,
+    "text_gap_pt": [
+      -2,
+      8
+    ],
+    "nominal_length_relative": 0.01,
+    "junction_center_pt": 0.3,
+    "arrow_length_pt": [
+      2,
+      10
+    ]
+  },
+  "scale_denominator": 50,
+  "provenance": {
+    "file": "C:\\Users\\João Severgnini\\Desktop\\LAJES SIMON_RH - PAV TIPO\\LAJES\\RMP-EST-LO-1422-LAJ-R00.PDF",
+    "sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+    "page": 1,
+    "page_rect_pt": [
+      0.0,
+      0.0,
+      2384.0,
+      1684.0
+    ],
+    "rotation": 0,
+    "coordinate_system": "PyMuPDF page points; top left; x right; y down",
+    "engine": "\nPyMuPDF 1.19.6: Python bindings for the MuPDF 1.19.0 library.\nVersion date: 2022-03-03 00:00:01.\nBuilt for Python 3.10 on win32 (32-bit).\n",
+    "selection": "MANUAL_CASE_N26",
+    "scale_source": "Printed ESCALA: 1/50 for main plan"
+  },
+  "steel_schedule": {
+    "observations": [
+      {
+        "mark": "N26",
+        "diameter_mm": 6.3,
+        "quantity": 35,
+        "nominal_length_cm": 503.0,
+        "representation_id": "Z0-L0",
+        "view": "STEEL_SCHEDULE",
+        "quantity_scope": "POSITION_TOTAL",
+        "occurrence_id": null,
+        "section_id": null,
+        "provenance": [
+          {
+            "file": "C:\\Users\\João Severgnini\\Desktop\\LAJES SIMON_RH - PAV TIPO\\LAJES\\RMP-EST-LO-1422-LAJ-R00.PDF",
+            "sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+            "page": 1,
+            "bbox": [
+              1995,
+              416,
+              2210,
+              431
+            ],
+            "zone_id": "N26_SCHEDULE",
+            "text": "26 6.3 35 503 17605",
+            "text_bbox": [
+              2005.33349609375,
+              417.3506774902344,
+              2201.571533203125,
+              429.93975830078125
+            ]
+          }
+        ]
+      }
+    ],
+    "coverage": [
+      {
+        "view": "STEEL_SCHEDULE",
+        "marks": [
+          "N26"
+        ],
+        "integrity": "UNVERIFIED",
+        "extraction": "PARTIAL",
+        "provenance": {
+          "file": "C:\\Users\\João Severgnini\\Desktop\\LAJES SIMON_RH - PAV TIPO\\LAJES\\RMP-EST-LO-1422-LAJ-R00.PDF",
+          "sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+          "page": 1,
+          "bbox": [
+            1995,
+            416,
+            2210,
+            431
+          ],
+          "zone_id": "N26_SCHEDULE"
+        }
+      }
+    ],
+    "pending": []
+  },
+  "schedule_matches": true,
+  "counts": {
+    "text_lines": 556,
+    "paths": 7273,
+    "segments": 7289
+  },
+  "graphic_dimensions": {
+    "bar_projected_cm": 502.4966752794054,
+    "distribution_cm": 412.75,
+    "n_minus_one_times_spacing_cm": 408.0,
+    "n_times_spacing_cm": 420.0,
+    "nature": "GRAPHICAL_ESTIMATE_FROM_PRINTED_SCALE; not dimensioned physical coordinates"
+  },
+  "limitations": [
+    "Only one manually selected horizontal straight-bar occurrence; no general slab recognizer.",
+    "Other labels may contain undecoded glyphs; selected N26 diameter glyph is decoded and table-confirmed.",
+    "No explicit leader ties label to bar: association uses combined geometric evidence and remains interpretation.",
+    "Arrow limits are graphical distribution limits, not proved first/last bar centers.",
+    "Region is a translated straight-bar envelope; no slab clipping, bends, openings or anchorage interpretation.",
+    "Printed scale provides estimates only; CAD/world coordinates and construction tolerances unknown.",
+    "No resistance, TQS actions, minimum reinforcement, anchorage checks or ATP findings."
+  ],
+  "source_unchanged": true
+}

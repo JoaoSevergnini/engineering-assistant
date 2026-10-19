@@ -1,0 +1,325 @@
+[
+  {
+    "display_id": "O009",
+    "position": "N18",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O012",
+    "position": "N17",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O014",
+    "position": "N33",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O016",
+    "position": "N17",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O028",
+    "position": "N23",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O037",
+    "position": "N22",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O039",
+    "position": "N21",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "PROBABLE",
+    "changed": true,
+    "slabs": [
+      "L607"
+    ],
+    "thickness_options_cm": [
+      20.0
+    ],
+    "exterior_segments_preserved": [
+      "O039-S001",
+      "O039-S003"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "SOME_GROUPS_OR_TRACES_HAVE_NO_INTERIOR_SUPPORT_IN_THIS_DOMAIN"
+    ]
+  },
+  {
+    "display_id": "O040",
+    "position": "N21",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "PROBABLE",
+    "changed": true,
+    "slabs": [
+      "L607"
+    ],
+    "thickness_options_cm": [
+      20.0
+    ],
+    "exterior_segments_preserved": [
+      "O040-S001",
+      "O040-S003"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "SOME_GROUPS_OR_TRACES_HAVE_NO_INTERIOR_SUPPORT_IN_THIS_DOMAIN"
+    ]
+  },
+  {
+    "display_id": "O047",
+    "position": "N24",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [
+      "O047-S001"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_INTERSECTING_DOMAIN"
+    ]
+  },
+  {
+    "display_id": "O048",
+    "position": "N7",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O049",
+    "position": "N7",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O050",
+    "position": "N25",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "PROBABLE",
+    "changed": true,
+    "slabs": [
+      "L605"
+    ],
+    "thickness_options_cm": [
+      18.0
+    ],
+    "exterior_segments_preserved": [
+      "O050-S001"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "CONTOUR_TOPOLOGY_REVIEW_FLAG",
+      "LIMITED_BAR_OR_DISTRIBUTION_AXIS_SUPPORT"
+    ]
+  },
+  {
+    "display_id": "O053",
+    "position": "N40",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "PROBABLE",
+    "changed": true,
+    "slabs": [
+      "L605"
+    ],
+    "thickness_options_cm": [
+      18.0
+    ],
+    "exterior_segments_preserved": [
+      "O053-S001"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "CONTOUR_TOPOLOGY_REVIEW_FLAG",
+      "LIMITED_BAR_OR_DISTRIBUTION_AXIS_SUPPORT"
+    ]
+  },
+  {
+    "display_id": "O054",
+    "position": "N37",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [
+      "O054-S001",
+      "O054-S002"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_INTERSECTING_DOMAIN"
+    ]
+  },
+  {
+    "display_id": "O055",
+    "position": "N35",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "PROBABLE",
+    "changed": true,
+    "slabs": [
+      "L605"
+    ],
+    "thickness_options_cm": [
+      18.0
+    ],
+    "exterior_segments_preserved": [
+      "O055-S001"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "CONTOUR_TOPOLOGY_REVIEW_FLAG",
+      "LIMITED_BAR_OR_DISTRIBUTION_AXIS_SUPPORT"
+    ]
+  },
+  {
+    "display_id": "O056",
+    "position": "N39",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "PROBABLE",
+    "changed": true,
+    "slabs": [
+      "L605"
+    ],
+    "thickness_options_cm": [
+      18.0
+    ],
+    "exterior_segments_preserved": [
+      "O056-S001"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "CONTOUR_TOPOLOGY_REVIEW_FLAG",
+      "LIMITED_BAR_OR_DISTRIBUTION_AXIS_SUPPORT"
+    ]
+  },
+  {
+    "display_id": "O057",
+    "position": "N41",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "INDETERMINATE",
+    "changed": false,
+    "slabs": [],
+    "thickness_options_cm": [],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "NO_PROVED_ACTUATION_GEOMETRY"
+    ]
+  },
+  {
+    "display_id": "O058",
+    "position": "N36",
+    "stage9_state": "PROBABLE",
+    "stage91_state": "PROBABLE",
+    "changed": false,
+    "slabs": [
+      "L605"
+    ],
+    "thickness_options_cm": [
+      18.0
+    ],
+    "exterior_segments_preserved": [],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "CONTOUR_TOPOLOGY_REVIEW_FLAG"
+    ]
+  },
+  {
+    "display_id": "O059",
+    "position": "N38",
+    "stage9_state": "INDETERMINATE",
+    "stage91_state": "PROBABLE",
+    "changed": true,
+    "slabs": [
+      "L605"
+    ],
+    "thickness_options_cm": [
+      18.0
+    ],
+    "exterior_segments_preserved": [
+      "O059-S001"
+    ],
+    "requires_engineer_decision": true,
+    "reasons": [
+      "CONTOUR_TOPOLOGY_REVIEW_FLAG"
+    ]
+  }
+]

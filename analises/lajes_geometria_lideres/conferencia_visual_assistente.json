@@ -1,0 +1,288 @@
+{
+  "source_sha256": "3eae69c055bc2b9e161c7767915f2682f9e7b53651dae073d046ecd0ddb45662",
+  "independent_engineer_validation": false,
+  "scope": "20 novas associações completas e 3 pendências inspecionadas visualmente pelo assistente. Confirmação apenas do vínculo gráfico indicado; não da totalidade física de 2x3/6x3, nem segurança estrutural.",
+  "reviews": {
+    "P1-T59:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1346:0",
+          "D1347:0"
+        ],
+        "target_id": "D1638:0"
+      },
+      "notes": "N6 esquerda: líder vertical e inclinado cruza N9 sem mudar de destino; par gráfico vertical à direita da abertura."
+    },
+    "P1-T86:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1414:0",
+          "D1415:0"
+        ],
+        "target_id": "D1732:0"
+      },
+      "notes": "N6 direita: trajetória até o par vertical, separada da barra horizontal cruzada."
+    },
+    "P1-T57:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1342:0",
+          "D1343:0"
+        ],
+        "target_id": "D1632:0"
+      },
+      "notes": "N19: líder vertical/inclinado até o par à direita da abertura alongada; lado oposto não incorporado."
+    },
+    "P1-T65:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1354:0",
+          "D1355:0"
+        ],
+        "target_id": "D1661:0"
+      },
+      "notes": "N2: ombro e diagonal até barra abaixo da chamada; faixa e marcador conferidos; ombro não tratado como barra."
+    },
+    "P1-T112:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1302:0",
+          "D1303:0"
+        ],
+        "target_id": "D1853:0"
+      },
+      "notes": "N29: chamada em duas linhas, líder até barra curta e eixo de distribuição próprio."
+    },
+    "P1-T108:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1267:0",
+          "D1268:0"
+        ],
+        "target_id": "D1833:0"
+      },
+      "notes": "N4 esquerda: barra curta e faixa própria, distintas da N2 vizinha."
+    },
+    "P1-T76:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1394:0",
+          "D1395:0"
+        ],
+        "target_id": "D1712:0"
+      },
+      "notes": "N8 direita: líder até par horizontal sob a abertura; sem inferir três linhas físicas."
+    },
+    "P1-T114:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1306:0",
+          "D1307:0"
+        ],
+        "target_id": "D1863:0"
+      },
+      "notes": "N4 direita: líder à esquerda até barra curta e faixa de distribuição."
+    },
+    "P1-T82:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1406:0",
+          "D1407:0"
+        ],
+        "target_id": "D1728:0"
+      },
+      "notes": "N16 direita: texto vertical, cotovelo e trecho inclinado curto até par vertical."
+    },
+    "P1-T61:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1350:0",
+          "D1351:0"
+        ],
+        "target_id": "D1640:0"
+      },
+      "notes": "N8 esquerda: ombro horizontal com trecho inclinado longo para cima; destino horizontal conferido."
+    },
+    "P1-T80:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1402:0",
+          "D1403:0"
+        ],
+        "target_id": "D1726:0"
+      },
+      "notes": "N16 esquerda: destino vertical à direita da abertura; líder não se conecta às horizontais que cruza."
+    },
+    "P1-T103:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1426:0",
+          "D1427:0"
+        ],
+        "target_id": "D1809:0"
+      },
+      "notes": "N20: trajetória até par horizontal sob abertura alongada; sem faixa convencional."
+    },
+    "P1-T51:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1326:0",
+          "D1327:0"
+        ],
+        "target_id": "D1618:0"
+      },
+      "notes": "N22 direita: par vertical visado pela ponta; contato com pequeno afastamento gráfico registrado."
+    },
+    "P1-T48:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1330:0",
+          "D1331:0"
+        ],
+        "target_id": "D1612:0"
+      },
+      "notes": "N21 direita: líder até par horizontal curto superior; linha distribuída abaixo não foi selecionada."
+    },
+    "P1-T49:1": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1334:0",
+          "D1335:0"
+        ],
+        "target_id": "D1616:0"
+      },
+      "notes": "N21 esquerda: destino curto junto ao apoio; a candidata antiga N13 foi substituída pela trajetória explícita."
+    },
+    "P1-T40:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1322:0",
+          "D1323:0"
+        ],
+        "target_id": "D1585:0"
+      },
+      "notes": "N5 direita: líder para par horizontal superior da abertura; não completar automaticamente a borda oposta."
+    },
+    "P1-T37:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1310:0",
+          "D1311:0"
+        ],
+        "target_id": "D1574:0"
+      },
+      "notes": "N5 esquerda: ombro longo é líder; diagonal curta termina no par horizontal inferior."
+    },
+    "P1-T100:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1418:0",
+          "D1419:0"
+        ],
+        "target_id": "D1798:0"
+      },
+      "notes": "N37: destino horizontal atravessa duas aberturas; sem inferir dois grupos físicos a partir de 2x3."
+    },
+    "P1-T118:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1430:0",
+          "D1431:0"
+        ],
+        "target_id": "D1883:0"
+      },
+      "notes": "N36: líder aponta para barra longa acima da chamada; faixa esquerda própria. Ponta e linha têm afastamento de 1,32 pt, com interseção da direção terminal dentro do limite declarado."
+    },
+    "P1-T101:0": {
+      "status": "VISUALLY_SUPPORTED_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Imagem ampliada original/sobreposição aberta e inspecionada; conferência de ombro, cotovelo, ponta e traços do destino.",
+      "selected_leader": {
+        "segment_ids": [
+          "D1422:0",
+          "D1423:0"
+        ],
+        "target_id": "D1804:0"
+      },
+      "notes": "N38: líder inclinado para cima até par vertical central. Não se inferiram seis grupos físicos de 6x3 nem se incorporaram automaticamente os demais pares."
+    },
+    "P1-T38:0": {
+      "status": "INCONCLUSIVE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção da ampliação original/sobreposição",
+      "selected_leader": null,
+      "notes": "N7 direita: par vertical plausível e linha de contorno a 1,44 pt da ponta; conservar os dois destinos e a abstenção."
+    },
+    "P1-T42:0": {
+      "status": "INCONCLUSIVE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção da ampliação original/sobreposição",
+      "selected_leader": null,
+      "notes": "N7 esquerda: par vertical e linha de contorno próximos; não promover a preferência visual a aceitação automática."
+    },
+    "P1-T53:0": {
+      "status": "INCONCLUSIVE_ASSISTANT",
+      "reviewer": "Codex",
+      "method": "Inspeção da ampliação original/sobreposição",
+      "selected_leader": null,
+      "notes": "N22 esquerda: trajetória correta até par vertical aparece na ampliação, mas ombro alternativo em contorno estrutural levou a limite de exploração. Permanecer PARTIAL."
+    }
+  }
+}
