@@ -6,13 +6,44 @@ procedimentos de engenharia; sua documentação não implementa os algoritmos.
 Consultar [ferramentas](existing-tools.md) antes de executar um recurso e
 [critérios](review-criteria.md) para os controles G01–A08.
 
+## Resumo das etapas (transferido do SKILL.md em 10/11/2026)
+
+1. Inventariar formas, positivas, negativas, DXFs e detalhes complementares;
+   conciliar revisões e definir escopo/controles esperados.
+2. Reconstruir geometria pelas formas: lajes, zonas de espessura, níveis,
+   aberturas, faces de apoios e encontros.
+3. Identificar armaduras e remissões, distinguindo marca, ocorrência e conjunto
+   físico; confirmar face, direção, distribuição e posição vertical.
+4. Determinar regiões de atuação/composição com evidências de independência e
+   atuação conjunta; conservar ambiguidades e capacidades individuais.
+5. Calcular resistência pelo Concretopy quando as entradas e o modelo forem
+   aplicáveis; preservar diagnósticos. Arranjo não representável exige método
+   equivalente justificado, sem contornar validações do motor.
+6. Reconstruir momentos nas linhas de grelha com escala/sinal/natureza e
+   alinhamento comprovados; preservar valores locais e lacunas. Obter os dois
+   indicadores regionais quando possível, sem exigir interpolação entre linhas.
+7. Executar independentemente os controles de cobertura, flexão, bordas,
+   continuidade, interrupções, desníveis e aberturas.
+8. Emitir pranchas gráficas com resultados e seleção por região; fichas de
+   incompatibilidades confirmadas, pendências e pedidos de informação separados;
+   relatório técnico de rastreabilidade e cobertura. Após revisão humana,
+   preservar escolhas/comentários e preparar somente os apontamentos selecionados
+   para o relatório destinado ao projetista.
+
+As etapas podem avançar por laje/região/direção; não esperar a solução de todo
+o pavimento para concluir um controle local independente.
+
 ## Preparação e registros mínimos
+
+As etapas 1 a 8 abaixo são executadas nas fases de sessão definidas no
+[SKILL.md](../SKILL.md#3-fases-e-continuidade): fase 0 (preparação e etapa 1),
+fase 1 (etapa 2), fase 2 (etapas 3–4), fase 3 (etapas 5–7), fases 4 e 5 (etapa 8).
 
 Definir projeto, pavimento, lajes/regiões incluídas e destino dos registros.
 Abrir matriz por objeto físico, região, direção/face e controle esperado.
 Manter inventário documental, observações, geometrias/referências, decisões,
-cálculos/diagramas e resultados em arquivos revisáveis do projeto; não há
-estrutura de pastas ou formato único obrigatório.
+cálculos/diagramas e resultados em arquivos revisáveis do projeto, com a
+organização da [seção 8 do SKILL.md](../SKILL.md#8-arquivos).
 
 Usar os [contratos 1A](contracts.md) onde correspondam aos dados. Campos ainda
 não representados (quantidade, comprimento, face, materiais, conjuntos físicos,
@@ -56,6 +87,10 @@ esse vão; manter pendente somente o controle correspondente.
 
 Contorno parcial permite análises locais com limites comprovados, sem concluir
 cobertura integral. Candidatos do PoC não se tornam formas confirmadas.
+
+Precisão dos contornos: a necessária aos controles que os utilizam (ver
+[SKILL.md](../SKILL.md#5-precisão-da-geometria)). Refinar localmente onde a
+precisão altera uma conclusão; não fazer rodadas de refinamento geral.
 
 **Saída:** cadastro de lajes e zonas, referências físicas e conflitos G01–G02.
 

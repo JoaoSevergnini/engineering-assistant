@@ -1,6 +1,9 @@
 # Padrões inspecionados na ATP S07 — 1º pavimento
 
 Referência de apresentação e operação, não fonte de hipóteses gerais de engenharia.
+Os arquivos citados estão em analises/atp_s07_lajes_1pav, área de trabalho local
+fora do git (AGENTS.md, seção 16); se não estiverem acessíveis, as descrições
+deste arquivo e de [reporting](reporting.md) definem o padrão.
 Arquivos localizados e inspecionados no incremento documental de 24/10/2026:
 
 | Referência | Papel e constatação |

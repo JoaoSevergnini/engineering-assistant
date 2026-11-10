@@ -340,3 +340,31 @@ escolhas, exclusividade ou migração entre revisões. Verificar o resultado em
 leitor PDF compatível; registrar limitações sem presumir comportamento idêntico
 em todos os visualizadores. Cópia estática pode acompanhar a emissão, mantendo
 o formulário preenchido e o histórico como fonte da decisão.
+
+## Síntese do padrão (transferida do SKILL.md em 10/11/2026)
+
+Seguir [reporting](reporting.md) e as
+[referências finais do 1º pavimento S07](s07-1pav-deliverables.md).
+A prancha 7309 R02 governa o layout; a R03 registra a adição dos campos editoriais.
+As fichas R01 de incompatibilidades e o relatório técnico R00 governam os outros
+dois formatos. Não copiar suas hipóteses, valores ou decisões para outro projeto.
+
+Nas pranchas, mostrar armadura efetivamente calculada (base/reforço), As, Mr,
+Msol1/Msol2, eta1/eta2, n e cobertura, LP, pico local e pendências, com quadro
+lateral. Preservar por região “Incluir no relatório”, independente da
+classificação técnica; eta>1 nunca marca a seleção automaticamente.
+
+Nas fichas, usar seleção “Incluir no relatório final”/“Não incluir” mutuamente
+exclusiva e comentários do engenheiro, preferencialmente em campos PDF reais.
+Ambas vazias significam decisão pendente; ambas marcadas são conflito, não
+autorização de emissão. Não recadastrar insuficiências já apresentadas nos mapas
+como incompatibilidades documentais.
+
+Há geradores executados na S07 para os três formatos e para formulários, mas
+ainda são scripts específicos, com gravações no nível superior. Coordenar os
+recursos compatíveis e preservar o layout sem reconstruí-lo a cada ATP;
+consultar o catálogo antes de executar. Não existe gerador genérico integrado
+ao contrato 1A nem migração automática de decisões entre revisões.
+Emitir primeiro o pacote preliminar. Somente após seleção, comentários e revisão
+da redação pelo engenheiro preparar a emissão ao projetista. Preservar histórico
+e revalidar escolhas em regiões alteradas.
