@@ -88,3 +88,13 @@ Correção anterior de smax no Concretopy expressamente autorizada pelo engenhei
 Identificar a função das barras antes de selecionar camadas para d. Exclusão expressa pelo engenheiro de barras do topo da primeira concretagem deve ser registrada no projeto e respeitada tanto na capacidade quanto no centroide; preservar a armadura externa final e suas camadas reais. Usar o centroide retornado pelo Concretopy, não a coordenada isolada da camada mais interna.
 
 Quando o apoio físico é um bloco, comparar a faixa até a face do bloco confirmada documentalmente, mesmo que a face do pilar seja distinta. A soma de faixas não fornece cotas do bloco. Consultar cada faixa no domínio físico compatibilizado; uma referência numérica de vão/faixa fraca não constitui reprovação da faixa real. A correção da referência não verifica por si a armadura do bloco ou do nó.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Executar [revisão de cortante](shear-reinforcement-review.md): séries Vk/domínio TQS -> referência por terços -> faixas reais da prancha -> máximo próprio da faixa -> Concretopy -> controles independentes de VRd2, Asw/s e smax -> prática usual -> ramos/porta-estribo -> conclusão específica. Usar `shear_diagram` e `shear_review`, preservando os motores longitudinais.
+
+Terços são referência, não fronteiras obrigatórias do desenho. Selecionar d de centroides regionais existentes: máximo número de camadas, maior As em empate e menor d em novo empate. Preservar sinal, série, gaps e limites documentais. Não inferir ramos de peças não convencionais, estender faixas para nós sem fonte ou converter REVIEW em FAIL. Suspensão fica NOT_EVALUATED; selected_solution/detailing_optimization null. Aprovação de cortante não significa aprovação global da viga.
+
+Na revisão de cortante, classificar primeiro a função documental da peça: negativa de laje adjacente não fornece Asw/s da viga. Separar domínio TQS de cobertura física entre faces comprovadas dos pilares; dentro destes a exigência de estribos da viga é NOT_APPLICABLE. Falta de estribos no trecho físico da viga e geometria ambígua continuam inconclusivas. Consultar a referência de cortante e `shear_coverage`; não inferir função pela marca ou prolongar faixas.
+
+Ao comparar cobertura de estribos com a forma, identificar o sólido de apoio que intercepta a viga: bloco, pilar, outra viga ou outro elemento. Usar a face física pertinente, confirmada na documentação/contexto. Diferença de comprimento até uma face de pilar não demonstra falta de estribos quando o detalhe termina na face do bloco. Não inferir geometria de bloco da soma das faixas nem aprovar todos os nós a partir de uma imagem. Reconsultar o máximo Vk de cada faixa no domínio físico correto antes da conclusão regional.

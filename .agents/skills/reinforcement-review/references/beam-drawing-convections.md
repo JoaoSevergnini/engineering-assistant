@@ -668,3 +668,7 @@ regra geral sem confirmação.
 Quando uma interpretação tiver sido confirmada por João como padrão do
 escritório, ela pode passar a ser utilizada nas análises seguintes como
 `interpreted_by_office_standard`.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Antes de construir composições e d, distinguir armaduras externas da seção final de barras de montagem/etapa. Quando o engenheiro excluir expressamente as barras do topo da primeira concretagem da resistência e de d, registrar o escopo no contexto do projeto e aplicar essa exclusão; não criar uma pendência para obter a altura de barras que não integrarão o cálculo. Não generalizar a exclusão a qualquer barra intermediária de outros projetos ou às camadas reais da armadura externa.

@@ -1,4 +1,4 @@
-﻿# Validação documental e geometria física antes dos cálculos
+# Validação documental e geometria física antes dos cálculos
 
 Aplicar o [contrato da Etapa 1](../../../../tools/beam_model/STAGE1_CONTRACT.md) nas novas revisões com documentos incompletos, marcas repetidas ou geometria variável.
 
@@ -13,3 +13,8 @@ V623 do Silva Jardim: N2, 4Ø16 C464, consta na tabela/corte; o usuário confirm
 Auditoria e regressões: `analises/etapa1_leitura_geometria/`. Não editar pranchas ou gerar propostas de melhoria quando o escopo solicitado for somente esta etapa.
 
 Para pavimentos completos, aplicar obrigatoriamente [Etapa 1.1](floor-operational-review.md), com forma, detalhamento, TQS e cabimento antes da resistência. Scripts históricos sem guarda não substituem a entrada protegida.
+Quando PDF e DXF correspondentes estiverem disponíveis, aplicar a [prioridade de extração e conferência entre formatos](incremental-floor-workflow.md#pdf-e-dxf-correspondentes): DXF para extração estruturada reutilizável e PDF para validação visual dirigida, após conferir revisão e abrangência. Divergências entre representações continuam conflitantes até conciliação; a prioridade operacional não estabelece superioridade técnica automática.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Nas novas revisões, aplicar [documentary-physical-preflight](documentary-physical-preflight.md) para conciliação de documentos, ocorrências físicas, geometria por trecho e liberação local das entradas. Este procedimento preserva os métodos resistentes existentes e a compatibilidade dos contratos antigos. Restrições específicas da Etapa 1 prevalecem sobre requisitos de módulos posteriores: não tornar obrigatórios pinos, trajetórias curvas, interferência com armaduras de pilares ou combinações concomitantes.

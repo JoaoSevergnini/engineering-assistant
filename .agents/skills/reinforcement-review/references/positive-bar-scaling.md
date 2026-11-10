@@ -283,3 +283,20 @@ aprovação global da viga. A regra de d vale somente para escalonamento no vão
 Prosseguir depois com essa verificação própria, sem declarar a viga aprovada.
 
 O procedimento próprio de ancoragem em apoio agora está em [positive-support-anchorage.md](positive-support-anchorage.md). Esta referência de corte no vão continua sem aprovar apoios; as reutilizações de Vk/d para controles equivalentes INTERMEDIATE exigem o evento explicitamente definido naquela referência.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Quando uma marca positiva termina dentro do vão, executar o procedimento
+[Escalonamento positivo](positive-bar-scaling.md) após construir as
+regiões e verificar a flexão positiva, antes de tratar ancoragem nos apoios.
+Usar `tools/reinforcement_checks/bar_scaling.check_bar_scaling`, que reutiliza
+regiões, diagrama TQS e Concretopy; não recalcular resistência, fbd, lb ou al.
+
+Identificar lado do corte, composições antes/depois, capacidade remanescente,
+referências do diagrama e entradas de al/lb; preservar separadamente condições
+A/B, diagnósticos e provenance. Consultar as regras de Vk, d e aderência
+indicadas na referência. Geometria/composição/modelo não resolvido, ramo/cruzamento
+ambíguo ou caso fora do escopo bloqueiam a conclusão (`scaling_passes=null`).
+
+**Escalonamento não substitui ancoragem nos apoios.** Atender ao corte no vão
+não aprova a viga nem demonstra ancoragem suficiente em um apoio.

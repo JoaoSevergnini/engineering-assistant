@@ -68,3 +68,19 @@ Antes de representar encontros de peças distintas como uma composição mista, 
 ### Máximo no apoio — esclarecimento de 15/10/2026
 
 João confirmou usar o máximo negativo no apoio para capacidade resistente, sem interpolação redutora à face interna. A seleção terminal S1/S13 acima é o ponto de partida do formato TQS atual; se houver outros pontos fornecidos dentro do mesmo apoio, comparar os valores negativos e preservar o governante. Conferir os lados adjacentes somente com identidade física comprovada; registrar lados/composições separadamente enquanto não conciliados. Não usar máximo global de outro apoio nem extrapolar o diagrama. Esta orientação trata da solicitação, preservando Concretopy como fonte oficial da resistência.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Na capacidade negativa sobre o apoio, usar o **máximo negativo TQS no apoio**, sem redução para a face interna, conforme orientação de João de 15/10/2026. Preservar pontos, sinal e origem e aplicar a regra de seleção em [Apresentação de esforços](../../../../profile/force-presentation.md). Não confundir essa seleção com a posição física usada em ancoragem.
+
+Após a positiva, consultar [Revisão longitudinal negativa](negative-longitudinal-review.md).
+Identificar função das barras, camadas desde a face superior e regiões; verificar
+resistência regional, escalonamentos sucessivos, término no vão, continuidade,
+nó extremo e balanço somente quando aplicáveis. Usar `longitudinal_review` e
+`negative_detailing`, reutilizando regiões, interpolação e Concretopy.
+Preservar momentos originais com sinal; negativa comprime a face inferior.
+Nas marcas que atravessam apoio intermediário, primeiro [classificar a necessidade no vão adjacente](intermediate-support-longitudinal-verification.md): SCALING, ancoragem básica desde a face física, ou INCONCLUSIVE. Provar suficiência da remanescente em todo o ramo; crossing ausente isoladamente não determina a classificação. Esta etapa verifica o desenho existente, sem otimização.
+Separar os controles al+lb e al+10φ quando aplicáveis, má aderência confirmada, geometria da dobra
+e resistência de ancoragem. Dados/ramo/continuidade não resolvidos mantêm null.
+Não transportar automaticamente as regras ou grampos positivos para negativas.
+Nos apoios extremos em pilares, seguir [apoio negativo de extremidade](negative-end-support.md): resistência terminal S1/S13, ancoragem física, perna vertical documentada e controles transversais independentes. Não somar os trechos da dobra como lb reto nem aplicar α=0,7. Verificar um corredor livre ≥4 cm, conservando os mínimos existentes. Sem dimensão transversal do pilar/centros das barras, registrar o controle pendente; não modificar d ou a seção resistente pelo cobrimento lateral efetivo.

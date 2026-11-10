@@ -43,3 +43,9 @@ O engenheiro referenciou o item 18.3.6 da ABNT NBR 6118. Texto integral/edição
 Exemplo completo reproduzível: `analises/pranchas/suspension_synthetic_fixture.json` -> `validar_suspensao.py` -> `suspension_synthetic_review.json`. São dados SINTÉTICOS, nunca reação do projeto real. Resultados V516/V517 têm auditoria de disponibilidade em arquivos próprios; não se alteram goldens históricos.
 
 Antes de calcular suspensão, consultar [associação planta/LST/reação](indirect-support-identification.md). A leitura da planta pode permanecer pendente sem inventar a posição do encontro.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Executar [revisão de suspensão](suspension-reinforcement-review.md) na viga receptora somente a partir de ligação e reação total comprovadas. Usar `suspension_review`, preservando o cortante independente. Interpretar fontes -> classificar ligação -> validar reação/natureza -> distribuir fisicamente -> máximo próprio da região -> Concretopy sem mínimo -> combinar taxas -> verificar todas as faixas reais. Dados ausentes, origem do balanço não confirmada e sobreposições sem regra conservam INCONCLUSIVE; falhas conhecidas não são ocultadas. Não selecionar armadura ou redesenhar. A marca N12 do caso real continua excluída como negativa de laje adjacente.
+
+Para identificar apoios indiretos antes da suspensão, consultar [planta, direção e reações LST](indirect-support-identification.md); geometria não determina direção da transferência de carga.

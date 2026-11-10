@@ -58,3 +58,38 @@ As fontes Concretopy registram A/B/C como referência ao item 18.3.2.4 da NBR 61
 ## Goldens
 
 [V536 direita — fixture](../../../../analises/pranchas/validar_v536_apoio_direito.py): P7A, INTERMEDIATE/RIGHT, N2/N3 retas, S13 máximo positivo amostrado. Geometria transversal documental continua pendente. [Auditoria da generalização](../../../../.codex/analises/support_anchorage_generalization_audit.md) e [golden integrado atual](../../../../analises/pranchas/V536_positive_reinforcement_complete_golden.json). Os relatórios históricos e goldens individuais de apoio esquerdo, escalonamento e grampos permanecem preservados.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Para qualquer apoio, começar por [Ancoragem positiva em apoios](positive-support-anchorage.md): END/INTERMEDIATE, LEFT/RIGHT relativo ao vão, seção terminal e controles aplicáveis.
+Quando a armadura positiva chegar ao apoio extremo END, consultar
+[Apoio positivo](positive-end-support.md) e, para corrigir falha,
+[Correção orientada pelo detalhamento](positive-support-correction.md).
+Verificar existente; depois prolongar barras escalonadas mantendo camada/bitola;
+só sem prolongamento adequado estudar redistribuição simples com recálculo completo.
+Conferir cabimento com a regra confirmada max(2 cm, diâmetro) e compatibilidade
+com flexão em todas as regiões. Diferença de uma ou duas posições na série de
+bitolas é preferência de detalhamento, não prescrição da NBR.
+
+A busca genérica permanece exploratória; não recomenda isoladamente alteração
+de prancha. Separar validade calculada, recomendação para análise e decisão do
+engenheiro. Para estudar armadura complementar, consultar
+[Grampos complementares](positive-support-staples.md): demanda inicial
+As_adicional, peça em U de dois ramos, L_long=max(2*lb+lb_ef,60 cm) por ramo
+com lb básico da própria bitola, e conector b−2*cobrimento−1 cm.
+Bitolas usuais próprias Ø6,3/Ø8/Ø10, configuráveis; acima de três peças requer
+avaliação especial, sem reprovação estrutural automática. São decisões do engenheiro. Distribuir verticalmente de baixo para cima com 2 cm livres entre peças;
+conferir altura ocupada separadamente das interferências do nó.
+Não converter área calculada em detalhamento pronto.
+Preservar prolongamentos válidos na comparação e selected_solution=null.
+Para regressão integrada, consultar o
+[golden positivo V536 atualizado](../../../../.codex/analises/support_anchorage_generalization_audit.md):
+resultados por etapa, falha original de ancoragem e pendências explícitas;
+não usar o nome golden como aprovação global.
+A posição desenhada não substitui lb_ef=L_apoio-cobrimento. Gancho/interferências
+no nó ainda exigem revisão. A limitação anterior ao extremo esquerdo foi superada em orientação; INTERMEDIATE segue regras próprias, sem aplicar grampos/gancho END automaticamente.
+
+Para ancoragem positiva em apoios END/INTERMEDIATE, LEFT/RIGHT relativo ao vão,
+consultar [Ancoragem positiva em apoios](positive-support-anchorage.md).
+Separar demanda, ancoragem longitudinal e verificação completa do nó; gerar
+correções somente após falha resolvida, preservando inconclusivos.

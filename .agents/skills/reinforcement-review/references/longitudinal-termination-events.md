@@ -13,3 +13,7 @@ Separar `provided_end_position_m` de `required_end_position_m`. Cada controle co
 Entradas com reposição/início simultâneo, marca selecionada não efetivamente interrompida, identidade duplicada ou composição/geometria não representável continuam bloqueadas explicitamente. Esta generalização não resolve hipóteses físicas ausentes nem altera resistência, interpolação, orientação, aderência, al ou lb.
 
 Aplicar junto aos procedimentos [positivo](positive-bar-scaling.md) e [negativo](negative-longitudinal-review.md). Regressão real: V516/V517, N8 e N9 em 12,840 m; detalhes numéricos no relatório correspondente.
+
+## Orientações transferidas do SKILL.md (06/11/2026)
+
+Términos longitudinais coincidentes: consultar [eventos independentes por marca](longitudinal-termination-events.md). Usar a composição física posterior, sem sequência artificial; separar término desenhado e posição requerida.
