@@ -12,11 +12,12 @@ description: >-
 ## Escopo e modo de trabalho
 
 Revisar o projeto existente quanto a segurança, dimensionamento, cobertura,
-continuidade e detalhamento de flexão. A entrega principal são PDFs gráficos de
-comparação resistência × solicitação por prancha ou conjunto de regiões, sempre
-que houver dados suficientes. O relatório consolidado é complementar e não
-substitui esses PDFs. Produzir controles e apontamentos preliminares para seleção
-do engenheiro. Executar as etapas possíveis, procurar
+continuidade e detalhamento de flexão. Emitir três entregáveis obrigatórios:
+pranchas gráficas com seleção por região; relatório de incompatibilidades e
+pendências por prancha; relatório técnico complementar de rastreabilidade.
+Produzi-los com os dados disponíveis, explicitando o que não pôde ser verificado;
+nenhum substitui os demais. Produzir apontamentos preliminares para seleção do
+engenheiro. Executar as etapas possíveis, procurar
 fontes adicionais para ambiguidades e solicitar confirmação humana quando
 necessário; uma pendência bloqueia somente os controles dependentes.
 
@@ -33,7 +34,8 @@ adaptação validada ou avaliação assistida, conforme o catálogo abaixo.
 | Iniciar projeto, executar as oito etapas e tratar pendências | [Fluxo operacional](references/review-workflow.md) |
 | Definir controles, critérios, bases resistentes e indicadores | [Critérios de revisão](references/review-criteria.md) |
 | Escolher ferramenta e verificar entradas, dependências e efeitos | [Ferramentas existentes](references/existing-tools.md) |
-| Produzir os PDFs gráficos obrigatórios, classificar e preparar o relatório complementar | [Entregas e revisão humana](references/reporting.md) |
+| Emitir os três documentos e conduzir a revisão preliminar/final | [Entregas e revisão humana](references/reporting.md) |
+| Reaproveitar layout, formulários e geradores da ATP S07 1º pavimento | [Referências inspecionadas e reutilização](references/s07-1pav-deliverables.md) |
 | Criar registros Python, estados e decisões do incremento 1A | [Contratos](references/contracts.md) |
 
 Aplicar a [convenção de esforços](../../../profile/force-presentation.md):
@@ -60,11 +62,11 @@ a limitação. Não adotar γf=1,4 universalmente.
    indicadores regionais quando possível, sem exigir interpolação entre linhas.
 7. Executar independentemente os controles de cobertura, flexão, bordas,
    continuidade, interrupções, desníveis e aberturas.
-8. Produzir PDFs gráficos de verificação sobre as pranchas originais, com regiões,
-   IDs, armaduras, resistências, dois indicadores de solicitação, n de linhas,
-   relações compatíveis, diferenciação visual e quadro lateral de resultados e
-   pendências. Consolidar cobertura e apontamentos em relatório complementar e
-   submetê-los à seleção e redação final do engenheiro.
+8. Emitir pranchas gráficas com resultados e seleção por região; fichas de
+   incompatibilidades confirmadas, pendências e pedidos de informação separados;
+   relatório técnico de rastreabilidade e cobertura. Após revisão humana,
+   preservar escolhas/comentários e preparar somente os apontamentos selecionados
+   para o relatório destinado ao projetista.
 
 As etapas podem avançar por laje/região/direção; não esperar a solução de todo
 o pavimento para concluir um controle local independente.
@@ -89,24 +91,33 @@ o pavimento para concluir um controle local independente.
 - Não importar scripts históricos S07 com cálculos/gravações no nível superior.
   Escolher uso conforme existing-tools; não reprocessar fontes por efeito de import.
 
-## Entrega gráfica padrão
+## Padrão dos três entregáveis
 
-Seguir [reporting](references/reporting.md): usar como referência de composição
-a prancha ATP_S07_7307_faixas_Mrk_Msol_media.pdf, sem copiar dados, fatores,
-materiais, espessuras ou a omissão histórica de regiões sem resistência publicada.
-O novo padrão inclui os dois indicadores e pendências explícitas.
+Seguir [reporting](references/reporting.md) e as
+[referências finais do 1º pavimento S07](references/s07-1pav-deliverables.md).
+A prancha 7309 R02 governa o layout; a R03 registra a adição dos campos editoriais.
+As fichas R01 de incompatibilidades e o relatório técnico R00 governam os outros
+dois formatos. Não copiar suas hipóteses, valores ou decisões para outro projeto.
 
-Preservar a base original e preferir sobreposições vetoriais legíveis. Separar
-pranchas, direções, faces ou critérios quando necessário. Cores identificam o
-critério de comparação, não aprovação estrutural; médias favoráveis não eliminam
-alertas locais. Campo sem dado fica pendente, nunca zero.
+Nas pranchas, mostrar armadura efetivamente calculada (base/reforço), As, Mr,
+Msol1/Msol2, eta1/eta2, n e cobertura, LP, pico local e pendências, com quadro
+lateral. Preservar por região “Incluir no relatório”, independente da
+classificação técnica; eta>1 nunca marca a seleção automaticamente.
 
-O pacote tools/slab_review ainda não possui gerador integrado desses PDFs.
-Consultar [existing-tools](references/existing-tools.md#referências-para-os-pdfs-gráficos-padrão)
-para os geradores históricos que exigem adaptação. A obrigação de entrega não
-autoriza importar/executar históricos com efeitos globais nem declarar um PDF
-inexistente como produzido. Se a emissão não for possível, registrar o impedimento
-e o PDF devido; o relatório sozinho não cumpre a entrega gráfica.
+Nas fichas, usar seleção “Incluir no relatório final”/“Não incluir” mutuamente
+exclusiva e comentários do engenheiro, preferencialmente em campos PDF reais.
+Ambas vazias significam decisão pendente; ambas marcadas são conflito, não
+autorização de emissão. Não recadastrar insuficiências já apresentadas nos mapas
+como incompatibilidades documentais.
+
+Há geradores executados na S07 para os três formatos e para formulários, mas
+ainda são scripts específicos, com gravações no nível superior. Coordenar os
+recursos compatíveis e preservar o layout sem reconstruí-lo a cada ATP;
+consultar o catálogo antes de executar. Não existe gerador genérico integrado
+ao contrato 1A nem migração automática de decisões entre revisões.
+Emitir primeiro o pacote preliminar. Somente após seleção, comentários e revisão
+da redação pelo engenheiro preparar a emissão ao projetista. Preservar histórico
+e revalidar escolhas em regiões alteradas.
 
 ## Iniciar uma nova ATP
 
@@ -115,7 +126,11 @@ constarem das fontes, utilizá-los sem pedir transcrição. Registrar inventári
 abrir a matriz de controles de review-criteria. Começar pelas leituras e
 verificações independentes possíveis. Manter dados, evidências e decisões em
 analises/<projeto> ou no destino indicado; não guardar dados de obra na skill.
-Não existe comando único para ATP completa.
+Preparar as entradas de apresentação indicadas em s07-1pav-deliverables, definir
+as revisões/destinos dos três PDFs e recuperar decisões anteriores antes de emitir.
+Executar automaticamente os passos compatíveis; revisão humana dos apontamentos
+não implica pedir autorização para cada tarefa rotineira. Não existe comando
+único para ATP completa.
 
 ## Exclusões
 

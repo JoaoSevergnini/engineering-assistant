@@ -144,8 +144,10 @@ além de picos individuais e máximo absoluto. Usar valores locais para cortes.
 Preservar segmentos/posição longitudinal para futura análise em seções
 transversais alinhadas, que ainda não possui procedimento automatizado integrado.
 
-Os scripts S07 de médias são parciais: não fornecem cadastro completo de linhas
-nem o segundo indicador. Onde não houver ferramenta validada, realizar avaliação
+Os scripts do térreo S07 não fornecem cadastro completo de linhas nem o segundo
+indicador. O fluxo do 1º pavimento calcula ambos e registra linhas válidas/esperadas
+no domínio nativo reconhecido; isso não comprova cobertura integral de todas as
+linhas físicas. Onde não houver ferramenta validada, realizar avaliação
 assistida com memória rastreável ou registrar controle não executado/inconclusivo;
 não inventar um processamento que não ocorreu.
 
@@ -181,11 +183,22 @@ Dividir PDFs/páginas quando necessário, preferindo gráficos vetoriais. Usar o
 formato S07 como referência visual, sem transferir parâmetros do caso e sem
 importar seus geradores com efeitos globais. Não existe gerador integrado no 1A.
 
-O relatório consolidado complementar reúne apontamentos, limitações e cobertura
-e remete aos PDFs; não os substitui. Em falta de dados ou ferramenta compatível,
-registrar precisamente quais PDFs/comparações estão pendentes, mantendo as entregas
-parciais. Submeter seleção e redação definitiva dos apontamentos ao engenheiro;
-não publicar todos os FAIL automaticamente.
+Emitir também relatório de incompatibilidades e pendências por prancha e relatório
+técnico complementar de rastreabilidade/cobertura. As três entregas têm funções
+distintas, conforme [reporting](reporting.md). Não recadastrar como incompatibilidade
+os casos de solicitação superior à resistência já apresentados nas pranchas.
+Separar conflitos confirmados, verificações pendentes e informações complementares.
+
+Conduzir a revisão em duas etapas: pacote preliminar preenchível; depois leitura
+das escolhas/comentários do engenheiro e preparação dos apontamentos selecionados
+para o projetista. Nenhum eta>1 seleciona item automaticamente. Antes de reemitir,
+recuperar decisões anteriores; IDs/conteúdo alterados exigem correspondência
+comprovada e reavaliação, não reinicialização silenciosa. Escolhas contraditórias
+bloqueiam apenas a decisão/emissão do item afetado.
+
+Em falta de dados ou ferramenta compatível, registrar quais PDFs/comparações
+estão pendentes, mantendo as entregas parciais. Não publicar todos os FAIL
+automaticamente.
 
 ## Pendências, decisões e correções
 

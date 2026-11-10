@@ -1,24 +1,24 @@
-# PDFs gráficos, resultados e revisão humana
+# Três entregáveis de ATP e revisão humana
 
-## Dois níveis de entrega
+## Documentos obrigatórios
 
-1. **PDFs gráficos de verificação — obrigatórios:** principal instrumento de
-   revisão visual do engenheiro. Produzir por prancha ou conjunto de regiões
-   analisadas sempre que houver dados suficientes, conforme o padrão abaixo.
-2. **Relatório consolidado — complementar:** apontamentos preliminares,
-   pendências, limitações e cobertura do pavimento, com referências aos PDFs.
-   Não substitui a entrega gráfica.
+| Documento | Finalidade | Referência final S07 1º pavimento |
+|---|---|---|
+| Pranchas gráficas de verificação | Comparação espacial resistência/solicitação e seleção editorial por região | [7309 POS H R02](../../../../analises/atp_s07_lajes_1pav/output/pdf/verificacoes_R02/ATP_S07_1PAV_7309_POS_H_Mr_Msol_R02.pdf) |
+| Relatório de incompatibilidades e pendências | Fichas por prancha para conflitos confirmados, controles pendentes e pedidos de informação | [Incompatibilidades R01](../../../../analises/atp_s07_lajes_1pav/output/pdf/consolidado/ATP_S07_1PAV_incompatibilidades_pendencias_R01.pdf) |
+| Relatório técnico complementar | Escopo, dados, decisões, métodos, cálculos, resultados e cobertura | [Relatório técnico R00](../../../../analises/atp_s07_lajes_1pav/output/pdf/consolidado/ATP_S07_1PAV_relatorio_armaduras_R00.pdf) |
 
-Referência visual/funcional:
-[ATP_S07_7307_faixas_Mrk_Msol_media.pdf](../../../../analises/atp_s07_lajes_terreo/output/pdf/pranchas_regioes/ATP_S07_7307_faixas_Mrk_Msol_media.pdf).
-Preservar seu conceito: prancha original como base, polígonos de regiões,
-rótulos de comparação e painel lateral. Não copiar valores ou hipóteses da S07.
-Os [geradores históricos](existing-tools.md#referências-para-os-pdfs-gráficos-padrão)
-são referências que exigem adaptação, não comandos prontos para outra obra.
+Nenhum documento substitui os demais. Produzir o pacote preliminar com os
+resultados disponíveis e explicitar campos/controles pendentes, sem esperar
+automação perfeita. Sem dados para comparar, manter mapa/quadro de pendências
+identificado, não inventar cálculo ou incompatibilidade. Registros estruturados
+sustentam os PDFs, mas não substituem a entrega gráfica quando ela é possível.
 
-Registros em tabela/JSON/Markdown podem iniciar a análise e sustentar a emissão,
-mas não substituem os PDFs obrigatórios quando os dados já permitem produzi-los.
-Não é necessário concluir todo o pavimento para entregar pranchas verificáveis.
+A R02 governa a composição gráfica; não contém widgets de seleção. A adição
+real desses campos está na [7309 R03](../../../../analises/atp_s07_lajes_1pav/output/pdf/verificacoes_R03/ATP_S07_1PAV_7309_POS_H_Mr_Msol_R03.pdf)
+e em seu gerador. Preservar o layout R02 com a seleção editorial; não alegar que
+a seleção já existia no arquivo R02. Ver reutilização, limites e QA em
+[s07-1pav-deliverables](s07-1pav-deliverables.md).
 
 ## Conteúdo mínimo de cada PDF gráfico
 
@@ -26,14 +26,15 @@ Não é necessário concluir todo o pavimento para entregar pranchas verificáve
 |---|---|
 | Base documental | Prancha original de armaduras, identificação, página e revisão; original preservado |
 | Regiões | Delimitações, direção/face e ID único coerente entre mapa, quadro e dados |
-| Armaduras | Bitola, espaçamento, As em cm²/m e marcas de cada família/conjunto; distinguir individual de composição |
+| Armaduras | Bitola, espaçamento, As em cm²/m e marcas efetivamente calculadas; distinguir base, reforço, individual e composição comprovados, sem inferir função pela ordem da lista |
 | Resistência | Valor calculado da região, base/unidade, função/resultado Concretopy e hipóteses pertinentes, ou pendência explícita |
 | Indicador 1 | Média dos máximos do sinal relevante por linha de grelha distinta, recortada na região |
 | Indicador 2 | Média dos três maiores máximos de três linhas distintas, ou indisponibilidade justificada |
 | Linhas | Quantidade n de linhas válidas e abrangência da leitura; indicador 2 usa três somente quando disponíveis |
-| Relações | η1 e η3 entre cada indicador e resistência, somente com bases compatíveis e denominador válido |
+| Relações | η1 e η2 entre cada indicador e resistência, somente com bases compatíveis e denominador válido |
 | Diferenciação visual | Estado de cada comparação, critério utilizado e pendências; sem rótulo de aprovação global |
-| Quadro lateral | Resultados por ID, configurações, valores, n, relações e pendências; folhas de continuação se necessário |
+| Quadro lateral | Por ID: base/reforço, As, Mr, Msol1/Msol2, eta1/eta2, n válido/esperado, cobertura, pico local, LP e pendências; folhas de continuação se necessário |
+| Seleção por região | Campo “Incluir no relatório”, preferencialmente interativo, independente de eta/cor/resultado; preservar também decisão explícita de não inclusão quando houver |
 | Legenda e rastreabilidade | Unidades, natureza, definição dos critérios, documentos/revisões, data/revisão da análise e ressalvas |
 
 No rótulo local, apresentar ID e os valores que couberem de forma legível.
@@ -59,7 +60,7 @@ específico no mesmo pacote gráfico.
 - Sem demanda DXF associada: publicar “sem demanda associada / inconclusivo”,
   nunca M=0, η=0 ou comparação favorável.
 - Menos de três linhas válidas: preservar indicador 1 quando aplicável; indicador 2
-  e η3 ficam indisponíveis, com n e motivo explícitos.
+  e η2 ficam indisponíveis, com n e motivo explícitos.
 - Leitura parcial: identificar linhas/trechos faltantes e limitar o alcance dos
   indicadores; não apresentar o subconjunto como cobertura completa.
 - Sem geometria de uma ocorrência: incluí-la em quadro de pendências com marca,
@@ -83,27 +84,30 @@ resultados brutos. MRd/γf não é resistência característica física da seç�
 do arquivo de referência. Identificar igualmente materiais, h, cobrimento,
 camadas, combinação/envoltória e fonte, sem herdar dados S07.
 
-Definir no PDF S1 como indicador 1 e S3 como indicador 2, ou usar nomes completos.
-Na base característica compatível, η1=S1/(MRd/γf) e η3=S3/(MRd/γf), para a mesma
+Usar Msol1/eta1 para o indicador 1 e Msol2/eta2 para o indicador 2, como na
+prancha R02. Nos dados históricos, Msol2 corresponde a S3_mean_top3_lines_tfm_m
+e eta2 ao campo eta3: alias de apresentação, sem renomear contratos ou perder
+rastreabilidade. “Três” identifica as linhas do indicador, não seu número.
+Na base característica compatível, η1=Msol1/(MRd/γf) e η2=Msol2/(MRd/γf), para a mesma
 largura/direção/face. Em outra base comprovada, declarar a equação correspondente
 e a impossibilidade de conversão quando houver. Não formar razão com base
-incompatível, capacidade ausente, n insuficiente para S3 ou denominador nulo/não
+incompatível, capacidade ausente, n insuficiente para Msol2 ou denominador nulo/não
 válido. Ausência de razão é pendência identificada, não resultado favorável.
 
 As médias são indicadores de análise; não são exigências normativas universais.
 Distinguir resultado gráfico da comparação, resultado técnico do controle e
-estado de execução. η1≤1 ou η3≤1, isoladamente, não comprova resistência local,
+estado de execução. η1≤1 ou η2≤1, isoladamente, não comprova resistência local,
 mínimos, ancoragem ou aprovação estrutural.
 
 Preferir estados visuais explícitos, com cor e texto/símbolo:
 
 | Estado da comparação identificada | Apresentação sugerida |
 |---|---|
-| Indicador supera resistência equivalente | Vermelho e texto “supera — indicador 1/3” |
-| Indicador não supera resistência equivalente | Verde/azul e texto “não supera — indicador 1/3; revisão preliminar” |
+| Indicador supera resistência equivalente | Vermelho e texto “supera — indicador 1/2” |
+| Indicador não supera resistência equivalente | Verde/azul e texto “não supera — indicador 1/2; revisão preliminar” |
 | Comparação incompleta, sem resistência/demanda ou com hipótese pendente | Cinza/âmbar, padrão/contorno distinto e motivo |
 
-Se S1 e S3 produzirem conclusões diferentes, mostrar ambas as razões/estados e
+Se Msol1 e Msol2 produzirem conclusões diferentes, mostrar ambas as razões/estados e
 identificar qual indicador governa o mapa. Usar mapas/páginas separados quando
 necessário; não fundir critérios em uma cor sem explicação. Diferenciar também
 comparação por máximo local e qualquer outro critério utilizado. Conservar alerta
@@ -146,63 +150,193 @@ de ferramentas não constitui um gerador já integrado ao 1A.
 
 ## Organização dos arquivos
 
-No destino autorizado do projeto, preferir:
+No destino autorizado, manter emissão e revisão identificadas:
 
-- output/pdf/verificacoes/: PDFs gráficos por prancha/conjunto, direção e face.
-- output/pdf/consolidado/: relatório complementar do pavimento, se emitido em PDF.
-- Registros estruturados/evidências em local referenciado, com vínculo aos PDFs.
+- output/pdf/verificacoes_<rev>/: pranchas por conjunto, direção e face, com
+  ampliações/apêndices de pendências do mesmo conjunto.
+- output/pdf/consolidado/: incompatibilidades_pendencias_<rev>.pdf e
+  relatorio_armaduras_<rev>.pdf, com revisões independentes.
+- Registros estruturados, evidências e escolhas do engenheiro em local referenciado.
 
-Padrão sugerido de nome:
-ATP_<projeto>_<pavimento>_<prancha-ou-conjunto>_<face>_<direcao>_Mr_Msol_<rev-analise>.pdf.
-Usar direção e face definidas no projeto; separar POS/NEG e H/V quando necessário
-à legibilidade. Identificar índice/abrangência se o conjunto ocupar vários arquivos.
-A revisão da análise é distinta da revisão da fonte e ambas devem constar na entrega.
+Padrões de nome: ATP_<projeto>_<pavimento>_<prancha>_<face>_<direcao>_Mr_Msol_<rev>.pdf;
+ATP_<projeto>_<pavimento>_incompatibilidades_pendencias_<rev>.pdf;
+ATP_<projeto>_<pavimento>_relatorio_armaduras_<rev>.pdf.
 
-Um PDF pode conter visão geral, quadros de continuação, pendências e ampliações
-do mesmo conjunto. Manter o mesmo ID de região em todas as páginas. Folhas
-separadas por indicador ou máximo local devem identificar explicitamente seu
-critério. Um índice do pacote relaciona prancha/revisão, direção/face, regiões,
-arquivo, revisão da análise e pendências.
+Manter índice com arquivo/página/IDs, revisão da análise e das fontes, abrangência,
+pendências e estado de revisão humana. IDs persistem nas páginas de mapa, quadro,
+apêndice e fichas. Não presumir que o número de revisão dos três documentos seja
+igual. Preservar PDFs revisados pelo engenheiro antes de regenerar qualquer saída.
 
-## Registro preliminar, estados e relatório complementar
+## Relatório de incompatibilidades e pendências
 
-Para cada controle, registrar projeto/pavimento, laje/encontro, região, direção,
-face e conjunto físico; critério/origem/referência e consulta efetiva; dados,
-unidades, hipóteses; execução/resultado; documentos/revisões/localizadores;
-evidências; cálculo bruto; pendências e revisão necessária. Usar os IDs de
-[review-criteria](review-criteria.md) e os pares de [contracts](contracts.md).
+Usar a referência R01, com identidade visual sóbria: cabeçalho de empreendimento/
+pavimento, títulos por prancha, índice e navegação, fichas com evidências ampliadas,
+rodapé de revisão/paginação e controles de seleção/comentário.
 
-NOT_EXECUTED/NOT_EVALUATED indica controle não realizado.
+Separar três grupos, com títulos e situação explícitos:
+
+1. **Incompatibilidades confirmadas:** conflito ou requisito demonstrado por
+   evidência técnica/documental suficiente.
+2. **Verificações pendentes de análise do engenheiro:** controle não encerrado,
+   com objeto e ação de revisão definidos.
+3. **Informações complementares necessárias:** dado/documento ainda necessário,
+   motivo, localização e controles dependentes.
+
+Não cadastrar neste relatório os casos de possível insuficiência ou indicadores
+que superam resistência já apresentados nas pranchas e aguardando avaliação.
+O índice pode remeter ao mapa, sem duplicar o caso, seus índices ou sua seleção.
+O relatório técnico pode conservar seus quantitativos para rastreabilidade,
+sem convertê-los em incompatibilidades definitivas.
+
+Uma limitação de extração ou tarefa ainda não executada pelo agente não é
+incompatibilidade do projeto. Registrar a restrição operacional na memória
+técnica e a verificação específica ainda necessária no grupo pertinente.
+Não transformar informação inconclusiva em conflito confirmado.
+
+### Ficha de incompatibilidade confirmada
+
+Cada ficha deve conter:
+
+1. Código único e persistente.
+2. Pranchas envolvidas e revisões.
+3. Localização física, chamada e/ou regiões relacionadas.
+4. Descrição técnica objetiva da diferença comprovada.
+5. Critério ou informação documental utilizada, com origem e localizador.
+6. Imagens ampliadas das regiões relevantes, preferencialmente lado a lado;
+   identificar fonte, revisão e escala ou “sem escala”.
+7. Providência ou esclarecimento necessário; não inventar solução executiva.
+8. Checkbox “Incluir no relatório final”.
+9. Checkbox “Não incluir”.
+10. Campo de comentários do engenheiro, preferencialmente multilinha.
+
+Preferir uma ficha por página quando a comparação gráfica exigir espaço; fichas
+curtas podem compartilhar página sem perder campos/evidências. Diferenciar
+visualmente as confirmadas das pendentes e das informações solicitadas, mantendo
+a mesma disciplina de identificação e revisão.
+
+Usar linguagem direta, técnica e dirigida a engenheiros estruturais. Explicitar
+o que diverge e o que permanece compatível, sem atribuir consequência resistente
+que não tenha sido demonstrada. Histórico já apreciado deve ser identificado
+como tal, não reapresentado como incompatibilidade nova.
+
+## Relatório técnico complementar
+
+Usar a referência R00 para preservar a memória de cálculo e de interpretação,
+sem substituir mapas ou fichas:
+
+| Conteúdo | Registro esperado |
+|---|---|
+| Escopo/abrangência | Pavimentos, lajes, regiões/direções e exclusões |
+| Documentos | Fontes, revisões, processamento, localizadores/hashes disponíveis |
+| Decisões humanas | Autor, data, confirmação, justificativa e escopo; distinguir hipótese do dado lido |
+| Critérios e hipóteses | Origem normativa/projeto/escritório, materiais, camadas, fatores, unidades e limites |
+| Procedimentos | Extração, conciliação, interpretação geométrica, associação DXF e controle de qualidade |
+| Resultados | Regiões, composições, resistências, indicadores, cobertura de linhas e quantitativos sem falsa contagem de falhas |
+| Controles | Concluídos, inconclusivos, não executados, inaplicáveis justificados e dependências |
+| Limitações/entregas | Efeito sobre a interpretação; arquivos/revisões/páginas dos mapas e fichas emitidos ou pendentes |
+
+Usar síntese inicial, seções técnicas, tabelas repetindo cabeçalho e referências
+cruzadas. Quantidades de regiões com eta>1 podem se sobrepor e não equivalem a
+número de insuficiências confirmadas. Nunca transportar decisões, fórmulas de
+mínimo, materiais, h, fator, aderência ou enquadramento da S07 para outro projeto
+sem fonte e validação próprias.
+
+## Estados técnicos e seleção editorial
+
+Usar os pares de [contracts](contracts.md), sem acrescentar enum ao código 1A.
+NOT_EXECUTED/NOT_EVALUATED indica controle não realizado;
 EXECUTED_INCONCLUSIVE/INCONCLUSIVE indica execução sem conclusão suficiente.
-Suspeita por falha de extração permanece inconclusiva. PASS/FAIL exige evidência
-e se restringe ao critério; FAIL de escritório não é reprovação normativa.
-NOT_APPLICABLE exige justificativa. FAIL parcial comprovado não deve desaparecer
-porque outra parcela segue pendente.
+Suspeita por falha de extração permanece inconclusiva.
+PASS/FAIL exige evidência e se restringe ao critério; FAIL de escritório não é
+reprovação normativa. NOT_APPLICABLE exige justificativa.
+Falha parcial comprovada não desaparece porque outra parcela segue pendente.
 
-Conservar separadas comparação documental, conclusão técnica e execução.
-O relatório consolidado reúne apontamentos preliminares, pendências, limitações
-e contagens de controles esperados/executados/concluídos/inconclusivos/não
-examinados/inaplicáveis. Remeter ao arquivo gráfico, página e ID correspondente.
-Registrar PDFs ainda não emitidos e motivos; o relatório não encerra essa obrigação.
+**A seleção é independente do resultado técnico.** Eta>1, cor vermelha, PASS ou
+FAIL não preenchem “Incluir”. A leitura de um campo vazio não é rejeição.
 
-## Seleção humana dos apontamentos e correções
+| Incluir | Não incluir | Decisão |
+|---|---|---|
+| Desmarcado | Desmarcado | Pendente; não presumir escolha |
+| Marcado | Desmarcado | Selecionado pelo engenheiro |
+| Desmarcado | Marcado | Exclusão explícita pelo engenheiro |
+| Marcado | Marcado | Conflito; esclarecer e não emitir o item como decidido |
 
-Submeter ao engenheiro falhas comprovadas, possíveis inconformidades e pedidos
-de esclarecimento. Não incluir automaticamente todos os FAIL no relatório final.
-A obrigação de entregar mapas não elimina esse filtro: os mapas preliminares
-mostram o escopo e os resultados; os apontamentos da emissão final dependem de
-seleção e redação aprovadas.
+Aplicar essa regra às fichas e, quando usados os dois campos, às regiões dos
+mapas. Se houver somente “Incluir”, desmarcado continua sem decisão explícita.
+Preservar a opção “Não incluir” presente na R03 para distinguir exclusão de
+ausência de revisão. Os dois campos devem representar uma decisão mutuamente
+exclusiva; preferir controle do formulário que impeça seleção simultânea e
+sempre validar a combinação ao recuperar os dados. A versão histórica utiliza
+checkboxes independentes: a exclusão mútua ainda exige adaptação/validação,
+não é funcionalidade comprovada desses geradores.
 
-Usar review_finding com ACCEPT/REJECT, autor, data e justificativa, delimitando
-seleção/redação. Aceitação não altera resultado técnico nem aprova correção
-executiva. Não inventar aprovação em nome do engenheiro. Se a leitura for
-incompleta, escrever “não identificada nesta leitura; conferência pendente”,
-não “não existe no projeto”.
+## Revisão humana em duas etapas
 
-Após correção, seguir
+### Etapa preliminar
+
+Gerar automaticamente os documentos pelos recursos compatíveis com as entradas,
+no padrão estabelecido, registrando resultados disponíveis, suspeitas e pendências.
+Não esperar que todos os controles estejam encerrados. Nas fichas, cadastrar como
+confirmadas somente as incompatibilidades comprovadas; possíveis conflitos sem
+evidência suficiente ficam no grupo de verificações pendentes.
+
+Itens novos começam sem decisão. Reemissões recuperam escolhas existentes antes
+de gerar campos, em vez de marcá-los Off indiscriminadamente.
+Os PDFs são de revisão interna, não emissão pronta ao projetista.
+
+### Etapa final
+
+O engenheiro revisa pranchas/fichas, seleciona itens e comenta. O agente recupera
+e confere as escolhas, resolve itens contraditórios e prepara a redação destinada
+ao projetista somente após essa revisão. Não incluir automaticamente todos os FAIL.
+Preservar os três documentos internos e emitir a seleção aprovada, sem substituir
+a memória técnica por uma lista editorial de itens escolhidos.
+
+Usar review_finding com ACCEPT/REJECT para registrar decisões atribuídas.
+A aceitação de um apontamento não altera o resultado técnico nem aprova correção
+executiva. A redação definitiva requer validação humana; não inferir aprovação
+em nome do engenheiro a partir de uma caixa vazia ou de um arquivo recém-gerado.
+
+## Preservação das escolhas entre revisões
+
+Antes de substituir um PDF, conservar a cópia preenchida e registrar valores
+canônicos de seus campos, comentários, IDs, fontes/revisões, autor e instante.
+Relacionar região/ficha ao projeto, pavimento, prancha, direção/face e objeto
+físico; não usar só coordenada de página ou índice de linha para transferir dados.
+
+- Correspondência inequívoca e conteúdo inalterado: reaplicar seleção/comentários.
+- Região ou fonte alterada, desdobrada, unida ou com ID renumerado: manter a
+  decisão anterior no histórico e solicitar revalidação localizada.
+- Mudança da decisão: registrar valor anterior, novo, autor, data e justificativa.
+- Item retirado: conservar histórico e motivo; não apagar comentários.
+- Divergência entre marcas do PDF e registro estruturado: manter ambas as fontes
+  e resolver antes de considerar a decisão vigente.
+
+A migração automática de decisões ainda não está implementada no contrato 1A
+nem foi encontrada nos emissores inspecionados. Fazer essa reconciliação
+operacionalmente; nunca apresentar regeneração com campos vazios como
+preservação da revisão humana.
+
+Após correção de dado técnico, seguir
 [review-workflow](review-workflow.md#pendências-decisões-e-correções):
-preservar originais/resultados anteriores, retirar os dependentes do uso vigente,
-reavaliá-los e atualizar PDFs, quadros, índice e relatório afetados.
-ACCEPT anterior não valida automaticamente o item corrigido. A propagação ainda
-é operacional, sem mecanismo automático no 1A. Resultados independentes conservam
-validade. Nenhuma rodada ou mapa favorável constitui aprovação global.
+preservar originais/resultados anteriores, retirar dependentes do uso vigente,
+reavaliar e atualizar mapas, fichas e memória técnica. Seleção anterior não
+valida automaticamente o item corrigido; controles independentes conservam validade.
+
+## Campos interativos e conferência funcional
+
+Manter formulários editáveis na etapa de revisão; não achatar o único exemplar.
+Identificar campos por item e finalidade, sem colisões de nome.
+Preferir widgets reais para as seleções e campo de texto multilinha para comentários.
+
+Além da conferência visual, validar árvore AcroForm/Fields e widgets de página,
+valores /V e estados /AS quando aplicáveis, aparências /AP e persistência após
+salvar/reabrir. Contagem de widgets ou uma caixa desenhada não prova formulário
+válido. Testar marcar/desmarcar, gravar comentário e recuperar os valores;
+verificar exclusividade e que ambos vazios não se tornam decisão automática.
+
+Os scripts de QA S07 são referências de testes, não prova de importação de
+escolhas, exclusividade ou migração entre revisões. Verificar o resultado em
+leitor PDF compatível; registrar limitações sem presumir comportamento idêntico
+em todos os visualizadores. Cópia estática pode acompanhar a emissão, mantendo
+o formulário preenchido e o histórico como fonte da decisão.

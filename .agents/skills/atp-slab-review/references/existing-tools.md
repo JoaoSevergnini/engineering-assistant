@@ -11,6 +11,17 @@ CP é o repositório irmão ../concretopy, atualmente localizado em
 \\srvmaster\PUBLICO\Joao Severgnini\Simon\concretopy, externo a este repositório.
 Resolver sua localização no ambiente em vez de presumir P: disponível.
 
+## Padrão atual de entregáveis — S07 1º pavimento
+
+Consultar [s07-1pav-deliverables](s07-1pav-deliverables.md) para os três PDFs
+finais, emissores R02/R03, fichas R01, relatório técnico R00, inputs, dependências,
+QA e adaptações. Este é o padrão de apresentação vigente; a seção de PDFs do
+térreo abaixo permanece como histórico de técnicas reaproveitáveis.
+
+Os dois indicadores já foram calculados no 1º pavimento, e há geradores para
+os três formatos e para seleção interativa. Ainda não há CLI genérica integrada,
+exclusividade garantida das checkboxes nem migração automática das decisões.
+
 ## Seleção operacional
 
 | Classe | Como utilizar |
@@ -18,7 +29,7 @@ Resolver sua localização no ambiente em vez de presumir P: disponível.
 | Direto, com entradas compatíveis | Funções de registro do 1A; área de barra e APIs Concretopy no domínio comprovado |
 | Exige adaptação/verificação local | Geometria/quantificação do PoC, representação resistente de lajes, diagnósticos de vigas |
 | Experimental/histórico | Reconhecimento por layout, contornos candidatos e scripts locais S07; primeiro inspecionar, depois decidir uso |
-| Não implementado como fluxo integrado | Importação/reconstrução geral DXF, médias top 3, cobertura integral, mínimos de lajes, continuidade/cortes e remissões |
+| Não implementado como fluxo geral para outro projeto | Emissão genérica dos três documentos, migração de decisões, catálogo de incompatibilidades e verificações integrais; o 1º pavimento S07 tem implementações específicas, inclusive dos dois indicadores |
 
 O agente pode avançar por leitura assistida e cálculos aplicáveis sem esperar
 automação completa. Uma ferramenta inadequada gera mudança de método ou pendência
@@ -67,7 +78,7 @@ Não fornecer comandos históricos como rotina pronta para outro projeto.
 | V/preparar_vertical.py: find | entidades.json e textos.json → componentes, calibração, eixos e manchas | NumPy/Shapely; eixos canônicos, malha 17,5 e calibração locais. Não lê sozinho o DXF original |
 | V/gerar_mapa_media_picos.py; gerar_pranchas_comparacao_media.py | Componentes verticais e capacidades → mapas e comparativos 7304/7308 | Adaptações verticais dos recursos anteriores; mesmas ressalvas de identidade, pendências e médias |
 
-No S07, a preparação inicial do parser DXF e parte do alinhamento horizontal não
+No térreo S07, a preparação inicial do parser DXF e parte do alinhamento horizontal não
 estão integralmente persistidas em runner. Entidades JSON arquivadas não comprovam
 existência de um importador genérico. As comparações finais são de negativas;
 as positivas têm capacidades, sem comparação final correspondente concluída.
@@ -89,12 +100,12 @@ Referência visual inspecionada:
 O arquivo tem prancha-base vetorial, polígonos/rótulos de comparação e quadro
 lateral. A inspeção constatou página única e ausência de imagens raster
 embutidas; isso favorece ampliação, mas não dispensa revisão de legibilidade.
-O padrão generalizado e os dois níveis de entrega estão em
+O padrão corrente dos três entregáveis está em
 [reporting](reporting.md).
 
 | Gerador histórico | O que pode servir de referência | Adaptação necessária |
 |---|---|---|
-| H/gerar_pranchas_comparacao_media.py | Referência principal do formato solicitado: show_pdf_page incorpora a prancha e a sobreposição ReportLab; drawpoly desenha contornos/anéis; num/arm/txt/fit, collision e placements organizam rótulos, chamadas, cores e quadro lateral. Salva PDF/JSON/CSV e renderiza QA | Procedimento no nível superior, pranchas/medidas/fontes e destinos específicos; apenas indicador 1, uma η e n; filtra issues e resistência ausente. Acrescentar indicador 2, η3, rastreabilidade do novo projeto e mapa/quadro de pendências, sem copiar o filtro |
+| H/gerar_pranchas_comparacao_media.py | Referência histórica do térreo: show_pdf_page incorpora a prancha e a sobreposição ReportLab; drawpoly desenha contornos/anéis; num/arm/txt/fit, collision e placements organizam rótulos, chamadas, cores e quadro lateral. Salva PDF/JSON/CSV e renderiza QA | Procedimento no nível superior, pranchas/medidas/fontes e destinos específicos; apenas indicador 1, uma η e n; filtra issues e resistência ausente. Aproveitar técnicas gráficas, sem copiar o filtro; o padrão completo de dois indicadores, seleção e pendências está no 1º pavimento |
 | V/gerar_pranchas_comparacao_media.py | Variante vertical com transformação de eixos, mesma composição vetorial e mrlabel para marcar hipótese de posição | Não copiar pranchas, transformações ou envelope horizontal de 20 mm. Conservar capacidade condicionada como tal; mesmas lacunas de indicador 2 e regiões pendentes |
 | A/build_eight_sheets.py | drawpoly, fittext, collides e textos: todas as regiões resistentes cadastradas, capacidades/composições pendentes e determinadas chamadas sem faixa; painel, códigos, linhas de chamada e links internos código→quadro. Hash das fontes, manifesto e renderizações QA | Não compara solicitações; base Ø8 c/14 e seleção especial de N91 são do caso. Não truncar campos essenciais pelo fittext; generalizar pendências e parâmetros de layout. Complementa, não substitui o comparativo |
 | H/gerar_comparativo_pdf.py | header/footer/wrap, quadros, evidências locais e mapas vetoriais sobre a fonte; útil para folhas de detalhe, máximo local e relatório complementar | Comparação histórica por máximos e médias de manchas MN é diferente dos dois indicadores por região. Não importar limiares, exclusões de apoios ou hipóteses S07 como padrão |
@@ -109,7 +120,8 @@ direções, indicadores e pendências a partir do novo projeto.
 Os testes de presença de códigos, hashes e colisões de caixas dos históricos
 são referências de QA, não comprovação de que anotações não encobrem o desenho.
 Renderizar/inspecionar todas as páginas e detalhes conforme reporting.
-A nova exigência documental não implementa gerador nem o segundo indicador;
+A exigência documental não implementou gerador genérico; os emissores do térreo
+não possuem o segundo indicador, já calculado nos scripts do 1º pavimento;
 se não for possível emitir, registrar o impedimento e a entrega gráfica pendente,
 sem declarar o relatório consolidado como substituto.
 
