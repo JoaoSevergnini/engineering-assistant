@@ -1,9 +1,17 @@
 /tmp/
-/analises/silva_jardim_tipo/review_all.json
+/output/
 
-/analises/atp_s07_vigas_terreo/resultado_floor_review.json
-/analises/atp_s07_vigas_terreo/rodada_02_modelo_atualizado/resultado_floor_review.json
-/analises/atp_s07_vigas_terreo/rodada_03_controles_locais/resultado_floor_review.json
+# Analises: resultados de projeto nao sao versionados neste repositorio; devem
+# ser arquivados na pasta do proprio projeto. Ficam versionados apenas os casos
+# de desenvolvimento e regressao usados pelas ferramentas (tools/) e pelas skills.
+/analises/*
+!/analises/pranchas/
+!/analises/etapa1_1_integracao/
+!/analises/etapa1_leitura_geometria/
+!/analises/lajes_*/
+!/analises/suspensao_desnivel_inferior/
+!/analises/trechos_secao_variavel/
+!/analises/melhoria_fluxo_atp_vigas/
 
 # Python
 __pycache__/

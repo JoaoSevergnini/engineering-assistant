@@ -308,3 +308,14 @@ considere se essa informação deveria ser transformada em:
 Não altere automaticamente os princípios gerais deste sistema com base em um único caso.
 
 Mudanças permanentes devem representar padrões suficientemente consistentes.
+
+---
+
+## 16. Arquivos de análise
+
+Este repositório versiona o assistente (princípios, perfil, skills e ferramentas), não os projetos.
+
+- Resultados de análises de projetos (relatórios, PDFs, planilhas, JSONs de resultado, entregáveis) devem ser arquivados na pasta do próprio projeto, não neste repositório.
+- Em `analises/`, ficam versionados apenas os casos de desenvolvimento e regressão usados pelas ferramentas e skills, listados como exceção no `.gitignore`. Pastas novas em `analises/` são ignoradas pelo git.
+- Ao criar um novo caso de regressão, incluí-lo explicitamente como exceção no `.gitignore`.
+- Enquanto a pasta de destino de cada projeto não estiver definida, `analises/` e `output/` podem ser usadas como área de trabalho local, fora do controle de versão.

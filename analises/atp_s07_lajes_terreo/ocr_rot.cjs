@@ -1,2 +1,0 @@
-const {createWorker}=require('C:/Users/joao.severgnini/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/tesseract.js');const fs=require('fs');
-(async()=>{const w=await createWorker('eng');for(const n of ['7302','7304','7306','7308']){let r=await w.recognize(n+'_rot.png',{}, {text:true,tsv:true});fs.writeFileSync(n+'_rot.txt',r.data.text);fs.writeFileSync(n+'_rot.tsv',r.data.tsv);console.log(n,'done');}await w.terminate();})();
